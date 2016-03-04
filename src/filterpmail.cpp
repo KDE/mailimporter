@@ -17,7 +17,6 @@
 
 #include <KLocalizedString>
 #include <qfiledialog.h>
-#include <QPointer>
 #include <QTemporaryFile>
 #include <QRegularExpression>
 #include "mailimporter_debug.h"

@@ -19,7 +19,6 @@
 
 #include <KLocalizedString>
 #include <QFileDialog>
-#include <QPointer>
 
 using namespace MailImporter;
 

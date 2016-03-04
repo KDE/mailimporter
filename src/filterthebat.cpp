@@ -19,7 +19,6 @@
 #include "filterthebat.h"
 
 #include <QRegExp>
-#include <QPointer>
 #include <KLocalizedString>
 #include <qfiledialog.h>
 #include <QTemporaryFile>

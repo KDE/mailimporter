@@ -19,7 +19,6 @@
 #include <qfiledialog.h>
 #include <QTemporaryFile>
 #include "mailimporter_debug.h"
-#include <QPointer>
 
 #include "filteropera.h"
 

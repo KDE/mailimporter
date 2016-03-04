@@ -23,7 +23,6 @@
 #include "mailimporter_debug.h"
 #include <QDomDocument>
 #include <QDomElement>
-#include <QPointer>
 
 using namespace MailImporter;
 

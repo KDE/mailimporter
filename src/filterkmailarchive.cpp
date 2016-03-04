@@ -22,7 +22,6 @@
 #include <QFileDialog>
 #include <KZip>
 #include <KTar>
-#include <QUrl>
 
 #include "mailimporter_debug.h"
 #include <QApplication>

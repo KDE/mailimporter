@@ -23,7 +23,6 @@
 #include <QTemporaryFile>
 #include <KConfig>
 #include <QFile>
-#include <QPointer>
 #include <QRegularExpression>
 
 using namespace MailImporter;
