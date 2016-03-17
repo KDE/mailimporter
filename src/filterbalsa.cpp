@@ -20,7 +20,6 @@
 #include <KLocalizedString>
 #include <qfiledialog.h>
 
-
 using namespace MailImporter;
 
 class MailImporter::FilterBalsaPrivate
