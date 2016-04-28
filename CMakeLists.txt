@@ -20,10 +20,12 @@ include(ECMQtDeclareLoggingCategory)
 include(ECMAddTests)
 
 set(PIM_VERSION "5.2.50")
+set(MAILIMPORTER_LIB ${PIM_VERSION})
+
 
 set(KF5_VERSION "5.19.0")
 set(KDEPIMLIBS_LIB_VERSION "5.2.40")
-set(KDEPIM_LIB_VERSION ${PIM_VERSION})
+set(KDEPIM_LIB_VERSION "5.2.40")
 set(QT_REQUIRED_VERSION "5.4.0")
 set(KMIME_LIB_VERSION "5.2.40")
 set(AKONADI_VERSION "5.2.40")
@@ -38,7 +40,7 @@ find_package(KF5Archive ${KF5_VERSION} CONFIG REQUIRED)
 find_package(KF5Libkdepim ${KDEPIM_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF5AkonadiContact ${KDEPIMLIBS_LIB_VERSION} CONFIG REQUIRED)
 
-ecm_setup_version(${KDEPIM_LIB_VERSION} VARIABLE_PREFIX MAILIMPORTER
+ecm_setup_version(${MAILIMPORTER_LIB} VARIABLE_PREFIX MAILIMPORTER
                         VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/mailimporter_version.h"
                         PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterConfigVersion.cmake"
                         SOVERSION 5
