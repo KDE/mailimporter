@@ -80,5 +80,6 @@ if (BUILD_TESTING)
    add_subdirectory(autotests)
 endif()
 
+install( FILES mailimporter.categories DESTINATION ${KDE_INSTALL_CONFDIR} )
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
