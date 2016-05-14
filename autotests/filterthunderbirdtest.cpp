@@ -26,7 +26,7 @@ public:
     {
 
     }
-    QString settingsPath()
+    QString settingsPath() Q_DECL_OVERRIDE
     {
         return MailImporter::FilterThunderbird::settingsPath();
     }
