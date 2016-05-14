@@ -22,10 +22,11 @@ include(ECMAddTests)
 
 set(KF5_VERSION "5.19.0")
 set(KDEPIMLIBS_LIB_VERSION "5.2.0")
-set(KDEPIM_LIB_VERSION "5.2.2")
+set(KDEPIM_LIB_VERSION "5.2.1")
 set(QT_REQUIRED_VERSION "5.4.0")
 set(KMIME_LIB_VERSION "5.2.0")
 set(AKONADI_VERSION "5.2.0")
+set(MAILIMPORTER_LIB "5.2.2")
 
 find_package(KF5Akonadi ${AKONADI_VERSION} CONFIG REQUIRED)
 find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets Test UiTools Xml)
@@ -37,7 +38,7 @@ find_package(KF5Archive ${KF5_VERSION} CONFIG REQUIRED)
 find_package(KF5Libkdepim ${KDEPIM_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF5AkonadiContact ${KDEPIMLIBS_LIB_VERSION} CONFIG REQUIRED)
 
-ecm_setup_version(${KDEPIM_LIB_VERSION} VARIABLE_PREFIX MAILIMPORTER
+ecm_setup_version(${MAILIMPORTER_LIB} VARIABLE_PREFIX MAILIMPORTER
                         VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/mailimporter_version.h"
                         PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterConfigVersion.cmake"
                         SOVERSION 5
