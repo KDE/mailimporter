@@ -20,7 +20,7 @@ include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
 include(ECMQtDeclareLoggingCategory)
 include(ECMAddTests)
 
-set(PIM_VERSION "5.2.50")
+set(PIM_VERSION "5.2.80")
 set(MAILIMPORTER_LIB ${PIM_VERSION})
 
 
