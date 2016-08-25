@@ -29,18 +29,18 @@ SelectThunderbirdProfileDialog::SelectThunderbirdProfileDialog(QWidget *parent)
     : QDialog(parent)
 {
     setWindowTitle(i18n("Select thunderbird profile"));
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
-    QVBoxLayout *topLayout = new QVBoxLayout;
-    setLayout(topLayout);
+    setModal(true);
+    QVBoxLayout *topLayout = new QVBoxLayout(this);
+
+    mSelectProfile = new SelectThunderbirdProfileWidget(this);
+    topLayout->addWidget(mSelectProfile);
+
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setDefault(true);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
     connect(buttonBox, &QDialogButtonBox::accepted, this, &SelectThunderbirdProfileDialog::accept);
     connect(buttonBox, &QDialogButtonBox::rejected, this, &SelectThunderbirdProfileDialog::reject);
-    okButton->setDefault(true);
-    setModal(true);
-    mSelectProfile = new SelectThunderbirdProfileWidget(this);
-    topLayout->addWidget(mSelectProfile);
     topLayout->addWidget(buttonBox);
 }
 
