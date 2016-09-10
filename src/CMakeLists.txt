@@ -108,7 +108,6 @@ install(FILES
 )
 
 install(FILES
-    ${MailImporter_HEADERS}
     ${CMAKE_CURRENT_BINARY_DIR}/mailimporter_export.h
     ${MailImporter_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/mailimporter
