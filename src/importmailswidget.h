@@ -28,7 +28,7 @@ class MAILIMPORTER_EXPORT ImportMailsWidget : public QWidget
     Q_OBJECT
 
 public:
-    explicit ImportMailsWidget(QWidget *parent = Q_NULLPTR);
+    explicit ImportMailsWidget(QWidget *parent = nullptr);
     ~ImportMailsWidget();
 
     void setStatusMessage(const QString &status);
