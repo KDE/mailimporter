@@ -202,7 +202,7 @@ void FilterTheBat::importFiles(const QString &FileName)
 
             iFound = _tmp.count(regexp);
             if (!iFound) {
-                iFound = _tmp.lastIndexOf(QStringLiteral("!"));
+                iFound = _tmp.lastIndexOf(QLatin1Char('!'));
                 if (iFound >= 0 && ((l - iFound) < 5)) {
                     int _i = tbb.pos();
                     tbb.seek((_i - iFound));
