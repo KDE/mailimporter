@@ -165,7 +165,7 @@ void FilterMailApp::traverseDirectory(const QString &dirName)
     dir.setFilter(QDir::Dirs | QDir::Files);
 
     const QFileInfoList fileinfolist = dir.entryInfoList();
-    Q_FOREACH (const QFileInfo &fi, fileinfolist) {
+    for (const QFileInfo &fi : fileinfolist) {
         const QString filename(fi.fileName());
         if (filename == QLatin1String(".") || filename == QLatin1String("..")) {
             continue;

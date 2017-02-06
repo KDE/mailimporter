@@ -87,7 +87,7 @@ QMap<QString, QString> FilterThunderbird::listProfile(QString &currentProfile, c
             lstProfile.insert(name, path);
             return lstProfile;
         } else {
-            Q_FOREACH (const QString &profileName, profileList) {
+            for (const QString &profileName : profileList) {
                 KConfigGroup group = config.group(profileName);
                 const QString path = group.readEntry("Path");
                 const QString name = group.readEntry(QStringLiteral("Name"));

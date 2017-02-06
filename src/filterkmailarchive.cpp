@@ -123,7 +123,8 @@ bool FilterKMailArchive::importFolder(const KArchiveDirectory *folder, const QSt
         int total = messageDir->entries().count();
         int cur = 1;
 
-        foreach (const QString &entryName, messageDir->entries()) {
+        const QStringList lstEntries = messageDir->entries();
+        for (const QString &entryName : lstEntries) {
             filterInfo()->setCurrent(cur * 100 / total);
             filterInfo()->setOverall(d->mFilesDone * 100 / d->mTotalFiles);
             const KArchiveEntry *const entry = messageDir->entry(entryName);
@@ -153,7 +154,8 @@ bool FilterKMailArchive::importFolder(const KArchiveDirectory *folder, const QSt
 bool FilterKMailArchive::importDirectory(const KArchiveDirectory *directory, const QString &folderPath)
 {
     qCDebug(MAILIMPORTER_LOG) << "Importing directory" << directory->name();
-    foreach (const QString &entryName, directory->entries()) {
+    const QStringList lstEntries = directory->entries();
+    for (const QString &entryName : lstEntries) {
         const KArchiveEntry *const entry = directory->entry(entryName);
 
         if (entry->isDirectory()) {
@@ -188,7 +190,8 @@ bool FilterKMailArchive::importDirectory(const KArchiveDirectory *directory, con
 int FilterKMailArchive::countFiles(const KArchiveDirectory *directory) const
 {
     int count = 0;
-    foreach (const QString &entryName, directory->entries()) {
+    const QStringList lstEntries = directory->entries();
+    for (const QString &entryName : lstEntries) {
         const KArchiveEntry *const entry = directory->entry(entryName);
         if (entry->isFile()) {
             count++;

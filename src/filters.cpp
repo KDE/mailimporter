@@ -200,7 +200,7 @@ Akonadi::Collection Filter::parseFolderString(const QString &folderParseString)
     Akonadi::Collection lastCollection;
 
     // Create each folder on the folder list and add it the map.
-    foreach (const QString &folder, folderList) {
+    for (const QString &folder : folderList) {
         if (isFirst) {
             d->messageFolderCollectionMap[folder] = addSubCollection(d->filterInfo->rootCollection(), folder);
             folderBuilder = folder;
@@ -227,8 +227,8 @@ Akonadi::Collection Filter::addSubCollection(const Akonadi::Collection &baseColl
                                   fetchJob->errorString()));
         return Akonadi::Collection();
     }
-
-    foreach (const Akonadi::Collection &subCollection, fetchJob->collections()) {
+    const Akonadi::Collection::List lstCols = fetchJob->collections();
+    for (const Akonadi::Collection &subCollection : lstCols) {
         if (subCollection.name() == newCollectionPathName) {
             return subCollection;
         }
@@ -275,7 +275,8 @@ bool Filter::checkForDuplicates(const QString &msgID,
                 d->filterInfo->addInfoLogEntry(i18n("<b>Warning:</b> Could not fetch mail in folder %1. Reason: %2"
                                                     " You may have duplicate messages.", messageFolder, job.errorString()));
             } else {
-                foreach (const Akonadi::Item &messageItem, job.items()) {
+                const Akonadi::Item::List items = job.items();
+                for (const Akonadi::Item &messageItem : items) {
                     if (!messageItem.isValid()) {
                         d->filterInfo->addInfoLogEntry(i18n("<b>Warning:</b> Got an invalid message in folder %1.", messageFolder));
                     } else {
