@@ -76,8 +76,6 @@ void FilterLNotes::import()
     }
 
     d->currentFile = 1;
-    d->totalFiles = 0;
-
     d->totalFiles = filenames.count();
     filterInfo()->setOverall(0);
 

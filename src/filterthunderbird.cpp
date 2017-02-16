@@ -256,10 +256,10 @@ void FilterThunderbird::importDirContents(const QString &dirName, const QString 
 void FilterThunderbird::importMBox(const QString &mboxName, const QString &rootDir, const QString &targetDir)
 {
     QFile mbox(mboxName);
-    bool first_msg = true;
     if (!mbox.open(QIODevice::ReadOnly)) {
         filterInfo()->alert(i18n("Unable to open %1, skipping", mboxName));
     } else {
+        bool first_msg = true;
         QFileInfo filenameInfo(mboxName);
 
         filterInfo()->setCurrent(0);
