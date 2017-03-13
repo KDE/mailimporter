@@ -26,6 +26,7 @@ namespace MailImporter
 namespace OtherMailerUtil
 {
 MAILIMPORTER_EXPORT QString trojitaDefaultPath();
+MAILIMPORTER_EXPORT QString gearyDefaultPath();
 }
 }
 

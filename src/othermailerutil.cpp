@@ -27,4 +27,9 @@ QString OtherMailerUtil::trojitaDefaultPath()
     return path;
 }
 
+QString OtherMailerUtil::gearyDefaultPath()
+{
+    const QString path = QDir::homePath() + QLatin1String("/.config/geary/");
+    return path;
+}
 }
