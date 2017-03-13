@@ -19,7 +19,7 @@
  ***************************************************************************/
 /* Copyright (c) 2012-2017 Montel Laurent <montel@kde.org>                      */
 
-#include <Collection>
+#include <AkonadiCore/Collection>
 
 #include "mailimporter_export.h"
 namespace MailImporter
