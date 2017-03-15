@@ -31,7 +31,7 @@ namespace MailImporter
 class MAILIMPORTER_EXPORT FilterEvolution : public Filter
 {
 public:
-    explicit FilterEvolution();
+    FilterEvolution();
     ~FilterEvolution();
 
     void import() Q_DECL_OVERRIDE;

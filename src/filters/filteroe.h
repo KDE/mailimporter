@@ -32,7 +32,7 @@ namespace MailImporter
 class MAILIMPORTER_EXPORT FilterOE : public Filter
 {
 public:
-    explicit FilterOE();
+    FilterOE();
     ~FilterOE();
 
     void import() Q_DECL_OVERRIDE;

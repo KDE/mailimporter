@@ -30,7 +30,7 @@ namespace MailImporter
 class MAILIMPORTER_EXPORT FilterThunderbird : public Filter
 {
 public:
-    explicit FilterThunderbird();
+    FilterThunderbird();
     ~FilterThunderbird();
 
     void import() Q_DECL_OVERRIDE;

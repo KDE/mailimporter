@@ -25,7 +25,7 @@ class FilterBalsaPrivate;
 class MAILIMPORTER_EXPORT FilterBalsa : public Filter
 {
 public:
-    explicit FilterBalsa();
+    FilterBalsa();
     ~FilterBalsa();
 
     void import() Q_DECL_OVERRIDE;

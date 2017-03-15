@@ -27,7 +27,7 @@ namespace MailImporter
 class MAILIMPORTER_EXPORT FilterPMail : public Filter
 {
 public:
-    explicit FilterPMail();
+    FilterPMail();
     ~FilterPMail();
 
     void import() Q_DECL_OVERRIDE;

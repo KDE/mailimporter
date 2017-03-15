@@ -32,7 +32,7 @@ class MAILIMPORTER_EXPORT FilterTheBat : public Filter
 {
 
 public:
-    explicit FilterTheBat();
+    FilterTheBat();
     ~FilterTheBat();
 
     void import() Q_DECL_OVERRIDE;

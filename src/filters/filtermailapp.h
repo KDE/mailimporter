@@ -24,7 +24,7 @@ class FilterMailAppPrivate;
 class MAILIMPORTER_EXPORT FilterMailApp : public Filter
 {
 public:
-    explicit FilterMailApp();
+    FilterMailApp();
     ~FilterMailApp();
 
     void import() Q_DECL_OVERRIDE;

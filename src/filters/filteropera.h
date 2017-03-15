@@ -29,7 +29,7 @@ namespace MailImporter
 class MAILIMPORTER_EXPORT FilterOpera : public Filter
 {
 public:
-    explicit FilterOpera();
+    FilterOpera();
     ~FilterOpera();
 
     void import() Q_DECL_OVERRIDE;

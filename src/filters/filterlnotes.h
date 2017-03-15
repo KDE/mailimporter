@@ -28,7 +28,7 @@ class FilterLNotesPrivate;
 class MAILIMPORTER_EXPORT FilterLNotes : public Filter
 {
 public:
-    explicit FilterLNotes();
+    FilterLNotes();
     ~FilterLNotes();
     /** Standard import filter... starting line for our import */
     void import() Q_DECL_OVERRIDE;

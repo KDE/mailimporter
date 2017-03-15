@@ -25,7 +25,7 @@ class FilterEvolution_v3Private;
 class MAILIMPORTER_EXPORT FilterEvolution_v3 : public Filter
 {
 public:
-    explicit FilterEvolution_v3();
+    FilterEvolution_v3();
     ~FilterEvolution_v3();
 
     void import() Q_DECL_OVERRIDE;

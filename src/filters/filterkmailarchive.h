@@ -30,7 +30,7 @@ class FilterKMailArchivePrivate;
 class MAILIMPORTER_EXPORT FilterKMailArchive : public Filter
 {
 public:
-    explicit FilterKMailArchive();
+    FilterKMailArchive();
     ~FilterKMailArchive();
 
     void import() Q_DECL_OVERRIDE;

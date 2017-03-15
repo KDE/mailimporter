@@ -33,7 +33,7 @@ class MAILIMPORTER_EXPORT FilterSylpheed : public Filter
 {
 
 public:
-    explicit FilterSylpheed();
+    FilterSylpheed();
     ~FilterSylpheed();
 
     static QString defaultSettingsPath();

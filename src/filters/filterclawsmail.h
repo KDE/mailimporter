@@ -31,7 +31,7 @@ class MAILIMPORTER_EXPORT FilterClawsMail : public FilterSylpheed
 {
 
 public:
-    explicit FilterClawsMail();
+    FilterClawsMail();
     ~FilterClawsMail();
 
     static QString defaultSettingsPath();
