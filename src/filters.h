@@ -64,12 +64,6 @@ public:
 
 protected:
     static int countDirectory(const QDir &dir, bool searchHiddenDirectory);
-    /**
-    * Adds a single subcollection to the given base collection and returns it.
-    * Use parseFolderString() instead if you want to create hierachies of collections.
-    */
-    Akonadi::Collection addSubCollection(const Akonadi::Collection &baseCollection,
-                                         const QString &newCollectionPathName);
 
     /**
     * Creates a hierachy of collections based on the given path string. The collection
@@ -103,6 +97,13 @@ protected:
                                Akonadi::MessageStatus status = Akonadi::MessageStatus());
 
 private:
+    /**
+    * Adds a single subcollection to the given base collection and returns it.
+    * Use parseFolderString() instead if you want to create hierachies of collections.
+    */
+    Akonadi::Collection addSubCollection(const Akonadi::Collection &baseCollection,
+                                         const QString &newCollectionPathName);
+
     bool doAddMessage(const QString &folderName,
                       const QString &msgPath,
                       bool duplicateCheck,
