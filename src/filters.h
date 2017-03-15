@@ -54,7 +54,7 @@ public:
     void clear();
     void setFilterInfo(MailImporter::FilterInfo *info);
 
-    MailImporter::FilterInfo *filterInfo();
+    MailImporter::FilterInfo *filterInfo() const;
 
     void setCountDuplicates(int countDuplicate);
     int countDuplicates() const;

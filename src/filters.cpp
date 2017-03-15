@@ -105,7 +105,7 @@ void Filter::setFilterInfo(FilterInfo *info)
     clear();
 }
 
-MailImporter::FilterInfo *Filter::filterInfo()
+MailImporter::FilterInfo *Filter::filterInfo() const
 {
     if (!d->filterInfo) {
         qCDebug(MAILIMPORTER_LOG) << " filterInfo must never be null. You forgot to create a filterinfo";

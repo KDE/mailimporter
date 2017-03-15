@@ -77,5 +77,5 @@ void FilterInfoGui::alert(const QString &message)
 
 QWidget *FilterInfoGui::parent() const
 {
-    return 0;
+    return nullptr;
 }
