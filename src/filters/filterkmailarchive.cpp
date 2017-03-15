@@ -84,15 +84,16 @@ bool FilterKMailArchive::importMessage(const KArchiveFile *file, const QString &
 
     qApp->processEvents();
 
-    KMime::Message::Ptr newMessage(new KMime::Message());
-    newMessage->setContent(file->data());
-    newMessage->parse();
-
-    Akonadi::Collection collection = parseFolderString(folderPath);
+    const Akonadi::Collection collection = parseFolderString(folderPath);
     if (!collection.isValid()) {
         filterInfo()->addErrorLogEntry(i18n("Unable to retrieve folder for folder path %1.", folderPath));
         return false;
     }
+
+    KMime::Message::Ptr newMessage(new KMime::Message());
+    newMessage->setContent(file->data());
+    newMessage->parse();
+
 
     if (filterInfo()->removeDupMessage()) {
         KMime::Headers::MessageID *messageId = newMessage->messageID(false);
