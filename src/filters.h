@@ -89,7 +89,7 @@ protected:
                             const Akonadi::Collection &msgCollection,
                             const QString &messageFolder);
 
-    bool doAddMessage(const QString &folderName,
+    bool importMessage(const QString &folderName,
                       const QString &msgPath,
                       bool duplicateCheck,
                       Akonadi::MessageStatus status = Akonadi::MessageStatus());

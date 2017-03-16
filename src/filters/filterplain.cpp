@@ -61,7 +61,7 @@ void FilterPlain::import()
             filterInfo()->setFrom(dirRealPath);
             filterInfo()->setTo(destName);
             filterInfo()->setCurrent(0);
-            if (! doAddMessage(destName, dirRealPath, filterInfo()->removeDupMessage())) {
+            if (! importMessage(destName, dirRealPath, filterInfo()->removeDupMessage())) {
                 filterInfo()->addErrorLogEntry(i18n("Could not import %1", *mailFile));
             }
 

@@ -209,7 +209,7 @@ void FilterBalsa::importFiles(const QString &dirName)
             }
             const Akonadi::MessageStatus status = statusFromFile(*mailFile);
 
-            if (! doAddMessage(_path, dir.filePath(*mailFile), filterInfo()->removeDupMessage(), status)) {
+            if (! importMessage(_path, dir.filePath(*mailFile), filterInfo()->removeDupMessage(), status)) {
                 filterInfo()->addErrorLogEntry(i18n("Could not import %1", *mailFile));
             }
             filterInfo()->setCurrent((int)((float) currentFile / numFiles * 100));

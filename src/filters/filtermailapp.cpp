@@ -122,7 +122,7 @@ void FilterMailApp::importMails(const QString  &maildir)
                 tmp.flush();
                 first_msg = false;
 
-                doAddMessage(folderName, tmp.fileName(), filterInfo()->removeDupMessage());
+                importMessage(folderName, tmp.fileName(), filterInfo()->removeDupMessage());
 
                 int currentPercentage = (int)(((float) mbox.pos() / filenameInfo.size()) * 100);
                 filterInfo()->setCurrent(currentPercentage);

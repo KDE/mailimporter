@@ -246,7 +246,7 @@ void FilterTheBat::importFiles(const QString &FileName)
                 tmp.write(input, endPos - lastPos);
                 tmp.flush();
 
-                doAddMessage(_path, tmp.fileName(), filterInfo()->removeDupMessage());
+                importMessage(_path, tmp.fileName(), filterInfo()->removeDupMessage());
 
                 lastPos = endPos + 48;
                 tbb.seek(lastPos);

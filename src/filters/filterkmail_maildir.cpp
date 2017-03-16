@@ -191,7 +191,7 @@ void FilterKMail_maildir::importFiles(const QString &dirName)
                 generatedPath = true;
             }
 
-            if (!doAddMessage(_path, dir.filePath(*mailFile), filterInfo()->removeDupMessage())) {
+            if (!importMessage(_path, dir.filePath(*mailFile), filterInfo()->removeDupMessage())) {
                 filterInfo()->addErrorLogEntry(i18n("Could not import %1, duplicated message", *mailFile));
             }
             filterInfo()->setCurrent((int)((float) currentFile / numFiles * 100));

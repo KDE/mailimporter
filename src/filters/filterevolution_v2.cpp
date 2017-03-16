@@ -255,7 +255,7 @@ void FilterEvolution_v2::importMBox(const QString &mboxName, const QString &root
                 }
             }
 
-            doAddMessage(destFolder, tmp.fileName(), filterInfo()->removeDupMessage());
+            importMessage(destFolder, tmp.fileName(), filterInfo()->removeDupMessage());
 
             int currentPercentage = (int)(((float) mbox.pos() / filenameInfo.size()) * 100);
             filterInfo()->setCurrent(currentPercentage);

@@ -121,7 +121,7 @@ void FilterOpera::importBox(const QDir &importDir, const QStringList &files, con
                 tmp.flush();
                 first_msg = false;
 
-                doAddMessage(folderName, tmp.fileName(), filterInfo()->removeDupMessage());
+                importMessage(folderName, tmp.fileName(), filterInfo()->removeDupMessage());
                 int currentPercentage = (int)(((float) operaArchiv.pos() / filenameInfo.size()) * 100);
                 filterInfo()->setCurrent(currentPercentage);
 

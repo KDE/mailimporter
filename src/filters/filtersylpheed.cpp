@@ -246,7 +246,7 @@ void FilterSylpheed::importFiles(const QString &dirName)
             } else {
                 status.setRead(true);    // 0 == read
             }
-            if (! doAddMessage(_path, dir.filePath(*mailFile), filterInfo()->removeDupMessage(), status)) {
+            if (! importMessage(_path, dir.filePath(*mailFile), filterInfo()->removeDupMessage(), status)) {
                 filterInfo()->addErrorLogEntry(i18n("Could not import %1", *mailFile));
             }
             filterInfo()->setCurrent((int)((float) currentFile / numFiles * 100));

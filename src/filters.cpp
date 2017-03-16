@@ -308,7 +308,7 @@ bool Filter::checkForDuplicates(const QString &msgID,
     return false;
 }
 
-bool Filter::doAddMessage(const QString &folderName,
+bool Filter::importMessage(const QString &folderName,
                           const QString &msgPath,
                           bool duplicateCheck,
                           Akonadi::MessageStatus status)
