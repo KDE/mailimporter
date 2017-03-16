@@ -94,7 +94,6 @@ bool FilterKMailArchive::importMessage(const KArchiveFile *file, const QString &
     newMessage->setContent(file->data());
     newMessage->parse();
 
-
     if (filterInfo()->removeDupMessage()) {
         KMime::Headers::MessageID *messageId = newMessage->messageID(false);
         if (messageId && !messageId->asUnicodeString().isEmpty()) {
