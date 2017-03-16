@@ -21,10 +21,13 @@ set(libmailimporter_filters_SRCS
     )
 
 set(libmailimporter_SRCS
+    messagestatus.cpp
     importmailswidget.cpp
     filterinfogui.cpp
     filterinfo.cpp
     filters.cpp
+    filterimporterbase.cpp
+    filterimporterakonadi.cpp
     othermailerutil.cpp
     selectthunderbirdprofilewidget.cpp
     )
@@ -73,12 +76,15 @@ install(TARGETS
 
 ecm_generate_headers(MailImporter_CamelCase_HEADERS
     HEADER_NAMES
+    FilterImporterBase
+    FilterImporterAkonadi
     FilterInfoGui
     OtherMailerUtil
     ImportMailsWidget
     MailImporter_Utils
     Filters
     FilterInfo
+    MessageStatus
     REQUIRED_HEADERS MailImporter_HEADERS
     PREFIX MailImporter
     )

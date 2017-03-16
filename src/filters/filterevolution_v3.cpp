@@ -222,7 +222,7 @@ Akonadi::MessageStatus FilterEvolution_v3::statusFromFile(const QString &filenam
             status.setRead(true);
         }
         if (statusStr.contains(QLatin1Char('F'))) {
-
+            //TODO ?
         }
         if (statusStr.contains(QLatin1Char('R'))) {
             status.setReplied(true);

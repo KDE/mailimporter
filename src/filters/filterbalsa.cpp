@@ -227,7 +227,7 @@ Akonadi::MessageStatus FilterBalsa::statusFromFile(const QString &filename)
             status.setRead(true);
         }
         if (statusStr.contains(QLatin1Char('F'))) {
-
+            //TODO
         }
         if (statusStr.contains(QLatin1Char('R'))) {
             status.setReplied(true);

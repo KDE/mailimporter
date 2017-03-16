@@ -10,3 +10,5 @@ add_mailimporter_unittest(filtericedovetest.cpp)
 add_mailimporter_unittest(filterclawsmailtest.cpp)
 add_mailimporter_unittest(filtersylpheedtest.cpp)
 
+add_mailimporter_unittest(messagestatustest.cpp)
+
