@@ -204,17 +204,10 @@ void FilterEvolution_v3::importFiles(const QString &dirName)
             }
             Akonadi::MessageStatus status = statusFromFile(*mailFile);
 
-            if (filterInfo()->removeDupMessage()) {
-                if (! addMessage(_path, dir.filePath(*mailFile), status)) {
-                    filterInfo()->addErrorLogEntry(i18n("Could not import %1", *mailFile));
-                }
-                filterInfo()->setCurrent((int)((float) currentFile / numFiles * 100));
-            } else {
-                if (! addMessage_fastImport(_path, dir.filePath(*mailFile), status)) {
-                    filterInfo()->addErrorLogEntry(i18n("Could not import %1", *mailFile));
-                }
-                filterInfo()->setCurrent((int)((float) currentFile / numFiles * 100));
+            if (! doAddMessage(_path, dir.filePath(*mailFile), filterInfo()->removeDupMessage(), status)) {
+                filterInfo()->addErrorLogEntry(i18n("Could not import %1", *mailFile));
             }
+            filterInfo()->setCurrent((int)((float) currentFile / numFiles * 100));
         }
     }
 }

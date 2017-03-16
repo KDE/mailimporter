@@ -61,18 +61,8 @@ void FilterPlain::import()
             filterInfo()->setFrom(dirRealPath);
             filterInfo()->setTo(destName);
             filterInfo()->setCurrent(0);
-            /* comment by Danny Kukawka:
-            * addMessage() == old function, need more time and check for duplicates
-            * addMessage_fastImport == new function, faster and no check for duplicates
-            */
-            if (filterInfo()->removeDupMessage()) {
-                if (! addMessage(destName, dirRealPath)) {
-                    filterInfo()->addErrorLogEntry(i18n("Could not import %1", *mailFile));
-                }
-            } else {
-                if (! addMessage_fastImport(destName, dirRealPath)) {
-                    filterInfo()->addErrorLogEntry(i18n("Could not import %1", *mailFile));
-                }
+            if (! doAddMessage(destName, dirRealPath, filterInfo()->removeDupMessage())) {
+                filterInfo()->addErrorLogEntry(i18n("Could not import %1", *mailFile));
             }
 
             filterInfo()->setCurrent(100);

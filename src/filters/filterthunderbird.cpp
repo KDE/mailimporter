@@ -323,11 +323,7 @@ void FilterThunderbird::importMBox(const QString &mboxName, const QString &rootD
                 }
             }
 
-            if (filterInfo()->removeDupMessage()) {
-                addMessage(destFolder, tmp.fileName());
-            } else {
-                addMessage_fastImport(destFolder, tmp.fileName());
-            }
+            doAddMessage(destFolder, tmp.fileName(), filterInfo()->removeDupMessage());
 
             int currentPercentage = (int)(((float) mbox.pos() / filenameInfo.size()) * 100);
             filterInfo()->setCurrent(currentPercentage);

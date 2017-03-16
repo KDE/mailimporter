@@ -308,23 +308,6 @@ bool Filter::checkForDuplicates(const QString &msgID,
     return false;
 }
 
-bool Filter::addMessage(const QString &folderName,
-                        const QString &msgPath,
-                        Akonadi::MessageStatus status)
-{
-    // Add the message.
-    return doAddMessage(folderName, msgPath, true, status);
-}
-
-bool Filter::addMessage_fastImport(const QString &folderName,
-                                   const QString &msgPath,
-                                   Akonadi::MessageStatus status
-                                  )
-{
-    // Add the message.
-    return doAddMessage(folderName, msgPath, false, status);
-}
-
 bool Filter::doAddMessage(const QString &folderName,
                           const QString &msgPath,
                           bool duplicateCheck,

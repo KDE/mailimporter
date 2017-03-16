@@ -194,15 +194,7 @@ void FilterEvolution::importMBox(const QString &mboxName, const QString &rootDir
                 destFolder = QLatin1String("Evolution-Import/") + destFolder;
             }
 
-            /* comment by Danny Kukawka:
-            * addMessage() == old function, need more time and check for duplicates
-            * addMessage_fastImport == new function, faster and no check for duplicates
-            */
-            if (filterInfo()->removeDupMessage()) {
-                addMessage(destFolder, tmp.fileName());
-            } else {
-                addMessage_fastImport(destFolder, tmp.fileName());
-            }
+            doAddMessage(destFolder, tmp.fileName(), filterInfo()->removeDupMessage());
 
             const int currentPercentage = (int)(((float) mbox.pos() / filenameInfo.size()) * 100);
             filterInfo()->setCurrent(currentPercentage);

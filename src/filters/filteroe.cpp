@@ -211,15 +211,7 @@ void FilterOE::mbxImport(QDataStream &ds)
             }
         } while (!ds.atEnd());
         tmp.flush();
-        /* comment by Danny Kukawka:
-        * addMessage() == old function, need more time and check for duplicates
-        * addMessage_fastImport == new function, faster and no check for duplicates
-        */
-        if (filterInfo()->removeDupMessage()) {
-            addMessage(folderName, tmp.fileName());
-        } else {
-            addMessage_fastImport(folderName, tmp.fileName());
-        }
+        doAddMessage(folderName, tmp.fileName(), filterInfo()->removeDupMessage());
 
         if (filterInfo()->shouldTerminate()) {
             return;
@@ -383,11 +375,7 @@ void FilterOE::dbxReadEmail(QDataStream &ds, int filePos)
     tmp.flush();
 
     if (!_break) {
-        if (filterInfo()->removeDupMessage()) {
-            addMessage(folderName, tmp.fileName());
-        } else {
-            addMessage_fastImport(folderName, tmp.fileName());
-        }
+        doAddMessage(folderName, tmp.fileName(), filterInfo()->removeDupMessage());
 
         currentEmail++;
         int currentPercentage = (int)(((float) currentEmail / totalEmails) * 100);

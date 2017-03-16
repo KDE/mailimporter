@@ -146,11 +146,7 @@ void FilterLNotes::ImportLNotes(const QString &file)
                     // close file, send it
                     tempfile->close();
 
-                    if (filterInfo()->removeDupMessage()) {
-                        addMessage(folder, tempfile->fileName());
-                    } else {
-                        addMessage_fastImport(folder, tempfile->fileName());
-                    }
+                    doAddMessage(folder, tempfile->fileName(), filterInfo()->removeDupMessage());
 
                     tempfile->setAutoRemove(true);
                     state = 0;
@@ -179,11 +175,7 @@ void FilterLNotes::ImportLNotes(const QString &file)
         if (state != 0) {
             Q_ASSERT(tempfile);
 
-            if (filterInfo()->removeDupMessage()) {
-                addMessage(folder, tempfile->fileName());
-            } else {
-                addMessage_fastImport(folder, tempfile->fileName());
-            }
+            doAddMessage(folder, tempfile->fileName(), filterInfo()->removeDupMessage());
         }
         if (tempfile) {
             tempfile->setAutoRemove(true);

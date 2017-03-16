@@ -116,15 +116,7 @@ void FilterPMail::importNewMessage(const QString &file)
     QString destFolder(QStringLiteral("PegasusMail-Import/New Messages"));
     filterInfo()->setTo(destFolder);
 
-    /* comment by Danny Kukawka:
-    * addMessage() == old function, need more time and check for duplicates
-    * addMessage_fastImport == new function, faster and no check for duplicates
-    */
-    if (filterInfo()->removeDupMessage()) {
-        addMessage(destFolder, file);
-    } else {
-        addMessage_fastImport(destFolder, file);
-    }
+    doAddMessage(destFolder, file, filterInfo()->removeDupMessage());
 }
 
 /** this function imports one mail folder file (*.PMM) */
@@ -202,12 +194,7 @@ void FilterPMail::importMailFolder(const QString &file)
                 }
             }
             tempfile.flush();
-
-            if (filterInfo()->removeDupMessage()) {
-                addMessage(folder, tempfile.fileName());
-            } else {
-                addMessage_fastImport(folder, tempfile.fileName());
-            }
+            doAddMessage(folder, tempfile.fileName(), filterInfo()->removeDupMessage());
 
             first_msg = false;
         }
@@ -270,11 +257,7 @@ void FilterPMail::importUnixMailFolder(const QString &file)
                 }
             }
             tempfile.flush();
-            if (filterInfo()->removeDupMessage()) {
-                addMessage(folder, tempfile.fileName());
-            } else {
-                addMessage_fastImport(folder, tempfile.fileName());
-            }
+            doAddMessage(folder, tempfile.fileName(), filterInfo()->removeDupMessage());
 
             n++;
             filterInfo()->setCurrent(i18n("Message %1", n));

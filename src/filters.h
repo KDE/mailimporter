@@ -79,10 +79,6 @@ protected:
     bool addAkonadiMessage(const Akonadi::Collection &collection,
                            const KMime::Message::Ptr &message, Akonadi::MessageStatus status = Akonadi::MessageStatus());
 
-    bool addMessage(const QString &folder,
-                    const QString &msgFile,
-                    Akonadi::MessageStatus status = Akonadi::MessageStatus());
-
     /**
     * Checks for duplicate messages in the collection by message ID.
     * returns true if a duplicate was detected.
@@ -92,10 +88,11 @@ protected:
     bool checkForDuplicates(const QString &msgID,
                             const Akonadi::Collection &msgCollection,
                             const QString &messageFolder);
-    bool addMessage_fastImport(const QString &folder,
-                               const QString &msgFile,
-                               Akonadi::MessageStatus status = Akonadi::MessageStatus());
 
+    bool doAddMessage(const QString &folderName,
+                      const QString &msgPath,
+                      bool duplicateCheck,
+                      Akonadi::MessageStatus status = Akonadi::MessageStatus());
 private:
     /**
     * Adds a single subcollection to the given base collection and returns it.
@@ -104,10 +101,6 @@ private:
     Akonadi::Collection addSubCollection(const Akonadi::Collection &baseCollection,
                                          const QString &newCollectionPathName);
 
-    bool doAddMessage(const QString &folderName,
-                      const QString &msgPath,
-                      bool duplicateCheck,
-                      Akonadi::MessageStatus status = Akonadi::MessageStatus());
     class Private;
     Private *const d;
 };
