@@ -140,6 +140,11 @@ bool FilterInfo::shouldTerminate() const
     return Private::s_terminateASAP;
 }
 
+QString FilterInfo::rootCollectionName() const
+{
+    return d->m_rootCollection.name();
+}
+
 Akonadi::Collection FilterInfo::rootCollection() const
 {
     return d->m_rootCollection;
@@ -160,11 +165,11 @@ bool FilterInfo::removeDupMessage() const
     return d->m_removeDupMsg;
 }
 
-QWidget *FilterInfo::parent()
+QWidget *FilterInfo::parent() const
 {
     if (d->m_filterInfoGui) {
         return d->m_filterInfoGui->parent();
     }
-    return 0;
+    return nullptr;
 }
 

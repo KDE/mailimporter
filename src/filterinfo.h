@@ -48,10 +48,12 @@ public:
 
     static void terminateASAP();
     bool shouldTerminate() const;
+    QString rootCollectionName() const;
+
     Akonadi::Collection rootCollection() const;
     void setRootCollection(const Akonadi::Collection &collection);
 
-    QWidget *parent();
+    QWidget *parent() const;
     void setRemoveDupMessage(bool removeDupMessage);
     bool removeDupMessage() const;
 

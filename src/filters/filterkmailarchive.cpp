@@ -115,7 +115,7 @@ bool FilterKMailArchive::importFolder(const KArchiveDirectory *folder, const QSt
 {
     qCDebug(MAILIMPORTER_LOG) << "Importing folder" << folder->name();
     filterInfo()->addInfoLogEntry(i18n("Importing folder '%1'...", folderPath));
-    filterInfo()->setTo(filterInfo()->rootCollection().name() + folderPath);
+    filterInfo()->setTo(filterInfo()->rootCollectionName() + folderPath);
     const KArchiveDirectory *const messageDir =
         dynamic_cast<const KArchiveDirectory *>(folder->entry(QStringLiteral("cur")));
     if (messageDir) {
@@ -204,8 +204,6 @@ int FilterKMailArchive::countFiles(const KArchiveDirectory *directory) const
 
 void FilterKMailArchive::import()
 {
-    Q_ASSERT(filterInfo()->rootCollection().isValid());
-
     const QString archiveFile = QFileDialog::getOpenFileName(filterInfo()->parent(), i18n("Select KMail Archive File to Import"), QString(), i18n("KMail Archive Files (*.tar *.tar.gz *.tar.bz2 *.zip)"));
     if (archiveFile.isEmpty()) {
         filterInfo()->alert(i18n("Please select an archive file that should be imported."));
@@ -244,7 +242,7 @@ void FilterKMailArchive::importMails(const QString  &archiveFile)
         filterInfo()->setOverall(100);
         filterInfo()->setCurrent(100);
         filterInfo()->addInfoLogEntry(i18n("Importing the archive file '%1' into the folder '%2' succeeded.",
-                                           archiveFile, filterInfo()->rootCollection().name()));
+                                           archiveFile, filterInfo()->rootCollectionName()));
         filterInfo()->addInfoLogEntry(i18np("1 message was imported.", "%1 messages were imported.",
                                             d->mFilesDone));
     } else {
