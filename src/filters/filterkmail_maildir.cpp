@@ -61,7 +61,7 @@ FilterKMail_maildir::~FilterKMail_maildir()
 /** Recursive import of KMail maildir. */
 void FilterKMail_maildir::import()
 {
-    setCountDuplicates(0);
+    clearCountDuplicate();
     const QString homeDir = QDir::homePath();
     const QString maildir = QFileDialog::getExistingDirectory(0, QString(), homeDir);
     if (!maildir.isEmpty()) {

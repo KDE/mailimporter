@@ -113,9 +113,9 @@ MailImporter::FilterInfo *Filter::filterInfo() const
     return d->filterInfo;
 }
 
-void Filter::setCountDuplicates(int countDuplicate)
+void Filter::clearCountDuplicate()
 {
-    d->count_duplicates = countDuplicate;
+    d->count_duplicates = 0;
 }
 
 int Filter::countDuplicates() const

@@ -56,7 +56,7 @@ public:
 
     MailImporter::FilterInfo *filterInfo() const;
 
-    void setCountDuplicates(int countDuplicate);
+    void clearCountDuplicate();
     int countDuplicates() const;
 
     void setMailDir(const QString &mailDir);

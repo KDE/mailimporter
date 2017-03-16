@@ -66,7 +66,7 @@ QString FilterBalsa::localMailDirPath()
 /** Recursive import of KMail maildir. */
 void FilterBalsa::import()
 {
-    setCountDuplicates(0);
+    clearCountDuplicate();
     QString balsaDir = localMailDirPath();
     QDir d(balsaDir);
     if (!d.exists()) {

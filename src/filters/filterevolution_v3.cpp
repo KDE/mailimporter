@@ -61,7 +61,7 @@ QString FilterEvolution_v3::defaultSettingsPath()
 /** Recursive import of KMail maildir. */
 void FilterEvolution_v3::import()
 {
-    setCountDuplicates(0);
+    clearCountDuplicate();
     QString evolDir = defaultSettingsPath();
     QDir d(evolDir);
     if (!d.exists()) {

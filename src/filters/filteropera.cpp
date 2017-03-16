@@ -142,7 +142,7 @@ void FilterOpera::importBox(const QDir &importDir, const QStringList &files, con
                 filterInfo()->addInfoLogEntry(i18np("1 duplicate message not imported", "%1 duplicate messages not imported", countDuplicates()));
             }
             currentFile++;
-            setCountDuplicates(0);
+            clearCountDuplicate();
             operaArchiv.close();
         }
         if (filterInfo()->shouldTerminate()) {

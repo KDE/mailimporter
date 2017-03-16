@@ -49,7 +49,7 @@ QString FilterEvolution_v2::defaultSettingsPath()
 /** Recursive import of Evolution's mboxes. */
 void FilterEvolution_v2::import()
 {
-    setCountDuplicates(0);
+    clearCountDuplicate();
     /**
     * We ask the user to choose Evolution's root directory.
     * This should be usually ~/.evolution/mail/local/

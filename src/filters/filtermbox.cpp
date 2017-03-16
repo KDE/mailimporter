@@ -145,7 +145,7 @@ void FilterMBox::importMails(const QStringList &filenames)
                 filterInfo()->addInfoLogEntry(i18n("Finished import, canceled by user."));
             }
 
-            setCountDuplicates(0);
+            clearCountDuplicate();
             // don't forget to close the file !!!
             mbox.close();
         }

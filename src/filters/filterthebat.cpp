@@ -118,7 +118,7 @@ void FilterTheBat::importMails(const QString  &maildir)
         filterInfo()->addInfoLogEntry(i18n("Finished import, canceled by user."));
     }
 
-    setCountDuplicates(0);
+    clearCountDuplicate();
     filterInfo()->setCurrent(100);
     filterInfo()->setOverall(100);
 }

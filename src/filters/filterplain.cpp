@@ -80,6 +80,6 @@ void FilterPlain::import()
             filterInfo()->addInfoLogEntry(i18n("Finished import, canceled by user."));
         }
     }
-    setCountDuplicates(0);
+    clearCountDuplicate();
 }
 

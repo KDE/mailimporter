@@ -206,7 +206,7 @@ void FilterEvolution::importMBox(const QString &mboxName, const QString &rootDir
         if (countDuplicates() > 0) {
             filterInfo()->addInfoLogEntry(i18np("1 duplicate message not imported", "%1 duplicate messages not imported", countDuplicates()));
         }
-        setCountDuplicates(0);
+        clearCountDuplicate();
         mbox.close();
     }
 }
