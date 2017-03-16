@@ -186,11 +186,9 @@ void Filter::setInfo(const QString &_info)
 Akonadi::Collection Filter::parseFolderString(const QString &folderParseString)
 {
     // Return an already created collection:
-    QMap<QString, Akonadi::Collection>::const_iterator end(d->messageFolderCollectionMap.constEnd());
-    for (QMap<QString, Akonadi::Collection>::const_iterator it = d->messageFolderCollectionMap.constBegin(); it != end; ++it) {
-        if (it.key() ==  folderParseString) {
-            return it.value();
-        }
+    const Akonadi::Collection col = d->messageFolderCollectionMap.value(folderParseString);
+    if (col.isValid()) {
+        return col;
     }
 
     // The folder hasn't yet been created, create it now.
