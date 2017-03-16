@@ -53,7 +53,7 @@ public:
     Akonadi::Collection rootCollection() const;
     void setRootCollection(const Akonadi::Collection &collection);
 
-    QWidget *parent() const;
+    QWidget *parentWidget() const;
     void setRemoveDupMessage(bool removeDupMessage);
     bool removeDupMessage() const;
 

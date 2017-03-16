@@ -55,7 +55,7 @@ FilterOE::~FilterOE()
 void FilterOE::import()
 {
     // Select directory containing plain text emails
-    const QString maildir = QFileDialog::getExistingDirectory(filterInfo()->parent(), QString(), QDir::homePath());
+    const QString maildir = QFileDialog::getExistingDirectory(filterInfo()->parentWidget(), QString(), QDir::homePath());
     importMails(maildir);
 }
 

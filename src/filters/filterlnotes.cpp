@@ -69,7 +69,7 @@ FilterLNotes::~FilterLNotes()
 void FilterLNotes::import()
 {
 
-    const QStringList filenames = QFileDialog::getOpenFileNames(filterInfo()->parent(), QString(), QDir::homePath(), i18n("All Files (*)"));
+    const QStringList filenames = QFileDialog::getOpenFileNames(filterInfo()->parentWidget(), QString(), QDir::homePath(), i18n("All Files (*)"));
     if (filenames.isEmpty()) {
         filterInfo()->alert(i18n("No files selected."));
         return;

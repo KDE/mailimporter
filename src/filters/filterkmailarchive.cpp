@@ -204,7 +204,7 @@ int FilterKMailArchive::countFiles(const KArchiveDirectory *directory) const
 
 void FilterKMailArchive::import()
 {
-    const QString archiveFile = QFileDialog::getOpenFileName(filterInfo()->parent(), i18n("Select KMail Archive File to Import"), QString(), i18n("KMail Archive Files (*.tar *.tar.gz *.tar.bz2 *.zip)"));
+    const QString archiveFile = QFileDialog::getOpenFileName(filterInfo()->parentWidget(), i18n("Select KMail Archive File to Import"), QString(), i18n("KMail Archive Files (*.tar *.tar.gz *.tar.bz2 *.zip)"));
     if (archiveFile.isEmpty()) {
         filterInfo()->alert(i18n("Please select an archive file that should be imported."));
         return;

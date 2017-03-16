@@ -41,7 +41,7 @@ FilterMailmanGzip::~FilterMailmanGzip()
 
 void FilterMailmanGzip::import()
 {
-    const QStringList filenames = QFileDialog::getOpenFileNames(filterInfo()->parent(), QString(), QDir::homePath(), i18n("gzip Files (*.txt.gz)"));
+    const QStringList filenames = QFileDialog::getOpenFileNames(filterInfo()->parentWidget(), QString(), QDir::homePath(), i18n("gzip Files (*.txt.gz)"));
     if (filenames.isEmpty()) {
         filterInfo()->alert(i18n("No files selected."));
         return;

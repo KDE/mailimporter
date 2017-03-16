@@ -165,7 +165,7 @@ bool FilterInfo::removeDupMessage() const
     return d->m_removeDupMsg;
 }
 
-QWidget *FilterInfo::parent() const
+QWidget *FilterInfo::parentWidget() const
 {
     if (d->m_filterInfoGui) {
         return d->m_filterInfoGui->parent();
