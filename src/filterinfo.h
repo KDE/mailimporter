@@ -30,7 +30,7 @@ class FilterInfoGui;
 class MAILIMPORTER_EXPORT FilterInfo
 {
 public:
-    explicit FilterInfo();
+    FilterInfo();
     ~FilterInfo();
 
     void setFilterInfoGui(FilterInfoGui *filterinfogui);
