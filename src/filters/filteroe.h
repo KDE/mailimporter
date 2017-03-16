@@ -38,7 +38,7 @@ public:
     void import() Q_DECL_OVERRIDE;
     void importMails(const QString &maildir);
 
-protected:
+private:
     void importMailBox(const QString &fileName);
     void mbxImport(QDataStream &ds);
     void dbxImport(QDataStream &ds);
@@ -47,10 +47,9 @@ protected:
     void dbxReadEmail(QDataStream &ds, int filePos);
 
     /** helperfunctions for folder structure support */
-    QString parseFolderString(QDataStream &ds, int filePos);
+    QString parseFolderOEString(QDataStream &ds, int filePos);
     QString getFolderName(const QString &filename);
 
-private: // Private methods
     /** which file (of totalFiles) is now in the work? */
     int currentFile;
     /** total number of files that get imported */

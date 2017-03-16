@@ -332,10 +332,10 @@ void FilterOE::dbxReadDataBlock(QDataStream &ds, int filePos)
             // this is a folderfile
             if (type == 0x02) {
                 // qCDebug(MAILIMPORTER_LOG) <<"**** FOLDER: descriptive name ****";
-                folderEntry[0] = parseFolderString(ds, filePos + 12 + value + (count * 4));
+                folderEntry[0] = parseFolderOEString(ds, filePos + 12 + value + (count * 4));
             } else if (type == 0x03) {
                 // qCDebug(MAILIMPORTER_LOG) <<"**** FOLDER: filename ****";
-                folderEntry[1] = parseFolderString(ds, filePos + 12 + value + (count * 4));
+                folderEntry[1] = parseFolderOEString(ds, filePos + 12 + value + (count * 4));
 
             } else if (type == 0x80) {
                 // qCDebug(MAILIMPORTER_LOG) <<"**** FOLDER: current ID ****";
@@ -397,7 +397,7 @@ void FilterOE::dbxReadEmail(QDataStream &ds, int filePos)
 }
 
 /* ------------------- FolderFile support ------------------- */
-QString FilterOE::parseFolderString(QDataStream &ds, int filePos)
+QString FilterOE::parseFolderOEString(QDataStream &ds, int filePos)
 {
     char tmp;
     QString returnString;
