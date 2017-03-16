@@ -15,8 +15,8 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef MAILIMPORTER_FILTER_LNOTES_HXX
-#define MAILIMPORTER_FILTER_LNOTES_HXX
+#ifndef MAILIMPORTER_FILTER_LNOTES_H
+#define MAILIMPORTER_FILTER_LNOTES_H
 
 #include "filters.h"
 /**imports Lotus Notes Structured Text Archives and archvies messages into KMail

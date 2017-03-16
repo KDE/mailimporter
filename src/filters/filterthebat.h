@@ -16,8 +16,8 @@
  ***************************************************************************/
 /* Copyright (c) 2012-2017 Montel Laurent <montel@kde.org>                      */
 
-#ifndef MAILIMPORTER_FILTER_THEBAT_HXX
-#define MAILIMPORTER_FILTER_THEBAT_HXX
+#ifndef MAILIMPORTER_FILTER_THEBAT_H
+#define MAILIMPORTER_FILTER_THEBAT_H
 
 #include "filters.h"
 #include "mailimporter_export.h"

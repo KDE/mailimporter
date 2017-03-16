@@ -16,8 +16,8 @@
  ***************************************************************************/
 /* Copyright (c) 2012-2017 Montel Laurent <montel@kde.org>                      */
 
-#ifndef MAILIMPORTER_FILTER_SYLPHEED_HXX
-#define MAILIMPORTER_FILTER_SYLPHEED_HXX
+#ifndef MAILIMPORTER_FILTER_SYLPHEED_H
+#define MAILIMPORTER_FILTER_SYLPHEED_H
 
 #include <QHash>
 

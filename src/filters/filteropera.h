@@ -15,8 +15,8 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef MAILIMPORTER_FILTER_OPERA_HXX
-#define MAILIMPORTER_FILTER_OPERA_HXX
+#ifndef MAILIMPORTER_FILTER_OPERA_H
+#define MAILIMPORTER_FILTER_OPERA_H
 
 #include "filters.h"
 #include <QDir>

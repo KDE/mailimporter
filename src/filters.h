@@ -16,8 +16,8 @@
  ***************************************************************************/
 /* Copyright (c) 2012-2017 Montel Laurent <montel@kde.org>                      */
 
-#ifndef FILTERS_HXX
-#define FILTERS_HXX
+#ifndef FILTERS_H
+#define FILTERS_H
 
 #ifndef MAX_LINE
 #define MAX_LINE 4096

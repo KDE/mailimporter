@@ -10,8 +10,8 @@
 
  ***************************************************************************/
 
-#ifndef MAILIMPORTER_FILTER_MAILAPP_HXX
-#define MAILIMPORTER_FILTER_MAILAPP_HXX
+#ifndef MAILIMPORTER_FILTER_MAILAPP_H
+#define MAILIMPORTER_FILTER_MAILAPP_H
 
 #include "filters.h"
 /**

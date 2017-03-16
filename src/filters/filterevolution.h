@@ -18,8 +18,8 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  */
 
-#ifndef MAILIMPORTER_FILTER_EVOLUTION_HXX
-#define MAILIMPORTER_FILTER_EVOLUTION_HXX
+#ifndef MAILIMPORTER_FILTER_EVOLUTION_H
+#define MAILIMPORTER_FILTER_EVOLUTION_H
 
 #include "filters.h"
 /**

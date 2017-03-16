@@ -15,8 +15,8 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef MAILIMPORTER_FILTER_OE_HXX
-#define MAILIMPORTER_FILTER_OE_HXX
+#ifndef MAILIMPORTER_FILTER_OE_H
+#define MAILIMPORTER_FILTER_OE_H
 
 #include "filters.h"
 

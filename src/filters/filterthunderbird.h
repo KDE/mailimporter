@@ -16,8 +16,8 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef MAILIMPORTER_FILTER_THUNDERBIRD_HXX
-#define MAILIMPORTER_FILTER_THUNDERBIRD_HXX
+#ifndef MAILIMPORTER_FILTER_THUNDERBIRD_H
+#define MAILIMPORTER_FILTER_THUNDERBIRD_H
 
 #include "filters.h"
 
