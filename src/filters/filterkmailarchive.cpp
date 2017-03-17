@@ -118,7 +118,7 @@ bool FilterKMailArchive::importFolder(const KArchiveDirectory *folder, const QSt
 {
     qCDebug(MAILIMPORTER_LOG) << "Importing folder" << folder->name();
     filterInfo()->addInfoLogEntry(i18n("Importing folder '%1'...", folderPath));
-    //FIXME filterInfo()->setTo(filterInfo()->rootCollectionName() + folderPath);
+    filterInfo()->setTo(filterImporter()->topLevelFolder() + folderPath);
     const KArchiveDirectory *const messageDir =
         dynamic_cast<const KArchiveDirectory *>(folder->entry(QStringLiteral("cur")));
     if (messageDir) {
@@ -244,10 +244,8 @@ void FilterKMailArchive::importMails(const QString  &archiveFile)
     if (importDirectory(archive->directory(), QString())) {
         filterInfo()->setOverall(100);
         filterInfo()->setCurrent(100);
-#if 0 //FIXME
         filterInfo()->addInfoLogEntry(i18n("Importing the archive file '%1' into the folder '%2' succeeded.",
-                                           archiveFile, filterInfo()->rootCollectionName()));
-#endif
+                                           archiveFile, filterImporter()->topLevelFolder()));
         filterInfo()->addInfoLogEntry(i18np("1 message was imported.", "%1 messages were imported.",
                                             d->mFilesDone));
     } else {

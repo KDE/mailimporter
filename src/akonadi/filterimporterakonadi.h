@@ -24,7 +24,8 @@
 #include <KMime/Message>
 #include "mailimporter_export.h"
 #include <QString>
-
+namespace MailImporter
+{
 class MAILIMPORTER_EXPORT FilterImporterAkonadi : public MailImporter::FilterImporterBase
 {
 public:
@@ -40,6 +41,7 @@ public:
     Akonadi::Collection rootCollection() const;
     void setRootCollection(const Akonadi::Collection &collection);
 
+    QString topLevelFolder() const Q_DECL_OVERRIDE;
 
 private:
     /**
@@ -76,5 +78,5 @@ private:
     Akonadi::Collection mRootCollection;
     int mCountDuplicates;
 };
-
+}
 #endif // FILTERIMPORTERAKONADI_H

@@ -32,6 +32,8 @@
 #include <KLocalizedString>
 #include <QFile>
 
+using namespace MailImporter;
+
 FilterImporterAkonadi::FilterImporterAkonadi(MailImporter::FilterInfo *info)
     : MailImporter::FilterImporterBase(info),
       mCountDuplicates(0)
@@ -77,6 +79,11 @@ Akonadi::Collection FilterImporterAkonadi::rootCollection() const
 void FilterImporterAkonadi::setRootCollection(const Akonadi::Collection &collection)
 {
     mRootCollection = collection;
+}
+
+QString FilterImporterAkonadi::topLevelFolder() const
+{
+    return mRootCollection.name();
 }
 
 bool FilterImporterAkonadi::importMessage(const QString &folderName, const QString &msgPath, bool duplicateCheck, const MailImporter::MessageStatus &mailImporterstatus)

@@ -37,6 +37,7 @@ public:
     virtual void clear();
     virtual void clearCountDuplicate();
     virtual int countDuplicates() const;
+    virtual QString topLevelFolder() const;
 protected:
     MailImporter::FilterInfo *mInfo;
 };

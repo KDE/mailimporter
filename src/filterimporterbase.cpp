@@ -54,3 +54,8 @@ int FilterImporterBase::countDuplicates() const
 {
     return -1;
 }
+
+QString FilterImporterBase::topLevelFolder() const
+{
+    return {};
+}

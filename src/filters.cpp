@@ -52,22 +52,21 @@ public:
         : name(_name),
           author(_author),
           info(_info),
-          count_duplicates(0),
           filterImporter(nullptr),
           filterInfo(nullptr)
     {
     }
     ~Private()
     {
+        delete filterImporter;
+        filterImporter = nullptr;
+        delete filterInfo;
+        filterInfo = nullptr;
     }
     QString name;
     QString author;
     QString info;
     QString mailDir;
-    QMultiMap<QString, QString> messageFolderMessageIDMap;
-    QMap<QString, Akonadi::Collection> messageFolderCollectionMap;
-    int count_duplicates; //to count all duplicate messages
-
     MailImporter::FilterImporterBase *filterImporter;
     MailImporter::FilterInfo *filterInfo;
 };
@@ -85,11 +84,8 @@ Filter::~Filter()
 
 void Filter::clear()
 {
-    d->filterImporter->clear();
-    d->messageFolderMessageIDMap.clear();
-    d->messageFolderCollectionMap.clear();
+    filterImporter()->clear();
     d->mailDir.clear();
-    d->count_duplicates = 0;
 }
 
 void Filter::setMailDir(const QString &mailDir)
@@ -129,12 +125,12 @@ FilterImporterBase *Filter::filterImporter() const
 
 void Filter::clearCountDuplicate()
 {
-    d->count_duplicates = 0;
+    filterImporter()->clearCountDuplicate();
 }
 
 int Filter::countDuplicates() const
 {
-    return d->count_duplicates;
+    return filterImporter()->countDuplicates();
 }
 
 
