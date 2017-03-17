@@ -20,6 +20,7 @@
 
 #include <MailImporter/FilterImporterBase>
 #include <Akonadi/KMime/MessageStatus>
+#include <AkonadiCore/Collection>
 
 #include "mailimporter_export.h"
 #include <QString>
@@ -32,6 +33,10 @@ public:
     bool importMessage(const QString &folderName, const QString &msgPath, bool duplicateCheck, const MailImporter::MessageStatus &status) Q_DECL_OVERRIDE;
 private:
     static Akonadi::MessageStatus convertToAkonadiMessageStatus(const MailImporter::MessageStatus &status);
+    Akonadi::Collection parseFolderString(const QString &folderParseString);
+    bool checkForDuplicates(const QString &msgID,
+                                    const Akonadi::Collection &msgCollection,
+                                    const QString &messageFolder);
 };
 
 #endif // FILTERIMPORTERAKONADI_H

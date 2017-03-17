@@ -96,9 +96,9 @@ bool FilterImporterAkonadi::importMessage(const QString &folderName, const QStri
     return false;
 #endif
 }
-#if 0
-Akonadi::Collection Filter::parseFolderString(const QString &folderParseString)
+Akonadi::Collection FilterImporterAkonadi::parseFolderString(const QString &folderParseString)
 {
+#if 0
     // Return an already created collection:
     const Akonadi::Collection col = d->messageFolderCollectionMap.value(folderParseString);
     if (col.isValid()) {
@@ -161,12 +161,16 @@ Akonadi::Collection Filter::addSubCollection(const Akonadi::Collection &baseColl
     // Return the newly created collection
     Akonadi::Collection collection = job->collection();
     return collection;
+#else
+    return {};
+#endif
 }
 
-bool Filter::checkForDuplicates(const QString &msgID,
+bool FilterImporterAkonadi::checkForDuplicates(const QString &msgID,
                                 const Akonadi::Collection &msgCollection,
                                 const QString &messageFolder)
 {
+#if 0
     bool folderFound = false;
 
     // Check if the contents of this collection have already been found.
@@ -220,6 +224,7 @@ bool Filter::checkForDuplicates(const QString &msgID,
     // The message isn't a duplicate, but add it to the map for checking in the future.
     d->messageFolderMessageIDMap.insert(messageFolder, msgID);
     return false;
-}
-
+#else
+    return false;
 #endif
+}
