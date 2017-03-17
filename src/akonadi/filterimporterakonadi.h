@@ -33,6 +33,8 @@ public:
 
     bool importMessage(const QString &folderName, const QString &msgPath, bool duplicateCheck, const MailImporter::MessageStatus &status) Q_DECL_OVERRIDE;
     void clear() Q_DECL_OVERRIDE;
+    void clearCountDuplicate() Q_DECL_OVERRIDE;
+    int countDuplicates() const Q_DECL_OVERRIDE;
 private:
     static Akonadi::MessageStatus convertToAkonadiMessageStatus(const MailImporter::MessageStatus &status);
     Akonadi::Collection parseFolderString(const QString &folderParseString);
@@ -47,6 +49,7 @@ private:
 
     QMultiMap<QString, QString> mMessageFolderMessageIDMap;
     QMap<QString, Akonadi::Collection> mMessageFolderCollectionMap;
+    int mCountDuplicates;
 };
 
 #endif // FILTERIMPORTERAKONADI_H

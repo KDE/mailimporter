@@ -35,6 +35,8 @@ public:
                               bool duplicateCheck,
                               const MailImporter::MessageStatus& status);
     virtual void clear();
+    virtual void clearCountDuplicate();
+    virtual int countDuplicates() const;
 protected:
     MailImporter::FilterInfo *mInfo;
 };

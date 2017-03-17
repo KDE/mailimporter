@@ -44,3 +44,13 @@ void FilterImporterBase::clear()
 {
 
 }
+
+void FilterImporterBase::clearCountDuplicate()
+{
+
+}
+
+int FilterImporterBase::countDuplicates() const
+{
+    return -1;
+}

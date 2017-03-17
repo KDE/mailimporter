@@ -33,7 +33,8 @@
 #include <QFile>
 
 FilterImporterAkonadi::FilterImporterAkonadi(MailImporter::FilterInfo *info)
-    : MailImporter::FilterImporterBase(info)
+    : MailImporter::FilterImporterBase(info),
+      mCountDuplicates(0)
 {
 
 }
@@ -47,6 +48,7 @@ void FilterImporterAkonadi::clear()
 {
     mMessageFolderMessageIDMap.clear();
     mMessageFolderCollectionMap.clear();
+    mCountDuplicates = 0;
 }
 
 Akonadi::MessageStatus FilterImporterAkonadi::convertToAkonadiMessageStatus(const MailImporter::MessageStatus &status)
@@ -93,7 +95,7 @@ bool FilterImporterAkonadi::importMessage(const QString &folderName, const QStri
             if (!messageID.isEmpty()) {
                 // Check for duplicate.
                 if (checkForDuplicates(messageID, mailFolder, folderName)) {
-                    //FIXME d->count_duplicates++;
+                    mCountDuplicates++;
                     return false;
                 }
             }
@@ -265,4 +267,15 @@ bool FilterImporterAkonadi::addAkonadiMessage(const Akonadi::Collection &collect
         return false;
     }
     return true;
+}
+
+
+void FilterImporterAkonadi::clearCountDuplicate()
+{
+    mCountDuplicates = 0;
+}
+
+int FilterImporterAkonadi::countDuplicates() const
+{
+    return mCountDuplicates;
 }
