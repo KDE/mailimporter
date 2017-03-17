@@ -39,3 +39,8 @@ bool FilterImporterBase::importMessage(const QString &folderName, const QString 
     Q_UNUSED(status);
     return false;
 }
+
+void FilterImporterBase::clear()
+{
+
+}

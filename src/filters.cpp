@@ -85,6 +85,7 @@ Filter::~Filter()
 
 void Filter::clear()
 {
+    d->filterImporter->clear();
     d->messageFolderMessageIDMap.clear();
     d->messageFolderCollectionMap.clear();
     d->mailDir.clear();

@@ -34,6 +34,7 @@ public:
                               const QString &msgPath,
                               bool duplicateCheck,
                               const MailImporter::MessageStatus& status);
+    virtual void clear();
 protected:
     MailImporter::FilterInfo *mInfo;
 };

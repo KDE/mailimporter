@@ -32,7 +32,7 @@ public:
     ~FilterImporterAkonadi();
 
     bool importMessage(const QString &folderName, const QString &msgPath, bool duplicateCheck, const MailImporter::MessageStatus &status) Q_DECL_OVERRIDE;
-    void clear();
+    void clear() Q_DECL_OVERRIDE;
 private:
     static Akonadi::MessageStatus convertToAkonadiMessageStatus(const MailImporter::MessageStatus &status);
     Akonadi::Collection parseFolderString(const QString &folderParseString);
