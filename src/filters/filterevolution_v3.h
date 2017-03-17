@@ -37,7 +37,7 @@ private:
     void importFiles(const QString &);
     void processDirectory(const QString &path);
 
-    Akonadi::MessageStatus statusFromFile(const QString &filename);
+    MailImporter::MessageStatus statusFromFile(const QString &filename);
     FilterEvolution_v3Private *const d;
 };
 }

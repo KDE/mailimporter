@@ -53,7 +53,7 @@ private:
     void processDirectory(const QString &path);
 
     void readMarkFile(const QString &, QHash<QString, unsigned long> &);
-    Akonadi::MessageStatus msgFlagsToString(unsigned long flags);
+    MailImporter::MessageStatus msgFlagsToString(unsigned long flags);
     FilterSylpheedPrivate *const d;
 };
 }

@@ -202,7 +202,7 @@ void FilterEvolution_v3::importFiles(const QString &dirName)
                 filterInfo()->setTo(_path);
                 generatedPath = true;
             }
-            Akonadi::MessageStatus status = statusFromFile(*mailFile);
+            MailImporter::MessageStatus status = statusFromFile(*mailFile);
 
             if (!importMessage(_path, dir.filePath(*mailFile), filterInfo()->removeDupMessage(), status)) {
                 filterInfo()->addErrorLogEntry(i18n("Could not import %1", *mailFile));
@@ -212,9 +212,9 @@ void FilterEvolution_v3::importFiles(const QString &dirName)
     }
 }
 
-Akonadi::MessageStatus FilterEvolution_v3::statusFromFile(const QString &filename)
+MailImporter::MessageStatus FilterEvolution_v3::statusFromFile(const QString &filename)
 {
-    Akonadi::MessageStatus status;
+    MailImporter::MessageStatus status;
     const int statusIndex = filename.indexOf(QStringLiteral(":2,"));
     if (statusIndex != -1) {
         const QString statusStr = filename.right(filename.length() - statusIndex - 3);

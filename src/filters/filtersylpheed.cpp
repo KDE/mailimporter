@@ -240,7 +240,7 @@ void FilterSylpheed::importFiles(const QString &dirName)
                 generatedPath = true;
             }
 
-            Akonadi::MessageStatus status;
+            MailImporter::MessageStatus status;
             if (msgflags[_mfile]) {
                 status = msgFlagsToString((msgflags[_mfile]));
             } else {
@@ -303,9 +303,9 @@ void FilterSylpheed::readMarkFile(const QString &path, QHash<QString, unsigned l
     }
 }
 
-Akonadi::MessageStatus FilterSylpheed::msgFlagsToString(unsigned long flags)
+MailImporter::MessageStatus FilterSylpheed::msgFlagsToString(unsigned long flags)
 {
-    Akonadi::MessageStatus status;
+    MailImporter::MessageStatus status;
     /* see sylpheed's procmsg.h */
     if (flags  & 2UL) {
         status.setRead(false);

@@ -83,7 +83,7 @@ bool FilterKMailArchive::importMessage(const KArchiveFile *file, const QString &
     }
 
     qApp->processEvents();
-
+#if 0 //FIXME
     const Akonadi::Collection collection = parseFolderString(folderPath);
     if (!collection.isValid()) {
         filterInfo()->addErrorLogEntry(i18n("Unable to retrieve folder for folder path %1.", folderPath));
@@ -109,6 +109,9 @@ bool FilterKMailArchive::importMessage(const KArchiveFile *file, const QString &
         d->mFilesDone++;
     }
     return result;
+#else
+    return false;
+#endif
 }
 
 bool FilterKMailArchive::importFolder(const KArchiveDirectory *folder, const QString &folderPath)
