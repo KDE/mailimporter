@@ -123,6 +123,7 @@ void Filter::setFilterImporter(FilterImporterBase *importer)
 
 FilterImporterBase *Filter::filterImporter() const
 {
+    Q_ASSERT_X(d->filterImporter != nullptr, "Filter::filterImporter", "filterImporter was not settings. It's a bug in application.");
     return d->filterImporter;
 }
 
