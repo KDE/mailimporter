@@ -19,15 +19,19 @@
 #define FILTERIMPORTERAKONADI_H
 
 #include <MailImporter/FilterImporterBase>
+#include <Akonadi/KMime/MessageStatus>
+
 #include "mailimporter_export.h"
 #include <QString>
 class MAILIMPORTER_EXPORT FilterImporterAkonadi : public MailImporter::FilterImporterBase
 {
 public:
-    FilterImporterAkonadi();
+    FilterImporterAkonadi(MailImporter::FilterInfo *info);
     ~FilterImporterAkonadi();
 
     bool importMessage(const QString &folderName, const QString &msgPath, bool duplicateCheck, const MailImporter::MessageStatus &status) Q_DECL_OVERRIDE;
+private:
+    static Akonadi::MessageStatus convertToAkonadiMessageStatus(const MailImporter::MessageStatus &status);
 };
 
 #endif // FILTERIMPORTERAKONADI_H

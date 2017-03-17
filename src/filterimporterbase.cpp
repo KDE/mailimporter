@@ -19,7 +19,8 @@
 
 using namespace MailImporter;
 
-FilterImporterBase::FilterImporterBase()
+FilterImporterBase::FilterImporterBase(MailImporter::FilterInfo *info)
+    : mInfo(info)
 {
 
 }

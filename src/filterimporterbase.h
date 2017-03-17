@@ -24,15 +24,18 @@
 
 namespace MailImporter
 {
+class FilterInfo;
 class MAILIMPORTER_EXPORT FilterImporterBase
 {
 public:
-    FilterImporterBase();
+    explicit FilterImporterBase(MailImporter::FilterInfo *info);
     virtual ~FilterImporterBase();
     virtual bool importMessage(const QString &folderName,
                               const QString &msgPath,
                               bool duplicateCheck,
                               const MailImporter::MessageStatus& status);
+protected:
+    MailImporter::FilterInfo *mInfo;
 };
 }
 #endif // FILTERIMPORTERBASE_H
