@@ -53,9 +53,20 @@ void FilterImporterAkonadi::clear()
 
 Akonadi::MessageStatus FilterImporterAkonadi::convertToAkonadiMessageStatus(const MailImporter::MessageStatus &status)
 {
-
-    //TODO
-    return Akonadi::MessageStatus();
+    Akonadi::MessageStatus akonadiStatus;
+    if (status.isDeleted()) {
+        akonadiStatus.setDeleted(true);
+    }
+    if (status.isRead()) {
+        akonadiStatus.setRead(true);
+    }
+    if (status.isForwarded()) {
+        akonadiStatus.setForwarded(true);
+    }
+    if (status.isReplied()) {
+        akonadiStatus.setReplied(true);
+    }
+    return akonadiStatus;
 }
 
 bool FilterImporterAkonadi::importMessage(const QString &folderName, const QString &msgPath, bool duplicateCheck, const MailImporter::MessageStatus &mailImporterstatus)
