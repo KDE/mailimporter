@@ -36,6 +36,11 @@ public:
     void clearCountDuplicate() Q_DECL_OVERRIDE;
     int countDuplicates() const Q_DECL_OVERRIDE;
     static Akonadi::MessageStatus convertToAkonadiMessageStatus(const MailImporter::MessageStatus &status);
+
+    Akonadi::Collection rootCollection() const;
+    void setRootCollection(const Akonadi::Collection &collection);
+
+
 private:
     /**
     * Creates a hierachy of collections based on the given path string. The collection
@@ -68,6 +73,7 @@ private:
 
     QMultiMap<QString, QString> mMessageFolderMessageIDMap;
     QMap<QString, Akonadi::Collection> mMessageFolderCollectionMap;
+    Akonadi::Collection mRootCollection;
     int mCountDuplicates;
 };
 

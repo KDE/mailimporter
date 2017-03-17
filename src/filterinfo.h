@@ -19,9 +19,9 @@
  ***************************************************************************/
 /* Copyright (c) 2012-2017 Montel Laurent <montel@kde.org>                      */
 
-#include <AkonadiCore/Collection>
-
 #include "mailimporter_export.h"
+#include <QString>
+#include <QObject>
 namespace MailImporter
 {
 
@@ -49,9 +49,6 @@ public:
     static void terminateASAP();
     bool shouldTerminate() const;
     QString rootCollectionName() const;
-
-    Akonadi::Collection rootCollection() const;
-    void setRootCollection(const Akonadi::Collection &collection);
 
     QWidget *parentWidget() const;
     void setRemoveDupMessage(bool removeDupMessage);

@@ -69,6 +69,16 @@ Akonadi::MessageStatus FilterImporterAkonadi::convertToAkonadiMessageStatus(cons
     return akonadiStatus;
 }
 
+Akonadi::Collection FilterImporterAkonadi::rootCollection() const
+{
+    return mRootCollection;
+}
+
+void FilterImporterAkonadi::setRootCollection(const Akonadi::Collection &collection)
+{
+    mRootCollection = collection;
+}
+
 bool FilterImporterAkonadi::importMessage(const QString &folderName, const QString &msgPath, bool duplicateCheck, const MailImporter::MessageStatus &mailImporterstatus)
 {
     const Akonadi::MessageStatus status = convertToAkonadiMessageStatus(mailImporterstatus);
@@ -117,7 +127,7 @@ bool FilterImporterAkonadi::importMessage(const QString &folderName, const QStri
             addAkonadiMessage(mailFolder, newMessage, status);
         } else {
             mInfo->alert(i18n("<b>Warning:</b> Got a bad message folder, adding to root folder."));
-            addAkonadiMessage(mInfo->rootCollection(), newMessage, status);
+            addAkonadiMessage(rootCollection(), newMessage, status);
         }
     } else {
         qCWarning(MAILIMPORTER_LOG) << "Url is not temporary file: " << msgUrl;
@@ -141,7 +151,7 @@ Akonadi::Collection FilterImporterAkonadi::parseFolderString(const QString &fold
     // Create each folder on the folder list and add it the map.
     for (const QString &folder : folderList) {
         if (isFirst) {
-            mMessageFolderCollectionMap[folder] = addSubCollection(mInfo->rootCollection(), folder);
+            mMessageFolderCollectionMap[folder] = addSubCollection(rootCollection(), folder);
             folderBuilder = folder;
             lastCollection = mMessageFolderCollectionMap[folder];
             isFirst = false;

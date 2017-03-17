@@ -34,7 +34,6 @@ public:
         delete m_filterInfoGui;
         m_filterInfoGui = 0;
     }
-    Akonadi::Collection m_rootCollection;
     bool m_removeDupMsg;
     FilterInfoGui *m_filterInfoGui;
     static bool s_terminateASAP;
@@ -138,21 +137,6 @@ void FilterInfo::terminateASAP()
 bool FilterInfo::shouldTerminate() const
 {
     return Private::s_terminateASAP;
-}
-
-QString FilterInfo::rootCollectionName() const
-{
-    return d->m_rootCollection.name();
-}
-
-Akonadi::Collection FilterInfo::rootCollection() const
-{
-    return d->m_rootCollection;
-}
-
-void FilterInfo::setRootCollection(const Akonadi::Collection &collection)
-{
-    d->m_rootCollection = collection;
 }
 
 void FilterInfo::setRemoveDupMessage(bool removeDupMessage)
