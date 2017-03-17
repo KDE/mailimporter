@@ -17,8 +17,17 @@
 
 #include "filterimporterakonadi.h"
 #include "mailimporter_debug.h"
+#include <MailImporter/FilterInfo>
 #include <AkonadiCore/Collection>
-#include <KMime/Message>
+#include <AkonadiCore/Item>
+#include <Akonadi/KMime/MessageFlags>
+#include <AkonadiCore/CollectionFetchJob>
+#include <AkonadiCore/ItemCreateJob>
+#include <QScopedPointer>
+#include <AkonadiCore/CollectionCreateJob>
+#include <QUrl>
+#include <KLocalizedString>
+#include <QFile>
 
 FilterImporterAkonadi::FilterImporterAkonadi(MailImporter::FilterInfo *info)
     : MailImporter::FilterImporterBase(info)
@@ -31,6 +40,12 @@ FilterImporterAkonadi::~FilterImporterAkonadi()
 
 }
 
+void FilterImporterAkonadi::clear()
+{
+    mMessageFolderMessageIDMap.clear();
+    mMessageFolderCollectionMap.clear();
+}
+
 Akonadi::MessageStatus FilterImporterAkonadi::convertToAkonadiMessageStatus(const MailImporter::MessageStatus &status)
 {
 
@@ -38,9 +53,9 @@ Akonadi::MessageStatus FilterImporterAkonadi::convertToAkonadiMessageStatus(cons
     return Akonadi::MessageStatus();
 }
 
-bool FilterImporterAkonadi::importMessage(const QString &folderName, const QString &msgPath, bool duplicateCheck, const MailImporter::MessageStatus &status)
+bool FilterImporterAkonadi::importMessage(const QString &folderName, const QString &msgPath, bool duplicateCheck, const MailImporter::MessageStatus &mailImporterstatus)
 {
-#if 0
+    const Akonadi::MessageStatus status = convertToAkonadiMessageStatus(mailImporterstatus);
     QString messageID;
     // Create the mail folder (if not already created).
     Akonadi::Collection mailFolder = parseFolderString(folderName);
@@ -75,7 +90,7 @@ bool FilterImporterAkonadi::importMessage(const QString &folderName, const QStri
             if (!messageID.isEmpty()) {
                 // Check for duplicate.
                 if (checkForDuplicates(messageID, mailFolder, folderName)) {
-                    d->count_duplicates++;
+                    //FIXME d->count_duplicates++;
                     return false;
                 }
             }
@@ -86,21 +101,18 @@ bool FilterImporterAkonadi::importMessage(const QString &folderName, const QStri
             addAkonadiMessage(mailFolder, newMessage, status);
         } else {
             mInfo->alert(i18n("<b>Warning:</b> Got a bad message folder, adding to root folder."));
-            addAkonadiMessage(d->filterInfo->rootCollection(), newMessage, status);
+            addAkonadiMessage(mInfo->rootCollection(), newMessage, status);
         }
     } else {
         qCWarning(MAILIMPORTER_LOG) << "Url is not temporary file: " << msgUrl;
     }
     return true;
-#else
-    return false;
-#endif
 }
 Akonadi::Collection FilterImporterAkonadi::parseFolderString(const QString &folderParseString)
 {
 #if 0
     // Return an already created collection:
-    const Akonadi::Collection col = d->messageFolderCollectionMap.value(folderParseString);
+    const Akonadi::Collection col = mMessageFolderCollectionMap.value(folderParseString);
     if (col.isValid()) {
         return col;
     }
@@ -114,28 +126,32 @@ Akonadi::Collection FilterImporterAkonadi::parseFolderString(const QString &fold
     // Create each folder on the folder list and add it the map.
     for (const QString &folder : folderList) {
         if (isFirst) {
-            d->messageFolderCollectionMap[folder] = addSubCollection(d->filterInfo->rootCollection(), folder);
+            mMessageFolderCollectionMap[folder] = addSubCollection(d->filterInfo->rootCollection(), folder);
             folderBuilder = folder;
-            lastCollection = d->messageFolderCollectionMap[folder];
+            lastCollection = mMessageFolderCollectionMap[folder];
             isFirst = false;
         } else {
             folderBuilder += QLatin1Char('/') + folder;
-            d->messageFolderCollectionMap[folderBuilder] = addSubCollection(lastCollection, folder);
-            lastCollection = d->messageFolderCollectionMap[folderBuilder];
+            mMessageFolderCollectionMap[folderBuilder] = addSubCollection(lastCollection, folder);
+            lastCollection = mMessageFolderCollectionMap[folderBuilder];
         }
     }
 
     return lastCollection;
+#else
+    return {};
+#endif
 }
 
-Akonadi::Collection Filter::addSubCollection(const Akonadi::Collection &baseCollection,
+Akonadi::Collection FilterImporterAkonadi::addSubCollection(const Akonadi::Collection &baseCollection,
         const QString &newCollectionPathName)
 {
+#if 0
     // Ensure that the collection doesn't already exsit, if it does just return it.
     Akonadi::CollectionFetchJob *fetchJob = new Akonadi::CollectionFetchJob(baseCollection,
             Akonadi::CollectionFetchJob::FirstLevel);
     if (!fetchJob->exec()) {
-        d->filterInfo->alert(i18n("<b>Warning:</b> Could not check that the folder already exists. Reason: %1",
+        mInfo->alert(i18n("<b>Warning:</b> Could not check that the folder already exists. Reason: %1",
                                   fetchJob->errorString()));
         return Akonadi::Collection();
     }
@@ -154,7 +170,7 @@ Akonadi::Collection Filter::addSubCollection(const Akonadi::Collection &baseColl
     QScopedPointer<Akonadi::CollectionCreateJob> job(new Akonadi::CollectionCreateJob(newSubCollection));
     job->setAutoDelete(false);
     if (!job->exec()) {
-        d->filterInfo->alert(i18n("<b>Error:</b> Could not create folder. Reason: %1",
+        mInfo->alert(i18n("<b>Error:</b> Could not create folder. Reason: %1",
                                   job->errorString()));
         return Akonadi::Collection();
     }
@@ -174,8 +190,8 @@ bool FilterImporterAkonadi::checkForDuplicates(const QString &msgID,
     bool folderFound = false;
 
     // Check if the contents of this collection have already been found.
-    QMultiMap<QString, QString>::const_iterator end(d->messageFolderMessageIDMap.constEnd());
-    for (QMultiMap<QString, QString>::const_iterator it = d->messageFolderMessageIDMap.constBegin(); it != end; ++it) {
+    QMultiMap<QString, QString>::const_iterator end(mMessageFolderMessageIDMap.constEnd());
+    for (QMultiMap<QString, QString>::const_iterator it = mMessageFolderMessageIDMap.constBegin(); it != end; ++it) {
         if (it.key() == messageFolder) {
             folderFound = true;
             break;
@@ -188,13 +204,13 @@ bool FilterImporterAkonadi::checkForDuplicates(const QString &msgID,
             Akonadi::ItemFetchJob job(msgCollection);
             job.fetchScope().fetchPayloadPart(Akonadi::MessagePart::Header);
             if (!job.exec()) {
-                d->filterInfo->addInfoLogEntry(i18n("<b>Warning:</b> Could not fetch mail in folder %1. Reason: %2"
+                mInfo->addInfoLogEntry(i18n("<b>Warning:</b> Could not fetch mail in folder %1. Reason: %2"
                                                     " You may have duplicate messages.", messageFolder, job.errorString()));
             } else {
                 const Akonadi::Item::List items = job.items();
                 for (const Akonadi::Item &messageItem : items) {
                     if (!messageItem.isValid()) {
-                        d->filterInfo->addInfoLogEntry(i18n("<b>Warning:</b> Got an invalid message in folder %1.", messageFolder));
+                        mInfo->>addInfoLogEntry(i18n("<b>Warning:</b> Got an invalid message in folder %1.", messageFolder));
                     } else {
                         if (!messageItem.hasPayload<KMime::Message::Ptr>()) {
                             continue;
@@ -203,7 +219,7 @@ bool FilterImporterAkonadi::checkForDuplicates(const QString &msgID,
                         const KMime::Headers::Base *messageID = message->messageID(false);
                         if (messageID) {
                             if (!messageID->isEmpty()) {
-                                d->messageFolderMessageIDMap.insert(messageFolder, messageID->asUnicodeString());
+                                mMessageFolderMessageIDMap.insert(messageFolder, messageID->asUnicodeString());
                             }
                         }
                     }
@@ -213,8 +229,8 @@ bool FilterImporterAkonadi::checkForDuplicates(const QString &msgID,
     }
 
     // Check if this message has a duplicate
-    QMultiMap<QString, QString>::const_iterator endMsgID(d->messageFolderMessageIDMap.constEnd());
-    for (QMultiMap<QString, QString>::const_iterator it = d->messageFolderMessageIDMap.constBegin(); it != endMsgID; ++it) {
+    QMultiMap<QString, QString>::const_iterator endMsgID(mMessageFolderMessageIDMap.constEnd());
+    for (QMultiMap<QString, QString>::const_iterator it = mMessageFolderMessageIDMap.constBegin(); it != endMsgID; ++it) {
         if (it.key() == messageFolder &&
                 it.value() == msgID) {
             return true;
@@ -222,9 +238,40 @@ bool FilterImporterAkonadi::checkForDuplicates(const QString &msgID,
     }
 
     // The message isn't a duplicate, but add it to the map for checking in the future.
-    d->messageFolderMessageIDMap.insert(messageFolder, msgID);
+    mMessageFolderMessageIDMap.insert(messageFolder, msgID);
     return false;
 #else
     return false;
 #endif
+}
+
+bool FilterImporterAkonadi::addAkonadiMessage(const Akonadi::Collection &collection,
+                               const KMime::Message::Ptr &message, Akonadi::MessageStatus status)
+{
+    Akonadi::Item item;
+
+    item.setMimeType(QStringLiteral("message/rfc822"));
+
+    if (status.isOfUnknownStatus()) {
+        KMime::Headers::Base *statusHeaders = message->headerByType("X-Status");
+        if (statusHeaders) {
+            if (!statusHeaders->isEmpty()) {
+                status.setStatusFromStr(statusHeaders->asUnicodeString());
+                item.setFlags(status.statusFlags());
+            }
+        }
+    } else {
+        item.setFlags(status.statusFlags());
+    }
+
+    Akonadi::MessageFlags::copyMessageFlags(*message, item);
+    item.setPayload<KMime::Message::Ptr>(message);
+    QScopedPointer<Akonadi::ItemCreateJob> job(new Akonadi::ItemCreateJob(item, collection));
+    job->setAutoDelete(false);
+    if (!job->exec()) {
+        mInfo->alert(i18n("<b>Error:</b> Could not add message to folder %1. Reason: %2",
+                                  collection.name(), job->errorString()));
+        return false;
+    }
+    return true;
 }

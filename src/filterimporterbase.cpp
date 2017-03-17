@@ -16,6 +16,7 @@
 */
 
 #include "filterimporterbase.h"
+#include <MailImporter/FilterInfo>
 
 using namespace MailImporter;
 
