@@ -23,6 +23,9 @@
 #include <Akonadi/KMime/MessageFlags>
 #include <AkonadiCore/CollectionFetchJob>
 #include <AkonadiCore/ItemCreateJob>
+#include <AkonadiCore/ItemFetchJob>
+#include <Akonadi/KMime/MessageParts>
+#include <AkonadiCore/ItemFetchScope>
 #include <QScopedPointer>
 #include <AkonadiCore/CollectionCreateJob>
 #include <QUrl>
@@ -110,7 +113,6 @@ bool FilterImporterAkonadi::importMessage(const QString &folderName, const QStri
 }
 Akonadi::Collection FilterImporterAkonadi::parseFolderString(const QString &folderParseString)
 {
-#if 0
     // Return an already created collection:
     const Akonadi::Collection col = mMessageFolderCollectionMap.value(folderParseString);
     if (col.isValid()) {
@@ -126,7 +128,7 @@ Akonadi::Collection FilterImporterAkonadi::parseFolderString(const QString &fold
     // Create each folder on the folder list and add it the map.
     for (const QString &folder : folderList) {
         if (isFirst) {
-            mMessageFolderCollectionMap[folder] = addSubCollection(d->filterInfo->rootCollection(), folder);
+            mMessageFolderCollectionMap[folder] = addSubCollection(mInfo->rootCollection(), folder);
             folderBuilder = folder;
             lastCollection = mMessageFolderCollectionMap[folder];
             isFirst = false;
@@ -138,15 +140,11 @@ Akonadi::Collection FilterImporterAkonadi::parseFolderString(const QString &fold
     }
 
     return lastCollection;
-#else
-    return {};
-#endif
 }
 
 Akonadi::Collection FilterImporterAkonadi::addSubCollection(const Akonadi::Collection &baseCollection,
         const QString &newCollectionPathName)
 {
-#if 0
     // Ensure that the collection doesn't already exsit, if it does just return it.
     Akonadi::CollectionFetchJob *fetchJob = new Akonadi::CollectionFetchJob(baseCollection,
             Akonadi::CollectionFetchJob::FirstLevel);
@@ -177,16 +175,12 @@ Akonadi::Collection FilterImporterAkonadi::addSubCollection(const Akonadi::Colle
     // Return the newly created collection
     Akonadi::Collection collection = job->collection();
     return collection;
-#else
-    return {};
-#endif
 }
 
 bool FilterImporterAkonadi::checkForDuplicates(const QString &msgID,
                                 const Akonadi::Collection &msgCollection,
                                 const QString &messageFolder)
 {
-#if 0
     bool folderFound = false;
 
     // Check if the contents of this collection have already been found.
@@ -210,7 +204,7 @@ bool FilterImporterAkonadi::checkForDuplicates(const QString &msgID,
                 const Akonadi::Item::List items = job.items();
                 for (const Akonadi::Item &messageItem : items) {
                     if (!messageItem.isValid()) {
-                        mInfo->>addInfoLogEntry(i18n("<b>Warning:</b> Got an invalid message in folder %1.", messageFolder));
+                        mInfo->addInfoLogEntry(i18n("<b>Warning:</b> Got an invalid message in folder %1.", messageFolder));
                     } else {
                         if (!messageItem.hasPayload<KMime::Message::Ptr>()) {
                             continue;
@@ -240,9 +234,6 @@ bool FilterImporterAkonadi::checkForDuplicates(const QString &msgID,
     // The message isn't a duplicate, but add it to the map for checking in the future.
     mMessageFolderMessageIDMap.insert(messageFolder, msgID);
     return false;
-#else
-    return false;
-#endif
 }
 
 bool FilterImporterAkonadi::addAkonadiMessage(const Akonadi::Collection &collection,
