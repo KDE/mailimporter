@@ -27,9 +27,12 @@ set(libmailimporter_SRCS
     filterinfo.cpp
     filters.cpp
     filterimporterbase.cpp
-    filterimporterakonadi.cpp
     othermailerutil.cpp
     selectthunderbirdprofilewidget.cpp
+    )
+
+set(libmailimporter_akonadi_SRCS
+    akonadi/filterimporterakonadi.cpp
     )
 
 ki18n_wrap_ui(libmailimporter_SRCS ui/importmailswidget.ui ui/selectthunderbirdprofilewidget.ui)
@@ -39,6 +42,7 @@ ecm_qt_declare_logging_category(libmailimporter_SRCS HEADER mailimporter_debug.h
 add_library(KF5MailImporter
     ${libmailimporter_SRCS}
     ${libmailimporter_filters_SRCS}
+    ${libmailimporter_akonadi_SRCS}
     )
 
 generate_export_header( KF5MailImporter BASE_NAME mailimporter)
@@ -77,7 +81,6 @@ install(TARGETS
 ecm_generate_headers(MailImporter_CamelCase_HEADERS
     HEADER_NAMES
     FilterImporterBase
-    FilterImporterAkonadi
     FilterInfoGui
     OtherMailerUtil
     ImportMailsWidget
@@ -115,6 +118,14 @@ ecm_generate_headers(MailImporter_FiltersCamelCase_HEADERS
     RELATIVE filters
     )
 
+ecm_generate_headers(MailImporter_AkonadiCamelCase_HEADERS
+    HEADER_NAMES
+    FilterImporterAkonadi
+    REQUIRED_HEADERS MailImporter_Akonadi_HEADERS
+    PREFIX MailImporter
+    RELATIVE akonadi
+    )
+
 
 ecm_generate_pri_file(BASE_NAME MailImporter
     LIB_NAME KF5MailImpoter
@@ -125,6 +136,7 @@ ecm_generate_pri_file(BASE_NAME MailImporter
 install(FILES
     ${MailImporter_CamelCase_HEADERS}
     ${MailImporter_FiltersCamelCase_HEADERS}
+    ${MailImporter_AkonadiCamelCase_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/MailImporter
     COMPONENT Devel
     )
@@ -133,6 +145,7 @@ install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/mailimporter_export.h
     ${MailImporter_HEADERS}
     ${MailImporter_Filters_HEADERS}
+    ${MailImporter_Akonadi_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/mailimporter
     COMPONENT Devel
     )
