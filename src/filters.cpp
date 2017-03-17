@@ -53,7 +53,8 @@ public:
           author(_author),
           info(_info),
           count_duplicates(0),
-          filterInfo(0)
+          filterImporter(nullptr),
+          filterInfo(nullptr)
     {
     }
     ~Private()
@@ -67,6 +68,7 @@ public:
     QMap<QString, Akonadi::Collection> messageFolderCollectionMap;
     int count_duplicates; //to count all duplicate messages
 
+    MailImporter::FilterImporterBase *filterImporter;
     MailImporter::FilterInfo *filterInfo;
 };
 
@@ -111,6 +113,16 @@ MailImporter::FilterInfo *Filter::filterInfo() const
         qCDebug(MAILIMPORTER_LOG) << " filterInfo must never be null. You forgot to create a filterinfo";
     }
     return d->filterInfo;
+}
+
+void Filter::setFilterImporter(FilterImporterBase *importer)
+{
+    d->filterImporter = importer;
+}
+
+FilterImporterBase *Filter::filterImporter() const
+{
+    return d->filterImporter;
 }
 
 void Filter::clearCountDuplicate()

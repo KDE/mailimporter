@@ -30,6 +30,7 @@
 #include <Collection>
 #include <KMime/KMimeMessage>
 #include <Akonadi/KMime/MessageStatus>
+#include <MailImporter/FilterImporterBase>
 
 #include <QDir>
 
@@ -55,6 +56,10 @@ public:
     void setFilterInfo(MailImporter::FilterInfo *info);
 
     MailImporter::FilterInfo *filterInfo() const;
+
+    void setFilterImporter(MailImporter::FilterImporterBase *importer);
+    MailImporter::FilterImporterBase *filterImporter() const;
+
 
     void clearCountDuplicate();
     int countDuplicates() const;
