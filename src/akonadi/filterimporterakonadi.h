@@ -35,8 +35,8 @@ public:
     void clear() Q_DECL_OVERRIDE;
     void clearCountDuplicate() Q_DECL_OVERRIDE;
     int countDuplicates() const Q_DECL_OVERRIDE;
-private:
     static Akonadi::MessageStatus convertToAkonadiMessageStatus(const MailImporter::MessageStatus &status);
+private:
     Akonadi::Collection parseFolderString(const QString &folderParseString);
     bool checkForDuplicates(const QString &msgID,
                                     const Akonadi::Collection &msgCollection,
