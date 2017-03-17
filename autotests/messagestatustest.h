@@ -26,6 +26,10 @@ class MessageStatusTest : public QObject
 public:
     explicit MessageStatusTest(QObject *parent = nullptr);
     ~MessageStatusTest() = default;
+private Q_SLOTS:
+    void shouldHaveDefaultValues();
+    void shouldAssignValues();
+    void shouldAssignValues_data();
 };
 
 #endif // MESSAGESTATUSTEST_H
