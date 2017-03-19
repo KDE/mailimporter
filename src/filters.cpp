@@ -20,16 +20,6 @@
 #include "filters.h"
 #include "filterinfo.h"
 
-// Akonadi Includes
-#include <CollectionFetchJob>
-#include <Item>
-#include <ItemCreateJob>
-#include <ItemFetchJob>
-#include <ItemFetchScope>
-#include <CollectionCreateJob>
-#include <Akonadi/KMime/MessageParts>
-#include <Akonadi/KMime/MessageFlags>
-
 // KDE Includes
 #include <QUrl>
 #include <KLocalizedString>
