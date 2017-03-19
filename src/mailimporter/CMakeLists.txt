@@ -2,10 +2,10 @@
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5MailImporter")
 
 configure_package_config_file(
-  "${CMAKE_CURRENT_SOURCE_DIR}/KF5MailImporterConfig.cmake.in"
-  "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterConfig.cmake"
-  INSTALL_DESTINATION  ${CMAKECONFIG_INSTALL_DIR}
-)
+    "${CMAKE_CURRENT_SOURCE_DIR}/KF5MailImporterConfig.cmake.in"
+    "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterConfig.cmake"
+    INSTALL_DESTINATION  ${CMAKECONFIG_INSTALL_DIR}
+    )
 
 ecm_setup_version(PROJECT VARIABLE_PREFIX MAILIMPORTER
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/mailimporter_version.h"
@@ -14,18 +14,18 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX MAILIMPORTER
     )
 
 install(FILES
-  "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterConfig.cmake"
-  "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterConfigVersion.cmake"
-  DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
-  COMPONENT Devel
-)
+    "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterConfig.cmake"
+    "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterConfigVersion.cmake"
+    DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
+    COMPONENT Devel
+    )
 
 install(EXPORT KF5MailImporterTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KF5MailImporterTargets.cmake NAMESPACE KF5::)
 
 install(FILES
-   ${CMAKE_CURRENT_BINARY_DIR}/mailimporter_version.h
-  DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5} COMPONENT Devel
-)
+    ${CMAKE_CURRENT_BINARY_DIR}/mailimporter_version.h
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5} COMPONENT Devel
+    )
 
 
 set(libmailimporter_filters_SRCS
@@ -61,7 +61,7 @@ set(libmailimporter_SRCS
     selectthunderbirdprofilewidget.cpp
     )
 
-    
+
 ki18n_wrap_ui(libmailimporter_SRCS ui/importmailswidget.ui ui/selectthunderbirdprofilewidget.ui)
 
 ecm_qt_declare_logging_category(libmailimporter_SRCS HEADER mailimporter_debug.h IDENTIFIER MAILIMPORTER_LOG CATEGORY_NAME org.kde.pim.mailimporter)

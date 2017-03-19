@@ -2,10 +2,10 @@
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5MailImporterAkonadi")
 
 configure_package_config_file(
-  "${CMAKE_CURRENT_SOURCE_DIR}/KF5MailImporterAkonadiConfig.cmake.in"
-  "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterAkonadiConfig.cmake"
-  INSTALL_DESTINATION  ${CMAKECONFIG_INSTALL_DIR}
-)
+    "${CMAKE_CURRENT_SOURCE_DIR}/KF5MailImporterAkonadiConfig.cmake.in"
+    "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterAkonadiConfig.cmake"
+    INSTALL_DESTINATION  ${CMAKECONFIG_INSTALL_DIR}
+    )
 
 ecm_setup_version(PROJECT VARIABLE_PREFIX MAILIMPORTER
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/mailimporterakonadi_version.h"
@@ -14,18 +14,18 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX MAILIMPORTER
     )
 
 install(FILES
-  "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterAkonadiConfig.cmake"
-  "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterAkonadiConfigVersion.cmake"
-  DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
-  COMPONENT Devel
-)
+    "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterAkonadiConfig.cmake"
+    "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterAkonadiConfigVersion.cmake"
+    DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
+    COMPONENT Devel
+    )
 
 install(EXPORT KF5MailImporterAkonadiTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KF5MailImporterAkonadiTargets.cmake NAMESPACE KF5::)
 
 install(FILES
-   ${CMAKE_CURRENT_BINARY_DIR}/mailimporterakonadi_version.h
-  DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5} COMPONENT Devel
-)
+    ${CMAKE_CURRENT_BINARY_DIR}/mailimporterakonadi_version.h
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5} COMPONENT Devel
+    )
 
 set(libmailimporterakonadi_SRCS
     filterimporterakonadi.cpp
@@ -48,8 +48,8 @@ target_include_directories(KF5MailImporterAkonadi PUBLIC "$<BUILD_INTERFACE:${Ma
 target_link_libraries(KF5MailImporterAkonadi
     PUBLIC
     KF5::MailImporter
-    PRIVATE
     KF5::AkonadiCore
+    PRIVATE
     KF5::AkonadiMime
     KF5::I18n
     )
@@ -76,7 +76,7 @@ ecm_generate_headers(MailImporter_AkonadiCamelCase_HEADERS
 
 ecm_generate_pri_file(BASE_NAME MailImporterAkonadi
     LIB_NAME KF5MailImporterAkonadi
-    DEPS "MailImporter" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/MailImporter
+    DEPS "MailImporter AkonadiCore" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/MailImporterAkonadi
     )
 
 
