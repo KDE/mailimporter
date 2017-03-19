@@ -1,3 +1,31 @@
+########### CMake Config Files ###########
+set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5MailImporterAkonadi")
+
+configure_package_config_file(
+  "${CMAKE_CURRENT_SOURCE_DIR}/KF5MailImporterAkonadiConfig.cmake.in"
+  "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterAkonadiConfig.cmake"
+  INSTALL_DESTINATION  ${CMAKECONFIG_INSTALL_DIR}
+)
+
+ecm_setup_version(PROJECT VARIABLE_PREFIX MAILIMPORTER
+    VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/mailimporterakonadi_version.h"
+    PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterAkonadiConfigVersion.cmake"
+    SOVERSION 5
+    )
+
+install(FILES
+  "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterAkonadiConfig.cmake"
+  "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterAkonadiConfigVersion.cmake"
+  DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
+  COMPONENT Devel
+)
+
+install(EXPORT KF5MailImporterAkonadiTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KF5MailImporterAkonadiTargets.cmake NAMESPACE KF5::)
+
+install(FILES
+   ${CMAKE_CURRENT_BINARY_DIR}/mailimporterakonadi_version.h
+  DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5} COMPONENT Devel
+)
 
 set(libmailimporterakonadi_SRCS
     filterimporterakonadi.cpp
