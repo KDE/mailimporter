@@ -16,7 +16,7 @@
 */
 
 #include "filterimporterakonadi.h"
-#include "mailimporter_debug.h"
+#include "mailimporterakonadi_debug.h"
 #include <MailImporter/FilterInfo>
 #include <AkonadiCore/Collection>
 #include <AkonadiCore/Item>
@@ -98,7 +98,7 @@ bool FilterImporterAkonadi::importMessage(const QString &folderName, const QStri
         QFile f(msgUrl.toLocalFile());
         QByteArray msgText;
         if (!f.open(QIODevice::ReadOnly)) {
-            qCWarning(MAILIMPORTER_LOG) << "Failed to read temporary file: " << f.errorString();
+            qCWarning(MAILIMPORTERAKONADI_LOG) << "Failed to read temporary file: " << f.errorString();
         } else {
             msgText = f.readAll();
             f.close();
@@ -137,7 +137,7 @@ bool FilterImporterAkonadi::importMessage(const QString &folderName, const QStri
             addAkonadiMessage(rootCollection(), newMessage, status);
         }
     } else {
-        qCWarning(MAILIMPORTER_LOG) << "Url is not temporary file: " << msgUrl;
+        qCWarning(MAILIMPORTERAKONADI_LOG) << "Url is not temporary file: " << msgUrl;
     }
     return true;
 }

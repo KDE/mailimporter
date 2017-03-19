@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-set(PIM_VERSION "5.4.81")
+set(PIM_VERSION "5.4.82")
 
 project(MailImporter VERSION ${PIM_VERSION})
 
