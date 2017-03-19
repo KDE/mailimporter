@@ -22,11 +22,11 @@
 #include <Akonadi/KMime/MessageStatus>
 #include <AkonadiCore/Collection>
 #include <KMime/Message>
-#include "mailimporter_export.h"
+#include "mailimporterakonadi_export.h"
 #include <QString>
 namespace MailImporter
 {
-class MAILIMPORTER_EXPORT FilterImporterAkonadi : public MailImporter::FilterImporterBase
+class MAILIMPORTERAKONADI_EXPORT FilterImporterAkonadi : public MailImporter::FilterImporterBase
 {
 public:
     FilterImporterAkonadi(MailImporter::FilterInfo *info);
