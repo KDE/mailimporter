@@ -56,9 +56,6 @@ if(BUILD_TESTING)
 endif(BUILD_TESTING)
 
 add_subdirectory(src)
-if (BUILD_TESTING)
-   add_subdirectory(autotests)
-endif()
 
 install( FILES mailimporter.renamecategories mailimporter.categories DESTINATION ${KDE_INSTALL_CONFDIR} )
 
