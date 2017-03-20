@@ -46,7 +46,7 @@ private:
     Ui::SelectThunderbirdProfileWidget *ui;
 };
 
-class SelectThunderbirdProfileDialog : public QDialog
+class MAILIMPORTER_TESTS_EXPORT SelectThunderbirdProfileDialog : public QDialog
 {
     Q_OBJECT
 public:
