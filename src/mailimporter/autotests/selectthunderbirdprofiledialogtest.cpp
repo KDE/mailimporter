@@ -17,13 +17,24 @@
 
 
 #include "selectthunderbirdprofiledialogtest.h"
+#include "../selectthunderbirdprofilewidget.h"
 
 #include <QTest>
+#include <QDialogButtonBox>
 
 SelectThunderbirdProfileDialogTest::SelectThunderbirdProfileDialogTest(QObject *parent)
     : QObject(parent)
 {
 
+}
+
+void SelectThunderbirdProfileDialogTest::shouldHaveDefaultValue()
+{
+    MailImporter::SelectThunderbirdProfileDialog dlg;
+    MailImporter::SelectThunderbirdProfileWidget *widget = dlg.findChild<MailImporter::SelectThunderbirdProfileWidget *>(QStringLiteral("selectprofile"));
+    QVERIFY(widget);
+    QDialogButtonBox *buttonBox = dlg.findChild<QDialogButtonBox *>(QStringLiteral("buttonBox"));
+    QVERIFY(buttonBox);
 }
 
 QTEST_MAIN(SelectThunderbirdProfileDialogTest)

@@ -26,6 +26,8 @@ class SelectThunderbirdProfileDialogTest : public QObject
 public:
     explicit SelectThunderbirdProfileDialogTest(QObject *parent = nullptr);
     ~SelectThunderbirdProfileDialogTest() = default;
+private Q_SLOTS:
+    void shouldHaveDefaultValue();
 };
 
 #endif // SELECTTHUNDERBIRDPROFILEDIALOGTEST_H
