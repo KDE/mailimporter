@@ -97,6 +97,7 @@ void Filter::setFilterInfo(FilterInfo *info)
 MailImporter::FilterInfo *Filter::filterInfo() const
 {
     if (!d->filterInfo) {
+        Q_ASSERT_X(d->filterInfo != nullptr, "Filter::filterInfo", "filterInfo was not settings. It's a bug in application.");
         qCDebug(MAILIMPORTER_LOG) << " filterInfo must never be null. You forgot to create a filterinfo";
     }
     return d->filterInfo;
