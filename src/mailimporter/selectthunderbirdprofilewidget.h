@@ -19,6 +19,7 @@
 #define SELECTTHUNDERBIRDPROFILEWIDGET_H
 
 #include <QDialog>
+#include "mailimporter_private_export.h"
 
 #include <QMap>
 
@@ -30,7 +31,7 @@ class SelectThunderbirdProfileWidget;
 namespace MailImporter
 {
 
-class SelectThunderbirdProfileWidget : public QWidget
+class MAILIMPORTER_TESTS_EXPORT SelectThunderbirdProfileWidget : public QWidget
 {
     Q_OBJECT
 
