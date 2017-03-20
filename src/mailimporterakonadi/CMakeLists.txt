@@ -96,3 +96,7 @@ install(FILES
     ${PRI_FILENAME}
     DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
 
+if (BUILD_TESTING)
+   add_subdirectory(autotests)
+endif()
+

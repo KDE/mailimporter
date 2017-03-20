@@ -13,6 +13,5 @@ add_mailimporter_unittest(filterclawsmailtest.cpp "filterimportertest.cpp")
 add_mailimporter_unittest(filtersylpheedtest.cpp "filterimportertest.cpp")
 
 add_mailimporter_unittest(messagestatustest.cpp "")
-add_mailimporter_unittest(filterimporterakonaditest.cpp "")
 add_mailimporter_unittest(selectthunderbirdprofiledialogtest.cpp "")
 

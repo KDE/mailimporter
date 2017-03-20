@@ -17,7 +17,7 @@
 
 #include "filtersylpheedtest.h"
 #include "../filters/filtersylpheed.h"
-#include "filterimporterakonaditest.h"
+#include "filterimportertest.h"
 #include <qtest.h>
 
 FilterSylpheedTest::FilterSylpheedTest(QObject *parent)
