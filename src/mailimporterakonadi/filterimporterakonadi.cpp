@@ -97,11 +97,11 @@ bool FilterImporterAkonadi::importMessage(const QString &folderName, const QStri
 
         QFile f(msgUrl.toLocalFile());
         QByteArray msgText;
-        if (!f.open(QIODevice::ReadOnly)) {
-            qCWarning(MAILIMPORTERAKONADI_LOG) << "Failed to read temporary file: " << f.errorString();
-        } else {
+        if (f.open(QIODevice::ReadOnly)) {
             msgText = f.readAll();
             f.close();
+        } else {
+            qCWarning(MAILIMPORTERAKONADI_LOG) << "Failed to read temporary file: " << f.errorString();
         }
         if (msgText.isEmpty()) {
             mInfo->addErrorLogEntry(i18n("Error: failed to read temporary file at %1", msgPath));

@@ -80,8 +80,6 @@ target_include_directories(KF5MailImporter PUBLIC "$<BUILD_INTERFACE:${MailImpor
 
 
 target_link_libraries(KF5MailImporter
-    PUBLIC
-    KF5::Mime
     PRIVATE
     KF5::Libkdepim
     KF5::Archive
@@ -145,7 +143,7 @@ ecm_generate_headers(MailImporter_FiltersCamelCase_HEADERS
 
 ecm_generate_pri_file(BASE_NAME MailImporter
     LIB_NAME KF5MailImporter
-    DEPS "Mime" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/MailImporter
+    DEPS "" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/MailImporter
     )
 
 

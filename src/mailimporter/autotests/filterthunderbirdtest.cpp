@@ -17,6 +17,7 @@
 
 #include "filterthunderbirdtest.h"
 #include "filters/filterthunderbird.h"
+#include "filterimportertest.h"
 #include <qtest.h>
 
 class FilterThunderBirdAbstract : public MailImporter::FilterThunderbird

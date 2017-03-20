@@ -50,6 +50,7 @@ target_link_libraries(KF5MailImporterAkonadi
     KF5::MailImporter
     KF5::AkonadiCore
     PRIVATE
+    KF5::Mime
     KF5::AkonadiMime
     KF5::I18n
     )
