@@ -26,13 +26,13 @@ class Q_DECL_HIDDEN FilterInfo::Private
 public:
     Private()
         : m_removeDupMsg(false),
-          m_filterInfoGui(0)
+          m_filterInfoGui(nullptr)
     {
     }
     ~Private()
     {
         delete m_filterInfoGui;
-        m_filterInfoGui = 0;
+        m_filterInfoGui = nullptr;
     }
     bool m_removeDupMsg;
     FilterInfoGui *m_filterInfoGui;
