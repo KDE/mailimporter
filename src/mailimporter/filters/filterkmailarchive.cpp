@@ -83,35 +83,7 @@ bool FilterKMailArchive::importMessage(const KArchiveFile *file, const QString &
     }
 
     qApp->processEvents();
-#if 0 //FIXME
-    const Akonadi::Collection collection = parseFolderString(folderPath);
-    if (!collection.isValid()) {
-        filterInfo()->addErrorLogEntry(i18n("Unable to retrieve folder for folder path %1.", folderPath));
-        return false;
-    }
-
-    KMime::Message::Ptr newMessage(new KMime::Message());
-    newMessage->setContent(file->data());
-    newMessage->parse();
-
-    if (filterInfo()->removeDupMessage()) {
-        KMime::Headers::MessageID *messageId = newMessage->messageID(false);
-        if (messageId && !messageId->asUnicodeString().isEmpty()) {
-            if (checkForDuplicates(messageId->asUnicodeString(), collection, folderPath)) {
-                d->mTotalFiles--;
-                return true;
-            }
-        }
-    }
-
-    const bool result = addAkonadiMessage(collection, newMessage);
-    if (result) {
-        d->mFilesDone++;
-    }
-    return result;
-#else
-    return false;
-#endif
+    return filterImporter()->importMessage(file, folderPath, d->mTotalFiles, d->mFilesDone);
 }
 
 bool FilterKMailArchive::importFolder(const KArchiveDirectory *folder, const QString &folderPath)

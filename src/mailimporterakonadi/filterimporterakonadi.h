@@ -42,6 +42,8 @@ public:
     void setRootCollection(const Akonadi::Collection &collection);
 
     QString topLevelFolder() const Q_DECL_OVERRIDE;
+    bool importMessage(const KArchiveFile *file, const QString &folderPath, int &nbTotal, int &fileDone) Q_DECL_OVERRIDE;
+
 
 private:
     /**

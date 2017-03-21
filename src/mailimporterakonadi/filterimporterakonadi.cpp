@@ -307,3 +307,33 @@ int FilterImporterAkonadi::countDuplicates() const
 {
     return mCountDuplicates;
 }
+
+
+bool FilterImporterAkonadi::importMessage(const KArchiveFile *file, const QString &folderPath, int &nbTotal, int &fileDone)
+{
+    const Akonadi::Collection collection = parseFolderString(folderPath);
+    if (!collection.isValid()) {
+        mInfo->addErrorLogEntry(i18n("Unable to retrieve folder for folder path %1.", folderPath));
+        return false;
+    }
+
+    KMime::Message::Ptr newMessage(new KMime::Message());
+    newMessage->setContent(file->data());
+    newMessage->parse();
+
+    if (mInfo->removeDupMessage()) {
+        KMime::Headers::MessageID *messageId = newMessage->messageID(false);
+        if (messageId && !messageId->asUnicodeString().isEmpty()) {
+            if (checkForDuplicates(messageId->asUnicodeString(), collection, folderPath)) {
+                nbTotal--;
+                return true;
+            }
+        }
+    }
+
+    const bool result = addAkonadiMessage(collection, newMessage, Akonadi::MessageStatus());
+    if (result) {
+        fileDone++;
+    }
+    return result;
+}

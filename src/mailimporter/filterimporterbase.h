@@ -21,6 +21,7 @@
 #include "mailimporter_export.h"
 #include <MailImporter/MessageStatus>
 #include <QString>
+#include <KArchive>
 
 namespace MailImporter
 {
@@ -34,6 +35,7 @@ public:
                               const QString &msgPath,
                               bool duplicateCheck,
                               const MailImporter::MessageStatus& status);
+    virtual bool importMessage(const KArchiveFile *file, const QString &folderPath, int &nbTotal, int &fileDone);
     virtual void clear();
     virtual void clearCountDuplicate();
     virtual int countDuplicates() const;
