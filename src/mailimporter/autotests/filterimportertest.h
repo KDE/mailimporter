@@ -21,6 +21,14 @@
 
 #include <MailImporter/FilterImporterBase>
 #include <QObject>
+#include <QVector>
+struct FilterImporterData
+{
+    QString folderName;
+    QString msgPath;
+    MailImporter::MessageStatus status;
+};
+
 class FilterImporterTest : public MailImporter::FilterImporterBase
 {
 public:
@@ -32,6 +40,12 @@ public:
     void clearCountDuplicate() Q_DECL_OVERRIDE;
     int countDuplicates() const Q_DECL_OVERRIDE;
     QString topLevelFolder() const Q_DECL_OVERRIDE;
+
+    bool importMessage(const KArchiveFile *file, const QString &folderPath, int &nbTotal, int &fileDone) Q_DECL_OVERRIDE;
+    QVector<FilterImporterData> filterImporterDataList() const;
+
+private:
+    QVector<FilterImporterData> mFilterImporterDataList;
 };
 
 #endif // FILTERIMPORTERTEST_H

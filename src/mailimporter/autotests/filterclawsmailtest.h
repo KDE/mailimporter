@@ -26,6 +26,10 @@ class FilterClawsMailTest : public QObject
 public:
     explicit FilterClawsMailTest(QObject *parent = nullptr);
     ~FilterClawsMailTest();
+private Q_SLOTS:
+    void shouldImportData();
+    void canNotImportDataEmptyPath();
+    void canNotImportDataUnknowPath();
 };
 
 #endif // FILTERCLAWSMAILTEST_H

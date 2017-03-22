@@ -1,5 +1,5 @@
 /*
-  Copyright (c) 2015-2017 Montel Laurent <montel@kde.org>
+  Copyright (c) 2017 Montel Laurent <montel@kde.org>
 
   This program is free software; you can redistribute it and/or modify it
   under the terms of the GNU General Public License, version 2, as
@@ -15,21 +15,21 @@
   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-#ifndef FILTERSYLPHEEDTEST_H
-#define FILTERSYLPHEEDTEST_H
+#ifndef FILTERMailAppTEST_H
+#define FILTERMailAppTEST_H
 
 #include <QObject>
 
-class FilterSylpheedTest : public QObject
+class FilterMailAppTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit FilterSylpheedTest(QObject *parent = nullptr);
-    ~FilterSylpheedTest();
+    explicit FilterMailAppTest(QObject *parent = nullptr);
+    ~FilterMailAppTest();
 private Q_SLOTS:
     void shouldImportData();
     void canNotImportDataEmptyPath();
     void canNotImportDataUnknowPath();
 };
 
-#endif // FILTERSYLPHEEDTEST_H
+#endif // FILTERMailAppTEST_H

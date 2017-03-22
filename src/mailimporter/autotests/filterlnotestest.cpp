@@ -15,47 +15,48 @@
   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-#include "filterclawsmailtest.h"
-#include <MailImporter/FilterClawsMail>
+#include "filterlnotestest.h"
+#include "filters/filterlnotes.h"
 #include "filterimportertest.h"
 #include <qtest.h>
 
-FilterClawsMailTest::FilterClawsMailTest(QObject *parent)
+FilterLnotesTest::FilterLnotesTest(QObject *parent)
     : QObject(parent)
 {
 
 }
 
-FilterClawsMailTest::~FilterClawsMailTest()
+FilterLnotesTest::~FilterLnotesTest()
 {
 
 }
 
-void FilterClawsMailTest::shouldImportData()
+void FilterLnotesTest::shouldImportData()
 {
 
 }
 
-void FilterClawsMailTest::canNotImportDataEmptyPath()
+void FilterLnotesTest::canNotImportDataEmptyPath()
 {
-    MailImporter::FilterClawsMail filter;
+    MailImporter::FilterLNotes filter;
     MailImporter::FilterInfo *info = new MailImporter::FilterInfo;
     FilterImporterTest *importerTest = new FilterImporterTest(info);
     filter.setFilterImporter(importerTest);
     filter.setFilterInfo(info);
-    filter.importMails(QString());
-    QVERIFY(importerTest->filterImporterDataList().isEmpty());
+    //TODO implement it
+    //filter.importMail(QString());
+    //QVERIFY(importerTest->filterImporterDataList().isEmpty());
 }
 
-void FilterClawsMailTest::canNotImportDataUnknowPath()
+void FilterLnotesTest::canNotImportDataUnknowPath()
 {
-    MailImporter::FilterClawsMail filter;
+    MailImporter::FilterLNotes filter;
     MailImporter::FilterInfo *info = new MailImporter::FilterInfo;
     FilterImporterTest *importerTest = new FilterImporterTest(info);
     filter.setFilterImporter(importerTest);
     filter.setFilterInfo(info);
-    filter.importMails(QStringLiteral("/foo/kde/bla/toto/"));
-    QVERIFY(importerTest->filterImporterDataList().isEmpty());
+    //filter.importMails(QStringLiteral("/foo/kde/bla/toto/"));
+    //QVERIFY(importerTest->filterImporterDataList().isEmpty());
 }
 
-QTEST_MAIN(FilterClawsMailTest)
+QTEST_MAIN(FilterLnotesTest)

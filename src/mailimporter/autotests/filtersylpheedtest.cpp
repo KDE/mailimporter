@@ -16,7 +16,7 @@
 */
 
 #include "filtersylpheedtest.h"
-#include "../filters/filtersylpheed.h"
+#include <MailImporter/FilterSylpheed>
 #include "filterimportertest.h"
 #include <qtest.h>
 
@@ -29,6 +29,33 @@ FilterSylpheedTest::FilterSylpheedTest(QObject *parent)
 FilterSylpheedTest::~FilterSylpheedTest()
 {
 
+}
+
+void FilterSylpheedTest::shouldImportData()
+{
+
+}
+
+void FilterSylpheedTest::canNotImportDataEmptyPath()
+{
+    MailImporter::FilterSylpheed filter;
+    MailImporter::FilterInfo *info = new MailImporter::FilterInfo;
+    FilterImporterTest *importerTest = new FilterImporterTest(info);
+    filter.setFilterImporter(importerTest);
+    filter.setFilterInfo(info);
+    filter.importMails(QString());
+    QVERIFY(importerTest->filterImporterDataList().isEmpty());
+}
+
+void FilterSylpheedTest::canNotImportDataUnknowPath()
+{
+    MailImporter::FilterSylpheed filter;
+    MailImporter::FilterInfo *info = new MailImporter::FilterInfo;
+    FilterImporterTest *importerTest = new FilterImporterTest(info);
+    filter.setFilterImporter(importerTest);
+    filter.setFilterInfo(info);
+    filter.importMails(QStringLiteral("/foo/kde/bla/toto/"));
+    QVERIFY(importerTest->filterImporterDataList().isEmpty());
 }
 
 QTEST_MAIN(FilterSylpheedTest)

@@ -50,4 +50,32 @@ void FilterThunderBirdTest::shouldHaveDefaultSettingsPath()
     QCOMPARE(filter.settingsPath(), MailImporter::FilterThunderbird::defaultSettingsPath());
 }
 
+void FilterThunderBirdTest::shouldImportData()
+{
+
+}
+
+void FilterThunderBirdTest::canNotImportDataEmptyPath()
+{
+    MailImporter::FilterThunderbird filter;
+    MailImporter::FilterInfo *info = new MailImporter::FilterInfo;
+    FilterImporterTest *importerTest = new FilterImporterTest(info);
+    filter.setFilterImporter(importerTest);
+    filter.setFilterInfo(info);
+    filter.importMails(QString());
+    QVERIFY(importerTest->filterImporterDataList().isEmpty());
+}
+
+void FilterThunderBirdTest::canNotImportDataUnknowPath()
+{
+    MailImporter::FilterThunderbird filter;
+    MailImporter::FilterInfo *info = new MailImporter::FilterInfo;
+    FilterImporterTest *importerTest = new FilterImporterTest(info);
+    filter.setFilterImporter(importerTest);
+    filter.setFilterInfo(info);
+    filter.importMails(QStringLiteral("/foo/kde/bla/toto/"));
+    QVERIFY(importerTest->filterImporterDataList().isEmpty());
+}
+
+
 QTEST_MAIN(FilterThunderBirdTest)

@@ -28,6 +28,9 @@ public:
     ~FilterThunderBirdTest();
 private Q_SLOTS:
     void shouldHaveDefaultSettingsPath();
+    void shouldImportData();
+    void canNotImportDataEmptyPath();
+    void canNotImportDataUnknowPath();
 };
 
 #endif // FILTERTHUNDERBIRDTEST_H

@@ -50,4 +50,32 @@ void FilterIcedoveTest::shouldHaveDefaultSettingsPath()
     QCOMPARE(filter.settingsPath(), MailImporter::FilterIcedove::defaultSettingsPath());
 }
 
+
+void FilterIcedoveTest::shouldImportData()
+{
+
+}
+
+void FilterIcedoveTest::canNotImportDataEmptyPath()
+{
+    MailImporter::FilterIcedove filter;
+    MailImporter::FilterInfo *info = new MailImporter::FilterInfo;
+    FilterImporterTest *importerTest = new FilterImporterTest(info);
+    filter.setFilterImporter(importerTest);
+    filter.setFilterInfo(info);
+    filter.importMails(QString());
+    QVERIFY(importerTest->filterImporterDataList().isEmpty());
+}
+
+void FilterIcedoveTest::canNotImportDataUnknowPath()
+{
+    MailImporter::FilterIcedove filter;
+    MailImporter::FilterInfo *info = new MailImporter::FilterInfo;
+    FilterImporterTest *importerTest = new FilterImporterTest(info);
+    filter.setFilterImporter(importerTest);
+    filter.setFilterInfo(info);
+    filter.importMails(QStringLiteral("/foo/kde/bla/toto/"));
+    QVERIFY(importerTest->filterImporterDataList().isEmpty());
+}
+
 QTEST_MAIN(FilterIcedoveTest)

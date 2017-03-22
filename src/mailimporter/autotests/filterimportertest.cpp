@@ -48,3 +48,15 @@ QString FilterImporterTest::topLevelFolder() const
 {
     return {};
 }
+
+
+bool FilterImporterTest::importMessage(const KArchiveFile *file, const QString &folderPath, int &nbTotal, int &fileDone)
+{
+
+    return false;
+}
+
+QVector<FilterImporterData> FilterImporterTest::filterImporterDataList() const
+{
+    return mFilterImporterDataList;
+}

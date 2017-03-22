@@ -15,21 +15,21 @@
   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-#ifndef FILTERSYLPHEEDTEST_H
-#define FILTERSYLPHEEDTEST_H
+#ifndef FILTERLnotesTEST_H
+#define FILTERLnotesTEST_H
 
 #include <QObject>
 
-class FilterSylpheedTest : public QObject
+class FilterLnotesTest : public QObject
 {
     Q_OBJECT
 public:
-    explicit FilterSylpheedTest(QObject *parent = nullptr);
-    ~FilterSylpheedTest();
+    explicit FilterLnotesTest(QObject *parent = nullptr);
+    ~FilterLnotesTest();
 private Q_SLOTS:
     void shouldImportData();
     void canNotImportDataEmptyPath();
     void canNotImportDataUnknowPath();
 };
 
-#endif // FILTERSYLPHEEDTEST_H
+#endif // FILTERLnotesTEST_H

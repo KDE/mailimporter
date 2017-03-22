@@ -28,6 +28,9 @@ public:
     ~FilterIcedoveTest();
 private Q_SLOTS:
     void shouldHaveDefaultSettingsPath();
+    void shouldImportData();
+    void canNotImportDataEmptyPath();
+    void canNotImportDataUnknowPath();
 };
 
 #endif // FILTERICEDOVETEST_H
