@@ -1,3 +1,5 @@
+add_definitions( -DMAILIMPORTER_DATA_DIR="${CMAKE_CURRENT_SOURCE_DIR}/samples/" )
+
 macro(add_mailimporter_unittest _source _additionalSource)
     get_filename_component(_name ${_source} NAME_WE)
     ecm_add_test(${_source} ${_additionalSource}

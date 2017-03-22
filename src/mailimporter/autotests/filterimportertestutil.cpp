@@ -17,7 +17,14 @@
 
 #include "filterimportertestutil.h"
 
-FilterImporterTestUtil::FilterImporterTestUtil()
+FilterImporterTestUtil::FilterImporterTestUtil(const QString &filename)
+    : mFileName(filename)
 {
 
+}
+
+QString FilterImporterTestUtil::extractData()
+{
+    //TODO
+    return {};
 }

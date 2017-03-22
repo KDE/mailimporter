@@ -18,11 +18,15 @@
 #ifndef FILTERIMPORTERTESTUTIL_H
 #define FILTERIMPORTERTESTUTIL_H
 
+#include <QString>
 
 class FilterImporterTestUtil
 {
 public:
-    FilterImporterTestUtil();
+    FilterImporterTestUtil(const QString &filename);
+    QString extractData();
+private:
+    QString mFileName;
 };
 
 #endif // FILTERIMPORTERTESTUTIL_H

@@ -16,6 +16,7 @@
 */
 
 #include "filtersylpheedtest.h"
+#include "filterimportertestutil.h"
 #include <MailImporter/FilterSylpheed>
 #include "filterimportertest.h"
 #include <qtest.h>
