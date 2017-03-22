@@ -61,15 +61,14 @@ void FilterMailApp::import()
 
 void FilterMailApp::importMails(const QString  &maildir)
 {
-    int currentFile = 1;
-    int overall_status = 0;
-    bool first_msg = true;
-
-    setMailDir(maildir);
-    if (mailDir().isEmpty()) {
+    if (maildir.isEmpty()) {
         filterInfo()->alert(i18n("No files selected."));
         return;
     }
+    setMailDir(maildir);
+    int currentFile = 1;
+    int overall_status = 0;
+    bool first_msg = true;
 
     filterInfo()->setOverall(0);
 
