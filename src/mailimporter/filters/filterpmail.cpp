@@ -42,18 +42,16 @@ void FilterPMail::import()
 {
     // Select directory from where I have to import files
     const QString maildir = QFileDialog::getExistingDirectory(0, QString(), QDir::homePath());
-    if (!maildir.isEmpty()) {
-        importMails(maildir);
-    }
+    importMails(maildir);
 }
 
 void FilterPMail::importMails(const QString  &chosenDir)
 {
-    setMailDir(chosenDir);
-    if (mailDir().isEmpty()) {
+    if (chosenDir.isEmpty()) {
         filterInfo()->alert(i18n("No directory selected."));
         return;
     }
+    setMailDir(chosenDir);
 
     // Count total number of files to be processed
     filterInfo()->addInfoLogEntry(i18n("Counting files..."));

@@ -42,15 +42,15 @@ FilterMailmanGzip::~FilterMailmanGzip()
 void FilterMailmanGzip::import()
 {
     const QStringList filenames = QFileDialog::getOpenFileNames(filterInfo()->parentWidget(), QString(), QDir::homePath(), i18n("gzip Files (*.txt.gz)"));
-    if (filenames.isEmpty()) {
-        filterInfo()->alert(i18n("No files selected."));
-        return;
-    }
     importMails(filenames);
 }
 
 void FilterMailmanGzip::importMails(const QStringList &filenames)
 {
+    if (filenames.isEmpty()) {
+        filterInfo()->alert(i18n("No files selected."));
+        return;
+    }
     int currentFile = 1;
     int overall_status = 0;
     bool first_msg = true;

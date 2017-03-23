@@ -126,16 +126,16 @@ void FilterSylpheed::processDirectory(const QString &path)
 
 void FilterSylpheed::importMails(const QString &maildir)
 {
-    setMailDir(maildir);
-    if (mailDir().isEmpty()) {
+    if (maildir.isEmpty()) {
         filterInfo()->alert(i18n("No directory selected."));
         return;
     }
+    setMailDir(maildir);
     /**
     * If the user only select homedir no import needed because
     * there should be no files and we surely import wrong files.
     */
-    else if (mailDir() == QDir::homePath() || mailDir() == (QDir::homePath() + QLatin1Char('/'))) {
+    if (mailDir() == QDir::homePath() || mailDir() == (QDir::homePath() + QLatin1Char('/'))) {
         filterInfo()->addErrorLogEntry(i18n("No files found for import."));
     } else {
         filterInfo()->setOverall(0);

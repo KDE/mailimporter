@@ -61,11 +61,11 @@ void FilterOE::import()
 
 void FilterOE::importMails(const QString  &maildir)
 {
-    setMailDir(maildir);
-    if (mailDir().isEmpty()) { // No directory selected
+    if (maildir.isEmpty()) { // No directory selected
         filterInfo()->alert(i18n("No directory selected."));
         return;
     }
+    setMailDir(maildir);
 
     QDir dir(mailDir());
     QStringList files = dir.entryList(QStringList(QStringLiteral("*.[dDmM][bB][xX]")), QDir::Files, QDir::Name);
