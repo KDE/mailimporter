@@ -180,7 +180,7 @@ Akonadi::Collection FilterImporterAkonadi::addSubCollection(const Akonadi::Colle
             Akonadi::CollectionFetchJob::FirstLevel);
     if (!fetchJob->exec()) {
         mInfo->alert(i18n("<b>Warning:</b> Could not check that the folder already exists. Reason: %1",
-                                  fetchJob->errorString()));
+                          fetchJob->errorString()));
         return Akonadi::Collection();
     }
     const Akonadi::Collection::List lstCols = fetchJob->collections();
@@ -199,7 +199,7 @@ Akonadi::Collection FilterImporterAkonadi::addSubCollection(const Akonadi::Colle
     job->setAutoDelete(false);
     if (!job->exec()) {
         mInfo->alert(i18n("<b>Error:</b> Could not create folder. Reason: %1",
-                                  job->errorString()));
+                          job->errorString()));
         return Akonadi::Collection();
     }
     // Return the newly created collection
@@ -208,8 +208,8 @@ Akonadi::Collection FilterImporterAkonadi::addSubCollection(const Akonadi::Colle
 }
 
 bool FilterImporterAkonadi::checkForDuplicates(const QString &msgID,
-                                const Akonadi::Collection &msgCollection,
-                                const QString &messageFolder)
+        const Akonadi::Collection &msgCollection,
+        const QString &messageFolder)
 {
     bool folderFound = false;
 
@@ -229,7 +229,7 @@ bool FilterImporterAkonadi::checkForDuplicates(const QString &msgID,
             job.fetchScope().fetchPayloadPart(Akonadi::MessagePart::Header);
             if (!job.exec()) {
                 mInfo->addInfoLogEntry(i18n("<b>Warning:</b> Could not fetch mail in folder %1. Reason: %2"
-                                                    " You may have duplicate messages.", messageFolder, job.errorString()));
+                                            " You may have duplicate messages.", messageFolder, job.errorString()));
             } else {
                 const Akonadi::Item::List items = job.items();
                 for (const Akonadi::Item &messageItem : items) {
@@ -267,7 +267,7 @@ bool FilterImporterAkonadi::checkForDuplicates(const QString &msgID,
 }
 
 bool FilterImporterAkonadi::addAkonadiMessage(const Akonadi::Collection &collection,
-                               const KMime::Message::Ptr &message, Akonadi::MessageStatus status)
+        const KMime::Message::Ptr &message, Akonadi::MessageStatus status)
 {
     Akonadi::Item item;
 
@@ -291,12 +291,11 @@ bool FilterImporterAkonadi::addAkonadiMessage(const Akonadi::Collection &collect
     job->setAutoDelete(false);
     if (!job->exec()) {
         mInfo->alert(i18n("<b>Error:</b> Could not add message to folder %1. Reason: %2",
-                                  collection.name(), job->errorString()));
+                          collection.name(), job->errorString()));
         return false;
     }
     return true;
 }
-
 
 void FilterImporterAkonadi::clearCountDuplicate()
 {
@@ -307,7 +306,6 @@ int FilterImporterAkonadi::countDuplicates() const
 {
     return mCountDuplicates;
 }
-
 
 bool FilterImporterAkonadi::importMessage(const KArchiveFile *file, const QString &folderPath, int &nbTotal, int &fileDone)
 {

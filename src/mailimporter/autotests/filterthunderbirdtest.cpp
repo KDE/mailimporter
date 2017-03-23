@@ -27,8 +27,7 @@ public:
     {
 
     }
-    QString settingsPath() Q_DECL_OVERRIDE
-    {
+    QString settingsPath() Q_DECL_OVERRIDE {
         return MailImporter::FilterThunderbird::settingsPath();
     }
 };
@@ -76,6 +75,5 @@ void FilterThunderBirdTest::canNotImportDataUnknowPath()
     filter.importMails(QStringLiteral("/foo/kde/bla/toto/"));
     QVERIFY(importerTest->filterImporterDataList().isEmpty());
 }
-
 
 QTEST_MAIN(FilterThunderBirdTest)

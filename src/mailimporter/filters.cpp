@@ -124,7 +124,6 @@ int Filter::countDuplicates() const
     return filterImporter()->countDuplicates();
 }
 
-
 QString Filter::author() const
 {
     return d->author;
@@ -155,9 +154,9 @@ void Filter::setInfo(const QString &_info)
 }
 
 bool Filter::importMessage(const QString &folderName,
-                          const QString &msgPath,
-                          bool duplicateCheck,
-                          MailImporter::MessageStatus status)
+                           const QString &msgPath,
+                           bool duplicateCheck,
+                           MailImporter::MessageStatus status)
 {
     return filterImporter()->importMessage(folderName, msgPath, duplicateCheck, status);
 }

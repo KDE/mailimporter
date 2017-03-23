@@ -66,6 +66,5 @@ void MessageStatusTest::shouldAssignValues()
     QCOMPARE(status.isForwarded(), isforwarded);
 }
 
-
 QTEST_MAIN(MessageStatusTest)
 

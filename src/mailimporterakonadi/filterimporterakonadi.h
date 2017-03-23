@@ -44,7 +44,6 @@ public:
     QString topLevelFolder() const Q_DECL_OVERRIDE;
     bool importMessage(const KArchiveFile *file, const QString &folderPath, int &nbTotal, int &fileDone) Q_DECL_OVERRIDE;
 
-
 private:
     /**
     * Creates a hierachy of collections based on the given path string. The collection
@@ -63,17 +62,16 @@ private:
     * you could get false positives.
     */
     bool checkForDuplicates(const QString &msgID,
-                                    const Akonadi::Collection &msgCollection,
-                                    const QString &messageFolder);
+                            const Akonadi::Collection &msgCollection,
+                            const QString &messageFolder);
     /**
     * Adds a single subcollection to the given base collection and returns it.
     * Use parseFolderString() instead if you want to create hierachies of collections.
     */
     Akonadi::Collection addSubCollection(const Akonadi::Collection &baseCollection,
-            const QString &newCollectionPathName);
+                                         const QString &newCollectionPathName);
     bool addAkonadiMessage(const Akonadi::Collection &collection,
-                                   const KMime::Message::Ptr &message, Akonadi::MessageStatus status);
-
+                           const KMime::Message::Ptr &message, Akonadi::MessageStatus status);
 
     QMultiMap<QString, QString> mMessageFolderMessageIDMap;
     QMap<QString, Akonadi::Collection> mMessageFolderCollectionMap;

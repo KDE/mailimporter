@@ -27,8 +27,7 @@ public:
     {
 
     }
-    QString settingsPath() Q_DECL_OVERRIDE
-    {
+    QString settingsPath() Q_DECL_OVERRIDE {
         return MailImporter::FilterIcedove::settingsPath();
     }
 };
@@ -49,7 +48,6 @@ void FilterIcedoveTest::shouldHaveDefaultSettingsPath()
     FilterIcecoveAbstract filter;
     QCOMPARE(filter.settingsPath(), MailImporter::FilterIcedove::defaultSettingsPath());
 }
-
 
 void FilterIcedoveTest::shouldImportData()
 {

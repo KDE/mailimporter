@@ -57,7 +57,6 @@ public:
     void setFilterImporter(MailImporter::FilterImporterBase *importer);
     MailImporter::FilterImporterBase *filterImporter() const;
 
-
     void clearCountDuplicate();
     int countDuplicates() const;
 
@@ -67,9 +66,9 @@ public:
 protected:
     static int countDirectory(const QDir &dir, bool searchHiddenDirectory);
     bool importMessage(const QString &folderName,
-                      const QString &msgPath,
-                      bool duplicateCheck,
-                      MailImporter::MessageStatus status = MailImporter::MessageStatus());
+                       const QString &msgPath,
+                       bool duplicateCheck,
+                       MailImporter::MessageStatus status = MailImporter::MessageStatus());
 private:
     class Private;
     Private *const d;

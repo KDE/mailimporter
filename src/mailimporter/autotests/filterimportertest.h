@@ -15,15 +15,13 @@
   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-
 #ifndef FILTERIMPORTERTEST_H
 #define FILTERIMPORTERTEST_H
 
 #include <MailImporter/FilterImporterBase>
 #include <QObject>
 #include <QVector>
-struct FilterImporterData
-{
+struct FilterImporterData {
     QString folderName;
     QString msgPath;
     MailImporter::MessageStatus status;

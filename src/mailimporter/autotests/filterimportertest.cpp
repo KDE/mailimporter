@@ -15,7 +15,6 @@
   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-
 #include "filterimportertest.h"
 #include <QDebug>
 
@@ -50,7 +49,6 @@ QString FilterImporterTest::topLevelFolder() const
 {
     return {};
 }
-
 
 bool FilterImporterTest::importMessage(const KArchiveFile *file, const QString &folderPath, int &nbTotal, int &fileDone)
 {
