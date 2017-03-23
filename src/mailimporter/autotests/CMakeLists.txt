@@ -16,6 +16,7 @@ add_mailimporter_unittest(filtersylpheedtest.cpp "filterimportertest.cpp;filteri
 add_mailimporter_unittest(filterlnotestest.cpp "filterimportertest.cpp;filterimportertestutil.cpp")
 add_mailimporter_unittest(filtermailapptest.cpp "filterimportertest.cpp;filterimportertestutil.cpp")
 add_mailimporter_unittest(filterthebattest.cpp "filterimportertest.cpp;filterimportertestutil.cpp")
+add_mailimporter_unittest(filtermboxtest.cpp "filterimportertest.cpp;filterimportertestutil.cpp")
 
 add_mailimporter_unittest(messagestatustest.cpp "")
 add_mailimporter_unittest(selectthunderbirdprofiledialogtest.cpp "")
