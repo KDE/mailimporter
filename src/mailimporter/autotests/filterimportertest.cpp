@@ -17,6 +17,7 @@
 
 
 #include "filterimportertest.h"
+#include <QDebug>
 
 FilterImporterTest::FilterImporterTest(MailImporter::FilterInfo *info)
     : MailImporter::FilterImporterBase(info)
@@ -26,6 +27,7 @@ FilterImporterTest::FilterImporterTest(MailImporter::FilterInfo *info)
 
 bool FilterImporterTest::importMessage(const QString &folderName, const QString &msgPath, bool duplicateCheck, const MailImporter::MessageStatus &status)
 {
+    qDebug() << "FilterImporterTest::importMessage folderName " << folderName << " msgPath " << msgPath;
     return false;
 }
 
