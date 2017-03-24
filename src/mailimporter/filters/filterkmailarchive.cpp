@@ -189,6 +189,10 @@ void FilterKMailArchive::import()
 
 void FilterKMailArchive::importMails(const QString  &archiveFile)
 {
+    if (archiveFile.isEmpty()) {
+        filterInfo()->alert(i18n("No archive selected."));
+        return;
+    }
     filterInfo()->setFrom(archiveFile);
 
     QMimeDatabase db;
