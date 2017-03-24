@@ -36,10 +36,17 @@ FilterPlain::~FilterPlain()
 {
 }
 
+
+
 void FilterPlain::import()
 {
     // Select directory containing plain text emails
     const QString mailDir = QFileDialog::getExistingDirectory(filterInfo()->parentWidget(), QString(), QDir::homePath());
+    importMails(mailDir);
+}
+
+void FilterPlain::importMails(const QString &mailDir)
+{
     if (mailDir.isEmpty()) { // No directory selected
         filterInfo()->alert(i18n("No directory selected."));
         return;

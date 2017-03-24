@@ -32,6 +32,7 @@ public:
     ~FilterPlain();
 
     void import() Q_DECL_OVERRIDE;
+    void importMails(const QString &mailDir);
 };
 }
 
