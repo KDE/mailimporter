@@ -76,4 +76,15 @@ void FilterThunderBirdTest::canNotImportDataUnknowPath()
     QVERIFY(importerTest->filterImporterDataList().isEmpty());
 }
 
+void FilterThunderBirdTest::canNotImportDataWhenHomeDirSelected()
+{
+    MailImporter::FilterThunderbird filter;
+    MailImporter::FilterInfo *info = new MailImporter::FilterInfo;
+    FilterImporterTest *importerTest = new FilterImporterTest(info);
+    filter.setFilterImporter(importerTest);
+    filter.setFilterInfo(info);
+    filter.importMails(QDir::homePath());
+    QVERIFY(importerTest->filterImporterDataList().isEmpty());
+}
+
 QTEST_MAIN(FilterThunderBirdTest)

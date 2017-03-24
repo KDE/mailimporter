@@ -30,6 +30,7 @@ private Q_SLOTS:
     void shouldImportData();
     void canNotImportDataEmptyPath();
     void canNotImportDataUnknowPath();
+    void canNotImportDataWhenHomeDirSelected();
 };
 
 #endif // FILTERBALSAMAILTEST_H

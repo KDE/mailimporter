@@ -76,4 +76,14 @@ void FilterIcedoveTest::canNotImportDataUnknowPath()
     QVERIFY(importerTest->filterImporterDataList().isEmpty());
 }
 
+void FilterIcedoveTest::canNotImportDataWhenHomeDirSelected()
+{
+    MailImporter::FilterIcedove filter;
+    MailImporter::FilterInfo *info = new MailImporter::FilterInfo;
+    FilterImporterTest *importerTest = new FilterImporterTest(info);
+    filter.setFilterImporter(importerTest);
+    filter.setFilterInfo(info);
+    filter.importMails(QDir::homePath());
+    QVERIFY(importerTest->filterImporterDataList().isEmpty());
+}
 QTEST_MAIN(FilterIcedoveTest)
