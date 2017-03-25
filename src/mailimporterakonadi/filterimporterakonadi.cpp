@@ -321,10 +321,13 @@ bool FilterImporterAkonadi::importMessage(const KArchiveFile *file, const QStrin
 
     if (mInfo->removeDupMessage()) {
         KMime::Headers::MessageID *messageId = newMessage->messageID(false);
-        if (messageId && !messageId->asUnicodeString().isEmpty()) {
-            if (checkForDuplicates(messageId->asUnicodeString(), collection, folderPath)) {
-                nbTotal--;
-                return true;
+        if (messageId) {
+            const QString messageIdStr = messageId->asUnicodeString();
+            if (!messageIdStr.isEmpty()) {
+                if (checkForDuplicates(messageIdStr, collection, folderPath)) {
+                    nbTotal--;
+                    return true;
+                }
             }
         }
     }
