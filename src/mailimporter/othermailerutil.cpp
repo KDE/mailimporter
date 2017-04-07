@@ -17,19 +17,19 @@
 
 #include "othermailerutil.h"
 
-#include <QDir>
+#include <QStandardPaths>
 
 namespace MailImporter
 {
 QString OtherMailerUtil::trojitaDefaultPath()
 {
-    const QString path = QDir::homePath() + QLatin1String("/.config/flaska.net/");
+    const QString path = QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + QLatin1String("/flaska.net/");
     return path;
 }
 
 QString OtherMailerUtil::gearyDefaultPath()
 {
-    const QString path = QDir::homePath() + QLatin1String("/.config/geary/");
+    const QString path = QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + QLatin1String("/geary/");
     return path;
 }
 }
