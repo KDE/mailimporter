@@ -107,15 +107,15 @@ void FilterOpera::importBox(const QDir &importDir, const QStringList &files, con
                 QByteArray separate;
 
                 if (!first_msg) {
-                    tmp.write(input, l);
+                    tmp.write(input.constData(), l);
                 }
                 l = operaArchiv.readLine(input.data(), MAX_LINE); // read the first line, prevent "From "
-                tmp.write(input, l);
+                tmp.write(input.constData(), l);
 
                 while (! operaArchiv.atEnd() && (l = operaArchiv.readLine(input.data(), MAX_LINE)) && ((separate = input.data()).left(5) != "From ")) {
                     /** remove in KMail unneeded Flags from Opera (for example: X-Opera-Status)*/
                     if (separate.left(8) != "X-Opera-") {
-                        tmp.write(input, l);
+                        tmp.write(input.constData(), l);
                     }
                 }
                 tmp.flush();

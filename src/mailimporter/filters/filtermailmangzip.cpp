@@ -94,18 +94,18 @@ void FilterMailmanGzip::importMails(const QStringList &filenames)
             /* check if the first line start with "From " (and not "From: ") and discard the line
             * in this case because some IMAP servers (e.g. Cyrus) don't accept this header line */
             if (!first_msg && ((separate = input.data()).left(5) !=  "From ")) {
-                tmp.write(input, l);
+                tmp.write(input.constData(), l);
             }
 
             l = device->readLine(input.data(), MAX_LINE); // read the first line, prevent "From "
 
             if ((separate = input.data()).left(5) != "From ") {
                 separate.replace(" at ", "@");
-                tmp.write(separate, separate.length());
+                tmp.write(separate.constData(), separate.length());
             }
 
             while (! device->atEnd() && (l = device->readLine(input.data(), MAX_LINE)) && ((separate = input.data()).left(5) != "From ")) {
-                tmp.write(input, l);
+                tmp.write(input.constData(), l);
 
                 // workaround to fix hang if a corrupted mbox contains some
                 // binary data, for more see bug #106796

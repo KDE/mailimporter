@@ -188,7 +188,7 @@ void FilterPMail::importMailFolder(const QString &file)
                 if (input.at(0) == 0x1a) {
                     break;
                 } else {
-                    tempfile.write(input, l);
+                    tempfile.write(input.constData(), l);
                 }
             }
             tempfile.flush();

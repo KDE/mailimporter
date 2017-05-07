@@ -243,7 +243,7 @@ void FilterTheBat::importFiles(const QString &FileName)
 
                 QTemporaryFile tmp;
                 tmp.open();
-                tmp.write(input, endPos - lastPos);
+                tmp.write(input.constData(), endPos - lastPos);
                 tmp.flush();
 
                 importMessage(_path, tmp.fileName(), filterInfo()->removeDupMessage());

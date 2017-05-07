@@ -230,13 +230,13 @@ void FilterEvolution_v2::importMBox(const QString &mboxName, const QString &root
             QByteArray separate;
 
             if (!first_msg) {
-                tmp.write(input, l);
+                tmp.write(input.constData(), l);
             }
             l = mbox.readLine(input.data(), MAX_LINE); // read the first line, prevent "From "
-            tmp.write(input, l);
+            tmp.write(input.constData(), l);
 
             while (! mbox.atEnd() && (l = mbox.readLine(input.data(), MAX_LINE)) && ((separate = input.data()).left(5) != "From ")) {
-                tmp.write(input, l);
+                tmp.write(input.constData(), l);
             }
             tmp.flush();
             first_msg = false;
