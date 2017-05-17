@@ -48,6 +48,7 @@ set(libmailimporter_filters_SRCS
     filters/filtermailmangzip.cpp
     filters/filtericedove.cpp
     filters/filterbalsa.cpp
+    filters/filterseamonkey.cpp
     )
 
 set(libmailimporter_SRCS
@@ -136,6 +137,7 @@ ecm_generate_headers(MailImporter_FiltersCamelCase_HEADERS
     FilterKMail_maildir
     FilterKMailArchive
     FilterIcedove
+    FilterSeaMonkey
     REQUIRED_HEADERS MailImporter_Filters_HEADERS
     PREFIX MailImporter
     RELATIVE filters
