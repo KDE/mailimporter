@@ -29,8 +29,8 @@ public:
 
     static QString defaultSettingsPath();
 protected:
-    QString defaultInstallFolder() const Q_DECL_OVERRIDE;
-    QString settingsPath() Q_DECL_OVERRIDE;
+    QString defaultInstallFolder() const override;
+    QString settingsPath() override;
 };
 }
 

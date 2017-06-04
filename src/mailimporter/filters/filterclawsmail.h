@@ -37,10 +37,10 @@ public:
     static QString defaultSettingsPath();
 
     /* return local mail dir from folderlist.xml*/
-    QString localMailDirPath() Q_DECL_OVERRIDE;
-    bool excludeFile(const QString &file) Q_DECL_OVERRIDE;
-    QString defaultInstallFolder() const Q_DECL_OVERRIDE;
-    QString markFile() const Q_DECL_OVERRIDE;
+    QString localMailDirPath() override;
+    bool excludeFile(const QString &file) override;
+    QString defaultInstallFolder() const override;
+    QString markFile() const override;
 };
 }
 

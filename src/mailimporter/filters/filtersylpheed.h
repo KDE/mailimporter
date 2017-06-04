@@ -38,7 +38,7 @@ public:
 
     static QString defaultSettingsPath();
 
-    void import() Q_DECL_OVERRIDE;
+    void import() override;
     virtual void importMails(const QString &maildir);
 
     /* return local mail dir from folderlist.xml*/

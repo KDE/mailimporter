@@ -33,13 +33,13 @@ public:
     explicit FilterImporterTest(MailImporter::FilterInfo *info);
     ~FilterImporterTest() = default;
 
-    bool importMessage(const QString &folderName, const QString &msgPath, bool duplicateCheck, const MailImporter::MessageStatus &status) Q_DECL_OVERRIDE;
-    void clear() Q_DECL_OVERRIDE;
-    void clearCountDuplicate() Q_DECL_OVERRIDE;
-    int countDuplicates() const Q_DECL_OVERRIDE;
-    QString topLevelFolder() const Q_DECL_OVERRIDE;
+    bool importMessage(const QString &folderName, const QString &msgPath, bool duplicateCheck, const MailImporter::MessageStatus &status) override;
+    void clear() override;
+    void clearCountDuplicate() override;
+    int countDuplicates() const override;
+    QString topLevelFolder() const override;
 
-    bool importMessage(const KArchiveFile *file, const QString &folderPath, int &nbTotal, int &fileDone) Q_DECL_OVERRIDE;
+    bool importMessage(const KArchiveFile *file, const QString &folderPath, int &nbTotal, int &fileDone) override;
     QVector<FilterImporterData> filterImporterDataList() const;
 
 private:

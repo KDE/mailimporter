@@ -29,7 +29,7 @@ public:
     ~FilterMailmanGzip();
 
     void importMails(const QStringList &filenames);
-    void import() Q_DECL_OVERRIDE;
+    void import() override;
 };
 }
 

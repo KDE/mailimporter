@@ -32,7 +32,7 @@ public:
     FilterEvolution_v2();
     ~FilterEvolution_v2();
 
-    void import() Q_DECL_OVERRIDE;
+    void import() override;
     void importMails(const QString &maildir);
     static QString defaultSettingsPath();
 

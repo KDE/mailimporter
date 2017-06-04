@@ -31,7 +31,7 @@ public:
     FilterLNotes();
     ~FilterLNotes();
     /** Standard import filter... starting line for our import */
-    void import() Q_DECL_OVERRIDE;
+    void import() override;
 
 private:
     FilterLNotesPrivate *const d;

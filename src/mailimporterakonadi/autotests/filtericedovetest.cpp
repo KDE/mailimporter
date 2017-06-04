@@ -27,7 +27,7 @@ public:
     {
 
     }
-    QString settingsPath() Q_DECL_OVERRIDE {
+    QString settingsPath() override {
         return MailImporter::FilterIcedove::settingsPath();
     }
 };

@@ -35,7 +35,7 @@ public:
     FilterOE();
     ~FilterOE();
 
-    void import() Q_DECL_OVERRIDE;
+    void import() override;
     void importMails(const QString &maildir);
 
 private:
