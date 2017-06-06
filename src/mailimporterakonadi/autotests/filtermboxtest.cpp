@@ -23,17 +23,14 @@
 FilterMBoxTest::FilterMBoxTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterMBoxTest::~FilterMBoxTest()
 {
-
 }
 
 void FilterMBoxTest::shouldImportData()
 {
-
 }
 
 void FilterMBoxTest::canNotImportDataEmptyPath()

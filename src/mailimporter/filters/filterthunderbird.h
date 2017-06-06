@@ -25,8 +25,7 @@
  * Imports Thunderbird mail folder recursively, keeping the folder structure.
  * @author Danny Kukawka
  */
-namespace MailImporter
-{
+namespace MailImporter {
 class MAILIMPORTER_EXPORT FilterThunderbird : public Filter
 {
 public:

@@ -27,8 +27,7 @@
  *@author Laurence Anderson
  */
 #include "mailimporter_utils.h"
-namespace MailImporter
-{
+namespace MailImporter {
 class MAILIMPORTER_EXPORT FilterOE : public Filter
 {
 public:
@@ -82,7 +81,6 @@ private:
     /** name of the current folder */
     QString folderName;
     /** name of the chosen folder */
-
 };
 }
 

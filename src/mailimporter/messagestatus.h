@@ -20,8 +20,7 @@
 
 #include "mailimporter_export.h"
 
-namespace MailImporter
-{
+namespace MailImporter {
 class MAILIMPORTER_EXPORT MessageStatus
 {
 public:

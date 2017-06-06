@@ -23,18 +23,14 @@
 #include <QString>
 #include <KArchive>
 
-namespace MailImporter
-{
+namespace MailImporter {
 class FilterInfo;
 class MAILIMPORTER_EXPORT FilterImporterBase
 {
 public:
     explicit FilterImporterBase(MailImporter::FilterInfo *info);
     virtual ~FilterImporterBase();
-    virtual bool importMessage(const QString &folderName,
-                               const QString &msgPath,
-                               bool duplicateCheck,
-                               const MailImporter::MessageStatus &status);
+    virtual bool importMessage(const QString &folderName, const QString &msgPath, bool duplicateCheck, const MailImporter::MessageStatus &status);
     virtual bool importMessage(const KArchiveFile *file, const QString &folderPath, int &nbTotal, int &fileDone);
     virtual void clear();
     virtual void clearCountDuplicate();

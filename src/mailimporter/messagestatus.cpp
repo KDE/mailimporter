@@ -20,17 +20,15 @@
 using namespace MailImporter;
 
 MessageStatus::MessageStatus()
-    : mRead(false),
-      mDeleted(false),
-      mReplied(false),
-      mForwarded(false)
+    : mRead(false)
+    , mDeleted(false)
+    , mReplied(false)
+    , mForwarded(false)
 {
-
 }
 
 MessageStatus::~MessageStatus()
 {
-
 }
 
 void MessageStatus::setRead(bool state)

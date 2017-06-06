@@ -26,6 +26,7 @@ FilterInfoGui::FilterInfoGui()
 FilterInfoGui::~FilterInfoGui()
 {
 }
+
 void FilterInfoGui::setStatusMessage(const QString &status)
 {
     Q_UNUSED(status);
@@ -46,12 +47,12 @@ void FilterInfoGui::setCurrent(const QString &current)
     Q_UNUSED(current);
 }
 
-void  FilterInfoGui::setCurrent(int percent)
+void FilterInfoGui::setCurrent(int percent)
 {
     Q_UNUSED(percent);
 }
 
-void  FilterInfoGui::setOverall(int percent)
+void FilterInfoGui::setOverall(int percent)
 {
     Q_UNUSED(percent);
 }

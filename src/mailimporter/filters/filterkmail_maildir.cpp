@@ -27,28 +27,28 @@ class MailImporter::FilterKMail_maildirPrivate
 {
 public:
     FilterKMail_maildirPrivate()
-        : mImportDirDone(0),
-          mTotalDir(0)
+        : mImportDirDone(0)
+        , mTotalDir(0)
     {
-
     }
+
     int mImportDirDone;
     int mTotalDir;
 };
 
 /** Default constructor. */
-FilterKMail_maildir::FilterKMail_maildir() :
-    Filter(i18n("Import KMail Maildirs and Folder Structure"),
-           QStringLiteral("Danny Kukawka"),
-           i18n("<p><b>KMail import filter</b></p>"
-                "<p>Select the base directory of the KMail mailfolder you want to import.</p>"
-                "<p><b>Note:</b> Never select your current local KMail maildir (usually "
-                "~/Mail or ~/.kde/share/apps/kmail/mail ): in this case, ImportWizard may become stuck "
-                "in a continuous loop. </p>"
-                "<p>This filter does not import KMail mailfolders with mbox files.</p>"
-                "<p>Since it is possible to recreate the folder structure, the folders "
-                "will be stored under: \"KMail-Import\" in your local folder.</p>")),
-    d(new MailImporter::FilterKMail_maildirPrivate)
+FilterKMail_maildir::FilterKMail_maildir()
+    : Filter(i18n("Import KMail Maildirs and Folder Structure"),
+             QStringLiteral("Danny Kukawka"),
+             i18n("<p><b>KMail import filter</b></p>"
+                  "<p>Select the base directory of the KMail mailfolder you want to import.</p>"
+                  "<p><b>Note:</b> Never select your current local KMail maildir (usually "
+                  "~/Mail or ~/.kde/share/apps/kmail/mail ): in this case, ImportWizard may become stuck "
+                  "in a continuous loop. </p>"
+                  "<p>This filter does not import KMail mailfolders with mbox files.</p>"
+                  "<p>Since it is possible to recreate the folder structure, the folders "
+                  "will be stored under: \"KMail-Import\" in your local folder.</p>"))
+    , d(new MailImporter::FilterKMail_maildirPrivate)
 {
 }
 
@@ -81,7 +81,7 @@ void FilterKMail_maildir::processDirectory(const QString &path)
         if (!(*filename == QLatin1String(".") || *filename == QLatin1String(".."))) {
             filterInfo()->setCurrent(0);
             importDirContents(dir.filePath(*filename));
-            filterInfo()->setOverall((d->mTotalDir > 0) ? (int)((float) d->mImportDirDone / d->mTotalDir * 100) : 0);
+            filterInfo()->setOverall((d->mTotalDir > 0) ? (int)((float)d->mImportDirDone / d->mTotalDir * 100) : 0);
             filterInfo()->setCurrent(100);
             ++d->mImportDirDone;
         }
@@ -129,7 +129,6 @@ void FilterKMail_maildir::importMails(const QString &maildir)
  */
 void FilterKMail_maildir::importDirContents(const QString &dirName)
 {
-
     /** Here Import all archives in the current dir */
     importFiles(dirName);
 
@@ -145,7 +144,6 @@ void FilterKMail_maildir::importDirContents(const QString &dirName)
  */
 void FilterKMail_maildir::importFiles(const QString &dirName)
 {
-
     QDir dir(dirName);
     QString _path;
     bool generatedPath = false;
@@ -161,8 +159,8 @@ void FilterKMail_maildir::importFiles(const QString &dirName)
         }
 
         QString temp_mailfile = *mailFile;
-        if (!(temp_mailfile.endsWith(QLatin1String(".index")) || temp_mailfile.endsWith(QLatin1String(".index.ids")) ||
-                temp_mailfile.endsWith(QLatin1String(".index.sorted")) || temp_mailfile.endsWith(QLatin1String(".uidcache")))) {
+        if (!(temp_mailfile.endsWith(QLatin1String(".index")) || temp_mailfile.endsWith(QLatin1String(".index.ids"))
+              || temp_mailfile.endsWith(QLatin1String(".index.sorted")) || temp_mailfile.endsWith(QLatin1String(".uidcache")))) {
             if (!generatedPath) {
                 _path = QStringLiteral("KMail-Import");
                 QString _tmp = dir.filePath(*mailFile);
@@ -194,8 +192,7 @@ void FilterKMail_maildir::importFiles(const QString &dirName)
             if (!importMessage(_path, dir.filePath(*mailFile), filterInfo()->removeDupMessage())) {
                 filterInfo()->addErrorLogEntry(i18n("Could not import %1, duplicated message", *mailFile));
             }
-            filterInfo()->setCurrent((int)((float) currentFile / numFiles * 100));
+            filterInfo()->setCurrent((int)((float)currentFile / numFiles * 100));
         }
     }
 }
-

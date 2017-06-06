@@ -31,13 +31,11 @@
 
 #include <QDir>
 
-namespace MailImporter
-{
+namespace MailImporter {
 class MAILIMPORTER_EXPORT Filter
 {
 public:
-    explicit Filter(const QString &name, const QString &author,
-                    const QString &info = QString());
+    explicit Filter(const QString &name, const QString &author, const QString &info = QString());
     virtual ~Filter();
     virtual void import() = 0;
 
@@ -65,16 +63,11 @@ public:
 
 protected:
     static int countDirectory(const QDir &dir, bool searchHiddenDirectory);
-    bool importMessage(const QString &folderName,
-                       const QString &msgPath,
-                       bool duplicateCheck,
-                       MailImporter::MessageStatus status = MailImporter::MessageStatus());
+    bool importMessage(const QString &folderName, const QString &msgPath, bool duplicateCheck, MailImporter::MessageStatus status = MailImporter::MessageStatus());
 private:
     class Private;
     Private *const d;
 };
-
 }
 
 #endif
-

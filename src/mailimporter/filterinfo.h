@@ -22,9 +22,7 @@
 #include "mailimporter_export.h"
 #include <QString>
 #include <QObject>
-namespace MailImporter
-{
-
+namespace MailImporter {
 class FilterInfoGui;
 
 class MAILIMPORTER_EXPORT FilterInfo
@@ -61,4 +59,3 @@ private:
 }
 
 #endif /* FILTERINFO_H */
-

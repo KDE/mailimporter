@@ -24,15 +24,15 @@
 using namespace MailImporter;
 
 /** Default constructor. */
-FilterEvolution_v2::FilterEvolution_v2() :
-    Filter(i18n("Import Evolution 2.x Local Mails and Folder Structure"),
-           QStringLiteral("Danny Kukawka"),
-           i18n("<p><b>Evolution 2.x import filter</b></p>"
-                "<p>Select the base directory of your local Evolution mailfolder (usually ~/.evolution/mail/local/).</p>"
-                "<p><b>Note:</b> Never choose a Folder which <u>does not</u> contain mbox-files (for example "
-                "a maildir): if you do, you will get many new folders.</p>"
-                "<p>Since it is possible to recreate the folder structure, the folders "
-                "will be stored under: \"Evolution-Import\".</p>"))
+FilterEvolution_v2::FilterEvolution_v2()
+    : Filter(i18n("Import Evolution 2.x Local Mails and Folder Structure"),
+             QStringLiteral("Danny Kukawka"),
+             i18n("<p><b>Evolution 2.x import filter</b></p>"
+                  "<p>Select the base directory of your local Evolution mailfolder (usually ~/.evolution/mail/local/).</p>"
+                  "<p><b>Note:</b> Never choose a Folder which <u>does not</u> contain mbox-files (for example "
+                  "a maildir): if you do, you will get many new folders.</p>"
+                  "<p>Since it is possible to recreate the folder structure, the folders "
+                  "will be stored under: \"Evolution-Import\".</p>"))
 {
 }
 
@@ -69,11 +69,11 @@ void FilterEvolution_v2::import()
 
 bool FilterEvolution_v2::excludeFiles(const QString &file)
 {
-    if ((file.endsWith(QLatin1String(".db")) ||
-            file.endsWith(QLatin1String(".cmeta")) ||
-            file.endsWith(QLatin1String(".ev-summary")) ||
-            file.endsWith(QLatin1String(".ibex.index")) ||
-            file.endsWith(QLatin1String(".ibex.index.data")))) {
+    if ((file.endsWith(QLatin1String(".db"))
+         || file.endsWith(QLatin1String(".cmeta"))
+         || file.endsWith(QLatin1String(".ev-summary"))
+         || file.endsWith(QLatin1String(".ibex.index"))
+         || file.endsWith(QLatin1String(".ibex.index.data")))) {
         return true;
     }
     return false;
@@ -105,7 +105,7 @@ void FilterEvolution_v2::importMails(const QString &maildir)
                 break;
             }
             importDirContents(dir.filePath(*filename), *filename, *filename);
-            filterInfo()->setOverall((int)((float) currentDir / numSubDirs * 100));
+            filterInfo()->setOverall((int)((float)currentDir / numSubDirs * 100));
         }
 
         /** import last but not least all archives from the root-dir */
@@ -235,7 +235,7 @@ void FilterEvolution_v2::importMBox(const QString &mboxName, const QString &root
             l = mbox.readLine(input.data(), MAX_LINE); // read the first line, prevent "From "
             tmp.write(input.constData(), l);
 
-            while (! mbox.atEnd() && (l = mbox.readLine(input.data(), MAX_LINE)) && ((separate = input.data()).left(5) != "From ")) {
+            while (!mbox.atEnd() && (l = mbox.readLine(input.data(), MAX_LINE)) && ((separate = input.data()).left(5) != "From ")) {
                 tmp.write(input.constData(), l);
             }
             tmp.flush();
@@ -257,7 +257,7 @@ void FilterEvolution_v2::importMBox(const QString &mboxName, const QString &root
 
             importMessage(destFolder, tmp.fileName(), filterInfo()->removeDupMessage());
 
-            int currentPercentage = (int)(((float) mbox.pos() / filenameInfo.size()) * 100);
+            int currentPercentage = (int)(((float)mbox.pos() / filenameInfo.size()) * 100);
             filterInfo()->setCurrent(currentPercentage);
             if (filterInfo()->shouldTerminate()) {
                 break;
@@ -266,4 +266,3 @@ void FilterEvolution_v2::importMBox(const QString &mboxName, const QString &root
         mbox.close();
     }
 }
-

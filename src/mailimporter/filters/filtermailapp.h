@@ -18,8 +18,7 @@
  *imports mbox archives messages into KMail
  *@author Chris Howells
  */
-namespace MailImporter
-{
+namespace MailImporter {
 class FilterMailAppPrivate;
 class MAILIMPORTER_EXPORT FilterMailApp : public Filter
 {

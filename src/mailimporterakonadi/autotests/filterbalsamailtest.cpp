@@ -23,17 +23,14 @@
 FilterBalsaMailTest::FilterBalsaMailTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterBalsaMailTest::~FilterBalsaMailTest()
 {
-
 }
 
 void FilterBalsaMailTest::shouldImportData()
 {
-
 }
 
 void FilterBalsaMailTest::canNotImportDataEmptyPath()
@@ -68,7 +65,5 @@ void FilterBalsaMailTest::canNotImportDataWhenHomeDirSelected()
     filter.importMails(QDir::homePath());
     QVERIFY(importerTest->filterImporterDataList().isEmpty());
 }
-
-
 
 QTEST_MAIN(FilterBalsaMailTest)

@@ -22,21 +22,19 @@
 
 using namespace MailImporter;
 
-FilterPlain::FilterPlain() :
-    Filter(i18n("Import Plain Text Emails"),
-           i18n("Laurence Anderson <p>( Filter accelerated by Danny Kukawka )</p>"),
-           i18n("<p>Select the directory containing the emails on your system. "
-                "The emails are placed in a folder with the same name as the "
-                "directory they were in, prefixed by PLAIN-</p>"
-                "<p>This filter will import all .msg, .eml and .txt emails.</p>"))
+FilterPlain::FilterPlain()
+    : Filter(i18n("Import Plain Text Emails"),
+             i18n("Laurence Anderson <p>( Filter accelerated by Danny Kukawka )</p>"),
+             i18n("<p>Select the directory containing the emails on your system. "
+                  "The emails are placed in a folder with the same name as the "
+                  "directory they were in, prefixed by PLAIN-</p>"
+                  "<p>This filter will import all .msg, .eml and .txt emails.</p>"))
 {
 }
 
 FilterPlain::~FilterPlain()
 {
 }
-
-
 
 void FilterPlain::import()
 {
@@ -68,7 +66,7 @@ void FilterPlain::importMails(const QString &mailDir)
             filterInfo()->setFrom(dirRealPath);
             filterInfo()->setTo(destName);
             filterInfo()->setCurrent(0);
-            if (! importMessage(destName, dirRealPath, filterInfo()->removeDupMessage())) {
+            if (!importMessage(destName, dirRealPath, filterInfo()->removeDupMessage())) {
                 filterInfo()->addErrorLogEntry(i18n("Could not import %1", *mailFile));
             }
 
@@ -89,4 +87,3 @@ void FilterPlain::importMails(const QString &mailDir)
     }
     clearCountDuplicate();
 }
-

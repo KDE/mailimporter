@@ -22,7 +22,6 @@
 FilterImporterAkonadiTest::FilterImporterAkonadiTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 QTEST_MAIN(FilterImporterAkonadiTest)

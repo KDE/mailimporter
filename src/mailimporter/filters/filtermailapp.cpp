@@ -33,18 +33,17 @@ class MailImporter::FilterMailAppPrivate
 public:
     FilterMailAppPrivate()
     {
-
     }
 
     QStringList mMboxFiles;
 };
 
-FilterMailApp::FilterMailApp() :
-    Filter(i18n("Import From OS X Mail"),
-           i18n("Chris Howells<br /><br />Filter accelerated by Danny Kukawka )"),
-           i18n("<p><b>OS X Mail Import Filter</b></p>"
-                "<p>This filter imports e-mails from the Mail client in Apple Mac OS X.</p>")),
-    d(new MailImporter::FilterMailAppPrivate)
+FilterMailApp::FilterMailApp()
+    : Filter(i18n("Import From OS X Mail"),
+             i18n("Chris Howells<br /><br />Filter accelerated by Danny Kukawka )"),
+             i18n("<p><b>OS X Mail Import Filter</b></p>"
+                  "<p>This filter imports e-mails from the Mail client in Apple Mac OS X.</p>"))
+    , d(new MailImporter::FilterMailAppPrivate)
 {
 }
 
@@ -55,11 +54,11 @@ FilterMailApp::~FilterMailApp()
 
 void FilterMailApp::import()
 {
-    const QString directory = QFileDialog::getExistingDirectory(filterInfo()->parentWidget(), QString(),  QDir::homePath());
+    const QString directory = QFileDialog::getExistingDirectory(filterInfo()->parentWidget(), QString(), QDir::homePath());
     importMails(directory);
 }
 
-void FilterMailApp::importMails(const QString  &maildir)
+void FilterMailApp::importMails(const QString &maildir)
 {
     if (maildir.isEmpty()) {
         filterInfo()->alert(i18n("No files selected."));
@@ -81,7 +80,7 @@ void FilterMailApp::importMails(const QString  &maildir)
             break;
         }
         QFile mbox(*filename);
-        if (! mbox.open(QIODevice::ReadOnly)) {
+        if (!mbox.open(QIODevice::ReadOnly)) {
             filterInfo()->alert(i18n("Unable to open %1, skipping", *filename));
         } else {
             QFileInfo filenameInfo(*filename);
@@ -97,7 +96,7 @@ void FilterMailApp::importMails(const QString  &maildir)
             QByteArray input(MAX_LINE, '\0');
             long l = 0;
 
-            while (! mbox.atEnd()) {
+            while (!mbox.atEnd()) {
                 QTemporaryFile tmp;
                 tmp.open();
                 /* comment by Danny:
@@ -115,7 +114,7 @@ void FilterMailApp::importMails(const QString  &maildir)
                 l = mbox.readLine(input.data(), MAX_LINE); // read the first line, prevent "From "
                 tmp.write(input.constData(), l);
 
-                while (! mbox.atEnd() && (l = mbox.readLine(input.data(), MAX_LINE)) && ((separate = input.data()).left(5) != "From ")) {
+                while (!mbox.atEnd() && (l = mbox.readLine(input.data(), MAX_LINE)) && ((separate = input.data()).left(5) != "From ")) {
                     tmp.write(input.constData(), l);
                 }
                 tmp.flush();
@@ -123,7 +122,7 @@ void FilterMailApp::importMails(const QString  &maildir)
 
                 importMessage(folderName, tmp.fileName(), filterInfo()->removeDupMessage());
 
-                int currentPercentage = (int)(((float) mbox.pos() / filenameInfo.size()) * 100);
+                int currentPercentage = (int)(((float)mbox.pos() / filenameInfo.size()) * 100);
                 filterInfo()->setCurrent(currentPercentage);
                 if (currentFile == 1) {
                     overall_status = (int)(currentPercentage * ((float)currentFile / d->mMboxFiles.count()));

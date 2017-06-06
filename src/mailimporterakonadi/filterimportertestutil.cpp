@@ -20,7 +20,6 @@
 FilterImporterTestUtil::FilterImporterTestUtil(const QString &filename)
     : mFileName(filename)
 {
-
 }
 
 QString FilterImporterTestUtil::extractData()

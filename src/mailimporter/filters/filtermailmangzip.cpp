@@ -25,13 +25,13 @@
 
 using namespace MailImporter;
 
-FilterMailmanGzip::FilterMailmanGzip() :
-    Filter(i18n("Import mailman gzip Files"),
-           QStringLiteral("Laurent Montel"),
-           i18n("<p><b>mailman gzip import filter</b></p>"
-                "<p>This filter will import mailman gzipped files into KMail.</p>"
-                "<p><b>Note:</b> Emails will be imported into folders named after the "
-                "file they came from, prefixed with MAILMAN-</p>"))
+FilterMailmanGzip::FilterMailmanGzip()
+    : Filter(i18n("Import mailman gzip Files"),
+             QStringLiteral("Laurent Montel"),
+             i18n("<p><b>mailman gzip import filter</b></p>"
+                  "<p>This filter will import mailman gzipped files into KMail.</p>"
+                  "<p><b>Note:</b> Emails will be imported into folders named after the "
+                  "file they came from, prefixed with MAILMAN-</p>"))
 {
 }
 
@@ -78,7 +78,7 @@ void FilterMailmanGzip::importMails(const QStringList &filenames)
         QByteArray input(MAX_LINE, '\0');
         long l = 0;
 
-        while (! device->atEnd()) {
+        while (!device->atEnd()) {
             QTemporaryFile tmp;
             tmp.open();
             qint64 filepos = 0;
@@ -93,7 +93,7 @@ void FilterMailmanGzip::importMails(const QStringList &filenames)
 
             /* check if the first line start with "From " (and not "From: ") and discard the line
             * in this case because some IMAP servers (e.g. Cyrus) don't accept this header line */
-            if (!first_msg && ((separate = input.data()).left(5) !=  "From ")) {
+            if (!first_msg && ((separate = input.data()).left(5) != "From ")) {
                 tmp.write(input.constData(), l);
             }
 
@@ -104,7 +104,7 @@ void FilterMailmanGzip::importMails(const QStringList &filenames)
                 tmp.write(separate.constData(), separate.length());
             }
 
-            while (! device->atEnd() && (l = device->readLine(input.data(), MAX_LINE)) && ((separate = input.data()).left(5) != "From ")) {
+            while (!device->atEnd() && (l = device->readLine(input.data(), MAX_LINE)) && ((separate = input.data()).left(5) != "From ")) {
                 tmp.write(input.constData(), l);
 
                 // workaround to fix hang if a corrupted mbox contains some
@@ -124,7 +124,7 @@ void FilterMailmanGzip::importMails(const QStringList &filenames)
                 qCWarning(MAILIMPORTER_LOG) << "Message size is 0 bytes, not importing it.";
             }
 
-            int currentPercentage = (int)(((float) device->pos() / filenameInfo.size()) * 100);
+            int currentPercentage = (int)(((float)device->pos() / filenameInfo.size()) * 100);
             filterInfo()->setCurrent(currentPercentage);
             if (currentFile == 1) {
                 overall_status = (int)(currentPercentage * ((float)currentFile / filenames.count()));

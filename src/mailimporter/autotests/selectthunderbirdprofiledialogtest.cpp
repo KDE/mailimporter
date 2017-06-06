@@ -24,7 +24,6 @@
 SelectThunderbirdProfileDialogTest::SelectThunderbirdProfileDialogTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 void SelectThunderbirdProfileDialogTest::shouldHaveDefaultValue()

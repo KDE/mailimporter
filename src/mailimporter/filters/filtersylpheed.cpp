@@ -30,25 +30,25 @@ class MailImporter::FilterSylpheedPrivate
 {
 public:
     FilterSylpheedPrivate()
-        : mImportDirDone(0),
-          mTotalDir(0)
+        : mImportDirDone(0)
+        , mTotalDir(0)
     {
-
     }
+
     int mImportDirDone;
     int mTotalDir;
 };
 /** Default constructor. */
-FilterSylpheed::FilterSylpheed() :
-    Filter(i18n("Import Sylpheed Maildirs and Folder Structure"),
-           QStringLiteral("Danny Kukawka"),
-           i18n("<p><b>Sylpheed import filter</b></p>"
-                "<p>Select the base directory of the Sylpheed mailfolder you want to import "
-                "(usually: ~/Mail ).</p>"
-                "<p>Since it is possible to recreate the folder structure, the folders "
-                "will be stored under: \"Sylpheed-Import\" in your local folder.</p>"
-                "<p>This filter also recreates the status of message, e.g. new or forwarded.</p>")),
-    d(new MailImporter::FilterSylpheedPrivate)
+FilterSylpheed::FilterSylpheed()
+    : Filter(i18n("Import Sylpheed Maildirs and Folder Structure"),
+             QStringLiteral("Danny Kukawka"),
+             i18n("<p><b>Sylpheed import filter</b></p>"
+                  "<p>Select the base directory of the Sylpheed mailfolder you want to import "
+                  "(usually: ~/Mail ).</p>"
+                  "<p>Since it is possible to recreate the folder structure, the folders "
+                  "will be stored under: \"Sylpheed-Import\" in your local folder.</p>"
+                  "<p>This filter also recreates the status of message, e.g. new or forwarded.</p>"))
+    , d(new MailImporter::FilterSylpheedPrivate)
 {
 }
 
@@ -119,7 +119,7 @@ void FilterSylpheed::processDirectory(const QString &path)
             break;
         }
         importDirContents(dir.filePath(*filename));
-        filterInfo()->setOverall((d->mTotalDir > 0) ? (int)((float) d->mImportDirDone / d->mTotalDir * 100) : 0);
+        filterInfo()->setOverall((d->mTotalDir > 0) ? (int)((float)d->mImportDirDone / d->mTotalDir * 100) : 0);
         ++d->mImportDirDone;
     }
 }
@@ -181,9 +181,9 @@ void FilterSylpheed::importDirContents(const QString &dirName)
 
 bool FilterSylpheed::excludeFile(const QString &file)
 {
-    if (file.endsWith(QLatin1String(".sylpheed_cache")) ||
-            file.endsWith(QLatin1String(".sylpheed_mark")) ||
-            file.endsWith(QLatin1String(".mh_sequences"))) {
+    if (file.endsWith(QLatin1String(".sylpheed_cache"))
+        || file.endsWith(QLatin1String(".sylpheed_mark"))
+        || file.endsWith(QLatin1String(".mh_sequences"))) {
         return true;
     }
     return false;
@@ -246,10 +246,10 @@ void FilterSylpheed::importFiles(const QString &dirName)
             } else {
                 status.setRead(true);    // 0 == read
             }
-            if (! importMessage(_path, dir.filePath(*mailFile), filterInfo()->removeDupMessage(), status)) {
+            if (!importMessage(_path, dir.filePath(*mailFile), filterInfo()->removeDupMessage(), status)) {
                 filterInfo()->addErrorLogEntry(i18n("Could not import %1", *mailFile));
             }
-            filterInfo()->setCurrent((int)((float) currentFile / numFiles * 100));
+            filterInfo()->setCurrent((int)((float)currentFile / numFiles * 100));
         }
     }
 }
@@ -286,7 +286,7 @@ void FilterSylpheed::readMarkFile(const QString &path, QHash<QString, unsigned l
     * at a file created on another platform. I don't have any test
     * marks/folders, so just ignoring this case */
     stream >> in;
-    if (in > (quint32) 0xffff) {
+    if (in > (quint32)0xffff) {
         return;
     }
 
@@ -298,7 +298,7 @@ void FilterSylpheed::readMarkFile(const QString &path, QHash<QString, unsigned l
         stream >> in;
         stream >> flags;
         QString s;
-        s.setNum((uint) in);
+        s.setNum((uint)in);
         dict.insert(s, flags);
     }
 }

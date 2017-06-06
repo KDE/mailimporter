@@ -25,11 +25,9 @@
  * Imports Sylpheed mail folder with maildir format recursively, recreating the folder structure.
  * @author Danny Kukawka
  */
-namespace MailImporter
-{
+namespace MailImporter {
 class MAILIMPORTER_EXPORT FilterClawsMail : public FilterSylpheed
 {
-
 public:
     FilterClawsMail();
     ~FilterClawsMail();

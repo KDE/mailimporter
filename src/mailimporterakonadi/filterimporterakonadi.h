@@ -24,8 +24,7 @@
 #include <KMime/Message>
 #include "mailimporterakonadi_export.h"
 #include <QString>
-namespace MailImporter
-{
+namespace MailImporter {
 class MAILIMPORTERAKONADI_EXPORT FilterImporterAkonadi : public MailImporter::FilterImporterBase
 {
 public:
@@ -61,17 +60,13 @@ private:
     * NOTE: Only call this method if a message ID exists, otherwise
     * you could get false positives.
     */
-    bool checkForDuplicates(const QString &msgID,
-                            const Akonadi::Collection &msgCollection,
-                            const QString &messageFolder);
+    bool checkForDuplicates(const QString &msgID, const Akonadi::Collection &msgCollection, const QString &messageFolder);
     /**
     * Adds a single subcollection to the given base collection and returns it.
     * Use parseFolderString() instead if you want to create hierachies of collections.
     */
-    Akonadi::Collection addSubCollection(const Akonadi::Collection &baseCollection,
-                                         const QString &newCollectionPathName);
-    bool addAkonadiMessage(const Akonadi::Collection &collection,
-                           const KMime::Message::Ptr &message, Akonadi::MessageStatus status);
+    Akonadi::Collection addSubCollection(const Akonadi::Collection &baseCollection, const QString &newCollectionPathName);
+    bool addAkonadiMessage(const Akonadi::Collection &collection, const KMime::Message::Ptr &message, Akonadi::MessageStatus status);
 
     QMultiMap<QString, QString> mMessageFolderMessageIDMap;
     QMap<QString, Akonadi::Collection> mMessageFolderCollectionMap;

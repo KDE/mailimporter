@@ -37,8 +37,8 @@ class MailImporter::FilterKMailArchivePrivate
 {
 public:
     FilterKMailArchivePrivate()
-        : mTotalFiles(0),
-          mFilesDone(0)
+        : mTotalFiles(0)
+        , mFilesDone(0)
     {
     }
 
@@ -50,8 +50,8 @@ FilterKMailArchive::FilterKMailArchive()
              QStringLiteral("Klar\xE4lvdalens Datakonsult AB"),
              i18n("<p><b>KMail Archive File Import Filter</b></p>"
                   "<p>This filter will import archives files previously exported by KMail.</p>"
-                  "<p>Archive files contain a complete folder subtree compressed into a single file.</p>")),
-      d(new MailImporter::FilterKMailArchivePrivate)
+                  "<p>Archive files contain a complete folder subtree compressed into a single file.</p>"))
+    , d(new MailImporter::FilterKMailArchivePrivate)
 {
 }
 
@@ -91,10 +91,9 @@ bool FilterKMailArchive::importFolder(const KArchiveDirectory *folder, const QSt
     qCDebug(MAILIMPORTER_LOG) << "Importing folder" << folder->name();
     filterInfo()->addInfoLogEntry(i18n("Importing folder '%1'...", folderPath));
     filterInfo()->setTo(filterImporter()->topLevelFolder() + folderPath);
-    const KArchiveDirectory *const messageDir =
-        dynamic_cast<const KArchiveDirectory *>(folder->entry(QStringLiteral("cur")));
+    const KArchiveDirectory *const messageDir
+        = dynamic_cast<const KArchiveDirectory *>(folder->entry(QStringLiteral("cur")));
     if (messageDir) {
-
         int total = messageDir->entries().count();
         int cur = 1;
 
@@ -134,7 +133,6 @@ bool FilterKMailArchive::importDirectory(const KArchiveDirectory *directory, con
         const KArchiveEntry *const entry = directory->entry(entryName);
 
         if (entry->isDirectory()) {
-
             const KArchiveDirectory *dir = static_cast<const KArchiveDirectory *>(entry);
 
             if (!dir->name().startsWith(QLatin1Char('.'))) {
@@ -142,15 +140,12 @@ bool FilterKMailArchive::importDirectory(const KArchiveDirectory *directory, con
                     return false;
                 }
             }
-
             // Entry starts with a dot, so we assume it is a subdirectory
             else {
-
                 const QString folderName = folderNameForDirectoryName(entry->name());
                 if (folderName.isEmpty()) {
                     filterInfo()->addErrorLogEntry(i18n("Unexpected subdirectory named '%1'.", entry->name()));
                 } else {
-
                     if (!importDirectory(dir, folderPath + QLatin1Char('/') + folderName)) {
                         return false;
                     }
@@ -179,7 +174,8 @@ int FilterKMailArchive::countFiles(const KArchiveDirectory *directory) const
 
 void FilterKMailArchive::import()
 {
-    const QString archiveFile = QFileDialog::getOpenFileName(filterInfo()->parentWidget(), i18n("Select KMail Archive File to Import"), QString(), i18n("KMail Archive Files (*.tar *.tar.gz *.tar.bz2 *.zip)"));
+    const QString archiveFile
+        = QFileDialog::getOpenFileName(filterInfo()->parentWidget(), i18n("Select KMail Archive File to Import"), QString(), i18n("KMail Archive Files (*.tar *.tar.gz *.tar.bz2 *.zip)"));
     if (archiveFile.isEmpty()) {
         filterInfo()->alert(i18n("Please select an archive file that should be imported."));
         return;
@@ -187,7 +183,7 @@ void FilterKMailArchive::import()
     importMails(archiveFile);
 }
 
-void FilterKMailArchive::importMails(const QString  &archiveFile)
+void FilterKMailArchive::importMails(const QString &archiveFile)
 {
     if (archiveFile.isEmpty()) {
         filterInfo()->alert(i18n("No archive selected."));

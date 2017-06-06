@@ -39,13 +39,14 @@ class Q_DECL_HIDDEN Filter::Private
 {
 public:
     Private(const QString &_name, const QString &_author, const QString &_info)
-        : name(_name),
-          author(_author),
-          info(_info),
-          filterImporter(nullptr),
-          filterInfo(nullptr)
+        : name(_name)
+        , author(_author)
+        , info(_info)
+        , filterImporter(nullptr)
+        , filterInfo(nullptr)
     {
     }
+
     ~Private()
     {
         delete filterImporter;
@@ -53,6 +54,7 @@ public:
         delete filterInfo;
         filterInfo = nullptr;
     }
+
     QString name;
     QString author;
     QString info;
@@ -61,8 +63,7 @@ public:
     MailImporter::FilterInfo *filterInfo;
 };
 
-Filter::Filter(const QString &name, const QString &author,
-               const QString &info)
+Filter::Filter(const QString &name, const QString &author, const QString &info)
     : d(new Private(name, author, info))
 {
 }
@@ -148,15 +149,13 @@ void Filter::setName(const QString &_name)
 {
     d->name = _name;
 }
+
 void Filter::setInfo(const QString &_info)
 {
     d->info = _info;
 }
 
-bool Filter::importMessage(const QString &folderName,
-                           const QString &msgPath,
-                           bool duplicateCheck,
-                           MailImporter::MessageStatus status)
+bool Filter::importMessage(const QString &folderName, const QString &msgPath, bool duplicateCheck, MailImporter::MessageStatus status)
 {
     return filterImporter()->importMessage(folderName, msgPath, duplicateCheck, status);
 }
@@ -179,4 +178,3 @@ int Filter::countDirectory(const QDir &dir, bool searchHiddenDirectory)
     }
     return countDir;
 }
-

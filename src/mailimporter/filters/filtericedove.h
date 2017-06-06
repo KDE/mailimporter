@@ -19,8 +19,7 @@
 #define FILTERICEDOVE_H
 
 #include "filterthunderbird.h"
-namespace MailImporter
-{
+namespace MailImporter {
 class MAILIMPORTER_EXPORT FilterIcedove : public FilterThunderbird
 {
 public:

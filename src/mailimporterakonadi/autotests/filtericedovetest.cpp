@@ -25,9 +25,10 @@ class FilterIcecoveAbstract : public MailImporter::FilterIcedove
 public:
     FilterIcecoveAbstract()
     {
-
     }
-    QString settingsPath() override {
+
+    QString settingsPath() override
+    {
         return MailImporter::FilterIcedove::settingsPath();
     }
 };
@@ -35,12 +36,10 @@ public:
 FilterIcedoveTest::FilterIcedoveTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterIcedoveTest::~FilterIcedoveTest()
 {
-
 }
 
 void FilterIcedoveTest::shouldHaveDefaultSettingsPath()
@@ -51,7 +50,6 @@ void FilterIcedoveTest::shouldHaveDefaultSettingsPath()
 
 void FilterIcedoveTest::shouldImportData()
 {
-
 }
 
 void FilterIcedoveTest::canNotImportDataEmptyPath()
@@ -86,4 +84,5 @@ void FilterIcedoveTest::canNotImportDataWhenHomeDirSelected()
     filter.importMails(QDir::homePath());
     QVERIFY(importerTest->filterImporterDataList().isEmpty());
 }
+
 QTEST_MAIN(FilterIcedoveTest)

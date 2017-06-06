@@ -48,7 +48,6 @@ SelectThunderbirdProfileDialog::SelectThunderbirdProfileDialog(QWidget *parent)
 
 SelectThunderbirdProfileDialog::~SelectThunderbirdProfileDialog()
 {
-
 }
 
 void SelectThunderbirdProfileDialog::fillProfile(const QMap<QString, QString> &map, const QString &defaultProfile)
@@ -61,9 +60,9 @@ QString SelectThunderbirdProfileDialog::selectedProfile() const
     return mSelectProfile->selectedProfile();
 }
 
-SelectThunderbirdProfileWidget::SelectThunderbirdProfileWidget(QWidget *parent) :
-    QWidget(parent),
-    ui(new Ui::SelectThunderbirdProfileWidget)
+SelectThunderbirdProfileWidget::SelectThunderbirdProfileWidget(QWidget *parent)
+    : QWidget(parent)
+    , ui(new Ui::SelectThunderbirdProfileWidget)
 {
     ui->setupUi(this);
 }
@@ -90,4 +89,3 @@ QString SelectThunderbirdProfileWidget::selectedProfile() const
 {
     return ui->profile->itemData(ui->profile->currentIndex()).toString();
 }
-

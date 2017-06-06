@@ -28,16 +28,16 @@
 using namespace MailImporter;
 
 /** Default constructor. */
-FilterThunderbird::FilterThunderbird() :
-    Filter(i18n("Import Thunderbird/Mozilla Local Mails and Folder Structure"),
-           QStringLiteral("Danny Kukawka"),
-           i18n("<p><b>Thunderbird/Mozilla import filter</b></p>"
-                "<p>Select your base Thunderbird/Mozilla mailfolder"
-                " (usually ~/.thunderbird/*.default/Mail/Local Folders/).</p>"
-                "<p><b>Note:</b> Never choose a Folder which <u>does not</u> contain mbox-files (for example,"
-                " a maildir): if you do, you will get many new folders.</p>"
-                "<p>Since it is possible to recreate the folder structure, the folders "
-                "will be stored under: \"Thunderbird-Import\".</p>"))
+FilterThunderbird::FilterThunderbird()
+    : Filter(i18n("Import Thunderbird/Mozilla Local Mails and Folder Structure"),
+             QStringLiteral("Danny Kukawka"),
+             i18n("<p><b>Thunderbird/Mozilla import filter</b></p>"
+                  "<p>Select your base Thunderbird/Mozilla mailfolder"
+                  " (usually ~/.thunderbird/*.default/Mail/Local Folders/).</p>"
+                  "<p><b>Note:</b> Never choose a Folder which <u>does not</u> contain mbox-files (for example,"
+                  " a maildir): if you do, you will get many new folders.</p>"
+                  "<p>Since it is possible to recreate the folder structure, the folders "
+                  "will be stored under: \"Thunderbird-Import\".</p>"))
 {
 }
 
@@ -99,7 +99,6 @@ QMap<QString, QString> FilterThunderbird::listProfile(QString &currentProfile, c
         }
     }
     return lstProfile;
-
 }
 
 QString FilterThunderbird::defaultInstallFolder() const
@@ -135,18 +134,18 @@ void FilterThunderbird::import()
     }
 }
 
-bool FilterThunderbird::excludeFiles(const QString  &file)
+bool FilterThunderbird::excludeFiles(const QString &file)
 {
-    if ((file.endsWith(QLatin1String(".msf")) ||
-            file.endsWith(QLatin1String(".dat")) ||
-            file.endsWith(QLatin1String(".json")) ||
-            file.endsWith(QLatin1String(".html")))) {
+    if ((file.endsWith(QLatin1String(".msf"))
+         || file.endsWith(QLatin1String(".dat"))
+         || file.endsWith(QLatin1String(".json"))
+         || file.endsWith(QLatin1String(".html")))) {
         return true;
     }
     return false;
 }
 
-void FilterThunderbird::importMails(const QString  &maildir)
+void FilterThunderbird::importMails(const QString &maildir)
 {
     if (maildir.isEmpty()) {
         filterInfo()->alert(i18n("No directory selected."));
@@ -171,7 +170,7 @@ void FilterThunderbird::importMails(const QString  &maildir)
                 break;
             }
             importDirContents(dir.filePath(*filename), *filename, *filename);
-            filterInfo()->setOverall((int)((float) currentDir / numSubDirs * 100));
+            filterInfo()->setOverall((int)((float)currentDir / numSubDirs * 100));
         }
 
         /** import last but not least all archives from the root-dir */
@@ -303,7 +302,7 @@ void FilterThunderbird::importMBox(const QString &mboxName, const QString &rootD
             l = mbox.readLine(input.data(), MAX_LINE); // read the first line, prevent "From "
             tmp.write(input.constData(), l);
 
-            while (! mbox.atEnd() && (l = mbox.readLine(input.data(), MAX_LINE)) && ((separate = input.data()).left(5) != "From ")) {
+            while (!mbox.atEnd() && (l = mbox.readLine(input.data(), MAX_LINE)) && ((separate = input.data()).left(5) != "From ")) {
                 tmp.write(input.constData(), l);
             }
             tmp.flush();
@@ -325,7 +324,7 @@ void FilterThunderbird::importMBox(const QString &mboxName, const QString &rootD
 
             importMessage(destFolder, tmp.fileName(), filterInfo()->removeDupMessage());
 
-            int currentPercentage = (int)(((float) mbox.pos() / filenameInfo.size()) * 100);
+            int currentPercentage = (int)(((float)mbox.pos() / filenameInfo.size()) * 100);
             filterInfo()->setCurrent(currentPercentage);
             if (filterInfo()->shouldTerminate()) {
                 mbox.close();
@@ -335,4 +334,3 @@ void FilterThunderbird::importMBox(const QString &mboxName, const QString &rootD
         mbox.close();
     }
 }
-

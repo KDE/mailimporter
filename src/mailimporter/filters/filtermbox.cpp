@@ -24,15 +24,15 @@
 
 using namespace MailImporter;
 
-FilterMBox::FilterMBox() :
-    Filter(i18n("Import mbox Files (UNIX, Evolution)"),
-           i18n("Laurence Anderson <p>( Filter accelerated by Danny Kukawka )</p>"),
-           i18n("<p><b>mbox import filter</b></p>"
-                "<p>This filter will import mbox files into KMail. Use this filter "
-                "if you want to import mails from Ximian Evolution or other mailers "
-                "that use this traditional UNIX format.</p>"
-                "<p><b>Note:</b> Emails will be imported into folders named after the "
-                "file they came from, prefixed with MBOX-</p>"))
+FilterMBox::FilterMBox()
+    : Filter(i18n("Import mbox Files (UNIX, Evolution)"),
+             i18n("Laurence Anderson <p>( Filter accelerated by Danny Kukawka )</p>"),
+             i18n("<p><b>mbox import filter</b></p>"
+                  "<p>This filter will import mbox files into KMail. Use this filter "
+                  "if you want to import mails from Ximian Evolution or other mailers "
+                  "that use this traditional UNIX format.</p>"
+                  "<p><b>Note:</b> Emails will be imported into folders named after the "
+                  "file they came from, prefixed with MBOX-</p>"))
 {
 }
 
@@ -61,7 +61,7 @@ void FilterMBox::importMails(const QStringList &filenames)
     QStringList::ConstIterator end(filenames.constEnd());
     for (QStringList::ConstIterator filename = filenames.constBegin(); filename != end; ++filename, ++currentFile) {
         QFile mbox(*filename);
-        if (! mbox.open(QIODevice::ReadOnly)) {
+        if (!mbox.open(QIODevice::ReadOnly)) {
             filterInfo()->alert(i18n("Unable to open %1, skipping", *filename));
         } else {
             QFileInfo filenameInfo(*filename);
@@ -76,7 +76,7 @@ void FilterMBox::importMails(const QStringList &filenames)
             QByteArray input(MAX_LINE, '\0');
             long l = 0;
 
-            while (! mbox.atEnd()) {
+            while (!mbox.atEnd()) {
                 QTemporaryFile tmp;
                 tmp.open();
                 qint64 filepos = 0;
@@ -91,7 +91,7 @@ void FilterMBox::importMails(const QStringList &filenames)
 
                 /* check if the first line start with "From " (and not "From: ") and discard the line
                 * in this case because some IMAP servers (e.g. Cyrus) don't accept this header line */
-                if (!first_msg && ((separate = input.data()).left(5) !=  "From ")) {
+                if (!first_msg && ((separate = input.data()).left(5) != "From ")) {
                     tmp.write(input.constData(), l);
                 }
 
@@ -101,7 +101,7 @@ void FilterMBox::importMails(const QStringList &filenames)
                     tmp.write(input.constData(), l);
                 }
 
-                while (! mbox.atEnd() && (l = mbox.readLine(input.data(), MAX_LINE)) && ((separate = input.data()).left(5) != "From ")) {
+                while (!mbox.atEnd() && (l = mbox.readLine(input.data(), MAX_LINE)) && ((separate = input.data()).left(5) != "From ")) {
                     tmp.write(input.constData(), l);
 
                     // workaround to fix hang if a corrupted mbox contains some
@@ -121,7 +121,7 @@ void FilterMBox::importMails(const QStringList &filenames)
                     qCWarning(MAILIMPORTER_LOG) << "Message size is 0 bytes, not importing it.";
                 }
 
-                int currentPercentage = (int)(((float) mbox.pos() / filenameInfo.size()) * 100);
+                int currentPercentage = (int)(((float)mbox.pos() / filenameInfo.size()) * 100);
                 filterInfo()->setCurrent(currentPercentage);
                 if (currentFile == 1) {
                     overall_status = (int)(currentPercentage * ((float)currentFile / filenames.count()));

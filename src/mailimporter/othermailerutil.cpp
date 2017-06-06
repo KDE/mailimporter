@@ -19,8 +19,7 @@
 
 #include <QStandardPaths>
 
-namespace MailImporter
-{
+namespace MailImporter {
 QString OtherMailerUtil::trojitaDefaultPath()
 {
     const QString path = QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + QLatin1String("/flaska.net/");

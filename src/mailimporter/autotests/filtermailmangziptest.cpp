@@ -23,17 +23,14 @@
 FilterMAilmangzipTest::FilterMAilmangzipTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterMAilmangzipTest::~FilterMAilmangzipTest()
 {
-
 }
 
 void FilterMAilmangzipTest::shouldImportData()
 {
-
 }
 
 void FilterMAilmangzipTest::canNotImportDataEmptyPath()

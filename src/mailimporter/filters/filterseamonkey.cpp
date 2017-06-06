@@ -31,12 +31,10 @@ FilterSeaMonkey::FilterSeaMonkey()
                  " a maildir): if you do, you will get many new folders.</p>"
                  "<p>Since it is possible to recreate the folder structure, the folders "
                  "will be stored under: \"SeaMonkey-Import\".</p>"));
-
 }
 
 FilterSeaMonkey::~FilterSeaMonkey()
 {
-
 }
 
 QString FilterSeaMonkey::settingsPath()

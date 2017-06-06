@@ -22,7 +22,6 @@
 MessageStatusTest::MessageStatusTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 void MessageStatusTest::shouldHaveDefaultValues()
@@ -67,4 +66,3 @@ void MessageStatusTest::shouldAssignValues()
 }
 
 QTEST_MAIN(MessageStatusTest)
-

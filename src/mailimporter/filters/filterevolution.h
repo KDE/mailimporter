@@ -26,8 +26,7 @@
  * Imports Evolution mboxes recursively, keeping the folder structure.
  * @author Simon MARTIN
  */
-namespace MailImporter
-{
+namespace MailImporter {
 class MAILIMPORTER_EXPORT FilterEvolution : public Filter
 {
 public:

@@ -27,10 +27,9 @@ class MailImporter::FilterLNotesPrivate
 {
 public:
     FilterLNotesPrivate()
-        : currentFile(1),
-          totalFiles(0)
+        : currentFile(1)
+        , totalFiles(0)
     {
-
     }
 
     /** the working directory */
@@ -42,16 +41,16 @@ public:
 };
 
 /** Default constructor. */
-FilterLNotes::FilterLNotes() :
-    Filter(i18n("Import Lotus Notes Emails"),
-           QStringLiteral("Robert Rockers"),
-           i18n("<p><b>Lotus Notes Structured Text mail import filter</b></p>"
-                "<p>This filter will import Structure Text files from an exported Lotus Notes email "
-                "client into KMail. Use this filter if you want to import mails from Lotus or other "
-                "mailers that use Lotus Notes' Structured Text format.</p>"
-                "<p><b>Note:</b> Since it is possible to recreate the folder structure, the imported "
-                "messages will be stored in subfolders named by the files they came from under: "
-                "\"LNotes-Import\" in your local folder.</p>"))
+FilterLNotes::FilterLNotes()
+    : Filter(i18n("Import Lotus Notes Emails"),
+             QStringLiteral("Robert Rockers"),
+             i18n("<p><b>Lotus Notes Structured Text mail import filter</b></p>"
+                  "<p>This filter will import Structure Text files from an exported Lotus Notes email "
+                  "client into KMail. Use this filter if you want to import mails from Lotus or other "
+                  "mailers that use Lotus Notes' Structured Text format.</p>"
+                  "<p><b>Note:</b> Since it is possible to recreate the folder structure, the imported "
+                  "messages will be stored in subfolders named by the files they came from under: "
+                  "\"LNotes-Import\" in your local folder.</p>"))
     , d(new MailImporter::FilterLNotesPrivate)
 {
 }
@@ -81,7 +80,6 @@ void FilterLNotes::import()
     // See filter_mbox.cxx for better reference.
     QStringList::ConstIterator end = filenames.constEnd();
     for (QStringList::ConstIterator filename = filenames.constBegin(); filename != end; ++filename) {
-
         ++d->currentFile;
         filterInfo()->addInfoLogEntry(i18n("Importing emails from %1", *filename));
         ImportLNotes(*filename);
@@ -98,7 +96,6 @@ void FilterLNotes::import()
  */
 void FilterLNotes::ImportLNotes(const QString &file)
 {
-
     // See Filter_pmail.cxx for better reference
 
     // Format of a Lotus Notes 5 Structured Text Document w form feed
@@ -108,10 +105,9 @@ void FilterLNotes::ImportLNotes(const QString &file)
     // open the message
     QFile f(file);
 
-    if (! f.open(QIODevice::ReadOnly)) {
+    if (!f.open(QIODevice::ReadOnly)) {
         filterInfo()->alert(i18n("Unable to open %1, skipping", file));
     } else {
-
         char ch = 0;
         int state = 0;
         int n = 0;
@@ -137,9 +133,9 @@ void FilterLNotes::ImportLNotes(const QString &file)
                 tempfile = new QTemporaryFile;
                 tempfile->setAutoRemove(false);
                 tempfile->open();
-            // fall through
-#if QT_VERSION >= QT_VERSION_CHECK(5,8,0)
-        Q_FALLTHROUGH();
+                // fall through
+#if QT_VERSION >= QT_VERSION_CHECK(5, 8, 0)
+                Q_FALLTHROUGH();
 #endif
             // inside a message state
             case 1:
@@ -152,7 +148,7 @@ void FilterLNotes::ImportLNotes(const QString &file)
                     tempfile->setAutoRemove(true);
                     state = 0;
 
-                    int currentPercentage = (int)(((float) f.pos() / filenameInfo.size()) * 100);
+                    int currentPercentage = (int)(((float)f.pos() / filenameInfo.size()) * 100);
                     filterInfo()->setCurrent(currentPercentage);
                     if (filterInfo()->shouldTerminate()) {
                         return;
@@ -186,4 +182,3 @@ void FilterLNotes::ImportLNotes(const QString &file)
         f.close();
     }
 }
-

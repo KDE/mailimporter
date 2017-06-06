@@ -23,17 +23,14 @@
 FilterClawsMailTest::FilterClawsMailTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterClawsMailTest::~FilterClawsMailTest()
 {
-
 }
 
 void FilterClawsMailTest::shouldImportData()
 {
-
 }
 
 void FilterClawsMailTest::canNotImportDataEmptyPath()
@@ -68,4 +65,5 @@ void FilterClawsMailTest::canNotImportDataWhenHomeDirSelected()
     filter.importMails(QDir::homePath());
     QVERIFY(importerTest->filterImporterDataList().isEmpty());
 }
+
 QTEST_MAIN(FilterClawsMailTest)

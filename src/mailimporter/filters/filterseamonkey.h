@@ -19,8 +19,7 @@
 #define FilterSeaMonkey_H
 
 #include "filterthunderbird.h"
-namespace MailImporter
-{
+namespace MailImporter {
 class MAILIMPORTER_EXPORT FilterSeaMonkey : public FilterThunderbird
 {
 public:

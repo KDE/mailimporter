@@ -25,19 +25,20 @@ class Q_DECL_HIDDEN FilterInfo::Private
 {
 public:
     Private()
-        : m_removeDupMsg(false),
-          m_filterInfoGui(nullptr)
+        : m_removeDupMsg(false)
+        , m_filterInfoGui(nullptr)
     {
     }
+
     ~Private()
     {
         delete m_filterInfoGui;
         m_filterInfoGui = nullptr;
     }
+
     bool m_removeDupMsg;
     FilterInfoGui *m_filterInfoGui;
     static bool s_terminateASAP;
-
 };
 
 bool FilterInfo::Private::s_terminateASAP = false;
@@ -87,14 +88,14 @@ void FilterInfo::setCurrent(const QString &current)
     }
 }
 
-void  FilterInfo::setCurrent(int percent)
+void FilterInfo::setCurrent(int percent)
 {
     if (d->m_filterInfoGui) {
         d->m_filterInfoGui->setCurrent(percent);
     }
 }
 
-void  FilterInfo::setOverall(int percent)
+void FilterInfo::setOverall(int percent)
 {
     if (d->m_filterInfoGui) {
         d->m_filterInfoGui->setOverall(percent);
@@ -156,4 +157,3 @@ QWidget *FilterInfo::parentWidget() const
     }
     return nullptr;
 }
-

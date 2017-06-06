@@ -23,17 +23,14 @@
 FilterPlainTest::FilterPlainTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterPlainTest::~FilterPlainTest()
 {
-
 }
 
 void FilterPlainTest::shouldImportData()
 {
-
 }
 
 void FilterPlainTest::canNotImportDataEmptyPath()

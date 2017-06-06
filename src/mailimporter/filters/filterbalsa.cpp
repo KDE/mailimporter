@@ -26,10 +26,9 @@ class MailImporter::FilterBalsaPrivate
 {
 public:
     FilterBalsaPrivate()
-        : mImportDirDone(0),
-          mTotalDir(0)
+        : mImportDirDone(0)
+        , mTotalDir(0)
     {
-
     }
 
     int mImportDirDone;
@@ -42,8 +41,8 @@ FilterBalsa::FilterBalsa()
              i18n("<p><b>Balsa import filter</b></p>"
                   "<p>Select the base directory of your local Balsa mailfolder (usually ~/mail/).</p>"
                   "<p>Since it is possible to recreate the folder structure, the folders "
-                  "will be stored under: \"Balsa-Import\".</p>")),
-      d(new MailImporter::FilterBalsaPrivate)
+                  "will be stored under: \"Balsa-Import\".</p>"))
+    , d(new MailImporter::FilterBalsaPrivate)
 {
 }
 
@@ -89,11 +88,10 @@ void FilterBalsa::processDirectory(const QString &path)
         if (!(*filename == QLatin1String(".") || *filename == QLatin1String(".."))) {
             filterInfo()->setCurrent(0);
             importDirContents(dir.filePath(*filename));
-            filterInfo()->setOverall((d->mTotalDir > 0) ? (int)((float) d->mImportDirDone / d->mTotalDir * 100) : 0);
+            filterInfo()->setOverall((d->mTotalDir > 0) ? (int)((float)d->mImportDirDone / d->mTotalDir * 100) : 0);
             filterInfo()->setCurrent(100);
         }
     }
-
 }
 
 void FilterBalsa::importMails(const QString &maildir)
@@ -140,7 +138,6 @@ void FilterBalsa::importMails(const QString &maildir)
  */
 void FilterBalsa::importDirContents(const QString &dirName)
 {
-
     /** Here Import all archives in the current dir */
     importFiles(dirName);
 
@@ -155,7 +152,6 @@ void FilterBalsa::importDirContents(const QString &dirName)
  */
 void FilterBalsa::importFiles(const QString &dirName)
 {
-
     QDir dir(dirName);
     QString _path;
     bool generatedPath = false;
@@ -171,10 +167,10 @@ void FilterBalsa::importFiles(const QString &dirName)
         }
         QString temp_mailfile = *mailFile;
         if (!(temp_mailfile.endsWith(QLatin1String(".db"))
-                || temp_mailfile.endsWith(QLatin1String(".cmeta"))
-                || temp_mailfile.endsWith(QLatin1String(".ev-summary"))
-                || temp_mailfile.endsWith(QLatin1String(".ibex.index"))
-                || temp_mailfile.endsWith(QLatin1String(".ibex.index.data")))) {
+              || temp_mailfile.endsWith(QLatin1String(".cmeta"))
+              || temp_mailfile.endsWith(QLatin1String(".ev-summary"))
+              || temp_mailfile.endsWith(QLatin1String(".ibex.index"))
+              || temp_mailfile.endsWith(QLatin1String(".ibex.index.data")))) {
             if (!generatedPath) {
                 _path = i18nc("define folder name where we import evolution mails", "Evolution-Import");
                 QString _tmp = dir.filePath(*mailFile);
@@ -207,10 +203,10 @@ void FilterBalsa::importFiles(const QString &dirName)
             }
             const MailImporter::MessageStatus status = statusFromFile(*mailFile);
 
-            if (! importMessage(_path, dir.filePath(*mailFile), filterInfo()->removeDupMessage(), status)) {
+            if (!importMessage(_path, dir.filePath(*mailFile), filterInfo()->removeDupMessage(), status)) {
                 filterInfo()->addErrorLogEntry(i18n("Could not import %1", *mailFile));
             }
-            filterInfo()->setCurrent((int)((float) currentFile / numFiles * 100));
+            filterInfo()->setCurrent((int)((float)currentFile / numFiles * 100));
         }
     }
 }
@@ -236,4 +232,3 @@ MailImporter::MessageStatus FilterBalsa::statusFromFile(const QString &filename)
     }
     return status;
 }
-

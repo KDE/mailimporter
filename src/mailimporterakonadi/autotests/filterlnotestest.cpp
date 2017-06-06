@@ -23,17 +23,14 @@
 FilterLnotesTest::FilterLnotesTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterLnotesTest::~FilterLnotesTest()
 {
-
 }
 
 void FilterLnotesTest::shouldImportData()
 {
-
 }
 
 void FilterLnotesTest::canNotImportDataEmptyPath()

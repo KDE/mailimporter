@@ -19,8 +19,7 @@
 #define FILTERBALSA_H
 
 #include "filters.h"
-namespace MailImporter
-{
+namespace MailImporter {
 class FilterBalsaPrivate;
 class MAILIMPORTER_EXPORT FilterBalsa : public Filter
 {

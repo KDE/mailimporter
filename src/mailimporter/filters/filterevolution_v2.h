@@ -24,8 +24,7 @@
  * @author Danny Kukawka
  */
 
-namespace MailImporter
-{
+namespace MailImporter {
 class MAILIMPORTER_EXPORT FilterEvolution_v2 : public Filter
 {
 public:
@@ -40,7 +39,6 @@ private:
     void importDirContents(const QString &, const QString &, const QString &);
     void importMBox(const QString &, const QString &, const QString &);
     bool excludeFiles(const QString &file);
-
 };
 }
 

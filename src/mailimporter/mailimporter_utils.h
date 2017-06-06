@@ -18,17 +18,18 @@
 #ifndef MAILIMPORTER_UTILS_H
 #define MAILIMPORTER_UTILS_H
 
-namespace MailImporter
-{
+namespace MailImporter {
 /**
  * Glorified QString[N] for (a) understandability (b) older gcc compatibility.
  */
-template <unsigned int size> class FolderStructureBase
+template<unsigned int size> class FolderStructureBase
 {
 public:
     typedef QString NString[size];
     /** Constructor. Need a default constructor for QValueList. */
-    FolderStructureBase() {}
+    FolderStructureBase()
+    {
+    }
 
     /** Constructor. Turn N QStrings into a folder structure
      *   description.
@@ -81,10 +82,10 @@ public:
             return d[0];
         }
     }
+
 private:
     QString d[size];
 };
 }
 
 #endif /* MAILIMPORTER_UTILS_H */
-

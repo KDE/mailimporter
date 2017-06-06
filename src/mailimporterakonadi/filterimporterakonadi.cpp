@@ -35,15 +35,13 @@
 using namespace MailImporter;
 
 FilterImporterAkonadi::FilterImporterAkonadi(MailImporter::FilterInfo *info)
-    : MailImporter::FilterImporterBase(info),
-      mCountDuplicates(0)
+    : MailImporter::FilterImporterBase(info)
+    , mCountDuplicates(0)
 {
-
 }
 
 FilterImporterAkonadi::~FilterImporterAkonadi()
 {
-
 }
 
 void FilterImporterAkonadi::clear()
@@ -94,7 +92,6 @@ bool FilterImporterAkonadi::importMessage(const QString &folderName, const QStri
     Akonadi::Collection mailFolder = parseFolderString(folderName);
     QUrl msgUrl = QUrl::fromLocalFile(msgPath);
     if (!msgUrl.isEmpty() && msgUrl.isLocalFile()) {
-
         QFile f(msgUrl.toLocalFile());
         QByteArray msgText;
         if (f.open(QIODevice::ReadOnly)) {
@@ -141,6 +138,7 @@ bool FilterImporterAkonadi::importMessage(const QString &folderName, const QStri
     }
     return true;
 }
+
 Akonadi::Collection FilterImporterAkonadi::parseFolderString(const QString &folderParseString)
 {
     // Return an already created collection:
@@ -172,12 +170,11 @@ Akonadi::Collection FilterImporterAkonadi::parseFolderString(const QString &fold
     return lastCollection;
 }
 
-Akonadi::Collection FilterImporterAkonadi::addSubCollection(const Akonadi::Collection &baseCollection,
-        const QString &newCollectionPathName)
+Akonadi::Collection FilterImporterAkonadi::addSubCollection(const Akonadi::Collection &baseCollection, const QString &newCollectionPathName)
 {
     // Ensure that the collection doesn't already exsit, if it does just return it.
     Akonadi::CollectionFetchJob *fetchJob = new Akonadi::CollectionFetchJob(baseCollection,
-            Akonadi::CollectionFetchJob::FirstLevel);
+                                                                            Akonadi::CollectionFetchJob::FirstLevel);
     if (!fetchJob->exec()) {
         mInfo->alert(i18n("<b>Warning:</b> Could not check that the folder already exists. Reason: %1",
                           fetchJob->errorString()));
@@ -207,9 +204,7 @@ Akonadi::Collection FilterImporterAkonadi::addSubCollection(const Akonadi::Colle
     return collection;
 }
 
-bool FilterImporterAkonadi::checkForDuplicates(const QString &msgID,
-        const Akonadi::Collection &msgCollection,
-        const QString &messageFolder)
+bool FilterImporterAkonadi::checkForDuplicates(const QString &msgID, const Akonadi::Collection &msgCollection, const QString &messageFolder)
 {
     bool folderFound = false;
 
@@ -255,8 +250,8 @@ bool FilterImporterAkonadi::checkForDuplicates(const QString &msgID,
     // Check if this message has a duplicate
     QMultiMap<QString, QString>::const_iterator endMsgID(mMessageFolderMessageIDMap.constEnd());
     for (QMultiMap<QString, QString>::const_iterator it = mMessageFolderMessageIDMap.constBegin(); it != endMsgID; ++it) {
-        if (it.key() == messageFolder &&
-                it.value() == msgID) {
+        if (it.key() == messageFolder
+            && it.value() == msgID) {
             return true;
         }
     }
@@ -266,8 +261,7 @@ bool FilterImporterAkonadi::checkForDuplicates(const QString &msgID,
     return false;
 }
 
-bool FilterImporterAkonadi::addAkonadiMessage(const Akonadi::Collection &collection,
-        const KMime::Message::Ptr &message, Akonadi::MessageStatus status)
+bool FilterImporterAkonadi::addAkonadiMessage(const Akonadi::Collection &collection, const KMime::Message::Ptr &message, Akonadi::MessageStatus status)
 {
     Akonadi::Item item;
 

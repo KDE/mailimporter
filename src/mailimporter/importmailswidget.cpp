@@ -28,8 +28,8 @@ public:
     ImportMailsWidgetPrivate()
         : ui(new Ui::ImportMailsWidget)
     {
-
     }
+
     ~ImportMailsWidgetPrivate()
     {
         delete ui;
@@ -38,9 +38,9 @@ public:
     Ui::ImportMailsWidget *ui;
 };
 
-ImportMailsWidget::ImportMailsWidget(QWidget *parent) :
-    QWidget(parent),
-    d(new MailImporter::ImportMailsWidgetPrivate)
+ImportMailsWidget::ImportMailsWidget(QWidget *parent)
+    : QWidget(parent)
+    , d(new MailImporter::ImportMailsWidgetPrivate)
 {
     d->ui->setupUi(this);
 }
@@ -70,12 +70,12 @@ void ImportMailsWidget::setCurrent(const QString &current)
     d->ui->current->setText(current);
 }
 
-void  ImportMailsWidget::setCurrent(int percent)
+void ImportMailsWidget::setCurrent(int percent)
 {
     d->ui->done_current->setValue(percent);
 }
 
-void  ImportMailsWidget::setOverall(int percent)
+void ImportMailsWidget::setOverall(int percent)
 {
     d->ui->done_overall->setValue(percent);
 }
@@ -109,4 +109,3 @@ void ImportMailsWidget::clear()
     setFrom(QString());
     setTo(QString());
 }
-

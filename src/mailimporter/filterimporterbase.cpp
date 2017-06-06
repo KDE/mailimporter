@@ -23,12 +23,10 @@ using namespace MailImporter;
 FilterImporterBase::FilterImporterBase(MailImporter::FilterInfo *info)
     : mInfo(info)
 {
-
 }
 
 FilterImporterBase::~FilterImporterBase()
 {
-
 }
 
 bool FilterImporterBase::importMessage(const QString &folderName, const QString &msgPath, bool duplicateCheck, const MessageStatus &status)
@@ -51,12 +49,10 @@ bool FilterImporterBase::importMessage(const KArchiveFile *file, const QString &
 
 void FilterImporterBase::clear()
 {
-
 }
 
 void FilterImporterBase::clearCountDuplicate()
 {
-
 }
 
 int FilterImporterBase::countDuplicates() const

@@ -29,10 +29,9 @@ class MailImporter::FilterTheBatPrivate
 {
 public:
     FilterTheBatPrivate()
-        : mImportDirDone(0),
-          mTotalDir(0)
+        : mImportDirDone(0)
+        , mTotalDir(0)
     {
-
     }
 
     int mImportDirDone;
@@ -40,17 +39,17 @@ public:
 };
 
 /** Default constructor. */
-FilterTheBat::FilterTheBat() :
-    Filter(i18n("Import The Bat! Mails and Folder Structure"),
-           QStringLiteral("Danny Kukawka"),
-           i18n("<p><b>The Bat! import filter</b></p>"
-                "<p>Select the base directory of the \'The Bat!\' local mailfolder you "
-                "want to import.</p>"
-                "<p><b>Note:</b> This filter imports the *.tbb-files from \'The Bat!\' "
-                "local folder, e.g. from POP accounts, and not from IMAP/DIMAP accounts.</p>"
-                "<p>Since it is possible to recreate the folder structure, the folders "
-                "will be stored under: \"TheBat-Import\" in your local account.</p>")),
-    d(new MailImporter::FilterTheBatPrivate)
+FilterTheBat::FilterTheBat()
+    : Filter(i18n("Import The Bat! Mails and Folder Structure"),
+             QStringLiteral("Danny Kukawka"),
+             i18n("<p><b>The Bat! import filter</b></p>"
+                  "<p>Select the base directory of the \'The Bat!\' local mailfolder you "
+                  "want to import.</p>"
+                  "<p><b>Note:</b> This filter imports the *.tbb-files from \'The Bat!\' "
+                  "local folder, e.g. from POP accounts, and not from IMAP/DIMAP accounts.</p>"
+                  "<p>Since it is possible to recreate the folder structure, the folders "
+                  "will be stored under: \"TheBat-Import\" in your local account.</p>"))
+    , d(new MailImporter::FilterTheBatPrivate)
 {
 }
 
@@ -81,12 +80,12 @@ void FilterTheBat::processDirectory(const QString &path)
             break;
         }
         importDirContents(dir.filePath(*filename));
-        filterInfo()->setOverall((d->mTotalDir > 0) ? (int)((float) d->mImportDirDone / d->mTotalDir * 100) : 0);
+        filterInfo()->setOverall((d->mTotalDir > 0) ? (int)((float)d->mImportDirDone / d->mTotalDir * 100) : 0);
         ++d->mImportDirDone;
     }
 }
 
-void FilterTheBat::importMails(const QString  &maildir)
+void FilterTheBat::importMails(const QString &maildir)
 {
     if (maildir.isEmpty()) {
         filterInfo()->alert(i18n("No directory selected."));
@@ -157,7 +156,6 @@ void FilterTheBat::importDirContents(const QString &dirName)
  */
 void FilterTheBat::importFiles(const QString &FileName)
 {
-
     // Format of a tbb-file from The Bat! 3.x
     // ----------------------------------------
     // First comes a header of 3K (3128 byte/ 0x00000c38), which we can forget.
@@ -250,11 +248,9 @@ void FilterTheBat::importFiles(const QString &FileName)
 
                 lastPos = endPos + 48;
                 tbb.seek(lastPos);
-                filterInfo()->setCurrent((int)(((float) tbb.pos() / tbb.size()) * 100));
+                filterInfo()->setCurrent((int)(((float)tbb.pos() / tbb.size()) * 100));
             }
-
         }
     }
     tbb.close();
 }
-

@@ -23,14 +23,11 @@
 
 #include <QMap>
 
-namespace Ui
-{
+namespace Ui {
 class SelectThunderbirdProfileWidget;
 }
 
-namespace MailImporter
-{
-
+namespace MailImporter {
 class MAILIMPORTER_TESTS_EXPORT SelectThunderbirdProfileWidget : public QWidget
 {
     Q_OBJECT
@@ -58,7 +55,6 @@ public:
 private:
     SelectThunderbirdProfileWidget *mSelectProfile;
 };
-
 }
 
 #endif // SELECTTHUNDERBIRDPROFILEWIDGET_H

@@ -20,8 +20,7 @@
 
 #include "filters.h"
 
-namespace MailImporter
-{
+namespace MailImporter {
 class MAILIMPORTER_EXPORT FilterInfoGui
 {
 public:
@@ -44,4 +43,3 @@ public:
 }
 
 #endif /* FILTERINFOGUI_H */
-

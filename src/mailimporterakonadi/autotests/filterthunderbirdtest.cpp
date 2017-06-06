@@ -25,9 +25,10 @@ class FilterThunderBirdAbstract : public MailImporter::FilterThunderbird
 public:
     FilterThunderBirdAbstract()
     {
-
     }
-    QString settingsPath() override {
+
+    QString settingsPath() override
+    {
         return MailImporter::FilterThunderbird::settingsPath();
     }
 };
@@ -35,12 +36,10 @@ public:
 FilterThunderBirdTest::FilterThunderBirdTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterThunderBirdTest::~FilterThunderBirdTest()
 {
-
 }
 
 void FilterThunderBirdTest::shouldHaveDefaultSettingsPath()
@@ -51,7 +50,6 @@ void FilterThunderBirdTest::shouldHaveDefaultSettingsPath()
 
 void FilterThunderBirdTest::shouldImportData()
 {
-
 }
 
 void FilterThunderBirdTest::canNotImportDataEmptyPath()

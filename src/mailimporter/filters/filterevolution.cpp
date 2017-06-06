@@ -26,13 +26,13 @@
 using namespace MailImporter;
 
 /** Default constructor. */
-FilterEvolution::FilterEvolution() :
-    Filter(i18n("Import Evolution 1.x Local Mails and Folder Structure"),
-           i18n("Simon MARTIN<br /><br />( Filter accelerated by Danny Kukawka )"),
-           i18n("<p><b>Evolution 1.x import filter</b></p>"
-                "<p>Select the base directory of Evolution's mails (usually ~/evolution/local).</p>"
-                "<p>Since it is possible to recreate the folder structure, the folders "
-                "will be stored under: \"Evolution-Import\".</p>"))
+FilterEvolution::FilterEvolution()
+    : Filter(i18n("Import Evolution 1.x Local Mails and Folder Structure"),
+             i18n("Simon MARTIN<br /><br />( Filter accelerated by Danny Kukawka )"),
+             i18n("<p><b>Evolution 1.x import filter</b></p>"
+                  "<p>Select the base directory of Evolution's mails (usually ~/evolution/local).</p>"
+                  "<p>Since it is possible to recreate the folder structure, the folders "
+                  "will be stored under: \"Evolution-Import\".</p>"))
 {
 }
 
@@ -80,7 +80,7 @@ void FilterEvolution::importMails(const QString &maildir)
         QStringList::ConstIterator end(rootSubDirs.constEnd());
         for (QStringList::ConstIterator filename = rootSubDirs.constBegin(); filename != end; ++filename, ++currentDir) {
             importDirContents(dir.filePath(*filename), *filename, QString());
-            filterInfo()->setOverall((int)((float) currentDir / numSubDirs * 100));
+            filterInfo()->setOverall((int)((float)currentDir / numSubDirs * 100));
         }
     }
     filterInfo()->addInfoLogEntry(i18n("Finished importing emails from %1", mailDir()));
@@ -180,7 +180,7 @@ void FilterEvolution::importMBox(const QString &mboxName, const QString &rootDir
             l = mbox.readLine(input.data(), MAX_LINE); // read the first line, prevent "From "
             tmp.write(input.constData(), l);
 
-            while (! mbox.atEnd() && (l = mbox.readLine(input.data(), MAX_LINE)) && ((separate = input.data()).left(5) != "From ")) {
+            while (!mbox.atEnd() && (l = mbox.readLine(input.data(), MAX_LINE)) && ((separate = input.data()).left(5) != "From ")) {
                 tmp.write(input.constData(), l);
             }
             tmp.flush();
@@ -195,7 +195,7 @@ void FilterEvolution::importMBox(const QString &mboxName, const QString &rootDir
 
             importMessage(destFolder, tmp.fileName(), filterInfo()->removeDupMessage());
 
-            const int currentPercentage = (int)(((float) mbox.pos() / filenameInfo.size()) * 100);
+            const int currentPercentage = (int)(((float)mbox.pos() / filenameInfo.size()) * 100);
             filterInfo()->setCurrent(currentPercentage);
             if (filterInfo()->shouldTerminate()) {
                 return;
@@ -209,4 +209,3 @@ void FilterEvolution::importMBox(const QString &mboxName, const QString &rootDir
         mbox.close();
     }
 }
-

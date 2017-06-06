@@ -20,8 +20,7 @@
 #include <QWidget>
 #include "mailimporter_export.h"
 class QListWidgetItem;
-namespace MailImporter
-{
+namespace MailImporter {
 class ImportMailsWidgetPrivate;
 class MAILIMPORTER_EXPORT ImportMailsWidget : public QWidget
 {

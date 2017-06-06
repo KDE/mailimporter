@@ -23,17 +23,14 @@
 FilterTheBatTest::FilterTheBatTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterTheBatTest::~FilterTheBatTest()
 {
-
 }
 
 void FilterTheBatTest::shouldImportData()
 {
-
 }
 
 void FilterTheBatTest::canNotImportDataEmptyPath()

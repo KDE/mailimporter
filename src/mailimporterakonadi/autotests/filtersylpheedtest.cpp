@@ -24,17 +24,14 @@
 FilterSylpheedTest::FilterSylpheedTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterSylpheedTest::~FilterSylpheedTest()
 {
-
 }
 
 void FilterSylpheedTest::shouldImportData()
 {
-
 }
 
 void FilterSylpheedTest::canNotImportDataEmptyPath()
@@ -69,4 +66,5 @@ void FilterSylpheedTest::canNotImportDataWhenHomeDirSelected()
     filter.importMails(QDir::homePath());
     QVERIFY(importerTest->filterImporterDataList().isEmpty());
 }
+
 QTEST_MAIN(FilterSylpheedTest)

@@ -31,12 +31,10 @@ FilterIcedove::FilterIcedove()
                  " a maildir): if you do, you will get many new folders.</p>"
                  "<p>Since it is possible to recreate the folder structure, the folders "
                  "will be stored under: \"Icedove-Import\".</p>"));
-
 }
 
 FilterIcedove::~FilterIcedove()
 {
-
 }
 
 QString FilterIcedove::settingsPath()

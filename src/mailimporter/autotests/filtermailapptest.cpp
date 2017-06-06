@@ -23,17 +23,14 @@
 FilterMailAppTest::FilterMailAppTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 FilterMailAppTest::~FilterMailAppTest()
 {
-
 }
 
 void FilterMailAppTest::shouldImportData()
 {
-
 }
 
 void FilterMailAppTest::canNotImportDataEmptyPath()

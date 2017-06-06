@@ -24,8 +24,7 @@
  *imports opera account-archives into KMail
  *@author Danny Kukawka
  */
-namespace MailImporter
-{
+namespace MailImporter {
 class MAILIMPORTER_EXPORT FilterOpera : public Filter
 {
 public:

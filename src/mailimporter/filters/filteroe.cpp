@@ -35,16 +35,16 @@
 
 using namespace MailImporter;
 
-FilterOE::FilterOE() :
-    Filter(i18n("Import Outlook Express Emails"),
-           i18n("Laurence Anderson <br>( Filter enhanced by Danny Kukawka )</p>"),
-           i18n("<p><b>Outlook Express 4/5/6 import filter</b></p>"
-                "<p>You will need to locate the folder where the mailbox has been "
-                "stored by searching for .dbx or .mbx files under "
-                "<ul><li><i>C:\\Windows\\Application Data</i> in Windows 9x</li>"
-                "<li><i>Documents and Settings</i> in Windows 2000 or later</li></ul></p>"
-                "<p><b>Note:</b> Since it is possible to recreate the folder structure, the folders from "
-                "Outlook Express 5 and 6 will be stored under: \"OE-Import\" in your local folder.</p>"))
+FilterOE::FilterOE()
+    : Filter(i18n("Import Outlook Express Emails"),
+             i18n("Laurence Anderson <br>( Filter enhanced by Danny Kukawka )</p>"),
+             i18n("<p><b>Outlook Express 4/5/6 import filter</b></p>"
+                  "<p>You will need to locate the folder where the mailbox has been "
+                  "stored by searching for .dbx or .mbx files under "
+                  "<ul><li><i>C:\\Windows\\Application Data</i> in Windows 9x</li>"
+                  "<li><i>Documents and Settings</i> in Windows 2000 or later</li></ul></p>"
+                  "<p><b>Note:</b> Since it is possible to recreate the folder structure, the folders from "
+                  "Outlook Express 5 and 6 will be stored under: \"OE-Import\" in your local folder.</p>"))
 {
 }
 
@@ -59,7 +59,7 @@ void FilterOE::import()
     importMails(maildir);
 }
 
-void FilterOE::importMails(const QString  &maildir)
+void FilterOE::importMails(const QString &maildir)
 {
     if (maildir.isEmpty()) { // No directory selected
         filterInfo()->alert(i18n("No directory selected."));
@@ -193,7 +193,6 @@ void FilterOE::mbxImport(QDataStream &ds)
     ds >> msgMagic; // Read first magic
 
     while (!ds.atEnd()) {
-
         quint32 msgNumber, msgSize, msgTextSize;
         QTemporaryFile tmp;
         tmp.open();
@@ -243,7 +242,6 @@ void FilterOE::dbxImport(QDataStream &ds)
 
 void FilterOE::dbxReadIndex(QDataStream &ds, int filePos)
 {
-
     if (filterInfo()->shouldTerminate()) {
         return;
     }
@@ -256,7 +254,7 @@ void FilterOE::dbxReadIndex(QDataStream &ds, int filePos)
     qCDebug(MAILIMPORTER_LOG) << "Reading index of file" << folderName;
     ds >> self >> unknown >> nextIndexPtr >> parent >> unknown2 >> ptrCount >> unknown3 >> indexCount; // _dbx_tableindexstruct
 
-    qCDebug(MAILIMPORTER_LOG) << "This index has" << (int) ptrCount << " data pointers";
+    qCDebug(MAILIMPORTER_LOG) << "This index has" << (int)ptrCount << " data pointers";
     for (int count = 0; count < ptrCount; ++count) {
         if (filterInfo()->shouldTerminate()) {
             return;
@@ -292,7 +290,7 @@ void FilterOE::dbxReadDataBlock(QDataStream &ds, int filePos)
     ds.device()->seek(filePos);
 
     ds >> curOffset >> blockSize >> unknown >> count >> unknown2; // _dbx_email_headerstruct
-    qCDebug(MAILIMPORTER_LOG) << "Data block has" << (int) count << " elements";
+    qCDebug(MAILIMPORTER_LOG) << "Data block has" << (int)count << " elements";
 
     for (int c = 0; c < count; c++) {
         if (filterInfo()->shouldTerminate()) {
@@ -328,14 +326,12 @@ void FilterOE::dbxReadDataBlock(QDataStream &ds, int filePos)
             } else if (type == 0x03) {
                 // qCDebug(MAILIMPORTER_LOG) <<"**** FOLDER: filename ****";
                 folderEntry[1] = parseFolderOEString(ds, filePos + 12 + value + (count * 4));
-
             } else if (type == 0x80) {
                 // qCDebug(MAILIMPORTER_LOG) <<"**** FOLDER: current ID ****";
                 folderEntry[2] = QString::number(value);
-
             } else if (type == 0x81) {
                 // qCDebug(MAILIMPORTER_LOG) <<"**** FOLDER: parent ID ****";
-                folderEntry[3] =  QString::number(value);
+                folderEntry[3] = QString::number(value);
             }
         }
     }
@@ -378,7 +374,7 @@ void FilterOE::dbxReadEmail(QDataStream &ds, int filePos)
         importMessage(folderName, tmp.fileName(), filterInfo()->removeDupMessage());
 
         currentEmail++;
-        int currentPercentage = (int)(((float) currentEmail / totalEmails) * 100);
+        int currentPercentage = (int)(((float)currentEmail / totalEmails) * 100);
         filterInfo()->setCurrent(currentPercentage);
         ds.device()->seek(wasAt);
     }
