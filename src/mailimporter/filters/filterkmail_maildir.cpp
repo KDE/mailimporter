@@ -63,7 +63,7 @@ void FilterKMail_maildir::import()
 {
     clearCountDuplicate();
     const QString homeDir = QDir::homePath();
-    const QString maildir = QFileDialog::getExistingDirectory(0, QString(), homeDir);
+    const QString maildir = QFileDialog::getExistingDirectory(nullptr, QString(), homeDir);
     if (!maildir.isEmpty()) {
         importMails(maildir);
     }

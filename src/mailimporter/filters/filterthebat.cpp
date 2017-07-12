@@ -64,7 +64,7 @@ void FilterTheBat::import()
 {
     const QString _homeDir = QDir::homePath();
     // Select directory from where I have to import files
-    const QString maildir = QFileDialog::getExistingDirectory(0, QString(), _homeDir);
+    const QString maildir = QFileDialog::getExistingDirectory(nullptr, QString(), _homeDir);
     if (!maildir.isEmpty()) {
         importMails(maildir);
     }

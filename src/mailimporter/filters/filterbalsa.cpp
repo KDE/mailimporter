@@ -72,7 +72,7 @@ void FilterBalsa::import()
         balsaDir = QDir::homePath();
     }
     // Select directory from where I have to import files
-    const QString maildir = QFileDialog::getExistingDirectory(0, QString(), balsaDir);
+    const QString maildir = QFileDialog::getExistingDirectory(nullptr, QString(), balsaDir);
     importMails(maildir);
 }
 

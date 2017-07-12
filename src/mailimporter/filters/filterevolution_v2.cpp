@@ -61,7 +61,7 @@ void FilterEvolution_v2::import()
     }
 
     // Select directory from where I have to import files
-    const QString maildir = QFileDialog::getExistingDirectory(0, QString(), evolDir);
+    const QString maildir = QFileDialog::getExistingDirectory(nullptr, QString(), evolDir);
     if (!maildir.isEmpty()) {
         importMails(maildir);
     }

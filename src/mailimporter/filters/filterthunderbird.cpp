@@ -123,7 +123,7 @@ void FilterThunderbird::import()
         thunderDir = QDir::homePath();
     }
     // Select directory from where I have to import files
-    const QString maildir = QFileDialog::getExistingDirectory(0, QString(), thunderDir);
+    const QString maildir = QFileDialog::getExistingDirectory(nullptr, QString(), thunderDir);
     if (!maildir.isEmpty()) {
         const QString mailDirThunderbird = maildir + QLatin1String("/Mail/Local Folders/");
         if (QDir(mailDirThunderbird).exists()) {

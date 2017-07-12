@@ -160,7 +160,7 @@ void FilterOpera::import()
         startdir = QDir::homePath();
     }
 
-    const QString maildir = QFileDialog::getExistingDirectory(0, QString(), startdir);
+    const QString maildir = QFileDialog::getExistingDirectory(nullptr, QString(), startdir);
     if (!maildir.isEmpty()) {
         importMails(maildir);
     }

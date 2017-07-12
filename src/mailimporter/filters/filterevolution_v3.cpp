@@ -67,7 +67,7 @@ void FilterEvolution_v3::import()
         evolDir = QDir::homePath();
     }
 
-    const QString dir = QFileDialog::getExistingDirectory(0, QString(), evolDir);
+    const QString dir = QFileDialog::getExistingDirectory(nullptr, QString(), evolDir);
     if (!dir.isEmpty()) {
         importMails(dir);
     }

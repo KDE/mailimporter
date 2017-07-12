@@ -42,7 +42,7 @@ FilterPMail::~FilterPMail()
 void FilterPMail::import()
 {
     // Select directory from where I have to import files
-    const QString maildir = QFileDialog::getExistingDirectory(0, QString(), QDir::homePath());
+    const QString maildir = QFileDialog::getExistingDirectory(nullptr, QString(), QDir::homePath());
     importMails(maildir);
 }
 
