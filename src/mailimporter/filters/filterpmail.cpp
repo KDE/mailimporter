@@ -277,7 +277,6 @@ bool FilterPMail::parseFolderMatrix(const QString &chosendir)
         filterInfo()->alert(i18n("Unable to open %1, skipping", chosendir + QLatin1String("hierarch.pm")));
         return false;
     } else {
-        QStringList tmpList;
         QByteArray tmpRead;
         while (!hierarch.atEnd()) {
             tmpRead = hierarch.readLine();
