@@ -30,6 +30,7 @@ public:
     void import() override;
     void importMails(const QString &maildir);
     static QString defaultSettingsPath();
+    static QString isMailerFound();
     QString localMailDirPath();
 private:
     void importDirContents(const QString &);

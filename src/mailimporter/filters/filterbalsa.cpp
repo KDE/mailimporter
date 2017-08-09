@@ -52,6 +52,15 @@ FilterBalsa::~FilterBalsa()
     delete d;
 }
 
+QString FilterBalsa::isMailerFound()
+{
+    QDir directory(FilterBalsa::defaultSettingsPath());
+    if (directory.exists()) {
+        return i18nc("name of balsa application", "Balsa");
+    }
+    return {};
+}
+
 QString FilterBalsa::defaultSettingsPath()
 {
     return QDir::homePath() + QLatin1String("/.balsa/");

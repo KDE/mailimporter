@@ -58,6 +58,16 @@ FilterSylpheed::~FilterSylpheed()
     delete d;
 }
 
+QString FilterSylpheed::isMailerFound()
+{
+    QDir directory(FilterSylpheed::defaultSettingsPath());
+    if (directory.exists()) {
+        return i18nc("name of sylpheed application", "Sylpheed");
+    }
+    return {};
+}
+
+
 QString FilterSylpheed::defaultSettingsPath()
 {
     return QDir::homePath() + QLatin1String("/.sylpheed-2.0/");

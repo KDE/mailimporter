@@ -27,6 +27,7 @@ public:
     ~FilterIcedove();
 
     static QString defaultSettingsPath();
+    static QString isMailerFound();
 protected:
     QString defaultInstallFolder() const override;
     QString settingsPath() override;

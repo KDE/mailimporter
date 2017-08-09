@@ -35,6 +35,7 @@ public:
     ~FilterSylpheed();
 
     static QString defaultSettingsPath();
+    static QString isMailerFound();
 
     void import() override;
     virtual void importMails(const QString &maildir);

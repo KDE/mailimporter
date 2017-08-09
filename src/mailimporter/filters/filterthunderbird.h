@@ -39,6 +39,8 @@ public:
     static QString defaultProfile(const QString &defaultSettingPath, QWidget *parent = nullptr);
     static QMap<QString, QString> listProfile(QString &currentProfile, const QString &defaultSettingPath);
 
+    static QString isMailerFound();
+
 protected:
     virtual QString defaultInstallFolder() const;
     virtual QString settingsPath();

@@ -33,6 +33,7 @@ public:
     ~FilterClawsMail();
 
     static QString defaultSettingsPath();
+    static QString isMailerFound();
 
     /* return local mail dir from folderlist.xml*/
     QString localMailDirPath() override;

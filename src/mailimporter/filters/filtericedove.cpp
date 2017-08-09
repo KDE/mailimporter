@@ -37,6 +37,16 @@ FilterIcedove::~FilterIcedove()
 {
 }
 
+QString FilterIcedove::isMailerFound()
+{
+    QDir directory(FilterIcedove::defaultSettingsPath());
+    if (directory.exists()) {
+        return i18nc("name of icedove application", "Icedove");
+    }
+    return {};
+}
+
+
 QString FilterIcedove::settingsPath()
 {
     return FilterIcedove::defaultSettingsPath();

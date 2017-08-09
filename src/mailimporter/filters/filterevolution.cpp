@@ -41,6 +41,15 @@ FilterEvolution::~FilterEvolution()
 {
 }
 
+QString FilterEvolution::isMailerFound()
+{
+    QDir directory(FilterEvolution::defaultSettingsPath());
+    if (directory.exists()) {
+        return i18nc("name of evolution application", "Evolution");
+    }
+    return {};
+}
+
 QString FilterEvolution::defaultSettingsPath()
 {
     return QDir::homePath() + QLatin1String("/evolution/local");

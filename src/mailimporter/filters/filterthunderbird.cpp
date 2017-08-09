@@ -46,6 +46,15 @@ FilterThunderbird::~FilterThunderbird()
 {
 }
 
+QString FilterThunderbird::isMailerFound()
+{
+    QDir directory(FilterThunderbird::defaultSettingsPath());
+    if (directory.exists()) {
+        return i18nc("name of thunderbird application", "Thunderbird");
+    }
+    return {};
+}
+
 QString FilterThunderbird::defaultSettingsPath()
 {
     return QDir::homePath() + QLatin1String("/.thunderbird/");

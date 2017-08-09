@@ -40,6 +40,16 @@ FilterOpera::~FilterOpera()
 {
 }
 
+QString FilterOpera::isMailerFound()
+{
+    QDir directory(FilterOpera::defaultSettingsPath());
+    if (directory.exists()) {
+        return i18nc("name of opera application", "Opera");
+    }
+    return {};
+}
+
+
 QString FilterOpera::defaultSettingsPath()
 {
     return QDir::homePath() + QLatin1String("/.opera/");

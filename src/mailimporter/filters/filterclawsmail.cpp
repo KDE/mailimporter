@@ -44,6 +44,16 @@ FilterClawsMail::~FilterClawsMail()
 {
 }
 
+QString FilterClawsMail::isMailerFound()
+{
+    QDir directory(FilterClawsMail::defaultSettingsPath());
+    if (directory.exists()) {
+        return i18nc("name of clawsMail application", "ClawsMail");
+    }
+    return {};
+}
+
+
 QString FilterClawsMail::defaultSettingsPath()
 {
     return QDir::homePath() + QLatin1String("/.claws-mail/");

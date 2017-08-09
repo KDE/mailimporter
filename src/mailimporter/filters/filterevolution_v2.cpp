@@ -41,6 +41,16 @@ FilterEvolution_v2::~FilterEvolution_v2()
 {
 }
 
+QString FilterEvolution_v2::isMailerFound()
+{
+    QDir directory(FilterEvolution_v2::defaultSettingsPath());
+    if (directory.exists()) {
+        return i18nc("name of evolution application", "Evolution (v2)");
+    }
+    return {};
+}
+
+
 QString FilterEvolution_v2::defaultSettingsPath()
 {
     return QDir::homePath() + QLatin1String("/.evolution/mail/local");

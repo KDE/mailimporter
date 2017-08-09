@@ -16,10 +16,26 @@
 */
 
 #include "othermailerutil.h"
-
+#include <KLocalizedString>
 #include <QStandardPaths>
+#include <QDir>
 
 namespace MailImporter {
+
+QStringList OtherMailerUtil::isMailerFound()
+{
+    QStringList lst;
+    QDir directory(OtherMailerUtil::trojitaDefaultPath());
+    if (directory.exists()) {
+        lst << i18nc("name of trojira application", "Trojita");
+    }
+    directory = OtherMailerUtil::gearyDefaultPath();
+    if (directory.exists()) {
+        lst << i18nc("name of geary application", "Geary");
+    }
+    return lst;
+}
+
 QString OtherMailerUtil::trojitaDefaultPath()
 {
     const QString path = QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + QLatin1String("/flaska.net/");

@@ -34,6 +34,7 @@ public:
     void import() override;
     void importMails(const QString &maildir);
     static QString defaultSettingsPath();
+    static QString isMailerFound();
 
 private:
     void importBox(const QDir &importDir, const QStringList &, const QString &accountName = QString());

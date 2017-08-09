@@ -52,6 +52,15 @@ FilterEvolution_v3::~FilterEvolution_v3()
     delete d;
 }
 
+QString FilterEvolution_v3::isMailerFound()
+{
+    QDir directory(FilterEvolution_v3::defaultSettingsPath());
+    if (directory.exists()) {
+        return i18nc("name of evolution application", "Evolution (v3)");
+    }
+    return {};
+}
+
 QString FilterEvolution_v3::defaultSettingsPath()
 {
     return QDir::homePath() + QLatin1String("/.local/share/evolution/mail/local/");
