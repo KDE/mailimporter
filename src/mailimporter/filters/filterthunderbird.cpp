@@ -23,6 +23,7 @@
 #include <QTemporaryFile>
 #include <KConfig>
 #include <QFile>
+#include <QDebug>
 #include <QRegularExpression>
 
 using namespace MailImporter;
@@ -50,7 +51,22 @@ QString FilterThunderbird::isMailerFound()
 {
     QDir directory(FilterThunderbird::defaultSettingsPath());
     if (directory.exists()) {
-        return i18nc("name of thunderbird application", "Thunderbird");
+        QString currentProfile;
+        const QMap<QString, QString> listOfPath = FilterThunderbird::listProfile(currentProfile, FilterThunderbird::defaultSettingsPath());
+        bool foundMailConfigurated = false;
+        QMap<QString, QString>::const_iterator i = listOfPath.constBegin();
+        while (i != listOfPath.constEnd()) {
+            QDir dir(FilterThunderbird::defaultSettingsPath() + QLatin1Char('/') + i.value());
+            if (!dir.entryList(QStringList({QStringLiteral("ImapMail"), QStringLiteral("Mail")}), QDir::Dirs).isEmpty()) {
+                foundMailConfigurated = true;
+                break;
+            }
+            ++i;
+        }
+        if (foundMailConfigurated)
+            return i18nc("name of thunderbird application", "Thunderbird");
+        else
+            return {};
     }
     return {};
 }
