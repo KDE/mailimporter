@@ -15,13 +15,13 @@
  *                                                                         *
  ***************************************************************************/
 
-#include <KLocalizedString>
-#include <qfiledialog.h>
-#include <QTemporaryFile>
-#include "mailimporter_debug.h"
-#include <QFileInfo>
-
 #include "filterlnotes.h"
+
+#include <KLocalizedString>
+
+#include <QFileDialog>
+#include <QTemporaryFile>
+
 using namespace MailImporter;
 class MailImporter::FilterLNotesPrivate
 {

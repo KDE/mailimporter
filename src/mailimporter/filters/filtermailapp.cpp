@@ -19,12 +19,13 @@
  *                                                                         *
  ***************************************************************************/
 
-#include <KLocalizedString>
-#include <qtemporaryfile.h>
-#include "mailimporter_debug.h"
-#include <QFileDialog>
-
 #include "filtermailapp.h"
+#include "mailimporter_debug.h"
+
+#include <KLocalizedString>
+
+#include <QFileDialog>
+#include <QTemporaryFile>
 
 using namespace MailImporter;
 

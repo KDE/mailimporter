@@ -15,13 +15,14 @@
  *                                                                         *
  ***************************************************************************/
 
-#include <KLocalizedString>
-#include <qfiledialog.h>
-#include <QTemporaryFile>
-#include <QRegularExpression>
+#include "filterpmail.h"
 #include "mailimporter_debug.h"
 
-#include "filterpmail.h"
+#include <KLocalizedString>
+
+#include <QFileDialog>
+#include <QRegularExpression>
+#include <QTemporaryFile>
 
 using namespace MailImporter;
 

@@ -15,13 +15,14 @@
   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-#include <KLocalizedString>
-#include <qfiledialog.h>
-#include <QTemporaryFile>
-#include "mailimporter_debug.h"
-#include <KFilterDev>
-
 #include "filtermailmangzip.h"
+#include "mailimporter_debug.h"
+
+#include <KCompressionDevice>
+#include <KLocalizedString>
+
+#include <QFileDialog>
+#include <QTemporaryFile>
 
 using namespace MailImporter;
 

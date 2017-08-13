@@ -15,10 +15,11 @@
  *                                                                         *
  ***************************************************************************/
 
-#include <KLocalizedString>
-#include <QFileDialog>
-
 #include "filterplain.h"
+
+#include <KLocalizedString>
+
+#include <QFileDialog>
 
 using namespace MailImporter;
 
