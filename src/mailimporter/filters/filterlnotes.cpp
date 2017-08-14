@@ -134,9 +134,7 @@ void FilterLNotes::ImportLNotes(const QString &file)
                 tempfile->setAutoRemove(false);
                 tempfile->open();
                 // fall through
-#if QT_VERSION >= QT_VERSION_CHECK(5, 8, 0)
                 Q_FALLTHROUGH();
-#endif
             // inside a message state
             case 1:
                 if (ch == 0x0c) {
