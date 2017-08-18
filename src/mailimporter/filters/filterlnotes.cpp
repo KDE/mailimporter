@@ -111,7 +111,7 @@ void FilterLNotes::ImportLNotes(const QString &file)
         char ch = 0;
         int state = 0;
         int n = 0;
-        QTemporaryFile *tempfile = 0;
+        QTemporaryFile *tempfile = nullptr;
 
         // Get folder name
         QFileInfo filenameInfo(file);
