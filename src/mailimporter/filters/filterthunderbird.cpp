@@ -25,6 +25,7 @@
 #include <QFile>
 #include <QDebug>
 #include <QRegularExpression>
+#include <QPointer>
 
 using namespace MailImporter;
 
@@ -85,11 +86,14 @@ QString FilterThunderbird::defaultProfile(const QString &defaultSettingPath, QWi
     } else if (listProfile.count() == 1) {
         return currentProfile;
     } else {
-        SelectThunderbirdProfileDialog dialog(parent);
-        dialog.fillProfile(listProfile, currentProfile);
-        if (dialog.exec()) {
-            return dialog.selectedProfile();
+        QPointer<SelectThunderbirdProfileDialog> dialog = new SelectThunderbirdProfileDialog(parent);
+        dialog->fillProfile(listProfile, currentProfile);
+        if (dialog->exec()) {
+            currentProfile = dialog->selectedProfile();
+            delete dialog;
+            return currentProfile;
         }
+        delete dialog;
     }
     return currentProfile;
 }
