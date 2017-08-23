@@ -43,7 +43,8 @@ FilterMBox::~FilterMBox()
 
 void FilterMBox::import()
 {
-    const QStringList filenames = QFileDialog::getOpenFileNames(filterInfo()->parentWidget(), QString(), QDir::homePath(), i18n("mbox Files (*.mbox)"));
+    const QStringList filenames = QFileDialog::getOpenFileNames(filterInfo()->parentWidget(),
+                                                                QString(), QDir::homePath(), QStringLiteral("%1 (*.mbox)").arg(i18n("mbox Files")));
     importMails(filenames);
 }
 

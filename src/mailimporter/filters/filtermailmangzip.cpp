@@ -42,7 +42,8 @@ FilterMailmanGzip::~FilterMailmanGzip()
 
 void FilterMailmanGzip::import()
 {
-    const QStringList filenames = QFileDialog::getOpenFileNames(filterInfo()->parentWidget(), QString(), QDir::homePath(), i18n("gzip Files (*.txt.gz)"));
+    const QStringList filenames = QFileDialog::getOpenFileNames(filterInfo()->parentWidget(),
+                                                                QString(), QDir::homePath(), QStringLiteral("%1 (*.txt.gz)").arg(i18n("gzip Files")));
     importMails(filenames);
 }
 
