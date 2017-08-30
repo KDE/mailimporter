@@ -59,8 +59,8 @@ public:
     QString author;
     QString info;
     QString mailDir;
-    MailImporter::FilterImporterBase *filterImporter;
-    MailImporter::FilterInfo *filterInfo;
+    MailImporter::FilterImporterBase *filterImporter = nullptr;
+    MailImporter::FilterInfo *filterInfo = nullptr;
 };
 
 Filter::Filter(const QString &name, const QString &author, const QString &info)

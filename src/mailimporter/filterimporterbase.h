@@ -37,7 +37,7 @@ public:
     virtual int countDuplicates() const;
     virtual QString topLevelFolder() const;
 protected:
-    MailImporter::FilterInfo *mInfo;
+    MailImporter::FilterInfo *mInfo = nullptr;
 };
 }
 #endif // FILTERIMPORTERBASE_H

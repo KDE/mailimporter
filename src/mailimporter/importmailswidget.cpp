@@ -35,7 +35,7 @@ public:
         delete ui;
     }
 
-    Ui::ImportMailsWidget *ui;
+    Ui::ImportMailsWidget *ui = nullptr;
 };
 
 ImportMailsWidget::ImportMailsWidget(QWidget *parent)

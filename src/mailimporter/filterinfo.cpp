@@ -36,8 +36,8 @@ public:
         m_filterInfoGui = nullptr;
     }
 
-    bool m_removeDupMsg;
-    FilterInfoGui *m_filterInfoGui;
+    bool m_removeDupMsg = false;
+    FilterInfoGui *m_filterInfoGui = nullptr;
     static bool s_terminateASAP;
 };
 
