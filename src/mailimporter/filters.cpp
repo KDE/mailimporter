@@ -49,10 +49,6 @@ public:
 
     ~Private()
     {
-        delete filterImporter;
-        filterImporter = nullptr;
-        delete filterInfo;
-        filterInfo = nullptr;
     }
 
     QString name;
