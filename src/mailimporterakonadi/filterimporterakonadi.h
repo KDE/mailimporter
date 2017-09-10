@@ -71,7 +71,7 @@ private:
     QMultiMap<QString, QString> mMessageFolderMessageIDMap;
     QMap<QString, Akonadi::Collection> mMessageFolderCollectionMap;
     Akonadi::Collection mRootCollection;
-    int mCountDuplicates;
+    int mCountDuplicates = 0;
 };
 }
 #endif // FILTERIMPORTERAKONADI_H

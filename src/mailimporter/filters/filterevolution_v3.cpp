@@ -26,13 +26,11 @@ class MailImporter::FilterEvolution_v3Private
 {
 public:
     FilterEvolution_v3Private()
-        : mImportDirDone(-1)
-        , mTotalDir(-1)
     {
     }
 
-    int mImportDirDone;
-    int mTotalDir;
+    int mImportDirDone = -1;
+    int mTotalDir = -1;
 };
 /** Default constructor. */
 FilterEvolution_v3::FilterEvolution_v3()

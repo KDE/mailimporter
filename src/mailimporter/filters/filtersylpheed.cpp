@@ -30,13 +30,11 @@ class MailImporter::FilterSylpheedPrivate
 {
 public:
     FilterSylpheedPrivate()
-        : mImportDirDone(0)
-        , mTotalDir(0)
     {
     }
 
-    int mImportDirDone;
-    int mTotalDir;
+    int mImportDirDone = 0;
+    int mTotalDir = 0;
 };
 /** Default constructor. */
 FilterSylpheed::FilterSylpheed()

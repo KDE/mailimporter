@@ -27,13 +27,11 @@ class MailImporter::FilterKMail_maildirPrivate
 {
 public:
     FilterKMail_maildirPrivate()
-        : mImportDirDone(0)
-        , mTotalDir(0)
     {
     }
 
-    int mImportDirDone;
-    int mTotalDir;
+    int mImportDirDone = 0;
+    int mTotalDir = 0;
 };
 
 /** Default constructor. */

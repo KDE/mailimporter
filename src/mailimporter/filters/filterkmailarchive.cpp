@@ -37,13 +37,11 @@ class MailImporter::FilterKMailArchivePrivate
 {
 public:
     FilterKMailArchivePrivate()
-        : mTotalFiles(0)
-        , mFilesDone(0)
     {
     }
 
-    int mTotalFiles;
-    int mFilesDone;
+    int mTotalFiles = 0;
+    int mFilesDone = 0;
 };
 FilterKMailArchive::FilterKMailArchive()
     : Filter(i18n("Import KMail Archive File"),

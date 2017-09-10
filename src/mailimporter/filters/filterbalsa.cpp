@@ -31,8 +31,8 @@ public:
     {
     }
 
-    int mImportDirDone;
-    int mTotalDir;
+    int mImportDirDone = 0;
+    int mTotalDir = 0;
 };
 /** Default constructor. */
 FilterBalsa::FilterBalsa()

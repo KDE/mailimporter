@@ -27,17 +27,15 @@ class MailImporter::FilterLNotesPrivate
 {
 public:
     FilterLNotesPrivate()
-        : currentFile(1)
-        , totalFiles(0)
     {
     }
 
     /** the working directory */
     QDir dir;
     /** which file (of d->totalFiles) is now in the work? */
-    int currentFile;
+    int currentFile = 1;
     /** total number of files that get imported */
-    int totalFiles;
+    int totalFiles = 0;
 };
 
 /** Default constructor. */

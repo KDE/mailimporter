@@ -62,12 +62,12 @@ private:
     QList<FolderStructure> folderMatrix;
     typedef QList<FolderStructure>::Iterator FolderStructureIterator;
 
-    bool folderParsed;
+    bool folderParsed = false;
 
     /** which file (of totalFiles) is now in the work? */
-    int currentFile;
+    int currentFile = 0;
     /** total number of files that get imported */
-    int totalFiles;
+    int totalFiles = 0;
 };
 }
 #endif

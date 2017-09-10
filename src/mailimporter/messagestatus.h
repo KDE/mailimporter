@@ -39,10 +39,10 @@ public:
     void setForwarded(bool state);
     bool isForwarded() const;
 private:
-    bool mRead;
-    bool mDeleted;
-    bool mReplied;
-    bool mForwarded;
+    bool mRead = false;
+    bool mDeleted = false;
+    bool mReplied = false;
+    bool mForwarded = false;
 };
 }
 #endif // MESSAGESTATUS_H
