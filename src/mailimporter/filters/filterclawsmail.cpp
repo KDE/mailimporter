@@ -53,7 +53,6 @@ QString FilterClawsMail::isMailerFound()
     return {};
 }
 
-
 QString FilterClawsMail::defaultSettingsPath()
 {
     return QDir::homePath() + QLatin1String("/.claws-mail/");

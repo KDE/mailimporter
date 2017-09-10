@@ -46,7 +46,6 @@ QString FilterIcedove::isMailerFound()
     return {};
 }
 
-
 QString FilterIcedove::settingsPath()
 {
     return FilterIcedove::defaultSettingsPath();

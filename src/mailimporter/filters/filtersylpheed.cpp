@@ -65,7 +65,6 @@ QString FilterSylpheed::isMailerFound()
     return {};
 }
 
-
 QString FilterSylpheed::defaultSettingsPath()
 {
     return QDir::homePath() + QLatin1String("/.sylpheed-2.0/");

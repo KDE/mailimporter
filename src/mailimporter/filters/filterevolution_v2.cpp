@@ -50,7 +50,6 @@ QString FilterEvolution_v2::isMailerFound()
     return {};
 }
 
-
 QString FilterEvolution_v2::defaultSettingsPath()
 {
     return QDir::homePath() + QLatin1String("/.evolution/mail/local");

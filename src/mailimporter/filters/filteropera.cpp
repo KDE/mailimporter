@@ -49,7 +49,6 @@ QString FilterOpera::isMailerFound()
     return {};
 }
 
-
 QString FilterOpera::defaultSettingsPath()
 {
     return QDir::homePath() + QLatin1String("/.opera/");

@@ -64,10 +64,11 @@ QString FilterThunderbird::isMailerFound()
             }
             ++i;
         }
-        if (foundMailConfigurated)
+        if (foundMailConfigurated) {
             return i18nc("name of thunderbird application", "Thunderbird");
-        else
+        } else {
             return {};
+        }
     }
     return {};
 }

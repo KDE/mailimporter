@@ -21,7 +21,6 @@
 #include <QDir>
 
 namespace MailImporter {
-
 QStringList OtherMailerUtil::isMailerFound()
 {
     QStringList lst;
