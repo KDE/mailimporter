@@ -21,7 +21,7 @@
 
 #include "mailimporter_export.h"
 #include <QString>
-#include <QObject>
+#include <QWidget>
 namespace MailImporter {
 class FilterInfoGui;
 

@@ -21,11 +21,8 @@
 #include "filterinfo.h"
 
 // KDE Includes
-#include <QUrl>
-#include <KLocalizedString>
 #include "mailimporter_debug.h"
 
-#include <QScopedPointer>
 
 //////////////////////////////////////////////////////////////////////////////////
 //

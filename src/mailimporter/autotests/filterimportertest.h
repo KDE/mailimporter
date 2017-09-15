@@ -19,7 +19,6 @@
 #define FILTERIMPORTERTEST_H
 
 #include <MailImporter/FilterImporterBase>
-#include <QObject>
 #include <QVector>
 struct FilterImporterData {
     QString folderName;

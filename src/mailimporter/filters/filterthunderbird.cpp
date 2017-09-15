@@ -23,7 +23,6 @@
 #include <QTemporaryFile>
 #include <KConfig>
 #include <QFile>
-#include <QDebug>
 #include <QRegularExpression>
 #include <QPointer>
 
