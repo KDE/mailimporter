@@ -209,7 +209,6 @@ void FilterTheBat::importFiles(const QString &FileName)
                 offsets.append(endOfEmail);
             }
         }
-        // filterInfo()->addInfoLogEntry(i18n("--COUNTED: %1").arg(count));
 
         // IMPORT the messages:
         if (!offsets.empty() || (offsets.empty() && (tbb.size() > 3128))) {
