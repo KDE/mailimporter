@@ -153,13 +153,12 @@ void FilterPMail::importMailFolder(const QString &file)
         char id[42];
     } pmm_head;
 
-    long l = 0;
     QFile f(file);
     if (!f.open(QIODevice::ReadOnly)) {
         filterInfo()->alert(i18n("Unable to open %1, skipping", file));
     } else {
         // Get folder name
-        l = f.read((char *)&pmm_head, sizeof(pmm_head));
+        long l = f.read((char *)&pmm_head, sizeof(pmm_head));
         QString folder(i18nc("define folder name when we will import pegasus mail", "PegasusMail-Import") + QLatin1Char('/'));
         if (folderParsed) {
             folder.append(getFolderName(QString::fromLatin1(pmm_head.id)));

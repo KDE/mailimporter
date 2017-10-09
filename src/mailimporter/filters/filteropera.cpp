@@ -58,11 +58,10 @@ void FilterOpera::importRecursive(const QDir &mailDir, const QString &accountNam
 {
     // Recursive import of the MBoxes.
     const QStringList rootSubDirs = mailDir.entryList(QStringList(QStringLiteral("[^\\.]*")), QDir::Dirs, QDir::Name); // Removal of . and ..
-    int currentDir = 1;
     int numSubDirs = rootSubDirs.size();
     if (numSubDirs > 0) {
         QStringList::ConstIterator end(rootSubDirs.constEnd());
-        for (QStringList::ConstIterator filename = rootSubDirs.constBegin(); filename != end; ++filename, ++currentDir) {
+        for (QStringList::ConstIterator filename = rootSubDirs.constBegin(); filename != end; ++filename) {
             QDir importDir(mailDir.path() + QDir::separator() + *filename);
             const QStringList files = importDir.entryList(QStringList(QStringLiteral("*.[mM][bB][sS]")), QDir::Files, QDir::Name);
             if (files.isEmpty()) {

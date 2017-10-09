@@ -55,13 +55,13 @@ void FilterPlain::importMails(const QString &mailDir)
     // Count total number of files to be processed
     filterInfo()->addInfoLogEntry(i18n("Counting files..."));
     int totalFiles = files.count();
-    int currentFile = 0;
     if (files.isEmpty()) {
         filterInfo()->addErrorLogEntry(i18n("No files found for import."));
     } else {
         filterInfo()->addInfoLogEntry(i18n("Importing new mail files..."));
         QStringList::ConstIterator end(files.constEnd());
         const QString destName = QStringLiteral("PLAIN-%1").arg(dir.dirName());
+        int currentFile = 0;
         for (QStringList::ConstIterator mailFile = files.constBegin(); mailFile != end; ++mailFile) {
             const QString dirRealPath = dir.filePath(*mailFile);
             filterInfo()->setFrom(dirRealPath);
