@@ -25,8 +25,6 @@ class Q_DECL_HIDDEN FilterInfo::Private
 {
 public:
     Private()
-        : m_removeDupMsg(false)
-        , m_filterInfoGui(nullptr)
     {
     }
 
