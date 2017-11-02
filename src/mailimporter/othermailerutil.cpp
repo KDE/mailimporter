@@ -20,7 +20,7 @@
 #include <QStandardPaths>
 #include <QDir>
 
-namespace MailImporter {
+using namespace MailImporter;
 QStringList OtherMailerUtil::isMailerFound()
 {
     QStringList lst;
@@ -45,5 +45,4 @@ QString OtherMailerUtil::gearyDefaultPath()
 {
     const QString path = QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + QLatin1String("/geary/");
     return path;
-}
 }
