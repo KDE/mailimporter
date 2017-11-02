@@ -32,6 +32,10 @@ QStringList OtherMailerUtil::isMailerFound()
     if (directory.exists()) {
         lst << i18nc("name of geary application", "Geary");
     }
+    directory = OtherMailerUtil::nylasMailDefaultPath();
+    if (directory.exists()) {
+        lst << i18nc("name of geary application", "Geary");
+    }
     return lst;
 }
 
@@ -44,5 +48,11 @@ QString OtherMailerUtil::trojitaDefaultPath()
 QString OtherMailerUtil::gearyDefaultPath()
 {
     const QString path = QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + QLatin1String("/geary/");
+    return path;
+}
+
+QString OtherMailerUtil::nylasMailDefaultPath()
+{
+    const QString path = QDir::homePath() + QLatin1String("/.nylas-mail/");
     return path;
 }
