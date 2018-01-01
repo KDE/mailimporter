@@ -14,7 +14,7 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/* Copyright (c) 2012-2017 Montel Laurent <montel@kde.org>                      */
+/* Copyright (c) 2012-2018 Montel Laurent <montel@kde.org>                      */
 
 #ifndef MAILIMPORTER_FILTER_KMAIL_MAILDIR_H
 #define MAILIMPORTER_FILTER_KMAIL_MAILDIR_H

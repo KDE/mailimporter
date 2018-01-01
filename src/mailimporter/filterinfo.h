@@ -17,7 +17,7 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/* Copyright (c) 2012-2017 Montel Laurent <montel@kde.org>                      */
+/* Copyright (c) 2012-2018 Montel Laurent <montel@kde.org>                      */
 
 #include "mailimporter_export.h"
 #include <QString>
