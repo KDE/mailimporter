@@ -206,7 +206,7 @@ void FilterEvolution_v2::importMBox(const QString &mboxName, const QString &root
         if (mboxName.length() > 20) {
             QString tmp_info = mboxName;
             tmp_info = tmp_info.replace(mailDir(), QStringLiteral("../"));
-            if (tmp_info.contains(QStringLiteral(".sbd"))) {
+            if (tmp_info.contains(QLatin1String(".sbd"))) {
                 tmp_info.remove(QStringLiteral(".sbd"));
             }
             filterInfo()->setFrom(tmp_info);
@@ -214,7 +214,7 @@ void FilterEvolution_v2::importMBox(const QString &mboxName, const QString &root
             filterInfo()->setFrom(mboxName);
         }
 
-        if (targetDir.contains(QStringLiteral(".sbd"))) {
+        if (targetDir.contains(QLatin1String(".sbd"))) {
             QString tmp_info = targetDir;
             tmp_info.remove(QStringLiteral(".sbd"));
             filterInfo()->setTo(tmp_info);
@@ -253,13 +253,13 @@ void FilterEvolution_v2::importMBox(const QString &mboxName, const QString &root
             QString destFolder;
             QString _targetDir = targetDir;
             if (!targetDir.isNull()) {
-                if (_targetDir.contains(QStringLiteral(".sbd"))) {
+                if (_targetDir.contains(QLatin1String(".sbd"))) {
                     _targetDir.remove(QStringLiteral(".sbd"));
                 }
                 destFolder += QStringLiteral("Evolution-Import/") + _targetDir + QLatin1Char('/') + filenameInfo.completeBaseName(); // mboxName;
             } else {
                 destFolder = QStringLiteral("Evolution-Import/") + rootDir;
-                if (destFolder.contains(QStringLiteral(".sbd"))) {
+                if (destFolder.contains(QLatin1String(".sbd"))) {
                     destFolder.remove(QStringLiteral(".sbd"));
                 }
             }

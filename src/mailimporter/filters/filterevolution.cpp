@@ -150,7 +150,7 @@ void FilterEvolution::importMBox(const QString &mboxName, const QString &rootDir
         if (mboxName.length() > 20) {
             QString tmp_info = mboxName;
             tmp_info = tmp_info.replace(mailDir(), QStringLiteral(".."));
-            if (tmp_info.contains(QStringLiteral("subfolders/"))) {
+            if (tmp_info.contains(QLatin1String("subfolders/"))) {
                 tmp_info.remove(QStringLiteral("subfolders/"));
             }
             filterInfo()->setFrom(tmp_info);
@@ -158,7 +158,7 @@ void FilterEvolution::importMBox(const QString &mboxName, const QString &rootDir
         } else {
             filterInfo()->setFrom(mboxName);
         }
-        if (targetDir.contains(QStringLiteral("subfolders/"))) {
+        if (targetDir.contains(QLatin1String("subfolders/"))) {
             QString tmp_info = targetDir;
             tmp_info.remove(QStringLiteral("subfolders/"));
             filterInfo()->setTo(tmp_info);
