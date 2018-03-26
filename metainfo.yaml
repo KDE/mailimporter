@@ -1,5 +1,6 @@
 name: mailimporter
-description: Mail Importer Library 
+description: Mail Importer Library implements importing of emails from various other email clients
+maintainer: mlaurent
 group: kdepim
 platforms:
     - name: All
@@ -12,14 +13,3 @@ libraries:
    cmake: "KF5::MailImporterAkonadi"
    cmakename: KF5MailImporterAkonadi
 irc: akonadi
-
-group_info:
-    fancyname: KDE PIM
-    maintainer:
-        - mlaurent
-    irc: kontact
-    mailinglist: kde-pim
-    platforms:
-        - All
-    description: MailImporter Library provides a set of libraries to importer several mailer format.
-    logo: docs/kontact.svg
