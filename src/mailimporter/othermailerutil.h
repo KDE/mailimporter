@@ -23,10 +23,10 @@
 
 namespace MailImporter {
 namespace OtherMailerUtil {
-MAILIMPORTER_EXPORT QString trojitaDefaultPath();
-MAILIMPORTER_EXPORT QString gearyDefaultPath();
-MAILIMPORTER_EXPORT QStringList isMailerFound();
-MAILIMPORTER_EXPORT QString nylasMailDefaultPath();
+Q_REQUIRED_RESULT MAILIMPORTER_EXPORT QString trojitaDefaultPath();
+Q_REQUIRED_RESULT MAILIMPORTER_EXPORT QString gearyDefaultPath();
+Q_REQUIRED_RESULT MAILIMPORTER_EXPORT QStringList isMailerFound();
+Q_REQUIRED_RESULT MAILIMPORTER_EXPORT QString nylasMailDefaultPath();
 }
 }
 

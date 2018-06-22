@@ -46,8 +46,8 @@ private:
     void dbxReadEmail(QDataStream &ds, int filePos);
 
     /** helperfunctions for folder structure support */
-    QString parseFolderOEString(QDataStream &ds, int filePos);
-    QString getFolderName(const QString &filename);
+    Q_REQUIRED_RESULT QString parseFolderOEString(QDataStream &ds, int filePos);
+    Q_REQUIRED_RESULT QString getFolderName(const QString &filename);
 
     /** which file (of totalFiles) is now in the work? */
     int currentFile;

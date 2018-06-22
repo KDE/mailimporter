@@ -19,6 +19,7 @@
 #define MESSAGESTATUS_H
 
 #include "mailimporter_export.h"
+#include <QtGlobal>
 
 namespace MailImporter {
 class MAILIMPORTER_EXPORT MessageStatus
@@ -28,16 +29,16 @@ public:
     ~MessageStatus();
 
     void setRead(bool state);
-    bool isRead() const;
+    Q_REQUIRED_RESULT bool isRead() const;
 
     void setDeleted(bool state);
-    bool isDeleted() const;
+    Q_REQUIRED_RESULT bool isDeleted() const;
 
     void setReplied(bool state);
-    bool isReplied() const;
+    Q_REQUIRED_RESULT bool isReplied() const;
 
     void setForwarded(bool state);
-    bool isForwarded() const;
+    Q_REQUIRED_RESULT bool isForwarded() const;
 private:
     bool mRead = false;
     bool mDeleted = false;

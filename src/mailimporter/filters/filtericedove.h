@@ -26,11 +26,11 @@ public:
     FilterIcedove();
     ~FilterIcedove() override;
 
-    static QString defaultSettingsPath();
-    static QString isMailerFound();
+    Q_REQUIRED_RESULT static QString defaultSettingsPath();
+    Q_REQUIRED_RESULT static QString isMailerFound();
 protected:
-    QString defaultInstallFolder() const override;
-    QString settingsPath() override;
+    Q_REQUIRED_RESULT QString defaultInstallFolder() const override;
+    Q_REQUIRED_RESULT QString settingsPath() override;
 };
 }
 

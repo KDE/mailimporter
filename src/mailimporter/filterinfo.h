@@ -45,12 +45,12 @@ public:
     void alert(const QString &message);
 
     static void terminateASAP();
-    bool shouldTerminate() const;
-    QString rootCollectionName() const;
+    Q_REQUIRED_RESULT bool shouldTerminate() const;
+    Q_REQUIRED_RESULT QString rootCollectionName() const;
 
     QWidget *parentWidget() const;
     void setRemoveDupMessage(bool removeDupMessage);
-    bool removeDupMessage() const;
+    Q_REQUIRED_RESULT bool removeDupMessage() const;
 
 private:
     class Private;

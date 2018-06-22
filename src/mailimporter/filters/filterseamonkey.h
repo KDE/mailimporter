@@ -26,10 +26,10 @@ public:
     FilterSeaMonkey();
     ~FilterSeaMonkey() override;
 
-    static QString defaultSettingsPath();
+    Q_REQUIRED_RESULT static QString defaultSettingsPath();
 protected:
-    QString defaultInstallFolder() const override;
-    QString settingsPath() override;
+    Q_REQUIRED_RESULT QString defaultInstallFolder() const override;
+    Q_REQUIRED_RESULT QString settingsPath() override;
 };
 }
 

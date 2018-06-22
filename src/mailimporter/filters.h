@@ -39,9 +39,9 @@ public:
     virtual ~Filter();
     virtual void import() = 0;
 
-    QString author() const;
-    QString name() const;
-    QString info() const;
+    Q_REQUIRED_RESULT QString author() const;
+    Q_REQUIRED_RESULT QString name() const;
+    Q_REQUIRED_RESULT QString info() const;
 
     void setAuthor(const QString &);
     void setName(const QString &);
@@ -56,10 +56,10 @@ public:
     MailImporter::FilterImporterBase *filterImporter() const;
 
     void clearCountDuplicate();
-    int countDuplicates() const;
+    Q_REQUIRED_RESULT int countDuplicates() const;
 
     void setMailDir(const QString &mailDir);
-    QString mailDir() const;
+    Q_REQUIRED_RESULT QString mailDir() const;
 
 protected:
     static int countDirectory(const QDir &dir, bool searchHiddenDirectory);

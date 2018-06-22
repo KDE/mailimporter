@@ -34,15 +34,15 @@ public:
     FilterSylpheed();
     ~FilterSylpheed() override;
 
-    static QString defaultSettingsPath();
-    static QString isMailerFound();
+    Q_REQUIRED_RESULT static QString defaultSettingsPath();
+    Q_REQUIRED_RESULT static QString isMailerFound();
 
     void import() override;
     virtual void importMails(const QString &maildir);
 
     /* return local mail dir from folderlist.xml*/
     virtual QString localMailDirPath();
-    virtual bool excludeFile(const QString &file);
+    Q_REQUIRED_RESULT virtual bool excludeFile(const QString &file);
     virtual QString defaultInstallFolder() const;
     virtual QString markFile() const;
 private:

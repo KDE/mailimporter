@@ -36,9 +36,9 @@ public:
     void importMails(const QString &archiveFile);
 private:
 
-    bool importDirectory(const KArchiveDirectory *directory, const QString &folderPath);
-    bool importFolder(const KArchiveDirectory *folder, const QString &folderPath);
-    bool importMessage(const KArchiveFile *file, const QString &folderPath);
+    Q_REQUIRED_RESULT bool importDirectory(const KArchiveDirectory *directory, const QString &folderPath);
+    Q_REQUIRED_RESULT bool importFolder(const KArchiveDirectory *folder, const QString &folderPath);
+    Q_REQUIRED_RESULT bool importMessage(const KArchiveFile *file, const QString &folderPath);
 
     int countFiles(const KArchiveDirectory *directory) const;
     FilterKMailArchivePrivate *const d;

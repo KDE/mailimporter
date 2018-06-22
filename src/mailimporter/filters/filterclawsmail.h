@@ -32,14 +32,14 @@ public:
     FilterClawsMail();
     ~FilterClawsMail() override;
 
-    static QString defaultSettingsPath();
-    static QString isMailerFound();
+    Q_REQUIRED_RESULT static QString defaultSettingsPath();
+    Q_REQUIRED_RESULT static QString isMailerFound();
 
     /* return local mail dir from folderlist.xml*/
-    QString localMailDirPath() override;
-    bool excludeFile(const QString &file) override;
-    QString defaultInstallFolder() const override;
-    QString markFile() const override;
+    Q_REQUIRED_RESULT QString localMailDirPath() override;
+    Q_REQUIRED_RESULT bool excludeFile(const QString &file) override;
+    Q_REQUIRED_RESULT QString defaultInstallFolder() const override;
+    Q_REQUIRED_RESULT QString markFile() const override;
 };
 }
 
