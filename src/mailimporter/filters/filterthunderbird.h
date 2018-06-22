@@ -30,7 +30,7 @@ class MAILIMPORTER_EXPORT FilterThunderbird : public Filter
 {
 public:
     FilterThunderbird();
-    ~FilterThunderbird();
+    ~FilterThunderbird() override;
 
     void import() override;
     void importMails(const QString &maildir);

@@ -30,7 +30,7 @@ class MAILIMPORTER_EXPORT FilterKMailArchive : public Filter
 {
 public:
     FilterKMailArchive();
-    ~FilterKMailArchive();
+    ~FilterKMailArchive() override;
 
     void import() override;
     void importMails(const QString &archiveFile);

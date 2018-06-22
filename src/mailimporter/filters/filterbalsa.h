@@ -25,7 +25,7 @@ class MAILIMPORTER_EXPORT FilterBalsa : public Filter
 {
 public:
     FilterBalsa();
-    ~FilterBalsa();
+    ~FilterBalsa() override;
 
     void import() override;
     void importMails(const QString &maildir);

@@ -24,7 +24,7 @@ class MAILIMPORTER_EXPORT FilterIcedove : public FilterThunderbird
 {
 public:
     FilterIcedove();
-    ~FilterIcedove();
+    ~FilterIcedove() override;
 
     static QString defaultSettingsPath();
     static QString isMailerFound();

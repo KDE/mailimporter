@@ -25,7 +25,7 @@ class MAILIMPORTER_EXPORT FilterMailmanGzip : public Filter
 {
 public:
     FilterMailmanGzip();
-    ~FilterMailmanGzip();
+    ~FilterMailmanGzip() override;
 
     void importMails(const QStringList &filenames);
     void import() override;

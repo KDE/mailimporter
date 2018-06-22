@@ -29,7 +29,7 @@ class MAILIMPORTER_EXPORT FilterMBox : public Filter
 {
 public:
     FilterMBox();
-    ~FilterMBox();
+    ~FilterMBox() override;
 
     void importMails(const QStringList &filenames);
     void import() override;

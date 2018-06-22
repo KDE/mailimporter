@@ -29,7 +29,7 @@ class MAILIMPORTERAKONADI_EXPORT FilterImporterAkonadi : public MailImporter::Fi
 {
 public:
     FilterImporterAkonadi(MailImporter::FilterInfo *info);
-    ~FilterImporterAkonadi();
+    ~FilterImporterAkonadi() override;
 
     bool importMessage(const QString &folderName, const QString &msgPath, bool duplicateCheck, const MailImporter::MessageStatus &status) override;
     void clear() override;

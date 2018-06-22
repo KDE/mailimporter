@@ -32,7 +32,7 @@ class MAILIMPORTER_EXPORT FilterSylpheed : public Filter
 {
 public:
     FilterSylpheed();
-    ~FilterSylpheed();
+    ~FilterSylpheed() override;
 
     static QString defaultSettingsPath();
     static QString isMailerFound();

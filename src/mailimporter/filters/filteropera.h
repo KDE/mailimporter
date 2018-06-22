@@ -29,7 +29,7 @@ class MAILIMPORTER_EXPORT FilterOpera : public Filter
 {
 public:
     FilterOpera();
-    ~FilterOpera();
+    ~FilterOpera() override;
 
     void import() override;
     void importMails(const QString &maildir);

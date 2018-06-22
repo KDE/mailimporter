@@ -25,7 +25,7 @@ class MAILIMPORTER_EXPORT FilterEvolution_v3 : public Filter
 {
 public:
     FilterEvolution_v3();
-    ~FilterEvolution_v3();
+    ~FilterEvolution_v3() override;
 
     void import() override;
     void importMails(const QString &maildir);

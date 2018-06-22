@@ -33,7 +33,7 @@ class MAILIMPORTER_EXPORT FilterMailApp : public Filter
 {
 public:
     FilterMailApp();
-    ~FilterMailApp();
+    ~FilterMailApp() override;
 
     void import() override;
     void importMails(const QString &maildir);

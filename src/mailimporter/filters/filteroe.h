@@ -32,7 +32,7 @@ class MAILIMPORTER_EXPORT FilterOE : public Filter
 {
 public:
     FilterOE();
-    ~FilterOE();
+    ~FilterOE() override;
 
     void import() override;
     void importMails(const QString &maildir);

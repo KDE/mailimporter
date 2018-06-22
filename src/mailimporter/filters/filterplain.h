@@ -28,7 +28,7 @@ class MAILIMPORTER_EXPORT FilterPlain : public Filter
 {
 public:
     FilterPlain();
-    ~FilterPlain();
+    ~FilterPlain() override;
 
     void import() override;
     void importMails(const QString &mailDir);

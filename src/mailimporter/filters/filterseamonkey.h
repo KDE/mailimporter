@@ -24,7 +24,7 @@ class MAILIMPORTER_EXPORT FilterSeaMonkey : public FilterThunderbird
 {
 public:
     FilterSeaMonkey();
-    ~FilterSeaMonkey();
+    ~FilterSeaMonkey() override;
 
     static QString defaultSettingsPath();
 protected:

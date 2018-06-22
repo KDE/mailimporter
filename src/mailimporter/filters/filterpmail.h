@@ -27,7 +27,7 @@ class MAILIMPORTER_EXPORT FilterPMail : public Filter
 {
 public:
     FilterPMail();
-    ~FilterPMail();
+    ~FilterPMail() override;
 
     void import() override;
     void importMails(const QString &chosenDir);
