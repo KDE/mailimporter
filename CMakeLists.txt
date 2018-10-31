@@ -46,7 +46,7 @@ find_package(KF5Libkdepim ${KDEPIM_LIB_VERSION} CONFIG REQUIRED)
 
 ########### Targets ###########
 
-add_definitions(-DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT)
+
 add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x060000)
 
 ########### CMake Config Files ###########
