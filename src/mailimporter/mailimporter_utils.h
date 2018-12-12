@@ -19,6 +19,8 @@
 #ifndef MAILIMPORTER_UTILS_H
 #define MAILIMPORTER_UTILS_H
 
+#include <QString>
+
 namespace MailImporter {
 /**
  * Glorified QString[N] for (a) understandability (b) older gcc compatibility.
