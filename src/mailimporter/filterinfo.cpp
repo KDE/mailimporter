@@ -14,7 +14,7 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/* Copyright (c) 2012-2018 Montel Laurent <montel@kde.org>                      */
+/* Copyright (c) 2012-2019 Montel Laurent <montel@kde.org>                      */
 
 #include "filterinfo.h"
 #include "filterinfogui.h"

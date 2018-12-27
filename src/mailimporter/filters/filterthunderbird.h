@@ -5,7 +5,7 @@
     copyright            : (C) 2005 by Danny Kukawka
     email                : danny.kukawka@web.de
  ***************************************************************************/
-/* Copyright (c) 2012-2018 Montel Laurent <montel@kde.org>                      */
+/* Copyright (c) 2012-2019 Montel Laurent <montel@kde.org>                      */
 
 /***************************************************************************
  *                                                                         *
