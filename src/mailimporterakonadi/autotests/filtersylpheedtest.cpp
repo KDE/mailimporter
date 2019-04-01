@@ -19,7 +19,7 @@
 #include "filterimportertestutil.h"
 #include <MailImporter/FilterSylpheed>
 #include "filterimportertest.h"
-#include <qtest.h>
+#include <QTest>
 
 FilterSylpheedTest::FilterSylpheedTest(QObject *parent)
     : QObject(parent)

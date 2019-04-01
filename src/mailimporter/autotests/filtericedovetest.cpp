@@ -18,7 +18,7 @@
 #include "filtericedovetest.h"
 #include "filters/filtericedove.h"
 #include "filterimportertest.h"
-#include <qtest.h>
+#include <QTest>
 
 class FilterIcecoveAbstract : public MailImporter::FilterIcedove
 {

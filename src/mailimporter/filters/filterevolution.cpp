@@ -20,7 +20,7 @@
 #include "filterevolution.h"
 
 #include <KLocalizedString>
-#include <qfiledialog.h>
+#include <QFileDialog>
 #include <QTemporaryFile>
 
 using namespace MailImporter;

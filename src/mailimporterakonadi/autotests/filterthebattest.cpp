@@ -18,7 +18,7 @@
 #include "filterthebattest.h"
 #include <MailImporter/FilterTheBat>
 #include "filterimportertest.h"
-#include <qtest.h>
+#include <QTest>
 
 FilterTheBatTest::FilterTheBatTest(QObject *parent)
     : QObject(parent)

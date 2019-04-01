@@ -18,7 +18,7 @@
 #include "filtermailmangziptest.h"
 #include <MailImporter/FilterMailmanGzip>
 #include "filterimportertest.h"
-#include <qtest.h>
+#include <QTest>
 
 FilterMAilmangzipTest::FilterMAilmangzipTest(QObject *parent)
     : QObject(parent)

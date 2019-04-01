@@ -18,7 +18,7 @@
 #include "filterbalsamailtest.h"
 #include <MailImporter/FilterBalsa>
 #include "filterimportertest.h"
-#include <qtest.h>
+#include <QTest>
 
 FilterBalsaMailTest::FilterBalsaMailTest(QObject *parent)
     : QObject(parent)

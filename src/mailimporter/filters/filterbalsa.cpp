@@ -19,7 +19,7 @@
 #include "filterbalsa.h"
 
 #include <KLocalizedString>
-#include <qfiledialog.h>
+#include <QFileDialog>
 
 using namespace MailImporter;
 

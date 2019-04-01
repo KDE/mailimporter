@@ -18,7 +18,7 @@
 #include "filterthunderbird.h"
 #include "selectthunderbirdprofilewidget.h"
 #include <KLocalizedString>
-#include <qfiledialog.h>
+#include <QFileDialog>
 #include <KConfigGroup>
 #include <QTemporaryFile>
 #include <KConfig>

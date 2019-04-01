@@ -18,7 +18,7 @@
 #include "filterclawsmailtest.h"
 #include <MailImporter/FilterClawsMail>
 #include "filterimportertest.h"
-#include <qtest.h>
+#include <QTest>
 
 FilterClawsMailTest::FilterClawsMailTest(QObject *parent)
     : QObject(parent)

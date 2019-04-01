@@ -18,7 +18,7 @@
 #include "filterlnotestest.h"
 #include "filters/filterlnotes.h"
 #include "filterimportertest.h"
-#include <qtest.h>
+#include <QTest>
 
 FilterLnotesTest::FilterLnotesTest(QObject *parent)
     : QObject(parent)

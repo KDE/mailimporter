@@ -19,7 +19,7 @@
 #include "filtersylpheed.h"
 
 #include <KLocalizedString>
-#include <qfiledialog.h>
+#include <QFileDialog>
 #include "mailimporter_debug.h"
 #include <QDomDocument>
 #include <QDomElement>
