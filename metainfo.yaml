@@ -8,8 +8,8 @@ public_lib: true
 libraries:
  - qmake: MailImporter
    cmake: "KF5::MailImporter"
-   cmakename: KF5MailImporter
+cmakename: KF5MailImporter
  - qmake: MailImporterAkonadi
    cmake: "KF5::MailImporterAkonadi"
-   cmakename: KF5MailImporterAkonadi
+cmakename: KF5MailImporterAkonadi
 irc: akonadi
