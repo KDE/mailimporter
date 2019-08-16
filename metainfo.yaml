@@ -2,6 +2,7 @@ name: mailimporter
 description: Mail Importer Library implements importing of emails from various other email clients
 maintainer: mlaurent
 group: kdepim
+type: functional
 platforms:
     - name: All
 public_lib: true 
