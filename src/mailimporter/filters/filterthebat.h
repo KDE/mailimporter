@@ -21,12 +21,12 @@
 
 #include "filters.h"
 #include "mailimporter_export.h"
+namespace MailImporter {
+class FilterTheBatPrivate;
 /**
  * Imports The Bat! mail folder recursively, recreating the folder structure.
  * @author Danny Kukawka
  */
-namespace MailImporter {
-class FilterTheBatPrivate;
 class MAILIMPORTER_EXPORT FilterTheBat : public Filter
 {
 public:

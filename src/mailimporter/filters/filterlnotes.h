@@ -19,11 +19,12 @@
 #define MAILIMPORTER_FILTER_LNOTES_H
 
 #include "filters.h"
-/**imports Lotus Notes Structured Text Archives and archvies messages into KMail
- *@author Robert Rockers
- */
 namespace MailImporter {
 class FilterLNotesPrivate;
+/**
+ * imports Lotus Notes Structured Text Archives and archvies messages into KMail
+ * @author Robert Rockers
+ */
 class MAILIMPORTER_EXPORT FilterLNotes : public Filter
 {
 public:

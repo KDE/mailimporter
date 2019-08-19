@@ -26,6 +26,10 @@
 #include "mailimporterakonadi_export.h"
 #include <QString>
 namespace MailImporter {
+/**
+ * @brief The FilterImporterAkonadi class
+ * @author Laurent Montel <montel@kde.org>
+ */
 class MAILIMPORTERAKONADI_EXPORT FilterImporterAkonadi : public MailImporter::FilterImporterBase
 {
 public:

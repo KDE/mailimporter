@@ -22,12 +22,12 @@
 
 #include <QList>
 
+#include "mailimporter_utils.h"
+namespace MailImporter {
 /**
  *imports outlook text messages into KMail
  *@author Laurence Anderson
  */
-#include "mailimporter_utils.h"
-namespace MailImporter {
 class MAILIMPORTER_EXPORT FilterOE : public Filter
 {
 public:

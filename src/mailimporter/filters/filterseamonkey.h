@@ -21,6 +21,10 @@
 
 #include "filterthunderbird.h"
 namespace MailImporter {
+/**
+ * @brief The FilterSeaMonkey class
+ * @author Laurent Montel <montel@kde.org>
+ */
 class MAILIMPORTER_EXPORT FilterSeaMonkey : public FilterThunderbird
 {
 public:

@@ -24,7 +24,9 @@
 #include <QWidget>
 namespace MailImporter {
 class FilterInfoGui;
-
+/**
+ * @brief The FilterInfo class
+ */
 class MAILIMPORTER_EXPORT FilterInfo
 {
 public:

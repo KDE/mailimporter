@@ -19,12 +19,12 @@
 #define MAILIMPORTER_FILTER_EVOLUTION_V2_H
 
 #include "filters.h"
+
+namespace MailImporter {
 /**
  * Imports Evolution v2.x mail folder recursively, keeping the folder structure.
  * @author Danny Kukawka
  */
-
-namespace MailImporter {
 class MAILIMPORTER_EXPORT FilterEvolution_v2 : public Filter
 {
 public:

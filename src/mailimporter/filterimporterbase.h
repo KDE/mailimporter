@@ -26,6 +26,10 @@
 
 namespace MailImporter {
 class FilterInfo;
+/**
+ * @brief The FilterImporterBase class
+ * @author Laurent Montel <montel@kde.org>
+ */
 class MAILIMPORTER_EXPORT FilterImporterBase
 {
 public:

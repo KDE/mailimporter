@@ -22,12 +22,12 @@
 #include <QHash>
 
 #include "filters.h"
+namespace MailImporter {
+class FilterSylpheedPrivate;
 /**
  * Imports Sylpheed mail folder with maildir format recursively, recreating the folder structure.
  * @author Danny Kukawka
  */
-namespace MailImporter {
-class FilterSylpheedPrivate;
 class MAILIMPORTER_EXPORT FilterSylpheed : public Filter
 {
 public:

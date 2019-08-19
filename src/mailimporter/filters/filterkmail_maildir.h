@@ -20,12 +20,12 @@
 #define MAILIMPORTER_FILTER_KMAIL_MAILDIR_H
 
 #include "filters.h"
+namespace MailImporter {
+class FilterKMail_maildirPrivate;
 /**
  * Imports KMail mail folder with maildir format recursively, recreating the folder structure.
  * @author Danny Kukawka
  */
-namespace MailImporter {
-class FilterKMail_maildirPrivate;
 class MAILIMPORTER_EXPORT FilterKMail_maildir : public Filter
 {
 public:

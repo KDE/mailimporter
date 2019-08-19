@@ -21,11 +21,11 @@
 
 #include "filters.h"
 
+namespace MailImporter {
 /**
  * Imports Thunderbird mail folder recursively, keeping the folder structure.
  * @author Danny Kukawka
  */
-namespace MailImporter {
 class MAILIMPORTER_EXPORT FilterThunderbird : public Filter
 {
 public:

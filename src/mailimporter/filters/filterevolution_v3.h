@@ -22,6 +22,10 @@
 #include "filters.h"
 namespace MailImporter {
 class FilterEvolution_v3Private;
+/**
+ * @brief The FilterEvolution_v3 class
+ * @author Laurent Montel <montel@kde.org>
+ */
 class MAILIMPORTER_EXPORT FilterEvolution_v3 : public Filter
 {
 public:

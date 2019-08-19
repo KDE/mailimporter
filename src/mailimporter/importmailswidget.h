@@ -23,6 +23,10 @@
 class QListWidgetItem;
 namespace MailImporter {
 class ImportMailsWidgetPrivate;
+/**
+ * @brief The ImportMailsWidget class
+ * @author Laurent Montel <montel@kde.org>
+ */
 class MAILIMPORTER_EXPORT ImportMailsWidget : public QWidget
 {
     Q_OBJECT

@@ -20,11 +20,11 @@
 
 #include "filters.h"
 
+namespace MailImporter {
 /**
  * imports mbox archives messages into KMail
  * @author Laurence Anderson
  */
-namespace MailImporter {
 class MAILIMPORTER_EXPORT FilterMBox : public Filter
 {
 public:

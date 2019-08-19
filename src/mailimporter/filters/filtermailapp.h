@@ -23,12 +23,12 @@
 #define MAILIMPORTER_FILTER_MAILAPP_H
 
 #include "filters.h"
+namespace MailImporter {
+class FilterMailAppPrivate;
 /**
  *imports mbox archives messages into KMail
  *@author Chris Howells
  */
-namespace MailImporter {
-class FilterMailAppPrivate;
 class MAILIMPORTER_EXPORT FilterMailApp : public Filter
 {
 public:

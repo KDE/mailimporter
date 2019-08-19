@@ -23,6 +23,10 @@
 #include <QtGlobal>
 
 namespace MailImporter {
+/**
+ * @brief The MessageStatus class
+ * @author Laurent Montel <montel@kde.org>
+ */
 class MAILIMPORTER_EXPORT MessageStatus
 {
 public:

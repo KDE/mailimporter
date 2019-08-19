@@ -20,11 +20,11 @@
 
 #include "filters.h"
 #include <QDir>
+namespace MailImporter {
 /**
  *imports opera account-archives into KMail
  *@author Danny Kukawka
  */
-namespace MailImporter {
 class MAILIMPORTER_EXPORT FilterOpera : public Filter
 {
 public:

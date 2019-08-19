@@ -22,6 +22,10 @@
 #include "filters.h"
 
 namespace MailImporter {
+/**
+ * @brief The FilterInfoGui class
+ * @author Laurent Montel <montel@kde.org>
+ */
 class MAILIMPORTER_EXPORT FilterInfoGui
 {
 public:
