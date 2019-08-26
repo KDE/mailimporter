@@ -179,14 +179,14 @@ void FilterEvolution_v3::importFiles(const QString &dirName)
             if (!generatedPath) {
                 _path = i18nc("define folder name where we import evolution mails", "Evolution-Import");
                 QString _tmp = dir.filePath(*mailFile);
-                _tmp = _tmp.remove(mailDir(), Qt::CaseSensitive);
+                _tmp.remove(mailDir(), Qt::CaseSensitive);
                 QStringList subFList = _tmp.split(QLatin1Char('/'), QString::SkipEmptyParts);
                 QStringList::ConstIterator end(subFList.end());
                 for (QStringList::ConstIterator it = subFList.constBegin(); it != end; ++it) {
                     QString _cat = *it;
                     if (!(_cat == *mailFile)) {
                         if (_cat.startsWith(QLatin1Char('.'))) {
-                            _cat = _cat.remove(0, 1);
+                            _cat.remove(0, 1);
                         }
                         //Evolution store inbox as "."
                         if (_cat.startsWith(QLatin1Char('.'))) {

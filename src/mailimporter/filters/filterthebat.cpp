@@ -219,7 +219,7 @@ void FilterTheBat::importFiles(const QString &FileName)
 
             QString _path = i18nc("Define folder where we will import thebat mails", "TheBat-Import") + QLatin1Char('/');
             QString _tmp = FileName;
-            _tmp = _tmp.remove(_tmp.length() - 13, 13);
+            _tmp.remove(_tmp.length() - 13, 13);
             _path += _tmp.remove(mailDir(), Qt::CaseSensitive);
             QString _info = _path;
             filterInfo()->addInfoLogEntry(i18n("Import folder %1...", _info.remove(0, 14)));

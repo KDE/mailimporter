@@ -237,7 +237,7 @@ void FilterSylpheed::importFiles(const QString &dirName)
             if (!generatedPath) {
                 _path = defaultInstallPath;
                 QString _tmp = dir.filePath(*mailFile);
-                _tmp = _tmp.remove(_tmp.length() - _mfile.length() - 1, _mfile.length() + 1);
+                _tmp.remove(_tmp.length() - _mfile.length() - 1, _mfile.length() + 1);
                 _path += _tmp.remove(mailDir(), Qt::CaseSensitive);
                 QString _info = _path;
                 filterInfo()->addInfoLogEntry(i18n("Import folder %1...", _info.remove(0, 15)));
