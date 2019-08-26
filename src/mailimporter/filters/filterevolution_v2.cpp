@@ -205,7 +205,7 @@ void FilterEvolution_v2::importMBox(const QString &mboxName, const QString &root
         filterInfo()->setCurrent(0);
         if (mboxName.length() > 20) {
             QString tmp_info = mboxName;
-            tmp_info = tmp_info.replace(mailDir(), QStringLiteral("../"));
+            tmp_info.replace(mailDir(), QStringLiteral("../"));
             if (tmp_info.contains(QLatin1String(".sbd"))) {
                 tmp_info.remove(QStringLiteral(".sbd"));
             }

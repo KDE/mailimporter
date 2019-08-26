@@ -149,7 +149,7 @@ void FilterEvolution::importMBox(const QString &mboxName, const QString &rootDir
         filterInfo()->setCurrent(0);
         if (mboxName.length() > 20) {
             QString tmp_info = mboxName;
-            tmp_info = tmp_info.replace(mailDir(), QStringLiteral(".."));
+            tmp_info.replace(mailDir(), QStringLiteral(".."));
             if (tmp_info.contains(QLatin1String("subfolders/"))) {
                 tmp_info.remove(QStringLiteral("subfolders/"));
             }

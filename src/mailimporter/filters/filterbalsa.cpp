@@ -195,7 +195,7 @@ void FilterBalsa::importFiles(const QString &dirName)
                         }
                         //Evolution store inbox as "."
                         if (_cat.startsWith(QLatin1Char('.'))) {
-                            _cat = _cat.replace(0, 1, QStringLiteral("Inbox/"));
+                            _cat.replace(0, 1, QStringLiteral("Inbox/"));
                         }
 
                         _path += QLatin1Char('/') + _cat;
@@ -224,7 +224,7 @@ void FilterBalsa::importFiles(const QString &dirName)
 MailImporter::MessageStatus FilterBalsa::statusFromFile(const QString &filename)
 {
     MailImporter::MessageStatus status;
-    const int statusIndex = filename.indexOf(QStringLiteral(":2,"));
+    const int statusIndex = filename.indexOf(QLatin1String(":2,"));
     if (statusIndex != -1) {
         const QString statusStr = filename.right(filename.length() - statusIndex - 3);
         if (statusStr.contains(QLatin1Char('S'))) {
