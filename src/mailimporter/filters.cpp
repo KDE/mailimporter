@@ -164,7 +164,7 @@ int Filter::countDirectory(const QDir &dir, bool searchHiddenDirectory)
 
     QStringList::ConstIterator end = subDirs.constEnd();
     for (QStringList::ConstIterator filename = subDirs.constBegin(); filename != end; ++filename) {
-        if (!(*filename == QLatin1String(".") || *filename == QLatin1String(".."))) {
+        if (!(*filename == QLatin1Char('.') || *filename == QLatin1String(".."))) {
             countDir += countDirectory(QDir(dir.filePath(*filename)), searchHiddenDirectory) + 1;
         }
     }

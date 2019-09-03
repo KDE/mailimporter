@@ -95,7 +95,7 @@ void FilterBalsa::processDirectory(const QString &path)
         if (filterInfo()->shouldTerminate()) {
             break;
         }
-        if (!(*filename == QLatin1String(".") || *filename == QLatin1String(".."))) {
+        if (!(*filename == QLatin1Char('.') || *filename == QLatin1String(".."))) {
             filterInfo()->setCurrent(0);
             importDirContents(dir.filePath(*filename));
             filterInfo()->setOverall((d->mTotalDir > 0) ? (int)((float)d->mImportDirDone / d->mTotalDir * 100) : 0);
