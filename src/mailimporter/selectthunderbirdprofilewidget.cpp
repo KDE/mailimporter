@@ -29,7 +29,7 @@ using namespace MailImporter;
 SelectThunderbirdProfileDialog::SelectThunderbirdProfileDialog(QWidget *parent)
     : QDialog(parent)
 {
-    setWindowTitle(i18n("Select thunderbird profile"));
+    setWindowTitle(i18nc("@title:window", "Select thunderbird profile"));
     setModal(true);
     QVBoxLayout *topLayout = new QVBoxLayout(this);
 
