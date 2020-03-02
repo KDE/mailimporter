@@ -285,7 +285,11 @@ bool FilterPMail::parseFolderMatrix(const QString &chosendir)
             }
             QString tmpArray[5];
             tmpRead.remove(tmpRead.length() - 2, 2);
+#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
             QStringList tmpList = QString::fromLatin1(tmpRead).split(QLatin1Char(','), QString::SkipEmptyParts);
+#else
+            QStringList tmpList = QString::fromLatin1(tmpRead).split(QLatin1Char(','), Qt::SkipEmptyParts);
+#endif
             int i = 0;
             QStringList::ConstIterator end(tmpList.constEnd());
             for (QStringList::ConstIterator it = tmpList.constBegin(); it != end; ++it, ++i) {
