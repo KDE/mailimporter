@@ -65,15 +65,11 @@ set(libmailimporter_SRCS
 
 ki18n_wrap_ui(libmailimporter_SRCS ui/importmailswidget.ui ui/selectthunderbirdprofilewidget.ui)
 
-if (ECM_VERSION VERSION_LESS "5.68.0")
-    ecm_qt_declare_logging_category(libmailimporter_SRCS HEADER mailimporter_debug.h IDENTIFIER MAILIMPORTER_LOG CATEGORY_NAME org.kde.pim.mailimporter)
-else()
-    ecm_qt_declare_logging_category(libmailimporter_SRCS HEADER mailimporter_debug.h IDENTIFIER MAILIMPORTER_LOG CATEGORY_NAME org.kde.pim.mailimporter
+ecm_qt_declare_logging_category(libmailimporter_SRCS HEADER mailimporter_debug.h IDENTIFIER MAILIMPORTER_LOG CATEGORY_NAME org.kde.pim.mailimporter
         DESCRIPTION "mailimporter (mailimporter)"
         OLD_CATEGORY_NAMES log_mailimporter
         EXPORT MAILIMPORTER
     )
-endif()
 
 add_library(KF5MailImporter
     ${libmailimporter_SRCS}

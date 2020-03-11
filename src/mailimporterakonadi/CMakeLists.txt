@@ -31,14 +31,10 @@ set(libmailimporterakonadi_SRCS
     filterimporterakonadi.cpp
     )
 
-if (ECM_VERSION VERSION_LESS "5.68.0")
-    ecm_qt_declare_logging_category(libmailimporterakonadi_SRCS HEADER mailimporterakonadi_debug.h IDENTIFIER MAILIMPORTERAKONADI_LOG CATEGORY_NAME org.kde.pim.mailimporterakonadi)
-else()
-    ecm_qt_declare_logging_category(libmailimporterakonadi_SRCS HEADER mailimporterakonadi_debug.h IDENTIFIER MAILIMPORTERAKONADI_LOG CATEGORY_NAME org.kde.pim.mailimporterakonadi
+ecm_qt_declare_logging_category(libmailimporterakonadi_SRCS HEADER mailimporterakonadi_debug.h IDENTIFIER MAILIMPORTERAKONADI_LOG CATEGORY_NAME org.kde.pim.mailimporterakonadi
         DESCRIPTION "mailimporterakonadi (mailimporter)"
         EXPORT MAILIMPORTER
     )
-endif()
 
 
 
