@@ -82,7 +82,7 @@ QString FilterClawsMail::localMailDirPath()
             if (e.tagName() == QLatin1String("folder")) {
                 if (e.hasAttribute(QStringLiteral("type"))) {
                     if (e.attribute(QStringLiteral("type")) == QLatin1String("mh")) {
-                        return QDir::homePath() + QDir::separator() + e.attribute(QStringLiteral("path"));
+                        return QDir::homePath() + QLatin1Char('/') + e.attribute(QStringLiteral("path"));
                     }
                 }
             }
