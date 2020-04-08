@@ -147,7 +147,7 @@ void Filter::setInfo(const QString &_info)
     d->info = _info;
 }
 
-bool Filter::importMessage(const QString &folderName, const QString &msgPath, bool duplicateCheck, MailImporter::MessageStatus status)
+bool Filter::importMessage(const QString &folderName, const QString &msgPath, bool duplicateCheck, const MailImporter::MessageStatus &status)
 {
     return filterImporter()->importMessage(folderName, msgPath, duplicateCheck, status);
 }

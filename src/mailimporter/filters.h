@@ -67,7 +67,7 @@ public:
 
 protected:
     static int countDirectory(const QDir &dir, bool searchHiddenDirectory);
-    bool importMessage(const QString &folderName, const QString &msgPath, bool duplicateCheck, MailImporter::MessageStatus status = MailImporter::MessageStatus());
+    Q_REQUIRED_RESULT bool importMessage(const QString &folderName, const QString &msgPath, bool duplicateCheck, const MessageStatus &status = MailImporter::MessageStatus());
 private:
     class Private;
     Private *const d;
