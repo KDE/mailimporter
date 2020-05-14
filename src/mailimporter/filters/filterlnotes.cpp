@@ -139,7 +139,10 @@ void FilterLNotes::ImportLNotes(const QString &file)
                     // close file, send it
                     tempfile->close();
 
-                    importMessage(folder, tempfile->fileName(), filterInfo()->removeDupMessage());
+
+                    if (!importMessage(folder, tempfile->fileName(), filterInfo()->removeDupMessage())) {
+                        filterInfo()->addErrorLogEntry(i18n("Could not import %1", tempfile->fileName()));
+                    }
 
                     tempfile->setAutoRemove(true);
                     state = 0;
@@ -168,7 +171,9 @@ void FilterLNotes::ImportLNotes(const QString &file)
         if (state != 0) {
             Q_ASSERT(tempfile);
 
-            importMessage(folder, tempfile->fileName(), filterInfo()->removeDupMessage());
+            if (!importMessage(folder, tempfile->fileName(), filterInfo()->removeDupMessage())) {
+                filterInfo()->addErrorLogEntry(i18n("Could not import %1", tempfile->fileName()));
+            }
         }
         if (tempfile) {
             tempfile->setAutoRemove(true);

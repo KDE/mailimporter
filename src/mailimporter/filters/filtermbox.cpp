@@ -118,7 +118,9 @@ void FilterMBox::importMails(const QStringList &filenames)
                 first_msg = false;
 
                 if (tmp.size() > 0) {
-                    importMessage(folderName, tmp.fileName(), filterInfo()->removeDupMessage());
+                    if (!importMessage(folderName, tmp.fileName(), filterInfo()->removeDupMessage())) {
+                        filterInfo()->addErrorLogEntry(i18n("Could not import %1", tmp.fileName()));
+                    }
                 } else {
                     qCWarning(MAILIMPORTER_LOG) << "Message size is 0 bytes, not importing it.";
                 }

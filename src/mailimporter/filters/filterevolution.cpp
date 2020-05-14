@@ -202,7 +202,9 @@ void FilterEvolution::importMBox(const QString &mboxName, const QString &rootDir
                 destFolder = QLatin1String("Evolution-Import/") + destFolder;
             }
 
-            importMessage(destFolder, tmp.fileName(), filterInfo()->removeDupMessage());
+            if (!importMessage(destFolder, tmp.fileName(), filterInfo()->removeDupMessage())) {
+                filterInfo()->addErrorLogEntry(i18n("Could not import %1", tmp.fileName()));
+            }
 
             const int currentPercentage = (int)(((float)mbox.pos() / filenameInfo.size()) * 100);
             filterInfo()->setCurrent(currentPercentage);

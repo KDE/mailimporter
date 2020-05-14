@@ -210,7 +210,9 @@ void FilterOE::mbxImport(QDataStream &ds)
             }
         } while (!ds.atEnd());
         tmp.flush();
-        importMessage(folderName, tmp.fileName(), filterInfo()->removeDupMessage());
+        if (!importMessage(folderName, tmp.fileName(), filterInfo()->removeDupMessage())) {
+            filterInfo()->addErrorLogEntry(i18n("Could not import %1", tmp.fileName()));
+        }
 
         if (filterInfo()->shouldTerminate()) {
             return;
@@ -371,7 +373,9 @@ void FilterOE::dbxReadEmail(QDataStream &ds, int filePos)
     tmp.flush();
 
     if (!_break) {
-        importMessage(folderName, tmp.fileName(), filterInfo()->removeDupMessage());
+        if (!importMessage(folderName, tmp.fileName(), filterInfo()->removeDupMessage())) {
+            filterInfo()->addErrorLogEntry(i18n("Could not import %1", tmp.fileName()));
+        }
 
         currentEmail++;
         int currentPercentage = (int)(((float)currentEmail / totalEmails) * 100);

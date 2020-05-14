@@ -241,7 +241,9 @@ void FilterTheBat::importFiles(const QString &FileName)
                 tmp.write(input.constData(), endPos - lastPos);
                 tmp.flush();
 
-                importMessage(_path, tmp.fileName(), filterInfo()->removeDupMessage());
+                if (!importMessage(_path, tmp.fileName(), filterInfo()->removeDupMessage())) {
+                    filterInfo()->addErrorLogEntry(i18n("Could not import %1", tmp.fileName()));
+                }
 
                 lastPos = endPos + 48;
                 tbb.seek(lastPos);

@@ -116,7 +116,9 @@ void FilterPMail::importNewMessage(const QString &file)
     QString destFolder(QStringLiteral("PegasusMail-Import/New Messages"));
     filterInfo()->setTo(destFolder);
 
-    importMessage(destFolder, file, filterInfo()->removeDupMessage());
+    if (!importMessage(destFolder, file, filterInfo()->removeDupMessage())) {
+        filterInfo()->addErrorLogEntry(i18n("Could not import %1", file));
+    }
 }
 
 /** this function imports one mail folder file (*.PMM) */
@@ -193,7 +195,9 @@ void FilterPMail::importMailFolder(const QString &file)
                 }
             }
             tempfile.flush();
-            importMessage(folder, tempfile.fileName(), filterInfo()->removeDupMessage());
+            if (!importMessage(folder, tempfile.fileName(), filterInfo()->removeDupMessage())) {
+                filterInfo()->addErrorLogEntry(i18n("Could not import %1", tempfile.fileName()));
+            }
 
             first_msg = false;
         }
@@ -256,7 +260,9 @@ void FilterPMail::importUnixMailFolder(const QString &file)
                 }
             }
             tempfile.flush();
-            importMessage(folder, tempfile.fileName(), filterInfo()->removeDupMessage());
+            if (!importMessage(folder, tempfile.fileName(), filterInfo()->removeDupMessage())) {
+                filterInfo()->addErrorLogEntry(i18n("Could not import %1", tempfile.fileName()));
+            }
 
             n++;
             filterInfo()->setCurrent(i18n("Message %1", n));

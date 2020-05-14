@@ -25,7 +25,8 @@ FilterImporterTest::FilterImporterTest(MailImporter::FilterInfo *info)
 
 bool FilterImporterTest::importMessage(const QString &folderName, const QString &msgPath, bool duplicateCheck, const MailImporter::MessageStatus &status)
 {
-    qDebug() << "FilterImporterTest::importMessage folderName " << folderName << " msgPath " << msgPath;
+    Q_UNUSED(status)
+    qDebug() << "FilterImporterTest::importMessage folderName " << folderName << " msgPath " << msgPath << " duplicateCheck " << duplicateCheck;
     return false;
 }
 
@@ -49,6 +50,11 @@ QString FilterImporterTest::topLevelFolder() const
 
 bool FilterImporterTest::importMessage(const KArchiveFile *file, const QString &folderPath, int &nbTotal, int &fileDone)
 {
+    Q_UNUSED(file);
+    Q_UNUSED(folderPath);
+    Q_UNUSED(nbTotal);
+    Q_UNUSED(fileDone);
+
     return false;
 }
 
