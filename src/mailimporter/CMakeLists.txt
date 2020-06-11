@@ -88,7 +88,7 @@ target_link_libraries(KF5MailImporter
     PUBLIC
     KF5::Archive
     PRIVATE
-    KF5::Libkdepim
+    KF5::PimCommon
     KF5::I18n
     KF5::ConfigCore
     Qt5::Xml
