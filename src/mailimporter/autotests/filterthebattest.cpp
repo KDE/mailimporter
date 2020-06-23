@@ -36,34 +36,37 @@ void FilterTheBatTest::shouldImportData()
 void FilterTheBatTest::canNotImportDataEmptyPath()
 {
     MailImporter::FilterTheBat filter;
-    MailImporter::FilterInfo *info = new MailImporter::FilterInfo;
-    FilterImporterTest *importerTest = new FilterImporterTest(info);
+    MailImporter::FilterInfo info;
+    FilterImporterTest *importerTest = new FilterImporterTest(&info);
     filter.setFilterImporter(importerTest);
-    filter.setFilterInfo(info);
+    filter.setFilterInfo(&info);
     filter.importMails(QString());
     QVERIFY(importerTest->filterImporterDataList().isEmpty());
+    delete importerTest;
 }
 
 void FilterTheBatTest::canNotImportDataUnknowPath()
 {
     MailImporter::FilterTheBat filter;
-    MailImporter::FilterInfo *info = new MailImporter::FilterInfo;
-    FilterImporterTest *importerTest = new FilterImporterTest(info);
+    MailImporter::FilterInfo info;
+    FilterImporterTest *importerTest = new FilterImporterTest(&info);
     filter.setFilterImporter(importerTest);
-    filter.setFilterInfo(info);
+    filter.setFilterInfo(&info);
     filter.importMails(QStringLiteral("/foo/kde/bla/toto/"));
     QVERIFY(importerTest->filterImporterDataList().isEmpty());
+    delete importerTest;
 }
 
 void FilterTheBatTest::canNotImportDataWhenHomeDirSelected()
 {
     MailImporter::FilterTheBat filter;
-    MailImporter::FilterInfo *info = new MailImporter::FilterInfo;
-    FilterImporterTest *importerTest = new FilterImporterTest(info);
+    MailImporter::FilterInfo info;
+    FilterImporterTest *importerTest = new FilterImporterTest(&info);
     filter.setFilterImporter(importerTest);
-    filter.setFilterInfo(info);
+    filter.setFilterInfo(&info);
     filter.importMails(QDir::homePath());
     QVERIFY(importerTest->filterImporterDataList().isEmpty());
+    delete importerTest;
 }
 
 QTEST_MAIN(FilterTheBatTest)

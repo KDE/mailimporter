@@ -36,24 +36,26 @@ void FilterLnotesTest::shouldImportData()
 void FilterLnotesTest::canNotImportDataEmptyPath()
 {
     MailImporter::FilterLNotes filter;
-    MailImporter::FilterInfo *info = new MailImporter::FilterInfo;
-    FilterImporterTest *importerTest = new FilterImporterTest(info);
+    MailImporter::FilterInfo info;
+    FilterImporterTest *importerTest = new FilterImporterTest(&info);
     filter.setFilterImporter(importerTest);
-    filter.setFilterInfo(info);
+    filter.setFilterInfo(&info);
     //TODO implement it
     //filter.importMail(QString());
     //QVERIFY(importerTest->filterImporterDataList().isEmpty());
+    delete importerTest;
 }
 
 void FilterLnotesTest::canNotImportDataUnknowPath()
 {
     MailImporter::FilterLNotes filter;
-    MailImporter::FilterInfo *info = new MailImporter::FilterInfo;
-    FilterImporterTest *importerTest = new FilterImporterTest(info);
+    MailImporter::FilterInfo info;
+    FilterImporterTest *importerTest = new FilterImporterTest(&info);
     filter.setFilterImporter(importerTest);
-    filter.setFilterInfo(info);
+    filter.setFilterInfo(&info);
     //filter.importMails(QStringLiteral("/foo/kde/bla/toto/"));
     //QVERIFY(importerTest->filterImporterDataList().isEmpty());
+    delete importerTest;
 }
 
 QTEST_MAIN(FilterLnotesTest)
