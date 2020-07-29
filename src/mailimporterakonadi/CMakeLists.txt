@@ -58,7 +58,6 @@ target_link_libraries(KF5MailImporterAkonadi
     KF5::Mime
     KF5::AkonadiMime
     KF5::I18n
-    Qt5::Widgets
     )
 
 set_target_properties(KF5MailImporterAkonadi PROPERTIES
