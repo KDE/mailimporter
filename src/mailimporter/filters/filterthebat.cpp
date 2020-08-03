@@ -9,7 +9,7 @@
 
 #include "filterthebat.h"
 
-#include <QRegExp>
+#include <QRegularExpression>
 #include <KLocalizedString>
 #include <QFileDialog>
 #include <QTemporaryFile>
@@ -157,7 +157,7 @@ void FilterTheBat::importFiles(const QString &FileName)
 
     long l = 0;
     QByteArray input(50, '\0');
-    QRegExp regexp(QStringLiteral("!.p.0"));
+    const QRegularExpression regexp(QStringLiteral("!.p.0"));
     QFile tbb(FileName);
     int iFound = 0;
     int count = 0;
