@@ -98,7 +98,7 @@ bool FilterKMailArchive::importFolder(const KArchiveDirectory *folder, const QSt
         const QStringList lstEntries = messageDir->entries();
         for (const QString &entryName : lstEntries) {
             filterInfo()->setCurrent(cur * 100 / total);
-            filterInfo()->setOverall(d->mFilesDone * 100 / d->mTotalFiles);
+            filterInfo()->setOverall(d->mTotalFiles == 0 ? 0 : (d->mFilesDone * 100 / d->mTotalFiles));
             const KArchiveEntry *const entry = messageDir->entry(entryName);
 
             if (entry->isFile()) {

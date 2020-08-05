@@ -168,7 +168,7 @@ void FilterPMail::importMailFolder(const QString &file)
             folder.append(QString::fromLatin1(pmm_head.folder));
         }
         filterInfo()->setTo(folder);
-        filterInfo()->addInfoLogEntry(i18n("Importing %1", QString::fromLatin1("../") + QString::fromLatin1(pmm_head.folder)));
+        filterInfo()->addInfoLogEntry(i18n("Importing %1", QStringLiteral("../") + QString::fromLatin1(pmm_head.folder)));
 
         QByteArray input(MAX_LINE, '\0');
         bool first_msg = true;
