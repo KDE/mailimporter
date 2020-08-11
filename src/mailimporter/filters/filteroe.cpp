@@ -1,19 +1,12 @@
-/***************************************************************************
-                          filter_oe.cxx  -  Outlook Express mail import
-                             -------------------
-    begin                : Sat Feb 1 2003
-    copyright            : (C) 2003 by Laurence Anderson <l.d.anderson@warwick.ac.uk>
-                           (C) 2005 by Danny Kukawka <danny.Kukawka@web.de>
- ***************************************************************************/
+/*
+  filter_oe.cpp  -  Outlook Express mail import
 
-/***************************************************************************
- *                                                                         *
- *   This program is free software; you can redistribute it and/or modify  *
- *   it under the terms of the GNU General Public License as published by  *
- *   the Free Software Foundation; either version 2 of the License, or     *
- *   (at your option) any later version.                                   *
- *                                                                         *
- ***************************************************************************/
+  SPDX-FileCopyrightText: 2003 Laurence Anderson <l.d.anderson@warwick.ac.uk>
+  SPDX-FileCopyrightText: 2005 Danny Kukawka <danny.Kukawka@web.de>
+
+  SPDX-License-Identifier: GPL-2.0-or-later
+*/
+
 
 // This filter was created by looking at libdbx  &liboe
 

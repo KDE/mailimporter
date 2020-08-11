@@ -1,20 +1,12 @@
-/***************************************************************************
-           filter_kmail_maildir.cxx  -  Kmail maildir mail import
-                            -------------------
-   begin                : April 06 2005
-   copyright            : (C) 2005 by Danny Kukawka
-   email                : danny.kukawka@web.de
-***************************************************************************/
+/*
+  filterkmail_maildir.cpp  -  Kmail maildir mail import
 
-/***************************************************************************
- *                                                                         *
- *   This program is free software; you can redistribute it and/or modify  *
- *   it under the terms of the GNU General Public License as published by  *
- *   the Free Software Foundation; either version 2 of the License, or     *
- *   (at your option) any later version.                                   *
- *                                                                         *
- ***************************************************************************/
-/* Copyright (c) 2012-2020 Laurent Montel <montel@kde.org>                      */
+  SPDX-FileCopyrightText: 2005 Danny Kukawka <danny.kukawka@web.de>
+  SPDX-FileCopyrightText: 2012-2020 Laurent Montel <montel@kde.org>
+
+  SPDX-License-Identifier: GPL-2.0-or-later
+*/
+
 
 #include "filterkmail_maildir.h"
 

@@ -1,19 +1,11 @@
-/***************************************************************************
-             filter_lnotes.cxx  -  Lotus Notes Structured Text mail import
-                             -------------------
-    begin                : Wed Feb 16, 2005
-    copyright            : (C) 2005 by Robert Rockers
-    email                : kconfigure@rockerssoft.com
- ***************************************************************************/
+/*
+  filterlnotes.cpp  -  Lotus Notes Structured Text mail import
 
-/***************************************************************************
- *                                                                         *
- *   This program is free software; you can redistribute it and/or modify  *
- *   it under the terms of the GNU General Public License as published by  *
- *   the Free Software Foundation; either version 2 of the License, or     *
- *   (at your option) any later version.                                   *
- *                                                                         *
- ***************************************************************************/
+  SPDX-FileCopyrightText: 2005 Robert Rockers <kconfigure@rockerssoft.com>
+
+  SPDX-License-Identifier: GPL-2.0-or-later
+*/
+
 
 #include "filterlnotes.h"
 

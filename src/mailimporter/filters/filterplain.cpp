@@ -1,19 +1,10 @@
-/***************************************************************************
-                          FilterPlain.cxx  -  Plain mail import
-                             -------------------
-    begin                : Fri Jun 14 2002
-    copyright            : (C) 2002 by Laurence Anderson
-    email                : l.d.anderson@warwick.ac.uk
- ***************************************************************************/
+/*
+  filterplain.cpp  -  Plain mail import
 
-/***************************************************************************
- *                                                                         *
- *   This program is free software; you can redistribute it and/or modify  *
- *   it under the terms of the GNU General Public License as published by  *
- *   the Free Software Foundation; either version 2 of the License, or     *
- *   (at your option) any later version.                                   *
- *                                                                         *
- ***************************************************************************/
+  SPDX-FileCopyrightText: 2002 Laurence Anderson <l.d.anderson@warwick.ac.uk>
+
+  SPDX-License-Identifier: GPL-2.0-or-later
+*/
 
 #include "filterplain.h"
 

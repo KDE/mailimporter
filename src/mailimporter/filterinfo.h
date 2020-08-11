@@ -1,23 +1,12 @@
+/*
+  SPDX-FileCopyrightText: 2000 Hans Dijkema <kmailcvt@hum.org>
+  SPDX-FileCopyrightText: 2012-2020 Laurent Montel <montel@kde.org>
+
+  SPDX-License-Identifier: GPL-2.0-or-later
+*/
+
 #ifndef FILTERINFO_H
 #define FILTERINFO_H
-
-/***************************************************************************
-                          filters.h  -  description
-                             -------------------
-    begin                : Fri Jun 30 2000
-    copyright            : (C) 2000 by Hans Dijkema
-    email                : kmailcvt@hum.org
- ***************************************************************************/
-
-/***************************************************************************
- *                                                                         *
- *   This program is free software; you can redistribute it and/or modify  *
- *   it under the terms of the GNU General Public License as published by  *
- *   the Free Software Foundation; either version 2 of the License, or     *
- *   (at your option) any later version.                                   *
- *                                                                         *
- ***************************************************************************/
-/* Copyright (c) 2012-2020 Laurent Montel <montel@kde.org>                      */
 
 #include "mailimporter_export.h"
 #include <QString>
