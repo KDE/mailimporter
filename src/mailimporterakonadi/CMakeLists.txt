@@ -68,7 +68,7 @@ set_target_properties(KF5MailImporterAkonadi PROPERTIES
 
 install(TARGETS
     KF5MailImporterAkonadi
-    EXPORT KF5MailImporterAkonadiTargets ${KF5_INSTALL_TARGETS_DEFAULT_ARGS} ${LIBRARY_NAMELINK}
+    EXPORT KF5MailImporterAkonadiTargets ${KF5_INSTALL_TARGETS_DEFAULT_ARGS}
     )
 
 
