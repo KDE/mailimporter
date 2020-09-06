@@ -25,7 +25,6 @@ using namespace MailImporter;
 
 FilterImporterAkonadi::FilterImporterAkonadi(MailImporter::FilterInfo *info)
     : MailImporter::FilterImporterBase(info)
-    , mCountDuplicates(0)
 {
 }
 

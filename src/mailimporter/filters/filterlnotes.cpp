@@ -18,10 +18,6 @@ using namespace MailImporter;
 class MailImporter::FilterLNotesPrivate
 {
 public:
-    FilterLNotesPrivate()
-    {
-    }
-
     /** the working directory */
     QDir dir;
     /** which file (of d->totalFiles) is now in the work? */

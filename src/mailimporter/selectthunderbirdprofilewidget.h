@@ -29,7 +29,7 @@ public:
     Q_REQUIRED_RESULT QString selectedProfile() const;
 
 private:
-    Ui::SelectThunderbirdProfileWidget *ui = nullptr;
+    Ui::SelectThunderbirdProfileWidget *const ui;
 };
 
 class MAILIMPORTER_TESTS_EXPORT SelectThunderbirdProfileDialog : public QDialog

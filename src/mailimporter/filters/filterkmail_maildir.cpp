@@ -18,10 +18,6 @@ using namespace MailImporter;
 class MailImporter::FilterKMail_maildirPrivate
 {
 public:
-    FilterKMail_maildirPrivate()
-    {
-    }
-
     int mImportDirDone = 0;
     int mTotalDir = 0;
 };

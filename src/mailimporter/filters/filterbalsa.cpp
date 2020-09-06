@@ -14,12 +14,6 @@ using namespace MailImporter;
 class MailImporter::FilterBalsaPrivate
 {
 public:
-    FilterBalsaPrivate()
-        : mImportDirDone(0)
-        , mTotalDir(0)
-    {
-    }
-
     int mImportDirDone = 0;
     int mTotalDir = 0;
 };

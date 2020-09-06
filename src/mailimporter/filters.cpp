@@ -27,8 +27,6 @@ public:
         : name(_name)
         , author(_author)
         , info(_info)
-        , filterImporter(nullptr)
-        , filterInfo(nullptr)
     {
     }
 

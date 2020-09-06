@@ -24,10 +24,6 @@ using namespace MailImporter;
 class MailImporter::FilterKMailArchivePrivate
 {
 public:
-    FilterKMailArchivePrivate()
-    {
-    }
-
     int mTotalFiles = 0;
     int mFilesDone = 0;
 };

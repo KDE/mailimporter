@@ -19,10 +19,6 @@ using namespace MailImporter;
 class MailImporter::FilterTheBatPrivate
 {
 public:
-    FilterTheBatPrivate()
-    {
-    }
-
     int mImportDirDone = 0;
     int mTotalDir = 0;
 };

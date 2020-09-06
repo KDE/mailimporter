@@ -14,10 +14,6 @@ using namespace MailImporter;
 class MailImporter::FilterEvolution_v3Private
 {
 public:
-    FilterEvolution_v3Private()
-    {
-    }
-
     int mImportDirDone = -1;
     int mTotalDir = -1;
 };

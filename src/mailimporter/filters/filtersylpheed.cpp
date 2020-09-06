@@ -20,10 +20,6 @@ using namespace MailImporter;
 class MailImporter::FilterSylpheedPrivate
 {
 public:
-    FilterSylpheedPrivate()
-    {
-    }
-
     int mImportDirDone = 0;
     int mTotalDir = 0;
 };

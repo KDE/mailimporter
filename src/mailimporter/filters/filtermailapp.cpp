@@ -21,10 +21,6 @@ using namespace MailImporter;
 class MailImporter::FilterMailAppPrivate
 {
 public:
-    FilterMailAppPrivate()
-    {
-    }
-
     QStringList mMboxFiles;
 };
 
