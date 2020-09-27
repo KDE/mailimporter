@@ -184,8 +184,7 @@ Akonadi::Collection FilterImporterAkonadi::addSubCollection(const Akonadi::Colle
     newSubCollection.setParentCollection(baseCollection);
     newSubCollection.setName(newCollectionPathName);
 
-    QScopedPointer<Akonadi::CollectionCreateJob> job(new Akonadi::CollectionCreateJob(newSubCollection));
-    job->setAutoDelete(false);
+    Akonadi::CollectionCreateJob *job = new Akonadi::CollectionCreateJob(newSubCollection);
     if (!job->exec()) {
         mInfo->alert(i18n("<b>Error:</b> Could not create folder. Reason: %1",
                           job->errorString()));
