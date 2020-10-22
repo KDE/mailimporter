@@ -7,7 +7,6 @@
 #include "filterimporterakonadi.h"
 #include "mailimporterakonadi_debug.h"
 #include <MailImporter/FilterInfo>
-#include <AkonadiCore/Collection>
 #include <AkonadiCore/Item>
 #include <Akonadi/KMime/MessageFlags>
 #include <AkonadiCore/CollectionFetchJob>
