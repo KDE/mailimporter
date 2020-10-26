@@ -150,7 +150,7 @@ ecm_generate_headers(MailImporter_FiltersCamelCase_HEADERS
 
 ecm_generate_pri_file(BASE_NAME MailImporter
     LIB_NAME KF5MailImporter
-    DEPS "Archive" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/MailImporter
+    DEPS "KArchive" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/MailImporter
     )
 
 
