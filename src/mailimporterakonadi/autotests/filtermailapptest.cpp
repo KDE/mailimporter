@@ -26,7 +26,7 @@ void FilterMailAppTest::canNotImportDataEmptyPath()
 {
     MailImporter::FilterMailApp filter;
     MailImporter::FilterInfo info;
-    FilterImporterTest *importerTest = new FilterImporterTest(&info);
+    auto *importerTest = new FilterImporterTest(&info);
     filter.setFilterImporter(importerTest);
     filter.setFilterInfo(&info);
     filter.importMails(QString());
@@ -38,7 +38,7 @@ void FilterMailAppTest::canNotImportDataUnknowPath()
 {
     MailImporter::FilterMailApp filter;
     MailImporter::FilterInfo info;
-    FilterImporterTest *importerTest = new FilterImporterTest(&info);
+    auto *importerTest = new FilterImporterTest(&info);
     filter.setFilterImporter(importerTest);
     filter.setFilterInfo(&info);
     filter.importMails(QStringLiteral("/foo/kde/bla/toto/"));

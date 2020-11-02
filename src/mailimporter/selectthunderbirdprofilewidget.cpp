@@ -19,7 +19,7 @@ SelectThunderbirdProfileDialog::SelectThunderbirdProfileDialog(QWidget *parent)
 {
     setWindowTitle(i18nc("@title:window", "Select thunderbird profile"));
     setModal(true);
-    QVBoxLayout *topLayout = new QVBoxLayout(this);
+    auto *topLayout = new QVBoxLayout(this);
 
     mSelectProfile = new SelectThunderbirdProfileWidget(this);
     mSelectProfile->setObjectName(QStringLiteral("selectprofile"));

@@ -26,7 +26,7 @@ void FilterMBoxTest::canNotImportDataEmptyPath()
 {
     MailImporter::FilterMBox filter;
     MailImporter::FilterInfo info;
-    FilterImporterTest *importerTest = new FilterImporterTest(&info);
+    auto *importerTest = new FilterImporterTest(&info);
     filter.setFilterImporter(importerTest);
     filter.setFilterInfo(&info);
     filter.importMails(QStringList());
@@ -38,7 +38,7 @@ void FilterMBoxTest::canNotImportDataUnknowPath()
 {
     MailImporter::FilterMBox filter;
     MailImporter::FilterInfo info;
-    FilterImporterTest *importerTest = new FilterImporterTest(&info);
+    auto *importerTest = new FilterImporterTest(&info);
     filter.setFilterImporter(importerTest);
     filter.setFilterInfo(&info);
     filter.importMails(QStringList() << QStringLiteral("/foo/kde/bla/toto/"));

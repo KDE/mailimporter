@@ -45,7 +45,7 @@ void FilterIcedoveTest::canNotImportDataEmptyPath()
 {
     MailImporter::FilterIcedove filter;
     MailImporter::FilterInfo info;
-    FilterImporterTest *importerTest = new FilterImporterTest(&info);
+    auto *importerTest = new FilterImporterTest(&info);
     filter.setFilterImporter(importerTest);
     filter.setFilterInfo(&info);
     filter.importMails(QString());
@@ -57,7 +57,7 @@ void FilterIcedoveTest::canNotImportDataUnknowPath()
 {
     MailImporter::FilterIcedove filter;
     MailImporter::FilterInfo info;
-    FilterImporterTest *importerTest = new FilterImporterTest(&info);
+    auto *importerTest = new FilterImporterTest(&info);
     filter.setFilterImporter(importerTest);
     filter.setFilterInfo(&info);
     filter.importMails(QStringLiteral("/foo/kde/bla/toto/"));
@@ -69,7 +69,7 @@ void FilterIcedoveTest::canNotImportDataWhenHomeDirSelected()
 {
     MailImporter::FilterIcedove filter;
     MailImporter::FilterInfo info;
-    FilterImporterTest *importerTest = new FilterImporterTest(&info);
+    auto *importerTest = new FilterImporterTest(&info);
     filter.setFilterImporter(importerTest);
     filter.setFilterInfo(&info);
     filter.importMails(QDir::homePath());
