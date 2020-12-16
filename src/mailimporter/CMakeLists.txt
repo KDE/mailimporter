@@ -75,7 +75,9 @@ add_library(KF5MailImporter
     ${libmailimporter_SRCS}
     ${libmailimporter_filters_SRCS}
     )
-
+if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
+    set_target_properties(KF5MailImporter PROPERTIES UNITY_BUILD ON)
+endif()
 generate_export_header( KF5MailImporter BASE_NAME mailimporter)
 
 add_library(KF5::MailImporter ALIAS KF5MailImporter)

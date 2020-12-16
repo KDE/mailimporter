@@ -41,6 +41,9 @@ ecm_qt_declare_logging_category(libmailimporterakonadi_SRCS HEADER mailimportera
 add_library(KF5MailImporterAkonadi
     ${libmailimporterakonadi_SRCS}
     )
+if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
+    set_target_properties(KF5MailImporterAkonadi PROPERTIES UNITY_BUILD ON)
+endif()
 
 generate_export_header( KF5MailImporterAkonadi BASE_NAME mailimporterakonadi)
 
