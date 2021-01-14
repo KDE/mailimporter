@@ -20,19 +20,19 @@ FilterImporterBase::~FilterImporterBase()
 
 bool FilterImporterBase::importMessage(const QString &folderName, const QString &msgPath, bool duplicateCheck, const MessageStatus &status)
 {
-    Q_UNUSED(folderName);
-    Q_UNUSED(msgPath);
-    Q_UNUSED(duplicateCheck);
-    Q_UNUSED(status);
+    Q_UNUSED(folderName)
+    Q_UNUSED(msgPath)
+    Q_UNUSED(duplicateCheck)
+    Q_UNUSED(status)
     return false;
 }
 
 bool FilterImporterBase::importMessage(const KArchiveFile *file, const QString &folderPath, int &nbTotal, int &fileDone)
 {
-    Q_UNUSED(file);
-    Q_UNUSED(folderPath);
-    Q_UNUSED(nbTotal);
-    Q_UNUSED(fileDone);
+    Q_UNUSED(file)
+    Q_UNUSED(folderPath)
+    Q_UNUSED(nbTotal)
+    Q_UNUSED(fileDone)
     return false;
 }
 

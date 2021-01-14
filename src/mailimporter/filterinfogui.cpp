@@ -18,42 +18,42 @@ FilterInfoGui::~FilterInfoGui()
 
 void FilterInfoGui::setStatusMessage(const QString &status)
 {
-    Q_UNUSED(status);
+    Q_UNUSED(status)
 }
 
 void FilterInfoGui::setFrom(const QString &from)
 {
-    Q_UNUSED(from);
+    Q_UNUSED(from)
 }
 
 void FilterInfoGui::setTo(const QString &to)
 {
-    Q_UNUSED(to);
+    Q_UNUSED(to)
 }
 
 void FilterInfoGui::setCurrent(const QString &current)
 {
-    Q_UNUSED(current);
+    Q_UNUSED(current)
 }
 
 void FilterInfoGui::setCurrent(int percent)
 {
-    Q_UNUSED(percent);
+    Q_UNUSED(percent)
 }
 
 void FilterInfoGui::setOverall(int percent)
 {
-    Q_UNUSED(percent);
+    Q_UNUSED(percent)
 }
 
 void FilterInfoGui::addErrorLogEntry(const QString &log)
 {
-    Q_UNUSED(log);
+    Q_UNUSED(log)
 }
 
 void FilterInfoGui::addInfoLogEntry(const QString &log)
 {
-    Q_UNUSED(log);
+    Q_UNUSED(log)
 }
 
 void FilterInfoGui::clear()
@@ -62,7 +62,7 @@ void FilterInfoGui::clear()
 
 void FilterInfoGui::alert(const QString &message)
 {
-    Q_UNUSED(message);
+    Q_UNUSED(message)
 }
 
 QWidget *FilterInfoGui::parent() const

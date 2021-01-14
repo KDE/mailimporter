@@ -39,10 +39,10 @@ QString FilterImporterTest::topLevelFolder() const
 
 bool FilterImporterTest::importMessage(const KArchiveFile *file, const QString &folderPath, int &nbTotal, int &fileDone)
 {
-    Q_UNUSED(file);
-    Q_UNUSED(folderPath);
-    Q_UNUSED(nbTotal);
-    Q_UNUSED(fileDone);
+    Q_UNUSED(file)
+    Q_UNUSED(folderPath)
+    Q_UNUSED(nbTotal)
+    Q_UNUSED(fileDone)
 
     return false;
 }
