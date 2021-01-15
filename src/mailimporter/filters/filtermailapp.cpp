@@ -71,11 +71,7 @@ void FilterMailApp::importMails(const QString &maildir)
         } else {
             QFileInfo filenameInfo(*filename);
             qCDebug(MAILIMPORTER_LOG) << "importing filename" << *filename;
-#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
-            QStringList name = (*filename).split(QLatin1Char('/'), QString::SkipEmptyParts);
-#else
             QStringList name = (*filename).split(QLatin1Char('/'), Qt::SkipEmptyParts);
-#endif
             QString folderName(name[name.count() - 2]);
 
             filterInfo()->setCurrent(0);

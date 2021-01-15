@@ -151,11 +151,7 @@ void FilterKMail_maildir::importFiles(const QString &dirName)
                 _path = QStringLiteral("KMail-Import");
                 QString _tmp = dir.filePath(*mailFile);
                 _tmp.remove(mailDir(), Qt::CaseSensitive);
-#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
-                const QStringList subFList = _tmp.split(QLatin1Char('/'), QString::SkipEmptyParts);
-#else
                 const QStringList subFList = _tmp.split(QLatin1Char('/'), Qt::SkipEmptyParts);
-#endif
                 QStringList::ConstIterator end(subFList.end());
                 for (QStringList::ConstIterator it = subFList.constBegin(); it != end; ++it) {
                     QString _cat = *it;

@@ -135,11 +135,7 @@ Akonadi::Collection FilterImporterAkonadi::parseFolderString(const QString &fold
     }
 
     // The folder hasn't yet been created, create it now.
-#if QT_VERSION < QT_VERSION_CHECK(5, 15, 0)
-    const QStringList folderList = folderParseString.split(QLatin1Char('/'), QString::SkipEmptyParts);
-#else
     const QStringList folderList = folderParseString.split(QLatin1Char('/'), Qt::SkipEmptyParts);
-#endif
     bool isFirst = true;
     QString folderBuilder;
     Akonadi::Collection lastCollection;
