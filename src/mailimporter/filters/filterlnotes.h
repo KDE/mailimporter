@@ -10,7 +10,8 @@
 #define MAILIMPORTER_FILTER_LNOTES_H
 
 #include "filters.h"
-namespace MailImporter {
+namespace MailImporter
+{
 class FilterLNotesPrivate;
 /**
  * imports Lotus Notes Structured Text Archives and archvies messages into KMail
@@ -27,9 +28,9 @@ public:
 private:
     FilterLNotesPrivate *const d;
     /**
-    * This is were all the real action is gonna be handled.
-    * Gets called once for EACH file imported
-    */
+     * This is were all the real action is gonna be handled.
+     * Gets called once for EACH file imported
+     */
     void ImportLNotes(const QString &file);
 };
 }

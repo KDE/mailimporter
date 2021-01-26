@@ -146,7 +146,7 @@ int Filter::countDirectory(const QDir &dir, bool searchHiddenDirectory)
     if (searchHiddenDirectory) {
         subDirs = dir.entryList(QStringList(QStringLiteral("*")), QDir::Dirs | QDir::Hidden, QDir::Name);
     } else {
-        subDirs = dir.entryList(QStringList(QStringLiteral("[^\\.]*")), QDir::Dirs, QDir::Name);    // Removal of . and ..
+        subDirs = dir.entryList(QStringList(QStringLiteral("[^\\.]*")), QDir::Dirs, QDir::Name); // Removal of . and ..
     }
 
     QStringList::ConstIterator end = subDirs.constEnd();

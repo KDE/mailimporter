@@ -42,7 +42,10 @@ void FilterPlain::importMails(const QString &mailDir)
         return;
     }
     QDir dir(mailDir);
-    const QStringList files = dir.entryList(QStringList() << QStringLiteral("*.[eE][mM][lL]") << QStringLiteral("*.[tT][xX][tT]") << QStringLiteral("*.[mM][sS][gG]"), QDir::Files, QDir::Name);
+    const QStringList files =
+        dir.entryList(QStringList() << QStringLiteral("*.[eE][mM][lL]") << QStringLiteral("*.[tT][xX][tT]") << QStringLiteral("*.[mM][sS][gG]"),
+                      QDir::Files,
+                      QDir::Name);
     // Count total number of files to be processed
     filterInfo()->addInfoLogEntry(i18n("Counting files..."));
     int totalFiles = files.count();

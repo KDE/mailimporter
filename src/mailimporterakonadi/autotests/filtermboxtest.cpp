@@ -5,8 +5,8 @@
 */
 
 #include "filtermboxtest.h"
-#include <MailImporter/FilterMBox>
 #include "filterimportertest.h"
+#include <MailImporter/FilterMBox>
 #include <QTest>
 
 FilterMBoxTest::FilterMBoxTest(QObject *parent)

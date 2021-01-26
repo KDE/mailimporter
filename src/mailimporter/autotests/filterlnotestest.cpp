@@ -5,8 +5,8 @@
 */
 
 #include "filterlnotestest.h"
-#include "filters/filterlnotes.h"
 #include "filterimportertest.h"
+#include "filters/filterlnotes.h"
 #include <QTest>
 
 FilterLnotesTest::FilterLnotesTest(QObject *parent)
@@ -29,9 +29,9 @@ void FilterLnotesTest::canNotImportDataEmptyPath()
     auto *importerTest = new FilterImporterTest(&info);
     filter.setFilterImporter(importerTest);
     filter.setFilterInfo(&info);
-    //TODO implement it
-    //filter.importMail(QString());
-    //QVERIFY(importerTest->filterImporterDataList().isEmpty());
+    // TODO implement it
+    // filter.importMail(QString());
+    // QVERIFY(importerTest->filterImporterDataList().isEmpty());
     delete importerTest;
 }
 
@@ -42,8 +42,8 @@ void FilterLnotesTest::canNotImportDataUnknowPath()
     auto *importerTest = new FilterImporterTest(&info);
     filter.setFilterImporter(importerTest);
     filter.setFilterInfo(&info);
-    //filter.importMails(QStringLiteral("/foo/kde/bla/toto/"));
-    //QVERIFY(importerTest->filterImporterDataList().isEmpty());
+    // filter.importMails(QStringLiteral("/foo/kde/bla/toto/"));
+    // QVERIFY(importerTest->filterImporterDataList().isEmpty());
     delete importerTest;
 }
 

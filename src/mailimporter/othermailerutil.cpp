@@ -6,8 +6,8 @@
 
 #include "othermailerutil.h"
 #include <KLocalizedString>
-#include <QStandardPaths>
 #include <QDir>
+#include <QStandardPaths>
 
 using namespace MailImporter;
 QStringList OtherMailerUtil::isMailerFound()

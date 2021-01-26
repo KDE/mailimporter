@@ -5,9 +5,9 @@
 */
 
 #include "filtersylpheedtest.h"
+#include "filterimportertest.h"
 #include "filterimportertestutil.h"
 #include <MailImporter/FilterSylpheed>
-#include "filterimportertest.h"
 #include <QTest>
 
 FilterSylpheedTest::FilterSylpheedTest(QObject *parent)

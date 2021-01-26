@@ -6,13 +6,13 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-
 #ifndef MAILIMPORTER_FILTER_OPERA_H
 #define MAILIMPORTER_FILTER_OPERA_H
 
 #include "filters.h"
 #include <QDir>
-namespace MailImporter {
+namespace MailImporter
+{
 /**
  *imports opera account-archives into KMail
  *@author Danny Kukawka

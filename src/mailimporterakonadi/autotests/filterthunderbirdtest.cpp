@@ -5,8 +5,8 @@
 */
 
 #include "filterthunderbirdtest.h"
-#include "filters/filterthunderbird.h"
 #include "filterimportertest.h"
+#include "filters/filterthunderbird.h"
 #include <QTest>
 
 class FilterThunderBirdAbstract : public MailImporter::FilterThunderbird

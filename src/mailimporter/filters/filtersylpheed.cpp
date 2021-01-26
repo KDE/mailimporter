@@ -9,11 +9,11 @@
 
 #include "filtersylpheed.h"
 
-#include <KLocalizedString>
-#include <QFileDialog>
 #include "mailimporter_debug.h"
+#include <KLocalizedString>
 #include <QDomDocument>
 #include <QDomElement>
+#include <QFileDialog>
 
 using namespace MailImporter;
 
@@ -66,8 +66,7 @@ QString FilterSylpheed::localMailDirPath()
         int errorRow;
         int errorCol;
         if (!doc.setContent(&folderListFile, &errorMsg, &errorRow, &errorCol)) {
-            qCDebug(MAILIMPORTER_LOG) << "Unable to load document.Parse error in line " << errorRow
-                                      << ", col " << errorCol << ": " << errorMsg;
+            qCDebug(MAILIMPORTER_LOG) << "Unable to load document.Parse error in line " << errorRow << ", col " << errorCol << ": " << errorMsg;
             return QString();
         }
         QDomElement settings = doc.documentElement();
@@ -126,9 +125,9 @@ void FilterSylpheed::importMails(const QString &maildir)
     }
     setMailDir(maildir);
     /**
-    * If the user only select homedir no import needed because
-    * there should be no files and we surely import wrong files.
-    */
+     * If the user only select homedir no import needed because
+     * there should be no files and we surely import wrong files.
+     */
     if (mailDir() == QDir::homePath() || mailDir() == (QDir::homePath() + QLatin1Char('/'))) {
         filterInfo()->addErrorLogEntry(i18n("No files found for import."));
     } else {
@@ -175,9 +174,7 @@ void FilterSylpheed::importDirContents(const QString &dirName)
 
 bool FilterSylpheed::excludeFile(const QString &file)
 {
-    if (file.endsWith(QLatin1String(".sylpheed_cache"))
-        || file.endsWith(QLatin1String(".sylpheed_mark"))
-        || file.endsWith(QLatin1String(".mh_sequences"))) {
+    if (file.endsWith(QLatin1String(".sylpheed_cache")) || file.endsWith(QLatin1String(".sylpheed_mark")) || file.endsWith(QLatin1String(".mh_sequences"))) {
         return true;
     }
     return false;
@@ -238,7 +235,7 @@ void FilterSylpheed::importFiles(const QString &dirName)
             if (msgflags[_mfile]) {
                 status = msgFlagsToString((msgflags[_mfile]));
             } else {
-                status.setRead(true);    // 0 == read
+                status.setRead(true); // 0 == read
             }
             if (!importMessage(_path, dir.filePath(*mailFile), filterInfo()->removeDupMessage(), status)) {
                 filterInfo()->addErrorLogEntry(i18n("Could not import %1", *mailFile));
@@ -251,17 +248,17 @@ void FilterSylpheed::importFiles(const QString &dirName)
 void FilterSylpheed::readMarkFile(const QString &path, QHash<QString, unsigned long> &dict)
 {
     /* Each sylpheed mail directory contains a .sylpheed_mark file which
-    * contains all the flags for each messages. The layout of this file
-    * is documented in the source code of sylpheed: in procmsg.h for
-    * the flag bits, and procmsg.c.
-    *
-    * Note that the mark file stores 32 bit unsigned integers in the
-    * platform's native "endianness".
-    *
-    * The mark file starts with a 32 bit unsigned integer with a version
-    * number. It is then followed by pairs of 32 bit unsigned integers,
-    * the first one with the message file name (which is a number),
-    * and the second one with the actual message flags */
+     * contains all the flags for each messages. The layout of this file
+     * is documented in the source code of sylpheed: in procmsg.h for
+     * the flag bits, and procmsg.c.
+     *
+     * Note that the mark file stores 32 bit unsigned integers in the
+     * platform's native "endianness".
+     *
+     * The mark file starts with a 32 bit unsigned integer with a version
+     * number. It is then followed by pairs of 32 bit unsigned integers,
+     * the first one with the message file name (which is a number),
+     * and the second one with the actual message flags */
 
     quint32 in, flags;
     QFile file(path);
@@ -277,8 +274,8 @@ void FilterSylpheed::readMarkFile(const QString &path, QHash<QString, unsigned l
     }
 
     /* Read version; if the value is reasonably too big, we're looking
-    * at a file created on another platform. I don't have any test
-    * marks/folders, so just ignoring this case */
+     * at a file created on another platform. I don't have any test
+     * marks/folders, so just ignoring this case */
     stream >> in;
     if (in > (quint32)0xffff) {
         return;
@@ -301,19 +298,19 @@ MailImporter::MessageStatus FilterSylpheed::msgFlagsToString(unsigned long flags
 {
     MailImporter::MessageStatus status;
     /* see sylpheed's procmsg.h */
-    if (flags  & 2UL) {
+    if (flags & 2UL) {
         status.setRead(false);
     }
-    if ((flags  & 3UL) == 0UL) {
+    if ((flags & 3UL) == 0UL) {
         status.setRead(true);
     }
-    if (flags  & 8UL) {
+    if (flags & 8UL) {
         status.setDeleted(true);
     }
-    if (flags  & 16UL) {
+    if (flags & 16UL) {
         status.setReplied(true);
     }
-    if (flags  & 32UL) {
+    if (flags & 32UL) {
         status.setForwarded(true);
     }
     return status;

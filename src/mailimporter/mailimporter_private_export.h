@@ -11,11 +11,11 @@
 
 /* Classes which are exported only for unit tests */
 #ifdef BUILD_TESTING
-# ifndef MAILIMPORTER_TESTS_EXPORT
-#  define MAILIMPORTER_TESTS_EXPORT MAILIMPORTER_EXPORT
-# endif
+#ifndef MAILIMPORTER_TESTS_EXPORT
+#define MAILIMPORTER_TESTS_EXPORT MAILIMPORTER_EXPORT
+#endif
 #else /* not compiling tests */
-# define MAILIMPORTER_TESTS_EXPORT
+#define MAILIMPORTER_TESTS_EXPORT
 #endif
 
 #endif

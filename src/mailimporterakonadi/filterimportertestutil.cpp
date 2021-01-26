@@ -13,6 +13,6 @@ FilterImporterTestUtil::FilterImporterTestUtil(const QString &filename)
 
 QString FilterImporterTestUtil::extractData()
 {
-    //TODO
+    // TODO
     return {};
 }

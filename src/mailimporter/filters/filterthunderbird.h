@@ -12,7 +12,8 @@
 
 #include "filters.h"
 
-namespace MailImporter {
+namespace MailImporter
+{
 /**
  * Imports Thunderbird mail folder recursively, keeping the folder structure.
  * @author Danny Kukawka
@@ -35,6 +36,7 @@ public:
 protected:
     Q_REQUIRED_RESULT virtual QString defaultInstallFolder() const;
     Q_REQUIRED_RESULT virtual QString settingsPath();
+
 private:
     void importDirContents(const QString &, const QString &, const QString &);
     void importMBox(const QString &, const QString &, const QString &);

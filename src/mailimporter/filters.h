@@ -20,7 +20,8 @@
 
 #include <QDir>
 
-namespace MailImporter {
+namespace MailImporter
+{
 /**
  * @brief The Filter class
  * @author Laurent Montel <montel@kde.org>
@@ -56,7 +57,9 @@ public:
 
 protected:
     static int countDirectory(const QDir &dir, bool searchHiddenDirectory);
-    Q_REQUIRED_RESULT bool importMessage(const QString &folderName, const QString &msgPath, bool duplicateCheck, const MessageStatus &status = MailImporter::MessageStatus());
+    Q_REQUIRED_RESULT bool
+    importMessage(const QString &folderName, const QString &msgPath, bool duplicateCheck, const MessageStatus &status = MailImporter::MessageStatus());
+
 private:
     class Private;
     Private *const d;

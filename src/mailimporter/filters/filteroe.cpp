@@ -7,14 +7,13 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-
 // This filter was created by looking at libdbx  &liboe
 
 #include "filteroe.h"
 #include "mailimporter_debug.h"
 
-#include <QFileDialog>
 #include <KLocalizedString>
+#include <QFileDialog>
 
 #include <QTemporaryFile>
 
@@ -99,7 +98,7 @@ void FilterOE::importMails(const QString &maildir)
             break;
         }
         importMailBox(dir.filePath(*mailFile));
-        filterInfo()->setOverall(100 * ++n  / files.count());
+        filterInfo()->setOverall(100 * ++n / files.count());
     }
 
     filterInfo()->setOverall(100);
@@ -176,10 +175,10 @@ void FilterOE::mbxImport(QDataStream &ds)
 
     // Read the header
     ds >> msgCount >> lastMsgNum >> fileSize;
-    ds.device()->seek(ds.device()->pos() + 64);   // Skip 0's
+    ds.device()->seek(ds.device()->pos() + 64); // Skip 0's
     qCDebug(MAILIMPORTER_LOG) << "This mailbox has" << msgCount << " messages";
     if (msgCount == 0) {
-        return;    // Don't import empty mailbox
+        return; // Don't import empty mailbox
     }
 
     quint32 msgMagic;
@@ -226,7 +225,7 @@ void FilterOE::dbxImport(QDataStream &ds)
     qCDebug(MAILIMPORTER_LOG) << "Item count is" << itemCount << ", Index at" << indexPtr;
 
     if (itemCount == 0) {
-        return;    // Empty file
+        return; // Empty file
     }
     totalEmails = itemCount;
     currentEmail = 0;
@@ -291,7 +290,7 @@ void FilterOE::dbxReadDataBlock(QDataStream &ds, int filePos)
         if (filterInfo()->shouldTerminate()) {
             return;
         }
-        quint8 type;  // _dbx_email_pointerstruct
+        quint8 type; // _dbx_email_pointerstruct
         quint32 value; // Actually 24 bit
 
         ds >> type >> value;
@@ -308,7 +307,7 @@ void FilterOE::dbxReadDataBlock(QDataStream &ds, int filePos)
                 ds.device()->seek(filePos + 12 + value + (count * 4));
                 quint32 newOFF;
                 ds >> newOFF;
-                qCDebug(MAILIMPORTER_LOG) << "**** Offset of emaildata (0x04)" <<  newOFF;
+                qCDebug(MAILIMPORTER_LOG) << "**** Offset of emaildata (0x04)" << newOFF;
                 ds.device()->seek(currentFilePos);
                 dbxReadEmail(ds, newOFF);
                 ++count0x04;

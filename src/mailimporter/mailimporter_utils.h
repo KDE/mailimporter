@@ -9,7 +9,8 @@
 
 #include <QString>
 
-namespace MailImporter {
+namespace MailImporter
+{
 /**
  * Glorified QString[N] for (a) understandability (b) older gcc compatibility.
  */
@@ -43,7 +44,7 @@ public:
     /** Assignment operator. Does the same thing as
      *   the copy constructor.
      */
-    FolderStructureBase &operator =(const FolderStructureBase &s)
+    FolderStructureBase &operator=(const FolderStructureBase &s)
     {
         for (unsigned int i = 0; i < size; i++) {
             d[i] = s[i];
@@ -54,7 +55,7 @@ public:
     /** Access the different fields. There doesn't seem to
      *   be a real semantics for the fields.
      */
-    const QString operator [](unsigned int i) const
+    const QString operator[](unsigned int i) const
     {
         if (i < size) {
             return d[i];
@@ -64,7 +65,7 @@ public:
     }
 
     /** Access the different fields, for writing. */
-    QString &operator [](unsigned int i)
+    QString &operator[](unsigned int i)
     {
         Q_ASSERT(i < size);
         if (i < size) {

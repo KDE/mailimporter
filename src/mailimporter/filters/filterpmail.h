@@ -6,7 +6,6 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-
 #ifndef MAILIMPORTER_FILTER_PMAIL_H
 #define MAILIMPORTER_FILTER_PMAIL_H
 
@@ -14,7 +13,8 @@
 
 #include "filters.h"
 #include "mailimporter_utils.h"
-namespace MailImporter {
+namespace MailImporter
+{
 /**
  * @brief The FilterPMail class
  */

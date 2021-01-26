@@ -8,7 +8,8 @@
 #define FILTERBALSA_H
 
 #include "filters.h"
-namespace MailImporter {
+namespace MailImporter
+{
 class FilterBalsaPrivate;
 /**
  * @brief The FilterBalsa class
@@ -25,6 +26,7 @@ public:
     Q_REQUIRED_RESULT static QString defaultSettingsPath();
     Q_REQUIRED_RESULT static QString isMailerFound();
     QString localMailDirPath();
+
 private:
     void importDirContents(const QString &);
     void importFiles(const QString &);

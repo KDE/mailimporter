@@ -31,8 +31,8 @@ FilterMailmanGzip::~FilterMailmanGzip()
 
 void FilterMailmanGzip::import()
 {
-    const QStringList filenames = QFileDialog::getOpenFileNames(filterInfo()->parentWidget(),
-                                                                QString(), QDir::homePath(), QStringLiteral("%1 (*.txt.gz)").arg(i18n("gzip Files")));
+    const QStringList filenames =
+        QFileDialog::getOpenFileNames(filterInfo()->parentWidget(), QString(), QDir::homePath(), QStringLiteral("%1 (*.txt.gz)").arg(i18n("gzip Files")));
     importMails(filenames);
 }
 
@@ -74,16 +74,16 @@ void FilterMailmanGzip::importMails(const QStringList &filenames)
             tmp.open();
             qint64 filepos = 0;
             /* comment by Danny:
-            * Don't use QTextStream to read from mbox, better use QDataStream. QTextStream only
-            * support Unicode/Latin1/Locale. So you lost information from emails with
-            * charset!=Unicode/Latin1/Locale (e.g. KOI8-R) and Content-Transfer-Encoding != base64
-            * (e.g. 8Bit). It also not help to convert the QTextStream to Unicode. By this you
-            * get Unicode/UTF-email but KMail can't detect the correct charset.
-            */
+             * Don't use QTextStream to read from mbox, better use QDataStream. QTextStream only
+             * support Unicode/Latin1/Locale. So you lost information from emails with
+             * charset!=Unicode/Latin1/Locale (e.g. KOI8-R) and Content-Transfer-Encoding != base64
+             * (e.g. 8Bit). It also not help to convert the QTextStream to Unicode. By this you
+             * get Unicode/UTF-email but KMail can't detect the correct charset.
+             */
             QByteArray separate;
 
             /* check if the first line start with "From " (and not "From: ") and discard the line
-            * in this case because some IMAP servers (e.g. Cyrus) don't accept this header line */
+             * in this case because some IMAP servers (e.g. Cyrus) don't accept this header line */
             if (!first_msg && ((separate = input.data()).left(5) != "From ")) {
                 tmp.write(input.constData(), l);
             }
@@ -135,7 +135,8 @@ void FilterMailmanGzip::importMails(const QStringList &filenames)
         if (countDuplicates() > 0) {
             filterInfo()->addInfoLogEntry(i18np("1 duplicate message not imported to folder %2 in KMail",
                                                 "%1 duplicate messages not imported to folder %2 in KMail",
-                                                countDuplicates(), folderName));
+                                                countDuplicates(),
+                                                folderName));
         }
         if (filterInfo()->shouldTerminate()) {
             filterInfo()->addInfoLogEntry(i18n("Finished import, canceled by user."));

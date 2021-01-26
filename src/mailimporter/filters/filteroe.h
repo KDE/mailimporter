@@ -14,7 +14,8 @@
 #include <QList>
 
 #include "mailimporter_utils.h"
-namespace MailImporter {
+namespace MailImporter
+{
 /**
  *imports outlook text messages into KMail
  *@author Laurence Anderson

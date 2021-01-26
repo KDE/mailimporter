@@ -8,7 +8,8 @@
 #define FilterSeaMonkey_H
 
 #include "filterthunderbird.h"
-namespace MailImporter {
+namespace MailImporter
+{
 /**
  * @brief The FilterSeaMonkey class
  * @author Laurent Montel <montel@kde.org>
@@ -20,6 +21,7 @@ public:
     ~FilterSeaMonkey() override;
 
     Q_REQUIRED_RESULT static QString defaultSettingsPath();
+
 protected:
     Q_REQUIRED_RESULT QString defaultInstallFolder() const override;
     Q_REQUIRED_RESULT QString settingsPath() override;

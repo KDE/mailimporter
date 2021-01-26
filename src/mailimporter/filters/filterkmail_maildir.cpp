@@ -7,7 +7,6 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-
 #include "filterkmail_maildir.h"
 
 #include <KLocalizedString>
@@ -82,9 +81,9 @@ void FilterKMail_maildir::importMails(const QString &maildir)
     }
     setMailDir(maildir);
     /**
-    * If the user only select homedir no import needed because
-    * there should be no files and we surely import wrong files.
-    */
+     * If the user only select homedir no import needed because
+     * there should be no files and we surely import wrong files.
+     */
     if (mailDir() == QDir::homePath() || mailDir() == (QDir::homePath() + QLatin1Char('/'))) {
         filterInfo()->addErrorLogEntry(i18n("No files found for import."));
     } else {

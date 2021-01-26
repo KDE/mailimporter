@@ -11,7 +11,8 @@
 
 #include "filters.h"
 
-namespace MailImporter {
+namespace MailImporter
+{
 /**
  * imports mbox archives messages into KMail
  * @author Laurence Anderson

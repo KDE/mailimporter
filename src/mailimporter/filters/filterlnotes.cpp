@@ -6,7 +6,6 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-
 #include "filterlnotes.h"
 
 #include <KLocalizedString>
@@ -126,7 +125,6 @@ void FilterLNotes::ImportLNotes(const QString &file)
                 if (ch == 0x0c) {
                     // close file, send it
                     tempfile->close();
-
 
                     if (!importMessage(folder, tempfile->fileName(), filterInfo()->removeDupMessage())) {
                         filterInfo()->addErrorLogEntry(i18n("Could not import %1", tempfile->fileName()));

@@ -86,12 +86,12 @@ void FilterMailApp::importMails(const QString &maildir)
                 QTemporaryFile tmp;
                 tmp.open();
                 /* comment by Danny:
-                * Don't use QTextStream to read from mbox, better use QDataStream. QTextStream only
-                * support Unicode/Latin1/Locale. So you lost information from emails with
-                * charset!=Unicode/Latin1/Locale (e.g. KOI8-R) and Content-Transfer-Encoding != base64
-                * (e.g. 8Bit). It also not help to convert the QTextStream to Unicode. By this you
-                * get Unicode/UTF-email but KMail can't detect the correct charset.
-                */
+                 * Don't use QTextStream to read from mbox, better use QDataStream. QTextStream only
+                 * support Unicode/Latin1/Locale. So you lost information from emails with
+                 * charset!=Unicode/Latin1/Locale (e.g. KOI8-R) and Content-Transfer-Encoding != base64
+                 * (e.g. 8Bit). It also not help to convert the QTextStream to Unicode. By this you
+                 * get Unicode/UTF-email but KMail can't detect the correct charset.
+                 */
                 QByteArray separate;
 
                 if (!first_msg) {
@@ -106,7 +106,6 @@ void FilterMailApp::importMails(const QString &maildir)
                 tmp.flush();
                 first_msg = false;
 
-
                 if (!importMessage(folderName, tmp.fileName(), filterInfo()->removeDupMessage())) {
                     filterInfo()->addErrorLogEntry(i18n("Could not import %1", tmp.fileName()));
                 }
@@ -116,7 +115,8 @@ void FilterMailApp::importMails(const QString &maildir)
                 if (currentFile == 1) {
                     overall_status = (int)(currentPercentage * ((float)currentFile / d->mMboxFiles.count()));
                 } else {
-                    overall_status = (int)(((currentFile - 1) * (100.0 / (float)d->mMboxFiles.count())) + (currentPercentage * (1.0 / (float)d->mMboxFiles.count())));
+                    overall_status =
+                        (int)(((currentFile - 1) * (100.0 / (float)d->mMboxFiles.count())) + (currentPercentage * (1.0 / (float)d->mMboxFiles.count())));
                 }
                 filterInfo()->setOverall(overall_status);
                 if (filterInfo()->shouldTerminate()) {
@@ -127,7 +127,9 @@ void FilterMailApp::importMails(const QString &maildir)
             filterInfo()->addInfoLogEntry(i18n("Finished importing emails from %1", *filename));
             if (countDuplicates() > 0) {
                 filterInfo()->addInfoLogEntry(i18np("1 duplicate message not imported to folder %2 in KMail",
-                                                    "%1 duplicate messages not imported to folder %2 in KMail", countDuplicates(), folderName));
+                                                    "%1 duplicate messages not imported to folder %2 in KMail",
+                                                    countDuplicates(),
+                                                    folderName));
             }
             clearCountDuplicate();
             mbox.close();

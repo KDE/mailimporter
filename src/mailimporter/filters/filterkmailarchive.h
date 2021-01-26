@@ -12,7 +12,8 @@
 class KArchiveFile;
 class KArchiveDirectory;
 
-namespace MailImporter {
+namespace MailImporter
+{
 class FilterKMailArchivePrivate;
 /**
  * @brief The FilterKMailArchive class
@@ -25,8 +26,8 @@ public:
 
     void import() override;
     void importMails(const QString &archiveFile);
-private:
 
+private:
     Q_REQUIRED_RESULT bool importDirectory(const KArchiveDirectory *directory, const QString &folderPath);
     Q_REQUIRED_RESULT bool importFolder(const KArchiveDirectory *folder, const QString &folderPath);
     Q_REQUIRED_RESULT bool importMessage(const KArchiveFile *file, const QString &folderPath);

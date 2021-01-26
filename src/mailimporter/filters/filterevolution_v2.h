@@ -14,7 +14,8 @@
 
 #include "filters.h"
 
-namespace MailImporter {
+namespace MailImporter
+{
 /**
  * Imports Evolution v2.x mail folder recursively, keeping the folder structure.
  * @author Danny Kukawka

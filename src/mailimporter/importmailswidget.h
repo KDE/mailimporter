@@ -6,10 +6,11 @@
 #ifndef IMPORTMAILSWIDGET_H
 #define IMPORTMAILSWIDGET_H
 
-#include <QWidget>
 #include "mailimporter_export.h"
+#include <QWidget>
 class QListWidgetItem;
-namespace MailImporter {
+namespace MailImporter
+{
 class ImportMailsWidgetPrivate;
 /**
  * @brief The ImportMailsWidget class

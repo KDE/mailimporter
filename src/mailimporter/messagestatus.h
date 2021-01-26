@@ -10,7 +10,8 @@
 #include "mailimporter_export.h"
 #include <QtGlobal>
 
-namespace MailImporter {
+namespace MailImporter
+{
 /**
  * @brief The MessageStatus class
  * @author Laurent Montel <montel@kde.org>
@@ -32,6 +33,7 @@ public:
 
     void setForwarded(bool state);
     Q_REQUIRED_RESULT bool isForwarded() const;
+
 private:
     bool mRead = false;
     bool mDeleted = false;

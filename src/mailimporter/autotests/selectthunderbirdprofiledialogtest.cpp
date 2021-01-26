@@ -7,8 +7,8 @@
 #include "selectthunderbirdprofiledialogtest.h"
 #include "../selectthunderbirdprofilewidget.h"
 
-#include <QTest>
 #include <QDialogButtonBox>
+#include <QTest>
 
 SelectThunderbirdProfileDialogTest::SelectThunderbirdProfileDialogTest(QObject *parent)
     : QObject(parent)

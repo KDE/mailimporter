@@ -54,9 +54,9 @@ void FilterEvolution_v2::import()
 {
     clearCountDuplicate();
     /**
-    * We ask the user to choose Evolution's root directory.
-    * This should be usually ~/.evolution/mail/local/
-    */
+     * We ask the user to choose Evolution's root directory.
+     * This should be usually ~/.evolution/mail/local/
+     */
     QString evolDir = defaultSettingsPath();
     QDir d(evolDir);
     if (!d.exists()) {
@@ -72,11 +72,8 @@ void FilterEvolution_v2::import()
 
 bool FilterEvolution_v2::excludeFiles(const QString &file)
 {
-    if ((file.endsWith(QLatin1String(".db"))
-         || file.endsWith(QLatin1String(".cmeta"))
-         || file.endsWith(QLatin1String(".ev-summary"))
-         || file.endsWith(QLatin1String(".ibex.index"))
-         || file.endsWith(QLatin1String(".ibex.index.data")))) {
+    if ((file.endsWith(QLatin1String(".db")) || file.endsWith(QLatin1String(".cmeta")) || file.endsWith(QLatin1String(".ev-summary"))
+         || file.endsWith(QLatin1String(".ibex.index")) || file.endsWith(QLatin1String(".ibex.index.data")))) {
         return true;
     }
     return false;
@@ -90,9 +87,9 @@ void FilterEvolution_v2::importMails(const QString &maildir)
     }
     setMailDir(maildir);
     /**
-    * If the user only select homedir no import needed because
-    * there should be no files and we surely import wrong files.
-    */
+     * If the user only select homedir no import needed because
+     * there should be no files and we surely import wrong files.
+     */
     if (mailDir() == QDir::homePath() || mailDir() == (QDir::homePath() + QLatin1Char('/'))) {
         filterInfo()->addErrorLogEntry(i18n("No files found for import."));
     } else {
@@ -224,12 +221,12 @@ void FilterEvolution_v2::importMBox(const QString &mboxName, const QString &root
             tmp.open();
             /** @todo check if the file is really a mbox, maybe search for 'from' string at start */
             /* comment by Danny:
-            * Don't use QTextStream to read from mbox, better use QDataStream. QTextStream only
-            * support Unicode/Latin1/Locale. So you lost information from emails with
-            * charset!=Unicode/Latin1/Locale (e.g. KOI8-R) and Content-Transfer-Encoding != base64
-            * (e.g. 8Bit). It also not help to convert the QTextStream to Unicode. By this you
-            * get Unicode/UTF-email but KMail can't detect the correct charset.
-            */
+             * Don't use QTextStream to read from mbox, better use QDataStream. QTextStream only
+             * support Unicode/Latin1/Locale. So you lost information from emails with
+             * charset!=Unicode/Latin1/Locale (e.g. KOI8-R) and Content-Transfer-Encoding != base64
+             * (e.g. 8Bit). It also not help to convert the QTextStream to Unicode. By this you
+             * get Unicode/UTF-email but KMail can't detect the correct charset.
+             */
             QByteArray separate;
 
             if (!first_msg) {

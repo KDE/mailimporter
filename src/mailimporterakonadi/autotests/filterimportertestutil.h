@@ -14,6 +14,7 @@ class FilterImporterTestUtil
 public:
     explicit FilterImporterTestUtil(const QString &filename);
     QString extractData();
+
 private:
     QString mFileName;
 };

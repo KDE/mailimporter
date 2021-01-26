@@ -7,11 +7,13 @@
 #ifndef OTHERMAILERUTIL_H
 #define OTHERMAILERUTIL_H
 
-#include <QString>
 #include "mailimporter_export.h"
+#include <QString>
 
-namespace MailImporter {
-namespace OtherMailerUtil {
+namespace MailImporter
+{
+namespace OtherMailerUtil
+{
 Q_REQUIRED_RESULT MAILIMPORTER_EXPORT QString trojitaDefaultPath();
 Q_REQUIRED_RESULT MAILIMPORTER_EXPORT QString gearyDefaultPath();
 Q_REQUIRED_RESULT MAILIMPORTER_EXPORT QStringList isMailerFound();

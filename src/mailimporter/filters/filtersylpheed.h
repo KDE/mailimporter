@@ -13,7 +13,8 @@
 #include <QHash>
 
 #include "filters.h"
-namespace MailImporter {
+namespace MailImporter
+{
 class FilterSylpheedPrivate;
 /**
  * Imports Sylpheed mail folder with maildir format recursively, recreating the folder structure.
@@ -36,8 +37,8 @@ public:
     Q_REQUIRED_RESULT virtual bool excludeFile(const QString &file);
     virtual QString defaultInstallFolder() const;
     virtual QString markFile() const;
-private:
 
+private:
     void importDirContents(const QString &);
     void importFiles(const QString &);
     void processDirectory(const QString &path);

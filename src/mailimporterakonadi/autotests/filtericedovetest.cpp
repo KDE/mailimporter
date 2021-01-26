@@ -5,8 +5,8 @@
 */
 
 #include "filtericedovetest.h"
-#include "filters/filtericedove.h"
 #include "filterimportertest.h"
+#include "filters/filtericedove.h"
 #include <QTest>
 
 class FilterIcecoveAbstract : public MailImporter::FilterIcedove

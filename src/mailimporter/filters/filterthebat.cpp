@@ -9,9 +9,9 @@
 
 #include "filterthebat.h"
 
-#include <QRegularExpression>
 #include <KLocalizedString>
 #include <QFileDialog>
+#include <QRegularExpression>
 #include <QTemporaryFile>
 
 using namespace MailImporter;
@@ -78,9 +78,9 @@ void FilterTheBat::importMails(const QString &maildir)
     }
     setMailDir(maildir);
     /**
-    * If the user only select homedir no import needed because
-    * there should be no files and we surely import wrong files.
-    */
+     * If the user only select homedir no import needed because
+     * there should be no files and we surely import wrong files.
+     */
     if (mailDir() == QDir::homePath() || mailDir() == (QDir::homePath() + QLatin1Char('/'))) {
         filterInfo()->addErrorLogEntry(i18n("No files found for import."));
     } else {

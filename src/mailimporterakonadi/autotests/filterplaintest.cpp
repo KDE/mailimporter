@@ -5,8 +5,8 @@
 */
 
 #include "filterplaintest.h"
-#include <MailImporter/FilterPlain>
 #include "filterimportertest.h"
+#include <MailImporter/FilterPlain>
 #include <QTest>
 
 FilterPlainTest::FilterPlainTest(QObject *parent)

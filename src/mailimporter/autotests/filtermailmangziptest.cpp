@@ -5,8 +5,8 @@
 */
 
 #include "filtermailmangziptest.h"
-#include <MailImporter/FilterMailmanGzip>
 #include "filterimportertest.h"
+#include <MailImporter/FilterMailmanGzip>
 #include <QTest>
 
 FilterMAilmangzipTest::FilterMAilmangzipTest(QObject *parent)
@@ -36,7 +36,7 @@ void FilterMAilmangzipTest::canNotImportDataEmptyPath()
 
 void FilterMAilmangzipTest::canNotImportDataUnknowPath()
 {
-    //VERIFY it.
+    // VERIFY it.
 #if 0
     MailImporter::FilterMailmanGzip filter;
     MailImporter::FilterInfo *info = new MailImporter::FilterInfo;

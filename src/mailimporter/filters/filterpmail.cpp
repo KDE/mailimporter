@@ -50,7 +50,10 @@ void FilterPMail::importMails(const QString &chosenDir)
     // Count total number of files to be processed
     filterInfo()->addInfoLogEntry(i18n("Counting files..."));
     dir.setPath(mailDir());
-    const QStringList files = dir.entryList(QStringList() << QStringLiteral("*.[cC][nN][mM]") << QStringLiteral("*.[pP][mM][mM]") << QStringLiteral("*.[mM][bB][xX]"), QDir::Files, QDir::Name);
+    const QStringList files =
+        dir.entryList(QStringList() << QStringLiteral("*.[cC][nN][mM]") << QStringLiteral("*.[pP][mM][mM]") << QStringLiteral("*.[mM][bB][xX]"),
+                      QDir::Files,
+                      QDir::Name);
     totalFiles = files.count();
     currentFile = 0;
     qCDebug(MAILIMPORTER_LOG) << "Count is" << totalFiles;
@@ -79,7 +82,7 @@ void FilterPMail::processFiles(const QString &mask, void (FilterPMail::*workFunc
     }
 
     const QStringList files = dir.entryList(QStringList(mask), QDir::Files, QDir::Name);
-    //qCDebug(MAILIMPORTER_LOG) <<"Mask is" << mask <<" count is" << files.count();
+    // qCDebug(MAILIMPORTER_LOG) <<"Mask is" << mask <<" count is" << files.count();
     QStringList::ConstIterator end = files.constEnd();
     for (QStringList::ConstIterator mailFile = files.constBegin(); mailFile != end; ++mailFile) {
         // Notify current file

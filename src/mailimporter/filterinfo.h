@@ -11,7 +11,8 @@
 #include "mailimporter_export.h"
 #include <QString>
 class QWidget;
-namespace MailImporter {
+namespace MailImporter
+{
 class FilterInfoGui;
 /**
  * @brief The FilterInfo class

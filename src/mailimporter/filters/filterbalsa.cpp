@@ -94,9 +94,9 @@ void FilterBalsa::importMails(const QString &maildir)
     }
     setMailDir(maildir);
     /**
-    * If the user only select homedir no import needed because
-    * there should be no files and we surely import wrong files.
-    */
+     * If the user only select homedir no import needed because
+     * there should be no files and we surely import wrong files.
+     */
     if (mailDir() == QDir::homePath() || mailDir() == (QDir::homePath() + QLatin1Char('/'))) {
         filterInfo()->addErrorLogEntry(i18n("No files found for import."));
     } else {
@@ -158,10 +158,8 @@ void FilterBalsa::importFiles(const QString &dirName)
             return;
         }
         QString temp_mailfile = *mailFile;
-        if (!(temp_mailfile.endsWith(QLatin1String(".db"))
-              || temp_mailfile.endsWith(QLatin1String(".cmeta"))
-              || temp_mailfile.endsWith(QLatin1String(".ev-summary"))
-              || temp_mailfile.endsWith(QLatin1String(".ibex.index"))
+        if (!(temp_mailfile.endsWith(QLatin1String(".db")) || temp_mailfile.endsWith(QLatin1String(".cmeta"))
+              || temp_mailfile.endsWith(QLatin1String(".ev-summary")) || temp_mailfile.endsWith(QLatin1String(".ibex.index"))
               || temp_mailfile.endsWith(QLatin1String(".ibex.index.data")))) {
             if (!generatedPath) {
                 _path = i18nc("define folder name where we import evolution mails", "Evolution-Import");
@@ -175,7 +173,7 @@ void FilterBalsa::importFiles(const QString &dirName)
                         if (_cat.startsWith(QLatin1Char('.'))) {
                             _cat.remove(0, 1);
                         }
-                        //Evolution store inbox as "."
+                        // Evolution store inbox as "."
                         if (_cat.startsWith(QLatin1Char('.'))) {
                             _cat.replace(0, 1, QStringLiteral("Inbox/"));
                         }
@@ -213,7 +211,7 @@ MailImporter::MessageStatus FilterBalsa::statusFromFile(const QString &filename)
             status.setRead(true);
         }
         if (statusStr.contains(QLatin1Char('F'))) {
-            //TODO
+            // TODO
         }
         if (statusStr.contains(QLatin1Char('R'))) {
             status.setReplied(true);

@@ -8,7 +8,8 @@
 #define MAILIMPORTER_FILTER_EVOLUTION_H
 
 #include "filters.h"
-namespace MailImporter {
+namespace MailImporter
+{
 /**
  * Imports Evolution mboxes recursively, keeping the folder structure.
  * @author Simon MARTIN
@@ -23,6 +24,7 @@ public:
     void importMails(const QString &maildir);
     Q_REQUIRED_RESULT static QString defaultSettingsPath();
     Q_REQUIRED_RESULT static QString isMailerFound();
+
 private:
     void importDirContents(const QString &, const QString &, const QString &);
     void importMBox(const QString &, const QString &, const QString &);

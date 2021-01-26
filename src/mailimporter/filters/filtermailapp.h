@@ -12,7 +12,8 @@
 #define MAILIMPORTER_FILTER_MAILAPP_H
 
 #include "filters.h"
-namespace MailImporter {
+namespace MailImporter
+{
 class FilterMailAppPrivate;
 /**
  *imports mbox archives messages into KMail
@@ -26,6 +27,7 @@ public:
 
     void import() override;
     void importMails(const QString &maildir);
+
 private:
     FilterMailAppPrivate *const d;
     void traverseDirectory(const QString &);

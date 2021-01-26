@@ -9,7 +9,8 @@
 
 #include "filters.h"
 
-namespace MailImporter {
+namespace MailImporter
+{
 /**
  * @brief The FilterMailmanGzip class
  * @author Laurent Montel <montel@kde.org>

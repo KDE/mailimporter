@@ -7,9 +7,9 @@
 #include "filterkmailarchive.h"
 
 #include <KLocalizedString>
-#include <QFileDialog>
-#include <KZip>
 #include <KTar>
+#include <KZip>
+#include <QFileDialog>
 
 #include "mailimporter_debug.h"
 #include <QApplication>
@@ -73,8 +73,7 @@ bool FilterKMailArchive::importFolder(const KArchiveDirectory *folder, const QSt
     qCDebug(MAILIMPORTER_LOG) << "Importing folder" << folder->name();
     filterInfo()->addInfoLogEntry(i18n("Importing folder '%1'...", folderPath));
     filterInfo()->setTo(filterImporter()->topLevelFolder() + folderPath);
-    const KArchiveDirectory *const messageDir
-        = dynamic_cast<const KArchiveDirectory *>(folder->entry(QStringLiteral("cur")));
+    const KArchiveDirectory *const messageDir = dynamic_cast<const KArchiveDirectory *>(folder->entry(QStringLiteral("cur")));
     if (messageDir) {
         int total = messageDir->entries().count();
         int cur = 1;
@@ -156,9 +155,10 @@ int FilterKMailArchive::countFiles(const KArchiveDirectory *directory) const
 
 void FilterKMailArchive::import()
 {
-    const QString archiveFile
-        = QFileDialog::getOpenFileName(filterInfo()->parentWidget(), i18n("Select KMail Archive File to Import"),
-                                       QString(), QStringLiteral("%1 (*.tar *.tar.gz *.tar.bz2 *.zip)").arg(i18n("KMail Archive Files ")));
+    const QString archiveFile = QFileDialog::getOpenFileName(filterInfo()->parentWidget(),
+                                                             i18n("Select KMail Archive File to Import"),
+                                                             QString(),
+                                                             QStringLiteral("%1 (*.tar *.tar.gz *.tar.bz2 *.zip)").arg(i18n("KMail Archive Files ")));
     if (archiveFile.isEmpty()) {
         filterInfo()->alert(i18n("Please select an archive file that should be imported."));
         return;
@@ -199,10 +199,8 @@ void FilterKMailArchive::importMails(const QString &archiveFile)
     if (importDirectory(archive->directory(), QString())) {
         filterInfo()->setOverall(100);
         filterInfo()->setCurrent(100);
-        filterInfo()->addInfoLogEntry(i18n("Importing the archive file '%1' into the folder '%2' succeeded.",
-                                           archiveFile, filterImporter()->topLevelFolder()));
-        filterInfo()->addInfoLogEntry(i18np("1 message was imported.", "%1 messages were imported.",
-                                            d->mFilesDone));
+        filterInfo()->addInfoLogEntry(i18n("Importing the archive file '%1' into the folder '%2' succeeded.", archiveFile, filterImporter()->topLevelFolder()));
+        filterInfo()->addInfoLogEntry(i18np("1 message was imported.", "%1 messages were imported.", d->mFilesDone));
     } else {
         filterInfo()->addInfoLogEntry(i18n("Importing the archive failed."));
     }

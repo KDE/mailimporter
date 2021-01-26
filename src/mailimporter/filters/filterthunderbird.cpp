@@ -8,14 +8,14 @@
 
 #include "filterthunderbird.h"
 #include "selectthunderbirdprofilewidget.h"
-#include <KLocalizedString>
-#include <QFileDialog>
-#include <KConfigGroup>
-#include <QTemporaryFile>
 #include <KConfig>
+#include <KConfigGroup>
+#include <KLocalizedString>
 #include <QFile>
-#include <QRegularExpression>
+#include <QFileDialog>
 #include <QPointer>
+#include <QRegularExpression>
+#include <QTemporaryFile>
 
 using namespace MailImporter;
 
@@ -95,7 +95,7 @@ QMap<QString, QString> FilterThunderbird::listProfile(QString &currentProfile, c
     QMap<QString, QString> lstProfile;
     QFile profiles(thunderbirdPath);
     if (profiles.exists()) {
-        //ini file.
+        // ini file.
         KConfig config(thunderbirdPath);
         const QStringList profileList = config.groupList().filter(QRegularExpression(QStringLiteral("Profile\\d+")));
         const bool uniqProfile = (profileList.count() == 1);
@@ -134,9 +134,9 @@ QString FilterThunderbird::settingsPath()
 void FilterThunderbird::import()
 {
     /**
-    * We ask the user to choose Thunderbird's root directory.
-    * This should be usually ~/.thunderbird/xxxx.default/Mail/Local Folders/
-    */
+     * We ask the user to choose Thunderbird's root directory.
+     * This should be usually ~/.thunderbird/xxxx.default/Mail/Local Folders/
+     */
     QString thunderDir = settingsPath();
     QDir d(thunderDir);
     if (!d.exists()) {
@@ -156,9 +156,7 @@ void FilterThunderbird::import()
 
 bool FilterThunderbird::excludeFiles(const QString &file)
 {
-    if ((file.endsWith(QLatin1String(".msf"))
-         || file.endsWith(QLatin1String(".dat"))
-         || file.endsWith(QLatin1String(".json"))
+    if ((file.endsWith(QLatin1String(".msf")) || file.endsWith(QLatin1String(".dat")) || file.endsWith(QLatin1String(".json"))
          || file.endsWith(QLatin1String(".html")))) {
         return true;
     }
@@ -173,9 +171,9 @@ void FilterThunderbird::importMails(const QString &maildir)
     }
     setMailDir(maildir);
     /**
-    * If the user only select homedir no import needed because
-    * there should be no files and we surely import wrong files.
-    */
+     * If the user only select homedir no import needed because
+     * there should be no files and we surely import wrong files.
+     */
     if (mailDir() == QDir::homePath() || mailDir() == (QDir::homePath() + QLatin1Char('/'))) {
         filterInfo()->addErrorLogEntry(i18n("No files found for import."));
     } else {
@@ -308,12 +306,12 @@ void FilterThunderbird::importMBox(const QString &mboxName, const QString &rootD
             tmp.open();
             /** @todo check if the file is really a mbox, maybe search for 'from' string at start */
             /* comment by Danny:
-            * Don't use QTextStream to read from mbox, better use QDataStream. QTextStream only
-            * support Unicode/Latin1/Locale. So you lost information from emails with
-            * charset!=Unicode/Latin1/Locale (e.g. KOI8-R) and Content-Transfer-Encoding != base64
-            * (e.g. 8Bit). It also not help to convert the QTextStream to Unicode. By this you
-            * get Unicode/UTF-email but KMail can't detect the correct charset.
-            */
+             * Don't use QTextStream to read from mbox, better use QDataStream. QTextStream only
+             * support Unicode/Latin1/Locale. So you lost information from emails with
+             * charset!=Unicode/Latin1/Locale (e.g. KOI8-R) and Content-Transfer-Encoding != base64
+             * (e.g. 8Bit). It also not help to convert the QTextStream to Unicode. By this you
+             * get Unicode/UTF-email but KMail can't detect the correct charset.
+             */
             QByteArray separate;
 
             if (!first_msg) {
@@ -334,7 +332,7 @@ void FilterThunderbird::importMBox(const QString &mboxName, const QString &rootD
                 if (_targetDir.contains(QLatin1String(".sbd"))) {
                     _targetDir.remove(QStringLiteral(".sbd"));
                 }
-                destFolder += defaultInstallFolder() + _targetDir + QLatin1Char('/') + filenameInfo.completeBaseName();// mboxName;
+                destFolder += defaultInstallFolder() + _targetDir + QLatin1Char('/') + filenameInfo.completeBaseName(); // mboxName;
             } else {
                 destFolder = defaultInstallFolder() + rootDir;
                 if (destFolder.contains(QLatin1String(".sbd"))) {

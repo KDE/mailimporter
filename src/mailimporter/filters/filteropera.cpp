@@ -97,12 +97,12 @@ void FilterOpera::importBox(const QDir &importDir, const QStringList &files, con
                 QTemporaryFile tmp;
                 tmp.open();
                 /* comment by Danny:
-                * Don't use QTextStream to read from mbox, better use QDataStream. QTextStream only
-                * support Unicode/Latin1/Locale. So you lost information from emails with
-                * charset!=Unicode/Latin1/Locale (e.g. KOI8-R) and Content-Transfer-Encoding != base64
-                * (e.g. 8Bit). It also not help to convert the QTextStream to Unicode. By this you
-                * get Unicode/UTF-email but KMail can't detect the correct charset.
-                */
+                 * Don't use QTextStream to read from mbox, better use QDataStream. QTextStream only
+                 * support Unicode/Latin1/Locale. So you lost information from emails with
+                 * charset!=Unicode/Latin1/Locale (e.g. KOI8-R) and Content-Transfer-Encoding != base64
+                 * (e.g. 8Bit). It also not help to convert the QTextStream to Unicode. By this you
+                 * get Unicode/UTF-email but KMail can't detect the correct charset.
+                 */
                 QByteArray separate;
 
                 if (!first_msg) {
@@ -175,9 +175,9 @@ void FilterOpera::importMails(const QString &maildir)
         return;
     }
     /**
-    * If the user only select homedir no import needed because
-    * there should be no files and we surely import wrong files.
-    */
+     * If the user only select homedir no import needed because
+     * there should be no files and we surely import wrong files.
+     */
     else if (mailDir() == QDir::homePath() || mailDir() == (QDir::homePath() + QLatin1Char('/'))) {
         filterInfo()->addErrorLogEntry(i18n("No files found for import."));
     } else {
@@ -192,7 +192,7 @@ void FilterOpera::importMails(const QString &maildir)
         if (!files.isEmpty()) {
             importBox(importDir, files);
         } else {
-            //opera > 9.10 stores mail in subfolder.
+            // opera > 9.10 stores mail in subfolder.
             importRecursive(importDir);
         }
     }

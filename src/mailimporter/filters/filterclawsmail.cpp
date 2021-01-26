@@ -8,24 +8,26 @@
 
 #include "filterclawsmail.h"
 
-#include <KLocalizedString>
 #include "mailimporter_debug.h"
+#include <KLocalizedString>
 #include <QDomDocument>
 #include <QDomElement>
 
 using namespace MailImporter;
 
 /** Default constructor. */
-FilterClawsMail::FilterClawsMail() : FilterSylpheed()
+FilterClawsMail::FilterClawsMail()
+    : FilterSylpheed()
 {
     setName(i18n("Import Claws-mail Maildirs and Folder Structure"));
     setAuthor(QStringLiteral("Laurent Montel"));
-    setInfo(i18n("<p><b>Claws-mail import filter</b></p>"
-                 "<p>Select the base directory of the Claws-mail mailfolder you want to import "
-                 "(usually: ~/Mail ).</p>"
-                 "<p>Since it is possible to recreate the folder structure, the folders "
-                 "will be stored under: \"ClawsMail-Import\" in your local folder.</p>"
-                 "<p>This filter also recreates the status of message, e.g. new or forwarded.</p>"));
+    setInfo(
+        i18n("<p><b>Claws-mail import filter</b></p>"
+             "<p>Select the base directory of the Claws-mail mailfolder you want to import "
+             "(usually: ~/Mail ).</p>"
+             "<p>Since it is possible to recreate the folder structure, the folders "
+             "will be stored under: \"ClawsMail-Import\" in your local folder.</p>"
+             "<p>This filter also recreates the status of message, e.g. new or forwarded.</p>"));
 }
 
 /** Destructor. */
@@ -56,8 +58,7 @@ QString FilterClawsMail::localMailDirPath()
         int errorRow;
         int errorCol;
         if (!doc.setContent(&folderListFile, &errorMsg, &errorRow, &errorCol)) {
-            qCDebug(MAILIMPORTER_LOG) << "Unable to load document.Parse error in line " << errorRow
-                                      << ", col " << errorCol << ": " << errorMsg;
+            qCDebug(MAILIMPORTER_LOG) << "Unable to load document.Parse error in line " << errorRow << ", col " << errorCol << ": " << errorMsg;
             return QString();
         }
         QDomElement settings = doc.documentElement();
@@ -81,9 +82,7 @@ QString FilterClawsMail::localMailDirPath()
 
 bool FilterClawsMail::excludeFile(const QString &file)
 {
-    if (file.endsWith(QLatin1String(".claws_cache"))
-        || file.endsWith(QLatin1String(".claws_mark"))
-        || file.endsWith(QLatin1String(".mh_sequences"))) {
+    if (file.endsWith(QLatin1String(".claws_cache")) || file.endsWith(QLatin1String(".claws_mark")) || file.endsWith(QLatin1String(".mh_sequences"))) {
         return true;
     }
     return false;
