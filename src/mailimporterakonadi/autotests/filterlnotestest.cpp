@@ -26,7 +26,7 @@ void FilterLnotesTest::canNotImportDataEmptyPath()
 {
     MailImporter::FilterLNotes filter;
     MailImporter::FilterInfo info;
-    auto *importerTest = new FilterImporterTest(&info);
+    auto importerTest = new FilterImporterTest(&info);
     filter.setFilterImporter(importerTest);
     filter.setFilterInfo(&info);
     // TODO implement it
@@ -39,7 +39,7 @@ void FilterLnotesTest::canNotImportDataUnknowPath()
 {
     MailImporter::FilterLNotes filter;
     MailImporter::FilterInfo info;
-    auto *importerTest = new FilterImporterTest(&info);
+    auto importerTest = new FilterImporterTest(&info);
     filter.setFilterImporter(importerTest);
     filter.setFilterInfo(&info);
     // filter.importMails(QStringLiteral("/foo/kde/bla/toto/"));

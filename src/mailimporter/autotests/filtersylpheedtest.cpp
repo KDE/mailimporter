@@ -27,7 +27,7 @@ void FilterSylpheedTest::canNotImportDataEmptyPath()
 {
     MailImporter::FilterSylpheed filter;
     MailImporter::FilterInfo info;
-    auto *importerTest = new FilterImporterTest(&info);
+    auto importerTest = new FilterImporterTest(&info);
     filter.setFilterImporter(importerTest);
     filter.setFilterInfo(&info);
     filter.importMails(QString());
@@ -39,7 +39,7 @@ void FilterSylpheedTest::canNotImportDataUnknowPath()
 {
     MailImporter::FilterSylpheed filter;
     MailImporter::FilterInfo info;
-    auto *importerTest = new FilterImporterTest(&info);
+    auto importerTest = new FilterImporterTest(&info);
     filter.setFilterImporter(importerTest);
     filter.setFilterInfo(&info);
     filter.importMails(QStringLiteral("/foo/kde/bla/toto/"));
@@ -51,7 +51,7 @@ void FilterSylpheedTest::canNotImportDataWhenHomeDirSelected()
 {
     MailImporter::FilterSylpheed filter;
     MailImporter::FilterInfo info;
-    auto *importerTest = new FilterImporterTest(&info);
+    auto importerTest = new FilterImporterTest(&info);
     filter.setFilterImporter(importerTest);
     filter.setFilterInfo(&info);
     filter.importMails(QDir::homePath());

@@ -45,7 +45,7 @@ void FilterThunderBirdTest::canNotImportDataEmptyPath()
 {
     MailImporter::FilterThunderbird filter;
     MailImporter::FilterInfo info;
-    auto *importerTest = new FilterImporterTest(&info);
+    auto importerTest = new FilterImporterTest(&info);
     filter.setFilterImporter(importerTest);
     filter.setFilterInfo(&info);
     filter.importMails(QString());
@@ -57,7 +57,7 @@ void FilterThunderBirdTest::canNotImportDataUnknowPath()
 {
     MailImporter::FilterThunderbird filter;
     MailImporter::FilterInfo info;
-    auto *importerTest = new FilterImporterTest(&info);
+    auto importerTest = new FilterImporterTest(&info);
     filter.setFilterImporter(importerTest);
     filter.setFilterInfo(&info);
     filter.importMails(QStringLiteral("/foo/kde/bla/toto/"));
@@ -69,7 +69,7 @@ void FilterThunderBirdTest::canNotImportDataWhenHomeDirSelected()
 {
     MailImporter::FilterThunderbird filter;
     MailImporter::FilterInfo info;
-    auto *importerTest = new FilterImporterTest(&info);
+    auto importerTest = new FilterImporterTest(&info);
     filter.setFilterImporter(importerTest);
     filter.setFilterInfo(&info);
     filter.importMails(QDir::homePath());

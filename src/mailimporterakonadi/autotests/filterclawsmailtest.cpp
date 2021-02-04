@@ -26,7 +26,7 @@ void FilterClawsMailTest::canNotImportDataEmptyPath()
 {
     MailImporter::FilterClawsMail filter;
     MailImporter::FilterInfo info;
-    auto *importerTest = new FilterImporterTest(&info);
+    auto importerTest = new FilterImporterTest(&info);
     filter.setFilterImporter(importerTest);
     filter.setFilterInfo(&info);
     filter.importMails(QString());
@@ -38,7 +38,7 @@ void FilterClawsMailTest::canNotImportDataUnknowPath()
 {
     MailImporter::FilterClawsMail filter;
     MailImporter::FilterInfo info;
-    auto *importerTest = new FilterImporterTest(&info);
+    auto importerTest = new FilterImporterTest(&info);
     filter.setFilterImporter(importerTest);
     filter.setFilterInfo(&info);
     filter.importMails(QStringLiteral("/foo/kde/bla/toto/"));
@@ -50,7 +50,7 @@ void FilterClawsMailTest::canNotImportDataWhenHomeDirSelected()
 {
     MailImporter::FilterClawsMail filter;
     MailImporter::FilterInfo info;
-    auto *importerTest = new FilterImporterTest(&info);
+    auto importerTest = new FilterImporterTest(&info);
     filter.setFilterImporter(importerTest);
     filter.setFilterInfo(&info);
     filter.importMails(QDir::homePath());
