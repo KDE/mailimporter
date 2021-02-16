@@ -60,8 +60,6 @@ add_definitions(-DTRANSLATION_DOMAIN=\"libmailimporter\")
 if(BUILD_TESTING)
    add_definitions(-DBUILD_TESTING)
 endif()
-add_definitions(-DQT_NO_FOREACH)
-add_definitions(-DQT_NO_KEYWORDS)
 
 option(USE_UNITY_CMAKE_SUPPORT "Use UNITY cmake support (speedup compile time)" FALSE)
 
