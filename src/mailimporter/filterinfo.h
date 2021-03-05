@@ -38,7 +38,6 @@ public:
 
     static void terminateASAP();
     Q_REQUIRED_RESULT bool shouldTerminate() const;
-    Q_REQUIRED_RESULT QString rootCollectionName() const;
 
     QWidget *parentWidget() const;
     void setRemoveDupMessage(bool removeDupMessage);
