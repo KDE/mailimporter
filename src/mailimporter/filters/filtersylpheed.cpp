@@ -65,6 +65,11 @@ QString FilterSylpheed::localMailDirPath()
         QString errorMsg;
         int errorRow;
         int errorCol;
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+        if (!folderListFile.open(QIODevice::ReadOnly)) {
+            qCWarning(MAILIMPORTER_LOG) << "Impossible to open " << folderListFile.fileName();
+        }
+#endif
         if (!doc.setContent(&folderListFile, &errorMsg, &errorRow, &errorCol)) {
             qCDebug(MAILIMPORTER_LOG) << "Unable to load document.Parse error in line " << errorRow << ", col " << errorCol << ": " << errorMsg;
             return QString();
