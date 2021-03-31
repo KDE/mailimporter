@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef FilterSeaMonkey_H
-#define FilterSeaMonkey_H
+#pragma once
 
 #include "filterthunderbird.h"
 namespace MailImporter
@@ -28,4 +27,3 @@ protected:
 };
 }
 
-#endif // FilterSeaMonkey_H

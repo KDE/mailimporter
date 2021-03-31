@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef FILTERICEDOVE_H
-#define FILTERICEDOVE_H
+#pragma once
 
 #include "filterthunderbird.h"
 namespace MailImporter
@@ -29,4 +28,3 @@ protected:
 };
 }
 
-#endif // FILTERICEDOVE_H

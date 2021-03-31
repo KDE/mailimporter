@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-only
 */
 
-#ifndef FILTERBALSAMAILTEST_H
-#define FILTERBALSAMAILTEST_H
+#pragma once
 
 #include <QObject>
 
@@ -22,4 +21,3 @@ private Q_SLOTS:
     void canNotImportDataWhenHomeDirSelected();
 };
 
-#endif // FILTERBALSAMAILTEST_H

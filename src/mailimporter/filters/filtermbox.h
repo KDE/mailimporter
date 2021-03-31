@@ -6,8 +6,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAILIMPORTER_FILTER_MBOX_H
-#define MAILIMPORTER_FILTER_MBOX_H
+#pragma once
 
 #include "filters.h"
 
@@ -28,4 +27,3 @@ public:
 };
 }
 
-#endif

@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef FILTERIMPORTERBASE_H
-#define FILTERIMPORTERBASE_H
+#pragma once
 
 #include "mailimporter_export.h"
 #include <KArchive>
@@ -36,4 +35,3 @@ protected:
     MailImporter::FilterInfo *const mInfo;
 };
 }
-#endif // FILTERIMPORTERBASE_H

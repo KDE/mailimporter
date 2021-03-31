@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-only
 */
 
-#ifndef FILTERIMPORTERAKONADITEST_H
-#define FILTERIMPORTERAKONADITEST_H
+#pragma once
 
 #include <QObject>
 
@@ -17,4 +16,3 @@ public:
     ~FilterImporterAkonadiTest() = default;
 };
 
-#endif // FILTERIMPORTERAKONADITEST_H

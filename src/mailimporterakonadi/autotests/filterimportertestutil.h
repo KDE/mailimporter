@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-only
 */
 
-#ifndef FILTERIMPORTERTESTUTIL_H
-#define FILTERIMPORTERTESTUTIL_H
+#pragma once
 
 #include <QString>
 
@@ -19,4 +18,3 @@ private:
     QString mFileName;
 };
 
-#endif // FILTERIMPORTERTESTUTIL_H

@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-only
 */
 
-#ifndef MESSAGESTATUSTEST_H
-#define MESSAGESTATUSTEST_H
+#pragma once
 
 #include <QObject>
 
@@ -21,4 +20,3 @@ private Q_SLOTS:
     void shouldAssignValues_data();
 };
 
-#endif // MESSAGESTATUSTEST_H

@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAILIMPORTER_UTILS_H
-#define MAILIMPORTER_UTILS_H
+#pragma once
 
 #include <QString>
 
@@ -80,4 +79,3 @@ private:
 };
 }
 
-#endif /* MAILIMPORTER_UTILS_H */

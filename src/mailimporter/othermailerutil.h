@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef OTHERMAILERUTIL_H
-#define OTHERMAILERUTIL_H
+#pragma once
 
 #include "mailimporter_export.h"
 #include <QString>
@@ -21,4 +20,3 @@ Q_REQUIRED_RESULT MAILIMPORTER_EXPORT QString nylasMailDefaultPath();
 }
 }
 
-#endif // OTHERMAILERUTIL_H

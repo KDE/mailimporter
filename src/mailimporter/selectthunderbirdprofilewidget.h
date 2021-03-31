@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef SELECTTHUNDERBIRDPROFILEWIDGET_H
-#define SELECTTHUNDERBIRDPROFILEWIDGET_H
+#pragma once
 
 #include "mailimporter_private_export.h"
 #include <QDialog>
@@ -48,4 +47,3 @@ private:
 };
 }
 
-#endif // SELECTTHUNDERBIRDPROFILEWIDGET_H

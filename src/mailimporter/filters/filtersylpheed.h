@@ -7,8 +7,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAILIMPORTER_FILTER_SYLPHEED_H
-#define MAILIMPORTER_FILTER_SYLPHEED_H
+#pragma once
 
 #include <QHash>
 
@@ -49,4 +48,3 @@ private:
 };
 }
 
-#endif

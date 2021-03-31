@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAILIMPORTER_FILTER_EVOLUTION_H
-#define MAILIMPORTER_FILTER_EVOLUTION_H
+#pragma once
 
 #include "filters.h"
 namespace MailImporter
@@ -31,4 +30,3 @@ private:
 };
 }
 
-#endif

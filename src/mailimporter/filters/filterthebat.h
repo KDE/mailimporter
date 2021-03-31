@@ -7,8 +7,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAILIMPORTER_FILTER_THEBAT_H
-#define MAILIMPORTER_FILTER_THEBAT_H
+#pragma once
 
 #include "filters.h"
 #include "mailimporter_export.h"
@@ -36,4 +35,3 @@ private:
 };
 }
 
-#endif

@@ -5,8 +5,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef FILTERS_H
-#define FILTERS_H
+#pragma once
 
 #ifndef MAX_LINE
 #define MAX_LINE 4096
@@ -66,4 +65,3 @@ private:
 };
 }
 
-#endif

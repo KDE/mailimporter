@@ -7,8 +7,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MAILIMPORTER_FILTER_THUNDERBIRD_H
-#define MAILIMPORTER_FILTER_THUNDERBIRD_H
+#pragma once
 
 #include "filters.h"
 
@@ -44,4 +43,3 @@ private:
 };
 }
 
-#endif

@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef FILTERBALSA_H
-#define FILTERBALSA_H
+#pragma once
 
 #include "filters.h"
 namespace MailImporter
@@ -37,4 +36,3 @@ private:
 };
 }
 
-#endif // FILTERBALSA_H

@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef FILTERIMPORTERAKONADI_H
-#define FILTERIMPORTERAKONADI_H
+#pragma once
 
 #include "mailimporterakonadi_export.h"
 #include <Akonadi/KMime/MessageStatus>
@@ -68,4 +67,3 @@ private:
     int mCountDuplicates = 0;
 };
 }
-#endif // FILTERIMPORTERAKONADI_H

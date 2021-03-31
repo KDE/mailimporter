@@ -3,8 +3,7 @@
 
   SPDX-License-Identifier: GPL-2.0-or-later
 */
-#ifndef IMPORTMAILSWIDGET_H
-#define IMPORTMAILSWIDGET_H
+#pragma once
 
 #include "mailimporter_export.h"
 #include <QWidget>
@@ -41,4 +40,3 @@ private:
 };
 }
 
-#endif // IMPORTMAILSWIDGET_H

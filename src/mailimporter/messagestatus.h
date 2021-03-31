@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef MESSAGESTATUS_H
-#define MESSAGESTATUS_H
+#pragma once
 
 #include "mailimporter_export.h"
 #include <QtGlobal>
@@ -41,4 +40,3 @@ private:
     bool mForwarded = false;
 };
 }
-#endif // MESSAGESTATUS_H

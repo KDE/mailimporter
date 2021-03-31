@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-only
 */
 
-#ifndef FILTERIMPORTERTEST_H
-#define FILTERIMPORTERTEST_H
+#pragma once
 
 #include <MailImporter/FilterImporterBase>
 #include <QVector>
@@ -34,4 +33,3 @@ private:
     QVector<FilterImporterData> mFilterImporterDataList;
 };
 
-#endif // FILTERIMPORTERTEST_H

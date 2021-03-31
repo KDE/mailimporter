@@ -4,8 +4,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef FILTERINFOGUI_H
-#define FILTERINFOGUI_H
+#pragma once
 
 #include "filters.h"
 
@@ -36,4 +35,3 @@ public:
 };
 }
 
-#endif /* FILTERINFOGUI_H */

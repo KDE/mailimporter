@@ -5,8 +5,7 @@
   SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-#ifndef FILTERINFO_H
-#define FILTERINFO_H
+#pragma once
 
 #include "mailimporter_export.h"
 #include <QString>
@@ -49,4 +48,3 @@ private:
 };
 }
 
-#endif /* FILTERINFO_H */
