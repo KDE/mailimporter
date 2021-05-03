@@ -98,7 +98,7 @@ target_link_libraries(KF5MailImporter
     )
 
 set_target_properties(KF5MailImporter PROPERTIES
-    VERSION ${MAILIMPORTER_VERSION_STRING}
+    VERSION ${MAILIMPORTER_VERSION}
     SOVERSION ${MAILIMPORTER_SOVERSION}
     EXPORT_NAME MailImporter
     )
