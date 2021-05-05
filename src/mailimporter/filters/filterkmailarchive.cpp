@@ -176,7 +176,7 @@ void FilterKMailArchive::importMails(const QString &archiveFile)
 
     QMimeDatabase db;
     QMimeType mimeType = db.mimeTypeForFile(archiveFile, QMimeDatabase::MatchExtension);
-    typedef QSharedPointer<KArchive> KArchivePtr;
+    using KArchivePtr = QSharedPointer<KArchive>;
     KArchivePtr archive;
     if (!mimeType.globPatterns().filter(QStringLiteral("tar"), Qt::CaseInsensitive).isEmpty()) {
         archive = KArchivePtr(new KTar(archiveFile));

@@ -18,9 +18,9 @@ SelectThunderbirdProfileDialogTest::SelectThunderbirdProfileDialogTest(QObject *
 void SelectThunderbirdProfileDialogTest::shouldHaveDefaultValue()
 {
     MailImporter::SelectThunderbirdProfileDialog dlg;
-    auto *widget = dlg.findChild<MailImporter::SelectThunderbirdProfileWidget *>(QStringLiteral("selectprofile"));
+    auto widget = dlg.findChild<MailImporter::SelectThunderbirdProfileWidget *>(QStringLiteral("selectprofile"));
     QVERIFY(widget);
-    auto *buttonBox = dlg.findChild<QDialogButtonBox *>(QStringLiteral("buttonBox"));
+    auto buttonBox = dlg.findChild<QDialogButtonBox *>(QStringLiteral("buttonBox"));
     QVERIFY(buttonBox);
 }
 

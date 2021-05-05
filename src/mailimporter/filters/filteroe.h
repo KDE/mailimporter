@@ -64,10 +64,10 @@ private:
       3. ID of current folder
       4. ID of parent folder
     */
-    typedef FolderStructureBase<4> FolderStructure;
+    using FolderStructure = FolderStructureBase<4>;
     /** matrix with information about the folder structure*/
     QList<FolderStructure> folderStructure;
-    typedef QList<FolderStructure>::Iterator FolderStructureIterator;
+    using FolderStructureIterator = QList<FolderStructure>::Iterator;
 
     /** name of the current folder */
     QString folderName;

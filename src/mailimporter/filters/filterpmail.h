@@ -45,7 +45,7 @@ private:
     QDir dir;
 
     /** Folder structure here has 5 entries. */
-    typedef FolderStructureBase<5> FolderStructure;
+    using FolderStructure = FolderStructureBase<5>;
     /** List with the folder matrix, which contains following strings:
       1. type (2 for root-folder, 1 for folder, 0 for mailarchiv)
       2. type (1 for root-folder, 3 for folder, 0 for mailarchiv)
@@ -54,7 +54,7 @@ private:
       5. name of folder/archiv
     */
     QList<FolderStructure> folderMatrix;
-    typedef QList<FolderStructure>::Iterator FolderStructureIterator;
+    using FolderStructureIterator = QList<FolderStructure>::Iterator;
 
     bool folderParsed = false;
 

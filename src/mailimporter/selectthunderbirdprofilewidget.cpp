@@ -25,7 +25,7 @@ SelectThunderbirdProfileDialog::SelectThunderbirdProfileDialog(QWidget *parent)
     mSelectProfile->setObjectName(QStringLiteral("selectprofile"));
     topLayout->addWidget(mSelectProfile);
 
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
+    auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
     buttonBox->setObjectName(QStringLiteral("buttonBox"));
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setDefault(true);

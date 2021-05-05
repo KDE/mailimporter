@@ -223,7 +223,7 @@ bool FilterImporterAkonadi::checkForDuplicates(const QString &msgID, const Akona
                         if (!messageItem.hasPayload<KMime::Message::Ptr>()) {
                             continue;
                         }
-                        const KMime::Message::Ptr message = messageItem.payload<KMime::Message::Ptr>();
+                        const auto message = messageItem.payload<KMime::Message::Ptr>();
                         const KMime::Headers::Base *messageID = message->messageID(false);
                         if (messageID) {
                             if (!messageID->isEmpty()) {
