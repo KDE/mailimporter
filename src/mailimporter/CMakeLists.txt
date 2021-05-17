@@ -93,8 +93,8 @@ target_link_libraries(KF5MailImporter
     KF5::PimCommon
     KF5::I18n
     KF5::ConfigCore
-    Qt5::Xml
-    Qt5::Widgets
+    Qt::Xml
+    Qt::Widgets
     )
 
 set_target_properties(KF5MailImporter PROPERTIES
