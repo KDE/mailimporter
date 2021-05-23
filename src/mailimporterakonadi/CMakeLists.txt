@@ -1,6 +1,7 @@
 ########### CMake Config Files ###########
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5MailImporterAkonadi")
-
+add_library(KF5MailImporterAkonadi)
+add_library(KF5::MailImporterAkonadi ALIAS KF5MailImporterAkonadi)
 configure_package_config_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/KF5MailImporterAkonadiConfig.cmake.in"
     "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterAkonadiConfig.cmake"
@@ -27,7 +28,7 @@ install(FILES
     DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5} COMPONENT Devel
     )
 
-set(libmailimporterakonadi_SRCS
+set(KF5MailImporterAkonadi PRIVATE
     filterimporterakonadi.cpp
     )
 
@@ -38,9 +39,6 @@ ecm_qt_declare_logging_category(libmailimporterakonadi_SRCS HEADER mailimportera
 
 
 
-add_library(KF5MailImporterAkonadi
-    ${libmailimporterakonadi_SRCS}
-    )
 if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(KF5MailImporterAkonadi PROPERTIES UNITY_BUILD ON)
 endif()

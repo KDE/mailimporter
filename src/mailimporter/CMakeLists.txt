@@ -1,6 +1,9 @@
 ########### CMake Config Files ###########
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5MailImporter")
 
+add_library(KF5MailImporter)
+add_library(KF5::MailImporter ALIAS KF5MailImporter)
+
 configure_package_config_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/KF5MailImporterConfig.cmake.in"
     "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterConfig.cmake"
@@ -28,7 +31,7 @@ install(FILES
     )
 
 
-set(libmailimporter_filters_SRCS
+target_sources(KF5MailImporter PRIVATE
     filters/filteroe.cpp
     filters/filterpmail.cpp
     filters/filterplain.cpp
@@ -49,9 +52,6 @@ set(libmailimporter_filters_SRCS
     filters/filtericedove.cpp
     filters/filterbalsa.cpp
     filters/filterseamonkey.cpp
-    )
-
-set(libmailimporter_SRCS
     messagestatus.cpp
     importmailswidget.cpp
     filterinfogui.cpp
@@ -63,24 +63,18 @@ set(libmailimporter_SRCS
     )
 
 
-ki18n_wrap_ui(libmailimporter_SRCS ui/importmailswidget.ui ui/selectthunderbirdprofilewidget.ui)
+ki18n_wrap_ui(KF5MailImporter ui/importmailswidget.ui ui/selectthunderbirdprofilewidget.ui)
 
-ecm_qt_declare_logging_category(libmailimporter_SRCS HEADER mailimporter_debug.h IDENTIFIER MAILIMPORTER_LOG CATEGORY_NAME org.kde.pim.mailimporter
+ecm_qt_declare_logging_category(KF5MailImporter HEADER mailimporter_debug.h IDENTIFIER MAILIMPORTER_LOG CATEGORY_NAME org.kde.pim.mailimporter
         DESCRIPTION "mailimporter (mailimporter)"
         OLD_CATEGORY_NAMES log_mailimporter
         EXPORT MAILIMPORTER
     )
 
-add_library(KF5MailImporter
-    ${libmailimporter_SRCS}
-    ${libmailimporter_filters_SRCS}
-    )
 if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(KF5MailImporter PROPERTIES UNITY_BUILD ON)
 endif()
 generate_export_header( KF5MailImporter BASE_NAME mailimporter)
-
-add_library(KF5::MailImporter ALIAS KF5MailImporter)
 
 target_include_directories(KF5MailImporter INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF5}/MailImporter/;${KDE_INSTALL_INCLUDEDIR_KF5}/mailimporter>")
 target_include_directories(KF5MailImporter PUBLIC "$<BUILD_INTERFACE:${MailImporter_SOURCE_DIR}/src;${MailImporter_BINARY_DIR}/src;>")
