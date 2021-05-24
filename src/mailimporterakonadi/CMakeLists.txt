@@ -28,11 +28,11 @@ install(FILES
     DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5} COMPONENT Devel
     )
 
-set(KF5MailImporterAkonadi PRIVATE
+target_sources(KF5MailImporterAkonadi PRIVATE
     filterimporterakonadi.cpp
     )
 
-ecm_qt_declare_logging_category(libmailimporterakonadi_SRCS HEADER mailimporterakonadi_debug.h IDENTIFIER MAILIMPORTERAKONADI_LOG CATEGORY_NAME org.kde.pim.mailimporterakonadi
+ecm_qt_declare_logging_category(KF5MailImporterAkonadi HEADER mailimporterakonadi_debug.h IDENTIFIER MAILIMPORTERAKONADI_LOG CATEGORY_NAME org.kde.pim.mailimporterakonadi
         DESCRIPTION "mailimporterakonadi (mailimporter)"
         EXPORT MAILIMPORTER
     )
