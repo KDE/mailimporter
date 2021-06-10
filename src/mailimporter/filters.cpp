@@ -6,12 +6,10 @@
 */
 
 // Local Includes
-#include "filters.h"
-#include "filterinfo.h"
 
 // KDE Includes
+#include "filters.h"
 #include "mailimporter_debug.h"
-
 //////////////////////////////////////////////////////////////////////////////////
 //
 // The generic filter class
