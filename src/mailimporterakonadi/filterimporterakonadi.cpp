@@ -162,7 +162,7 @@ Akonadi::Collection FilterImporterAkonadi::parseFolderString(const QString &fold
 
 Akonadi::Collection FilterImporterAkonadi::addSubCollection(const Akonadi::Collection &baseCollection, const QString &newCollectionPathName)
 {
-    // Ensure that the collection doesn't already exsit, if it does just return it.
+    // Ensure that the collection doesn't already exist, if it does just return it.
     auto fetchJob = new Akonadi::CollectionFetchJob(baseCollection, Akonadi::CollectionFetchJob::FirstLevel);
     if (!fetchJob->exec()) {
         mInfo->alert(i18n("<b>Warning:</b> Could not check that the folder already exists. Reason: %1", fetchJob->errorString()));
@@ -175,7 +175,7 @@ Akonadi::Collection FilterImporterAkonadi::addSubCollection(const Akonadi::Colle
         }
     }
 
-    // The subCollection doesn't exsit, create a new one
+    // The subCollection doesn't exist, create a new one
     Akonadi::Collection newSubCollection;
     newSubCollection.setParentCollection(baseCollection);
     newSubCollection.setName(newCollectionPathName);

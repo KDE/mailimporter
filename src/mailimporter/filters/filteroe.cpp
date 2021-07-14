@@ -265,7 +265,7 @@ void FilterOE::dbxReadIndex(QDataStream &ds, int filePos)
     }
 
     if (indexCount > 0) { // deal with nextTablePtr
-        qCDebug(MAILIMPORTER_LOG) << "Recuring to next table @" << nextIndexPtr;
+        qCDebug(MAILIMPORTER_LOG) << "Recurring to next table @" << nextIndexPtr;
         dbxReadIndex(ds, nextIndexPtr);
     }
 

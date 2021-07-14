@@ -13,7 +13,7 @@ namespace MailImporter
 {
 class FilterLNotesPrivate;
 /**
- * imports Lotus Notes Structured Text Archives and archvies messages into KMail
+ * imports Lotus Notes Structured Text Archives and archives messages into KMail
  * @author Robert Rockers
  */
 class MAILIMPORTER_EXPORT FilterLNotes : public Filter

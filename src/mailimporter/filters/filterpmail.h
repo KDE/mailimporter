@@ -49,9 +49,9 @@ private:
     /** List with the folder matrix, which contains following strings:
       1. type (2 for root-folder, 1 for folder, 0 for mailarchiv)
       2. type (1 for root-folder, 3 for folder, 0 for mailarchiv)
-      3. "ID:flag:filename" of folder/archiv
+      3. "ID:flag:filename" of folder/archive
       4. "ID:name" of parent folder
-      5. name of folder/archiv
+      5. name of folder/archive
     */
     QList<FolderStructure> folderMatrix;
     using FolderStructureIterator = QList<FolderStructure>::Iterator;

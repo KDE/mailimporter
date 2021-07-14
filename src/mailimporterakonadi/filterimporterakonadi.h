@@ -38,8 +38,8 @@ public:
 
 private:
     /**
-     * Creates a hierachy of collections based on the given path string. The collection
-     * hierachy will be placed under the root collection.
+     * Creates a hierarchy of collections based on the given path string. The collection
+     * hierarchy will be placed under the root collection.
      * For example, if the folderParseString "foo/bar/test" is passsed to this method, it
      * will make sure the root collection has a subcollection named "foo", which in turn
      * has a subcollection named "bar", which again has a subcollection named "test".
@@ -56,7 +56,7 @@ private:
     bool checkForDuplicates(const QString &msgID, const Akonadi::Collection &msgCollection, const QString &messageFolder);
     /**
      * Adds a single subcollection to the given base collection and returns it.
-     * Use parseFolderString() instead if you want to create hierachies of collections.
+     * Use parseFolderString() instead if you want to create hierarchies of collections.
      */
     Akonadi::Collection addSubCollection(const Akonadi::Collection &baseCollection, const QString &newCollectionPathName);
     bool addAkonadiMessage(const Akonadi::Collection &collection, const KMime::Message::Ptr &message, Akonadi::MessageStatus status);

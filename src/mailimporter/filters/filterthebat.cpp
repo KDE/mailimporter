@@ -146,7 +146,7 @@ void FilterTheBat::importFiles(const QString &FileName)
     // First comes a header of 3K (3128 byte/ 0x00000c38), which we can forget.
     // The byte 3129 is the first character of the first message.
     //
-    // The end of a message is marked trough "! p 0" and 43 following characters.
+    // The end of a message is marked through "! p 0" and 43 following characters.
     // (within: "_UB", blanks and some other chars.) Together are 48 characters as
     // separator.
     // ----------------------------------------
