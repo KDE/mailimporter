@@ -181,7 +181,8 @@ void FilterThunderbird::importMails(const QString &maildir)
         /** Recursive import of the MailArchives */
         QDir dir(mailDir());
         const QStringList rootSubDirs = dir.entryList(QStringList(QStringLiteral("[^\\.]*")), QDir::Dirs, QDir::Name); // Removal of . and ..
-        int currentDir = 1, numSubDirs = rootSubDirs.size();
+        int currentDir = 1;
+        int numSubDirs = rootSubDirs.size();
         QStringList::ConstIterator end = rootSubDirs.constEnd();
         for (QStringList::ConstIterator filename = rootSubDirs.constBegin(); filename != end; ++filename, ++currentDir) {
             if (filterInfo()->shouldTerminate()) {

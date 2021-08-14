@@ -135,7 +135,8 @@ void FilterKMail_maildir::importFiles(const QString &dirName)
 
     QDir importDir(dirName);
     const QStringList files = importDir.entryList(QStringList(QStringLiteral("[^\\.]*")), QDir::Files, QDir::Name);
-    int currentFile = 1, numFiles = files.size();
+    int currentFile = 1;
+    int numFiles = files.size();
     QStringList::ConstIterator filesEnd(files.constEnd());
 
     for (QStringList::ConstIterator mailFile = files.constBegin(); mailFile != filesEnd; ++mailFile, ++currentFile) {

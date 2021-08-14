@@ -130,7 +130,8 @@ void FilterOE::importMailBox(const QString &fileName)
     mailbox.setByteOrder(QDataStream::LittleEndian);
 
     // Parse magic
-    quint32 sig_block1, sig_block2;
+    quint32 sig_block1;
+    quint32 sig_block2;
     mailbox >> sig_block1 >> sig_block2;
     if (sig_block1 == OE4_SIG_1 && sig_block2 == OE4_SIG_2) {
         folderName = QLatin1String("OE-Import/") + mailfileinfo.completeBaseName();
@@ -139,7 +140,8 @@ void FilterOE::importMailBox(const QString &fileName)
         mbxImport(mailbox);
         return;
     } else {
-        quint32 sig_block3, sig_block4;
+        quint32 sig_block3;
+        quint32 sig_block4;
         mailbox >> sig_block3 >> sig_block4;
         if (sig_block1 == OE5_SIG_1 && sig_block3 == OE5_SIG_3 && sig_block4 == OE5_SIG_4) {
             if (sig_block2 == OE5_EMAIL_SIG_2) {
@@ -171,7 +173,9 @@ void FilterOE::importMailBox(const QString &fileName)
 
 void FilterOE::mbxImport(QDataStream &ds)
 {
-    quint32 msgCount, lastMsgNum, fileSize;
+    quint32 msgCount;
+    quint32 lastMsgNum;
+    quint32 fileSize;
 
     // Read the header
     ds >> msgCount >> lastMsgNum >> fileSize;
@@ -185,7 +189,9 @@ void FilterOE::mbxImport(QDataStream &ds)
     ds >> msgMagic; // Read first magic
 
     while (!ds.atEnd()) {
-        quint32 msgNumber, msgSize, msgTextSize;
+        quint32 msgNumber;
+        quint32 msgSize;
+        quint32 msgTextSize;
         QTemporaryFile tmp;
         tmp.open();
         QDataStream dataStream(&tmp);
@@ -217,7 +223,8 @@ void FilterOE::mbxImport(QDataStream &ds)
 void FilterOE::dbxImport(QDataStream &ds)
 {
     // Get item count  &offset of index
-    quint32 itemCount, indexPtr;
+    quint32 itemCount;
+    quint32 indexPtr;
     ds.device()->seek(0xc4);
     ds >> itemCount;
     ds.device()->seek(0xe4);
@@ -239,8 +246,13 @@ void FilterOE::dbxReadIndex(QDataStream &ds, int filePos)
     if (filterInfo()->shouldTerminate()) {
         return;
     }
-    quint32 self, unknown, nextIndexPtr, parent, indexCount;
-    quint8 unknown2, ptrCount;
+    quint32 self;
+    quint32 unknown;
+    quint32 nextIndexPtr;
+    quint32 parent;
+    quint32 indexCount;
+    quint8 unknown2;
+    quint8 ptrCount;
     quint16 unknown3;
     int wasAt = ds.device()->pos();
     ds.device()->seek(filePos);
@@ -253,7 +265,9 @@ void FilterOE::dbxReadIndex(QDataStream &ds, int filePos)
         if (filterInfo()->shouldTerminate()) {
             return;
         }
-        quint32 dataIndexPtr, anotherIndexPtr, anotherIndexCount; // _dbx_indexstruct
+        quint32 dataIndexPtr;
+        quint32 anotherIndexPtr;
+        quint32 anotherIndexCount; // _dbx_indexstruct
         ds >> dataIndexPtr >> anotherIndexPtr >> anotherIndexCount;
 
         if (anotherIndexCount > 0) {
@@ -274,9 +288,11 @@ void FilterOE::dbxReadIndex(QDataStream &ds, int filePos)
 
 void FilterOE::dbxReadDataBlock(QDataStream &ds, int filePos)
 {
-    quint32 curOffset, blockSize;
+    quint32 curOffset;
+    quint32 blockSize;
     quint16 unknown;
-    quint8 count, unknown2;
+    quint8 count;
+    quint8 unknown2;
     int wasAt = ds.device()->pos();
 
     QString folderEntry[4];
@@ -340,9 +356,12 @@ void FilterOE::dbxReadEmail(QDataStream &ds, int filePos)
     if (filterInfo()->shouldTerminate()) {
         return;
     }
-    quint32 self, nextAddressOffset, nextAddress = 0;
+    quint32 self;
+    quint32 nextAddressOffset;
+    quint32 nextAddress = 0;
     quint16 blockSize;
-    quint8 intCount, unknown;
+    quint8 intCount;
+    quint8 unknown;
     QTemporaryFile tmp;
     tmp.open();
     bool _break = false;

@@ -209,9 +209,12 @@ void FilterPMail::importUnixMailFolder(const QString &file)
     } pmg_head;
 
     QFile f;
-    QString folder(QStringLiteral("PegasusMail-Import/")), s(file), separate;
+    QString folder(QStringLiteral("PegasusMail-Import/"));
+    QString s(file);
+    QString separate;
     QByteArray line(MAX_LINE, '\0');
-    int n = 0, l = 0;
+    int n = 0;
+    int l = 0;
 
     /** Get the folder name */
     s.replace(QRegularExpression(QStringLiteral("mbx$")), QStringLiteral("pmg"));

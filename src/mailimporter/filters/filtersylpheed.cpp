@@ -212,7 +212,8 @@ void FilterSylpheed::importFiles(const QString &dirName)
     const QString defaultInstallPath = defaultInstallFolder();
 
     const QStringList files = importDir.entryList(QStringList(QStringLiteral("[^\\.]*")), QDir::Files, QDir::Name);
-    int currentFile = 1, numFiles = files.size();
+    int currentFile = 1;
+    int numFiles = files.size();
 
     readMarkFile(dir.filePath(markFile()), msgflags);
 
@@ -265,7 +266,8 @@ void FilterSylpheed::readMarkFile(const QString &path, QHash<QString, unsigned l
      * the first one with the message file name (which is a number),
      * and the second one with the actual message flags */
 
-    quint32 in, flags;
+    quint32 in;
+    quint32 flags;
     QFile file(path);
 
     if (!file.open(QIODevice::ReadOnly)) {
