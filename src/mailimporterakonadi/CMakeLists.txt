@@ -1,5 +1,15 @@
 ########### CMake Config Files ###########
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5MailImporterAkonadi")
+if (BUILD_QCH)
+    ecm_install_qch_export(
+        TARGETS KF5MailImporterAkonadi_QCH
+        FILE KF5MailImporterAkonadiQchTargets.cmake
+        DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
+        COMPONENT Devel
+    )
+    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KF5MailImporterAkonadiQchTargets.cmake\")")
+endif()
+
 add_library(KF5MailImporterAkonadi)
 add_library(KF5::MailImporterAkonadi ALIAS KF5MailImporterAkonadi)
 configure_package_config_file(
@@ -107,3 +117,28 @@ if (BUILD_TESTING)
    add_subdirectory(autotests)
 endif()
 
+
+if (BUILD_QCH)
+    ecm_add_qch(
+        KF5MailImporterAkonadi_QCH
+        NAME KF5MailImporterAkonadi
+        BASE_NAME KF5MailImporterAkonadi
+        VERSION ${PIM_VERSION}
+        ORG_DOMAIN org.kde
+        SOURCES # using only public headers, to cover only public API
+            ${MailImporter_Akonadi_HEADERS}
+        #MD_MAINPAGE "${CMAKE_SOURCE_DIR}/README.md"
+        #IMAGE_DIRS "${CMAKE_SOURCE_DIR}/docs/pics"
+        LINK_QCHS
+            Qt5Core_QCH
+            Qt5Gui_QCH
+            Qt5Widgets_QCH
+        INCLUDE_DIRS
+            ${CMAKE_CURRENT_BINARY_DIR}
+        BLANK_MACROS
+            MAILIMPORTERAKONADI_EXPORT
+        TAGFILE_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
+        QCH_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
+        COMPONENT Devel
+    )
+endif()
