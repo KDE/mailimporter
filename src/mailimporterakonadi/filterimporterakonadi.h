@@ -7,8 +7,8 @@
 #pragma once
 
 #include "mailimporterakonadi_export.h"
+#include <Akonadi/Collection>
 #include <Akonadi/KMime/MessageStatus>
-#include <AkonadiCore/Collection>
 #include <KMime/Message>
 #include <MailImporter/FilterImporterBase>
 #include <QString>

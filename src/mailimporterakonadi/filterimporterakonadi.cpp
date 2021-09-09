@@ -6,14 +6,14 @@
 
 #include "filterimporterakonadi.h"
 #include "mailimporterakonadi_debug.h"
+#include <Akonadi/CollectionCreateJob>
+#include <Akonadi/CollectionFetchJob>
+#include <Akonadi/Item>
+#include <Akonadi/ItemCreateJob>
+#include <Akonadi/ItemFetchJob>
+#include <Akonadi/ItemFetchScope>
 #include <Akonadi/KMime/MessageFlags>
 #include <Akonadi/KMime/MessageParts>
-#include <AkonadiCore/CollectionCreateJob>
-#include <AkonadiCore/CollectionFetchJob>
-#include <AkonadiCore/Item>
-#include <AkonadiCore/ItemCreateJob>
-#include <AkonadiCore/ItemFetchJob>
-#include <AkonadiCore/ItemFetchScope>
 #include <KLocalizedString>
 #include <MailImporter/FilterInfo>
 #include <QFile>
