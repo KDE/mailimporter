@@ -39,10 +39,7 @@ FilterTheBat::FilterTheBat()
 }
 
 /** Destructor. */
-FilterTheBat::~FilterTheBat()
-{
-    delete d;
-}
+FilterTheBat::~FilterTheBat() = default;
 
 /** Recursive import of The Bat! maildir. */
 void FilterTheBat::import()

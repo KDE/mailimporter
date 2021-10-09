@@ -41,10 +41,7 @@ FilterLNotes::FilterLNotes()
 }
 
 /** Destructor. */
-FilterLNotes::~FilterLNotes()
-{
-    delete d;
-}
+FilterLNotes::~FilterLNotes() = default;
 
 /**
  * Recursive import of The Bat! maildir.

@@ -25,7 +25,7 @@ public:
     void import() override;
 
 private:
-    FilterLNotesPrivate *const d;
+    std::unique_ptr<FilterLNotesPrivate> const d;
     /**
      * This is were all the real action is gonna be handled.
      * Gets called once for EACH file imported

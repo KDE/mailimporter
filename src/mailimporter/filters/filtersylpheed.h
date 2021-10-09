@@ -44,7 +44,7 @@ private:
 
     void readMarkFile(const QString &, QHash<QString, unsigned long> &);
     MailImporter::MessageStatus msgFlagsToString(unsigned long flags);
-    FilterSylpheedPrivate *const d;
+    std::unique_ptr<FilterSylpheedPrivate> const d;
 };
 }
 

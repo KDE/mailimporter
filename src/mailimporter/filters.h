@@ -18,6 +18,7 @@
 #include <MailImporter/FilterImporterBase>
 
 #include <QDir>
+#include <memory>
 
 namespace MailImporter
 {
@@ -60,8 +61,8 @@ protected:
     importMessage(const QString &folderName, const QString &msgPath, bool duplicateCheck, const MessageStatus &status = MailImporter::MessageStatus());
 
 private:
-    class Private;
-    Private *const d;
+    class FilterPrivate;
+    std::unique_ptr<FilterPrivate> const d;
 };
 }
 

@@ -34,10 +34,7 @@ ImportMailsWidget::ImportMailsWidget(QWidget *parent)
     d->ui->setupUi(this);
 }
 
-ImportMailsWidget::~ImportMailsWidget()
-{
-    delete d;
-}
+ImportMailsWidget::~ImportMailsWidget() = default;
 
 void ImportMailsWidget::setStatusMessage(const QString &status)
 {

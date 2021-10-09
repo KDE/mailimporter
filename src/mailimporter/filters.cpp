@@ -18,17 +18,17 @@
 
 using namespace MailImporter;
 
-class Q_DECL_HIDDEN Filter::Private
+class Q_DECL_HIDDEN Filter::FilterPrivate
 {
 public:
-    Private(const QString &_name, const QString &_author, const QString &_info)
+    FilterPrivate(const QString &_name, const QString &_author, const QString &_info)
         : name(_name)
         , author(_author)
         , info(_info)
     {
     }
 
-    ~Private()
+    ~FilterPrivate()
     {
     }
 
@@ -41,14 +41,11 @@ public:
 };
 
 Filter::Filter(const QString &name, const QString &author, const QString &info)
-    : d(new Private(name, author, info))
+    : d(new FilterPrivate(name, author, info))
 {
 }
 
-Filter::~Filter()
-{
-    delete d;
-}
+Filter::~Filter() = default;
 
 void Filter::clear()
 {

@@ -32,7 +32,7 @@ private:
     Q_REQUIRED_RESULT bool importMessage(const KArchiveFile *file, const QString &folderPath);
 
     int countFiles(const KArchiveDirectory *directory) const;
-    FilterKMailArchivePrivate *const d;
+    std::unique_ptr<FilterKMailArchivePrivate> const d;
 };
 }
 

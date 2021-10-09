@@ -38,10 +38,7 @@ FilterSylpheed::FilterSylpheed()
 }
 
 /** Destructor. */
-FilterSylpheed::~FilterSylpheed()
-{
-    delete d;
-}
+FilterSylpheed::~FilterSylpheed() = default;
 
 QString FilterSylpheed::isMailerFound()
 {

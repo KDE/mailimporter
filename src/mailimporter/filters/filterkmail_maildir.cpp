@@ -38,10 +38,7 @@ FilterKMail_maildir::FilterKMail_maildir()
 }
 
 /** Destructor. */
-FilterKMail_maildir::~FilterKMail_maildir()
-{
-    delete d;
-}
+FilterKMail_maildir::~FilterKMail_maildir() = default;
 
 /** Recursive import of KMail maildir. */
 void FilterKMail_maildir::import()

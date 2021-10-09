@@ -30,10 +30,7 @@ FilterEvolution_v3::FilterEvolution_v3()
 }
 
 /** Destructor. */
-FilterEvolution_v3::~FilterEvolution_v3()
-{
-    delete d;
-}
+FilterEvolution_v3::~FilterEvolution_v3() = default;
 
 QString FilterEvolution_v3::isMailerFound()
 {

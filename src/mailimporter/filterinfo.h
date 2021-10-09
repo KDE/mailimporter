@@ -9,6 +9,7 @@
 
 #include "mailimporter_export.h"
 #include <QString>
+#include <memory>
 class QWidget;
 namespace MailImporter
 {
@@ -43,8 +44,8 @@ public:
     Q_REQUIRED_RESULT bool removeDupMessage() const;
 
 private:
-    class Private;
-    Private *const d;
+    class FilterInfoPrivate;
+    std::unique_ptr<FilterInfoPrivate> const d;
 };
 }
 

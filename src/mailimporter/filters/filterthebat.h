@@ -31,7 +31,7 @@ private:
     void importDirContents(const QString &);
     void importFiles(const QString &);
     void processDirectory(const QString &path);
-    FilterTheBatPrivate *const d;
+    std::unique_ptr<FilterTheBatPrivate> const d;
 };
 }
 

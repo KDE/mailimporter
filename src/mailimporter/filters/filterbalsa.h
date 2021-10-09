@@ -7,6 +7,7 @@
 #pragma once
 
 #include "filters.h"
+#include <memory>
 namespace MailImporter
 {
 class FilterBalsaPrivate;
@@ -32,7 +33,7 @@ private:
     void processDirectory(const QString &path);
 
     MailImporter::MessageStatus statusFromFile(const QString &filename);
-    FilterBalsaPrivate *const d;
+    std::unique_ptr<FilterBalsaPrivate> const d;
 };
 }
 

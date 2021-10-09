@@ -37,10 +37,7 @@ FilterKMailArchive::FilterKMailArchive()
 {
 }
 
-FilterKMailArchive::~FilterKMailArchive()
-{
-    delete d;
-}
+FilterKMailArchive::~FilterKMailArchive() = default;
 
 // Input: .inbox.directory
 // Output: inbox

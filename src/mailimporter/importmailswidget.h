@@ -36,7 +36,7 @@ public:
     void addErrorLogEntry(const QString &log);
 
 private:
-    ImportMailsWidgetPrivate *const d;
+    std::unique_ptr<ImportMailsWidgetPrivate> const d;
 };
 }
 

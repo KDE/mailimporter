@@ -31,7 +31,7 @@ private:
 
     void importDirContents(const QString &);
     void importFiles(const QString &);
-    FilterKMail_maildirPrivate *const d;
+    std::unique_ptr<FilterKMail_maildirPrivate> const d;
 };
 }
 

@@ -33,10 +33,7 @@ FilterMailApp::FilterMailApp()
 {
 }
 
-FilterMailApp::~FilterMailApp()
-{
-    delete d;
-}
+FilterMailApp::~FilterMailApp() = default;
 
 void FilterMailApp::import()
 {

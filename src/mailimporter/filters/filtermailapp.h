@@ -28,7 +28,7 @@ public:
     void importMails(const QString &maildir);
 
 private:
-    FilterMailAppPrivate *const d;
+    std::unique_ptr<FilterMailAppPrivate> const d;
     void traverseDirectory(const QString &);
 };
 }

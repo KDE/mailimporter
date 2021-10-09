@@ -31,7 +31,7 @@ private:
     void processDirectory(const QString &path);
 
     MailImporter::MessageStatus statusFromFile(const QString &filename);
-    FilterEvolution_v3Private *const d;
+    std::unique_ptr<FilterEvolution_v3Private> const d;
 };
 }
 

@@ -10,14 +10,14 @@
 
 using namespace MailImporter;
 
-class Q_DECL_HIDDEN FilterInfo::Private
+class Q_DECL_HIDDEN FilterInfo::FilterInfoPrivate
 {
 public:
-    Private()
+    FilterInfoPrivate()
     {
     }
 
-    ~Private()
+    ~FilterInfoPrivate()
     {
         delete m_filterInfoGui;
         m_filterInfoGui = nullptr;
@@ -28,18 +28,15 @@ public:
     static bool s_terminateASAP;
 };
 
-bool FilterInfo::Private::s_terminateASAP = false;
+bool FilterInfo::FilterInfoPrivate::s_terminateASAP = false;
 
 FilterInfo::FilterInfo()
-    : d(new Private)
+    : d(new FilterInfoPrivate)
 {
-    Private::s_terminateASAP = false;
+    FilterInfoPrivate::s_terminateASAP = false;
 }
 
-FilterInfo::~FilterInfo()
-{
-    delete d;
-}
+FilterInfo::~FilterInfo() = default;
 
 void FilterInfo::setFilterInfoGui(FilterInfoGui *filterinfogui)
 {
@@ -119,12 +116,12 @@ void FilterInfo::alert(const QString &message)
 
 void FilterInfo::terminateASAP()
 {
-    Private::s_terminateASAP = true;
+    FilterInfoPrivate::s_terminateASAP = true;
 }
 
 bool FilterInfo::shouldTerminate() const
 {
-    return Private::s_terminateASAP;
+    return FilterInfoPrivate::s_terminateASAP;
 }
 
 void FilterInfo::setRemoveDupMessage(bool removeDupMessage)

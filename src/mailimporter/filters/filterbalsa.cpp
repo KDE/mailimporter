@@ -30,10 +30,7 @@ FilterBalsa::FilterBalsa()
 }
 
 /** Destructor. */
-FilterBalsa::~FilterBalsa()
-{
-    delete d;
-}
+FilterBalsa::~FilterBalsa() = default;
 
 QString FilterBalsa::isMailerFound()
 {
