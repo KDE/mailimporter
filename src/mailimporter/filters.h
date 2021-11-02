@@ -12,7 +12,6 @@
 #endif
 
 #include "filterinfo.h"
-#include "filters.h"
 #include "mailimporter_export.h"
 
 #include <MailImporter/FilterImporterBase>
