@@ -40,6 +40,8 @@ install(FILES
 
 target_sources(KF5MailImporterAkonadi PRIVATE
     filterimporterakonadi.cpp
+    filterimporterakonadi.h
+    filterimportertestutil.h
     )
 
 ecm_qt_declare_logging_category(KF5MailImporterAkonadi HEADER mailimporterakonadi_debug.h IDENTIFIER MAILIMPORTERAKONADI_LOG CATEGORY_NAME org.kde.pim.mailimporterakonadi

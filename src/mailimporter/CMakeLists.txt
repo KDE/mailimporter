@@ -71,6 +71,36 @@ target_sources(KF5MailImporter PRIVATE
     filterimporterbase.cpp
     othermailerutil.cpp
     selectthunderbirdprofilewidget.cpp
+    messagestatus.h
+    selectthunderbirdprofilewidget.h
+    filters/filterclawsmail.h
+    filters/filterseamonkey.h
+    filters/filterevolution_v3.h
+    filters/filteroe.h
+    filters/filtermailapp.h
+    filters/filterkmail_maildir.h
+    filters/filtericedove.h
+    filters/filtermailmangzip.h
+    filters/filterpmail.h
+    filters/filterthunderbird.h
+    filters/filterlnotes.h
+    filters/filterevolution_v2.h
+    filters/filterkmailarchive.h
+    filters/filteropera.h
+    filters/filtersylpheed.h
+    filters/filterthebat.h
+    filters/filterbalsa.h
+    filters/filterevolution.h
+    filters/filtermbox.h
+    filters/filterplain.h
+    filterinfogui.h
+    othermailerutil.h
+    mailimporter_utils.h
+    importmailswidget.h
+    filterimporterbase.h
+    filters.h
+    mailimporter_private_export.h
+    filterinfo.h
     )
 
 
