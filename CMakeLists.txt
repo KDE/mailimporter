@@ -3,7 +3,7 @@ set(PIM_VERSION "5.19.40")
 
 project(MailImporter VERSION ${PIM_VERSION})
 
-set(KF5_MIN_VERSION "5.87.0")
+set(KF5_MIN_VERSION "5.88.0")
 
 find_package(ECM ${KF5_MIN_VERSION} CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
@@ -34,11 +34,11 @@ option(BUILD_QCH "Build API documentation in QCH format (for e.g. Qt Assistant, 
 add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)")
 
 
-set(AKONADIMIME_LIB_VERSION "5.18.80")
+set(AKONADIMIME_LIB_VERSION "5.19.40")
 set(QT_REQUIRED_VERSION "5.15.2")
-set(KMIME_LIB_VERSION "5.18.80")
-set(AKONADI_VERSION "5.18.80")
-set(PIMCOMMON_LIB_VERSION "5.18.80")
+set(KMIME_LIB_VERSION "5.19.40")
+set(AKONADI_VERSION "5.19.40")
+set(PIMCOMMON_LIB_VERSION "5.19.40")
 
 find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets Test Xml)
 
