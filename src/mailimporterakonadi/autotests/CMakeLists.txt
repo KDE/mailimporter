@@ -3,7 +3,7 @@ macro(add_mailimporterakonadi_unittest _source _additionalSource)
     ecm_add_test(${_source} ${_additionalSource}
         TEST_NAME ${_name}-akonadi
         NAME_PREFIX "mailimporterakonadi-"
-	LINK_LIBRARIES KF5::MailImporterAkonadi Qt::Test Qt::Core Qt::Gui Qt::Widgets
+        LINK_LIBRARIES KF5::MailImporterAkonadi Qt${QT_MAJOR_VERSION}::Test Qt${QT_MAJOR_VERSION}::Core Qt${QT_MAJOR_VERSION}::Gui Qt${QT_MAJOR_VERSION}::Widgets
     )
 endmacro ()
 

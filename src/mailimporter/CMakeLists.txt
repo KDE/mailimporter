@@ -38,7 +38,7 @@ install(EXPORT KF5MailImporterTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" F
 
 install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/mailimporter_version.h
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5} COMPONENT Devel
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF} COMPONENT Devel
     )
 
 
@@ -117,7 +117,7 @@ if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
 endif()
 generate_export_header( KF5MailImporter BASE_NAME mailimporter)
 
-target_include_directories(KF5MailImporter INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF5}/MailImporter/;${KDE_INSTALL_INCLUDEDIR_KF5}/mailimporter>")
+target_include_directories(KF5MailImporter INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/MailImporter/;${KDE_INSTALL_INCLUDEDIR_KF}/mailimporter>")
 target_include_directories(KF5MailImporter PUBLIC "$<BUILD_INTERFACE:${MailImporter_SOURCE_DIR}/src;${MailImporter_BINARY_DIR}/src;>")
 
 
@@ -128,8 +128,8 @@ target_link_libraries(KF5MailImporter
     KF5::PimCommon
     KF5::I18n
     KF5::ConfigCore
-    Qt::Xml
-    Qt::Widgets
+    Qt${QT_MAJOR_VERSION}::Xml
+    Qt${QT_MAJOR_VERSION}::Widgets
     )
 
 set_target_properties(KF5MailImporter PROPERTIES
@@ -187,14 +187,14 @@ ecm_generate_headers(MailImporter_FiltersCamelCase_HEADERS
 
 ecm_generate_pri_file(BASE_NAME MailImporter
     LIB_NAME KF5MailImporter
-    DEPS "KArchive" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/MailImporter
+    DEPS "KArchive" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF}/MailImporter
     )
 
 
 install(FILES
     ${MailImporter_CamelCase_HEADERS}
     ${MailImporter_FiltersCamelCase_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/MailImporter
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/MailImporter
     COMPONENT Devel
     )
 
@@ -202,7 +202,7 @@ install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/mailimporter_export.h
     ${MailImporter_HEADERS}
     ${MailImporter_Filters_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/mailimporter
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/mailimporter
     COMPONENT Devel
     )
 install(FILES
