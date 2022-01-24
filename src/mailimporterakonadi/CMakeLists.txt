@@ -59,7 +59,7 @@ generate_export_header( KF5MailImporterAkonadi BASE_NAME mailimporterakonadi)
 
 add_library(KF5::MailImporterAkonadi ALIAS KF5MailImporterAkonadi)
 
-target_include_directories(KF5MailImporterAkonadi INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/MailImporterAkonadi/;${KDE_INSTALL_INCLUDEDIR_KF}/mailimporterakonadi>")
+target_include_directories(KF5MailImporterAkonadi INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/MailImporterAkonadi/>")
 target_include_directories(KF5MailImporterAkonadi PUBLIC "$<BUILD_INTERFACE:${MailImporter_SOURCE_DIR}/src;${MailImporter_BINARY_DIR}/src;>")
 
 
@@ -101,14 +101,14 @@ ecm_generate_pri_file(BASE_NAME MailImporterAkonadi
 
 install(FILES
     ${MailImporter_AkonadiCamelCase_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/MailImporterAkonadi
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/MailImporterAkonadi/MailImporterAkonadi
     COMPONENT Devel
     )
 
 install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/mailimporterakonadi_export.h
     ${MailImporter_Akonadi_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/mailimporterakonadi
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/MailImporterAkonadi/mailimporterakonadi
     COMPONENT Devel
     )
 install(FILES

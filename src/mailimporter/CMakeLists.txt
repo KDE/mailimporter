@@ -117,7 +117,7 @@ if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
 endif()
 generate_export_header( KF5MailImporter BASE_NAME mailimporter)
 
-target_include_directories(KF5MailImporter INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/MailImporter/;${KDE_INSTALL_INCLUDEDIR_KF}/mailimporter>")
+target_include_directories(KF5MailImporter INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/MailImporter/>")
 target_include_directories(KF5MailImporter PUBLIC "$<BUILD_INTERFACE:${MailImporter_SOURCE_DIR}/src;${MailImporter_BINARY_DIR}/src;>")
 
 
@@ -194,7 +194,7 @@ ecm_generate_pri_file(BASE_NAME MailImporter
 install(FILES
     ${MailImporter_CamelCase_HEADERS}
     ${MailImporter_FiltersCamelCase_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/MailImporter
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/MailImporter/MailImporter
     COMPONENT Devel
     )
 
@@ -202,7 +202,7 @@ install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/mailimporter_export.h
     ${MailImporter_HEADERS}
     ${MailImporter_Filters_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/mailimporter
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/MailImporter/mailimporter
     COMPONENT Devel
     )
 install(FILES
