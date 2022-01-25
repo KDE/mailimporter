@@ -35,7 +35,7 @@ install(EXPORT KF5MailImporterAkonadiTargets DESTINATION "${CMAKECONFIG_INSTALL_
 
 install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/mailimporterakonadi_version.h
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF} COMPONENT Devel
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/MailImporterAkonadi COMPONENT Devel
     )
 
 target_sources(KF5MailImporterAkonadi PRIVATE
