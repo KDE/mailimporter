@@ -35,7 +35,7 @@ option(BUILD_QCH "Build API documentation in QCH format (for e.g. Qt Assistant, 
 add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)")
 
 
-set(AKONADIMIME_LIB_VERSION "5.19.40")
+set(AKONADIMIME_LIB_VERSION "5.19.41")
 set(QT_REQUIRED_VERSION "5.15.2")
 set(KMIME_LIB_VERSION "5.19.40")
 set(AKONADI_VERSION "5.19.40")

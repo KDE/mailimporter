@@ -12,8 +12,8 @@
 #include <Akonadi/ItemCreateJob>
 #include <Akonadi/ItemFetchJob>
 #include <Akonadi/ItemFetchScope>
-#include <Akonadi/KMime/MessageFlags>
-#include <Akonadi/KMime/MessageParts>
+#include <Akonadi/MessageFlags>
+#include <Akonadi/MessageParts>
 #include <KLocalizedString>
 #include <MailImporter/FilterInfo>
 #include <QFile>

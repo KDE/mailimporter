@@ -8,7 +8,7 @@
 
 #include "mailimporterakonadi_export.h"
 #include <Akonadi/Collection>
-#include <Akonadi/KMime/MessageStatus>
+#include <Akonadi/MessageStatus>
 #include <KMime/Message>
 #include <MailImporter/FilterImporterBase>
 #include <QString>
