@@ -27,4 +27,3 @@ protected:
     Q_REQUIRED_RESULT QString settingsPath() override;
 };
 }
-

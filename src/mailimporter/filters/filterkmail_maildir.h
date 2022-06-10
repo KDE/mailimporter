@@ -34,4 +34,3 @@ private:
     std::unique_ptr<FilterKMail_maildirPrivate> const d;
 };
 }
-

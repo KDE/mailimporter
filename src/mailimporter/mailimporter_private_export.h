@@ -16,4 +16,3 @@
 #else /* not compiling tests */
 #define MAILIMPORTER_TESTS_EXPORT
 #endif
-

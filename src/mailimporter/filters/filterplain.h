@@ -25,4 +25,3 @@ public:
     void importMails(const QString &mailDir);
 };
 }
-

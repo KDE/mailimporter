@@ -33,4 +33,3 @@ private:
     void ImportLNotes(const QString &file);
 };
 }
-

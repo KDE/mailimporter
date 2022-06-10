@@ -34,4 +34,3 @@ public:
     virtual QWidget *parent() const;
 };
 }
-

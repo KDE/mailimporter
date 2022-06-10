@@ -29,4 +29,3 @@ private:
     void importMBox(const QString &, const QString &, const QString &);
 };
 }
-

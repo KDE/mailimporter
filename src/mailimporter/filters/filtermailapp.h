@@ -32,4 +32,3 @@ private:
     void traverseDirectory(const QString &);
 };
 }
-

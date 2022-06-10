@@ -19,4 +19,3 @@ Q_REQUIRED_RESULT MAILIMPORTER_EXPORT QStringList isMailerFound();
 Q_REQUIRED_RESULT MAILIMPORTER_EXPORT QString nylasMailDefaultPath();
 }
 }
-

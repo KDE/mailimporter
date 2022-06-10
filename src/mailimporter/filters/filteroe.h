@@ -74,4 +74,3 @@ private:
     /** name of the chosen folder */
 };
 }
-

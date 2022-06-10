@@ -15,4 +15,3 @@ public:
     explicit FilterImporterAkonadiTest(QObject *parent = nullptr);
     ~FilterImporterAkonadiTest() = default;
 };
-

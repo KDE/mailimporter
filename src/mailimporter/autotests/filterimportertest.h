@@ -32,4 +32,3 @@ public:
 private:
     QVector<FilterImporterData> mFilterImporterDataList;
 };
-

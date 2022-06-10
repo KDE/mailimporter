@@ -34,4 +34,3 @@ private:
     std::unique_ptr<FilterEvolution_v3Private> const d;
 };
 }
-

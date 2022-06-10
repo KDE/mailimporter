@@ -13,7 +13,8 @@ namespace MailImporter
 /**
  * Glorified QString[N] for (a) understandability (b) older gcc compatibility.
  */
-template<unsigned int size> class FolderStructureBase
+template<unsigned int size>
+class FolderStructureBase
 {
 public:
     typedef QString NString[size];
@@ -78,4 +79,3 @@ private:
     QString d[size];
 };
 }
-

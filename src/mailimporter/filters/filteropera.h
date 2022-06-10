@@ -32,4 +32,3 @@ private:
     void importRecursive(const QDir &maildir, const QString &accountName = QString());
 };
 }
-

@@ -31,4 +31,3 @@ public:
     Q_REQUIRED_RESULT QString markFile() const override;
 };
 }
-

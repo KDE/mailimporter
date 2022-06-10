@@ -36,4 +36,3 @@ private:
     Q_REQUIRED_RESULT bool excludeFiles(const QString &file);
 };
 }
-
