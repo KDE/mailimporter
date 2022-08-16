@@ -2,7 +2,7 @@ add_definitions( -DMAILIMPORTER_DATA_DIR="${CMAKE_CURRENT_SOURCE_DIR}/samples/" 
 
 macro(add_mailimporter_unittest _source _additionalSource)
     get_filename_component(_name ${_source} NAME_WE)
-    ecm_add_test(${_source} ${_additionalSource}
+    ecm_add_test(${_source} ${_additionalSource} ${_name}.h
         TEST_NAME ${_name}
         NAME_PREFIX "mailimporter-"
         LINK_LIBRARIES KF5::MailImporter Qt${QT_MAJOR_VERSION}::Test Qt${QT_MAJOR_VERSION}::Core Qt${QT_MAJOR_VERSION}::Gui Qt${QT_MAJOR_VERSION}::Widgets
