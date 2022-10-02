@@ -1,0 +1,992 @@
+# Translation of libmailimporter to Norwegian Bokmål
+#
+# Knut Yrvin <knut.yrvin@gmail.com>, 2003, 2004.
+# Bjørn Steensrud <bjornst@skogkatt.homelinux.org>, 2003, 2008, 2009, 2010, 2012, 2013.
+# Eskild Hustvedt <zerodogg@skolelinux.no>, 2005.
+# Axel Bojer <fri_programvare@bojer.no>, 2005.
+# Nils Kristian Tomren <slx@nilsk.net>, 2005, 2007.
+# Lars Risan <lars.risan@tik.uio.no>, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: kmailcvt\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-10-10 00:19+0000\n"
+"PO-Revision-Date: 2013-09-30 12:12+0200\n"
+"Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
+"Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
+"Language: nb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#: mailimporter/filters/filterbalsa.cpp:22
+#, kde-format
+msgid "Import Balsa Local Mails and Folder Structure"
+msgstr "Importer lokale e-poster og mappestrukturen fra Balsa"
+
+#: mailimporter/filters/filterbalsa.cpp:24
+#, kde-format
+msgid ""
+"<p><b>Balsa import filter</b></p><p>Select the base directory of your local "
+"Balsa mailfolder (usually ~/mail/).</p><p>Since it is possible to recreate "
+"the folder structure, the folders will be stored under: \"Balsa-Import\".</p>"
+msgstr ""
+"<p><b>Importfilter for Balsa</b></p><p>Velg basismappe for din lokale Balsa-"
+"postmappe (vanligvis ~/mail/).</p><p>Siden det er mulig å gjenopprette "
+"mappestrukturen, vil mappene bli lagret under «Balsa-Import».</p>"
+
+#: mailimporter/filters/filterbalsa.cpp:39
+#, kde-format
+msgctxt "name of balsa application"
+msgid "Balsa"
+msgstr ""
+
+#: mailimporter/filters/filterbalsa.cpp:89
+#: mailimporter/filters/filterevolution.cpp:60
+#: mailimporter/filters/filterevolution_v2.cpp:85
+#: mailimporter/filters/filterevolution_v3.cpp:86
+#: mailimporter/filters/filterkmail_maildir.cpp:76
+#: mailimporter/filters/filteroe.cpp:58
+#: mailimporter/filters/filteropera.cpp:174
+#: mailimporter/filters/filterplain.cpp:41
+#: mailimporter/filters/filterpmail.cpp:45
+#: mailimporter/filters/filtersylpheed.cpp:125
+#: mailimporter/filters/filterthebat.cpp:73
+#: mailimporter/filters/filterthunderbird.cpp:169
+#, kde-format
+msgid "No directory selected."
+msgstr "Ingen mappe valgt"
+
+#: mailimporter/filters/filterbalsa.cpp:98
+#: mailimporter/filters/filterevolution.cpp:69
+#: mailimporter/filters/filterevolution_v2.cpp:94
+#: mailimporter/filters/filterevolution_v3.cpp:95
+#: mailimporter/filters/filterkmail_maildir.cpp:85
+#: mailimporter/filters/filteropera.cpp:182
+#: mailimporter/filters/filterplain.cpp:53
+#: mailimporter/filters/filtersylpheed.cpp:134
+#: mailimporter/filters/filterthebat.cpp:82
+#: mailimporter/filters/filterthunderbird.cpp:178
+#, kde-format
+msgid "No files found for import."
+msgstr "Ingen filer funnet for import"
+
+#: mailimporter/filters/filterbalsa.cpp:109
+#: mailimporter/filters/filterevolution.cpp:83
+#: mailimporter/filters/filterevolution_v2.cpp:127
+#: mailimporter/filters/filterevolution_v3.cpp:106
+#: mailimporter/filters/filterkmail_maildir.cpp:95
+#: mailimporter/filters/filtermailapp.cpp:124
+#: mailimporter/filters/filtermailmangzip.cpp:134
+#: mailimporter/filters/filtermbox.cpp:133
+#: mailimporter/filters/filteropera.cpp:141
+#: mailimporter/filters/filterplain.cpp:75
+#: mailimporter/filters/filterpmail.cpp:72
+#: mailimporter/filters/filtersylpheed.cpp:146
+#: mailimporter/filters/filterthebat.cpp:93
+#: mailimporter/filters/filterthunderbird.cpp:210
+#, kde-format
+msgid "Finished importing emails from %1"
+msgstr "Ferdig med å importere e-poster fra %1"
+
+#: mailimporter/filters/filterbalsa.cpp:112
+#: mailimporter/filters/filterevolution.cpp:205
+#: mailimporter/filters/filterevolution_v2.cpp:129
+#: mailimporter/filters/filterevolution_v3.cpp:109
+#: mailimporter/filters/filterkmail_maildir.cpp:97
+#: mailimporter/filters/filteropera.cpp:143
+#: mailimporter/filters/filterplain.cpp:77
+#: mailimporter/filters/filtersylpheed.cpp:148
+#: mailimporter/filters/filterthebat.cpp:95
+#: mailimporter/filters/filterthunderbird.cpp:212
+#, kde-format
+msgid "1 duplicate message not imported"
+msgid_plural "%1 duplicate messages not imported"
+msgstr[0] "1 duplikatmelding ble ikke importert"
+msgstr[1] "%1 duplikatmeldinger ble ikke importert"
+
+#: mailimporter/filters/filterbalsa.cpp:116
+#: mailimporter/filters/filterevolution_v2.cpp:132
+#: mailimporter/filters/filterevolution_v3.cpp:113
+#: mailimporter/filters/filterkmail_maildir.cpp:101
+#: mailimporter/filters/filtermailapp.cpp:136
+#: mailimporter/filters/filtermailmangzip.cpp:142
+#: mailimporter/filters/filtermbox.cpp:141
+#: mailimporter/filters/filteroe.cpp:108
+#: mailimporter/filters/filteropera.cpp:200
+#: mailimporter/filters/filterplain.cpp:80
+#: mailimporter/filters/filtersylpheed.cpp:152
+#: mailimporter/filters/filterthebat.cpp:99
+#: mailimporter/filters/filterthunderbird.cpp:216
+#, kde-format
+msgid "Finished import, canceled by user."
+msgstr "Ferdig å importere, avbrutt av brukeren."
+
+#: mailimporter/filters/filterbalsa.cpp:163
+#: mailimporter/filters/filterevolution_v3.cpp:160
+#, kde-format
+msgctxt "define folder name where we import evolution mails"
+msgid "Evolution-Import"
+msgstr "Evolution-mport"
+
+#: mailimporter/filters/filterbalsa.cpp:187
+#: mailimporter/filters/filterevolution_v3.cpp:184
+#: mailimporter/filters/filterkmail_maildir.cpp:169
+#: mailimporter/filters/filtersylpheed.cpp:230
+#: mailimporter/filters/filterthebat.cpp:209
+#, kde-format
+msgid "Import folder %1..."
+msgstr "Importer mappa %1 …"
+
+#: mailimporter/filters/filterbalsa.cpp:195
+#: mailimporter/filters/filterevolution.cpp:194
+#: mailimporter/filters/filterevolution_v2.cpp:260
+#: mailimporter/filters/filterevolution_v3.cpp:192
+#: mailimporter/filters/filterlnotes.cpp:127
+#: mailimporter/filters/filterlnotes.cpp:158
+#: mailimporter/filters/filtermailapp.cpp:107
+#: mailimporter/filters/filtermailmangzip.cpp:114
+#: mailimporter/filters/filtermbox.cpp:113
+#: mailimporter/filters/filteroe.cpp:212 mailimporter/filters/filteroe.cpp:388
+#: mailimporter/filters/filteropera.cpp:124
+#: mailimporter/filters/filterplain.cpp:65
+#: mailimporter/filters/filterpmail.cpp:115
+#: mailimporter/filters/filterpmail.cpp:194
+#: mailimporter/filters/filterpmail.cpp:262
+#: mailimporter/filters/filtersylpheed.cpp:244
+#: mailimporter/filters/filterthebat.cpp:229
+#: mailimporter/filters/filterthunderbird.cpp:344
+#, kde-format
+msgid "Could not import %1"
+msgstr "Kunne ikke importere %1"
+
+#: mailimporter/filters/filterclawsmail.cpp:22
+#, kde-format
+msgid "Import Claws-mail Maildirs and Folder Structure"
+msgstr "Importer e-post og mappestruktur fra Claws Mail"
+
+#: mailimporter/filters/filterclawsmail.cpp:25
+#, kde-format
+msgid ""
+"<p><b>Claws-mail import filter</b></p><p>Select the base directory of the "
+"Claws-mail mailfolder you want to import (usually: ~/Mail ).</p><p>Since it "
+"is possible to recreate the folder structure, the folders will be stored "
+"under: \"ClawsMail-Import\" in your local folder.</p><p>This filter also "
+"recreates the status of message, e.g. new or forwarded.</p>"
+msgstr ""
+"<p><b>Importfilter for Claws Mail</b></p> <p>Velg  basismappe for den  Claws-"
+"mail-mappa du vil importere (vanligvis ~/Mail).</p> <p>Siden det er mulig å "
+"gjenopprette mappestrukturen så vil mappene bli lagret under \"ClawsMail-"
+"Import\" i din lokale e-postmappe.</p> <p>Dette filteret opprettholder også "
+"statusen på meldingene, f.eks. Ny eller Videresendt.</p>"
+
+#: mailimporter/filters/filterclawsmail.cpp:42
+#, kde-format
+msgctxt "name of clawsMail application"
+msgid "ClawsMail"
+msgstr ""
+
+#: mailimporter/filters/filterclawsmail.cpp:98
+#, kde-format
+msgctxt "define folder name where we will import clawsmail mails"
+msgid "ClawsMail-Import"
+msgstr "ClawsMail-Import"
+
+#: mailimporter/filters/filterevolution.cpp:17
+#, kde-format
+msgid "Import Evolution 1.x Local Mails and Folder Structure"
+msgstr "Importer lokale e-poster og mappestrukturen fra Evolution 1.x"
+
+#: mailimporter/filters/filterevolution.cpp:18
+#, kde-format
+msgid "Simon MARTIN<br /><br />( Filter accelerated by Danny Kukawka )"
+msgstr ""
+
+#: mailimporter/filters/filterevolution.cpp:19
+#, kde-format
+msgid ""
+"<p><b>Evolution 1.x import filter</b></p><p>Select the base directory of "
+"Evolution's mails (usually ~/evolution/local).</p><p>Since it is possible to "
+"recreate the folder structure, the folders will be stored under: \"Evolution-"
+"Import\".</p>"
+msgstr ""
+"<p><b>Importfilter for Evolution 1.x</b></p><p>Velg din lokale Evolution-"
+"postmappe (vanligvis ~/.evolution/mail/local/).</p><p><b>Merk:</b> Aldri "
+"velg en mappe som <u>ikke</u> inneholder mbox-filer (for eksempel en "
+"maildir). Om du likevel gjør det vil du få mange nye mapper.</p><p>Siden det "
+"er mulig å gjenopprette mappestrukturen, vil mappene bli lagret under "
+"«Evolution-Import».</p>"
+
+#: mailimporter/filters/filterevolution.cpp:35
+#, kde-format
+msgctxt "name of evolution application"
+msgid "Evolution"
+msgstr ""
+
+#: mailimporter/filters/filterevolution.cpp:132
+#: mailimporter/filters/filterevolution_v2.cpp:192
+#: mailimporter/filters/filterlnotes.cpp:91
+#: mailimporter/filters/filtermailapp.cpp:67
+#: mailimporter/filters/filtermbox.cpp:58
+#: mailimporter/filters/filteropera.cpp:78
+#: mailimporter/filters/filterpmail.cpp:155
+#: mailimporter/filters/filterpmail.cpp:224
+#: mailimporter/filters/filterpmail.cpp:243
+#: mailimporter/filters/filterpmail.cpp:281
+#: mailimporter/filters/filterthebat.cpp:161
+#: mailimporter/filters/filterthunderbird.cpp:278
+#, kde-format
+msgid "Unable to open %1, skipping"
+msgstr "Klarte ikke åpne %1, hopper over"
+
+#: mailimporter/filters/filterevolution.cpp:157
+#: mailimporter/filters/filtermailapp.cpp:75
+#: mailimporter/filters/filtermailmangzip.cpp:64
+#: mailimporter/filters/filtermbox.cpp:64
+#: mailimporter/filters/filteropera.cpp:80
+#, kde-format
+msgid "Importing emails from %1..."
+msgstr "Importerer e-post fra %1 …"
+
+#: mailimporter/filters/filterevolution_v2.cpp:22
+#, kde-format
+msgid "Import Evolution 2.x Local Mails and Folder Structure"
+msgstr "Importer lokale e-poster og mappestruktur fra Evolution 2.x "
+
+#: mailimporter/filters/filterevolution_v2.cpp:24
+#, kde-format
+msgid ""
+"<p><b>Evolution 2.x import filter</b></p><p>Select the base directory of "
+"your local Evolution mailfolder (usually ~/.evolution/mail/local/).</"
+"p><p><b>Note:</b> Never choose a Folder which <u>does not</u> contain mbox-"
+"files (for example a maildir): if you do, you will get many new folders.</"
+"p><p>Since it is possible to recreate the folder structure, the folders will "
+"be stored under: \"Evolution-Import\".</p>"
+msgstr ""
+"<p><b>Importfilter for Evolution 2.x</b></p><p>Velg din lokale Evolution-e-"
+"postmappe (vanligvis ~/.evolution/mail/local/).</p><p><b>Merk:</b> Aldri "
+"velg en mappe som <u>ikke</u> inneholder mbox-filer (for eksempel en "
+"maildir). Hvis du gjør det vil du få mange nye mapper.</p><p>Siden det er "
+"mulig å gjenopprette mappestrukturen, vil mappene bli lagret under "
+"«Evolution-Import».</p>"
+
+#: mailimporter/filters/filterevolution_v2.cpp:42
+#, kde-format
+msgctxt "name of evolution application"
+msgid "Evolution (v2)"
+msgstr ""
+
+#: mailimporter/filters/filterevolution_v2.cpp:122
+#: mailimporter/filters/filterevolution_v2.cpp:161
+#: mailimporter/filters/filterthunderbird.cpp:205
+#: mailimporter/filters/filterthunderbird.cpp:244
+#, kde-format
+msgid "Start import file %1..."
+msgstr "Start import av fila %1 …"
+
+#: mailimporter/filters/filterevolution_v3.cpp:22
+#, kde-format
+msgid "Import Evolution 3.x Local Mails and Folder Structure"
+msgstr "Importer lokale e-poster og mappestrukturen fra Evolution 3.x"
+
+#: mailimporter/filters/filterevolution_v3.cpp:24
+#, kde-format
+msgid ""
+"<p><b>Evolution 3.x import filter</b></p><p>Select the base directory of "
+"your local Evolution mailfolder (usually ~/.local/share/evolution/mail/"
+"local/).</p><p>Since it is possible to recreate the folder structure, the "
+"folders will be stored under: \"Evolution-Import\".</p>"
+msgstr ""
+"<p><b>Importfilter for Evolution 3.x</b></p><p>Velg basismappe for din "
+"lokale Evolution-postmappe (vanligvis ~/.local/share/evolution/mail/local/)."
+"</p><p>Siden det er mulig å gjenopprette mappestrukturen, vil mappene bli "
+"lagret under «Evolution-Import».</p>"
+
+#: mailimporter/filters/filterevolution_v3.cpp:39
+#, kde-format
+msgctxt "name of evolution application"
+msgid "Evolution (v3)"
+msgstr ""
+
+#: mailimporter/filters/filtericedove.cpp:14
+#, kde-format
+msgid "Import Icedove Mails and Folder Structure"
+msgstr ""
+
+#: mailimporter/filters/filtericedove.cpp:17
+#, kde-format
+msgid ""
+"<p><b>Icedove import filter</b></p><p>Select your base Icedove mailfolder "
+"(usually ~/.icedove/*.default/Mail/Local Folders/).</p><p><b>Note:</b> Never "
+"choose a Folder which <u>does not</u> contain mbox-files (for example, a "
+"maildir): if you do, you will get many new folders.</p><p>Since it is "
+"possible to recreate the folder structure, the folders will be stored under: "
+"\"Icedove-Import\".</p>"
+msgstr ""
+
+#: mailimporter/filters/filtericedove.cpp:34
+#, kde-format
+msgctxt "name of icedove application"
+msgid "Icedove"
+msgstr ""
+
+#: mailimporter/filters/filterkmail_maildir.cpp:26
+#, kde-format
+msgid "Import KMail Maildirs and Folder Structure"
+msgstr "Importer e-post og mappestruktur fra KMail"
+
+#: mailimporter/filters/filterkmail_maildir.cpp:28
+#, kde-format
+msgid ""
+"<p><b>KMail import filter</b></p><p>Select the base directory of the KMail "
+"mailfolder you want to import.</p><p><b>Note:</b> Never select your current "
+"local KMail maildir (usually ~/Mail or ~/.kde/share/apps/kmail/mail ): in "
+"this case, ImportWizard may become stuck in a continuous loop. </p><p>This "
+"filter does not import KMail mailfolders with mbox files.</p><p>Since it is "
+"possible to recreate the folder structure, the folders will be stored under: "
+"\"KMail-Import\" in your local folder.</p>"
+msgstr ""
+
+#: mailimporter/filters/filterkmail_maildir.cpp:176
+#, kde-format
+msgid "Could not import %1, duplicated message"
+msgstr "Kunne ikke importere %1, duplisert melding"
+
+#: mailimporter/filters/filterkmailarchive.cpp:31
+#, kde-format
+msgid "Import KMail Archive File"
+msgstr "Importer KMail-arkivfil"
+
+#: mailimporter/filters/filterkmailarchive.cpp:33
+#, kde-format
+msgid ""
+"<p><b>KMail Archive File Import Filter</b></p><p>This filter will import "
+"archives files previously exported by KMail.</p><p>Archive files contain a "
+"complete folder subtree compressed into a single file.</p>"
+msgstr ""
+"<p><b>Importfilter for KMail-arkiv</b></p><p>Dette filteret importerer "
+"arkivfiler som tidligere er eksportert fra KMail.</p><p>Arkivfiler "
+"inneholder et fullstendig mappesubtre komprimert til en enkelt fil.</p>"
+
+#: mailimporter/filters/filterkmailarchive.cpp:71
+#, kde-format
+msgid "Importing folder '%1'..."
+msgstr "Importerer mappa «%1» …"
+
+#: mailimporter/filters/filterkmailarchive.cpp:97
+#, kde-format
+msgid "Unexpected subfolder %1 in folder %2."
+msgstr "Uventet undermappe %1 i mappa %2."
+
+#: mailimporter/filters/filterkmailarchive.cpp:101
+#, kde-format
+msgid "No subfolder named 'cur' in folder %1."
+msgstr "Det er ingen undermappe som heter «cur» i mappa %1."
+
+#: mailimporter/filters/filterkmailarchive.cpp:125
+#, kde-format
+msgid "Unexpected subdirectory named '%1'."
+msgstr "Uventet undermappe med navn «%1»."
+
+#: mailimporter/filters/filterkmailarchive.cpp:156
+#, kde-format
+msgid "Select KMail Archive File to Import"
+msgstr "Velg en KMail arkivfil som skal importeres"
+
+#: mailimporter/filters/filterkmailarchive.cpp:158
+#, kde-format
+msgid "KMail Archive Files "
+msgstr ""
+
+#: mailimporter/filters/filterkmailarchive.cpp:160
+#, kde-format
+msgid "Please select an archive file that should be imported."
+msgstr "Velg en arkivfil som skal importeres."
+
+#: mailimporter/filters/filterkmailarchive.cpp:169
+#, kde-format
+msgid "No archive selected."
+msgstr ""
+
+#: mailimporter/filters/filterkmailarchive.cpp:183
+#, kde-format
+msgid "The file '%1' does not appear to be a valid archive."
+msgstr "Fila «%1» ser ikke ut til å være et gyldig arkiv."
+
+#: mailimporter/filters/filterkmailarchive.cpp:188
+#, kde-format
+msgid "Unable to open archive file '%1'"
+msgstr "Klarer ikke å åpne arkivfila «%1»"
+
+#: mailimporter/filters/filterkmailarchive.cpp:193
+#, kde-format
+msgid "Counting files in archive..."
+msgstr "Teller filer i arkivet …"
+
+#: mailimporter/filters/filterkmailarchive.cpp:199
+#, kde-format
+msgid "Importing the archive file '%1' into the folder '%2' succeeded."
+msgstr "Fullført importering av arkivfila «%1» inn  i mappa «%2»."
+
+#: mailimporter/filters/filterkmailarchive.cpp:200
+#, kde-format
+msgid "1 message was imported."
+msgid_plural "%1 messages were imported."
+msgstr[0] "1 melding ble importert."
+msgstr[1] "%1 meldinger ble importert."
+
+#: mailimporter/filters/filterkmailarchive.cpp:202
+#, kde-format
+msgid "Importing the archive failed."
+msgstr "Det lyktes ikke å importere arkivet."
+
+#: mailimporter/filters/filterlnotes.cpp:30
+#, kde-format
+msgid "Import Lotus Notes Emails"
+msgstr "Importer e-post fra «Lotus Notes»"
+
+#: mailimporter/filters/filterlnotes.cpp:32
+#, kde-format
+msgid ""
+"<p><b>Lotus Notes Structured Text mail import filter</b></p><p>This filter "
+"will import Structure Text files from an exported Lotus Notes email client "
+"into KMail. Use this filter if you want to import mails from Lotus or other "
+"mailers that use Lotus Notes' Structured Text format.</p><p><b>Note:</b> "
+"Since it is possible to recreate the folder structure, the imported messages "
+"will be stored in subfolders named by the files they came from under: "
+"\"LNotes-Import\" in your local folder.</p>"
+msgstr ""
+"<p><b>Importfilter for e-post i strukturert tekst fra Lotus Notes</b></"
+"p><p>Dette filteret vil importere strukturerte tekstfiler fra en eksportert "
+"Lotus Notes e-postklient til KMail. Bruk dette filteret hvis du vil "
+"importere e-poster fra Lotus Notes eller andre e-postprogrammer som bruker "
+"Lotusformatet \"Strukturert tekstformat\" (Structured Text format).</"
+"p><p><b>Merk:</b> Siden det er mulig å gjenopprette mappestrukturen vil "
+"importerte meldinger havne i mapper under «LNotes-Import» i din lokale e-"
+"postmappe. Disse mappene vil få navn etter filene som e-postene kom fra</p>"
+
+#: mailimporter/filters/filterlnotes.cpp:52
+#, kde-format
+msgid "All Files (*)"
+msgstr "Alle filer (*)"
+
+#: mailimporter/filters/filterlnotes.cpp:54
+#: mailimporter/filters/filtermailapp.cpp:47
+#: mailimporter/filters/filtermailmangzip.cpp:42
+#: mailimporter/filters/filtermbox.cpp:45
+#, kde-format
+msgid "No files selected."
+msgstr "Ingen filer valgt."
+
+#: mailimporter/filters/filterlnotes.cpp:66
+#, kde-format
+msgid "Importing emails from %1"
+msgstr "Importerer e-post fra %1"
+
+#: mailimporter/filters/filterlnotes.cpp:100
+#, kde-format
+msgctxt "Define folder name where we import lotus note mails"
+msgid "LNotes-Import"
+msgstr "LNotes-importer"
+
+#: mailimporter/filters/filterlnotes.cpp:110
+#: mailimporter/filters/filterpmail.cpp:266
+#, kde-format
+msgid "Message %1"
+msgstr "Melding %1"
+
+#: mailimporter/filters/filtermailapp.cpp:28
+#, kde-format
+msgid "Import From OS X Mail"
+msgstr "Importer mapper fra «OS X Mail»"
+
+#: mailimporter/filters/filtermailapp.cpp:29
+#, kde-format
+msgid "Chris Howells<br /><br />Filter accelerated by Danny Kukawka )"
+msgstr ""
+
+#: mailimporter/filters/filtermailapp.cpp:30
+#, kde-format
+msgid ""
+"<p><b>OS X Mail Import Filter</b></p><p>This filter imports e-mails from the "
+"Mail client in Apple Mac OS X.</p>"
+msgstr ""
+"<p><b>Filter for import av meldinger fra OS X Mail</b></p> <p>Dette filteret "
+"importerer meldinger fra e-postklienten i Apple Max OS X.</p>"
+
+#: mailimporter/filters/filtermailapp.cpp:126
+#: mailimporter/filters/filtermailmangzip.cpp:136
+#: mailimporter/filters/filtermbox.cpp:135
+#, kde-format
+msgid "1 duplicate message not imported to folder %2 in KMail"
+msgid_plural "%1 duplicate messages not imported to folder %2 in KMail"
+msgstr[0] "1 duplikat melding ikke importert til mappa %2 i KMail"
+msgstr[1] "%1 duplikatmeldinger ble ikke importert til mappa %2 i KMail"
+
+#: mailimporter/filters/filtermailmangzip.cpp:19
+#, kde-format
+msgid "Import mailman gzip Files"
+msgstr "Importer gzip-filer fra mailman"
+
+#: mailimporter/filters/filtermailmangzip.cpp:21
+#, kde-format
+msgid ""
+"<p><b>mailman gzip import filter</b></p><p>This filter will import mailman "
+"gzipped files into KMail.</p><p><b>Note:</b> Emails will be imported into "
+"folders named after the file they came from, prefixed with MAILMAN-</p>"
+msgstr ""
+"<p><b>Importfilter for mailman gzip-filer</b></p><p>Dette filteret vil "
+"importere mailman-filer i gzip-format til KMail.</p><p><b>Merk:</b> E-poster "
+"blir importert til mapper som får navn etter den fila de kom fra og med "
+"forstavelsen MAILMAN-</p>"
+
+#: mailimporter/filters/filtermailmangzip.cpp:35
+#, kde-format
+msgid "gzip Files"
+msgstr ""
+
+#: mailimporter/filters/filtermailmangzip.cpp:55
+#, kde-format
+msgid "Unable to open archive file '%1', skipping"
+msgstr "Klarer ikke å åpne arkivfila «%1», hopper over den"
+
+#: mailimporter/filters/filtermbox.cpp:20
+#, kde-format
+msgid "Import mbox Files (UNIX, Evolution)"
+msgstr "Importer mbox-filer (Unix, Evolution)"
+
+#: mailimporter/filters/filtermbox.cpp:21
+#: mailimporter/filters/filterplain.cpp:19
+#, kde-format
+msgid "Laurence Anderson <p>( Filter accelerated by Danny Kukawka )</p>"
+msgstr "Laurence Anderson <p>( Filter gjort raskere av Danny Kukawka )</p>"
+
+#: mailimporter/filters/filtermbox.cpp:22
+#, kde-format
+msgid ""
+"<p><b>mbox import filter</b></p><p>This filter will import mbox files into "
+"KMail. Use this filter if you want to import mails from Ximian Evolution or "
+"other mailers that use this traditional UNIX format.</p><p><b>Note:</b> "
+"Emails will be imported into folders named after the file they came from, "
+"prefixed with MBOX-</p>"
+msgstr ""
+"<p><b>Importfilter for mbox</b></p><p>Dette filteret vil importere mbox-"
+"filer til KMail. Bruk dette filteret hvis du vil importere e-poster fra "
+"Ximian Evolution eller andre e-postprogrammer som bruker dette tradisjonelle "
+"UNIX-formatet.</p><p><b>Merk:</b> E-poster blir importert til mapper som får "
+"navn etter den fila de kom fra og med forstavelsen «MBOX-»</p>"
+
+#: mailimporter/filters/filtermbox.cpp:38
+#, kde-format
+msgid "mbox Files"
+msgstr ""
+
+#: mailimporter/filters/filteroe.cpp:32
+#, kde-format
+msgid "Import Outlook Express Emails"
+msgstr "Importer Outlook Express e-poster"
+
+#: mailimporter/filters/filteroe.cpp:33
+#, kde-format
+msgid "Laurence Anderson <br>( Filter enhanced by Danny Kukawka )</p>"
+msgstr "Laurence Anderson <br>( Filter forbedret av Danny Kukawka )</p>"
+
+#: mailimporter/filters/filteroe.cpp:34
+#, kde-format
+msgid ""
+"<p><b>Outlook Express 4/5/6 import filter</b></p><p>You will need to locate "
+"the folder where the mailbox has been stored by searching for .dbx or .mbx "
+"files under <ul><li><i>C:\\Windows\\Application Data</i> in Windows 9x</"
+"li><li><i>Documents and Settings</i> in Windows 2000 or later</li></ul></"
+"p><p><b>Note:</b> Since it is possible to recreate the folder structure, the "
+"folders from Outlook Express 5 and 6 will be stored under: \"OE-Import\" in "
+"your local folder.</p>"
+msgstr ""
+"<p><b>Importfilter for Outlook Express 4/5/6</b></p><p>Finn mappa der e-"
+"posten er lagret ved å søke etter: .dbx- eller .mbx-filer under <ul><li><i>C:"
+"\\Windows\\Application Data</i> i Windows 9x</li><li><i>Documents and "
+"Settings</i> i Windows 2000 eller senere</li></ul></p> <p><b>Merk:</b>Siden "
+"det er mulig å gjenopprette mappestrukturen vil mapper fra Outlook Express 5 "
+"og 6 bli lagret under \"OE-Import\" i din lokale e-postmappe.</p>"
+
+#: mailimporter/filters/filteroe.cpp:66
+#, kde-format
+msgid "No Outlook Express mailboxes found in directory %1."
+msgstr "Fant ingen postkasser for Outlook Express i mappa %1."
+
+#: mailimporter/filters/filteroe.cpp:82
+#, kde-format
+msgid "Import folder structure..."
+msgstr "Importer mappestrukturen …"
+
+#: mailimporter/filters/filteroe.cpp:106
+#, kde-format
+msgid "Finished importing Outlook Express emails"
+msgstr "Ferdig å importere e-post fra Outlook Express"
+
+#: mailimporter/filters/filteroe.cpp:126
+#, kde-format
+msgid "Unable to open mailbox %1"
+msgstr "Klarer ikke åpne postboksen %1"
+
+#: mailimporter/filters/filteroe.cpp:138
+#, kde-format
+msgid "Importing OE4 Mailbox %1"
+msgstr "Importerer OE4-postboksen %1"
+
+#: mailimporter/filters/filteroe.cpp:155
+#, kde-format
+msgid "Importing OE5+ Mailbox %1"
+msgstr "Importerer OE5+-postboksen %1"
+
+#: mailimporter/filters/filteroe.cpp:161
+#, kde-format
+msgid "Importing OE5+ Folder file %1"
+msgstr "Importerer mappefila %1 fra OE5+"
+
+#: mailimporter/filters/filteropera.cpp:19
+#, kde-format
+msgid "Import Opera Emails"
+msgstr "Importer e-post fra Opera"
+
+#: mailimporter/filters/filteropera.cpp:21
+#, kde-format
+msgid ""
+"<p><b>Opera email import filter</b></p><p>This filter will import mails from "
+"Opera mail folder. Use this filter if you want to import all mails within a "
+"account in the Opera maildir.</p><p>Select the directory of the account "
+"(usually ~/.opera/mail/store/account*).</p><p><b>Note:</b> Emails will be "
+"imported into a folder named after the account they came from, prefixed with "
+"OPERA-</p>"
+msgstr ""
+"<p><b>Importfilter for Opera</b></p><p>Dette filteret vil importere e-poster "
+"fra Opera. Bruk dette filteret hvis du vil importere alle e-postene fra en "
+"konto i Operas «maildir»-mappe.</p><p>Velg konto-mappa (vanligvis ~/.opera/"
+"mail/store/account*).</p><p><b>Merk:</b> E-poster vil bli importert til en "
+"mappe som får navn etter kontoen de kom fra og med forstavelsen «OPERA-»</p>"
+
+#: mailimporter/filters/filteropera.cpp:38
+#, kde-format
+msgctxt "name of opera application"
+msgid "Opera"
+msgstr ""
+
+#: mailimporter/filters/filteropera.cpp:72
+#: mailimporter/filters/filterplain.cpp:55
+#, kde-format
+msgid "Importing new mail files..."
+msgstr "Importerer nye e-postfiler …"
+
+#: mailimporter/filters/filteropera.cpp:190
+#: mailimporter/filters/filterplain.cpp:50
+#: mailimporter/filters/filterpmail.cpp:51
+#, kde-format
+msgid "Counting files..."
+msgstr "Teller filer …"
+
+#: mailimporter/filters/filterplain.cpp:18
+#, kde-format
+msgid "Import Plain Text Emails"
+msgstr "Importer e-post i ren tekst"
+
+#: mailimporter/filters/filterplain.cpp:20
+#, kde-format
+msgid ""
+"<p>Select the directory containing the emails on your system. The emails are "
+"placed in a folder with the same name as the directory they were in, "
+"prefixed by PLAIN-</p><p>This filter will import all .msg, .eml and .txt "
+"emails.</p>"
+msgstr ""
+"<p>Velg mappa som inneholder e-posten din på systemet. E-postene er plassert "
+"i en mappe med samme navnet som mappa de var i med forstavelsen «PLAIN-»</"
+"p><p>Dette filteret importerer alle .msg, .eml og .txt e-poster.</p>"
+
+#: mailimporter/filters/filterpmail.cpp:22
+#, kde-format
+msgid "Import Folders From Pegasus-Mail"
+msgstr "Importer mapper fra Pegasus-e-post"
+
+#: mailimporter/filters/filterpmail.cpp:23
+#, kde-format
+msgid "Holger Schurig <br>( rewritten by Danny Kukawka )"
+msgstr "Holger Schurig <br>( omskrevet av Danny Kukawka )"
+
+#: mailimporter/filters/filterpmail.cpp:24
+#, kde-format
+msgid ""
+"<p>Select the Pegasus-Mail directory on your system (containing *.CNM, *.PMM "
+"and *.MBX files). On many systems this is stored in C:\\pmail\\mail or C:"
+"\\pmail\\mail\\admin</p><p><b>Note:</b> Since it is possible to recreate the "
+"folder structure, the folders will be stored under: \"PegasusMail-Import\".</"
+"p>"
+msgstr ""
+"<p>Velg mappa for Pegasus-e-post på systemet (som inneholder *.CNM, *.PMM og "
+"*.MBX-filer). På mange systemer er disse lagret i C:\\Pmail\\mail eller C:"
+"\\pmail\\mail\\admin </p><p><b>Merk:</b> Siden det er mulig å importere "
+"mappestrukturen vil mappene bli lagret under «PegasusMail-Import».</p>"
+
+#: mailimporter/filters/filterpmail.cpp:62
+#, kde-format
+msgid ""
+"Cannot parse the folder structure; continuing import without subfolder "
+"support."
+msgstr ""
+"Klarte ikke å tolke mappestrukturen; fortsetter importeringa uten støtte for "
+"undermapper."
+
+#: mailimporter/filters/filterpmail.cpp:65
+#, kde-format
+msgid "Importing new mail files ('.cnm')..."
+msgstr "Importerer filer med ny e-post («.cnm») …"
+
+#: mailimporter/filters/filterpmail.cpp:67
+#, kde-format
+msgid "Importing mail folders ('.pmm')..."
+msgstr "Importerer postmapper («.pmm») …"
+
+#: mailimporter/filters/filterpmail.cpp:69
+#, kde-format
+msgid "Importing 'UNIX' mail folders ('.mbx')..."
+msgstr "Importerer «UNIX» e-postmapper («.mbx») …"
+
+#: mailimporter/filters/filterpmail.cpp:159
+#, kde-format
+msgctxt "define folder name when we will import pegasus mail"
+msgid "PegasusMail-Import"
+msgstr "PegasusMail-Import"
+
+#: mailimporter/filters/filterpmail.cpp:166
+#: mailimporter/filters/filterpmail.cpp:245
+#, kde-format
+msgid "Importing %1"
+msgstr "Importerer %1"
+
+#: mailimporter/filters/filterpmail.cpp:277
+#, kde-format
+msgid "Parsing the folder structure..."
+msgstr "Tolker mappestrukturen …"
+
+#: mailimporter/filters/filterseamonkey.cpp:14
+#, kde-format
+msgid "Import SeaMonkey Mails and Folder Structure"
+msgstr ""
+
+#: mailimporter/filters/filterseamonkey.cpp:17
+#, kde-format
+msgid ""
+"<p><b>SeaMonkey import filter</b></p><p>Select your base SeaMonkey "
+"mailfolder (usually ~/.icedove/*.default/Mail/Local Folders/).</p><p><b>Note:"
+"</b> Never choose a Folder which <u>does not</u> contain mbox-files (for "
+"example, a maildir): if you do, you will get many new folders.</p><p>Since "
+"it is possible to recreate the folder structure, the folders will be stored "
+"under: \"SeaMonkey-Import\".</p>"
+msgstr ""
+
+#: mailimporter/filters/filtersylpheed.cpp:28
+#, kde-format
+msgid "Import Sylpheed Maildirs and Folder Structure"
+msgstr "Importer e-post og mappestruktur fra Sylpheeds «Maildir»"
+
+#: mailimporter/filters/filtersylpheed.cpp:30
+#, kde-format
+msgid ""
+"<p><b>Sylpheed import filter</b></p><p>Select the base directory of the "
+"Sylpheed mailfolder you want to import (usually: ~/Mail ).</p><p>Since it is "
+"possible to recreate the folder structure, the folders will be stored under: "
+"\"Sylpheed-Import\" in your local folder.</p><p>This filter also recreates "
+"the status of message, e.g. new or forwarded.</p>"
+msgstr ""
+"<p><b>Importfilter for Sylpheed</b></p> <p>Velg hvilken mappe du vil legge "
+"Sylpheeds «maildir» i (vanligvis ~/Mail).</p> <p>Siden det er mulig å "
+"gjenopprette mappestrukturen så vil mappene bli lagret under \"Sylpheed-"
+"Import\" i din lokale e-postmappe.</p> <p>Dette filteret opprettholder også "
+"statusen på meldingene, f.eks. Ny eller Videresendt.</p>"
+
+#: mailimporter/filters/filtersylpheed.cpp:47
+#, kde-format
+msgctxt "name of sylpheed application"
+msgid "Sylpheed"
+msgstr ""
+
+#: mailimporter/filters/filtersylpheed.cpp:187
+#, kde-format
+msgctxt "define folder name where we will import sylpheed mails"
+msgid "Sylpheed-Import"
+msgstr "Sylpheed-import"
+
+#: mailimporter/filters/filterthebat.cpp:28
+#, kde-format
+msgid "Import The Bat! Mails and Folder Structure"
+msgstr "Importer e-post-meldinger og mappestruktur fra «The Bat!»"
+
+#: mailimporter/filters/filterthebat.cpp:30
+#, kde-format
+msgid ""
+"<p><b>The Bat! import filter</b></p><p>Select the base directory of the 'The "
+"Bat!' local mailfolder you want to import.</p><p><b>Note:</b> This filter "
+"imports the *.tbb-files from 'The Bat!' local folder, e.g. from POP "
+"accounts, and not from IMAP/DIMAP accounts.</p><p>Since it is possible to "
+"recreate the folder structure, the folders will be stored under: \"TheBat-"
+"Import\" in your local account.</p>"
+msgstr ""
+"<p><b>Importfilter for The Bat!</b></p><p>Velg bunnmappa til de e-"
+"postmeldingene i «The Bat!» du vil importere.</p><p><b>Merk.</b>  Dette "
+"filteret importerer *.tbb-filer fra e-postmappene i «The Bat!», det vil si "
+"fra POP-kontoen og ikke fra IMAP/DIMAP-kontoen.</p><p>Siden det er mulig å "
+"gjenopprette mappestrukturen så vil mappene bli lagret under «The Bat."
+"import» i din lokale e-postmappe.</p>"
+
+#: mailimporter/filters/filterthebat.cpp:204
+#, kde-format
+msgctxt "Define folder where we will import thebat mails"
+msgid "TheBat-Import"
+msgstr "TheBat-import"
+
+#: mailimporter/filters/filterthunderbird.cpp:24
+#, kde-format
+msgid "Import Thunderbird/Mozilla Local Mails and Folder Structure"
+msgstr "Importer lokale meldinger og mappestruktur fra Thunderbird/Mozilla"
+
+#: mailimporter/filters/filterthunderbird.cpp:26
+#, kde-format
+msgid ""
+"<p><b>Thunderbird/Mozilla import filter</b></p><p>Select your base "
+"Thunderbird/Mozilla mailfolder (usually ~/.thunderbird/*.default/Mail/Local "
+"Folders/).</p><p><b>Note:</b> Never choose a Folder which <u>does not</u> "
+"contain mbox-files (for example, a maildir): if you do, you will get many "
+"new folders.</p><p>Since it is possible to recreate the folder structure, "
+"the folders will be stored under: \"Thunderbird-Import\".</p>"
+msgstr ""
+"<p><b>Importfilter for Thunderbird/Mozilla</b></p><p>Velg din Thunderbird/"
+"Mozilla postmappe (vanligvis ~/thunderbird/*.default/Mail/Local Folders/).</"
+"p><p><b>Merk:</b> Aldri velg en mappe som <u>ikke</u> inneholder mbox-filer "
+"(for eksempel «maildir»). Hvis du likevel gjør det vil du få mange nye "
+"mapper.</p><p>Siden det er mulig å gjenopprette mappestrukturen, vil mappa "
+"bli lagret under «Thunderbird-Import»</p>"
+
+#: mailimporter/filters/filterthunderbird.cpp:58
+#, kde-format
+msgctxt "name of thunderbird application"
+msgid "Thunderbird"
+msgstr ""
+
+#: mailimporter/othermailerutil.cpp:18
+#, kde-format
+msgctxt "name of trojira application"
+msgid "Trojita"
+msgstr ""
+
+#: mailimporter/othermailerutil.cpp:22 mailimporter/othermailerutil.cpp:26
+#, kde-format
+msgctxt "name of geary application"
+msgid "Geary"
+msgstr ""
+
+#: mailimporter/selectthunderbirdprofilewidget.cpp:20
+#, kde-format
+msgctxt "@title:window"
+msgid "Select thunderbird profile"
+msgstr ""
+
+#: mailimporter/selectthunderbirdprofilewidget.cpp:70
+#, kde-format
+msgid " (default)"
+msgstr " (standard)"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
+#: mailimporter/ui/importmailswidget.ui:27
+#, kde-format
+msgid "From:"
+msgstr "Fra:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: mailimporter/ui/importmailswidget.ui:37
+#, kde-format
+msgid "To:"
+msgstr "Til:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#: mailimporter/ui/importmailswidget.ui:47
+#, kde-format
+msgid "Current:"
+msgstr "Gjeldende:"
+
+#. i18n: ectx: property (text), widget (QLabel, textStatus)
+#: mailimporter/ui/importmailswidget.ui:57
+#, kde-format
+msgid "Importing in progress..."
+msgstr "Importerer …"
+
+#. i18n: ectx: property (text), widget (QLabel, current)
+#. i18n: ectx: property (text), widget (QLabel, to)
+#. i18n: ectx: property (text), widget (QLabel, from)
+#: mailimporter/ui/importmailswidget.ui:76
+#: mailimporter/ui/importmailswidget.ui:92
+#: mailimporter/ui/importmailswidget.ui:118
+#, kde-format
+msgid "..."
+msgstr " …"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel4)
+#: mailimporter/ui/importmailswidget.ui:102
+#, kde-format
+msgid "Total:"
+msgstr "Totalt:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: mailimporter/ui/selectthunderbirdprofilewidget.ui:17
+#, kde-format
+msgid "Select Profile:"
+msgstr "Velg profil:"
+
+#: mailimporterakonadi/filterimporterakonadi.cpp:94
+#, kde-format
+msgid "Error: failed to read temporary file at %1"
+msgstr "Feil: Klarte ikke å lese midlertidig fil ved %1"
+
+#: mailimporterakonadi/filterimporterakonadi.cpp:123
+#, kde-format
+msgid "<b>Warning:</b> Got a bad message folder, adding to root folder."
+msgstr ""
+"<b>Advarsel:</b> Fant en ugyldig meldingsmappe, legger den til rotmappa."
+
+#: mailimporterakonadi/filterimporterakonadi.cpp:168
+#, kde-format
+msgid ""
+"<b>Warning:</b> Could not check that the folder already exists. Reason: %1"
+msgstr ""
+"<b>Advarsel:</b>Klarte ikke se etter om mappa finnes fra før. Årsak: %1"
+
+#: mailimporterakonadi/filterimporterakonadi.cpp:185
+#, kde-format
+msgid "<b>Error:</b> Could not create folder. Reason: %1"
+msgstr "<b>Feil:</b> Klarte ikke opprette mappe. Årsak: %1."
+
+#: mailimporterakonadi/filterimporterakonadi.cpp:213
+#, kde-format
+msgid ""
+"<b>Warning:</b> Could not fetch mail in folder %1. Reason: %2 You may have "
+"duplicate messages."
+msgstr ""
+"<b>Advarsel:</b> Klarte ikke hente e-post i mappe %1. Årsak: %2  Du har "
+"muligens dupliserte meldinger."
+
+#: mailimporterakonadi/filterimporterakonadi.cpp:221
+#, kde-format
+msgid "<b>Warning:</b> Got an invalid message in folder %1."
+msgstr "<b>Advarsel:</b> Fant en ugyldig melding i mappa %1."
+
+#: mailimporterakonadi/filterimporterakonadi.cpp:275
+#, kde-format
+msgid "<b>Error:</b> Could not add message to folder %1. Reason: %2"
+msgstr "<b>Feil:</b> Klarte ikke legge til melding i mappa %1. Årsak: %2"
+
+#: mailimporterakonadi/filterimporterakonadi.cpp:295
+#, kde-format
+msgid "Unable to retrieve folder for folder path %1."
+msgstr "Klarte ikke å hente en mappe for mappestien %1."

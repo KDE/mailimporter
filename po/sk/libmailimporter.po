@@ -1,0 +1,1012 @@
+# translation of libmailimporter.po to Slovak
+# Stanislav Visnovsky <visnovsky@nenya.ms.mff.cuni.cz>, 2000.
+# Pavol Cvengros <orpheus@hq.alert.sk>, 2003.
+# Stanislav Visnovsky <visnovsky@kde.org>, 2003, 2004.
+# Richard Fric <Richard.Fric@kdemail.net>, 2006, 2009, 2010.
+# Roman Paholík <wizzardsk@gmail.com>, 2012, 2013, 2015, 2017, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: libmailimporter\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-10-10 00:19+0000\n"
+"PO-Revision-Date: 2022-04-09 19:27+0200\n"
+"Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
+"Language-Team: Slovak <kde-sk@linux.sk>\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 21.12.3\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: mailimporter/filters/filterbalsa.cpp:22
+#, kde-format
+msgid "Import Balsa Local Mails and Folder Structure"
+msgstr "Importovať miestne správy Balsa a štruktúru priečinkov"
+
+#: mailimporter/filters/filterbalsa.cpp:24
+#, kde-format
+msgid ""
+"<p><b>Balsa import filter</b></p><p>Select the base directory of your local "
+"Balsa mailfolder (usually ~/mail/).</p><p>Since it is possible to recreate "
+"the folder structure, the folders will be stored under: \"Balsa-Import\".</p>"
+msgstr ""
+"<p><b>Balsa importovací filter</b></p><p>Vyberte základný priečinok pre "
+"správy Balsa (zvyčajne ~/mail/).</p><p>Vzhľadom na to, že štruktúra "
+"priečinkov sa dá znova vytvoriť, priečinky budú uložené pod: \"Balsa-Import"
+"\".</p>"
+
+#: mailimporter/filters/filterbalsa.cpp:39
+#, kde-format
+msgctxt "name of balsa application"
+msgid "Balsa"
+msgstr "Balsa"
+
+#: mailimporter/filters/filterbalsa.cpp:89
+#: mailimporter/filters/filterevolution.cpp:60
+#: mailimporter/filters/filterevolution_v2.cpp:85
+#: mailimporter/filters/filterevolution_v3.cpp:86
+#: mailimporter/filters/filterkmail_maildir.cpp:76
+#: mailimporter/filters/filteroe.cpp:58
+#: mailimporter/filters/filteropera.cpp:174
+#: mailimporter/filters/filterplain.cpp:41
+#: mailimporter/filters/filterpmail.cpp:45
+#: mailimporter/filters/filtersylpheed.cpp:125
+#: mailimporter/filters/filterthebat.cpp:73
+#: mailimporter/filters/filterthunderbird.cpp:169
+#, kde-format
+msgid "No directory selected."
+msgstr "Nebol vybraný žiaden priečinok."
+
+#: mailimporter/filters/filterbalsa.cpp:98
+#: mailimporter/filters/filterevolution.cpp:69
+#: mailimporter/filters/filterevolution_v2.cpp:94
+#: mailimporter/filters/filterevolution_v3.cpp:95
+#: mailimporter/filters/filterkmail_maildir.cpp:85
+#: mailimporter/filters/filteropera.cpp:182
+#: mailimporter/filters/filterplain.cpp:53
+#: mailimporter/filters/filtersylpheed.cpp:134
+#: mailimporter/filters/filterthebat.cpp:82
+#: mailimporter/filters/filterthunderbird.cpp:178
+#, kde-format
+msgid "No files found for import."
+msgstr "Nenájdené žiadne súbory na import."
+
+#: mailimporter/filters/filterbalsa.cpp:109
+#: mailimporter/filters/filterevolution.cpp:83
+#: mailimporter/filters/filterevolution_v2.cpp:127
+#: mailimporter/filters/filterevolution_v3.cpp:106
+#: mailimporter/filters/filterkmail_maildir.cpp:95
+#: mailimporter/filters/filtermailapp.cpp:124
+#: mailimporter/filters/filtermailmangzip.cpp:134
+#: mailimporter/filters/filtermbox.cpp:133
+#: mailimporter/filters/filteropera.cpp:141
+#: mailimporter/filters/filterplain.cpp:75
+#: mailimporter/filters/filterpmail.cpp:72
+#: mailimporter/filters/filtersylpheed.cpp:146
+#: mailimporter/filters/filterthebat.cpp:93
+#: mailimporter/filters/filterthunderbird.cpp:210
+#, kde-format
+msgid "Finished importing emails from %1"
+msgstr "Dokončený prevod pošty z %1"
+
+#: mailimporter/filters/filterbalsa.cpp:112
+#: mailimporter/filters/filterevolution.cpp:205
+#: mailimporter/filters/filterevolution_v2.cpp:129
+#: mailimporter/filters/filterevolution_v3.cpp:109
+#: mailimporter/filters/filterkmail_maildir.cpp:97
+#: mailimporter/filters/filteropera.cpp:143
+#: mailimporter/filters/filterplain.cpp:77
+#: mailimporter/filters/filtersylpheed.cpp:148
+#: mailimporter/filters/filterthebat.cpp:95
+#: mailimporter/filters/filterthunderbird.cpp:212
+#, kde-format
+msgid "1 duplicate message not imported"
+msgid_plural "%1 duplicate messages not imported"
+msgstr[0] "1 duplicitná správa nebola importovaná"
+msgstr[1] "%1 duplicitné správy neboli importované"
+msgstr[2] "%1 duplicitných správ nebolo importovaných"
+
+#: mailimporter/filters/filterbalsa.cpp:116
+#: mailimporter/filters/filterevolution_v2.cpp:132
+#: mailimporter/filters/filterevolution_v3.cpp:113
+#: mailimporter/filters/filterkmail_maildir.cpp:101
+#: mailimporter/filters/filtermailapp.cpp:136
+#: mailimporter/filters/filtermailmangzip.cpp:142
+#: mailimporter/filters/filtermbox.cpp:141
+#: mailimporter/filters/filteroe.cpp:108
+#: mailimporter/filters/filteropera.cpp:200
+#: mailimporter/filters/filterplain.cpp:80
+#: mailimporter/filters/filtersylpheed.cpp:152
+#: mailimporter/filters/filterthebat.cpp:99
+#: mailimporter/filters/filterthunderbird.cpp:216
+#, kde-format
+msgid "Finished import, canceled by user."
+msgstr "Import ukončený, zrušený užívateľom."
+
+#: mailimporter/filters/filterbalsa.cpp:163
+#: mailimporter/filters/filterevolution_v3.cpp:160
+#, kde-format
+msgctxt "define folder name where we import evolution mails"
+msgid "Evolution-Import"
+msgstr "Evolution-Import"
+
+#: mailimporter/filters/filterbalsa.cpp:187
+#: mailimporter/filters/filterevolution_v3.cpp:184
+#: mailimporter/filters/filterkmail_maildir.cpp:169
+#: mailimporter/filters/filtersylpheed.cpp:230
+#: mailimporter/filters/filterthebat.cpp:209
+#, kde-format
+msgid "Import folder %1..."
+msgstr "Importovať priečinok %1..."
+
+#: mailimporter/filters/filterbalsa.cpp:195
+#: mailimporter/filters/filterevolution.cpp:194
+#: mailimporter/filters/filterevolution_v2.cpp:260
+#: mailimporter/filters/filterevolution_v3.cpp:192
+#: mailimporter/filters/filterlnotes.cpp:127
+#: mailimporter/filters/filterlnotes.cpp:158
+#: mailimporter/filters/filtermailapp.cpp:107
+#: mailimporter/filters/filtermailmangzip.cpp:114
+#: mailimporter/filters/filtermbox.cpp:113
+#: mailimporter/filters/filteroe.cpp:212 mailimporter/filters/filteroe.cpp:388
+#: mailimporter/filters/filteropera.cpp:124
+#: mailimporter/filters/filterplain.cpp:65
+#: mailimporter/filters/filterpmail.cpp:115
+#: mailimporter/filters/filterpmail.cpp:194
+#: mailimporter/filters/filterpmail.cpp:262
+#: mailimporter/filters/filtersylpheed.cpp:244
+#: mailimporter/filters/filterthebat.cpp:229
+#: mailimporter/filters/filterthunderbird.cpp:344
+#, kde-format
+msgid "Could not import %1"
+msgstr "Nie je možné importovať %1"
+
+#: mailimporter/filters/filterclawsmail.cpp:22
+#, kde-format
+msgid "Import Claws-mail Maildirs and Folder Structure"
+msgstr "Import mailové priečinky Claws-mail a štruktúry priečinkov"
+
+#: mailimporter/filters/filterclawsmail.cpp:25
+#, kde-format
+msgid ""
+"<p><b>Claws-mail import filter</b></p><p>Select the base directory of the "
+"Claws-mail mailfolder you want to import (usually: ~/Mail ).</p><p>Since it "
+"is possible to recreate the folder structure, the folders will be stored "
+"under: \"ClawsMail-Import\" in your local folder.</p><p>This filter also "
+"recreates the status of message, e.g. new or forwarded.</p>"
+msgstr ""
+"<p><b>Claws-mail importovací filter</b></p><p>Vyberte základný priečinok "
+"pošty Claws-mail na importovanie (zvyčajne ~/Mail).</p><p>Vzhľadom na to, že "
+"štruktúra priečinkov sa dá znova vytvoriť, priečinky budú uložené pod: "
+"\"ClawsMail-Import\" vo vašom priečinku.</p><p>Tento filter tiež vytvorí "
+"stav správ, napr. nová alebo preposlaná.</p>"
+
+#: mailimporter/filters/filterclawsmail.cpp:42
+#, kde-format
+msgctxt "name of clawsMail application"
+msgid "ClawsMail"
+msgstr "ClawsMail"
+
+#: mailimporter/filters/filterclawsmail.cpp:98
+#, kde-format
+msgctxt "define folder name where we will import clawsmail mails"
+msgid "ClawsMail-Import"
+msgstr "ClawsMail-Import"
+
+#: mailimporter/filters/filterevolution.cpp:17
+#, kde-format
+msgid "Import Evolution 1.x Local Mails and Folder Structure"
+msgstr "Import lokálnych správ Evolution a štruktúry priečinkov"
+
+#: mailimporter/filters/filterevolution.cpp:18
+#, kde-format
+msgid "Simon MARTIN<br /><br />( Filter accelerated by Danny Kukawka )"
+msgstr "Simon MARTIN<br /><br />(Filter zrýchlil Danny Kukawka)"
+
+#: mailimporter/filters/filterevolution.cpp:19
+#, kde-format
+msgid ""
+"<p><b>Evolution 1.x import filter</b></p><p>Select the base directory of "
+"Evolution's mails (usually ~/evolution/local).</p><p>Since it is possible to "
+"recreate the folder structure, the folders will be stored under: \"Evolution-"
+"Import\".</p>"
+msgstr ""
+"<p><b>Evolution 1.x importovací filter</b></p><p>Vyberte základný priečinok "
+"pre správy Evolution (zvyčajne ~/evolution/local).</p> <p>Vzhľadom na to, že "
+"štruktúra priečinkov sa dá znova vytvoriť, priečinky budú uložené pod: "
+"\"Evolution-Import\".</p>"
+
+#: mailimporter/filters/filterevolution.cpp:35
+#, kde-format
+msgctxt "name of evolution application"
+msgid "Evolution"
+msgstr "Evolution"
+
+#: mailimporter/filters/filterevolution.cpp:132
+#: mailimporter/filters/filterevolution_v2.cpp:192
+#: mailimporter/filters/filterlnotes.cpp:91
+#: mailimporter/filters/filtermailapp.cpp:67
+#: mailimporter/filters/filtermbox.cpp:58
+#: mailimporter/filters/filteropera.cpp:78
+#: mailimporter/filters/filterpmail.cpp:155
+#: mailimporter/filters/filterpmail.cpp:224
+#: mailimporter/filters/filterpmail.cpp:243
+#: mailimporter/filters/filterpmail.cpp:281
+#: mailimporter/filters/filterthebat.cpp:161
+#: mailimporter/filters/filterthunderbird.cpp:278
+#, kde-format
+msgid "Unable to open %1, skipping"
+msgstr "Nie je možné otvoriť %1, preskakujem"
+
+#: mailimporter/filters/filterevolution.cpp:157
+#: mailimporter/filters/filtermailapp.cpp:75
+#: mailimporter/filters/filtermailmangzip.cpp:64
+#: mailimporter/filters/filtermbox.cpp:64
+#: mailimporter/filters/filteropera.cpp:80
+#, kde-format
+msgid "Importing emails from %1..."
+msgstr "Import emailov z %1..."
+
+#: mailimporter/filters/filterevolution_v2.cpp:22
+#, kde-format
+msgid "Import Evolution 2.x Local Mails and Folder Structure"
+msgstr "Import lokálnych správ Evolution 2.x a štruktúry priečinkov"
+
+#: mailimporter/filters/filterevolution_v2.cpp:24
+#, kde-format
+msgid ""
+"<p><b>Evolution 2.x import filter</b></p><p>Select the base directory of "
+"your local Evolution mailfolder (usually ~/.evolution/mail/local/).</"
+"p><p><b>Note:</b> Never choose a Folder which <u>does not</u> contain mbox-"
+"files (for example a maildir): if you do, you will get many new folders.</"
+"p><p>Since it is possible to recreate the folder structure, the folders will "
+"be stored under: \"Evolution-Import\".</p>"
+msgstr ""
+"<p><b>Evolution 2.x importovací filter</b></p><p>Vyberte základný priečinok "
+"pre správy Evolution (zvyčajne ~/evolution/mail/local/).</p> <p><b>Poznámka:"
+"</b> Nikdy nevyberte priečinok, ktorý <u>neobsahuje</u> mbox-súbory "
+"(napríklad maildir): ak to spravíte, dostanete veľa nových priečinkov.</"
+"p><p>Vzhľadom na to, že štruktúra priečinkov sa dá znova vytvoriť, priečinky "
+"budú uložené pod: \"Evolution-Import\".</p> "
+
+#: mailimporter/filters/filterevolution_v2.cpp:42
+#, kde-format
+msgctxt "name of evolution application"
+msgid "Evolution (v2)"
+msgstr "Evolution (v2)"
+
+#: mailimporter/filters/filterevolution_v2.cpp:122
+#: mailimporter/filters/filterevolution_v2.cpp:161
+#: mailimporter/filters/filterthunderbird.cpp:205
+#: mailimporter/filters/filterthunderbird.cpp:244
+#, kde-format
+msgid "Start import file %1..."
+msgstr "Začiatok importu zo súboru %1..."
+
+#: mailimporter/filters/filterevolution_v3.cpp:22
+#, kde-format
+msgid "Import Evolution 3.x Local Mails and Folder Structure"
+msgstr "Import lokálnych správ Evolution 3.x a štruktúry priečinkov"
+
+#: mailimporter/filters/filterevolution_v3.cpp:24
+#, kde-format
+msgid ""
+"<p><b>Evolution 3.x import filter</b></p><p>Select the base directory of "
+"your local Evolution mailfolder (usually ~/.local/share/evolution/mail/"
+"local/).</p><p>Since it is possible to recreate the folder structure, the "
+"folders will be stored under: \"Evolution-Import\".</p>"
+msgstr ""
+"<p><b>Evolution 3.x importovací filter</b></p><p>Vyberte základný priečinok "
+"pre správy Evolution (zvyčajne ~/.local/share/evolution/mail/local).</p> "
+"<p>Vzhľadom na to, že štruktúra priečinkov sa dá znova vytvoriť, priečinky "
+"budú uložené pod: \"Evolution-Import\".</p>"
+
+#: mailimporter/filters/filterevolution_v3.cpp:39
+#, kde-format
+msgctxt "name of evolution application"
+msgid "Evolution (v3)"
+msgstr "Evolution (v3)"
+
+#: mailimporter/filters/filtericedove.cpp:14
+#, kde-format
+msgid "Import Icedove Mails and Folder Structure"
+msgstr "Importovať správy a štruktúry priečinkov Icedove "
+
+#: mailimporter/filters/filtericedove.cpp:17
+#, kde-format
+msgid ""
+"<p><b>Icedove import filter</b></p><p>Select your base Icedove mailfolder "
+"(usually ~/.icedove/*.default/Mail/Local Folders/).</p><p><b>Note:</b> Never "
+"choose a Folder which <u>does not</u> contain mbox-files (for example, a "
+"maildir): if you do, you will get many new folders.</p><p>Since it is "
+"possible to recreate the folder structure, the folders will be stored under: "
+"\"Icedove-Import\".</p>"
+msgstr ""
+"<p><b>Icedove importovací filter</b></p><p>Vyberte základný priečinok pošty "
+"Icedove (zvyčajne ~/.icedove/*.default/Mail/LocalFolders/).</p> "
+"<p><b>Poznámka:</b> Nikdy nezvoľte priečinok, ktorý <u>neobsahuje</u> mbox "
+"súbory (napríklad maildir): ak to spravíte, dostanete veľa nových priečinkov."
+"</p> <p>Vzhľadom na to, že štruktúra priečinkov sa dá znova vytvoriť, "
+"priečinky budú uložené pod: \"Icedove-Import\".</p>"
+
+#: mailimporter/filters/filtericedove.cpp:34
+#, kde-format
+msgctxt "name of icedove application"
+msgid "Icedove"
+msgstr "Icedove"
+
+#: mailimporter/filters/filterkmail_maildir.cpp:26
+#, kde-format
+msgid "Import KMail Maildirs and Folder Structure"
+msgstr "Import KMail Maildirs a štruktúry priečinkov"
+
+#: mailimporter/filters/filterkmail_maildir.cpp:28
+#, kde-format
+msgid ""
+"<p><b>KMail import filter</b></p><p>Select the base directory of the KMail "
+"mailfolder you want to import.</p><p><b>Note:</b> Never select your current "
+"local KMail maildir (usually ~/Mail or ~/.kde/share/apps/kmail/mail ): in "
+"this case, ImportWizard may become stuck in a continuous loop. </p><p>This "
+"filter does not import KMail mailfolders with mbox files.</p><p>Since it is "
+"possible to recreate the folder structure, the folders will be stored under: "
+"\"KMail-Import\" in your local folder.</p>"
+msgstr ""
+"<p><b>KMail importovací filter</b></p><p>Vyberte základný priečinok pre "
+"správy KMail, ktoré chcete importovať.</p><p><b>Poznámka:</b> Nikdy "
+"nevyberajte aktuálny poštový priečinok KMail (zvyčajne ~/Mail alebo ~/.kde/"
+"share/apps/kmail/mail): v tomto prípade sa KMailCVT zasekne v nekonečnej "
+"slučke.</p> <p>Tento filter importuje poštové priečinky KMail s mbox súbormi."
+"</p><p>Vzhľadom na to, že štruktúra priečinkov sa dá znova vytvoriť, "
+"priečinky budú uložené pod: \"KMail-Import\".</p> "
+
+#: mailimporter/filters/filterkmail_maildir.cpp:176
+#, kde-format
+msgid "Could not import %1, duplicated message"
+msgstr "Nie je možné importovať %1, duplicitná správa"
+
+#: mailimporter/filters/filterkmailarchive.cpp:31
+#, kde-format
+msgid "Import KMail Archive File"
+msgstr "Importovať súbor archívu KMail"
+
+#: mailimporter/filters/filterkmailarchive.cpp:33
+#, kde-format
+msgid ""
+"<p><b>KMail Archive File Import Filter</b></p><p>This filter will import "
+"archives files previously exported by KMail.</p><p>Archive files contain a "
+"complete folder subtree compressed into a single file.</p>"
+msgstr ""
+"<p><b>Importný filter archívu KMail</b></p><p>Tento filter importuje súbory "
+"archívov exportované cez KMail.</p><p>Súbory archívu obsahujú kompletný "
+"podstrom priečinkov skomprimovaný do jedného súboru.</p>"
+
+#: mailimporter/filters/filterkmailarchive.cpp:71
+#, kde-format
+msgid "Importing folder '%1'..."
+msgstr "Importovanie priečinka '%1'..."
+
+#: mailimporter/filters/filterkmailarchive.cpp:97
+#, kde-format
+msgid "Unexpected subfolder %1 in folder %2."
+msgstr "Neočakávaný podpriečinok %1 v priečinku %2."
+
+#: mailimporter/filters/filterkmailarchive.cpp:101
+#, kde-format
+msgid "No subfolder named 'cur' in folder %1."
+msgstr "Žiadny podpriečinok s menom 'cur' v priečinku %1."
+
+#: mailimporter/filters/filterkmailarchive.cpp:125
+#, kde-format
+msgid "Unexpected subdirectory named '%1'."
+msgstr "Neočakávaný podadresár s názvom '%1'."
+
+#: mailimporter/filters/filterkmailarchive.cpp:156
+#, kde-format
+msgid "Select KMail Archive File to Import"
+msgstr "Vyberte súbor archívu KMail na import"
+
+#: mailimporter/filters/filterkmailarchive.cpp:158
+#, kde-format
+msgid "KMail Archive Files "
+msgstr "Súbor archívu KMail"
+
+#: mailimporter/filters/filterkmailarchive.cpp:160
+#, kde-format
+msgid "Please select an archive file that should be imported."
+msgstr "Prosím vyberte súbor archívu, ktorý sa má importovať."
+
+#: mailimporter/filters/filterkmailarchive.cpp:169
+#, kde-format
+msgid "No archive selected."
+msgstr "Nebol vybraný žiaden archív."
+
+#: mailimporter/filters/filterkmailarchive.cpp:183
+#, kde-format
+msgid "The file '%1' does not appear to be a valid archive."
+msgstr "Súbor '%1' asi nie je platný archív súbor archívu."
+
+#: mailimporter/filters/filterkmailarchive.cpp:188
+#, kde-format
+msgid "Unable to open archive file '%1'"
+msgstr "Nie je možné otvoriť súbor archívu '%1'"
+
+#: mailimporter/filters/filterkmailarchive.cpp:193
+#, kde-format
+msgid "Counting files in archive..."
+msgstr "Počítanie súborov v archíve..."
+
+#: mailimporter/filters/filterkmailarchive.cpp:199
+#, kde-format
+msgid "Importing the archive file '%1' into the folder '%2' succeeded."
+msgstr "Importovanie súboru archívu '%1' do priečinka '%2' úspešné."
+
+#: mailimporter/filters/filterkmailarchive.cpp:200
+#, kde-format
+msgid "1 message was imported."
+msgid_plural "%1 messages were imported."
+msgstr[0] "1 správa bola importovaná."
+msgstr[1] "%1 správy boli importované."
+msgstr[2] "%1 správ bolo importovaných."
+
+#: mailimporter/filters/filterkmailarchive.cpp:202
+#, kde-format
+msgid "Importing the archive failed."
+msgstr "Importovanie archívu zlyhalo."
+
+#: mailimporter/filters/filterlnotes.cpp:30
+#, kde-format
+msgid "Import Lotus Notes Emails"
+msgstr "Import Lotus Notes Emails"
+
+#: mailimporter/filters/filterlnotes.cpp:32
+#, kde-format
+msgid ""
+"<p><b>Lotus Notes Structured Text mail import filter</b></p><p>This filter "
+"will import Structure Text files from an exported Lotus Notes email client "
+"into KMail. Use this filter if you want to import mails from Lotus or other "
+"mailers that use Lotus Notes' Structured Text format.</p><p><b>Note:</b> "
+"Since it is possible to recreate the folder structure, the imported messages "
+"will be stored in subfolders named by the files they came from under: "
+"\"LNotes-Import\" in your local folder.</p>"
+msgstr ""
+"<p><b>Lotus Notes importovací filter pre štruktúrovaný text</b></p><p>Tento "
+"filter importuje súbory štruktúrovaného textu z Lotus Notes poštového "
+"klienta do KMail. Použite tento filter, ak chcete importovať z Lotus alebo "
+"iných klientov, ktorí používajú Lotus Notes štruktúrovaný textový formát.</"
+"p><p><b>Poznámka:</b> Vzhľadom na to, že štruktúra priečinkov sa dá znova "
+"vytvoriť, importované správy sa vytvoria v podpriečinkoch pod: \"LNotes-"
+"Import\" vo vašom priečinku.</p>"
+
+#: mailimporter/filters/filterlnotes.cpp:52
+#, kde-format
+msgid "All Files (*)"
+msgstr "Všetky súbory (*)"
+
+#: mailimporter/filters/filterlnotes.cpp:54
+#: mailimporter/filters/filtermailapp.cpp:47
+#: mailimporter/filters/filtermailmangzip.cpp:42
+#: mailimporter/filters/filtermbox.cpp:45
+#, kde-format
+msgid "No files selected."
+msgstr "Nebol vybraný žiaden súbor."
+
+#: mailimporter/filters/filterlnotes.cpp:66
+#, kde-format
+msgid "Importing emails from %1"
+msgstr "Importujú sa správy z %1"
+
+#: mailimporter/filters/filterlnotes.cpp:100
+#, kde-format
+msgctxt "Define folder name where we import lotus note mails"
+msgid "LNotes-Import"
+msgstr "LNotes-Import"
+
+#: mailimporter/filters/filterlnotes.cpp:110
+#: mailimporter/filters/filterpmail.cpp:266
+#, kde-format
+msgid "Message %1"
+msgstr "Správa %1"
+
+#: mailimporter/filters/filtermailapp.cpp:28
+#, kde-format
+msgid "Import From OS X Mail"
+msgstr "Import z OS X-Mail"
+
+#: mailimporter/filters/filtermailapp.cpp:29
+#, kde-format
+msgid "Chris Howells<br /><br />Filter accelerated by Danny Kukawka )"
+msgstr "Chris Howells<br /><br />(Filter zrýchlil Danny Kukawka)"
+
+#: mailimporter/filters/filtermailapp.cpp:30
+#, kde-format
+msgid ""
+"<p><b>OS X Mail Import Filter</b></p><p>This filter imports e-mails from the "
+"Mail client in Apple Mac OS X.</p>"
+msgstr ""
+"<p><b>Filter importu z OS X Mail</b></p><p>Tento filter importuje emaily z "
+"poštového klienta na Apple Mac OS X.</p>"
+
+#: mailimporter/filters/filtermailapp.cpp:126
+#: mailimporter/filters/filtermailmangzip.cpp:136
+#: mailimporter/filters/filtermbox.cpp:135
+#, kde-format
+msgid "1 duplicate message not imported to folder %2 in KMail"
+msgid_plural "%1 duplicate messages not imported to folder %2 in KMail"
+msgstr[0] "1 duplicitná správa nebola importovaná do KMail priečinku %2"
+msgstr[1] "%1 duplicitné správy neboli importované do KMail priečinku %2"
+msgstr[2] "%1 duplicitných správ nebolo importovaných do KMail priečinku %2"
+
+#: mailimporter/filters/filtermailmangzip.cpp:19
+#, kde-format
+msgid "Import mailman gzip Files"
+msgstr "Importovať súbory mailman gzip"
+
+#: mailimporter/filters/filtermailmangzip.cpp:21
+#, kde-format
+msgid ""
+"<p><b>mailman gzip import filter</b></p><p>This filter will import mailman "
+"gzipped files into KMail.</p><p><b>Note:</b> Emails will be imported into "
+"folders named after the file they came from, prefixed with MAILMAN-</p>"
+msgstr ""
+"<p><b>filter pre import mailman gzip</b></p><p>Tento filter importuje "
+"gzipované súbory  mailman do KMail.</p><p><b>Poznámka:</b> Správy budú "
+"importované do priečinkov, ktorých mená budú podľa súborov, z ktorých sa "
+"importovalo a predponou MAILMAN-</p>"
+
+#: mailimporter/filters/filtermailmangzip.cpp:35
+#, kde-format
+msgid "gzip Files"
+msgstr "gzip súbory"
+
+#: mailimporter/filters/filtermailmangzip.cpp:55
+#, kde-format
+msgid "Unable to open archive file '%1', skipping"
+msgstr "Nie je možné otvoriť súbor archívu '%1', preskakujem"
+
+#: mailimporter/filters/filtermbox.cpp:20
+#, kde-format
+msgid "Import mbox Files (UNIX, Evolution)"
+msgstr "Import mbox súborov (UNIX, Evolution)"
+
+#: mailimporter/filters/filtermbox.cpp:21
+#: mailimporter/filters/filterplain.cpp:19
+#, kde-format
+msgid "Laurence Anderson <p>( Filter accelerated by Danny Kukawka )</p>"
+msgstr "Laurence Anderson<p>(Filter zrýchlil Danny Kukawka)</p>"
+
+#: mailimporter/filters/filtermbox.cpp:22
+#, kde-format
+msgid ""
+"<p><b>mbox import filter</b></p><p>This filter will import mbox files into "
+"KMail. Use this filter if you want to import mails from Ximian Evolution or "
+"other mailers that use this traditional UNIX format.</p><p><b>Note:</b> "
+"Emails will be imported into folders named after the file they came from, "
+"prefixed with MBOX-</p>"
+msgstr ""
+"<p><b>filter pre import mbox</b></p><p>Tento filter importuje súbory typu "
+"mbox do KMail. Použite tento filter, ak chcete importovať z Ximian Evolution "
+"alebo iných klientov, ktorí používajú tento tradičný UNIX formát.</"
+"p><p><b>Poznámka:</b> Správy budú importované do priečinkov, ktorých mená "
+"budú podľa súborov, z ktorých sa importovalo a predponou MBOX-</p>"
+
+#: mailimporter/filters/filtermbox.cpp:38
+#, kde-format
+msgid "mbox Files"
+msgstr "mbox súbory"
+
+#: mailimporter/filters/filteroe.cpp:32
+#, kde-format
+msgid "Import Outlook Express Emails"
+msgstr "Import pošty z Outlook Expressu"
+
+#: mailimporter/filters/filteroe.cpp:33
+#, kde-format
+msgid "Laurence Anderson <br>( Filter enhanced by Danny Kukawka )</p>"
+msgstr "Laurence Anderson<br>(Filter rozšíril Danny Kukawka)</p>"
+
+#: mailimporter/filters/filteroe.cpp:34
+#, kde-format
+msgid ""
+"<p><b>Outlook Express 4/5/6 import filter</b></p><p>You will need to locate "
+"the folder where the mailbox has been stored by searching for .dbx or .mbx "
+"files under <ul><li><i>C:\\Windows\\Application Data</i> in Windows 9x</"
+"li><li><i>Documents and Settings</i> in Windows 2000 or later</li></ul></"
+"p><p><b>Note:</b> Since it is possible to recreate the folder structure, the "
+"folders from Outlook Express 5 and 6 will be stored under: \"OE-Import\" in "
+"your local folder.</p>"
+msgstr ""
+"<p><b>Outlook Express 4/5/6 importovací filter</b></p><p>Musíte zadať "
+"priečinok, v ktorom je schránka. Obsahuje súbory .dbx alebo .mbx v "
+"<ul><li><i>C:\\Windows\\Application Data</i> vo Windows 9x</"
+"li><li><i>Dokumenty a nastavenia</i> vo Windows 2000 a novších</li></ul></"
+"p><p><b>Poznámka:</b> Vzhľadom na to, že štruktúra priečinkov sa dá znova "
+"vytvoriť, priečinky z Outlook Express 5 a 6 sa vytvoria pod: \"OE-Import\" "
+"vo vašom priečinku.</p>"
+
+#: mailimporter/filters/filteroe.cpp:66
+#, kde-format
+msgid "No Outlook Express mailboxes found in directory %1."
+msgstr "V priečinku %1 nie sú žiadne poštové priečinky Outlook Express."
+
+#: mailimporter/filters/filteroe.cpp:82
+#, kde-format
+msgid "Import folder structure..."
+msgstr "Import štruktúry priečinkov..."
+
+#: mailimporter/filters/filteroe.cpp:106
+#, kde-format
+msgid "Finished importing Outlook Express emails"
+msgstr "Dokončený prevod pošty z Outlook Expressu"
+
+#: mailimporter/filters/filteroe.cpp:126
+#, kde-format
+msgid "Unable to open mailbox %1"
+msgstr "Nie je možné otvoriť poštový priečinok '%1'"
+
+#: mailimporter/filters/filteroe.cpp:138
+#, kde-format
+msgid "Importing OE4 Mailbox %1"
+msgstr "Importovanie OE4 mailboxu %1"
+
+#: mailimporter/filters/filteroe.cpp:155
+#, kde-format
+msgid "Importing OE5+ Mailbox %1"
+msgstr "Importovanie OE5+ mailboxu %1"
+
+#: mailimporter/filters/filteroe.cpp:161
+#, kde-format
+msgid "Importing OE5+ Folder file %1"
+msgstr "Import OE5+ súboru priečinku %1"
+
+#: mailimporter/filters/filteropera.cpp:19
+#, kde-format
+msgid "Import Opera Emails"
+msgstr "Import Opera Emails"
+
+#: mailimporter/filters/filteropera.cpp:21
+#, kde-format
+msgid ""
+"<p><b>Opera email import filter</b></p><p>This filter will import mails from "
+"Opera mail folder. Use this filter if you want to import all mails within a "
+"account in the Opera maildir.</p><p>Select the directory of the account "
+"(usually ~/.opera/mail/store/account*).</p><p><b>Note:</b> Emails will be "
+"imported into a folder named after the account they came from, prefixed with "
+"OPERA-</p>"
+msgstr ""
+"<p><b>Opera email importovací filter</b></p><p>Tento filter importuje správy "
+"z poštových priečinkov Opera. Použite tento filter, ak chcete importovať "
+"všetky správyz účtu v Opera.</p> <p>Vyberte priečinok účtu (zvyčajne ~/."
+"opera/mail/store/account*).</p><p><b>Poznámka:</b> Správy budú importované "
+"do priečinkov pomenovaných podľa účtu s predponou OPERA</p>"
+
+#: mailimporter/filters/filteropera.cpp:38
+#, kde-format
+msgctxt "name of opera application"
+msgid "Opera"
+msgstr "Opera"
+
+#: mailimporter/filters/filteropera.cpp:72
+#: mailimporter/filters/filterplain.cpp:55
+#, kde-format
+msgid "Importing new mail files..."
+msgstr "Import súborov s novými správami..."
+
+#: mailimporter/filters/filteropera.cpp:190
+#: mailimporter/filters/filterplain.cpp:50
+#: mailimporter/filters/filterpmail.cpp:51
+#, kde-format
+msgid "Counting files..."
+msgstr "Počítam súbory..."
+
+#: mailimporter/filters/filterplain.cpp:18
+#, kde-format
+msgid "Import Plain Text Emails"
+msgstr "Import emailov z čistého textu"
+
+#: mailimporter/filters/filterplain.cpp:20
+#, kde-format
+msgid ""
+"<p>Select the directory containing the emails on your system. The emails are "
+"placed in a folder with the same name as the directory they were in, "
+"prefixed by PLAIN-</p><p>This filter will import all .msg, .eml and .txt "
+"emails.</p>"
+msgstr ""
+"<p>Vyberte priečinok, ktorý obsahuje na vašom systéme emailové správy. Sú "
+"umiestnené v priečinku, ktorý má rovnaké meno ako pôvodný priečinok s "
+"predponou PLAIN-</p><p>Tento filter importuje všetky správy .msg, .eml a ."
+"txt.</p>"
+
+#: mailimporter/filters/filterpmail.cpp:22
+#, kde-format
+msgid "Import Folders From Pegasus-Mail"
+msgstr "Import priečinkov z Pegasus-Mail"
+
+#: mailimporter/filters/filterpmail.cpp:23
+#, kde-format
+msgid "Holger Schurig <br>( rewritten by Danny Kukawka )"
+msgstr "Holger Schurig<br>(prepísal Danny Kukawka)"
+
+#: mailimporter/filters/filterpmail.cpp:24
+#, kde-format
+msgid ""
+"<p>Select the Pegasus-Mail directory on your system (containing *.CNM, *.PMM "
+"and *.MBX files). On many systems this is stored in C:\\pmail\\mail or C:"
+"\\pmail\\mail\\admin</p><p><b>Note:</b> Since it is possible to recreate the "
+"folder structure, the folders will be stored under: \"PegasusMail-Import\".</"
+"p>"
+msgstr ""
+"<p>Vyberte priečinok programu Pegasus-Mail na vašom systéme (obsahuje súbory "
+"*.CNM, *.PMM a *.MBX). Často je to C:\\pmail\\mail alebo C:\\pmail\\mail"
+"\\admin</p><p><b>Poznámka:</b>Vzhľadom na to, že štruktúra priečinkov sa dá "
+"znova vytvoriť, priečinky budú uložené pod: \"PegasusMail-Import\".</p>"
+
+#: mailimporter/filters/filterpmail.cpp:62
+#, kde-format
+msgid ""
+"Cannot parse the folder structure; continuing import without subfolder "
+"support."
+msgstr ""
+"Nedá sa analyzovať štruktúra priečinkov, import bude pokračovať bez podpory "
+"podpriečinkov."
+
+#: mailimporter/filters/filterpmail.cpp:65
+#, kde-format
+msgid "Importing new mail files ('.cnm')..."
+msgstr "Importujem súbory s novými správami ('.cnm')..."
+
+#: mailimporter/filters/filterpmail.cpp:67
+#, kde-format
+msgid "Importing mail folders ('.pmm')..."
+msgstr "Importujem priečinky s poštou ('.pmm')..."
+
+#: mailimporter/filters/filterpmail.cpp:69
+#, kde-format
+msgid "Importing 'UNIX' mail folders ('.mbx')..."
+msgstr "Importujem unixové priečinky s poštou ('.mbx')..."
+
+#: mailimporter/filters/filterpmail.cpp:159
+#, kde-format
+msgctxt "define folder name when we will import pegasus mail"
+msgid "PegasusMail-Import"
+msgstr "PegasusMail-Import"
+
+#: mailimporter/filters/filterpmail.cpp:166
+#: mailimporter/filters/filterpmail.cpp:245
+#, kde-format
+msgid "Importing %1"
+msgstr "Importovanie %1"
+
+#: mailimporter/filters/filterpmail.cpp:277
+#, kde-format
+msgid "Parsing the folder structure..."
+msgstr "Analyzuje sa štruktúra priečinkov..."
+
+#: mailimporter/filters/filterseamonkey.cpp:14
+#, kde-format
+msgid "Import SeaMonkey Mails and Folder Structure"
+msgstr "Importovať správy a štruktúry priečinkov SeaMonkey"
+
+#: mailimporter/filters/filterseamonkey.cpp:17
+#, kde-format
+msgid ""
+"<p><b>SeaMonkey import filter</b></p><p>Select your base SeaMonkey "
+"mailfolder (usually ~/.icedove/*.default/Mail/Local Folders/).</p><p><b>Note:"
+"</b> Never choose a Folder which <u>does not</u> contain mbox-files (for "
+"example, a maildir): if you do, you will get many new folders.</p><p>Since "
+"it is possible to recreate the folder structure, the folders will be stored "
+"under: \"SeaMonkey-Import\".</p>"
+msgstr ""
+"<p><b>SeaMonkey importovací filter</b></p><p>Vyberte základný priečinok "
+"pošty Icedove (zvyčajne ~/.icedove/*.default/Mail/LocalFolders/).</p> "
+"<p><b>Poznámka:</b> Nikdy nezvoľte priečinok, ktorý <u>neobsahuje</u> mbox "
+"súbory (napríklad maildir): ak to spravíte, dostanete veľa nových priečinkov."
+"</p> <p>Vzhľadom na to, že štruktúra priečinkov sa dá znova vytvoriť, "
+"priečinky budú uložené pod: \"SeaMonkey-Import\".</p>"
+
+#: mailimporter/filters/filtersylpheed.cpp:28
+#, kde-format
+msgid "Import Sylpheed Maildirs and Folder Structure"
+msgstr "Import Sylpheed Maildirs a štruktúry priečinkov"
+
+#: mailimporter/filters/filtersylpheed.cpp:30
+#, kde-format
+msgid ""
+"<p><b>Sylpheed import filter</b></p><p>Select the base directory of the "
+"Sylpheed mailfolder you want to import (usually: ~/Mail ).</p><p>Since it is "
+"possible to recreate the folder structure, the folders will be stored under: "
+"\"Sylpheed-Import\" in your local folder.</p><p>This filter also recreates "
+"the status of message, e.g. new or forwarded.</p>"
+msgstr ""
+"<p><b>Sylpheed importovací filter</b></p><p>Vyberte základný priečinok pošty "
+"Sylpheed na importovanie (zvyčajne ~/Mail).</p><p>Vzhľadom na to, že "
+"štruktúra priečinkov sa dá znova vytvoriť, priečinky budú uložené pod: "
+"\"Sylpheed-Import\" vo vašom priečinku.</p><p>Tento filter tiež vytvorí stav "
+"správ, napr. nová alebo preposlaná.</p>"
+
+#: mailimporter/filters/filtersylpheed.cpp:47
+#, kde-format
+msgctxt "name of sylpheed application"
+msgid "Sylpheed"
+msgstr "Sylpheed"
+
+#: mailimporter/filters/filtersylpheed.cpp:187
+#, kde-format
+msgctxt "define folder name where we will import sylpheed mails"
+msgid "Sylpheed-Import"
+msgstr "Sylpheed-Import"
+
+#: mailimporter/filters/filterthebat.cpp:28
+#, kde-format
+msgid "Import The Bat! Mails and Folder Structure"
+msgstr "Import The Bail Mails a štruktúry priečinkov"
+
+#: mailimporter/filters/filterthebat.cpp:30
+#, kde-format
+msgid ""
+"<p><b>The Bat! import filter</b></p><p>Select the base directory of the 'The "
+"Bat!' local mailfolder you want to import.</p><p><b>Note:</b> This filter "
+"imports the *.tbb-files from 'The Bat!' local folder, e.g. from POP "
+"accounts, and not from IMAP/DIMAP accounts.</p><p>Since it is possible to "
+"recreate the folder structure, the folders will be stored under: \"TheBat-"
+"Import\" in your local account.</p>"
+msgstr ""
+"<p><b>The Bat! importovací filter</b></p><p>Vyberte základný poštový "
+"priečinok 'The Bat!', ktorý chcete importovať.</p><p><b>Poznámka:</b> Tento "
+"filter importuje *.tbb súbory z 'The Bat!' lokálnych priečinkov, napr. z POP "
+"účtov a nie z IMAP/DIMAP účtov.</p><p>Vzhľadom na to, že štruktúra "
+"priečinkov sa dá znova vytvoriť, priečinky sa vytvoria pod: \"TheBat-Import"
+"\".</p>"
+
+#: mailimporter/filters/filterthebat.cpp:204
+#, kde-format
+msgctxt "Define folder where we will import thebat mails"
+msgid "TheBat-Import"
+msgstr "TheBat-Import"
+
+#: mailimporter/filters/filterthunderbird.cpp:24
+#, kde-format
+msgid "Import Thunderbird/Mozilla Local Mails and Folder Structure"
+msgstr "Import lokálnej pošty z Thunderbird/Mozilla a štruktúry priečinkov"
+
+#: mailimporter/filters/filterthunderbird.cpp:26
+#, kde-format
+msgid ""
+"<p><b>Thunderbird/Mozilla import filter</b></p><p>Select your base "
+"Thunderbird/Mozilla mailfolder (usually ~/.thunderbird/*.default/Mail/Local "
+"Folders/).</p><p><b>Note:</b> Never choose a Folder which <u>does not</u> "
+"contain mbox-files (for example, a maildir): if you do, you will get many "
+"new folders.</p><p>Since it is possible to recreate the folder structure, "
+"the folders will be stored under: \"Thunderbird-Import\".</p>"
+msgstr ""
+"<p><b>Thunderbird/Mozilla importovací filter</b></p><p>Vyberte základný "
+"priečinok pošty Thunderbird/Mozilla (zvyčajne ~/.thunderbird/*.default/Mail/"
+"LocalFolders/).</p><p><b>Poznámka:</b> Nikdy nezolte priečinok, ktorý "
+"<u>neobsahuje</u> mbox súbory (napríklad maildir): ak to spravíte, dostanete "
+"veľa nových priečinkov.</p><p>Vzhľadom na to, že štruktúra priečinkov sa dá "
+"znova vytvoriť, priečinky budú uložené pod: \"Thunderbird-Import\".</p>"
+
+#: mailimporter/filters/filterthunderbird.cpp:58
+#, kde-format
+msgctxt "name of thunderbird application"
+msgid "Thunderbird"
+msgstr "Thunderbird"
+
+#: mailimporter/othermailerutil.cpp:18
+#, kde-format
+msgctxt "name of trojira application"
+msgid "Trojita"
+msgstr "Trojita"
+
+#: mailimporter/othermailerutil.cpp:22 mailimporter/othermailerutil.cpp:26
+#, kde-format
+msgctxt "name of geary application"
+msgid "Geary"
+msgstr "Geary"
+
+#: mailimporter/selectthunderbirdprofilewidget.cpp:20
+#, kde-format
+msgctxt "@title:window"
+msgid "Select thunderbird profile"
+msgstr "Vyberte profil Thunderbirdu"
+
+#: mailimporter/selectthunderbirdprofilewidget.cpp:70
+#, kde-format
+msgid " (default)"
+msgstr "(predvolené)"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
+#: mailimporter/ui/importmailswidget.ui:27
+#, kde-format
+msgid "From:"
+msgstr "Od:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: mailimporter/ui/importmailswidget.ui:37
+#, kde-format
+msgid "To:"
+msgstr "Do:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#: mailimporter/ui/importmailswidget.ui:47
+#, kde-format
+msgid "Current:"
+msgstr "Aktuálne:"
+
+#. i18n: ectx: property (text), widget (QLabel, textStatus)
+#: mailimporter/ui/importmailswidget.ui:57
+#, kde-format
+msgid "Importing in progress..."
+msgstr "Importuje sa..."
+
+#. i18n: ectx: property (text), widget (QLabel, current)
+#. i18n: ectx: property (text), widget (QLabel, to)
+#. i18n: ectx: property (text), widget (QLabel, from)
+#: mailimporter/ui/importmailswidget.ui:76
+#: mailimporter/ui/importmailswidget.ui:92
+#: mailimporter/ui/importmailswidget.ui:118
+#, kde-format
+msgid "..."
+msgstr "..."
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel4)
+#: mailimporter/ui/importmailswidget.ui:102
+#, kde-format
+msgid "Total:"
+msgstr "Celkom:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: mailimporter/ui/selectthunderbirdprofilewidget.ui:17
+#, kde-format
+msgid "Select Profile:"
+msgstr "Vyberte si profil:"
+
+#: mailimporterakonadi/filterimporterakonadi.cpp:94
+#, kde-format
+msgid "Error: failed to read temporary file at %1"
+msgstr "Chyba: zlyhalo čítanie dočasného súboru na %1"
+
+#: mailimporterakonadi/filterimporterakonadi.cpp:123
+#, kde-format
+msgid "<b>Warning:</b> Got a bad message folder, adding to root folder."
+msgstr ""
+"<b>Upozornenie:</b> Zlý priečinok správ, pridávam do koreňového priečinka."
+
+#: mailimporterakonadi/filterimporterakonadi.cpp:168
+#, kde-format
+msgid ""
+"<b>Warning:</b> Could not check that the folder already exists. Reason: %1"
+msgstr ""
+"<b>Upozornenie:</b> Nemôžem skontrolovať, či priečinok už existuje. Dôvod: %1"
+
+#: mailimporterakonadi/filterimporterakonadi.cpp:185
+#, kde-format
+msgid "<b>Error:</b> Could not create folder. Reason: %1"
+msgstr "<b>Chyba:</b> Nemôžem vytvoriť priečinok. Dôvod: %1"
+
+#: mailimporterakonadi/filterimporterakonadi.cpp:213
+#, kde-format
+msgid ""
+"<b>Warning:</b> Could not fetch mail in folder %1. Reason: %2 You may have "
+"duplicate messages."
+msgstr ""
+"<b>Upozornenie:</b> Nie je možné stiahnuť poštu v priečinku %1. Dôvod: %2 "
+"Zrejme máte duplicitné správy."
+
+#: mailimporterakonadi/filterimporterakonadi.cpp:221
+#, kde-format
+msgid "<b>Warning:</b> Got an invalid message in folder %1."
+msgstr "<b>Upozornenie:</b> Získaná neplatná správa v priečinku %1."
+
+#: mailimporterakonadi/filterimporterakonadi.cpp:275
+#, kde-format
+msgid "<b>Error:</b> Could not add message to folder %1. Reason: %2"
+msgstr "<b>Chyba:</b> Nemôžem pridať správu do priečinka %1. Dôvod: %2"
+
+#: mailimporterakonadi/filterimporterakonadi.cpp:295
+#, kde-format
+msgid "Unable to retrieve folder for folder path %1."
+msgstr "Nepodarilo sa získať priečinok pre cestu priečinka %1."
+
+#~ msgid "KMail Archive Files (*.tar *.tar.gz *.tar.bz2 *.zip)"
+#~ msgstr "Súbory archívu KMail (*.tar, *.tar.gz, *.tar.bz2, *.zip)"
