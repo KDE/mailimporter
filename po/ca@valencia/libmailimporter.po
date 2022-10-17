@@ -73,7 +73,7 @@ msgstr "No hi ha cap directori seleccionat."
 #: mailimporter/filters/filterthunderbird.cpp:178
 #, kde-format
 msgid "No files found for import."
-msgstr "No s'ha trobat cap fitxer que s'haja d'importar."
+msgstr "No s'ha trobat cap fitxer per a importar."
 
 #: mailimporter/filters/filterbalsa.cpp:109
 #: mailimporter/filters/filterevolution.cpp:83
@@ -409,7 +409,7 @@ msgstr "Directori inesperat anomenat «%1»."
 #: mailimporter/filters/filterkmailarchive.cpp:156
 #, kde-format
 msgid "Select KMail Archive File to Import"
-msgstr "Seleccioneu el fitxer d'arxiu de KMail que s'importarà"
+msgstr "Seleccioneu el fitxer d'arxiu de KMail que s'ha d'importar"
 
 #: mailimporter/filters/filterkmailarchive.cpp:158
 #, kde-format
