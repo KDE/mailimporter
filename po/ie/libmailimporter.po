@@ -678,7 +678,7 @@ msgid ""
 msgstr ""
 "<p>Selecte li fólder de Pegasus-Mail in vor sistema (it contene files *.CNM, "
 "*.PMM e *.MBX). Usualmen it es situat in C:\\pmail\\mail o C:\\pmail\\mail"
-"\admin</p><p><b>Note:</b> Pro que it es possibil recrear li structura de "
+"\\admin</p><p><b>Note:</b> Pro que it es possibil recrear li structura de "
 "fólderes, li fólderes va esser mettet in «Importation-PegasusMail».</p>"
 
 #: mailimporter/filters/filterpmail.cpp:62
