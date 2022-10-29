@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: mailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-10-10 00:19+0000\n"
-"PO-Revision-Date: 2022-10-26 22:55+0700\n"
+"PO-Revision-Date: 2022-10-28 01:03+0700\n"
 "Last-Translator: OIS <mistresssilvara@hotmail.com>\n"
 "Language-Team: Interlingue <kde-i18n-doc@kde.org>\n"
 "Language: ie\n"
@@ -170,6 +170,11 @@ msgid ""
 "under: \"ClawsMail-Import\" in your local folder.</p><p>This filter also "
 "recreates the status of message, e.g. new or forwarded.</p>"
 msgstr ""
+"<p><b>Filtre de importation de Claws-mail</b></p><p>Selecte li fólder de "
+"postage de Claws-mail quel vu vole importar (usualmen: ~/Mail ).</p><p>Pro "
+"que it es possibil recrear li structura de fólderes, it va esser creat in "
+"«ClawsMail-Importation» in vor local fólder.</p><p>Ti filtre anc recrea li "
+"statu de missage, p.ex. nov o transfertet.</p>"
 
 #: mailimporter/filters/filterclawsmail.cpp:42
 #, kde-format
@@ -201,6 +206,10 @@ msgid ""
 "recreate the folder structure, the folders will be stored under: \"Evolution-"
 "Import\".</p>"
 msgstr ""
+"<p><b>Filtre de importation de Evolution 1.x</b></p><p>Selecte li fólder de "
+"postage de Evolution (usualmen: ~/evolution/local).</p><p>Pro que it es "
+"possibil recrear li structura de fólderes, it va esser creat in «Evolution-"
+"Import».</p>"
 
 #: mailimporter/filters/filterevolution.cpp:35
 #, kde-format
@@ -298,6 +307,12 @@ msgid ""
 "possible to recreate the folder structure, the folders will be stored under: "
 "\"Icedove-Import\".</p>"
 msgstr ""
+"<p><b>Filtre de importation de Icedove</b></p><p>Selecte vor fólder de "
+"postage de Icedove (usualmen ~/.icedove/*.default/Mail/Local Folders/).</"
+"p><p><b>Note:</b> Ne selecte un fólder quel <u>ne contene</u> files (por "
+"exemple, un maildir): in ti casu, mult nov fólderes va esser creat.</"
+"p><p>Pro que it es possibil recrear li structura de fólderes, it va esser "
+"creat in «Icedove-Import».</p>"
 
 #: mailimporter/filters/filtericedove.cpp:34
 #, kde-format
