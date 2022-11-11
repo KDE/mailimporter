@@ -445,7 +445,8 @@ msgstr "S'estan comptant els fitxers de l'arxiu..."
 #, kde-format
 msgid "Importing the archive file '%1' into the folder '%2' succeeded."
 msgstr ""
-"S'ha completat la importació del fitxer d'arxiu «%1» en la carpeta «%2»."
+"S'ha completat la importació del fitxer d'arxiu «%1» cap a dins de la "
+"carpeta «%2»."
 
 #: mailimporter/filters/filterkmailarchive.cpp:200
 #, kde-format
