@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: mailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-10-10 00:19+0000\n"
-"PO-Revision-Date: 2022-10-28 01:03+0700\n"
+"PO-Revision-Date: 2022-11-10 13:01+0700\n"
 "Last-Translator: OIS <mistresssilvara@hotmail.com>\n"
 "Language-Team: Interlingue <kde-i18n-doc@kde.org>\n"
 "Language: ie\n"
@@ -30,6 +30,9 @@ msgid ""
 "Balsa mailfolder (usually ~/mail/).</p><p>Since it is possible to recreate "
 "the folder structure, the folders will be stored under: \"Balsa-Import\".</p>"
 msgstr ""
+"<p><b>Filtre de importation de Balsa</b></p><p>Selecte li local fólder de "
+"postage de Balsa (usualmen: ~/mail/ ).</p><p>Pro que it es possibil recrear "
+"li structura de fólderes, it va esser creat in «Balsa-Import».</p>"
 
 #: mailimporter/filters/filterbalsa.cpp:39
 #, kde-format
@@ -257,6 +260,12 @@ msgid ""
 "p><p>Since it is possible to recreate the folder structure, the folders will "
 "be stored under: \"Evolution-Import\".</p>"
 msgstr ""
+"<p><b>Filtre de importation de Evolution 2.x</b></p><p>Selecte vor local "
+"fólder de postage de Evolution (usualmen ~/.evolution/mail/local/).</"
+"p><p><b>Note:</b> Ne selecte un fólder quel <u>ne contene</u> files mbox "
+"(por exemple, un maildir): in ti casu, mult nov fólderes va esser creat.</"
+"p><p>Pro que it es possibil recrear li structura de fólderes, it va esser "
+"creat in «Evolution-Import».</p>"
 
 #: mailimporter/filters/filterevolution_v2.cpp:42
 #, kde-format
@@ -285,6 +294,10 @@ msgid ""
 "local/).</p><p>Since it is possible to recreate the folder structure, the "
 "folders will be stored under: \"Evolution-Import\".</p>"
 msgstr ""
+"<p><b>Filtre de importation de Evolution 3.x</b></p><p>Selecte li local "
+"fólder de postage de Evolution (usualmen: ~/.local/share/evolution/mail/"
+"local).</p><p>Pro que it es possibil recrear li structura de fólderes, it va "
+"esser creat in «Evolution-Import».</p>"
 
 #: mailimporter/filters/filterevolution_v3.cpp:39
 #, kde-format
@@ -534,7 +547,7 @@ msgstr "Importar files mbox (UNIX, Evolution)"
 #: mailimporter/filters/filterplain.cpp:19
 #, kde-format
 msgid "Laurence Anderson <p>( Filter accelerated by Danny Kukawka )</p>"
-msgstr "Laurence Anderson <br>(Li filtre accelerat de Danny Kukawka )</p>"
+msgstr "Laurence Anderson <p>(Li filtre accelerat de Danny Kukawka )</p>"
 
 #: mailimporter/filters/filtermbox.cpp:22
 #, kde-format
@@ -635,6 +648,11 @@ msgid ""
 "imported into a folder named after the account they came from, prefixed with "
 "OPERA-</p>"
 msgstr ""
+"<p><b>Filtre de importation de Opera</b></p><p>Ti filtre va importar postage "
+"ex li fólder de Opera. Usa ti filtre si vu vole importar omni missages in un "
+"conto de Opera.</p><p>Selecte li fólder del conto (usualmen ~/.opera/mail/"
+"store/account*).</p><p><b>Note:</b> Missages va esser importat a un fólder "
+"quel es nominat quam li conto, prependet con OPERA-</p>"
 
 #: mailimporter/filters/filteropera.cpp:38
 #, kde-format
@@ -870,7 +888,7 @@ msgstr "Actual:"
 #: mailimporter/ui/importmailswidget.ui:57
 #, fuzzy, kde-format
 msgid "Importing in progress..."
-msgstr "Progresse"
+msgstr "Progresse:"
 
 #. i18n: ectx: property (text), widget (QLabel, current)
 #. i18n: ectx: property (text), widget (QLabel, to)
@@ -895,9 +913,9 @@ msgid "Select Profile:"
 msgstr "Selecter un profile:"
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:94
-#, kde-format
+#, fuzzy, kde-format
 msgid "Error: failed to read temporary file at %1"
-msgstr ""
+msgstr "<b>Errore:</b> Ne successat crear un temporari file «%1»."
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:123
 #, kde-format
