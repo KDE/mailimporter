@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: mailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-10-10 00:19+0000\n"
-"PO-Revision-Date: 2022-10-10 03:58+0200\n"
+"PO-Revision-Date: 2022-12-13 06:34+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: mailimporter/filters/filterbalsa.cpp:22
 #, kde-format
@@ -51,7 +51,7 @@ msgstr "Balsa"
 #: mailimporter/filters/filterthunderbird.cpp:169
 #, kde-format
 msgid "No directory selected."
-msgstr ""
+msgstr "საქაღალდე არჩეული არაა."
 
 #: mailimporter/filters/filterbalsa.cpp:98
 #: mailimporter/filters/filterevolution.cpp:69
@@ -65,7 +65,7 @@ msgstr ""
 #: mailimporter/filters/filterthunderbird.cpp:178
 #, kde-format
 msgid "No files found for import."
-msgstr ""
+msgstr "შემოსატანი ფაილები არ არსებობს."
 
 #: mailimporter/filters/filterbalsa.cpp:109
 #: mailimporter/filters/filterevolution.cpp:83
@@ -83,7 +83,7 @@ msgstr ""
 #: mailimporter/filters/filterthunderbird.cpp:210
 #, kde-format
 msgid "Finished importing emails from %1"
-msgstr ""
+msgstr "ელფოსტების %1-დან შემოტანა დასრულდა"
 
 #: mailimporter/filters/filterbalsa.cpp:112
 #: mailimporter/filters/filterevolution.cpp:205
@@ -98,8 +98,8 @@ msgstr ""
 #, kde-format
 msgid "1 duplicate message not imported"
 msgid_plural "%1 duplicate messages not imported"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "1 დუბლიკატი შეტყობინება შემოტანილი არ იქნა"
+msgstr[1] "%1 დუბლიკატი შეტყობინება შემოტანილი არ იქნა"
 
 #: mailimporter/filters/filterbalsa.cpp:116
 #: mailimporter/filters/filterevolution_v2.cpp:132
@@ -116,7 +116,7 @@ msgstr[1] ""
 #: mailimporter/filters/filterthunderbird.cpp:216
 #, kde-format
 msgid "Finished import, canceled by user."
-msgstr ""
+msgstr "შემოტანა დასრულდა. გაუქმდა მომხმარებლის მიერ."
 
 #: mailimporter/filters/filterbalsa.cpp:163
 #: mailimporter/filters/filterevolution_v3.cpp:160
@@ -132,7 +132,7 @@ msgstr "Evolution-Import"
 #: mailimporter/filters/filterthebat.cpp:209
 #, kde-format
 msgid "Import folder %1..."
-msgstr ""
+msgstr "საქაღალდის (%1) შემოტანა..."
 
 #: mailimporter/filters/filterbalsa.cpp:195
 #: mailimporter/filters/filterevolution.cpp:194
@@ -154,7 +154,7 @@ msgstr ""
 #: mailimporter/filters/filterthunderbird.cpp:344
 #, kde-format
 msgid "Could not import %1"
-msgstr ""
+msgstr "%1-ის შემოტანის შეცდომა"
 
 #: mailimporter/filters/filterclawsmail.cpp:22
 #, kde-format
@@ -222,7 +222,7 @@ msgstr "Evolution"
 #: mailimporter/filters/filterthunderbird.cpp:278
 #, kde-format
 msgid "Unable to open %1, skipping"
-msgstr ""
+msgstr "%1- ის გახსნა შეუძლებელია, გამოტოვება"
 
 #: mailimporter/filters/filterevolution.cpp:157
 #: mailimporter/filters/filtermailapp.cpp:75
@@ -231,7 +231,7 @@ msgstr ""
 #: mailimporter/filters/filteropera.cpp:80
 #, kde-format
 msgid "Importing emails from %1..."
-msgstr ""
+msgstr "%1-დან ელფოსტების შემოტანა..."
 
 #: mailimporter/filters/filterevolution_v2.cpp:22
 #, kde-format
@@ -261,7 +261,7 @@ msgstr "Evolution (v2)"
 #: mailimporter/filters/filterthunderbird.cpp:244
 #, kde-format
 msgid "Start import file %1..."
-msgstr ""
+msgstr "ფაილის %1 შემოტანის დაწყება..."
 
 #: mailimporter/filters/filterevolution_v3.cpp:22
 #, kde-format
@@ -348,22 +348,22 @@ msgstr "საქაღალდის (%1) შემოტანა..."
 #: mailimporter/filters/filterkmailarchive.cpp:97
 #, kde-format
 msgid "Unexpected subfolder %1 in folder %2."
-msgstr ""
+msgstr "მოულოდნელი ქვესაქაღალდე %1 საქაღალდეში %2."
 
 #: mailimporter/filters/filterkmailarchive.cpp:101
 #, kde-format
 msgid "No subfolder named 'cur' in folder %1."
-msgstr ""
+msgstr "ქვესაქაღალდე 'cur' საქაღალდეში %1 არ არსებობს."
 
 #: mailimporter/filters/filterkmailarchive.cpp:125
 #, kde-format
 msgid "Unexpected subdirectory named '%1'."
-msgstr ""
+msgstr "მოულოდნელი ქვესაქაღალდე სახელით '%1'."
 
 #: mailimporter/filters/filterkmailarchive.cpp:156
 #, kde-format
 msgid "Select KMail Archive File to Import"
-msgstr ""
+msgstr "აირჩიეთ შემოსატანი KMail-ის არქივის ფაილი"
 
 #: mailimporter/filters/filterkmailarchive.cpp:158
 #, kde-format
@@ -445,7 +445,7 @@ msgstr "ფაილები მონიშნული არაა."
 #: mailimporter/filters/filterlnotes.cpp:66
 #, kde-format
 msgid "Importing emails from %1"
-msgstr ""
+msgstr "%1-დან ელფოსტების შემოტანა"
 
 #: mailimporter/filters/filterlnotes.cpp:100
 #, kde-format
@@ -462,7 +462,7 @@ msgstr "შეტყობინება %1"
 #: mailimporter/filters/filtermailapp.cpp:28
 #, kde-format
 msgid "Import From OS X Mail"
-msgstr ""
+msgstr "OS X Mail-დან შემოტანა"
 
 #: mailimporter/filters/filtermailapp.cpp:29
 #, kde-format
@@ -488,7 +488,7 @@ msgstr[1] ""
 #: mailimporter/filters/filtermailmangzip.cpp:19
 #, kde-format
 msgid "Import mailman gzip Files"
-msgstr ""
+msgstr "Mailman-ის gzip ფაილების შემოტანა"
 
 #: mailimporter/filters/filtermailmangzip.cpp:21
 #, kde-format
