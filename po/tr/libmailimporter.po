@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: kdepim-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-10-10 00:19+0000\n"
-"PO-Revision-Date: 2022-12-11 20:30+0300\n"
+"PO-Revision-Date: 2022-12-17 19:01+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -387,8 +387,8 @@ msgid ""
 "archives files previously exported by KMail.</p><p>Archive files contain a "
 "complete folder subtree compressed into a single file.</p>"
 msgstr ""
-"<p><b>KMail Arşiv Dosyası İçeri Aktarma Süzgeci</b></p><p>Bu süzgeç önceden "
-"KMail tarafından oluşturulan arşivleri içeri aktaracaktır.</p><p>Arşiv "
+"<p><b>KMail Arşiv Dosyası İçe Aktarma Süzgeci</b></p><p>Bu süzgeç önceden "
+"KMail tarafından oluşturulan arşivleri içe aktaracaktır.</p><p>Arşiv "
 "dosyaları, sıkıştırılmış halde tam bir klasör ağacı içerir.</p>"
 
 #: mailimporter/filters/filterkmailarchive.cpp:71
@@ -414,7 +414,7 @@ msgstr "Beklenmeyen '%1' adında alt dizin."
 #: mailimporter/filters/filterkmailarchive.cpp:156
 #, kde-format
 msgid "Select KMail Archive File to Import"
-msgstr "İçeri Aktarılacak KMail Arşiv Dosyasını Seçin"
+msgstr "İçe Aktarılacak KMail Arşiv Dosyasını Seç"
 
 #: mailimporter/filters/filterkmailarchive.cpp:158
 #, kde-format
