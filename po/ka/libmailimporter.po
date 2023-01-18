@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: mailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-10-10 00:19+0000\n"
-"PO-Revision-Date: 2022-12-12 07:50+0100\n"
+"PO-Revision-Date: 2023-01-17 07:29+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -21,7 +21,7 @@ msgstr ""
 #: mailimporter/filters/filterbalsa.cpp:22
 #, kde-format
 msgid "Import Balsa Local Mails and Folder Structure"
-msgstr ""
+msgstr "Balsa-ის ლოკალური ელფოსტებისა და საქაღალდის სტრუქტურის შემოტანა"
 
 #: mailimporter/filters/filterbalsa.cpp:24
 #, kde-format
@@ -187,11 +187,12 @@ msgstr "ClawsMail-Import"
 #, kde-format
 msgid "Import Evolution 1.x Local Mails and Folder Structure"
 msgstr ""
+"Evolution 1.x-ის ლოკალური ელფოსტებისა და საქაღალდის სტრუქტურის შემოტანა"
 
 #: mailimporter/filters/filterevolution.cpp:18
 #, kde-format
 msgid "Simon MARTIN<br /><br />( Filter accelerated by Danny Kukawka )"
-msgstr ""
+msgstr "Simon MARTIN<br /><br />( ფილტრი ააჩქარა Danny Kukawka-მა )"
 
 #: mailimporter/filters/filterevolution.cpp:19
 #, kde-format
@@ -388,7 +389,7 @@ msgstr ""
 #: mailimporter/filters/filterkmailarchive.cpp:188
 #, kde-format
 msgid "Unable to open archive file '%1'"
-msgstr ""
+msgstr "არქივის ფალის ('%1') გახსნის შეცდომა"
 
 #: mailimporter/filters/filterkmailarchive.cpp:193
 #, kde-format
@@ -506,18 +507,18 @@ msgstr "gzip ფაილები"
 #: mailimporter/filters/filtermailmangzip.cpp:55
 #, kde-format
 msgid "Unable to open archive file '%1', skipping"
-msgstr ""
+msgstr "არქივის ფაილის (%1) გახსნა შეუძლებელია, გამოტოვება"
 
 #: mailimporter/filters/filtermbox.cpp:20
 #, kde-format
 msgid "Import mbox Files (UNIX, Evolution)"
-msgstr ""
+msgstr "Mbox ფაილების შემოტანა (UNIX, Evolution)"
 
 #: mailimporter/filters/filtermbox.cpp:21
 #: mailimporter/filters/filterplain.cpp:19
 #, kde-format
 msgid "Laurence Anderson <p>( Filter accelerated by Danny Kukawka )</p>"
-msgstr ""
+msgstr "Laurence Anderson <p>( ფილტრი ააჩქარა Danny Kukawka-მა )</p>"
 
 #: mailimporter/filters/filtermbox.cpp:22
 #, kde-format
@@ -537,12 +538,12 @@ msgstr "mbox ფაილები"
 #: mailimporter/filters/filteroe.cpp:32
 #, kde-format
 msgid "Import Outlook Express Emails"
-msgstr ""
+msgstr "Outlook Express-ის ელფოსტების შემოტანა"
 
 #: mailimporter/filters/filteroe.cpp:33
 #, kde-format
 msgid "Laurence Anderson <br>( Filter enhanced by Danny Kukawka )</p>"
-msgstr ""
+msgstr "Laurence Anderson <br>( ფილტრი ააჩქარა Danny Kukawka-მა )</p>"
 
 #: mailimporter/filters/filteroe.cpp:34
 #, kde-format
@@ -569,7 +570,7 @@ msgstr "საქაღალდეების სტრუქტურის �
 #: mailimporter/filters/filteroe.cpp:106
 #, kde-format
 msgid "Finished importing Outlook Express emails"
-msgstr ""
+msgstr "Outlook Express-ის ელფოსტების შემოტანა დასრულდა"
 
 #: mailimporter/filters/filteroe.cpp:126
 #, kde-format
@@ -617,7 +618,7 @@ msgstr "Opera"
 #: mailimporter/filters/filterplain.cpp:55
 #, kde-format
 msgid "Importing new mail files..."
-msgstr ""
+msgstr "ახალი ფოსტის ფაილების შემოტანა..."
 
 #: mailimporter/filters/filteropera.cpp:190
 #: mailimporter/filters/filterplain.cpp:50
@@ -629,7 +630,7 @@ msgstr "ფაილების დათვლა..."
 #: mailimporter/filters/filterplain.cpp:18
 #, kde-format
 msgid "Import Plain Text Emails"
-msgstr ""
+msgstr "უბრალო ტექსტური ელფოსტების შემოტანა"
 
 #: mailimporter/filters/filterplain.cpp:20
 #, kde-format
@@ -643,12 +644,12 @@ msgstr ""
 #: mailimporter/filters/filterpmail.cpp:22
 #, kde-format
 msgid "Import Folders From Pegasus-Mail"
-msgstr ""
+msgstr "ელფოსტების შემოტანა Pegasus-Mail-დან"
 
 #: mailimporter/filters/filterpmail.cpp:23
 #, kde-format
 msgid "Holger Schurig <br>( rewritten by Danny Kukawka )"
-msgstr ""
+msgstr "Holger Schurig <br>( გადაწერილია Danny Kukawka -ის მიერ)"
 
 #: mailimporter/filters/filterpmail.cpp:24
 #, kde-format
@@ -670,17 +671,17 @@ msgstr ""
 #: mailimporter/filters/filterpmail.cpp:65
 #, kde-format
 msgid "Importing new mail files ('.cnm')..."
-msgstr ""
+msgstr "ახალი ფოსტის ('.cnm') ფაილების შემოტანა..."
 
 #: mailimporter/filters/filterpmail.cpp:67
 #, kde-format
 msgid "Importing mail folders ('.pmm')..."
-msgstr ""
+msgstr "ელფოსტის საქაღალდეების ('.pmm') შემოტანა..."
 
 #: mailimporter/filters/filterpmail.cpp:69
 #, kde-format
 msgid "Importing 'UNIX' mail folders ('.mbx')..."
-msgstr ""
+msgstr "'UNIX'-ის ელფოსტის საქაღალდეების ('.mbx') შემოტანა..."
 
 #: mailimporter/filters/filterpmail.cpp:159
 #, kde-format
@@ -697,12 +698,12 @@ msgstr "%1-ის შემოტანა"
 #: mailimporter/filters/filterpmail.cpp:277
 #, kde-format
 msgid "Parsing the folder structure..."
-msgstr ""
+msgstr "საქაღალდეების სტრუქტურის დამუშავება..."
 
 #: mailimporter/filters/filterseamonkey.cpp:14
 #, kde-format
 msgid "Import SeaMonkey Mails and Folder Structure"
-msgstr ""
+msgstr "SeaMonkey-ის ელფოსტებისა და საქაღალდის სტრუქტურის შემოტანა"
 
 #: mailimporter/filters/filterseamonkey.cpp:17
 #, kde-format
@@ -745,7 +746,7 @@ msgstr "Sylpheed-Import"
 #: mailimporter/filters/filterthebat.cpp:28
 #, kde-format
 msgid "Import The Bat! Mails and Folder Structure"
-msgstr ""
+msgstr "The Bat!-ის ელფოსტებისა და საქაღალდის სტრუქტურის შემოტანა"
 
 #: mailimporter/filters/filterthebat.cpp:30
 #, kde-format
@@ -858,7 +859,7 @@ msgstr "აირჩიეთ პროფილი:"
 #: mailimporterakonadi/filterimporterakonadi.cpp:94
 #, kde-format
 msgid "Error: failed to read temporary file at %1"
-msgstr ""
+msgstr "შეცდომა: დროებით ფაილის წაკითხვა შეუძლებელია მისამართზე %1"
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:123
 #, kde-format
