@@ -123,11 +123,11 @@ target_include_directories(KF5MailImporter PUBLIC "$<BUILD_INTERFACE:${MailImpor
 
 target_link_libraries(KF5MailImporter
     PUBLIC
-    KF5::Archive
+    KF${KF_MAJOR_VERSION}::Archive
     PRIVATE
     KF5::PimCommon
-    KF5::I18n
-    KF5::ConfigCore
+    KF${KF_MAJOR_VERSION}::I18n
+    KF${KF_MAJOR_VERSION}::ConfigCore
     Qt::Xml
     Qt::Widgets
     )

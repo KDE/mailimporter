@@ -70,7 +70,7 @@ target_link_libraries(KF5MailImporterAkonadi
     PRIVATE
     KF5::Mime
     KF5::AkonadiMime
-    KF5::I18n
+    KF${KF_MAJOR_VERSION}::I18n
     )
 
 set_target_properties(KF5MailImporterAkonadi PROPERTIES
