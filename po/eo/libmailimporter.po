@@ -1,26 +1,28 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR Free Software Foundation, Inc.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Translation of libmailimporter.pot into esperanto.
+# Copyright (C) 2002 Free Software Foundation, Inc.
+# This file is distributed under the same license as the mailimporter package.
+# Steffen Pietsch <Steffen.Pietsch@berlinonline.de>, 2002.
+# Oliver Kellogg <okellogg@users.sourceforge.net>, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-10-10 00:19+0000\n"
-"PO-Revision-Date: 2002-05-05 01:09GMT\n"
-"Last-Translator: Steffen Pietsch <Steffen.Pietsch@berlinonline.de>\n"
+"PO-Revision-Date: 2023-02-10 21:41+01\n"
+"Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <eo@li.org>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 0.9.5\n"
+"X-Generator: translate-po (https://github.com/zcribe/translate-po)\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: mailimporter/filters/filterbalsa.cpp:22
-#, fuzzy, kde-format
+#, kde-format
 msgid "Import Balsa Local Mails and Folder Structure"
-msgstr "Importante mesaĝujojn ('.pmm')..."
+msgstr "Importi Balsa Lokaj Poŝtoj kaj Dosierujo-Strukturo"
 
 #: mailimporter/filters/filterbalsa.cpp:24
 #, kde-format
@@ -29,12 +31,15 @@ msgid ""
 "Balsa mailfolder (usually ~/mail/).</p><p>Since it is possible to recreate "
 "the folder structure, the folders will be stored under: \"Balsa-Import\".</p>"
 msgstr ""
+"<p><b>Balsa importfiltrilo</b></p><p>Elektu la bazan dosierujon de via loka "
+"Balsa-poŝtdosierujo (kutime ~/mail/).</p><p>Ĉar eblas rekrei la dosierujo-"
+"strukturo, la dosierujoj estos konservitaj sub: \"Balsa-Import\".</p>"
 
 #: mailimporter/filters/filterbalsa.cpp:39
 #, kde-format
 msgctxt "name of balsa application"
 msgid "Balsa"
-msgstr ""
+msgstr "Balsa"
 
 #: mailimporter/filters/filterbalsa.cpp:89
 #: mailimporter/filters/filterevolution.cpp:60
@@ -50,7 +55,7 @@ msgstr ""
 #: mailimporter/filters/filterthunderbird.cpp:169
 #, kde-format
 msgid "No directory selected."
-msgstr ""
+msgstr "Neniu dosierujo elektita."
 
 #: mailimporter/filters/filterbalsa.cpp:98
 #: mailimporter/filters/filterevolution.cpp:69
@@ -64,7 +69,7 @@ msgstr ""
 #: mailimporter/filters/filterthunderbird.cpp:178
 #, kde-format
 msgid "No files found for import."
-msgstr ""
+msgstr "Neniuj dosieroj trovitaj por importo."
 
 #: mailimporter/filters/filterbalsa.cpp:109
 #: mailimporter/filters/filterevolution.cpp:83
@@ -80,9 +85,9 @@ msgstr ""
 #: mailimporter/filters/filtersylpheed.cpp:146
 #: mailimporter/filters/filterthebat.cpp:93
 #: mailimporter/filters/filterthunderbird.cpp:210
-#, fuzzy, kde-format
+#, kde-format
 msgid "Finished importing emails from %1"
-msgstr "Importante mesaĝujojn ('.pmm')..."
+msgstr "Finis importi retpoŝtojn de %1"
 
 #: mailimporter/filters/filterbalsa.cpp:112
 #: mailimporter/filters/filterevolution.cpp:205
@@ -94,10 +99,11 @@ msgstr "Importante mesaĝujojn ('.pmm')..."
 #: mailimporter/filters/filtersylpheed.cpp:148
 #: mailimporter/filters/filterthebat.cpp:95
 #: mailimporter/filters/filterthunderbird.cpp:212
-#, fuzzy, kde-format
+#, kde-format
 msgid "1 duplicate message not imported"
 msgid_plural "%1 duplicate messages not imported"
-msgstr[0] "Eraro dum aldono de mesaĝo al mesaĝujo %2 en Retpoŝtilo"
+msgstr[0] "1 duobligita mesaĝo ne importita"
+msgstr[1] "%1 duobligitaj mesaĝoj ne importitaj"
 
 #: mailimporter/filters/filterbalsa.cpp:116
 #: mailimporter/filters/filterevolution_v2.cpp:132
@@ -114,23 +120,23 @@ msgstr[0] "Eraro dum aldono de mesaĝo al mesaĝujo %2 en Retpoŝtilo"
 #: mailimporter/filters/filterthunderbird.cpp:216
 #, kde-format
 msgid "Finished import, canceled by user."
-msgstr ""
+msgstr "Finita importo, nuligita de uzanto."
 
 #: mailimporter/filters/filterbalsa.cpp:163
 #: mailimporter/filters/filterevolution_v3.cpp:160
 #, kde-format
 msgctxt "define folder name where we import evolution mails"
 msgid "Evolution-Import"
-msgstr ""
+msgstr "Evolucio-Importo"
 
 #: mailimporter/filters/filterbalsa.cpp:187
 #: mailimporter/filters/filterevolution_v3.cpp:184
 #: mailimporter/filters/filterkmail_maildir.cpp:169
 #: mailimporter/filters/filtersylpheed.cpp:230
 #: mailimporter/filters/filterthebat.cpp:209
-#, fuzzy, kde-format
+#, kde-format
 msgid "Import folder %1..."
-msgstr "Importante mesaĝujojn ('.pmm')..."
+msgstr "Importi dosierujon %1..."
 
 #: mailimporter/filters/filterbalsa.cpp:195
 #: mailimporter/filters/filterevolution.cpp:194
@@ -150,14 +156,14 @@ msgstr "Importante mesaĝujojn ('.pmm')..."
 #: mailimporter/filters/filtersylpheed.cpp:244
 #: mailimporter/filters/filterthebat.cpp:229
 #: mailimporter/filters/filterthunderbird.cpp:344
-#, fuzzy, kde-format
+#, kde-format
 msgid "Could not import %1"
-msgstr "Ne eblas legi poŝtkeston %1"
+msgstr "Ne eblis importi %1"
 
 #: mailimporter/filters/filterclawsmail.cpp:22
-#, fuzzy, kde-format
+#, kde-format
 msgid "Import Claws-mail Maildirs and Folder Structure"
-msgstr "Importante mesaĝujojn ('.pmm')..."
+msgstr "Importi Claws-mail Maildirs kaj Dosierujo-Strukturon"
 
 #: mailimporter/filters/filterclawsmail.cpp:25
 #, kde-format
@@ -168,28 +174,33 @@ msgid ""
 "under: \"ClawsMail-Import\" in your local folder.</p><p>This filter also "
 "recreates the status of message, e.g. new or forwarded.</p>"
 msgstr ""
+"<p><b>Importa filtrilo de Claws-mail</b></p><p>Elektu la bazan dosierujon de "
+"la poŝtdosierujo de Claws-mail, kiun vi volas importi (kutime: ~/Mail ).</"
+"p><p >Ĉar eblas rekrei la dosierujon, la dosierujoj estos konservitaj sub: "
+"\"ClawsMail-Import\" en via loka dosierujo.</p><p>Tiu ĉi filtrilo ankaŭ "
+"rekreas la staton de mesaĝo, ekz. nova aŭ plusendita.</p>"
 
 #: mailimporter/filters/filterclawsmail.cpp:42
 #, kde-format
 msgctxt "name of clawsMail application"
 msgid "ClawsMail"
-msgstr ""
+msgstr "ClawsMail"
 
 #: mailimporter/filters/filterclawsmail.cpp:98
 #, kde-format
 msgctxt "define folder name where we will import clawsmail mails"
 msgid "ClawsMail-Import"
-msgstr ""
+msgstr "ClawsMail-Importo"
 
 #: mailimporter/filters/filterevolution.cpp:17
 #, kde-format
 msgid "Import Evolution 1.x Local Mails and Folder Structure"
-msgstr ""
+msgstr "Importi Evolution 1.x Lokajn Poŝtojn kaj Dosierujo-Strukturon"
 
 #: mailimporter/filters/filterevolution.cpp:18
 #, kde-format
 msgid "Simon MARTIN<br /><br />( Filter accelerated by Danny Kukawka )"
-msgstr ""
+msgstr "Simon MARTIN<br /><br />( Filtrilo akcelita de Danny Kukawka )"
 
 #: mailimporter/filters/filterevolution.cpp:19
 #, kde-format
@@ -199,12 +210,16 @@ msgid ""
 "recreate the folder structure, the folders will be stored under: \"Evolution-"
 "Import\".</p>"
 msgstr ""
+"<p><b>Importa filtrilo de Evolution 1.x</b></p><p>Elektu la bazan dosierujon "
+"de la retpoŝtoj de Evolution (kutime ~/evolution/local).</p><p>Ĉar ĝi eblas "
+"por rekrei la dosierujon, la dosierujoj estos konservitaj sub: \"Evolution-"
+"Import\".</p>"
 
 #: mailimporter/filters/filterevolution.cpp:35
 #, kde-format
 msgctxt "name of evolution application"
 msgid "Evolution"
-msgstr ""
+msgstr "Evolution"
 
 #: mailimporter/filters/filterevolution.cpp:132
 #: mailimporter/filters/filterevolution_v2.cpp:192
@@ -218,23 +233,23 @@ msgstr ""
 #: mailimporter/filters/filterpmail.cpp:281
 #: mailimporter/filters/filterthebat.cpp:161
 #: mailimporter/filters/filterthunderbird.cpp:278
-#, fuzzy, kde-format
+#, kde-format
 msgid "Unable to open %1, skipping"
-msgstr "Ne eblis malfermi %1 por legado"
+msgstr "Ne eblas malfermi %1, preterlasante"
 
 #: mailimporter/filters/filterevolution.cpp:157
 #: mailimporter/filters/filtermailapp.cpp:75
 #: mailimporter/filters/filtermailmangzip.cpp:64
 #: mailimporter/filters/filtermbox.cpp:64
 #: mailimporter/filters/filteropera.cpp:80
-#, fuzzy, kde-format
+#, kde-format
 msgid "Importing emails from %1..."
-msgstr "Importante mesaĝujojn ('.pmm')..."
+msgstr "Importante retpoŝtojn de %1..."
 
 #: mailimporter/filters/filterevolution_v2.cpp:22
 #, kde-format
 msgid "Import Evolution 2.x Local Mails and Folder Structure"
-msgstr ""
+msgstr "Import Evolution 2.x Lokaj Poŝtoj kaj Dosierujo-Strukturo"
 
 #: mailimporter/filters/filterevolution_v2.cpp:24
 #, kde-format
@@ -246,25 +261,31 @@ msgid ""
 "p><p>Since it is possible to recreate the folder structure, the folders will "
 "be stored under: \"Evolution-Import\".</p>"
 msgstr ""
+"<p><b>Importa filtrilo de Evolution 2.x</b></p><p>Elektu la bazan dosierujon "
+"de via loka Evolution-poŝtdosierujo (kutime ~/.evolution/mail/local/).</"
+"p><b> p><b>Noto:</b> Neniam elektu Dosierujon, kiu <u>ne</u> enhavas mbox-"
+"dosierojn (ekzemple maildir): se vi faros, vi ricevos multajn novajn "
+"dosierujojn.</p> ><p>Ĉar eblas rekrei la dosierujon, la dosierujoj estos "
+"konservitaj sub: \"Evolution-Import\".</p>"
 
 #: mailimporter/filters/filterevolution_v2.cpp:42
 #, kde-format
 msgctxt "name of evolution application"
 msgid "Evolution (v2)"
-msgstr ""
+msgstr "Evolution (v2)"
 
 #: mailimporter/filters/filterevolution_v2.cpp:122
 #: mailimporter/filters/filterevolution_v2.cpp:161
 #: mailimporter/filters/filterthunderbird.cpp:205
 #: mailimporter/filters/filterthunderbird.cpp:244
-#, fuzzy, kde-format
+#, kde-format
 msgid "Start import file %1..."
-msgstr "Importante mesaĝujojn ('.pmm')..."
+msgstr "Komenci importdosieron %1..."
 
 #: mailimporter/filters/filterevolution_v3.cpp:22
 #, kde-format
 msgid "Import Evolution 3.x Local Mails and Folder Structure"
-msgstr ""
+msgstr "Import Evolution 3.x Lokaj Poŝtoj kaj Dosierujo-Strukturo"
 
 #: mailimporter/filters/filterevolution_v3.cpp:24
 #, kde-format
@@ -274,17 +295,21 @@ msgid ""
 "local/).</p><p>Since it is possible to recreate the folder structure, the "
 "folders will be stored under: \"Evolution-Import\".</p>"
 msgstr ""
+"<p><b>Importa filtrilo de Evolution 3.x</b></p><p>Elektu la bazan dosierujon "
+"de via loka Evolution-poŝtdosierujo (kutime ~/.local/share/evolution/mail/"
+"local/).< /p><p>Ĉar eblas rekrei la dosierujon, la dosierujoj estos "
+"konservitaj sub: \"Evolution-Import\".</p>"
 
 #: mailimporter/filters/filterevolution_v3.cpp:39
 #, kde-format
 msgctxt "name of evolution application"
 msgid "Evolution (v3)"
-msgstr ""
+msgstr "Evolution (v3)"
 
 #: mailimporter/filters/filtericedove.cpp:14
-#, fuzzy, kde-format
+#, kde-format
 msgid "Import Icedove Mails and Folder Structure"
-msgstr "Importante mesaĝujojn ('.pmm')..."
+msgstr "Importu Icedove Poŝtojn kaj Dosierujstrukturon"
 
 #: mailimporter/filters/filtericedove.cpp:17
 #, kde-format
@@ -296,17 +321,23 @@ msgid ""
 "possible to recreate the folder structure, the folders will be stored under: "
 "\"Icedove-Import\".</p>"
 msgstr ""
+"<p><b>Icedove-importfiltrilo</b></p><p>Elektu vian bazan Icedove-"
+"poŝtdosierujon (kutime ~/.icedove/*.default/Mail/Local Folders/).</"
+"p><p><b>Noto:</b> Neniam elektu Dosierujon, kiu <u>ne</u> enhavas mbox-"
+"dosierojn (ekzemple, maildir): se vi faros, vi ricevos multajn novajn "
+"dosierujojn.</p><p>Ĉar eblas rekrei la dosierujon, la dosierujoj estos "
+"konservitaj sub: \"Icedove-Import\".</p>"
 
 #: mailimporter/filters/filtericedove.cpp:34
 #, kde-format
 msgctxt "name of icedove application"
 msgid "Icedove"
-msgstr ""
+msgstr "Icedove"
 
 #: mailimporter/filters/filterkmail_maildir.cpp:26
-#, fuzzy, kde-format
+#, kde-format
 msgid "Import KMail Maildirs and Folder Structure"
-msgstr "Importante mesaĝujojn ('.pmm')..."
+msgstr "Importi KMail-Poŝtdosierujojn kaj Dosierujstrukturon"
 
 #: mailimporter/filters/filterkmail_maildir.cpp:28
 #, kde-format
@@ -319,16 +350,23 @@ msgid ""
 "possible to recreate the folder structure, the folders will be stored under: "
 "\"KMail-Import\" in your local folder.</p>"
 msgstr ""
+"<p><b>KMail-importfiltrilo</b></p><p>Elektu la bazan dosierujon de la "
+"retdosierujo de KMail kiun vi volas importi.</p><p><b>Noto:</b> Neniam "
+"elektu vian nunan lokan retpoŝtdiraĵon de KMail (kutime ~/Mail aŭ ~/.kde/"
+"share/apps/kmail/mail ): ĉi-kaze, ImportWizard povas blokiĝi en kontinua "
+"buklo. </p><p>Ĉi tiu filtrilo ne importas KMail-poŝtajn dosierujojn kun mbox "
+"dosieroj.</p><p>Ĉar eblas rekrei la dosierujon, la dosierujoj estos "
+"konservitaj sub: \"KMail-Import\" en via loka dosierujo.</p>"
 
 #: mailimporter/filters/filterkmail_maildir.cpp:176
-#, fuzzy, kde-format
+#, kde-format
 msgid "Could not import %1, duplicated message"
-msgstr "Ne eblas legi poŝtkeston %1"
+msgstr "Ne eblis importi %1, duobligita mesaĝo"
 
 #: mailimporter/filters/filterkmailarchive.cpp:31
-#, fuzzy, kde-format
+#, kde-format
 msgid "Import KMail Archive File"
-msgstr "Importante novajn retpoŝtdosierojn ('.cnm')..."
+msgstr "Importi KMail-Arĥivan Dosieron"
 
 #: mailimporter/filters/filterkmailarchive.cpp:33
 #, kde-format
@@ -337,83 +375,86 @@ msgid ""
 "archives files previously exported by KMail.</p><p>Archive files contain a "
 "complete folder subtree compressed into a single file.</p>"
 msgstr ""
+"<p><b>KMail Archive File Import Filtrile</b></p><p>Tiu ĉi filtrilo importos "
+"arkivajn dosierojn antaŭe eksportitajn de KMail.</p><p>Arĥivaj dosieroj "
+"enhavas kompletan dosierujon kunpremitan en ununura dosiero.</p>"
 
 #: mailimporter/filters/filterkmailarchive.cpp:71
-#, fuzzy, kde-format
+#, kde-format
 msgid "Importing folder '%1'..."
-msgstr "Importante mesaĝujojn ('.pmm')..."
+msgstr "Importa dosierujo '%1'..."
 
 #: mailimporter/filters/filterkmailarchive.cpp:97
 #, kde-format
 msgid "Unexpected subfolder %1 in folder %2."
-msgstr ""
+msgstr "Neatendita subdosierujo %1 en dosierujo %2."
 
 #: mailimporter/filters/filterkmailarchive.cpp:101
 #, kde-format
 msgid "No subfolder named 'cur' in folder %1."
-msgstr ""
+msgstr "Neniu subdosierujo nomita 'cur' en la dosierujo %1."
 
 #: mailimporter/filters/filterkmailarchive.cpp:125
 #, kde-format
 msgid "Unexpected subdirectory named '%1'."
-msgstr ""
+msgstr "Neatendita subdosierujo nomita '%1'."
 
 #: mailimporter/filters/filterkmailarchive.cpp:156
 #, kde-format
 msgid "Select KMail Archive File to Import"
-msgstr ""
+msgstr "Elekti KMail-Arĥivan Dosieron por Importi"
 
 #: mailimporter/filters/filterkmailarchive.cpp:158
-#, fuzzy, kde-format
+#, kde-format
 msgid "KMail Archive Files "
-msgstr "Importante novajn retpoŝtdosierojn ('.cnm')..."
+msgstr "KMail Arkivaj Dosieroj"
 
 #: mailimporter/filters/filterkmailarchive.cpp:160
 #, kde-format
 msgid "Please select an archive file that should be imported."
-msgstr ""
+msgstr "Bonvolu elekti arkivan dosieron, kiu devus esti importita."
 
 #: mailimporter/filters/filterkmailarchive.cpp:169
 #, kde-format
 msgid "No archive selected."
-msgstr ""
+msgstr "Neniu arkivo elektita."
 
 #: mailimporter/filters/filterkmailarchive.cpp:183
 #, kde-format
 msgid "The file '%1' does not appear to be a valid archive."
-msgstr ""
+msgstr "La dosiero '%1' ŝajnas ne esti valida arkivo."
 
 #: mailimporter/filters/filterkmailarchive.cpp:188
-#, fuzzy, kde-format
+#, kde-format
 msgid "Unable to open archive file '%1'"
-msgstr "Ne eblis malfermi dosieron '%1'"
+msgstr "Ne eblas malfermi arkivan dosieron '%1'"
 
 #: mailimporter/filters/filterkmailarchive.cpp:193
-#, fuzzy, kde-format
-#| msgid "Counting files..."
+#, kde-format
 msgid "Counting files in archive..."
-msgstr "Nombrante dosierojn..."
+msgstr "Nombrante dosierojn en arkivo..."
 
 #: mailimporter/filters/filterkmailarchive.cpp:199
-#, fuzzy, kde-format
+#, kde-format
 msgid "Importing the archive file '%1' into the folder '%2' succeeded."
-msgstr "Importante novajn retpoŝtdosierojn ('.cnm')..."
+msgstr "Importado de la arkiva dosiero '%1' en la dosierujon '%2' sukcesis."
 
 #: mailimporter/filters/filterkmailarchive.cpp:200
-#, fuzzy, kde-format
+#, kde-format
 msgid "1 message was imported."
 msgid_plural "%1 messages were imported."
-msgstr[0] "Eraro dum aldono de mesaĝo al mesaĝujo %2 en Retpoŝtilo"
+msgstr[0] "1 mesaĝo estis importita."
+msgstr[1] "%1 mesaĝoj estis importitaj."
 
 #: mailimporter/filters/filterkmailarchive.cpp:202
-#, fuzzy, kde-format
+#, kde-format
 msgid "Importing the archive failed."
-msgstr "Importante novajn retpoŝtdosierojn ('.cnm')..."
+msgstr "Importado de la arkivo malsukcesis."
 
 #: mailimporter/filters/filterlnotes.cpp:30
-#, fuzzy, kde-format
+#, kde-format
 msgid "Import Lotus Notes Emails"
-msgstr "Importo de Aŭtluko Ekspresa 4"
+msgstr "Importi Lotus Notes Retpoŝtojn"
 
 #: mailimporter/filters/filterlnotes.cpp:32
 #, kde-format
@@ -426,11 +467,18 @@ msgid ""
 "will be stored in subfolders named by the files they came from under: "
 "\"LNotes-Import\" in your local folder.</p>"
 msgstr ""
+"<p><b>Importfiltrilo de poŝto de Lotus Notes Structured Text</b></p><p>Ĉi "
+"tiu filtrilo importos dosierojn de Struktura Teksto el eksportita retpoŝta "
+"kliento de Lotus Notes en KMail. Uzu ĉi tiun filtrilon se vi volas importi "
+"retpoŝtojn de Lotus aŭ aliaj retpoŝtoj kiuj uzas la formaton de Strukturita "
+"Teksto de Lotus Notes.</p><p><b>Noto:</b> Ĉar eblas rekrei la dosierujon, la "
+"importitaj mesaĝoj estos konservitaj en subdosierujoj nomitaj laŭ la "
+"dosieroj de kiuj ili venis sub: \"LNotes-Import\" en via loka dosierujo.</p>"
 
 #: mailimporter/filters/filterlnotes.cpp:52
 #, kde-format
 msgid "All Files (*)"
-msgstr ""
+msgstr "Ĉiuj dosieroj (*)"
 
 #: mailimporter/filters/filterlnotes.cpp:54
 #: mailimporter/filters/filtermailapp.cpp:47
@@ -438,34 +486,34 @@ msgstr ""
 #: mailimporter/filters/filtermbox.cpp:45
 #, kde-format
 msgid "No files selected."
-msgstr ""
+msgstr "Neniuj dosieroj elektitaj."
 
 #: mailimporter/filters/filterlnotes.cpp:66
-#, fuzzy, kde-format
+#, kde-format
 msgid "Importing emails from %1"
-msgstr "Importante mesaĝujojn ('.pmm')..."
+msgstr "Importado de retmesaĝoj de %1"
 
 #: mailimporter/filters/filterlnotes.cpp:100
 #, kde-format
 msgctxt "Define folder name where we import lotus note mails"
 msgid "LNotes-Import"
-msgstr ""
+msgstr "LNotes-Importo"
 
 #: mailimporter/filters/filterlnotes.cpp:110
 #: mailimporter/filters/filterpmail.cpp:266
 #, kde-format
 msgid "Message %1"
-msgstr ""
+msgstr "Mesaĝo %1"
 
 #: mailimporter/filters/filtermailapp.cpp:28
-#, fuzzy, kde-format
+#, kde-format
 msgid "Import From OS X Mail"
-msgstr "IMporto de Pegasus-Mail"
+msgstr "Importi De OS X-Poŝto"
 
 #: mailimporter/filters/filtermailapp.cpp:29
 #, kde-format
 msgid "Chris Howells<br /><br />Filter accelerated by Danny Kukawka )"
-msgstr ""
+msgstr "Chris Howells<br /><br />Filtrilo akcelita de Danny Kukawka )"
 
 #: mailimporter/filters/filtermailapp.cpp:30
 #, kde-format
@@ -473,19 +521,22 @@ msgid ""
 "<p><b>OS X Mail Import Filter</b></p><p>This filter imports e-mails from the "
 "Mail client in Apple Mac OS X.</p>"
 msgstr ""
+"<p><b>Filtrilo de Importa Poŝto de OS X</b></p><p>Ĉi tiu filtrilo importas "
+"retpoŝtojn de la Poŝtkliento en Apple Mac OS X.</p>"
 
 #: mailimporter/filters/filtermailapp.cpp:126
 #: mailimporter/filters/filtermailmangzip.cpp:136
 #: mailimporter/filters/filtermbox.cpp:135
-#, fuzzy, kde-format
+#, kde-format
 msgid "1 duplicate message not imported to folder %2 in KMail"
 msgid_plural "%1 duplicate messages not imported to folder %2 in KMail"
-msgstr[0] "Eraro dum aldono de mesaĝo al mesaĝujo %2 en Retpoŝtilo"
+msgstr[0] "1 duobligita mesaĝo ne importita al dosierujo %2 en KMail"
+msgstr[1] "%1 duobligitaj mesaĝoj ne importitaj al dosierujo %2 en KMail"
 
 #: mailimporter/filters/filtermailmangzip.cpp:19
-#, fuzzy, kde-format
+#, kde-format
 msgid "Import mailman gzip Files"
-msgstr "Importante novajn retpoŝtdosierojn ('.cnm')..."
+msgstr "Importi mailman gzip-dosierojn"
 
 #: mailimporter/filters/filtermailmangzip.cpp:21
 #, kde-format
@@ -494,27 +545,31 @@ msgid ""
 "gzipped files into KMail.</p><p><b>Note:</b> Emails will be imported into "
 "folders named after the file they came from, prefixed with MAILMAN-</p>"
 msgstr ""
+"<p><b>importfiltrilo de mailman gzip</b></p><p>Tiu ĉi filtrilo importos "
+"dosierojn de mailman gzip en KMail.</p><p><b>Noto:</b> Retpoŝtoj estos "
+"importitaj en dosierujojn nomitajn laŭ la dosiero el kiu ili venis, "
+"prefiksitaj per MAILMAN-</p>"
 
 #: mailimporter/filters/filtermailmangzip.cpp:35
 #, kde-format
 msgid "gzip Files"
-msgstr ""
+msgstr "gzip-dosieroj"
 
 #: mailimporter/filters/filtermailmangzip.cpp:55
-#, fuzzy, kde-format
+#, kde-format
 msgid "Unable to open archive file '%1', skipping"
-msgstr "Ne eblis malfermi dosieron '%1'"
+msgstr "Ne eblas malfermi arkivan dosieron '%1', preterlasante"
 
 #: mailimporter/filters/filtermbox.cpp:20
 #, kde-format
 msgid "Import mbox Files (UNIX, Evolution)"
-msgstr ""
+msgstr "Importi mbox-dosieroj (UNIKSO, Evolution)"
 
 #: mailimporter/filters/filtermbox.cpp:21
 #: mailimporter/filters/filterplain.cpp:19
 #, kde-format
 msgid "Laurence Anderson <p>( Filter accelerated by Danny Kukawka )</p>"
-msgstr ""
+msgstr "Laurence Anderson <p>( Filtrilo akcelita de Danny Kukawka )</p>"
 
 #: mailimporter/filters/filtermbox.cpp:22
 #, kde-format
@@ -525,21 +580,26 @@ msgid ""
 "Emails will be imported into folders named after the file they came from, "
 "prefixed with MBOX-</p>"
 msgstr ""
+"<p><b>mbox-importfiltrilo</b></p><p>Tiu ĉi filtrilo importos mbox-dosierojn "
+"en KMail. Uzu ĉi tiun filtrilon se vi volas importi retpoŝtojn de Ximian "
+"Evolution aŭ aliajn retpoŝtojn kiuj uzas ĉi tiun tradician UNIX-formaton.</"
+"p><p><b>Noto:</b> Retpoŝtoj estos importitaj en dosierujojn nomitajn laŭ la "
+"dosiero, kiun ili venis. de, prefiksita per MBOX-</p>"
 
 #: mailimporter/filters/filtermbox.cpp:38
 #, kde-format
 msgid "mbox Files"
-msgstr ""
+msgstr "mbox Dosieroj"
 
 #: mailimporter/filters/filteroe.cpp:32
-#, fuzzy, kde-format
+#, kde-format
 msgid "Import Outlook Express Emails"
-msgstr "Importo de Aŭtluko Ekspresa 4"
+msgstr "Importi Outlook Express Retpoŝtojn"
 
 #: mailimporter/filters/filteroe.cpp:33
 #, kde-format
 msgid "Laurence Anderson <br>( Filter enhanced by Danny Kukawka )</p>"
-msgstr ""
+msgstr "Laurence Anderson <br>( Filtrilo plibonigita de Danny Kukawka )</p>"
 
 #: mailimporter/filters/filteroe.cpp:34
 #, kde-format
@@ -552,46 +612,53 @@ msgid ""
 "folders from Outlook Express 5 and 6 will be stored under: \"OE-Import\" in "
 "your local folder.</p>"
 msgstr ""
+"<p><b>Importfiltrilo de Outlook Express 4/5/6</b></p><p>Vi devos lokalizi la "
+"dosierujon kie la leterkesto estis konservita serĉante .dbx aŭ .mbx "
+"dosierojn sub < ul><li><i>C:\\Windows\\Aplikaj datumoj</i> en Vindozo 9x</"
+"li><li><i>Dokumentoj kaj Agordoj</i> en Vindozo 2000 aŭ poste</li> </ul></"
+"p><p><b>Noto:</b> Ĉar eblas rekrei la dosierujon, la dosierujoj de Outlook "
+"Express 5 kaj 6 estos konservitaj sub: \"OE-Import\" en via loka dosierujo.</"
+"p>"
 
 #: mailimporter/filters/filteroe.cpp:66
-#, fuzzy, kde-format
+#, kde-format
 msgid "No Outlook Express mailboxes found in directory %1."
-msgstr "Serĉante '.mbx'-dosieroj de Aŭtluko Ekspresa en dosierujo %1"
+msgstr "Neniuj leterkestoj de Outlook Express trovitaj en la dosierujo %1."
 
 #: mailimporter/filters/filteroe.cpp:82
-#, fuzzy, kde-format
+#, kde-format
 msgid "Import folder structure..."
-msgstr "Importante mesaĝujojn ('.pmm')..."
+msgstr "Importi dosierujon-strukturon..."
 
 #: mailimporter/filters/filteroe.cpp:106
-#, fuzzy, kde-format
+#, kde-format
 msgid "Finished importing Outlook Express emails"
-msgstr "%1 ne estas OE5-poŝtkesto"
+msgstr "Finis importi Outlook Express-retpoŝtojn"
 
 #: mailimporter/filters/filteroe.cpp:126
-#, fuzzy, kde-format
+#, kde-format
 msgid "Unable to open mailbox %1"
-msgstr "Ne eblis malfermi dosieron '%1'"
+msgstr "Ne eblas malfermi leterkeston %1"
 
 #: mailimporter/filters/filteroe.cpp:138
-#, fuzzy, kde-format
+#, kde-format
 msgid "Importing OE4 Mailbox %1"
-msgstr "Importante mesaĝujojn ('.pmm')..."
+msgstr "Importado de OE4 Poŝtkesto %1"
 
 #: mailimporter/filters/filteroe.cpp:155
-#, fuzzy, kde-format
+#, kde-format
 msgid "Importing OE5+ Mailbox %1"
-msgstr "Importante mesaĝujojn ('.pmm')..."
+msgstr "Importa OE5+ Poŝtkesto %1"
 
 #: mailimporter/filters/filteroe.cpp:161
-#, fuzzy, kde-format
+#, kde-format
 msgid "Importing OE5+ Folder file %1"
-msgstr "Importante mesaĝujojn ('.pmm')..."
+msgstr "Importado de OE5+ Dosierujo %1"
 
 #: mailimporter/filters/filteropera.cpp:19
-#, fuzzy, kde-format
+#, kde-format
 msgid "Import Opera Emails"
-msgstr "Importo de Aŭtluko Ekspresa 4"
+msgstr "Importi Opera-Retpoŝtojn"
 
 #: mailimporter/filters/filteropera.cpp:21
 #, kde-format
@@ -603,18 +670,24 @@ msgid ""
 "imported into a folder named after the account they came from, prefixed with "
 "OPERA-</p>"
 msgstr ""
+"<p><b>Importa filtrilo de Opera retpoŝto</b></p><p>Ĉi tiu filtrilo importos "
+"retpoŝtojn el la dosierujo de Opera. Uzu ĉi tiun filtrilon se vi volas "
+"importi ĉiujn retpoŝtojn ene de konto en la Opera maildir.</p><p>Elektu la "
+"dosierujon de la konto (kutime ~/.opera/mail/store/account*).</p> <p><b>Noto:"
+"</b> Retpoŝtoj estos importitaj en dosierujon nomitan laŭ la konto de kiu "
+"ili venis, prefiksita per OPERA-</p>"
 
 #: mailimporter/filters/filteropera.cpp:38
 #, kde-format
 msgctxt "name of opera application"
 msgid "Opera"
-msgstr ""
+msgstr "Opera"
 
 #: mailimporter/filters/filteropera.cpp:72
 #: mailimporter/filters/filterplain.cpp:55
-#, fuzzy, kde-format
+#, kde-format
 msgid "Importing new mail files..."
-msgstr "Importante novajn retpoŝtdosierojn ('.cnm')..."
+msgstr "Importante novajn poŝtajn dosierojn..."
 
 #: mailimporter/filters/filteropera.cpp:190
 #: mailimporter/filters/filterplain.cpp:50
@@ -624,9 +697,9 @@ msgid "Counting files..."
 msgstr "Nombrante dosierojn..."
 
 #: mailimporter/filters/filterplain.cpp:18
-#, fuzzy, kde-format
+#, kde-format
 msgid "Import Plain Text Emails"
-msgstr "Importo de Aŭtluko Ekspresa 4"
+msgstr "Importi Plattekstajn Retpoŝtojn"
 
 #: mailimporter/filters/filterplain.cpp:20
 #, kde-format
@@ -636,16 +709,20 @@ msgid ""
 "prefixed by PLAIN-</p><p>This filter will import all .msg, .eml and .txt "
 "emails.</p>"
 msgstr ""
+"<p>Elektu la dosierujon enhavantan la retpoŝtojn en via sistemo. La "
+"retpoŝtoj estas metitaj en dosierujon kun la sama nomo kiel la dosierujo en "
+"kiu ili estis, prefiksita per PLAIN-</p><p>Ĉi tiu filtrilo importos ĉiujn "
+"retpoŝtojn .msg, .eml kaj .txt.</p>"
 
 #: mailimporter/filters/filterpmail.cpp:22
-#, fuzzy, kde-format
+#, kde-format
 msgid "Import Folders From Pegasus-Mail"
-msgstr "IMporto de Pegasus-Mail"
+msgstr "Importi Dosierujojn De Pegasus-Mail"
 
 #: mailimporter/filters/filterpmail.cpp:23
 #, kde-format
 msgid "Holger Schurig <br>( rewritten by Danny Kukawka )"
-msgstr ""
+msgstr "Holger Schurig <br>( reverkita de Danny Kukawka )"
 
 #: mailimporter/filters/filterpmail.cpp:24
 #, kde-format
@@ -656,6 +733,11 @@ msgid ""
 "folder structure, the folders will be stored under: \"PegasusMail-Import\".</"
 "p>"
 msgstr ""
+"<p>Elektu la dosierujon Pegasus-Mail en via sistemo (enhavante dosierojn *."
+"CNM, *.PMM kaj *.MBX). En multaj sistemoj tio estas konservita en C:\\pmail"
+"\\mail aŭ C:\\pmail\\mail\\admin</p><p><b>Noto:</b> Ĉar eblas rekrei la "
+"dosierujo strukturo, la dosierujoj estos konservitaj sub: \"PegasusMail-"
+"Import\".</p>"
 
 #: mailimporter/filters/filterpmail.cpp:62
 #, kde-format
@@ -663,6 +745,8 @@ msgid ""
 "Cannot parse the folder structure; continuing import without subfolder "
 "support."
 msgstr ""
+"Ne povas analizi la dosierujon; daŭrigante importadon sen subteno de "
+"subdosierujo."
 
 #: mailimporter/filters/filterpmail.cpp:65
 #, kde-format
@@ -683,23 +767,23 @@ msgstr "Importante 'unix'-mesaĝujojn ('.mbx')..."
 #, kde-format
 msgctxt "define folder name when we will import pegasus mail"
 msgid "PegasusMail-Import"
-msgstr ""
+msgstr "PegasusMail-Importo"
 
 #: mailimporter/filters/filterpmail.cpp:166
 #: mailimporter/filters/filterpmail.cpp:245
-#, fuzzy, kde-format
+#, kde-format
 msgid "Importing %1"
-msgstr "Importante mesaĝujojn ('.pmm')..."
+msgstr "Importado de %1"
 
 #: mailimporter/filters/filterpmail.cpp:277
-#, fuzzy, kde-format
+#, kde-format
 msgid "Parsing the folder structure..."
-msgstr "Importante mesaĝujojn ('.pmm')..."
+msgstr "Analizante la dosierujo-strukturon..."
 
 #: mailimporter/filters/filterseamonkey.cpp:14
-#, fuzzy, kde-format
+#, kde-format
 msgid "Import SeaMonkey Mails and Folder Structure"
-msgstr "Importante mesaĝujojn ('.pmm')..."
+msgstr "Importi SeaMonkey-Poŝtojn kaj Dosierujon"
 
 #: mailimporter/filters/filterseamonkey.cpp:17
 #, kde-format
@@ -711,11 +795,17 @@ msgid ""
 "it is possible to recreate the folder structure, the folders will be stored "
 "under: \"SeaMonkey-Import\".</p>"
 msgstr ""
+"<p><b>Importa filtrilo de SeaMonkey</b></p><p>Elektu vian bazan "
+"retdosierujon de SeaMonkey (kutime ~/.icedove/*.default/Mail/Local Folders/)."
+"</p><p> <b>Noto:</b> Neniam elektu Dosierujon, kiu <u>ne</u> enhavas mbox-"
+"dosierojn (ekzemple, maildir): se vi faros, vi ricevos multajn novajn "
+"dosierujojn.</p> <p>Ĉar eblas rekrei la dosierujon, la dosierujoj estos "
+"konservitaj sub: \"SeaMonkey-Import\".</p>"
 
 #: mailimporter/filters/filtersylpheed.cpp:28
 #, kde-format
 msgid "Import Sylpheed Maildirs and Folder Structure"
-msgstr ""
+msgstr "Importu Sylpheed Maildirs kaj Dosierujo-Strukturo"
 
 #: mailimporter/filters/filtersylpheed.cpp:30
 #, kde-format
@@ -726,23 +816,28 @@ msgid ""
 "\"Sylpheed-Import\" in your local folder.</p><p>This filter also recreates "
 "the status of message, e.g. new or forwarded.</p>"
 msgstr ""
+"<p><b>Sylpheed-importfiltrilo</b></p><p>Elektu la bazan dosierujon de la "
+"Sylpheed-poŝta dosierujo, kiun vi volas importi (kutime: ~/Mail ).</p><p>Ĉar "
+"ĝi estas eblas rekrei la dosierujon, la dosierujoj estos konservitaj sub: "
+"\"Sylpheed-Import\" en via loka dosierujo.</p><p>Tiu ĉi filtrilo ankaŭ "
+"rekreas la staton de mesaĝo, ekz. nova aŭ plusendita.</p>"
 
 #: mailimporter/filters/filtersylpheed.cpp:47
 #, kde-format
 msgctxt "name of sylpheed application"
 msgid "Sylpheed"
-msgstr ""
+msgstr "Silfedo"
 
 #: mailimporter/filters/filtersylpheed.cpp:187
 #, kde-format
 msgctxt "define folder name where we will import sylpheed mails"
 msgid "Sylpheed-Import"
-msgstr ""
+msgstr "Sylpheed-Importo"
 
 #: mailimporter/filters/filterthebat.cpp:28
-#, fuzzy, kde-format
+#, kde-format
 msgid "Import The Bat! Mails and Folder Structure"
-msgstr "Importante mesaĝujojn ('.pmm')..."
+msgstr "Importi The Bat! Poŝtojn kaj Dosierujostrukturon"
 
 #: mailimporter/filters/filterthebat.cpp:30
 #, kde-format
@@ -754,17 +849,23 @@ msgid ""
 "recreate the folder structure, the folders will be stored under: \"TheBat-"
 "Import\" in your local account.</p>"
 msgstr ""
+"<p><b>The Bat! importfiltrilo</b></p><p>Elektu la bazan dosierujon de la "
+"'The Bat!' loka poŝta dosierujo, kiun vi volas importi.</p><p><b>Noto:</b> "
+"Ĉi tiu filtrilo importas la *.tbb-dosierojn el 'The Bat!' loka dosierujo, "
+"ekz. de POP-kontoj, kaj ne de IMAP/DIMAP-kontoj.</p><p>Ĉar eblas rekrei la "
+"dosierujon, la dosierujoj estos konservitaj sub: \"TheBat-Import\" en via "
+"loka konto.</p> p>"
 
 #: mailimporter/filters/filterthebat.cpp:204
 #, kde-format
 msgctxt "Define folder where we will import thebat mails"
 msgid "TheBat-Import"
-msgstr ""
+msgstr "TheBat-Importo"
 
 #: mailimporter/filters/filterthunderbird.cpp:24
 #, kde-format
 msgid "Import Thunderbird/Mozilla Local Mails and Folder Structure"
-msgstr ""
+msgstr "Importi Thunderbird/Mozilla Lokajn Poŝtojn kaj Dosierujostrukturon"
 
 #: mailimporter/filters/filterthunderbird.cpp:26
 #, kde-format
@@ -776,59 +877,65 @@ msgid ""
 "new folders.</p><p>Since it is possible to recreate the folder structure, "
 "the folders will be stored under: \"Thunderbird-Import\".</p>"
 msgstr ""
+"<p><b>Thunderbird/Mozilla importfiltrilo</b></p><p>Elektu vian bazan "
+"Thunderbird/Mozilla poŝtdosierujon (kutime ~/.thunderbird/*.default/Mail/"
+"Local Folders/).</p ><p><b>Noto:</b> Neniam elektu Dosierujon, kiu <u>ne</u> "
+"enhavas mbox-dosierojn (ekzemple, maildir): se vi faros, vi ricevos multajn "
+"novajn dosierujojn. </p><p>Ĉar eblas rekrei la dosierujon, la dosierujoj "
+"estos konservitaj sub: \"Thunderbird-Import\".</p>"
 
 #: mailimporter/filters/filterthunderbird.cpp:58
 #, kde-format
 msgctxt "name of thunderbird application"
 msgid "Thunderbird"
-msgstr ""
+msgstr "Tondrobirdo"
 
 #: mailimporter/othermailerutil.cpp:18
 #, kde-format
 msgctxt "name of trojira application"
 msgid "Trojita"
-msgstr ""
+msgstr "Trojita"
 
 #: mailimporter/othermailerutil.cpp:22 mailimporter/othermailerutil.cpp:26
 #, kde-format
 msgctxt "name of geary application"
 msgid "Geary"
-msgstr ""
+msgstr "Geary"
 
 #: mailimporter/selectthunderbirdprofilewidget.cpp:20
 #, kde-format
 msgctxt "@title:window"
 msgid "Select thunderbird profile"
-msgstr ""
+msgstr "Elekti thunderbird-profilon"
 
 #: mailimporter/selectthunderbirdprofilewidget.cpp:70
 #, kde-format
 msgid " (default)"
-msgstr ""
+msgstr " (defaŭlta)"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
 #: mailimporter/ui/importmailswidget.ui:27
-#, fuzzy, kde-format
+#, kde-format
 msgid "From:"
-msgstr "De: %1"
+msgstr "De:"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
 #: mailimporter/ui/importmailswidget.ui:37
-#, fuzzy, kde-format
+#, kde-format
 msgid "To:"
-msgstr "Al"
+msgstr "Al:"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
 #: mailimporter/ui/importmailswidget.ui:47
-#, fuzzy, kde-format
+#, kde-format
 msgid "Current:"
-msgstr "nuna:"
+msgstr "Aktualo:"
 
 #. i18n: ectx: property (text), widget (QLabel, textStatus)
 #: mailimporter/ui/importmailswidget.ui:57
-#, fuzzy, kde-format
+#, kde-format
 msgid "Importing in progress..."
-msgstr "Importo de Aŭtluko Ekspresa 4"
+msgstr "Importado en progreso..."
 
 #. i18n: ectx: property (text), widget (QLabel, current)
 #. i18n: ectx: property (text), widget (QLabel, to)
@@ -842,36 +949,39 @@ msgstr "..."
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel4)
 #: mailimporter/ui/importmailswidget.ui:102
-#, fuzzy, kde-format
+#, kde-format
 msgid "Total:"
-msgstr "Al"
+msgstr "Totalo:"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: mailimporter/ui/selectthunderbirdprofilewidget.ui:17
 #, kde-format
 msgid "Select Profile:"
-msgstr ""
+msgstr "Elektu Profilon:"
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:94
 #, kde-format
 msgid "Error: failed to read temporary file at %1"
-msgstr ""
+msgstr "Eraro: malsukcesis legi provizoran dosieron ĉe %1"
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:123
-#, fuzzy, kde-format
+#, kde-format
 msgid "<b>Warning:</b> Got a bad message folder, adding to root folder."
-msgstr "Eraro dum aldono de mesaĝo al mesaĝujo %1 en Retpoŝtilo"
+msgstr ""
+"<b>Averto:</b> Havas malbonan mesaĝan dosierujon, aldonante al radika "
+"dosierujo."
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:168
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "<b>Warning:</b> Could not check that the folder already exists. Reason: %1"
-msgstr "Eraro dum aldono de mesaĝo al mesaĝujo %1 en Retpoŝtilo"
+msgstr ""
+"<b>Averto:</b> Ne eblis kontroli ke la dosierujo jam ekzistas. Kialo: %1"
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:185
-#, fuzzy, kde-format
+#, kde-format
 msgid "<b>Error:</b> Could not create folder. Reason: %1"
-msgstr "Eraro dum aldono de mesaĝo al mesaĝujo %1 en Retpoŝtilo"
+msgstr "<b>Eraro:</b> Ne eblis krei dosierujon. Kialo: %1"
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:213
 #, kde-format
@@ -879,83 +989,20 @@ msgid ""
 "<b>Warning:</b> Could not fetch mail in folder %1. Reason: %2 You may have "
 "duplicate messages."
 msgstr ""
+"<b>Averto:</b> Ne eblis preni poŝton en la dosierujo %1. Kialo: %2 Vi eble "
+"havas duplikatajn mesaĝojn."
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:221
-#, fuzzy, kde-format
+#, kde-format
 msgid "<b>Warning:</b> Got an invalid message in folder %1."
-msgstr "Eraro dum aldono de mesaĝo al mesaĝujo %1 en Retpoŝtilo"
+msgstr "<b>Averto:</b> ricevis nevalidan mesaĝon en la dosierujo %1."
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:275
-#, fuzzy, kde-format
+#, kde-format
 msgid "<b>Error:</b> Could not add message to folder %1. Reason: %2"
-msgstr "Eraro dum aldono de mesaĝo al mesaĝujo %1 en Retpoŝtilo"
+msgstr "<b>Eraro:</b> Ne eblis aldoni mesaĝon al dosierujo %1. Kialo: %2"
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:295
 #, kde-format
 msgid "Unable to retrieve folder for folder path %1."
-msgstr ""
-
-#, fuzzy
-#~ msgid "Import Outlook Emails"
-#~ msgstr "Importo de Aŭtluko Ekspresa 4"
-
-#, fuzzy
-#~ msgid "Counting mail..."
-#~ msgstr "Nombrante dosierojn..."
-
-#, fuzzy
-#~ msgctxt "'directories' means directories on hard disc, not email-folders."
-#~ msgid "Counting directories..."
-#~ msgstr "Nombrante dosierojn..."
-
-#, fuzzy
-#~ msgctxt "'folders' means email-folders, not folders on disc."
-#~ msgid "Counting folders..."
-#~ msgstr "Nombrante dosierojn..."
-
-#, fuzzy
-#~ msgid "Step 2: Importing..."
-#~ msgstr "&Importu"
-
-#, fuzzy
-#~ msgid "Import in progress"
-#~ msgstr "Importo de Aŭtluko Ekspresa 4"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Wolfram Diestel Steffen Pietsch"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "wolfram@steloj.de Steffen.Pietsch@BerlinOnline.de"
-
-#~ msgid "Hans Dijkema"
-#~ msgstr "Hans Dijkema"
-
-#~ msgid "Original author"
-#~ msgstr "Origina aŭtoro"
-
-#~ msgid "Danny Kukawka"
-#~ msgstr "Danny Kukawka"
-
-#~ msgid "Laurence Anderson"
-#~ msgstr "Laurence Anderson"
-
-#~ msgid "Daniel Molkentin"
-#~ msgstr "Daniel Molkentin"
-
-#, fuzzy
-#~ msgid ""
-#~ "<b>Fatal:</b> Unable to start KMail for D-Bus communication: %1; %2<br /"
-#~ ">Make sure <i>kmail</i> is installed."
-#~ msgstr ""
-#~ "GRAVA ERARO: Ne eblis lanĉi Retpoŝtilon cele al DCOP-komunikado\n"
-#~ "             certigu, ke Retpoŝtilo 'KMail' estas trovebla en via pado."
-
-#, fuzzy
-#~ msgid "Cannot make folder %1 in KMail"
-#~ msgstr "Ne eblas krei mesaĝujon %1 en Retpoŝtilo"
-
-#, fuzzy
-#~ msgid "Cannot add message to folder %1 in KMail"
-#~ msgstr "Ne eblas aldoni mesaĝon al mesaĝujo %1 en Retpoŝtilo"
+msgstr "Ne eblas preni dosierujon por dosierujo vojo %1."
