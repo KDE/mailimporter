@@ -1,0 +1,16 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+find_dependency(KPim@KF_MAJOR_VERSION@MailImporter "@PIM_VERSION@")
+
+if (@MAILIMPORTERAKONADI_KF5_COMPAT@)
+    message(WARNING "\n"
+                    "************* DEPRECATION WARNING *************\n"
+		    "Using find_package(KF5MailImporterAkonadi) and KF5::MailImporterAkonadi targets is deprecated. "
+		    "Please use find_package(KPim@KF_MAJOR_VERSION@MailImporterAkonadi) and KPim@KF_MAJOR_VERSION@::MailImporterAkonadi instead. This backwards "
+                    "compatibility will be removed in the next major version.\n"
+                    "***********************************************\n")
+endif()
+
+
+include("${CMAKE_CURRENT_LIST_DIR}/KPim@KF_MAJOR_VERSION@MailImporterAkonadiTargets.cmake")

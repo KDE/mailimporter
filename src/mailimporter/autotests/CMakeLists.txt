@@ -5,7 +5,7 @@ macro(add_mailimporter_unittest _source _additionalSource)
     ecm_add_test(${_source} ${_additionalSource} ${_name}.h
         TEST_NAME ${_name}
         NAME_PREFIX "mailimporter-"
-        LINK_LIBRARIES KF5::MailImporter Qt::Test Qt::Core Qt::Gui Qt::Widgets
+        LINK_LIBRARIES KPim${KF_MAJOR_VERSION}::MailImporter Qt::Test Qt::Core Qt::Gui Qt::Widgets
     )
 endmacro ()
 

@@ -1,48 +1,49 @@
 ########### CMake Config Files ###########
-set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5MailImporter")
-
+set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim${KF_MAJOR_VERSION}MailImporter")
+set(MAILIMPORTER_KF5_COMPAT FALSE)
 
 if (BUILD_QCH)
     ecm_install_qch_export(
-        TARGETS KF5MailImporter_QCH
-        FILE KF5MailImporteQchTargets.cmake
+        TARGETS KPim${KF_MAJOR_VERSION}MailImporter_QCH
+        FILE KPim${KF_MAJOR_VERSION}MailImporteQchTargets.cmake
         DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
         COMPONENT Devel
     )
-    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KF5MailImporterQchTargets.cmake\")")
+    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim${KF_MAJOR_VERSION}MailImporterQchTargets.cmake\")")
 endif()
 
-add_library(KF5MailImporter)
-add_library(KF5::MailImporter ALIAS KF5MailImporter)
+add_library(KPim${KF_MAJOR_VERSION}MailImporter)
+add_library(KPim${KF_MAJOR_VERSION}::MailImporter ALIAS KPim${KF_MAJOR_VERSION}MailImporter)
+add_library(KF5::MailImporter ALIAS KPim${KF_MAJOR_VERSION}MailImporter)
 
 configure_package_config_file(
-    "${CMAKE_CURRENT_SOURCE_DIR}/KF5MailImporterConfig.cmake.in"
-    "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterConfig.cmake"
+    "${CMAKE_CURRENT_SOURCE_DIR}/KPimMailImporterConfig.cmake.in"
+    "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}MailImporterConfig.cmake"
     INSTALL_DESTINATION  ${CMAKECONFIG_INSTALL_DIR}
     )
 
 ecm_setup_version(PROJECT VARIABLE_PREFIX MAILIMPORTER
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/mailimporter_version.h"
-    PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterConfigVersion.cmake"
+    PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}MailImporterConfigVersion.cmake"
     SOVERSION 5
     )
 
 install(FILES
-    "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterConfig.cmake"
-    "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterConfigVersion.cmake"
+    "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}MailImporterConfig.cmake"
+    "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}MailImporterConfigVersion.cmake"
     DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
     COMPONENT Devel
     )
 
-install(EXPORT KF5MailImporterTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KF5MailImporterTargets.cmake NAMESPACE KF5::)
+install(EXPORT KPim${KF_MAJOR_VERSION}MailImporterTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KPim${KF_MAJOR_VERSION}MailImporterTargets.cmake NAMESPACE KPim${KF_MAJOR_VERSION}::)
 
 install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/mailimporter_version.h
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/MailImporter COMPONENT Devel
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/MailImporter COMPONENT Devel
     )
 
 
-target_sources(KF5MailImporter PRIVATE
+target_sources(KPim${KF_MAJOR_VERSION}MailImporter PRIVATE
     filters/filteroe.cpp
     filters/filterpmail.cpp
     filters/filterplain.cpp
@@ -104,24 +105,24 @@ target_sources(KF5MailImporter PRIVATE
     )
 
 
-ki18n_wrap_ui(KF5MailImporter ui/importmailswidget.ui ui/selectthunderbirdprofilewidget.ui)
+ki18n_wrap_ui(KPim${KF_MAJOR_VERSION}MailImporter ui/importmailswidget.ui ui/selectthunderbirdprofilewidget.ui)
 
-ecm_qt_declare_logging_category(KF5MailImporter HEADER mailimporter_debug.h IDENTIFIER MAILIMPORTER_LOG CATEGORY_NAME org.kde.pim.mailimporter
+ecm_qt_declare_logging_category(KPim${KF_MAJOR_VERSION}MailImporter HEADER mailimporter_debug.h IDENTIFIER MAILIMPORTER_LOG CATEGORY_NAME org.kde.pim.mailimporter
         DESCRIPTION "mailimporter (mailimporter)"
         OLD_CATEGORY_NAMES log_mailimporter
         EXPORT MAILIMPORTER
     )
 
 if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
-    set_target_properties(KF5MailImporter PROPERTIES UNITY_BUILD ON)
+    set_target_properties(KPim${KF_MAJOR_VERSION}MailImporter PROPERTIES UNITY_BUILD ON)
 endif()
-generate_export_header( KF5MailImporter BASE_NAME mailimporter)
+generate_export_header( KPim${KF_MAJOR_VERSION}MailImporter BASE_NAME mailimporter)
 
-target_include_directories(KF5MailImporter INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/MailImporter/>")
-target_include_directories(KF5MailImporter PUBLIC "$<BUILD_INTERFACE:${MailImporter_SOURCE_DIR}/src;${MailImporter_BINARY_DIR}/src;>")
+target_include_directories(KPim${KF_MAJOR_VERSION}MailImporter INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/MailImporter/>")
+target_include_directories(KPim${KF_MAJOR_VERSION}MailImporter PUBLIC "$<BUILD_INTERFACE:${MailImporter_SOURCE_DIR}/src;${MailImporter_BINARY_DIR}/src;>")
 
 
-target_link_libraries(KF5MailImporter
+target_link_libraries(KPim${KF_MAJOR_VERSION}MailImporter
     PUBLIC
     KF${KF_MAJOR_VERSION}::Archive
     PRIVATE
@@ -132,15 +133,15 @@ target_link_libraries(KF5MailImporter
     Qt::Widgets
     )
 
-set_target_properties(KF5MailImporter PROPERTIES
+set_target_properties(KPim${KF_MAJOR_VERSION}MailImporter PROPERTIES
     VERSION ${MAILIMPORTER_VERSION}
     SOVERSION ${MAILIMPORTER_SOVERSION}
     EXPORT_NAME MailImporter
     )
 
 install(TARGETS
-    KF5MailImporter
-    EXPORT KF5MailImporterTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS}
+    KPim${KF_MAJOR_VERSION}MailImporter
+    EXPORT KPim${KF_MAJOR_VERSION}MailImporterTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS}
     )
 
 ecm_generate_headers(MailImporter_CamelCase_HEADERS
@@ -186,15 +187,15 @@ ecm_generate_headers(MailImporter_FiltersCamelCase_HEADERS
 
 
 ecm_generate_pri_file(BASE_NAME MailImporter
-    LIB_NAME KF5MailImporter
-    DEPS "KArchive" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF}/MailImporter
+    LIB_NAME KPim${KF_MAJOR_VERSION}MailImporter
+    DEPS "KArchive" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/MailImporter
     )
 
 
 install(FILES
     ${MailImporter_CamelCase_HEADERS}
     ${MailImporter_FiltersCamelCase_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/MailImporter/MailImporter
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/MailImporter/MailImporter
     COMPONENT Devel
     )
 
@@ -202,7 +203,7 @@ install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/mailimporter_export.h
     ${MailImporter_HEADERS}
     ${MailImporter_Filters_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/MailImporter/mailimporter
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/MailImporter/mailimporter
     COMPONENT Devel
     )
 install(FILES
@@ -216,9 +217,9 @@ endif()
 
 if (BUILD_QCH)
     ecm_add_qch(
-        KF5MailImporter_QCH
+        KPim${KF_MAJOR_VERSION}MailImporter_QCH
         NAME KMailImporter
-        BASE_NAME KF5MailImporter
+        BASE_NAME KPim${KF_MAJOR_VERSION}MailImporter
         VERSION ${PIM_VERSION}
         ORG_DOMAIN org.kde
         SOURCES # using only public headers, to cover only public API
@@ -238,4 +239,34 @@ if (BUILD_QCH)
         QCH_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
         COMPONENT Devel
     )
+endif()
+
+##
+# TODO: Backwards compatiblity. Remove in next major version
+##
+set(CMAKECONFIG_INSTALL_DIR_KF5 "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5MailImporter")
+set(MAILIMPORTER_KF5_COMPAT TRUE)
+configure_package_config_file(
+    "${CMAKE_CURRENT_SOURCE_DIR}/KPimMailImporterConfig.cmake.in"
+    "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterConfig.cmake"
+    INSTALL_DESTINATION ${CMAKECONFIG_INSTALL_DIR_KF5}
+)
+
+install(FILES
+    "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterConfig.cmake"
+    DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF5}"
+    COMPONENT Devel
+)
+install(FILES
+    "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}MailImporterConfigVersion.cmake"
+    RENAME "KF5MailImporterConfigVersion.cmake"
+    DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF5}"
+    COMPONENT Devel
+)
+if (0)
+install(EXPORT KPim${KF_MAJOR_VERSION}MailImporterTargets
+    DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF5}"
+    FILE KPim${KF_MAJOR_VERSION}MailImporterTargets.cmake
+    NAMESPACE KF5::
+)
 endif()

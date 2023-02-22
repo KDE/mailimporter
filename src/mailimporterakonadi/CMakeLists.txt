@@ -1,50 +1,51 @@
 ########### CMake Config Files ###########
-set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5MailImporterAkonadi")
+set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim${KF_MAJOR_VERSION}MailImporterAkonadi")
+set(MAILIMPORTERAKONADI_KF5_COMPAT FALSE)
 if (BUILD_QCH)
     ecm_install_qch_export(
-        TARGETS KF5MailImporterAkonadi_QCH
-        FILE KF5MailImporterAkonadiQchTargets.cmake
+        TARGETS KPim${KF_MAJOR_VERSION}MailImporterAkonadi_QCH
+        FILE KPim${KF_MAJOR_VERSION}MailImporterAkonadiQchTargets.cmake
         DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
         COMPONENT Devel
     )
-    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KF5MailImporterAkonadiQchTargets.cmake\")")
+    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim${KF_MAJOR_VERSION}MailImporterAkonadiQchTargets.cmake\")")
 endif()
 
-add_library(KF5MailImporterAkonadi)
-add_library(KF5::MailImporterAkonadi ALIAS KF5MailImporterAkonadi)
+add_library(KPim${KF_MAJOR_VERSION}MailImporterAkonadi)
+add_library(KPim${KF_MAJOR_VERSION}::MailImporterAkonadi ALIAS KPim${KF_MAJOR_VERSION}MailImporterAkonadi)
 configure_package_config_file(
-    "${CMAKE_CURRENT_SOURCE_DIR}/KF5MailImporterAkonadiConfig.cmake.in"
-    "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterAkonadiConfig.cmake"
+    "${CMAKE_CURRENT_SOURCE_DIR}/KPimMailImporterAkonadiConfig.cmake.in"
+    "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}MailImporterAkonadiConfig.cmake"
     INSTALL_DESTINATION  ${CMAKECONFIG_INSTALL_DIR}
     )
 
 ecm_setup_version(PROJECT VARIABLE_PREFIX MAILIMPORTER
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/mailimporterakonadi_version.h"
-    PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterAkonadiConfigVersion.cmake"
+    PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}MailImporterAkonadiConfigVersion.cmake"
     SOVERSION 5
     )
 
 install(FILES
-    "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterAkonadiConfig.cmake"
-    "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterAkonadiConfigVersion.cmake"
+    "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}MailImporterAkonadiConfig.cmake"
+    "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}MailImporterAkonadiConfigVersion.cmake"
     DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
     COMPONENT Devel
     )
 
-install(EXPORT KF5MailImporterAkonadiTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KF5MailImporterAkonadiTargets.cmake NAMESPACE KF5::)
+install(EXPORT KPim${KF_MAJOR_VERSION}MailImporterAkonadiTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KPim${KF_MAJOR_VERSION}MailImporterAkonadiTargets.cmake NAMESPACE KPim${KF_MAJOR_VERSION}::)
 
 install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/mailimporterakonadi_version.h
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/MailImporterAkonadi COMPONENT Devel
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/MailImporterAkonadi COMPONENT Devel
     )
 
-target_sources(KF5MailImporterAkonadi PRIVATE
+target_sources(KPim${KF_MAJOR_VERSION}MailImporterAkonadi PRIVATE
     filterimporterakonadi.cpp
     filterimporterakonadi.h
     filterimportertestutil.h
     )
 
-ecm_qt_declare_logging_category(KF5MailImporterAkonadi HEADER mailimporterakonadi_debug.h IDENTIFIER MAILIMPORTERAKONADI_LOG CATEGORY_NAME org.kde.pim.mailimporterakonadi
+ecm_qt_declare_logging_category(KPim${KF_MAJOR_VERSION}MailImporterAkonadi HEADER mailimporterakonadi_debug.h IDENTIFIER MAILIMPORTERAKONADI_LOG CATEGORY_NAME org.kde.pim.mailimporterakonadi
         DESCRIPTION "mailimporterakonadi (mailimporter)"
         EXPORT MAILIMPORTER
     )
@@ -52,20 +53,21 @@ ecm_qt_declare_logging_category(KF5MailImporterAkonadi HEADER mailimporterakonad
 
 
 if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
-    set_target_properties(KF5MailImporterAkonadi PROPERTIES UNITY_BUILD ON)
+    set_target_properties(KPim${KF_MAJOR_VERSION}MailImporterAkonadi PROPERTIES UNITY_BUILD ON)
 endif()
 
-generate_export_header( KF5MailImporterAkonadi BASE_NAME mailimporterakonadi)
+generate_export_header( KPim${KF_MAJOR_VERSION}MailImporterAkonadi BASE_NAME mailimporterakonadi)
 
-add_library(KF5::MailImporterAkonadi ALIAS KF5MailImporterAkonadi)
+add_library(KPim${KF_MAJOR_VERSION}::MailImporterAkonadi ALIAS KPim${KF_MAJOR_VERSION}MailImporterAkonadi)
+add_library(KF5::MailImporterAkonadi ALIAS KPim${KF_MAJOR_VERSION}MailImporterAkonadi)
 
-target_include_directories(KF5MailImporterAkonadi INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/MailImporterAkonadi/>")
-target_include_directories(KF5MailImporterAkonadi PUBLIC "$<BUILD_INTERFACE:${MailImporter_SOURCE_DIR}/src;${MailImporter_BINARY_DIR}/src;>")
+target_include_directories(KPim${KF_MAJOR_VERSION}MailImporterAkonadi INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/MailImporterAkonadi/>")
+target_include_directories(KPim${KF_MAJOR_VERSION}MailImporterAkonadi PUBLIC "$<BUILD_INTERFACE:${MailImporter_SOURCE_DIR}/src;${MailImporter_BINARY_DIR}/src;>")
 
 
-target_link_libraries(KF5MailImporterAkonadi
+target_link_libraries(KPim${KF_MAJOR_VERSION}MailImporterAkonadi
     PUBLIC
-    KF5::MailImporter
+    KPim${KF_MAJOR_VERSION}::MailImporter
     KF5::AkonadiCore
     PRIVATE
     KPim${KF_MAJOR_VERSION}::Mime
@@ -73,15 +75,15 @@ target_link_libraries(KF5MailImporterAkonadi
     KF${KF_MAJOR_VERSION}::I18n
     )
 
-set_target_properties(KF5MailImporterAkonadi PROPERTIES
+set_target_properties(KPim${KF_MAJOR_VERSION}MailImporterAkonadi PROPERTIES
     VERSION ${MAILIMPORTER_VERSION}
     SOVERSION ${MAILIMPORTER_SOVERSION}
     EXPORT_NAME MailImporterAkonadi
     )
 
 install(TARGETS
-    KF5MailImporterAkonadi
-    EXPORT KF5MailImporterAkonadiTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS}
+    KPim${KF_MAJOR_VERSION}MailImporterAkonadi
+    EXPORT KPim${KF_MAJOR_VERSION}MailImporterAkonadiTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS}
     )
 
 
@@ -94,21 +96,21 @@ ecm_generate_headers(MailImporter_AkonadiCamelCase_HEADERS
 
 
 ecm_generate_pri_file(BASE_NAME MailImporterAkonadi
-    LIB_NAME KF5MailImporterAkonadi
-    DEPS "MailImporter AkonadiCore" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF}/MailImporterAkonadi
+    LIB_NAME KPim${KF_MAJOR_VERSION}MailImporterAkonadi
+    DEPS "MailImporter AkonadiCore" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/MailImporterAkonadi
     )
 
 
 install(FILES
     ${MailImporter_AkonadiCamelCase_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/MailImporterAkonadi/MailImporterAkonadi
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/MailImporterAkonadi/MailImporterAkonadi
     COMPONENT Devel
     )
 
 install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/mailimporterakonadi_export.h
     ${MailImporter_Akonadi_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/MailImporterAkonadi/mailimporterakonadi
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/MailImporterAkonadi/mailimporterakonadi
     COMPONENT Devel
     )
 install(FILES
@@ -122,9 +124,9 @@ endif()
 
 if (BUILD_QCH)
     ecm_add_qch(
-        KF5MailImporterAkonadi_QCH
-        NAME KF5MailImporterAkonadi
-        BASE_NAME KF5MailImporterAkonadi
+        KPim${KF_MAJOR_VERSION}MailImporterAkonadi_QCH
+        NAME KPim${KF_MAJOR_VERSION}MailImporterAkonadi
+        BASE_NAME KPim${KF_MAJOR_VERSION}MailImporterAkonadi
         VERSION ${PIM_VERSION}
         ORG_DOMAIN org.kde
         SOURCES # using only public headers, to cover only public API
@@ -144,3 +146,31 @@ if (BUILD_QCH)
         COMPONENT Devel
     )
 endif()
+
+##
+# TODO: Backwards compatiblity. Remove in next major version
+##
+set(CMAKECONFIG_INSTALL_DIR_KF5 "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5MailImporterAkonadi")
+set(MAILIMPORTERAKONADI_KF5_COMPAT TRUE)
+configure_package_config_file(
+    "${CMAKE_CURRENT_SOURCE_DIR}/KPimMailImporterAkonadiConfig.cmake.in"
+    "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterAkonadiConfig.cmake"
+    INSTALL_DESTINATION ${CMAKECONFIG_INSTALL_DIR_KF5}
+)
+
+install(FILES
+    "${CMAKE_CURRENT_BINARY_DIR}/KF5MailImporterAkonadiConfig.cmake"
+    DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF5}"
+    COMPONENT Devel
+)
+install(FILES
+    "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}MailImporterAkonadiConfigVersion.cmake"
+    RENAME "KF5MailImporterAkonadiConfigVersion.cmake"
+    DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF5}"
+    COMPONENT Devel
+)
+install(EXPORT KPim${KF_MAJOR_VERSION}MailImporterAkonadiTargets
+    DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF5}"
+    FILE KPim${KF_MAJOR_VERSION}MailImporterAkonadiTargets.cmake
+    NAMESPACE KF5::
+)
