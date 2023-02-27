@@ -146,7 +146,7 @@ if (BUILD_QCH)
         COMPONENT Devel
     )
 endif()
-
+if (QT_MAJOR_VERSION STREQUAL "5")
 ##
 # TODO: Backwards compatiblity. Remove in next major version
 ##
@@ -174,3 +174,4 @@ install(EXPORT KPim${KF_MAJOR_VERSION}MailImporterAkonadiTargets
     FILE KPim${KF_MAJOR_VERSION}MailImporterAkonadiTargets.cmake
     NAMESPACE KF5::
 )
+endif()
