@@ -68,7 +68,7 @@ target_include_directories(KPim${KF_MAJOR_VERSION}MailImporterAkonadi PUBLIC "$<
 target_link_libraries(KPim${KF_MAJOR_VERSION}MailImporterAkonadi
     PUBLIC
     KPim${KF_MAJOR_VERSION}::MailImporter
-    KF5::AkonadiCore
+    KPim${KF_MAJOR_VERSION}::AkonadiCore
     PRIVATE
     KPim${KF_MAJOR_VERSION}::Mime
     KPim${KF_MAJOR_VERSION}::AkonadiMime
