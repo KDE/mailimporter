@@ -326,7 +326,7 @@ msgstr ""
 #, kde-format
 msgctxt "name of icedove application"
 msgid "Icedove"
-msgstr "آيس‌دوڤ"
+msgstr "آيس‌دوف"
 
 #: mailimporter/filters/filterkmail_maildir.cpp:26
 #, fuzzy, kde-format
