@@ -80,7 +80,7 @@ set_target_properties(KPim${KF_MAJOR_VERSION}MailImporterAkonadi PROPERTIES
 
 install(TARGETS
     KPim${KF_MAJOR_VERSION}MailImporterAkonadi
-    EXPORT KPim${KF_MAJOR_VERSION}MailImporterAkonadiTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS}
+    EXPORT KPim${KF_MAJOR_VERSION}MailImporterAkonadiTargets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS}
     )
 
 
