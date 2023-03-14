@@ -58,9 +58,6 @@ endif()
 
 generate_export_header( KPim${KF_MAJOR_VERSION}MailImporterAkonadi BASE_NAME mailimporterakonadi)
 
-add_library(KPim${KF_MAJOR_VERSION}::MailImporterAkonadi ALIAS KPim${KF_MAJOR_VERSION}MailImporterAkonadi)
-add_library(KF5::MailImporterAkonadi ALIAS KPim${KF_MAJOR_VERSION}MailImporterAkonadi)
-
 target_include_directories(KPim${KF_MAJOR_VERSION}MailImporterAkonadi INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/MailImporterAkonadi/>")
 target_include_directories(KPim${KF_MAJOR_VERSION}MailImporterAkonadi PUBLIC "$<BUILD_INTERFACE:${MailImporter_SOURCE_DIR}/src;${MailImporter_BINARY_DIR}/src;>")
 

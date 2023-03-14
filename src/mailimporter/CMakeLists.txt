@@ -14,7 +14,6 @@ endif()
 
 add_library(KPim${KF_MAJOR_VERSION}MailImporter)
 add_library(KPim${KF_MAJOR_VERSION}::MailImporter ALIAS KPim${KF_MAJOR_VERSION}MailImporter)
-add_library(KF5::MailImporter ALIAS KPim${KF_MAJOR_VERSION}MailImporter)
 
 configure_package_config_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/KPimMailImporterConfig.cmake.in"
