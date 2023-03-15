@@ -125,7 +125,7 @@ target_link_libraries(KPim${KF_MAJOR_VERSION}MailImporter
     PUBLIC
     KF${KF_MAJOR_VERSION}::Archive
     PRIVATE
-    KF5::PimCommon
+    KPim${KF_MAJOR_VERSION}::PimCommon
     KF${KF_MAJOR_VERSION}::I18n
     KF${KF_MAJOR_VERSION}::ConfigCore
     Qt::Xml
