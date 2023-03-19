@@ -2,15 +2,5 @@
 
 include(CMakeFindDependencyMacro)
 find_dependency(KF@KF_MAJOR_VERSION@Archive "@KF_MIN_VERSION@")
-
-if (@MAILIMPORTER_KF5_COMPAT@)
-    message(WARNING "\n"
-                    "************* DEPRECATION WARNING *************\n"
-                    "Using find_package(KF5MailImporter) and KF5::MailImporter targets is deprecated. "
-                    "Please use find_package(KPim@KF_MAJOR_VERSION@MailImporter) and KPim@KF_MAJOR_VERSION@::MailImporter instead. This backwards "
-                    "compatibility will be removed in the next major version.\n"
-                    "***********************************************\n")
-endif()
-
-
 include("${CMAKE_CURRENT_LIST_DIR}/KPim@KF_MAJOR_VERSION@MailImporterTargets.cmake")
+@PACKAGE_INCLUDE_QCHTARGETS@
