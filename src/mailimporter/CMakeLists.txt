@@ -1,4 +1,12 @@
 ########### CMake Config Files ###########
+
+ecm_setup_version(PROJECT VARIABLE_PREFIX MAILIMPORTER
+    VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/mailimporter_version.h"
+    PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}MailImporterConfigVersion.cmake"
+    SOVERSION 5
+    )
+
+
 add_library(KPim${KF_MAJOR_VERSION}MailImporter)
 add_library(KPim${KF_MAJOR_VERSION}::MailImporter ALIAS KPim${KF_MAJOR_VERSION}MailImporter)
 
@@ -219,11 +227,6 @@ configure_package_config_file(
     INSTALL_DESTINATION  ${CMAKECONFIG_INSTALL_DIR}
     )
 
-ecm_setup_version(PROJECT VARIABLE_PREFIX MAILIMPORTER
-    VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/mailimporter_version.h"
-    PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}MailImporterConfigVersion.cmake"
-    SOVERSION 5
-    )
 
 install(FILES
     "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}MailImporterConfig.cmake"

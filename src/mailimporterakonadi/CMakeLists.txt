@@ -1,7 +1,11 @@
 ########### CMake Config Files ###########
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim${KF_MAJOR_VERSION}MailImporterAkonadi")
-set(MAILIMPORTERAKONADI_KF5_COMPAT FALSE)
 
+ecm_setup_version(PROJECT VARIABLE_PREFIX MAILIMPORTER
+    VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/mailimporterakonadi_version.h"
+    PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}MailImporterAkonadiConfigVersion.cmake"
+    SOVERSION 5
+    )
 
 add_library(KPim${KF_MAJOR_VERSION}MailImporterAkonadi)
 add_library(KPim${KF_MAJOR_VERSION}::MailImporterAkonadi ALIAS KPim${KF_MAJOR_VERSION}MailImporterAkonadi)
@@ -128,11 +132,7 @@ configure_package_config_file(
     INSTALL_DESTINATION  ${CMAKECONFIG_INSTALL_DIR}
     )
 
-ecm_setup_version(PROJECT VARIABLE_PREFIX MAILIMPORTER
-    VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/mailimporterakonadi_version.h"
-    PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}MailImporterAkonadiConfigVersion.cmake"
-    SOVERSION 5
-    )
+
 
 install(FILES
     "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}MailImporterAkonadiConfig.cmake"
