@@ -213,7 +213,7 @@ set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim${KF_MAJOR_VERSI
 if (BUILD_QCH)
     ecm_install_qch_export(
         TARGETS KPim${KF_MAJOR_VERSION}MailImporter_QCH
-        FILE KPim${KF_MAJOR_VERSION}MailImporteQchTargets.cmake
+        FILE KPim${KF_MAJOR_VERSION}MailImporterQchTargets.cmake
         DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
         COMPONENT Devel
     )
