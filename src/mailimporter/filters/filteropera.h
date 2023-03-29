@@ -28,7 +28,7 @@ public:
     Q_REQUIRED_RESULT static QString isMailerFound();
 
 private:
-    void importBox(const QDir &importDir, const QStringList &, const QString &accountName = QString());
-    void importRecursive(const QDir &maildir, const QString &accountName = QString());
+    MAILIMPORTER_NO_EXPORT void importBox(const QDir &importDir, const QStringList &, const QString &accountName = QString());
+    MAILIMPORTER_NO_EXPORT void importRecursive(const QDir &maildir, const QString &accountName = QString());
 };
 }

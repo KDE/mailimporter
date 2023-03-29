@@ -46,20 +46,21 @@ private:
      * The "test" collection will be returned.
      * An invalid collection will be returned in case of an error.
      */
-    Akonadi::Collection parseFolderString(const QString &folderParseString);
+    MAILIMPORTERAKONADI_NO_EXPORT Akonadi::Collection parseFolderString(const QString &folderParseString);
     /**
      * Checks for duplicate messages in the collection by message ID.
      * returns true if a duplicate was detected.
      * NOTE: Only call this method if a message ID exists, otherwise
      * you could get false positives.
      */
-    bool checkForDuplicates(const QString &msgID, const Akonadi::Collection &msgCollection, const QString &messageFolder);
+    MAILIMPORTERAKONADI_NO_EXPORT bool checkForDuplicates(const QString &msgID, const Akonadi::Collection &msgCollection, const QString &messageFolder);
     /**
      * Adds a single subcollection to the given base collection and returns it.
      * Use parseFolderString() instead if you want to create hierarchies of collections.
      */
-    Akonadi::Collection addSubCollection(const Akonadi::Collection &baseCollection, const QString &newCollectionPathName);
-    bool addAkonadiMessage(const Akonadi::Collection &collection, const KMime::Message::Ptr &message, Akonadi::MessageStatus status);
+    MAILIMPORTERAKONADI_NO_EXPORT Akonadi::Collection addSubCollection(const Akonadi::Collection &baseCollection, const QString &newCollectionPathName);
+    MAILIMPORTERAKONADI_NO_EXPORT bool
+    addAkonadiMessage(const Akonadi::Collection &collection, const KMime::Message::Ptr &message, Akonadi::MessageStatus status);
 
     QMultiMap<QString, QString> mMessageFolderMessageIDMap;
     QMap<QString, Akonadi::Collection> mMessageFolderCollectionMap;

@@ -37,8 +37,8 @@ protected:
     Q_REQUIRED_RESULT virtual QString settingsPath();
 
 private:
-    void importDirContents(const QString &, const QString &, const QString &);
-    void importMBox(const QString &, const QString &, const QString &);
-    Q_REQUIRED_RESULT bool excludeFiles(const QString &file);
+    MAILIMPORTER_NO_EXPORT void importDirContents(const QString &, const QString &, const QString &);
+    MAILIMPORTER_NO_EXPORT void importMBox(const QString &, const QString &, const QString &);
+    Q_REQUIRED_RESULT MAILIMPORTER_NO_EXPORT bool excludeFiles(const QString &file);
 };
 }

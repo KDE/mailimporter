@@ -29,16 +29,16 @@ public:
     void importMails(const QString &maildir);
 
 private:
-    void importMailBox(const QString &fileName);
-    void mbxImport(QDataStream &ds);
-    void dbxImport(QDataStream &ds);
-    void dbxReadIndex(QDataStream &ds, int filePos);
-    void dbxReadDataBlock(QDataStream &ds, int filePos);
-    void dbxReadEmail(QDataStream &ds, int filePos);
+    MAILIMPORTER_NO_EXPORT void importMailBox(const QString &fileName);
+    MAILIMPORTER_NO_EXPORT void mbxImport(QDataStream &ds);
+    MAILIMPORTER_NO_EXPORT void dbxImport(QDataStream &ds);
+    MAILIMPORTER_NO_EXPORT void dbxReadIndex(QDataStream &ds, int filePos);
+    MAILIMPORTER_NO_EXPORT void dbxReadDataBlock(QDataStream &ds, int filePos);
+    MAILIMPORTER_NO_EXPORT void dbxReadEmail(QDataStream &ds, int filePos);
 
     /** helperfunctions for folder structure support */
-    Q_REQUIRED_RESULT QString parseFolderOEString(QDataStream &ds, int filePos);
-    Q_REQUIRED_RESULT QString getFolderName(const QString &filename);
+    Q_REQUIRED_RESULT MAILIMPORTER_NO_EXPORT QString parseFolderOEString(QDataStream &ds, int filePos);
+    Q_REQUIRED_RESULT MAILIMPORTER_NO_EXPORT QString getFolderName(const QString &filename);
 
     /** which file (of totalFiles) is now in the work? */
     int currentFile;

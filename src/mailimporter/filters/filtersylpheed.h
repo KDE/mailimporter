@@ -38,12 +38,12 @@ public:
     virtual QString markFile() const;
 
 private:
-    void importDirContents(const QString &);
-    void importFiles(const QString &);
-    void processDirectory(const QString &path);
+    MAILIMPORTER_NO_EXPORT void importDirContents(const QString &);
+    MAILIMPORTER_NO_EXPORT void importFiles(const QString &);
+    MAILIMPORTER_NO_EXPORT void processDirectory(const QString &path);
 
-    void readMarkFile(const QString &, QHash<QString, unsigned long> &);
-    MailImporter::MessageStatus msgFlagsToString(unsigned long flags);
+    MAILIMPORTER_NO_EXPORT void readMarkFile(const QString &, QHash<QString, unsigned long> &);
+    Q_REQUIRED_RESULT MAILIMPORTER_NO_EXPORT MailImporter::MessageStatus msgFlagsToString(unsigned long flags);
     std::unique_ptr<FilterSylpheedPrivate> const d;
 };
 }

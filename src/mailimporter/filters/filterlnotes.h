@@ -30,6 +30,6 @@ private:
      * This is were all the real action is gonna be handled.
      * Gets called once for EACH file imported
      */
-    void ImportLNotes(const QString &file);
+    MAILIMPORTER_NO_EXPORT void ImportLNotes(const QString &file);
 };
 }
