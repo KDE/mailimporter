@@ -63,7 +63,7 @@ find_package(KPim${KF_MAJOR_VERSION}PimCommon ${PIMCOMMON_LIB_VERSION} CONFIG RE
 ########### Targets ###########
 
 
-ecm_set_disabled_deprecation_versions(QT 6.4  KF 5.104.0)
+ecm_set_disabled_deprecation_versions(QT 6.4  KF 5.105.0)
 
 
 ########### CMake Config Files ###########
