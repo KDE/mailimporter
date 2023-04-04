@@ -7,7 +7,7 @@
 #pragma once
 
 #include <MailImporter/FilterImporterBase>
-#include <QVector>
+#include <QList>
 struct FilterImporterData {
     QString folderName;
     QString msgPath;
@@ -27,8 +27,8 @@ public:
     QString topLevelFolder() const override;
 
     bool importMessage(const KArchiveFile *file, const QString &folderPath, int &nbTotal, int &fileDone) override;
-    QVector<FilterImporterData> filterImporterDataList() const;
+    QList<FilterImporterData> filterImporterDataList() const;
 
 private:
-    QVector<FilterImporterData> mFilterImporterDataList;
+    QList<FilterImporterData> mFilterImporterDataList;
 };

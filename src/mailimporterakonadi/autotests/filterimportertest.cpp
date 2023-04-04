@@ -47,7 +47,7 @@ bool FilterImporterTest::importMessage(const KArchiveFile *file, const QString &
     return false;
 }
 
-QVector<FilterImporterData> FilterImporterTest::filterImporterDataList() const
+QList<FilterImporterData> FilterImporterTest::filterImporterDataList() const
 {
     return mFilterImporterDataList;
 }
