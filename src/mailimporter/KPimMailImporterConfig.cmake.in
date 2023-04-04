@@ -1,6 +1,6 @@
 @PACKAGE_INIT@
 
 include(CMakeFindDependencyMacro)
-find_dependency(KF@KF_MAJOR_VERSION@Archive "@KF_MIN_VERSION@")
-include("${CMAKE_CURRENT_LIST_DIR}/KPim@KF_MAJOR_VERSION@MailImporterTargets.cmake")
+find_dependency(KF6Archive "@KF_MIN_VERSION@")
+include("${CMAKE_CURRENT_LIST_DIR}/KPim6MailImporterTargets.cmake")
 @PACKAGE_INCLUDE_QCHTARGETS@
