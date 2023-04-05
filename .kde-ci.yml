@@ -11,14 +11,5 @@ Dependencies:
     'pim/libkdepim' : '@same'
     'pim/pimcommon' : '@same'
 
-- 'on': ['Linux/Qt6', 'FreeBSD/Qt6', 'Windows/Qt6']
-  'require':
-    'frameworks/extra-cmake-modules': '@latest-kf6'
-    'pim/akonadi' : '@latest-kf6'
-    'pim/akonadi-mime' : '@latest-kf6'
-    'pim/kmime' : '@latest-kf6'
-    'pim/libkdepim' : '@latest-kf6'
-    'pim/pimcommon' : '@latest-kf6'
-
 Options:
   require-passing-tests-on: [ 'Linux', 'FreeBSD', 'Windows' ]
