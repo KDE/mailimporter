@@ -84,8 +84,12 @@ ecm_qt_declare_logging_category(KPim6MailImporter HEADER mailimporter_debug.h ID
 if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(KPim6MailImporter PROPERTIES UNITY_BUILD ON)
 endif()
-generate_export_header( KPim6MailImporter BASE_NAME mailimporter)
-
+ecm_generate_export_header(KPim6MailImporter
+    BASE_NAME mailimporter
+    VERSION ${MAILIMPORTER_VERSION}
+    DEPRECATED_BASE_VERSION 0
+    USE_VERSION_HEADER
+)
 target_include_directories(KPim6MailImporter INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim6/MailImporter/>")
 target_include_directories(KPim6MailImporter PUBLIC "$<BUILD_INTERFACE:${MailImporter_SOURCE_DIR}/src;${MailImporter_BINARY_DIR}/src;>")
 

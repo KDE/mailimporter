@@ -27,7 +27,12 @@ if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(KPim6MailImporterAkonadi PROPERTIES UNITY_BUILD ON)
 endif()
 
-generate_export_header( KPim6MailImporterAkonadi BASE_NAME mailimporterakonadi)
+ecm_generate_export_header(KPim6MailImporterAkonadi
+    BASE_NAME mailimporterakonadi
+    VERSION ${MAILIMPORTER_VERSION}
+    DEPRECATED_BASE_VERSION 0
+    USE_VERSION_HEADER
+)
 
 target_include_directories(KPim6MailImporterAkonadi INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim6/MailImporterAkonadi/>")
 target_include_directories(KPim6MailImporterAkonadi PUBLIC "$<BUILD_INTERFACE:${MailImporter_SOURCE_DIR}/src;${MailImporter_BINARY_DIR}/src;>")
