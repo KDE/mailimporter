@@ -1,7 +1,7 @@
 ########### CMake Config Files ###########
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim6MailImporterAkonadi")
 
-ecm_setup_version(PROJECT VARIABLE_PREFIX MAILIMPORTER
+ecm_setup_version(PROJECT VARIABLE_PREFIX MAILIMPORTERAKONADI
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/mailimporterakonadi_version.h"
     PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KPim6MailImporterAkonadiConfigVersion.cmake"
     SOVERSION 6
@@ -29,7 +29,7 @@ endif()
 
 ecm_generate_export_header(KPim6MailImporterAkonadi
     BASE_NAME mailimporterakonadi
-    VERSION ${MAILIMPORTER_VERSION}
+    VERSION ${MAILIMPORTERAKONADI_VERSION}
     DEPRECATED_BASE_VERSION 0
     USE_VERSION_HEADER
 )
@@ -49,8 +49,8 @@ target_link_libraries(KPim6MailImporterAkonadi
     )
 
 set_target_properties(KPim6MailImporterAkonadi PROPERTIES
-    VERSION ${MAILIMPORTER_VERSION}
-    SOVERSION ${MAILIMPORTER_SOVERSION}
+	VERSION ${MAILIMPORTERAKONADI_VERSION}
+	SOVERSION ${MAILIMPORTERAKONADI_SOVERSION}
     EXPORT_NAME MailImporterAkonadi
     )
 
