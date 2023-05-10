@@ -16,12 +16,12 @@ using namespace MailImporter;
 
 SelectThunderbirdProfileDialog::SelectThunderbirdProfileDialog(QWidget *parent)
     : QDialog(parent)
+    , mSelectProfile(new SelectThunderbirdProfileWidget(this))
 {
     setWindowTitle(i18nc("@title:window", "Select thunderbird profile"));
     setModal(true);
     auto topLayout = new QVBoxLayout(this);
 
-    mSelectProfile = new SelectThunderbirdProfileWidget(this);
     mSelectProfile->setObjectName(QStringLiteral("selectprofile"));
     topLayout->addWidget(mSelectProfile);
 

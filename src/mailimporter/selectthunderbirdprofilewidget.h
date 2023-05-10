@@ -43,6 +43,6 @@ public:
     void fillProfile(const QMap<QString, QString> &map, const QString &defaultProfile);
 
 private:
-    SelectThunderbirdProfileWidget *mSelectProfile = nullptr;
+    SelectThunderbirdProfileWidget *const mSelectProfile;
 };
 }
