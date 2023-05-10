@@ -10,6 +10,12 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX MAILIMPORTER
 add_library(KPim6MailImporter)
 add_library(KPim6::MailImporter ALIAS KPim6MailImporter)
 
+target_sources(KPim6MailImporter PRIVATE
+    importmailswidget.cpp
+    filterinfogui.cpp
+    importmailswidget.h
+    filterinfogui.h
+)
 
 target_sources(KPim6MailImporter PRIVATE
     filters/filteroe.cpp
@@ -33,8 +39,6 @@ target_sources(KPim6MailImporter PRIVATE
     filters/filterbalsa.cpp
     filters/filterseamonkey.cpp
     messagestatus.cpp
-    importmailswidget.cpp
-    filterinfogui.cpp
     filterinfo.cpp
     filters.cpp
     filterimporterbase.cpp
@@ -62,10 +66,8 @@ target_sources(KPim6MailImporter PRIVATE
     filters/filterevolution.h
     filters/filtermbox.h
     filters/filterplain.h
-    filterinfogui.h
     othermailerutil.h
     mailimporter_utils.h
-    importmailswidget.h
     filterimporterbase.h
     filters.h
     mailimporter_private_export.h
