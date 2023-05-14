@@ -4,7 +4,10 @@ maintainer: mlaurent
 group: kdepim
 type: functional
 platforms:
-    - name: All
+    - name: Linux
+    - name: FreeBSD
+    - name: macOS
+    - name: Windows
 public_lib: true 
 libraries:
  - qmake: MailImporter
