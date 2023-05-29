@@ -734,8 +734,8 @@ msgid ""
 "p>"
 msgstr ""
 "<p>Vel mappa for Pegasus Mail på systemet (som inneheld .cnm-, .pmm- og .mbx-"
-"filer). På mange system er desse lagra i «C:\\pmail\\mail» eller «C:\\pmail"
-"\\mail\\admin».</p><p><b>Merk:</b> Sidan det er mogleg å gjenskapa "
+"filer). På mange system er desse lagra i «C:\\pmail\\mail» eller «C:"
+"\\pmail\\mail\\admin».</p><p><b>Merk:</b> Sidan det er mogleg å gjenskapa "
 "mappestrukturen, vert mappene lagra under «Pegasus Mail-import».</p>"
 
 #: mailimporter/filters/filterpmail.cpp:62
