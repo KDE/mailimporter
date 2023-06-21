@@ -47,3 +47,5 @@ void FilterMailAppTest::canNotImportDataUnknowPath()
 }
 
 QTEST_MAIN(FilterMailAppTest)
+
+#include "moc_filtermailapptest.cpp"

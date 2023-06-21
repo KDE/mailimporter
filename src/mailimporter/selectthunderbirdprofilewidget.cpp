@@ -78,3 +78,5 @@ QString SelectThunderbirdProfileWidget::selectedProfile() const
 {
     return ui->profile->itemData(ui->profile->currentIndex()).toString();
 }
+
+#include "moc_selectthunderbirdprofilewidget.cpp"

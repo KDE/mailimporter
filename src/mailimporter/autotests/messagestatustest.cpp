@@ -55,3 +55,5 @@ void MessageStatusTest::shouldAssignValues()
 }
 
 QTEST_MAIN(MessageStatusTest)
+
+#include "moc_messagestatustest.cpp"

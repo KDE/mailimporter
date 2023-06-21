@@ -47,3 +47,5 @@ void FilterMBoxTest::canNotImportDataUnknowPath()
 }
 
 QTEST_MAIN(FilterMBoxTest)
+
+#include "moc_filtermboxtest.cpp"

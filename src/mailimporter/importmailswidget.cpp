@@ -95,3 +95,5 @@ void ImportMailsWidget::clear()
     setFrom(QString());
     setTo(QString());
 }
+
+#include "moc_importmailswidget.cpp"

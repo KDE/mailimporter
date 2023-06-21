@@ -25,3 +25,5 @@ void SelectThunderbirdProfileDialogTest::shouldHaveDefaultValue()
 }
 
 QTEST_MAIN(SelectThunderbirdProfileDialogTest)
+
+#include "moc_selectthunderbirdprofiledialogtest.cpp"

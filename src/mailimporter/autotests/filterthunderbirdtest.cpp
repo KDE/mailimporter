@@ -78,3 +78,5 @@ void FilterThunderBirdTest::canNotImportDataWhenHomeDirSelected()
 }
 
 QTEST_MAIN(FilterThunderBirdTest)
+
+#include "moc_filterthunderbirdtest.cpp"

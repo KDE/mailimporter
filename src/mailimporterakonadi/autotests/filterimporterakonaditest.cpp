@@ -14,3 +14,5 @@ FilterImporterAkonadiTest::FilterImporterAkonadiTest(QObject *parent)
 }
 
 QTEST_MAIN(FilterImporterAkonadiTest)
+
+#include "moc_filterimporterakonaditest.cpp"

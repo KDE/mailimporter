@@ -60,3 +60,5 @@ void FilterSylpheedTest::canNotImportDataWhenHomeDirSelected()
 }
 
 QTEST_MAIN(FilterSylpheedTest)
+
+#include "moc_filtersylpheedtest.cpp"

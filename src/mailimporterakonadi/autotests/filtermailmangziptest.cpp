@@ -49,3 +49,5 @@ void FilterMAilmangzipTest::canNotImportDataUnknowPath()
 }
 
 QTEST_MAIN(FilterMAilmangzipTest)
+
+#include "moc_filtermailmangziptest.cpp"

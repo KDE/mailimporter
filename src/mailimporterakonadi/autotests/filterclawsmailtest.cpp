@@ -59,3 +59,5 @@ void FilterClawsMailTest::canNotImportDataWhenHomeDirSelected()
 }
 
 QTEST_MAIN(FilterClawsMailTest)
+
+#include "moc_filterclawsmailtest.cpp"

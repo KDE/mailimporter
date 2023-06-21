@@ -59,3 +59,5 @@ void FilterTheBatTest::canNotImportDataWhenHomeDirSelected()
 }
 
 QTEST_MAIN(FilterTheBatTest)
+
+#include "moc_filterthebattest.cpp"

@@ -78,3 +78,5 @@ void FilterIcedoveTest::canNotImportDataWhenHomeDirSelected()
 }
 
 QTEST_MAIN(FilterIcedoveTest)
+
+#include "moc_filtericedovetest.cpp"

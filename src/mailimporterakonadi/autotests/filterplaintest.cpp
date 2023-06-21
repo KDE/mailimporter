@@ -47,3 +47,5 @@ void FilterPlainTest::canNotImportDataUnknowPath()
 }
 
 QTEST_MAIN(FilterPlainTest)
+
+#include "moc_filterplaintest.cpp"

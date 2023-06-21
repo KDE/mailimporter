@@ -48,3 +48,5 @@ void FilterLnotesTest::canNotImportDataUnknowPath()
 }
 
 QTEST_MAIN(FilterLnotesTest)
+
+#include "moc_filterlnotestest.cpp"

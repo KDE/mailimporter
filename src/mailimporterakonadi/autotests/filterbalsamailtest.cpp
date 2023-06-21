@@ -59,3 +59,5 @@ void FilterBalsaMailTest::canNotImportDataWhenHomeDirSelected()
 }
 
 QTEST_MAIN(FilterBalsaMailTest)
+
+#include "moc_filterbalsamailtest.cpp"
