@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.2\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: mailimporter/filters/filterbalsa.cpp:22
 #, fuzzy, kde-format
@@ -105,10 +105,11 @@ msgstr "واردات تمام‌شده رایانامه‌ها از %1"
 #: mailimporter/filters/filtersylpheed.cpp:148
 #: mailimporter/filters/filterthebat.cpp:95
 #: mailimporter/filters/filterthunderbird.cpp:212
-#, kde-format
+#, fuzzy, kde-format
 msgid "1 duplicate message not imported"
 msgid_plural "%1 duplicate messages not imported"
 msgstr[0] "%1 پیام دو نسخه‌ای وارد نشد"
+msgstr[1] ""
 
 #: mailimporter/filters/filterbalsa.cpp:116
 #: mailimporter/filters/filterevolution_v2.cpp:132
@@ -485,6 +486,7 @@ msgstr "واردات پرونده نامه‌های جدید..."
 msgid "1 message was imported."
 msgid_plural "%1 messages were imported."
 msgstr[0] "%1 پیام دو نسخه‌ای وارد نشد"
+msgstr[1] ""
 
 #: mailimporter/filters/filterkmailarchive.cpp:202
 #, fuzzy, kde-format
@@ -570,10 +572,11 @@ msgstr ""
 #: mailimporter/filters/filtermailapp.cpp:126
 #: mailimporter/filters/filtermailmangzip.cpp:136
 #: mailimporter/filters/filtermbox.cpp:135
-#, kde-format
+#, fuzzy, kde-format
 msgid "1 duplicate message not imported to folder %2 in KMail"
 msgid_plural "%1 duplicate messages not imported to folder %2 in KMail"
 msgstr[0] "%1 پیام دو نسخه‌ای به پوشه %2 در KMail وارد نشد"
+msgstr[1] ""
 
 #: mailimporter/filters/filtermailmangzip.cpp:19
 #, fuzzy, kde-format
