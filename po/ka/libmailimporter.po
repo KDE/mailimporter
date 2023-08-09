@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: mailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-10-10 00:19+0000\n"
-"PO-Revision-Date: 2023-01-17 07:29+0100\n"
+"PO-Revision-Date: 2023-08-08 06:56+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #: mailimporter/filters/filterbalsa.cpp:22
 #, kde-format
@@ -159,7 +159,7 @@ msgstr "%1-ის შემოტანის შეცდომა"
 #: mailimporter/filters/filterclawsmail.cpp:22
 #, kde-format
 msgid "Import Claws-mail Maildirs and Folder Structure"
-msgstr ""
+msgstr "Claws-mail-ის ელფოსტებისა და საქაღალდეების სტრუქტურის შემოტანა"
 
 #: mailimporter/filters/filterclawsmail.cpp:25
 #, kde-format
@@ -238,6 +238,7 @@ msgstr "%1-დან ელფოსტების შემოტანა..."
 #, kde-format
 msgid "Import Evolution 2.x Local Mails and Folder Structure"
 msgstr ""
+"Evolution 2.x-ის ლოკალური ელფოსტებისა და საქაღალდის სტრუქტურის შემოტანა"
 
 #: mailimporter/filters/filterevolution_v2.cpp:24
 #, kde-format
@@ -268,6 +269,7 @@ msgstr "ფაილის %1 შემოტანის დაწყება.
 #, kde-format
 msgid "Import Evolution 3.x Local Mails and Folder Structure"
 msgstr ""
+"Evolution 3.x-ის ლოკალური ელფოსტებისა და საქაღალდის სტრუქტურის შემოტანა"
 
 #: mailimporter/filters/filterevolution_v3.cpp:24
 #, kde-format
@@ -287,7 +289,7 @@ msgstr "Evolution (v3)"
 #: mailimporter/filters/filtericedove.cpp:14
 #, kde-format
 msgid "Import Icedove Mails and Folder Structure"
-msgstr ""
+msgstr "Icedove -ის ელფოსტებისა და საქაღალდის სტრუქტურის შემოტანა"
 
 #: mailimporter/filters/filtericedove.cpp:17
 #, kde-format
@@ -309,7 +311,7 @@ msgstr "Icedove"
 #: mailimporter/filters/filterkmail_maildir.cpp:26
 #, kde-format
 msgid "Import KMail Maildirs and Folder Structure"
-msgstr ""
+msgstr "KMail-ის ელფოსტებისა და საქაღალდეების სტრუქტურის შემოტანა"
 
 #: mailimporter/filters/filterkmail_maildir.cpp:28
 #, kde-format
@@ -326,7 +328,7 @@ msgstr ""
 #: mailimporter/filters/filterkmail_maildir.cpp:176
 #, kde-format
 msgid "Could not import %1, duplicated message"
-msgstr ""
+msgstr "%1-ის შემოტანა შეუძლებელია. შეტყობინება დუბლირებულია"
 
 #: mailimporter/filters/filterkmailarchive.cpp:31
 #, kde-format
@@ -374,7 +376,7 @@ msgstr "KMail არქივის ფაილები "
 #: mailimporter/filters/filterkmailarchive.cpp:160
 #, kde-format
 msgid "Please select an archive file that should be imported."
-msgstr ""
+msgstr "აირჩიეთ არქივის ფაილი, რომლის შემოტანაც გნებავთ."
 
 #: mailimporter/filters/filterkmailarchive.cpp:169
 #, kde-format
@@ -384,7 +386,7 @@ msgstr "არქივი არ აგირჩევიათ."
 #: mailimporter/filters/filterkmailarchive.cpp:183
 #, kde-format
 msgid "The file '%1' does not appear to be a valid archive."
-msgstr ""
+msgstr "შეყვანილი ფაილი '%1' სწორ არქივს არ ჰგავს."
 
 #: mailimporter/filters/filterkmailarchive.cpp:188
 #, kde-format
@@ -399,7 +401,7 @@ msgstr "არქივში ფაილების დათვლა..."
 #: mailimporter/filters/filterkmailarchive.cpp:199
 #, kde-format
 msgid "Importing the archive file '%1' into the folder '%2' succeeded."
-msgstr ""
+msgstr "არქივის ფაილის '%1' საქაღალდეში '%2' შემოტანა წარმატებულია."
 
 #: mailimporter/filters/filterkmailarchive.cpp:200
 #, kde-format
@@ -468,7 +470,7 @@ msgstr "OS X Mail-დან შემოტანა"
 #: mailimporter/filters/filtermailapp.cpp:29
 #, kde-format
 msgid "Chris Howells<br /><br />Filter accelerated by Danny Kukawka )"
-msgstr ""
+msgstr "Chris Howells<br /><br />( ფილტრი ააჩქარა Danny Kukawka-მა )"
 
 #: mailimporter/filters/filtermailapp.cpp:30
 #, kde-format
@@ -483,8 +485,8 @@ msgstr ""
 #, kde-format
 msgid "1 duplicate message not imported to folder %2 in KMail"
 msgid_plural "%1 duplicate messages not imported to folder %2 in KMail"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "1 დუბლირებული შეტყობინება არ შემოტანილა KMail-ის საქაღალდეში %2"
+msgstr[1] "%1 დუბლირებული შეტყობინება არ შემოტანილა KMail-ის საქაღალდეში %2"
 
 #: mailimporter/filters/filtermailmangzip.cpp:19
 #, kde-format
@@ -560,7 +562,7 @@ msgstr ""
 #: mailimporter/filters/filteroe.cpp:66
 #, kde-format
 msgid "No Outlook Express mailboxes found in directory %1."
-msgstr ""
+msgstr "საქაღალდეში %1 Outlook Express-ის საფოსტო ყუთები აღმოჩენილი არაა."
 
 #: mailimporter/filters/filteroe.cpp:82
 #, kde-format
@@ -719,7 +721,7 @@ msgstr ""
 #: mailimporter/filters/filtersylpheed.cpp:28
 #, kde-format
 msgid "Import Sylpheed Maildirs and Folder Structure"
-msgstr ""
+msgstr "Sylpheed-ის Maildir-ების და საქაღალდეების სტრუქტურის შემოტანა"
 
 #: mailimporter/filters/filtersylpheed.cpp:30
 #, kde-format
@@ -769,6 +771,7 @@ msgstr "TheBat-Import"
 #, kde-format
 msgid "Import Thunderbird/Mozilla Local Mails and Folder Structure"
 msgstr ""
+"Thunderbird/Mozilla-ის ლოკალური ელფოსტებისა და საქაღალდის სტრუქტურის შემოტანა"
 
 #: mailimporter/filters/filterthunderbird.cpp:26
 #, kde-format
@@ -875,7 +878,7 @@ msgstr ""
 #: mailimporterakonadi/filterimporterakonadi.cpp:185
 #, kde-format
 msgid "<b>Error:</b> Could not create folder. Reason: %1"
-msgstr ""
+msgstr "<b>შეცდომა:</b> საქაღალდის შექმნა შეუძლებელია. მიზეზი: %1"
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:213
 #, kde-format
@@ -887,14 +890,15 @@ msgstr ""
 #: mailimporterakonadi/filterimporterakonadi.cpp:221
 #, kde-format
 msgid "<b>Warning:</b> Got an invalid message in folder %1."
-msgstr ""
+msgstr "<b>გაფრთხილება:</b> საქაღალდეში %1 აღმოჩენილია არასწორი შეტყობინება."
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:275
 #, kde-format
 msgid "<b>Error:</b> Could not add message to folder %1. Reason: %2"
 msgstr ""
+"<b>შეცდომა:</b> საქაღალდეში %1 შეტყობინების ჩამატება შეუძლებელია. მიზეზი: %2"
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:295
 #, kde-format
 msgid "Unable to retrieve folder for folder path %1."
-msgstr ""
+msgstr "საქაღალდის ბილიკისთვის %1 საქაღალდის მიღება შეუძლებელია."
