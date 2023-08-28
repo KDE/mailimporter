@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: mailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-10-10 00:19+0000\n"
-"PO-Revision-Date: 2023-08-08 06:35+0200\n"
+"PO-Revision-Date: 2023-08-26 05:54+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -868,12 +868,16 @@ msgstr "შეცდომა: დროებით ფაილის წა�
 #, kde-format
 msgid "<b>Warning:</b> Got a bad message folder, adding to root folder."
 msgstr ""
+"<b>გაფრთხილება:</b> შეტყობინებების არასწორი საქაღალდე. დაემატება ძირითად "
+"საქაღალდეს."
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:168
 #, kde-format
 msgid ""
 "<b>Warning:</b> Could not check that the folder already exists. Reason: %1"
 msgstr ""
+"<b>გაფრთხილება:</b> შემოწმება, საქაღალდე არსებობს, თუ არა, შეუძლებელია. "
+"მიზეზი: %1"
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:185
 #, kde-format
