@@ -183,7 +183,7 @@ msgstr ""
 "base de la bústia de correu del Claws-mail que voleu importar (normalment: ~/"
 "Mail).</p><p>Com que és possible recrear l'estructura de les carpetes, estes "
 "s'emmagatzemaran davall: «ClawsMail-Import» de la carpeta local.</p><p>Este "
-"filtre també recrea l'estat del missatge, p. ex. nou o reenviat.</p>"
+"filtre també recrea l'estat del missatge, p. ex., nou o reenviat.</p>"
 
 #: mailimporter/filters/filterclawsmail.cpp:42
 #, kde-format
@@ -832,7 +832,7 @@ msgstr ""
 "base de la bústia de correu del Sylpheed que voleu importar (normalment: ~/"
 "Mail ).</p><p>Com que és possible recrear l'estructura de les carpetes, "
 "estes s'emmagatzemaran davall: «Sylpheed-Import» en la carpeta local.</"
-"p><p>Este filtre també recrea l'estat del missatge, p. ex. nou o reenviat.</"
+"p><p>Este filtre també recrea l'estat del missatge, p. ex., nou o reenviat.</"
 "p>"
 
 #: mailimporter/filters/filtersylpheed.cpp:47
@@ -865,7 +865,7 @@ msgstr ""
 "<p><b>Filtre d'importació de The Bat!</b></p><p>Seleccioneu el directori "
 "base de la bústia de correu local de «The Bat!» que voleu importar.</"
 "p><p><b>Nota:</b> Este filtre importa els fitxers *.tbb des de la carpeta "
-"local de «The Bat!», p. ex. des dels comptes POP, però no des dels comptes "
+"local de «The Bat!», p. ex., des dels comptes POP, però no des dels comptes "
 "IMAP/DIMAP.</p><p>Com que és possible recrear l'estructura de les carpetes, "
 "estes s'emmagatzemaran davall: «TheBat-Import» al compte local.</p>"
 
