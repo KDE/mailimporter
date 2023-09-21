@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-10-10 00:19+0000\n"
+"POT-Creation-Date: 2023-09-21 00:45+0000\n"
 "PO-Revision-Date: 2012-06-19 09:11+0700\n"
 "Last-Translator: Sophea <sophea@khmeros.info>\n"
 "Language-Team: Khmer <>\n"
@@ -57,7 +57,7 @@ msgstr ""
 #: mailimporter/filters/filteropera.cpp:174
 #: mailimporter/filters/filterplain.cpp:41
 #: mailimporter/filters/filterpmail.cpp:45
-#: mailimporter/filters/filtersylpheed.cpp:125
+#: mailimporter/filters/filtersylpheed.cpp:123
 #: mailimporter/filters/filterthebat.cpp:73
 #: mailimporter/filters/filterthunderbird.cpp:169
 #, kde-format
@@ -71,7 +71,7 @@ msgstr "គ្មាន​ថត​បាន​ជ្រើស ។"
 #: mailimporter/filters/filterkmail_maildir.cpp:85
 #: mailimporter/filters/filteropera.cpp:182
 #: mailimporter/filters/filterplain.cpp:53
-#: mailimporter/filters/filtersylpheed.cpp:134
+#: mailimporter/filters/filtersylpheed.cpp:132
 #: mailimporter/filters/filterthebat.cpp:82
 #: mailimporter/filters/filterthunderbird.cpp:178
 #, kde-format
@@ -89,7 +89,7 @@ msgstr "រក​មិន​ឃើញ​ឯកសារ​​ដើម្បី
 #: mailimporter/filters/filteropera.cpp:141
 #: mailimporter/filters/filterplain.cpp:75
 #: mailimporter/filters/filterpmail.cpp:72
-#: mailimporter/filters/filtersylpheed.cpp:146
+#: mailimporter/filters/filtersylpheed.cpp:144
 #: mailimporter/filters/filterthebat.cpp:93
 #: mailimporter/filters/filterthunderbird.cpp:210
 #, kde-format
@@ -103,7 +103,7 @@ msgstr "​នាំចូល​អ៊ីមែល​ពី %1 បាន​ប�
 #: mailimporter/filters/filterkmail_maildir.cpp:97
 #: mailimporter/filters/filteropera.cpp:143
 #: mailimporter/filters/filterplain.cpp:77
-#: mailimporter/filters/filtersylpheed.cpp:148
+#: mailimporter/filters/filtersylpheed.cpp:146
 #: mailimporter/filters/filterthebat.cpp:95
 #: mailimporter/filters/filterthunderbird.cpp:212
 #, kde-format
@@ -121,7 +121,7 @@ msgstr[0] "សារ​ស្ទួន %1 មិន​បាន​នាំច�
 #: mailimporter/filters/filteroe.cpp:108
 #: mailimporter/filters/filteropera.cpp:200
 #: mailimporter/filters/filterplain.cpp:80
-#: mailimporter/filters/filtersylpheed.cpp:152
+#: mailimporter/filters/filtersylpheed.cpp:150
 #: mailimporter/filters/filterthebat.cpp:99
 #: mailimporter/filters/filterthunderbird.cpp:216
 #, kde-format
@@ -138,7 +138,7 @@ msgstr "ការ​នាំចូល Evolution"
 #: mailimporter/filters/filterbalsa.cpp:187
 #: mailimporter/filters/filterevolution_v3.cpp:184
 #: mailimporter/filters/filterkmail_maildir.cpp:169
-#: mailimporter/filters/filtersylpheed.cpp:230
+#: mailimporter/filters/filtersylpheed.cpp:228
 #: mailimporter/filters/filterthebat.cpp:209
 #, kde-format
 msgid "Import folder %1..."
@@ -159,7 +159,7 @@ msgstr "នាំចូល​ថត %1..."
 #: mailimporter/filters/filterpmail.cpp:115
 #: mailimporter/filters/filterpmail.cpp:194
 #: mailimporter/filters/filterpmail.cpp:262
-#: mailimporter/filters/filtersylpheed.cpp:244
+#: mailimporter/filters/filtersylpheed.cpp:242
 #: mailimporter/filters/filterthebat.cpp:229
 #: mailimporter/filters/filterthunderbird.cpp:344
 #, kde-format
@@ -200,7 +200,7 @@ msgctxt "name of clawsMail application"
 msgid "ClawsMail"
 msgstr "ការ​នាំចូល PegasusMail"
 
-#: mailimporter/filters/filterclawsmail.cpp:98
+#: mailimporter/filters/filterclawsmail.cpp:96
 #, fuzzy, kde-format
 #| msgctxt "define folder name when we will import pegasus mail"
 #| msgid "PegasusMail-Import"
@@ -865,7 +865,7 @@ msgctxt "name of sylpheed application"
 msgid "Sylpheed"
 msgstr "ការ​នាំចូល Sylpheed"
 
-#: mailimporter/filters/filtersylpheed.cpp:187
+#: mailimporter/filters/filtersylpheed.cpp:185
 #, kde-format
 msgctxt "define folder name where we will import sylpheed mails"
 msgid "Sylpheed-Import"
@@ -936,7 +936,7 @@ msgctxt "name of geary application"
 msgid "Geary"
 msgstr ""
 
-#: mailimporter/selectthunderbirdprofilewidget.cpp:20
+#: mailimporter/selectthunderbirdprofilewidget.cpp:21
 #, fuzzy, kde-format
 #| msgid "Select thunderbird profile"
 msgctxt "@title:window"

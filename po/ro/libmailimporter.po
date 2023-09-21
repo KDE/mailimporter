@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-10-10 00:19+0000\n"
+"POT-Creation-Date: 2023-09-21 00:45+0000\n"
 "PO-Revision-Date: 2011-05-01 13:49+0300\n"
 "Last-Translator: Sergiu Bivol <sergiu@ase.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@lists.kde.org>\n"
@@ -47,7 +47,7 @@ msgstr ""
 #: mailimporter/filters/filteropera.cpp:174
 #: mailimporter/filters/filterplain.cpp:41
 #: mailimporter/filters/filterpmail.cpp:45
-#: mailimporter/filters/filtersylpheed.cpp:125
+#: mailimporter/filters/filtersylpheed.cpp:123
 #: mailimporter/filters/filterthebat.cpp:73
 #: mailimporter/filters/filterthunderbird.cpp:169
 #, kde-format
@@ -61,7 +61,7 @@ msgstr "Niciun dosar ales."
 #: mailimporter/filters/filterkmail_maildir.cpp:85
 #: mailimporter/filters/filteropera.cpp:182
 #: mailimporter/filters/filterplain.cpp:53
-#: mailimporter/filters/filtersylpheed.cpp:134
+#: mailimporter/filters/filtersylpheed.cpp:132
 #: mailimporter/filters/filterthebat.cpp:82
 #: mailimporter/filters/filterthunderbird.cpp:178
 #, kde-format
@@ -79,7 +79,7 @@ msgstr "Nu au fost găsite fișiere de importat."
 #: mailimporter/filters/filteropera.cpp:141
 #: mailimporter/filters/filterplain.cpp:75
 #: mailimporter/filters/filterpmail.cpp:72
-#: mailimporter/filters/filtersylpheed.cpp:146
+#: mailimporter/filters/filtersylpheed.cpp:144
 #: mailimporter/filters/filterthebat.cpp:93
 #: mailimporter/filters/filterthunderbird.cpp:210
 #, kde-format
@@ -93,7 +93,7 @@ msgstr "Importare a poștei din %1 încheiată"
 #: mailimporter/filters/filterkmail_maildir.cpp:97
 #: mailimporter/filters/filteropera.cpp:143
 #: mailimporter/filters/filterplain.cpp:77
-#: mailimporter/filters/filtersylpheed.cpp:148
+#: mailimporter/filters/filtersylpheed.cpp:146
 #: mailimporter/filters/filterthebat.cpp:95
 #: mailimporter/filters/filterthunderbird.cpp:212
 #, kde-format
@@ -113,7 +113,7 @@ msgstr[2] "Nu au fost importate %1 de mesaje duplicate"
 #: mailimporter/filters/filteroe.cpp:108
 #: mailimporter/filters/filteropera.cpp:200
 #: mailimporter/filters/filterplain.cpp:80
-#: mailimporter/filters/filtersylpheed.cpp:152
+#: mailimporter/filters/filtersylpheed.cpp:150
 #: mailimporter/filters/filterthebat.cpp:99
 #: mailimporter/filters/filterthunderbird.cpp:216
 #, kde-format
@@ -130,7 +130,7 @@ msgstr ""
 #: mailimporter/filters/filterbalsa.cpp:187
 #: mailimporter/filters/filterevolution_v3.cpp:184
 #: mailimporter/filters/filterkmail_maildir.cpp:169
-#: mailimporter/filters/filtersylpheed.cpp:230
+#: mailimporter/filters/filtersylpheed.cpp:228
 #: mailimporter/filters/filterthebat.cpp:209
 #, fuzzy, kde-format
 msgid "Import folder %1..."
@@ -151,7 +151,7 @@ msgstr "Import dosarele de mail ('.pmm') ..."
 #: mailimporter/filters/filterpmail.cpp:115
 #: mailimporter/filters/filterpmail.cpp:194
 #: mailimporter/filters/filterpmail.cpp:262
-#: mailimporter/filters/filtersylpheed.cpp:244
+#: mailimporter/filters/filtersylpheed.cpp:242
 #: mailimporter/filters/filterthebat.cpp:229
 #: mailimporter/filters/filterthunderbird.cpp:344
 #, kde-format
@@ -180,7 +180,7 @@ msgctxt "name of clawsMail application"
 msgid "ClawsMail"
 msgstr ""
 
-#: mailimporter/filters/filterclawsmail.cpp:98
+#: mailimporter/filters/filterclawsmail.cpp:96
 #, kde-format
 msgctxt "define folder name where we will import clawsmail mails"
 msgid "ClawsMail-Import"
@@ -753,7 +753,7 @@ msgctxt "name of sylpheed application"
 msgid "Sylpheed"
 msgstr ""
 
-#: mailimporter/filters/filtersylpheed.cpp:187
+#: mailimporter/filters/filtersylpheed.cpp:185
 #, kde-format
 msgctxt "define folder name where we will import sylpheed mails"
 msgid "Sylpheed-Import"
@@ -816,7 +816,7 @@ msgctxt "name of geary application"
 msgid "Geary"
 msgstr ""
 
-#: mailimporter/selectthunderbirdprofilewidget.cpp:20
+#: mailimporter/selectthunderbirdprofilewidget.cpp:21
 #, kde-format
 msgctxt "@title:window"
 msgid "Select thunderbird profile"

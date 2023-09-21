@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-10-10 00:19+0000\n"
+"POT-Creation-Date: 2023-09-21 00:45+0000\n"
 "PO-Revision-Date: 2023-08-08 06:56+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -46,7 +46,7 @@ msgstr "Balsa"
 #: mailimporter/filters/filteropera.cpp:174
 #: mailimporter/filters/filterplain.cpp:41
 #: mailimporter/filters/filterpmail.cpp:45
-#: mailimporter/filters/filtersylpheed.cpp:125
+#: mailimporter/filters/filtersylpheed.cpp:123
 #: mailimporter/filters/filterthebat.cpp:73
 #: mailimporter/filters/filterthunderbird.cpp:169
 #, kde-format
@@ -60,7 +60,7 @@ msgstr "საქაღალდე არჩეული არაა."
 #: mailimporter/filters/filterkmail_maildir.cpp:85
 #: mailimporter/filters/filteropera.cpp:182
 #: mailimporter/filters/filterplain.cpp:53
-#: mailimporter/filters/filtersylpheed.cpp:134
+#: mailimporter/filters/filtersylpheed.cpp:132
 #: mailimporter/filters/filterthebat.cpp:82
 #: mailimporter/filters/filterthunderbird.cpp:178
 #, kde-format
@@ -78,7 +78,7 @@ msgstr "შემოსატანი ფაილები არ არსე
 #: mailimporter/filters/filteropera.cpp:141
 #: mailimporter/filters/filterplain.cpp:75
 #: mailimporter/filters/filterpmail.cpp:72
-#: mailimporter/filters/filtersylpheed.cpp:146
+#: mailimporter/filters/filtersylpheed.cpp:144
 #: mailimporter/filters/filterthebat.cpp:93
 #: mailimporter/filters/filterthunderbird.cpp:210
 #, kde-format
@@ -92,7 +92,7 @@ msgstr "ელფოსტების %1-დან შემოტანა დ
 #: mailimporter/filters/filterkmail_maildir.cpp:97
 #: mailimporter/filters/filteropera.cpp:143
 #: mailimporter/filters/filterplain.cpp:77
-#: mailimporter/filters/filtersylpheed.cpp:148
+#: mailimporter/filters/filtersylpheed.cpp:146
 #: mailimporter/filters/filterthebat.cpp:95
 #: mailimporter/filters/filterthunderbird.cpp:212
 #, kde-format
@@ -111,7 +111,7 @@ msgstr[1] "%1 დუბლიკატი შეტყობინება შ�
 #: mailimporter/filters/filteroe.cpp:108
 #: mailimporter/filters/filteropera.cpp:200
 #: mailimporter/filters/filterplain.cpp:80
-#: mailimporter/filters/filtersylpheed.cpp:152
+#: mailimporter/filters/filtersylpheed.cpp:150
 #: mailimporter/filters/filterthebat.cpp:99
 #: mailimporter/filters/filterthunderbird.cpp:216
 #, kde-format
@@ -128,7 +128,7 @@ msgstr "Evolution-Import"
 #: mailimporter/filters/filterbalsa.cpp:187
 #: mailimporter/filters/filterevolution_v3.cpp:184
 #: mailimporter/filters/filterkmail_maildir.cpp:169
-#: mailimporter/filters/filtersylpheed.cpp:230
+#: mailimporter/filters/filtersylpheed.cpp:228
 #: mailimporter/filters/filterthebat.cpp:209
 #, kde-format
 msgid "Import folder %1..."
@@ -149,7 +149,7 @@ msgstr "საქაღალდის (%1) შემოტანა..."
 #: mailimporter/filters/filterpmail.cpp:115
 #: mailimporter/filters/filterpmail.cpp:194
 #: mailimporter/filters/filterpmail.cpp:262
-#: mailimporter/filters/filtersylpheed.cpp:244
+#: mailimporter/filters/filtersylpheed.cpp:242
 #: mailimporter/filters/filterthebat.cpp:229
 #: mailimporter/filters/filterthunderbird.cpp:344
 #, kde-format
@@ -177,7 +177,7 @@ msgctxt "name of clawsMail application"
 msgid "ClawsMail"
 msgstr "ClawsMail"
 
-#: mailimporter/filters/filterclawsmail.cpp:98
+#: mailimporter/filters/filterclawsmail.cpp:96
 #, kde-format
 msgctxt "define folder name where we will import clawsmail mails"
 msgid "ClawsMail-Import"
@@ -739,7 +739,7 @@ msgctxt "name of sylpheed application"
 msgid "Sylpheed"
 msgstr "Sylpheed"
 
-#: mailimporter/filters/filtersylpheed.cpp:187
+#: mailimporter/filters/filtersylpheed.cpp:185
 #, kde-format
 msgctxt "define folder name where we will import sylpheed mails"
 msgid "Sylpheed-Import"
@@ -802,7 +802,7 @@ msgctxt "name of geary application"
 msgid "Geary"
 msgstr "Geary"
 
-#: mailimporter/selectthunderbirdprofilewidget.cpp:20
+#: mailimporter/selectthunderbirdprofilewidget.cpp:21
 #, kde-format
 msgctxt "@title:window"
 msgid "Select thunderbird profile"
