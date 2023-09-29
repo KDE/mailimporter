@@ -68,12 +68,6 @@ ecm_generate_headers(MailImporter_AkonadiCamelCase_HEADERS
     )
 
 
-ecm_generate_pri_file(BASE_NAME MailImporterAkonadi
-    LIB_NAME KPim6MailImporterAkonadi
-    DEPS "MailImporter AkonadiCore" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR}/KPim6/MailImporterAkonadi
-    )
-
-
 install(FILES
     ${MailImporter_AkonadiCamelCase_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/MailImporterAkonadi/MailImporterAkonadi
@@ -86,9 +80,6 @@ install(FILES
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/MailImporterAkonadi/mailimporterakonadi
     COMPONENT Devel
     )
-install(FILES
-    ${PRI_FILENAME}
-    DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
 
 if (BUILD_TESTING)
    add_subdirectory(autotests)

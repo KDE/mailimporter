@@ -160,12 +160,6 @@ ecm_generate_headers(MailImporter_FiltersCamelCase_HEADERS
     )
 
 
-ecm_generate_pri_file(BASE_NAME MailImporter
-    LIB_NAME KPim6MailImporter
-    DEPS "KArchive" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR}/KPim6/MailImporter
-    )
-
-
 install(FILES
     ${MailImporter_CamelCase_HEADERS}
     ${MailImporter_FiltersCamelCase_HEADERS}
@@ -180,10 +174,6 @@ install(FILES
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/MailImporter/mailimporter
     COMPONENT Devel
     )
-install(FILES
-    ${PRI_FILENAME}
-    DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
-
 
 if (BUILD_TESTING)
    add_subdirectory(autotests)
