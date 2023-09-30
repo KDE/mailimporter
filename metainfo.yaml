@@ -10,10 +10,8 @@ platforms:
     - name: Windows
 public_lib: true 
 libraries:
- - qmake: MailImporter
-   cmake: "KPim6::MailImporter"
- - qmake: MailImporterAkonadi
-   cmake: "KPim6::MailImporterAkonadi"
+ - cmake: "KPim6::MailImporter"
+ - cmake: "KPim6::MailImporterAkonadi"
 cmakename: KPim6MailImporter
 # FIXME kapidox does not support more than one cmake module per repo yet
 #cmakename: KPim6MailImporterAkonadi
