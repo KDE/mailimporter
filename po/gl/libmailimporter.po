@@ -162,7 +162,7 @@ msgstr "Importar o cartafol %1…"
 #: mailimporter/filters/filterthunderbird.cpp:344
 #, kde-format
 msgid "Could not import %1"
-msgstr "Non se puido importar %1"
+msgstr "Non foi posíbel importar %1"
 
 #: mailimporter/filters/filterclawsmail.cpp:22
 #, kde-format
@@ -242,7 +242,7 @@ msgstr "Evolution"
 #: mailimporter/filters/filterthunderbird.cpp:278
 #, kde-format
 msgid "Unable to open %1, skipping"
-msgstr "Non se pode abrir %1; omítese"
+msgstr "Non é posíbel abrir %1; omítese"
 
 #: mailimporter/filters/filterevolution.cpp:157
 #: mailimporter/filters/filtermailapp.cpp:75
@@ -369,7 +369,7 @@ msgstr ""
 #: mailimporter/filters/filterkmail_maildir.cpp:176
 #, kde-format
 msgid "Could not import %1, duplicated message"
-msgstr "Non se puido importar %1; é unha mensaxe duplicada"
+msgstr "Non foi posíbel importar %1; é unha mensaxe duplicada"
 
 #: mailimporter/filters/filterkmailarchive.cpp:31
 #, kde-format
@@ -392,7 +392,7 @@ msgstr ""
 #: mailimporter/filters/filterkmailarchive.cpp:71
 #, kde-format
 msgid "Importing folder '%1'..."
-msgstr "Estase a importar o cartafol «%1»…"
+msgstr "Importando o cartafol «%1»…"
 
 #: mailimporter/filters/filterkmailarchive.cpp:97
 #, kde-format
@@ -437,7 +437,7 @@ msgstr "Semella que o ficheiro «%1» non é un arquivo correcto."
 #: mailimporter/filters/filterkmailarchive.cpp:188
 #, kde-format
 msgid "Unable to open archive file '%1'"
-msgstr "Non se pode abrir o ficheiro de arquivo «%1»"
+msgstr "Non é posíbel abrir o ficheiro de arquivo «%1»"
 
 #: mailimporter/filters/filterkmailarchive.cpp:193
 #, kde-format
@@ -569,7 +569,7 @@ msgstr "Ficheiros gzip"
 #: mailimporter/filters/filtermailmangzip.cpp:55
 #, kde-format
 msgid "Unable to open archive file '%1', skipping"
-msgstr "Non se pode abrir o ficheiro de arquivo «%1»; omítese"
+msgstr "Non é posíbel abrir o ficheiro de arquivo «%1»; omítese"
 
 #: mailimporter/filters/filtermbox.cpp:20
 #, kde-format
@@ -650,22 +650,22 @@ msgstr "Rematou a importación de mensaxes de Outlook Express"
 #: mailimporter/filters/filteroe.cpp:126
 #, kde-format
 msgid "Unable to open mailbox %1"
-msgstr "Non se pode abrir a caixa de correo %1"
+msgstr "Non é posíbel abrir a caixa de correo %1"
 
 #: mailimporter/filters/filteroe.cpp:138
 #, kde-format
 msgid "Importing OE4 Mailbox %1"
-msgstr "Estase a importar a caixa de correo OE4 %1"
+msgstr "Importando a caixa de correo OE4 %1"
 
 #: mailimporter/filters/filteroe.cpp:155
 #, kde-format
 msgid "Importing OE5+ Mailbox %1"
-msgstr "Estase a importar a caixa de correo de OE5 %1"
+msgstr "Importando a caixa de correo de OE5 %1"
 
 #: mailimporter/filters/filteroe.cpp:161
 #, kde-format
 msgid "Importing OE5+ Folder file %1"
-msgstr "Estase a importar o ficheiro de cartafol OE5+ %1"
+msgstr "Importando o ficheiro de cartafol OE5+ %1"
 
 #: mailimporter/filters/filteropera.cpp:19
 #, kde-format
@@ -757,7 +757,7 @@ msgid ""
 "Cannot parse the folder structure; continuing import without subfolder "
 "support."
 msgstr ""
-"Non se pode interpretar a estrutura de cartafoles, continuarase a "
+"Non é posíbel interpretar a estrutura de cartafoles, continuarase a "
 "importación sen compatibilidade con subcartafoles."
 
 #: mailimporter/filters/filterpmail.cpp:65
@@ -785,12 +785,12 @@ msgstr "PegasusMail-Importado"
 #: mailimporter/filters/filterpmail.cpp:245
 #, kde-format
 msgid "Importing %1"
-msgstr "Estase a importar %1"
+msgstr "Importando %1"
 
 #: mailimporter/filters/filterpmail.cpp:277
 #, kde-format
 msgid "Parsing the folder structure..."
-msgstr "Estase a interpretar a estrutura de cartafoles…"
+msgstr "Interpretando a estrutura de cartafoles…"
 
 #: mailimporter/filters/filterseamonkey.cpp:14
 #, kde-format
@@ -1019,7 +1019,7 @@ msgstr "<b>Erro:</b> Non se puido engadir a mensaxe ao cartafol %1. Razón: %2"
 #: mailimporterakonadi/filterimporterakonadi.cpp:295
 #, kde-format
 msgid "Unable to retrieve folder for folder path %1."
-msgstr "Non se pode obter o cartafol da ruta de cartafol %1."
+msgstr "Non é posíbel obter o cartafol da ruta de cartafol %1."
 
 #~ msgid "KMail Archive Files (*.tar *.tar.gz *.tar.bz2 *.zip)"
 #~ msgstr "Ficheiros de arquivo de KMail (*.tar *.tar.gz *.tar.bz2 *.zip)"
