@@ -4,19 +4,20 @@
 # Zlatko Popov <zlatkopopov@fsa-bg.org>, 2006, 2007, 2008.
 # Krasimir Aranudov <krasi.arnaudov@gmail.com>, 2007.
 # Yasen Pramatarov <yasen@lindeas.com>, 2011.
+# SPDX-FileCopyrightText: 2023 Mincho Kondarev <mkondarev@yahoo.de>
 msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-21 00:45+0000\n"
-"PO-Revision-Date: 2011-12-26 11:41+0200\n"
-"Last-Translator: Yasen Pramatarov <yasen@lindeas.com>\n"
-"Language-Team: Bulgarian <dict@fsa-bg.org>\n"
+"PO-Revision-Date: 2023-10-03 10:34+0200\n"
+"Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
+"Language-Team: \n"
 "Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.2\n"
+"X-Generator: Lokalize 23.08.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: mailimporter/filters/filterbalsa.cpp:22
@@ -40,7 +41,7 @@ msgstr ""
 #, kde-format
 msgctxt "name of balsa application"
 msgid "Balsa"
-msgstr ""
+msgstr "Balsa"
 
 #: mailimporter/filters/filterbalsa.cpp:89
 #: mailimporter/filters/filterevolution.cpp:60
@@ -128,7 +129,7 @@ msgstr "Внасянето е прекъснато от потребителя."
 #, kde-format
 msgctxt "define folder name where we import evolution mails"
 msgid "Evolution-Import"
-msgstr ""
+msgstr "Evolution-Import"
 
 #: mailimporter/filters/filterbalsa.cpp:187
 #: mailimporter/filters/filterevolution_v3.cpp:184
@@ -182,16 +183,16 @@ msgstr ""
 "препратено, отговорено и пр.</p>"
 
 #: mailimporter/filters/filterclawsmail.cpp:42
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "name of clawsMail application"
 msgid "ClawsMail"
-msgstr "Инструмент за импортиране KMailCVT"
+msgstr "ClawsMail"
 
 #: mailimporter/filters/filterclawsmail.cpp:96
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "define folder name where we will import clawsmail mails"
 msgid "ClawsMail-Import"
-msgstr "Инструмент за импортиране KMailCVT"
+msgstr "ClawsMail-Import"
 
 #: mailimporter/filters/filterevolution.cpp:17
 #, kde-format
@@ -201,7 +202,7 @@ msgstr "Импортиране на писмата и структурата н�
 #: mailimporter/filters/filterevolution.cpp:18
 #, kde-format
 msgid "Simon MARTIN<br /><br />( Filter accelerated by Danny Kukawka )"
-msgstr ""
+msgstr "Simon MARTIN<br /><br />( Filter accelerated by Danny Kukawka )"
 
 #: mailimporter/filters/filterevolution.cpp:19
 #, kde-format
@@ -220,7 +221,7 @@ msgstr ""
 #, kde-format
 msgctxt "name of evolution application"
 msgid "Evolution"
-msgstr ""
+msgstr "Evolution"
 
 #: mailimporter/filters/filterevolution.cpp:132
 #: mailimporter/filters/filterevolution_v2.cpp:192
@@ -273,7 +274,7 @@ msgstr ""
 #, kde-format
 msgctxt "name of evolution application"
 msgid "Evolution (v2)"
-msgstr ""
+msgstr "Evolution (v2)"
 
 #: mailimporter/filters/filterevolution_v2.cpp:122
 #: mailimporter/filters/filterevolution_v2.cpp:161
@@ -305,7 +306,7 @@ msgstr ""
 #, kde-format
 msgctxt "name of evolution application"
 msgid "Evolution (v3)"
-msgstr ""
+msgstr "Evolution (v3)"
 
 #: mailimporter/filters/filtericedove.cpp:14
 #, fuzzy, kde-format
@@ -333,7 +334,7 @@ msgstr ""
 #, kde-format
 msgctxt "name of icedove application"
 msgid "Icedove"
-msgstr ""
+msgstr "Icedove"
 
 #: mailimporter/filters/filterkmail_maildir.cpp:26
 #, kde-format
@@ -495,7 +496,7 @@ msgstr "Импортиране на писмата от %1"
 #, kde-format
 msgctxt "Define folder name where we import lotus note mails"
 msgid "LNotes-Import"
-msgstr ""
+msgstr "LNotes-Import"
 
 #: mailimporter/filters/filterlnotes.cpp:110
 #: mailimporter/filters/filterpmail.cpp:266
@@ -679,7 +680,7 @@ msgstr ""
 #, kde-format
 msgctxt "name of opera application"
 msgid "Opera"
-msgstr ""
+msgstr "Opera"
 
 #: mailimporter/filters/filteropera.cpp:72
 #: mailimporter/filters/filterplain.cpp:55
@@ -720,7 +721,7 @@ msgstr "Импортирането на папките от Pegasus-Mail"
 #: mailimporter/filters/filterpmail.cpp:23
 #, kde-format
 msgid "Holger Schurig <br>( rewritten by Danny Kukawka )"
-msgstr ""
+msgstr "Holger Schurig <br>( rewritten by Danny Kukawka )"
 
 #: mailimporter/filters/filterpmail.cpp:24
 #, kde-format
@@ -764,7 +765,7 @@ msgstr "Импортирането на папките на UNIX (.mbx)..."
 #, kde-format
 msgctxt "define folder name when we will import pegasus mail"
 msgid "PegasusMail-Import"
-msgstr ""
+msgstr "PegasusMail-Import"
 
 #: mailimporter/filters/filterpmail.cpp:166
 #: mailimporter/filters/filterpmail.cpp:245
@@ -823,13 +824,13 @@ msgstr ""
 #, kde-format
 msgctxt "name of sylpheed application"
 msgid "Sylpheed"
-msgstr ""
+msgstr "Sylpheed"
 
 #: mailimporter/filters/filtersylpheed.cpp:185
 #, kde-format
 msgctxt "define folder name where we will import sylpheed mails"
 msgid "Sylpheed-Import"
-msgstr ""
+msgstr "Sylpheed-Import"
 
 #: mailimporter/filters/filterthebat.cpp:28
 #, kde-format
@@ -857,7 +858,7 @@ msgstr ""
 #, kde-format
 msgctxt "Define folder where we will import thebat mails"
 msgid "TheBat-Import"
-msgstr ""
+msgstr "TheBat-Import"
 
 #: mailimporter/filters/filterthunderbird.cpp:24
 #, kde-format
@@ -885,19 +886,19 @@ msgstr ""
 #, kde-format
 msgctxt "name of thunderbird application"
 msgid "Thunderbird"
-msgstr ""
+msgstr "Thunderbird"
 
 #: mailimporter/othermailerutil.cpp:18
 #, kde-format
 msgctxt "name of trojira application"
 msgid "Trojita"
-msgstr ""
+msgstr "Trojita"
 
 #: mailimporter/othermailerutil.cpp:22 mailimporter/othermailerutil.cpp:26
 #, kde-format
 msgctxt "name of geary application"
 msgid "Geary"
-msgstr ""
+msgstr "Geary"
 
 #: mailimporter/selectthunderbirdprofilewidget.cpp:21
 #, kde-format
