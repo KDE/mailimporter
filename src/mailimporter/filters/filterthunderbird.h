@@ -26,19 +26,19 @@ public:
     void import() override;
     void importMails(const QString &maildir);
 
-    Q_REQUIRED_RESULT static QString defaultSettingsPath();
-    Q_REQUIRED_RESULT static QString defaultProfile(const QString &defaultSettingPath, QWidget *parent = nullptr);
-    Q_REQUIRED_RESULT static QMap<QString, QString> listProfile(QString &currentProfile, const QString &defaultSettingPath);
+    [[nodiscard]] static QString defaultSettingsPath();
+    [[nodiscard]] static QString defaultProfile(const QString &defaultSettingPath, QWidget *parent = nullptr);
+    [[nodiscard]] static QMap<QString, QString> listProfile(QString &currentProfile, const QString &defaultSettingPath);
 
-    Q_REQUIRED_RESULT static QString isMailerFound();
+    [[nodiscard]] static QString isMailerFound();
 
 protected:
-    Q_REQUIRED_RESULT virtual QString defaultInstallFolder() const;
-    Q_REQUIRED_RESULT virtual QString settingsPath();
+    [[nodiscard]] virtual QString defaultInstallFolder() const;
+    [[nodiscard]] virtual QString settingsPath();
 
 private:
     MAILIMPORTER_NO_EXPORT void importDirContents(const QString &, const QString &, const QString &);
     MAILIMPORTER_NO_EXPORT void importMBox(const QString &, const QString &, const QString &);
-    Q_REQUIRED_RESULT MAILIMPORTER_NO_EXPORT bool excludeFiles(const QString &file);
+    [[nodiscard]] MAILIMPORTER_NO_EXPORT bool excludeFiles(const QString &file);
 };
 }

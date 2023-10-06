@@ -27,11 +27,11 @@ public:
     void importMails(const QString &archiveFile);
 
 private:
-    Q_REQUIRED_RESULT MAILIMPORTER_NO_EXPORT bool importDirectory(const KArchiveDirectory *directory, const QString &folderPath);
-    Q_REQUIRED_RESULT MAILIMPORTER_NO_EXPORT bool importFolder(const KArchiveDirectory *folder, const QString &folderPath);
-    Q_REQUIRED_RESULT MAILIMPORTER_NO_EXPORT bool importMessage(const KArchiveFile *file, const QString &folderPath);
+    [[nodiscard]] MAILIMPORTER_NO_EXPORT bool importDirectory(const KArchiveDirectory *directory, const QString &folderPath);
+    [[nodiscard]] MAILIMPORTER_NO_EXPORT bool importFolder(const KArchiveDirectory *folder, const QString &folderPath);
+    [[nodiscard]] MAILIMPORTER_NO_EXPORT bool importMessage(const KArchiveFile *file, const QString &folderPath);
 
-    Q_REQUIRED_RESULT MAILIMPORTER_NO_EXPORT int countFiles(const KArchiveDirectory *directory) const;
+    [[nodiscard]] MAILIMPORTER_NO_EXPORT int countFiles(const KArchiveDirectory *directory) const;
     std::unique_ptr<FilterKMailArchivePrivate> const d;
 };
 }

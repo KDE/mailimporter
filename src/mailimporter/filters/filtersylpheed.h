@@ -25,15 +25,15 @@ public:
     FilterSylpheed();
     ~FilterSylpheed() override;
 
-    Q_REQUIRED_RESULT static QString defaultSettingsPath();
-    Q_REQUIRED_RESULT static QString isMailerFound();
+    [[nodiscard]] static QString defaultSettingsPath();
+    [[nodiscard]] static QString isMailerFound();
 
     void import() override;
     virtual void importMails(const QString &maildir);
 
     /* return local mail dir from folderlist.xml*/
     virtual QString localMailDirPath();
-    Q_REQUIRED_RESULT virtual bool excludeFile(const QString &file);
+    [[nodiscard]] virtual bool excludeFile(const QString &file);
     virtual QString defaultInstallFolder() const;
     virtual QString markFile() const;
 
@@ -43,7 +43,7 @@ private:
     MAILIMPORTER_NO_EXPORT void processDirectory(const QString &path);
 
     MAILIMPORTER_NO_EXPORT void readMarkFile(const QString &, QHash<QString, unsigned long> &);
-    Q_REQUIRED_RESULT MAILIMPORTER_NO_EXPORT MailImporter::MessageStatus msgFlagsToString(unsigned long flags);
+    [[nodiscard]] MAILIMPORTER_NO_EXPORT MailImporter::MessageStatus msgFlagsToString(unsigned long flags);
     std::unique_ptr<FilterSylpheedPrivate> const d;
 };
 }

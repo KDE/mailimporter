@@ -21,13 +21,13 @@ public:
     FilterClawsMail();
     ~FilterClawsMail() override;
 
-    Q_REQUIRED_RESULT static QString defaultSettingsPath();
-    Q_REQUIRED_RESULT static QString isMailerFound();
+    [[nodiscard]] static QString defaultSettingsPath();
+    [[nodiscard]] static QString isMailerFound();
 
     /* return local mail dir from folderlist.xml*/
-    Q_REQUIRED_RESULT QString localMailDirPath() override;
-    Q_REQUIRED_RESULT bool excludeFile(const QString &file) override;
-    Q_REQUIRED_RESULT QString defaultInstallFolder() const override;
-    Q_REQUIRED_RESULT QString markFile() const override;
+    [[nodiscard]] QString localMailDirPath() override;
+    [[nodiscard]] bool excludeFile(const QString &file) override;
+    [[nodiscard]] QString defaultInstallFolder() const override;
+    [[nodiscard]] QString markFile() const override;
 };
 }

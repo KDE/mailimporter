@@ -22,16 +22,16 @@ public:
     ~MessageStatus();
 
     void setRead(bool state);
-    Q_REQUIRED_RESULT bool isRead() const;
+    [[nodiscard]] bool isRead() const;
 
     void setDeleted(bool state);
-    Q_REQUIRED_RESULT bool isDeleted() const;
+    [[nodiscard]] bool isDeleted() const;
 
     void setReplied(bool state);
-    Q_REQUIRED_RESULT bool isReplied() const;
+    [[nodiscard]] bool isReplied() const;
 
     void setForwarded(bool state);
-    Q_REQUIRED_RESULT bool isForwarded() const;
+    [[nodiscard]] bool isForwarded() const;
 
 private:
     bool mRead = false;

@@ -37,11 +37,11 @@ public:
     void alert(const QString &message);
 
     static void terminateASAP();
-    Q_REQUIRED_RESULT bool shouldTerminate() const;
+    [[nodiscard]] bool shouldTerminate() const;
 
     QWidget *parentWidget() const;
     void setRemoveDupMessage(bool removeDupMessage);
-    Q_REQUIRED_RESULT bool removeDupMessage() const;
+    [[nodiscard]] bool removeDupMessage() const;
 
 private:
     class FilterInfoPrivate;

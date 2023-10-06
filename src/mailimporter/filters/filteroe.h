@@ -37,8 +37,8 @@ private:
     MAILIMPORTER_NO_EXPORT void dbxReadEmail(QDataStream &ds, int filePos);
 
     /** helperfunctions for folder structure support */
-    Q_REQUIRED_RESULT MAILIMPORTER_NO_EXPORT QString parseFolderOEString(QDataStream &ds, int filePos);
-    Q_REQUIRED_RESULT MAILIMPORTER_NO_EXPORT QString getFolderName(const QString &filename);
+    [[nodiscard]] MAILIMPORTER_NO_EXPORT QString parseFolderOEString(QDataStream &ds, int filePos);
+    [[nodiscard]] MAILIMPORTER_NO_EXPORT QString getFolderName(const QString &filename);
 
     /** which file (of totalFiles) is now in the work? */
     int currentFile;
