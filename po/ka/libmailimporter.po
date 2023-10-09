@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: mailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-10-10 00:19+0000\n"
-"PO-Revision-Date: 2023-08-26 05:54+0200\n"
+"PO-Revision-Date: 2023-10-08 07:04+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Poedit 3.4\n"
 
 #: mailimporter/filters/filterbalsa.cpp:22
 #, kde-format
@@ -30,6 +30,10 @@ msgid ""
 "Balsa mailfolder (usually ~/mail/).</p><p>Since it is possible to recreate "
 "the folder structure, the folders will be stored under: \"Balsa-Import\".</p>"
 msgstr ""
+"<p><b>Balsa-ის შემოტანის ფილტრი</b></p><p>აირჩიეთ საქაღალდე, სადაც Balsa "
+"ფოსტას ინახავს (ჩვეულებრივ ~/mail/).</p><p>იმის გამო, რომ საქაღალდეების "
+"სტრუქტურის შექმნა შესაძლებელია, საქაღალდეები \"Balsa-Import\" საქაღალდის "
+"ქვეშ იქნება შენახული.</p>"
 
 #: mailimporter/filters/filterbalsa.cpp:39
 #, kde-format
@@ -170,6 +174,12 @@ msgid ""
 "under: \"ClawsMail-Import\" in your local folder.</p><p>This filter also "
 "recreates the status of message, e.g. new or forwarded.</p>"
 msgstr ""
+"<p><b>Claws-mail შემოტანის ფილტრი</b></p><p>არჩიეთ Clasws-mail-ის ელფოსტის "
+"ძირითადი საქაღალდე , რომელიც გნებავთ, შემოიტანოთ (ჩვეულებრივ: ~/Mail).</"
+"p><p>იმის გამო, რომ შესაძლებელია საქაღალდეების სტრუქტურა თავიდან შევქმნათ, "
+"საქაღალდეები დამახსოვრებული იქნება თქვენს ლოკალურ საქაღალდეში \"ClawsMail-"
+"Import\"-ში.</p><p> ეს ფილტრი ასევე თავიდან ქმნის სტატუსის შეტყობინებას, "
+"მაგ: ახალი ან გადმოგზავნილი.</p>"
 
 #: mailimporter/filters/filterclawsmail.cpp:42
 #, kde-format
@@ -202,6 +212,10 @@ msgid ""
 "recreate the folder structure, the folders will be stored under: \"Evolution-"
 "Import\".</p>"
 msgstr ""
+"<p><b>Evolution 1.x შემოტანის ფილტრი</b></p><p>აირჩიეთ Evolution-ის ძირითადი "
+"საქაღალდე (ჩვეულებრივ: ~/evolution/local).</p><p>იმის გამო, რომ "
+"შესაძლებელია, საქაღალდეების სტრუქტურა თავიდან შეიქმნას, საქაღლდეები "
+"დამახსოვრებული იქნება \"Evoluton-Import\" საქაღალდეში.</p>"
 
 #: mailimporter/filters/filterevolution.cpp:35
 #, kde-format
@@ -250,6 +264,13 @@ msgid ""
 "p><p>Since it is possible to recreate the folder structure, the folders will "
 "be stored under: \"Evolution-Import\".</p>"
 msgstr ""
+"<p><b>Evolution 2.x-დან შემოტანის ფილტრი</b></p><p>აირჩიეთ თქვენი ლოკალური "
+"Evolution-ის საქაღლდე (ჩვეულებრვ ~/.evolution/mail/local/).</"
+"p><p><b>შენიშვნა:</b> არასდროს აირჩიოთ საქაღალდე, რომელიც<u>არ შეიცავს</u> "
+"mbox ფაილებს (მაგ: maildir): თუ ამას მაინც გააკეთებთ, მიიღებთ ბევრ ახალ "
+"საქაღალდეს.</p><p>იმის გამო, რომ შესაძლებელია საქაღალდეების სტრუქტურის "
+"თავიდან შექმნა, საქაღალდეები \"Evolution-Import\" ის ქვეშ იქნება შენახული.</"
+"p>"
 
 #: mailimporter/filters/filterevolution_v2.cpp:42
 #, kde-format
@@ -279,6 +300,11 @@ msgid ""
 "local/).</p><p>Since it is possible to recreate the folder structure, the "
 "folders will be stored under: \"Evolution-Import\".</p>"
 msgstr ""
+"<p><b>Evolution 3.x-დან შემოტანის ფილტრი</b></p><p>აირჩიეთ საქაღალდე, სადაც "
+"ლოკალური Evolution ელფოსტას ინახავს (ჩვეულებრივ ~/.local/share/evolution/"
+"mail/local/).</p><p>იმის გამო, რომ შესაძლეებლია, საქაღალდეების სტრუქტურა "
+"თავიდან შეიქმნას, საქაღალდეები დამახსოვრებული იქნება \"Evolution-Import\"-ის "
+"ქვეშ.</p>"
 
 #: mailimporter/filters/filterevolution_v3.cpp:39
 #, kde-format
@@ -301,6 +327,12 @@ msgid ""
 "possible to recreate the folder structure, the folders will be stored under: "
 "\"Icedove-Import\".</p>"
 msgstr ""
+"<p><b>Icedove-დან შემოტანის ფილტრი</b></p><p>აირჩიეთ თქვენი ძირითადი Icedove-"
+"ის საქაღალდე (ჩვეულებრივ ~/.icedove/*.default/Mail/Local Folders/).</"
+"p><p><b>შენიშვნა:</b> არასწროს აირჩიოთ საქაღალდე, რომელიც <u>არ შეიცავს</u> "
+"mbox ფაილებს(მაგ: maildir): თუ ამას მაინც იზამთ, ბევრ ახალ საქაღლდეს მიიღებთ."
+"</p><p>იმის გამო, რომ საქაღალდეების სტრუქტურის შექმნა შესაძლებელია, "
+"საქაღალდეები დამახსოვრებული იქნება \"Icedove-Import\"-ის ქვეშ.</p>"
 
 #: mailimporter/filters/filtericedove.cpp:34
 #, kde-format
@@ -324,6 +356,14 @@ msgid ""
 "possible to recreate the folder structure, the folders will be stored under: "
 "\"KMail-Import\" in your local folder.</p>"
 msgstr ""
+"<p><b>KMail-დან შემოტანის ფილტრი</b></p><p>აირჩიეთ საქაღალდე, სადაც KMail "
+"ფოსტას ინახავს, რომლის შემოტანაც გნებავთ.</p><p><b>შენიშვნა:</b> არასდროს "
+"აირჩიოთ თქვენი მიმდინარე KMal-ის საქაღალდე (ჩვეულებრივ ~/Mail ან ~/.kde/"
+"share/apps/kmail/mail ): ამ შემთხვევაში შემოტანის ოსტატი შეიძლება უსასრულო "
+"მარყუჟში გაიჭედოს.</p><p>ამ ფილტრს Mbox ფაილებთან ერთად KMail-ის "
+"საქაღალდეები არ შემოაქვს.</p><p>იმის გამო, რომ საქაღალდეების სტრუქტურის "
+"თავიდან შექმნა შესაძლებელია, საქაღალდეებს \"KMail-Import\"-ის ქვეშ "
+"დავიმახსოვრებთ.</p>"
 
 #: mailimporter/filters/filterkmail_maildir.cpp:176
 #, kde-format
@@ -342,6 +382,9 @@ msgid ""
 "archives files previously exported by KMail.</p><p>Archive files contain a "
 "complete folder subtree compressed into a single file.</p>"
 msgstr ""
+"<p><b>KMail-ის არქივის ფაილის შემოტანის ფილტრი</b></p><p>ეს ფილტრი შემოიტანს "
+"არქივებს, რომელიც ადრე KMail-დან გამოიტანეთ.</p><p>არქივის ფაილები "
+"საქაღალდეების სრულ ქვეხეშეიცავენ, ერთ ფაილში.</p>"
 
 #: mailimporter/filters/filterkmailarchive.cpp:71
 #, kde-format
@@ -431,6 +474,15 @@ msgid ""
 "will be stored in subfolders named by the files they came from under: "
 "\"LNotes-Import\" in your local folder.</p>"
 msgstr ""
+"<p><b>Lotus Notes-ის სტრუქტურის მქონე ტექსტის ელფოსტის შემოტანის ფილტრი</b></"
+"p><p>ეს ფილტრი Lotus Notes ელფოსტის კლიენტიდან გამოტანილი ტექსტური ფაილების "
+"Kmail-ში შემოტანაში დაგეხმარებათ. გამოიყენეთ ეს ფილტრი, თუ Lotus-დან ან სხვა "
+"ელფოსტის სერვერებიდან, რომლებსაც \"Lotus Notes\"-is სტრუქტურის მქონე "
+"ტექსტური ფაილების მხარდაჭერა გააჩნია, ელფოსტის შემოტანა გნებავთ.</"
+"p><p><b>შენიშვნა:</b> იმის გამო, რომ შესაძლებელია საქაღალდეების სტრუქტურის "
+"თავიდან შექმნა, შემოტანილი შეტყობინებები დამახსოვრებული იქნება იმ ფაილების "
+"სახელებით, საიდანაც ისინი შემოიტანეს, თქვენს საქაღალდეში, \"LNotes-Import\"-"
+"ში.</p>"
 
 #: mailimporter/filters/filterlnotes.cpp:52
 #, kde-format
@@ -478,6 +530,8 @@ msgid ""
 "<p><b>OS X Mail Import Filter</b></p><p>This filter imports e-mails from the "
 "Mail client in Apple Mac OS X.</p>"
 msgstr ""
+"<p><b>OS X ელფოსტის შემოტანის ფილტრი</b></p><p>ეს ფილტრი Apple Mac OS X-ის "
+"ელფოსტის კლიენტიდან ელფოსტების შემოტანაში დაგეხმარებათ.</p>"
 
 #: mailimporter/filters/filtermailapp.cpp:126
 #: mailimporter/filters/filtermailmangzip.cpp:136
@@ -500,6 +554,10 @@ msgid ""
 "gzipped files into KMail.</p><p><b>Note:</b> Emails will be imported into "
 "folders named after the file they came from, prefixed with MAILMAN-</p>"
 msgstr ""
+"<p><b>mailman gzip შემოტანის ფილტრი</b></p><p>ეს ფილტრი Mailman-ის შეკუმშულ "
+"(gzip) ფაილებს KMail-ში შემოიტანს.</p><p><b>შენიშვნა:</b> ელფოსტების "
+"შემოტანა მოხდება საქაღალდეებში, რომლებსაც სახელი შესაბამისი ფაილის მიხედვით "
+"დაერქმევა, MAILMAN პრეფიქსით-</p>"
 
 #: mailimporter/filters/filtermailmangzip.cpp:35
 #, kde-format
@@ -531,6 +589,11 @@ msgid ""
 "Emails will be imported into folders named after the file they came from, "
 "prefixed with MBOX-</p>"
 msgstr ""
+"<p><b>mbox-ის შემოტანის ფილტრი</b></p><p>ეს ფილტრი mbox ფაილების KMail-ში "
+"შემოტანაში დაგეხმარებათ. გამოიყენეთ ეს ფილტრი, თუ ელფოსტის შემოტანა Ximian "
+"Evolution ან სხვა კლენტიდან გნებავთ, რომელიც ტრადიციულ UNIX იყენებს.</"
+"p><p><b>შენიშვნა:</b> ელფოსტა შემოტანილი იქნება საქაღლდეებში, რომლებსაც "
+"იგივე სახელი ერქმევა, რაც ფაილს, საიდანაც შემოიტანეთ, პრეფიქსით MBOX-</p>"
 
 #: mailimporter/filters/filtermbox.cpp:38
 #, kde-format
@@ -558,6 +621,13 @@ msgid ""
 "folders from Outlook Express 5 and 6 will be stored under: \"OE-Import\" in "
 "your local folder.</p>"
 msgstr ""
+"<p><b>Outlook Express 4/5/6 შემოტანის ფილტრი</b></p><p>საჭიროა იპოვოთ "
+"საქაღლდე, სადაც საფოსტო ყუთია დამახსოვრებული.ამისთვის .dbx ან .mbx ფაილები "
+"<ul><li><i>C:\\Windows\\Application Data</i> Windows 9x-ში</"
+"li><li><i>Documents and Settings</i> Windows 2000-ში და შემდეგ, მოძებნოთ</"
+"li></ul></p><p><b>შენიშვნა:</b> რადგან შესაძლებელია, საქაღალდეების სტრუქტურა "
+"თავიდან შეიქმნას Outlook Express 5 და 6 დამახსოვრებული იქნება საქაღლდეში "
+"\"OE-Import\" თქვენს ლოკალურ საქაღალდეში.</p>"
 
 #: mailimporter/filters/filteroe.cpp:66
 #, kde-format
@@ -609,6 +679,12 @@ msgid ""
 "imported into a folder named after the account they came from, prefixed with "
 "OPERA-</p>"
 msgstr ""
+"<p><b>Opera-ის შემოტანის ფილტრი</b></p><p>ეს ფილტრი ელფოსტის Opera-ის "
+"ელფოსტის საქაღალდიდან შემოტანაში დაგეხმარებათ. გამოიყენეთ ეს ფილტრი, თუ "
+"Opera-ის ელფოსტის საქაღალდიდან ელფოსტის შემოტანა გნებავთ.</p><p>აირჩიეთ "
+"ანგარიშის საქაღლდე (ჩვეულებრივ ~/.opera/mail/store/account*).</"
+"p><p><b>შენიშვნა:</b> ელფოსტა შემოტანილი იქნება საქაღალდეში იმ სახელით, "
+"საიდანაც ის მოვიდა, პრეფიქსით OPERA-</p>"
 
 #: mailimporter/filters/filteropera.cpp:38
 #, kde-format
@@ -642,6 +718,10 @@ msgid ""
 "prefixed by PLAIN-</p><p>This filter will import all .msg, .eml and .txt "
 "emails.</p>"
 msgstr ""
+"<p>აირჩიეთ საქაღალდე, რომელიც თქვენ სისტემაში ელფოსტას შეიცავს. ელფოსტა "
+"მოთავსებულია საქაღალდეში, რომელსაც იგივე სახელი ჰქვია, რაც კატალოგს, "
+"რომელსაც PLAIN- პრეფიქსი გააჩნია.</p><p>ეს ფილტრი შემოიტანს ყველა .msg, .eml "
+"და .txt ელფოსტებს.</p>"
 
 #: mailimporter/filters/filterpmail.cpp:22
 #, kde-format
@@ -662,6 +742,11 @@ msgid ""
 "folder structure, the folders will be stored under: \"PegasusMail-Import\".</"
 "p>"
 msgstr ""
+"<p>აირჩეთ Pegasus-Mail-ის საქაღალდე თქვენს სისტემაში (რომელიც *.CNM, *.PMM "
+"და *.MBX ფაილებს შეიცავს). ბევრ სისტემაზე ის დამახსოვრებულია საქაღლდეში C:"
+"\\pmail\\mail ან C:\\pmail\\mail\\admin</p><p><b>შენიშვნა:</b> რადგან "
+"საქაღლდების სტრუქტურის თავიდან შექმნა შესაძლებელია, საქაღალდეები "
+"დამახსოვრებული იქნება საქაღალდეში: \"PegasusMail-Import\".</p>"
 
 #: mailimporter/filters/filterpmail.cpp:62
 #, kde-format
@@ -669,6 +754,8 @@ msgid ""
 "Cannot parse the folder structure; continuing import without subfolder "
 "support."
 msgstr ""
+"საქაღალდეების სტრუქტურის დამუშავება შეუძლებელია. ვაგრძელებ ქვესაქაღალდეების "
+"მხარდაჭერის გარეშე."
 
 #: mailimporter/filters/filterpmail.cpp:65
 #, kde-format
@@ -717,6 +804,13 @@ msgid ""
 "it is possible to recreate the folder structure, the folders will be stored "
 "under: \"SeaMonkey-Import\".</p>"
 msgstr ""
+"<p><b>SeaMonkey-ის შემოტანის ფილტრი</b></p><p>არჩიეთ თქვენი ძირითადი "
+"SeaMonkey-ის ელფოსტის საქაღალდე(ჩვეულებრივ ~/.icedove/*.default/Mail/Local "
+"Folders/).</p><p><b>შენიშვნა:</b> არასწოდეს აირჩიოთ საქაღალდე, რომელიც <u>არ "
+"შეიცავს</u> mbox-ფაილებს (მაგ, maildir): თუ ამას გააკეთებთ, ბევრ ახალ "
+"საქაღალდეს მიღებთ.</p><p>რადგან საქაღალდეების სტრუქტურის თავიდან შექმნა "
+"შესაძლებელია, საქაღალდეები დამახსოვრებული იქნება საქაღალდეში: \"SeaMonkey-"
+"Import\".</p>"
 
 #: mailimporter/filters/filtersylpheed.cpp:28
 #, kde-format
@@ -732,6 +826,12 @@ msgid ""
 "\"Sylpheed-Import\" in your local folder.</p><p>This filter also recreates "
 "the status of message, e.g. new or forwarded.</p>"
 msgstr ""
+"<p><b>Sylpheed -ის შემოტანის ფილტრი</b></p><p>აირჩიეთ ძირითადი საქაღალდე "
+"Sylpheed-ის ელფოსტებისთვის (ჩვეულებრივ: ~/Mail ).</p><p>იმის გამო, რომ "
+"შესაძლებელია საქაღალდეების სტრუქტურის თავიდან შექმნა,ელფოსტა დამახსოვრებული "
+"იქნება საქაღალდეში: \"Sylpheed-Import\" თქვენს ლოკალურ საქაღლდეში.</p><p>ეს "
+"ფილტრი ასავე თავიდან შექმნის შეტყობინების სტატუსსსაც, ანუ, ახალი თუ "
+"გადაგზავნილი.</p>"
 
 #: mailimporter/filters/filtersylpheed.cpp:47
 #, kde-format
@@ -760,6 +860,12 @@ msgid ""
 "recreate the folder structure, the folders will be stored under: \"TheBat-"
 "Import\" in your local account.</p>"
 msgstr ""
+"<p><b>The Bat!-ის შემოტანის ფილტრი</b></p><p>აირჩიეთ 'The Bat!' -ის "
+"საქაღალე, რომლის შემოტანაც გნებავთ.</p><p><b>შენიშვნა:</b> ამ ფილტრს "
+"შემოაქვს*.tbb ფაილები from 'The Bat!'-ის ლოკალური საქაღალდიდან, მაგ: POP, და "
+"არა IMAP/DIMAP ანგარიშებიდან.</p><p>იმის გამო, რომ შესაძლებელია "
+"საქაღალდეების სტრუქტურის თავიდან შექმნა, ის დამახსოვრებული იქნება "
+"საქაღლდეში: \"TheBat-Import\" თქვენს ლოკალურ ანგარიშში.</p>"
 
 #: mailimporter/filters/filterthebat.cpp:204
 #, kde-format
@@ -783,6 +889,13 @@ msgid ""
 "new folders.</p><p>Since it is possible to recreate the folder structure, "
 "the folders will be stored under: \"Thunderbird-Import\".</p>"
 msgstr ""
+"<p><b>Thunderbird/Mozilla-ის შემოტანის ფილტრი</b></p><p>აირჩიეთ თქვენი "
+"Thunderbird/Mozilla-ის ელფოსტის საქაღალდე (ჩვეულებრივ ~/.thunderbird/*."
+"default/Mail/Local Folders/).</p><p><b>შენიშვნა:</b> არასდროს აირჩიოთ "
+"საქაღალდე, რომელიც <u>არ შეიცავს</u> mbox ფაილებს (მაგალითად maildir): თუ "
+"ამას მაინც იზამთ, ბევრ ახალ საქაღალდეს მიიღებთ</p><p>იმის გამო, რომ "
+"საქაღალდეების სტრუქტურის თავიდან შექმნა შესაძლებელია, საქაღალდე "
+"დამახსოვრებული იქნება საქაღალდეში: \"Thunderbird-Import\".</p>"
 
 #: mailimporter/filters/filterthunderbird.cpp:58
 #, kde-format
@@ -890,6 +1003,8 @@ msgid ""
 "<b>Warning:</b> Could not fetch mail in folder %1. Reason: %2 You may have "
 "duplicate messages."
 msgstr ""
+"<b>გაფრთხილება:</b> ელფოსტის გამოთხოვა საქაღალდეში %1 შეუძლებელია. მიზეზი: "
+"%2 შეიძლება დუბლირებულ შეტყობინებებს შეიცავს."
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:221
 #, kde-format
