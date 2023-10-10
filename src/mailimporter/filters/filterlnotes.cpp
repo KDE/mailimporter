@@ -116,7 +116,7 @@ void FilterLNotes::ImportLNotes(const QString &file)
                 tempfile->setAutoRemove(false);
                 tempfile->open();
                 // fall through
-                Q_FALLTHROUGH();
+                [[fallthrough]];
             // inside a message state
             case 1:
                 if (ch == 0x0c) {
