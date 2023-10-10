@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-21 00:45+0000\n"
-"PO-Revision-Date: 2023-10-03 10:34+0200\n"
+"PO-Revision-Date: 2023-10-09 18:53+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: \n"
 "Language: bg\n"
@@ -21,21 +21,20 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: mailimporter/filters/filterbalsa.cpp:22
-#, fuzzy, kde-format
+#, kde-format
 msgid "Import Balsa Local Mails and Folder Structure"
-msgstr "Импортиране на писмата и структурата на папките от Evolution 1.x"
+msgstr "Импортиране на писмата и структурата на папките от Balsa"
 
 #: mailimporter/filters/filterbalsa.cpp:24
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "<p><b>Balsa import filter</b></p><p>Select the base directory of your local "
 "Balsa mailfolder (usually ~/mail/).</p><p>Since it is possible to recreate "
 "the folder structure, the folders will be stored under: \"Balsa-Import\".</p>"
 msgstr ""
-"<p><b>Филтър за импортиране от Evolution 1.x</b></p><p>Изберете базовата "
-"директория на Evolution 1.x (обикновено ~/evolution/local).</"
-"p><p>Структурата на папките може да се пресъздаде и тя ще бъде записана в "
-"папката \"Evolution-Import\".</p>"
+"<p><b>Филтър за импортиране от Balsa</b></p><p>Изберете базовата директория "
+"на Balsa (обикновено ~/mail).</p><p>Структурата на папките може да се "
+"пресъздаде и тя ще бъде записана в папката \"Balsa-Import\".</p>"
 
 #: mailimporter/filters/filterbalsa.cpp:39
 #, kde-format
@@ -163,12 +162,12 @@ msgid "Could not import %1"
 msgstr "Грешка при импортиране от %1"
 
 #: mailimporter/filters/filterclawsmail.cpp:22
-#, fuzzy, kde-format
+#, kde-format
 msgid "Import Claws-mail Maildirs and Folder Structure"
-msgstr "Импортиране на писмата и структурата на папките от KMail"
+msgstr "Импортиране на писмата и структурата на папките от Claws-mail"
 
 #: mailimporter/filters/filterclawsmail.cpp:25
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "<p><b>Claws-mail import filter</b></p><p>Select the base directory of the "
 "Claws-mail mailfolder you want to import (usually: ~/Mail ).</p><p>Since it "
@@ -176,11 +175,11 @@ msgid ""
 "under: \"ClawsMail-Import\" in your local folder.</p><p>This filter also "
 "recreates the status of message, e.g. new or forwarded.</p>"
 msgstr ""
-"<p><b>Филтър за импортиране от Sylpheed</b></p><p>Изберете базовата "
-"директория на Sylpheed (обикновено ~/Mail).</p><p>Структурата на папките "
-"може да се пресъздаде и тя ще бъде записана в папката \"Sylpheed-Import\".</"
-"p><p>Също така, филтърът импортира и състоянието на съобщенията - ново, "
-"препратено, отговорено и пр.</p>"
+"<p><b>Филтър за импортиране от Claws</b></p><p>Изберете базовата директория "
+"на Claws (обикновено ~/Mail).</p><p>Структурата на папките може да се "
+"пресъздаде и тя ще бъде записана в папката \"ClawsMail-Import\".</p><p>Също "
+"така, филтърът импортира и състоянието на съобщенията - ново, препратено, "
+"отговорено и пр.</p>"
 
 #: mailimporter/filters/filterclawsmail.cpp:42
 #, kde-format
@@ -285,22 +284,22 @@ msgid "Start import file %1..."
 msgstr "Начало на внасянето на файла %1..."
 
 #: mailimporter/filters/filterevolution_v3.cpp:22
-#, fuzzy, kde-format
+#, kde-format
 msgid "Import Evolution 3.x Local Mails and Folder Structure"
-msgstr "Внасяне на писмата и структурата на папките от Evolution 2.x"
+msgstr "Импортиране на писмата и структурата на папките от Evolution 3.x"
 
 #: mailimporter/filters/filterevolution_v3.cpp:24
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "<p><b>Evolution 3.x import filter</b></p><p>Select the base directory of "
 "your local Evolution mailfolder (usually ~/.local/share/evolution/mail/"
 "local/).</p><p>Since it is possible to recreate the folder structure, the "
 "folders will be stored under: \"Evolution-Import\".</p>"
 msgstr ""
-"<p><b>Филтър за импортиране от Evolution 1.x</b></p><p>Изберете базовата "
-"директория на Evolution 1.x (обикновено ~/evolution/local).</"
-"p><p>Структурата на папките може да се пресъздаде и тя ще бъде записана в "
-"папката \"Evolution-Import\".</p>"
+"<p><b>Филтър за импортиране от Evolution 3.x</b></p><p>Изберете базовата "
+"директория на Evolution 3.x (обикновено ~/.local/share/evolution/mail/"
+"local/).</p><p>Структурата на папките може да се пресъздаде и тя ще бъде "
+"записана в папката \"Evolution-Import\".</p>"
 
 #: mailimporter/filters/filterevolution_v3.cpp:39
 #, kde-format
@@ -309,12 +308,12 @@ msgid "Evolution (v3)"
 msgstr "Evolution (v3)"
 
 #: mailimporter/filters/filtericedove.cpp:14
-#, fuzzy, kde-format
+#, kde-format
 msgid "Import Icedove Mails and Folder Structure"
-msgstr "Импортиране на писмата и структурата на папките от Bat"
+msgstr "Импортиране на писмата и структурата на папките от Icedove"
 
 #: mailimporter/filters/filtericedove.cpp:17
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "<p><b>Icedove import filter</b></p><p>Select your base Icedove mailfolder "
 "(usually ~/.icedove/*.default/Mail/Local Folders/).</p><p><b>Note:</b> Never "
@@ -323,12 +322,12 @@ msgid ""
 "possible to recreate the folder structure, the folders will be stored under: "
 "\"Icedove-Import\".</p>"
 msgstr ""
-"<p><b>Филтър за импортиране от Thunderbird/Mozilla</b></p><p>Изберете "
-"базовата директория на е-пощата на Thunderbird/Mozilla (обикновено ~/."
-"thunderbird/*.default/Mail/Local Folders/).</p><p><b>Забележа:</b> Никога не "
-"избирайте папка, която не е във формат mbox-files. Ако го направите ще "
-"получите много нови папки.</p><p>Структурата на папките може да се "
-"пресъздаде и тя ще бъде записана в папката \"Thunderbird-Import\".</p>"
+"<p><b>Филтър за импортиране от Icedove</b></p><p>Изберете базовата "
+"директория на е-пощата на Icedove (обикновено ~/.icedove/*.default/Mail/"
+"Local Folders/).</p><p><b>Забележа:</b> Никога не избирайте папка, която не "
+"е във формат mbox-files. Ако го направите ще получите много нови папки.</"
+"p><p>Структурата на папките може да се пресъздаде и тя ще бъде записана в "
+"папката \"Icedove-Import\".</p>"
 
 #: mailimporter/filters/filtericedove.cpp:34
 #, kde-format
@@ -342,7 +341,7 @@ msgid "Import KMail Maildirs and Folder Structure"
 msgstr "Импортиране на писмата и структурата на папките от KMail"
 
 #: mailimporter/filters/filterkmail_maildir.cpp:28
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "<p><b>KMail import filter</b></p><p>Select the base directory of the KMail "
 "mailfolder you want to import.</p><p><b>Note:</b> Never select your current "
@@ -354,20 +353,21 @@ msgid ""
 msgstr ""
 "<p><b>Филтър за импортиране от KMail</b></p><p>Изберете базовата директория, "
 "където се намират писмата на \"KMail\".</p><p><b>Забележа:</b> Никога не "
-"избирайте вашата локална директория, която ползвате в момента. Ако я "
-"изберете това може да доведе до безкраен цикъл.</p> <p>Филтърът не поддържа "
-"файлове mbox.</p><p>Структурата на папките може да се пресъздаде и тя ще "
-"бъде записана в папката \"KMail-Import\".</p>"
+"избирайте вашата локална директория, която ползвате в момента  (обикновено ~/"
+"Mail или ~/.kde/share/apps/kmail/mail ). Ако я изберете това може да доведе "
+"до безкраен цикъл.</p> <p>Филтърът не поддържа файлове mbox.</"
+"p><p>Структурата на папките може да се пресъздаде и тя ще бъде записана в "
+"папката \"KMail-Import\".</p>"
 
 #: mailimporter/filters/filterkmail_maildir.cpp:176
-#, fuzzy, kde-format
+#, kde-format
 msgid "Could not import %1, duplicated message"
-msgstr "Грешка при импортиране от %1"
+msgstr "Грешка при импортиране от %1, дублирано съобщение"
 
 #: mailimporter/filters/filterkmailarchive.cpp:31
-#, fuzzy, kde-format
+#, kde-format
 msgid "Import KMail Archive File"
-msgstr "Импортиране на нови пощенски файлове..."
+msgstr "Импортиране на архивни файлове на KMail"
 
 #: mailimporter/filters/filterkmailarchive.cpp:33
 #, kde-format
@@ -376,6 +376,10 @@ msgid ""
 "archives files previously exported by KMail.</p><p>Archive files contain a "
 "complete folder subtree compressed into a single file.</p>"
 msgstr ""
+"<p><b>Филтър за импортиране на архивни файлове на KMail</b></p><p>Този "
+"филтър  ще импортира архивни файлове, експортирани преди това от KMail.</"
+"p><p>Архивните файлове съдържат пълната структура на папките, компресирана в "
+"един файл.</p>"
 
 #: mailimporter/filters/filterkmailarchive.cpp:71
 #, kde-format
@@ -385,69 +389,69 @@ msgstr "Внасяне на папка %1..."
 #: mailimporter/filters/filterkmailarchive.cpp:97
 #, kde-format
 msgid "Unexpected subfolder %1 in folder %2."
-msgstr ""
+msgstr "Неочаквана подпапка  %1 в папка %2"
 
 #: mailimporter/filters/filterkmailarchive.cpp:101
 #, kde-format
 msgid "No subfolder named 'cur' in folder %1."
-msgstr ""
+msgstr "Няма подпапка с име 'cur' в папка %1."
 
 #: mailimporter/filters/filterkmailarchive.cpp:125
 #, kde-format
 msgid "Unexpected subdirectory named '%1'."
-msgstr ""
+msgstr "Неочаквана подпапка с име %1."
 
 #: mailimporter/filters/filterkmailarchive.cpp:156
 #, kde-format
 msgid "Select KMail Archive File to Import"
-msgstr ""
+msgstr "Избиране на архивен файл на KMail за импортиране"
 
 #: mailimporter/filters/filterkmailarchive.cpp:158
-#, fuzzy, kde-format
+#, kde-format
 msgid "KMail Archive Files "
-msgstr "Импортиране на нови пощенски файлове..."
+msgstr "Архивни файлове на KMail"
 
 #: mailimporter/filters/filterkmailarchive.cpp:160
 #, kde-format
 msgid "Please select an archive file that should be imported."
-msgstr ""
+msgstr "Моля, изберете архивната папка, която трябва да се импортира."
 
 #: mailimporter/filters/filterkmailarchive.cpp:169
-#, fuzzy, kde-format
+#, kde-format
 msgid "No archive selected."
-msgstr "Не е избрана папка."
+msgstr "Не е избран архив."
 
 #: mailimporter/filters/filterkmailarchive.cpp:183
 #, kde-format
 msgid "The file '%1' does not appear to be a valid archive."
-msgstr ""
+msgstr "Файлът \"%1\" не е валиден архив."
 
 #: mailimporter/filters/filterkmailarchive.cpp:188
-#, fuzzy, kde-format
+#, kde-format
 msgid "Unable to open archive file '%1'"
-msgstr "Грешка при отваряне на пощенска кутия %1"
+msgstr "Не може да се отвори архивен файл '%1'"
 
 #: mailimporter/filters/filterkmailarchive.cpp:193
-#, fuzzy, kde-format
+#, kde-format
 msgid "Counting files in archive..."
-msgstr "Преброяване на файловете..."
+msgstr "Преброяване на файловете в архива..."
 
 #: mailimporter/filters/filterkmailarchive.cpp:199
-#, fuzzy, kde-format
+#, kde-format
 msgid "Importing the archive file '%1' into the folder '%2' succeeded."
-msgstr "Импортиране на нови пощенски файлове..."
+msgstr "Импортиране на архивен файл \"%1\" в папка \"%2\" е успешно."
 
 #: mailimporter/filters/filterkmailarchive.cpp:200
-#, fuzzy, kde-format
+#, kde-format
 msgid "1 message was imported."
 msgid_plural "%1 messages were imported."
-msgstr[0] "1 дублирано съобщение не бе импортирано"
-msgstr[1] "%1 дублирани съобщения не бяха импортирани"
+msgstr[0] "1 съобщение беше импортирано"
+msgstr[1] "%1 съобщения бяха импортирани"
 
 #: mailimporter/filters/filterkmailarchive.cpp:202
-#, fuzzy, kde-format
+#, kde-format
 msgid "Importing the archive failed."
-msgstr "Импортиране на нови пощенски файлове..."
+msgstr "Импортирането на архивния файл е неуспешно."
 
 #: mailimporter/filters/filterlnotes.cpp:30
 #, kde-format
@@ -483,9 +487,9 @@ msgstr "Всички файлове (*)"
 #: mailimporter/filters/filtermailapp.cpp:47
 #: mailimporter/filters/filtermailmangzip.cpp:42
 #: mailimporter/filters/filtermbox.cpp:45
-#, fuzzy, kde-format
+#, kde-format
 msgid "No files selected."
-msgstr "Не е избрана папка."
+msgstr "Не е избран файл."
 
 #: mailimporter/filters/filterlnotes.cpp:66
 #, kde-format
@@ -512,7 +516,7 @@ msgstr "Импортиране на папките от OS X Mail"
 #: mailimporter/filters/filtermailapp.cpp:29
 #, kde-format
 msgid "Chris Howells<br /><br />Filter accelerated by Danny Kukawka )"
-msgstr ""
+msgstr "Chris Howells<br /><br />Филтриране, ускорено от Danny Kukawka )"
 
 #: mailimporter/filters/filtermailapp.cpp:30
 #, kde-format
@@ -533,32 +537,31 @@ msgstr[0] "1 дублирано съобщения не бе импортира�
 msgstr[1] "%1 дублирани съобщения не бяха импортирани в папката %2 на KMail"
 
 #: mailimporter/filters/filtermailmangzip.cpp:19
-#, fuzzy, kde-format
+#, kde-format
 msgid "Import mailman gzip Files"
-msgstr "Импортиране на нови пощенски файлове..."
+msgstr "Импортиране на файлове mailman gzip"
 
 #: mailimporter/filters/filtermailmangzip.cpp:21
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "<p><b>mailman gzip import filter</b></p><p>This filter will import mailman "
 "gzipped files into KMail.</p><p><b>Note:</b> Emails will be imported into "
 "folders named after the file they came from, prefixed with MAILMAN-</p>"
 msgstr ""
-"<p><b>Филтър за импортиране на файлове mbox</b></p><p>Филтърът ще импортира "
-"файловете mbox в KMail. Използвайте филтъра, ако искате да импортирате писма "
-"от Ximian Evolution или от други програми, които използват традиционния "
-"формат на UNIX.</p><p><b>Забележка:</b> писмата ще бъдат импортирани в папка "
-"с името на файла от който идват и ще имат представка \"MBOX-\".</p>"
+"<p><b>Филтър за импортиране на файлове mailman gzip </b></p><p>Филтърът ще "
+"импортира файловете на  mailman gzip  в KMail</p><p><b>Забележка:</b> "
+"Писмата ще бъдат импортирани в папка с името на файла от който идват и ще "
+"имат представка \"MAILMAN-\".</p>"
 
 #: mailimporter/filters/filtermailmangzip.cpp:35
 #, kde-format
 msgid "gzip Files"
-msgstr ""
+msgstr "Файлове gzip"
 
 #: mailimporter/filters/filtermailmangzip.cpp:55
-#, fuzzy, kde-format
+#, kde-format
 msgid "Unable to open archive file '%1', skipping"
-msgstr "Грешка при отваряне на пощенска кутия %1"
+msgstr "Не може да се отвори архивен файл '%1', пропускане"
 
 #: mailimporter/filters/filtermbox.cpp:20
 #, kde-format
@@ -569,7 +572,7 @@ msgstr "Импортиране на файлове mbox (UNIX, Evolution)"
 #: mailimporter/filters/filterplain.cpp:19
 #, kde-format
 msgid "Laurence Anderson <p>( Filter accelerated by Danny Kukawka )</p>"
-msgstr ""
+msgstr "Laurence Anderson <p>(Филтриране, ускорено от Danny Kukawka )</p>"
 
 #: mailimporter/filters/filtermbox.cpp:22
 #, kde-format
@@ -587,9 +590,9 @@ msgstr ""
 "с името на файла от който идват и ще имат представка \"MBOX-\".</p>"
 
 #: mailimporter/filters/filtermbox.cpp:38
-#, fuzzy, kde-format
+#, kde-format
 msgid "mbox Files"
-msgstr "Файлове mbox (*)"
+msgstr "Файлове mbox"
 
 #: mailimporter/filters/filteroe.cpp:32
 #, kde-format
@@ -599,7 +602,7 @@ msgstr "Импортиране на писмата от Outlook Express"
 #: mailimporter/filters/filteroe.cpp:33
 #, kde-format
 msgid "Laurence Anderson <br>( Filter enhanced by Danny Kukawka )</p>"
-msgstr ""
+msgstr "Laurence Anderson <br>(Филтриране, ускорено от Danny Kukawka )</p>"
 
 #: mailimporter/filters/filteroe.cpp:34
 #, kde-format
@@ -779,12 +782,12 @@ msgid "Parsing the folder structure..."
 msgstr "Анализ на структурата на папките..."
 
 #: mailimporter/filters/filterseamonkey.cpp:14
-#, fuzzy, kde-format
+#, kde-format
 msgid "Import SeaMonkey Mails and Folder Structure"
-msgstr "Импортиране на писмата и структурата на папките от Bat"
+msgstr "Импортиране на писмата и структурата на папките от SeaMonkey"
 
 #: mailimporter/filters/filterseamonkey.cpp:17
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "<p><b>SeaMonkey import filter</b></p><p>Select your base SeaMonkey "
 "mailfolder (usually ~/.icedove/*.default/Mail/Local Folders/).</p><p><b>Note:"
@@ -793,12 +796,12 @@ msgid ""
 "it is possible to recreate the folder structure, the folders will be stored "
 "under: \"SeaMonkey-Import\".</p>"
 msgstr ""
-"<p><b>Филтър за импортиране от Thunderbird/Mozilla</b></p><p>Изберете "
-"базовата директория на е-пощата на Thunderbird/Mozilla (обикновено ~/."
-"thunderbird/*.default/Mail/Local Folders/).</p><p><b>Забележа:</b> Никога не "
-"избирайте папка, която не е във формат mbox-files. Ако го направите ще "
-"получите много нови папки.</p><p>Структурата на папките може да се "
-"пресъздаде и тя ще бъде записана в папката \"Thunderbird-Import\".</p>"
+"<p><b>Филтър за импортиране от SeaMonkey</b></p><p>Изберете базовата "
+"директория на е-пощата на SeaMonkey (обикновено ~/.icedove/*.default/Mail/"
+"Local Folders/).</p><p><b>Забележа:</b> Никога не избирайте папка, която не "
+"е във формат mbox-files. Ако го направите ще получите много нови папки.</"
+"p><p>Структурата на папките може да се пресъздаде и тя ще бъде записана в "
+"папката \"SeaMonkey-Import\".</p>"
 
 #: mailimporter/filters/filtersylpheed.cpp:28
 #, kde-format
@@ -904,12 +907,12 @@ msgstr "Geary"
 #, kde-format
 msgctxt "@title:window"
 msgid "Select thunderbird profile"
-msgstr ""
+msgstr "Избиране на профил на thunderbird"
 
 #: mailimporter/selectthunderbirdprofilewidget.cpp:70
 #, kde-format
 msgid " (default)"
-msgstr ""
+msgstr " (по подразбиране)"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
 #: mailimporter/ui/importmailswidget.ui:27
@@ -955,28 +958,32 @@ msgstr "Общо:"
 #: mailimporter/ui/selectthunderbirdprofilewidget.ui:17
 #, kde-format
 msgid "Select Profile:"
-msgstr ""
+msgstr "Избиране на профил:"
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:94
 #, kde-format
 msgid "Error: failed to read temporary file at %1"
-msgstr ""
+msgstr "Грешка: Неуспешно четене на временен файл в %1"
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:123
-#, fuzzy, kde-format
+#, kde-format
 msgid "<b>Warning:</b> Got a bad message folder, adding to root folder."
-msgstr "Грешка при добавяне на съобщение в папката %1 в KMail"
+msgstr ""
+"<b>Предупреждение:</b> Получена е лоша папка за съобщения! Добавя се към "
+"основната папка."
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:168
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "<b>Warning:</b> Could not check that the folder already exists. Reason: %1"
-msgstr "Грешка при добавяне на съобщение в папката %1 в KMail"
+msgstr ""
+"<b>Предупреждение:</b> Не можа да се провери дали папката вече съществува. "
+"Причина: %1"
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:185
-#, fuzzy, kde-format
+#, kde-format
 msgid "<b>Error:</b> Could not create folder. Reason: %1"
-msgstr "Грешка при добавяне на съобщение в папката %1 в KMail"
+msgstr "<b>Грешка:</b>Не можа да се създаде папка. Причина: %1"
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:213
 #, kde-format
@@ -984,18 +991,21 @@ msgid ""
 "<b>Warning:</b> Could not fetch mail in folder %1. Reason: %2 You may have "
 "duplicate messages."
 msgstr ""
+"<b>Предупреждение:</b>Не може да се изтегли поща в папка %1. Причина: %2 "
+"Може да имате дублиращи се съобщения."
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:221
-#, fuzzy, kde-format
+#, kde-format
 msgid "<b>Warning:</b> Got an invalid message in folder %1."
-msgstr "Грешка при добавяне на съобщение в папката %1 в KMail"
+msgstr "<b>Предупреждение:</b>  Получено е невалидно съобщение в папка %1."
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:275
-#, fuzzy, kde-format
+#, kde-format
 msgid "<b>Error:</b> Could not add message to folder %1. Reason: %2"
-msgstr "Грешка при добавяне на съобщение в папката %1 в KMail"
+msgstr ""
+"<b>Грешка:</b>Не можа да се създаде добави съобщение в папка %1. Причина: %2"
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:295
 #, kde-format
 msgid "Unable to retrieve folder for folder path %1."
-msgstr ""
+msgstr "Не може да се извлече папка от пътя на папката %1."
