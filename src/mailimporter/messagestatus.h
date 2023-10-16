@@ -7,7 +7,6 @@
 #pragma once
 
 #include "mailimporter_export.h"
-#include <QtGlobal>
 
 namespace MailImporter
 {
