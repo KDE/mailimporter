@@ -23,7 +23,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 3.9.6\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
+"n % 10 == 0) ? 2 : 3));\n"
 
 #: mailimporter/filters/filterbalsa.cpp:22
 #, fuzzy, kde-format
@@ -107,6 +108,8 @@ msgid "1 duplicate message not imported"
 msgid_plural "%1 duplicate messages not imported"
 msgstr[0] "שגיאה בהוספת הודעה לתיקיה %2 ב-KMail"
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 #: mailimporter/filters/filterbalsa.cpp:116
 #: mailimporter/filters/filterevolution_v2.cpp:132
@@ -413,6 +416,8 @@ msgid "1 message was imported."
 msgid_plural "%1 messages were imported."
 msgstr[0] "שגיאה בהוספת הודעה לתיקיה %2 ב-KMail"
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 #: mailimporter/filters/filterkmailarchive.cpp:202
 #, fuzzy, kde-format
@@ -491,6 +496,8 @@ msgid "1 duplicate message not imported to folder %2 in KMail"
 msgid_plural "%1 duplicate messages not imported to folder %2 in KMail"
 msgstr[0] "שגיאה בהוספת הודעה לתיקיה %2 ב-KMail"
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 #: mailimporter/filters/filtermailmangzip.cpp:19
 #, fuzzy, kde-format
