@@ -59,17 +59,16 @@ QString FilterSylpheed::localMailDirPath()
     QFile folderListFile(FilterSylpheed::defaultSettingsPath() + QLatin1String("/folderlist.xml"));
     if (folderListFile.exists()) {
         QDomDocument doc;
-        QString errorMsg;
-        int errorRow;
-        int errorCol;
         if (!folderListFile.open(QIODevice::ReadOnly)) {
             qCWarning(MAILIMPORTER_LOG) << "Impossible to open " << folderListFile.fileName();
         }
-        if (!doc.setContent(&folderListFile, &errorMsg, &errorRow, &errorCol)) {
-            qCDebug(MAILIMPORTER_LOG) << "Unable to load document.Parse error in line " << errorRow << ", col " << errorCol << ": " << errorMsg;
+        const QDomDocument::ParseResult parseResult = doc.setContent(&folderListFile);
+        if (!parseResult) {
+            qCDebug(MAILIMPORTER_LOG) << "Unable to load document.Parse error in line " << parseResult.errorLine << ", col " << parseResult.errorColumn << ": "
+                                      << qPrintable(parseResult.errorMessage);
             return QString();
         }
-        QDomElement settings = doc.documentElement();
+        const QDomElement settings = doc.documentElement();
 
         if (settings.isNull()) {
             return QString();
