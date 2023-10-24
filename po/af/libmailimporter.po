@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2023-10-24 01:41+0000\n"
 "PO-Revision-Date: 2002-11-07 11:35+0200\n"
 "Last-Translator: WEB-Translator <http://kde.af.org.za>\n"
 "Language-Team: AFRIKAANS <AF@lia.org.za>\n"
@@ -44,7 +44,7 @@ msgstr ""
 #: mailimporter/filters/filteropera.cpp:174
 #: mailimporter/filters/filterplain.cpp:41
 #: mailimporter/filters/filterpmail.cpp:45
-#: mailimporter/filters/filtersylpheed.cpp:123
+#: mailimporter/filters/filtersylpheed.cpp:122
 #: mailimporter/filters/filterthebat.cpp:73
 #: mailimporter/filters/filterthunderbird.cpp:169
 #, fuzzy, kde-format
@@ -58,7 +58,7 @@ msgstr "Nee gids gekose"
 #: mailimporter/filters/filterkmail_maildir.cpp:85
 #: mailimporter/filters/filteropera.cpp:182
 #: mailimporter/filters/filterplain.cpp:53
-#: mailimporter/filters/filtersylpheed.cpp:132
+#: mailimporter/filters/filtersylpheed.cpp:131
 #: mailimporter/filters/filterthebat.cpp:82
 #: mailimporter/filters/filterthunderbird.cpp:178
 #, kde-format
@@ -76,7 +76,7 @@ msgstr ""
 #: mailimporter/filters/filteropera.cpp:141
 #: mailimporter/filters/filterplain.cpp:75
 #: mailimporter/filters/filterpmail.cpp:72
-#: mailimporter/filters/filtersylpheed.cpp:144
+#: mailimporter/filters/filtersylpheed.cpp:143
 #: mailimporter/filters/filterthebat.cpp:93
 #: mailimporter/filters/filterthunderbird.cpp:210
 #, fuzzy, kde-format
@@ -90,7 +90,7 @@ msgstr "Met die invoering van pos gidse ('.pmm')..."
 #: mailimporter/filters/filterkmail_maildir.cpp:97
 #: mailimporter/filters/filteropera.cpp:143
 #: mailimporter/filters/filterplain.cpp:77
-#: mailimporter/filters/filtersylpheed.cpp:146
+#: mailimporter/filters/filtersylpheed.cpp:145
 #: mailimporter/filters/filterthebat.cpp:95
 #: mailimporter/filters/filterthunderbird.cpp:212
 #, fuzzy, kde-format
@@ -108,7 +108,7 @@ msgstr[0] "Kan nie voeg by boodskap na kabinet %2 in Kpos"
 #: mailimporter/filters/filteroe.cpp:108
 #: mailimporter/filters/filteropera.cpp:200
 #: mailimporter/filters/filterplain.cpp:80
-#: mailimporter/filters/filtersylpheed.cpp:150
+#: mailimporter/filters/filtersylpheed.cpp:149
 #: mailimporter/filters/filterthebat.cpp:99
 #: mailimporter/filters/filterthunderbird.cpp:216
 #, kde-format
@@ -125,7 +125,7 @@ msgstr ""
 #: mailimporter/filters/filterbalsa.cpp:187
 #: mailimporter/filters/filterevolution_v3.cpp:184
 #: mailimporter/filters/filterkmail_maildir.cpp:169
-#: mailimporter/filters/filtersylpheed.cpp:228
+#: mailimporter/filters/filtersylpheed.cpp:227
 #: mailimporter/filters/filterthebat.cpp:209
 #, fuzzy, kde-format
 msgid "Import folder %1..."
@@ -146,7 +146,7 @@ msgstr "Met die invoering van pos gidse ('.pmm')..."
 #: mailimporter/filters/filterpmail.cpp:115
 #: mailimporter/filters/filterpmail.cpp:194
 #: mailimporter/filters/filterpmail.cpp:262
-#: mailimporter/filters/filtersylpheed.cpp:242
+#: mailimporter/filters/filtersylpheed.cpp:241
 #: mailimporter/filters/filterthebat.cpp:229
 #: mailimporter/filters/filterthunderbird.cpp:344
 #, kde-format
@@ -174,7 +174,7 @@ msgctxt "name of clawsMail application"
 msgid "ClawsMail"
 msgstr ""
 
-#: mailimporter/filters/filterclawsmail.cpp:96
+#: mailimporter/filters/filterclawsmail.cpp:95
 #, kde-format
 msgctxt "define folder name where we will import clawsmail mails"
 msgid "ClawsMail-Import"
@@ -732,7 +732,7 @@ msgctxt "name of sylpheed application"
 msgid "Sylpheed"
 msgstr ""
 
-#: mailimporter/filters/filtersylpheed.cpp:185
+#: mailimporter/filters/filtersylpheed.cpp:184
 #, kde-format
 msgctxt "define folder name where we will import sylpheed mails"
 msgid "Sylpheed-Import"
