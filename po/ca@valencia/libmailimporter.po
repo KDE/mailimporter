@@ -458,7 +458,7 @@ msgstr[1] "S'han importat %1 missatges."
 #: mailimporter/filters/filterkmailarchive.cpp:202
 #, kde-format
 msgid "Importing the archive failed."
-msgstr "Ha fallat la importació de l'arxiu."
+msgstr "Fallada durant la importació de l'arxiu."
 
 #: mailimporter/filters/filterlnotes.cpp:30
 #, kde-format
