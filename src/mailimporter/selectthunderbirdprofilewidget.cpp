@@ -22,11 +22,11 @@ SelectThunderbirdProfileDialog::SelectThunderbirdProfileDialog(QWidget *parent)
     setModal(true);
     auto topLayout = new QVBoxLayout(this);
 
-    mSelectProfile->setObjectName(QStringLiteral("selectprofile"));
+    mSelectProfile->setObjectName(QLatin1StringView("selectprofile"));
     topLayout->addWidget(mSelectProfile);
 
     auto buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
-    buttonBox->setObjectName(QStringLiteral("buttonBox"));
+    buttonBox->setObjectName(QLatin1StringView("buttonBox"));
     QPushButton *okButton = buttonBox->button(QDialogButtonBox::Ok);
     okButton->setDefault(true);
     okButton->setShortcut(Qt::CTRL | Qt::Key_Return);
