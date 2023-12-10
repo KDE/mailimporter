@@ -9,19 +9,20 @@
 # Franklin Weng <franklin at goodhorse dot idv dot tw>, 2007.
 # Franklin Weng <franklin@goodhorse.idv.tw>, 2012, 2013, 2015.
 # pan93412 <pan93412@gmail.com>, 2019.
+# Kisaragi Hiu <mail@kisaragi-hiu.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-24 01:41+0000\n"
-"PO-Revision-Date: 2019-05-14 22:35+0800\n"
-"Last-Translator: pan93412 <pan93412@gmail.com>\n"
-"Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
+"PO-Revision-Date: 2023-12-09 19:17+0900\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
+"Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 19.04.1\n"
+"X-Generator: Lokalize 24.01.80\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: mailimporter/filters/filterbalsa.cpp:22
@@ -44,7 +45,7 @@ msgstr ""
 #, kde-format
 msgctxt "name of balsa application"
 msgid "Balsa"
-msgstr ""
+msgstr "Balsa"
 
 #: mailimporter/filters/filterbalsa.cpp:89
 #: mailimporter/filters/filterevolution.cpp:60
@@ -184,12 +185,10 @@ msgstr ""
 "態，例如是未讀的或是已轉寄之類。</p>"
 
 #: mailimporter/filters/filterclawsmail.cpp:42
-#, fuzzy, kde-format
-#| msgctxt "define folder name where we will import clawsmail mails"
-#| msgid "ClawsMail-Import"
+#, kde-format
 msgctxt "name of clawsMail application"
 msgid "ClawsMail"
-msgstr "ClawsMail-Import"
+msgstr "ClawsMail"
 
 #: mailimporter/filters/filterclawsmail.cpp:95
 #, kde-format
@@ -203,10 +202,9 @@ msgid "Import Evolution 1.x Local Mails and Folder Structure"
 msgstr "匯入 Evolution 1.x 的信件"
 
 #: mailimporter/filters/filterevolution.cpp:18
-#, fuzzy, kde-format
-#| msgid "Laurence Anderson <p>( Filter accelerated by Danny Kukawka )</p>"
+#, kde-format
 msgid "Simon MARTIN<br /><br />( Filter accelerated by Danny Kukawka )"
-msgstr "Laurence Anderson <p>（過濾器由 Danny Kukawka 加速）</p>"
+msgstr "Simon MARTIN<br /><br />（過濾器由 Danny Kukawka 加速）"
 
 #: mailimporter/filters/filterevolution.cpp:19
 #, kde-format
@@ -221,12 +219,10 @@ msgstr ""
 "件夾，並幫您保存原先的目錄結構。</p>"
 
 #: mailimporter/filters/filterevolution.cpp:35
-#, fuzzy, kde-format
-#| msgctxt "define folder name where we import evolution mails"
-#| msgid "Evolution-Import"
+#, kde-format
 msgctxt "name of evolution application"
 msgid "Evolution"
-msgstr "Evolution-Import"
+msgstr "Evolution"
 
 #: mailimporter/filters/filterevolution.cpp:132
 #: mailimporter/filters/filterevolution_v2.cpp:192
@@ -278,7 +274,7 @@ msgstr ""
 #, kde-format
 msgctxt "name of evolution application"
 msgid "Evolution (v2)"
-msgstr ""
+msgstr "Evolution (v2)"
 
 #: mailimporter/filters/filterevolution_v2.cpp:122
 #: mailimporter/filters/filterevolution_v2.cpp:161
@@ -309,7 +305,7 @@ msgstr ""
 #, kde-format
 msgctxt "name of evolution application"
 msgid "Evolution (v3)"
-msgstr ""
+msgstr "Evolution (v3)"
 
 #: mailimporter/filters/filtericedove.cpp:14
 #, kde-format
@@ -336,7 +332,7 @@ msgstr ""
 #, kde-format
 msgctxt "name of icedove application"
 msgid "Icedove"
-msgstr ""
+msgstr "Icedove"
 
 #: mailimporter/filters/filterkmail_maildir.cpp:26
 #, kde-format
@@ -405,10 +401,9 @@ msgid "Select KMail Archive File to Import"
 msgstr "選擇要匯入的 KMail 封存"
 
 #: mailimporter/filters/filterkmailarchive.cpp:158
-#, fuzzy, kde-format
-#| msgid "Import KMail Archive File"
+#, kde-format
 msgid "KMail Archive Files "
-msgstr "匯入 KMail 封存"
+msgstr "KMail 封存檔"
 
 #: mailimporter/filters/filterkmailarchive.cpp:160
 #, kde-format
@@ -416,10 +411,9 @@ msgid "Please select an archive file that should be imported."
 msgstr "請選擇要匯入的封存檔名。"
 
 #: mailimporter/filters/filterkmailarchive.cpp:169
-#, fuzzy, kde-format
-#| msgid "No files selected."
+#, kde-format
 msgid "No archive selected."
-msgstr "沒有選取任何檔案。"
+msgstr "未選取封存。"
 
 #: mailimporter/filters/filterkmailarchive.cpp:183
 #, kde-format
@@ -508,10 +502,9 @@ msgid "Import From OS X Mail"
 msgstr "匯入 OS X 的信件"
 
 #: mailimporter/filters/filtermailapp.cpp:29
-#, fuzzy, kde-format
-#| msgid "Laurence Anderson <p>( Filter accelerated by Danny Kukawka )</p>"
+#, kde-format
 msgid "Chris Howells<br /><br />Filter accelerated by Danny Kukawka )"
-msgstr "Laurence Anderson <p>（過濾器由 Danny Kukawka 加速）</p>"
+msgstr "Chris Howells<br /><br />（過濾器由 Danny Kukawka 加速）"
 
 #: mailimporter/filters/filtermailapp.cpp:30
 #, kde-format
@@ -547,10 +540,9 @@ msgstr ""
 "檔名前面加上 MAILMAN-。</p>"
 
 #: mailimporter/filters/filtermailmangzip.cpp:35
-#, fuzzy, kde-format
-#| msgid "gzip Files (*.txt.gz)"
+#, kde-format
 msgid "gzip Files"
-msgstr "gzip 檔 (*.txt.gz)"
+msgstr "gzip 檔案"
 
 #: mailimporter/filters/filtermailmangzip.cpp:55
 #, kde-format
@@ -583,10 +575,9 @@ msgstr ""
 "件夾，信件夾名稱為原來的檔名前面加上 MBOX-。</p>"
 
 #: mailimporter/filters/filtermbox.cpp:38
-#, fuzzy, kde-format
-#| msgid "mbox Files (*.mbox)"
+#, kde-format
 msgid "mbox Files"
-msgstr "mbox 檔案 (*.mbox)"
+msgstr "mbox 檔案"
 
 #: mailimporter/filters/filteroe.cpp:32
 #, kde-format
@@ -672,7 +663,7 @@ msgstr ""
 #, kde-format
 msgctxt "name of opera application"
 msgid "Opera"
-msgstr ""
+msgstr "Opera"
 
 #: mailimporter/filters/filteropera.cpp:72
 #: mailimporter/filters/filterplain.cpp:55
@@ -768,20 +759,12 @@ msgid "Parsing the folder structure..."
 msgstr "剖析目錄結構中..."
 
 #: mailimporter/filters/filterseamonkey.cpp:14
-#, fuzzy, kde-format
-#| msgid "Import Icedove Mails and Folder Structure"
+#, kde-format
 msgid "Import SeaMonkey Mails and Folder Structure"
-msgstr "匯入 Icedove 的信件"
+msgstr "匯入 SeaMonkey 信件及資料夾結構"
 
 #: mailimporter/filters/filterseamonkey.cpp:17
-#, fuzzy, kde-format
-#| msgid ""
-#| "<p><b>Icedove import filter</b></p><p>Select your base Icedove mailfolder "
-#| "(usually ~/.icedove/*.default/Mail/Local Folders/).</p><p><b>Note:</b> "
-#| "Never choose a Folder which <u>does not</u> contain mbox-files (for "
-#| "example, a maildir): if you do, you will get many new folders.</"
-#| "p><p>Since it is possible to recreate the folder structure, the folders "
-#| "will be stored under: \"Icedove-Import\".</p>"
+#, kde-format
 msgid ""
 "<p><b>SeaMonkey import filter</b></p><p>Select your base SeaMonkey "
 "mailfolder (usually ~/.icedove/*.default/Mail/Local Folders/).</p><p><b>Note:"
@@ -790,11 +773,11 @@ msgid ""
 "it is possible to recreate the folder structure, the folders will be stored "
 "under: \"SeaMonkey-Import\".</p>"
 msgstr ""
-"<p><b>Icedove 信件匯入過濾器</b></p><p>請選擇您在 Icedove 信件的根目錄（通常"
-"是在 ~/.icedove/*.default/Mail/Local/Folders/）。</p><p><b>注意：</b>不要選擇"
-"<u>不含</u> mbox 格式郵件的目錄（例如使用 maildir 的目錄），不然會產生很多新"
-"的信件夾。</p><p>這個過濾器會產生一個叫 Icedove-Import 的信件夾，並幫您保存原"
-"先的目錄結構。</p>"
+"<p><b>SeaMonkey 信件匯入過濾器</b></p><p>請選擇您在 SeaMonkey 信件的根目錄"
+"（通常是在 ~/.icedove/*.default/Mail/Local/Folders/）。</p><p><b>注意：</b>不"
+"要選擇<u>不含</u> mbox 格式郵件的目錄（例如使用 maildir 的目錄），不然會產生"
+"很多新的信件夾。</p><p>這個過濾器會產生一個叫 SeaMonkey-Import 的信件夾，並幫"
+"您保存原先的目錄結構。</p>"
 
 #: mailimporter/filters/filtersylpheed.cpp:28
 #, kde-format
@@ -816,12 +799,10 @@ msgstr ""
 "的或是已轉寄之類。</p>"
 
 #: mailimporter/filters/filtersylpheed.cpp:47
-#, fuzzy, kde-format
-#| msgctxt "define folder name where we will import sylpheed mails"
-#| msgid "Sylpheed-Import"
+#, kde-format
 msgctxt "name of sylpheed application"
 msgid "Sylpheed"
-msgstr "Sylpheed-Import"
+msgstr "Sylpheed"
 
 #: mailimporter/filters/filtersylpheed.cpp:184
 #, kde-format
@@ -880,23 +861,22 @@ msgstr ""
 #, kde-format
 msgctxt "name of thunderbird application"
 msgid "Thunderbird"
-msgstr ""
+msgstr "Thunderbird"
 
 #: mailimporter/othermailerutil.cpp:18
 #, kde-format
 msgctxt "name of trojira application"
 msgid "Trojita"
-msgstr ""
+msgstr "Trojita"
 
 #: mailimporter/othermailerutil.cpp:22 mailimporter/othermailerutil.cpp:26
 #, kde-format
 msgctxt "name of geary application"
 msgid "Geary"
-msgstr ""
+msgstr "Geary"
 
 #: mailimporter/selectthunderbirdprofilewidget.cpp:21
-#, fuzzy, kde-format
-#| msgid "Select thunderbird profile"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select thunderbird profile"
 msgstr "選取 thunderbird 設定檔"
