@@ -61,7 +61,7 @@ ecm_set_disabled_deprecation_versions(QT 6.6.0 KF 5.246.0)
 
 ########### CMake Config Files ###########
 
-add_definitions(-DTRANSLATION_DOMAIN=\"libmailimporter\")
+add_definitions(-DTRANSLATION_DOMAIN=\"libmailimporter6\")
 
 if(BUILD_TESTING)
    add_definitions(-DBUILD_TESTING)
