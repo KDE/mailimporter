@@ -1,4 +1,4 @@
-# Translation of libmailimporter to Norwegian Nynorsk
+# Translation of libmailimporter6 to Norwegian Nynorsk
 #
 # Gaute Hvoslef Kvalnes <gaute@verdsveven.com>, 2001, 2002, 2003, 2005.
 # Håvard Korsvoll <korsvoll@skulelinux.no>, 2003, 2004.

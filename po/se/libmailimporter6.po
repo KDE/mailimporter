@@ -1,4 +1,4 @@
-# Translation of libmailimporter to Northern Sami
+# Translation of libmailimporter6 to Northern Sami
 #
 # Børre Gaup <boerre@skolelinux.no>, 2004, 2006.
 msgid ""
