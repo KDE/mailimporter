@@ -2,20 +2,21 @@
 # Tamas Szanto <taszanto@gmail.com>, 2001.
 # Kristóf Kiszel <ulysses@kubuntu.org>, 2011.
 # Balázs Úr <urbalazs@gmail.com>, 2012, 2013.
+# SPDX-FileCopyrightText: 2024 Kristof Kiszel <ulysses@fsf.hu>
 msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.3\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-24 01:41+0000\n"
-"PO-Revision-Date: 2013-10-06 12:21+0200\n"
-"Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
+"PO-Revision-Date: 2024-01-21 21:20+0100\n"
+"Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 23.08.4\n"
 
 #: mailimporter/filters/filterbalsa.cpp:22
 #, kde-format
@@ -37,7 +38,7 @@ msgstr ""
 #, kde-format
 msgctxt "name of balsa application"
 msgid "Balsa"
-msgstr ""
+msgstr "Balsa"
 
 #: mailimporter/filters/filterbalsa.cpp:89
 #: mailimporter/filters/filterevolution.cpp:60
@@ -179,12 +180,10 @@ msgstr ""
 "(például új, továbbított).</p>"
 
 #: mailimporter/filters/filterclawsmail.cpp:42
-#, fuzzy, kde-format
-#| msgctxt "define folder name where we will import clawsmail mails"
-#| msgid "ClawsMail-Import"
+#, kde-format
 msgctxt "name of clawsMail application"
 msgid "ClawsMail"
-msgstr "ClawsMail importálás"
+msgstr "ClawsMail"
 
 #: mailimporter/filters/filterclawsmail.cpp:95
 #, kde-format
@@ -198,10 +197,9 @@ msgid "Import Evolution 1.x Local Mails and Folder Structure"
 msgstr "Üzenetek és mappastruktúra importálása az Evolution 1.x-ből"
 
 #: mailimporter/filters/filterevolution.cpp:18
-#, fuzzy, kde-format
-#| msgid "Laurence Anderson <p>( Filter accelerated by Danny Kukawka )</p>"
+#, kde-format
 msgid "Simon MARTIN<br /><br />( Filter accelerated by Danny Kukawka )"
-msgstr "Laurence Anderson <p>( Szűrő gyorsítása Danny Kukawka által )</p>"
+msgstr "Simon MARTIN<br /><br />( Szűrő gyorsítása Danny Kukawka által )"
 
 #: mailimporter/filters/filterevolution.cpp:19
 #, kde-format
@@ -216,12 +214,10 @@ msgstr ""
 "kérdezni a mappastruktúrát, a mappák ide kerülnek: „Evolution-Import”.</p>"
 
 #: mailimporter/filters/filterevolution.cpp:35
-#, fuzzy, kde-format
-#| msgctxt "define folder name where we import evolution mails"
-#| msgid "Evolution-Import"
+#, kde-format
 msgctxt "name of evolution application"
 msgid "Evolution"
-msgstr "Evolution importálás"
+msgstr "Evolution"
 
 #: mailimporter/filters/filterevolution.cpp:132
 #: mailimporter/filters/filterevolution_v2.cpp:192
@@ -274,7 +270,7 @@ msgstr ""
 #, kde-format
 msgctxt "name of evolution application"
 msgid "Evolution (v2)"
-msgstr ""
+msgstr "Evolution (v2)"
 
 #: mailimporter/filters/filterevolution_v2.cpp:122
 #: mailimporter/filters/filterevolution_v2.cpp:161
@@ -306,23 +302,15 @@ msgstr ""
 #, kde-format
 msgctxt "name of evolution application"
 msgid "Evolution (v3)"
-msgstr ""
+msgstr "Evolution (v3)"
 
 #: mailimporter/filters/filtericedove.cpp:14
-#, fuzzy, kde-format
-#| msgid "Import The Bat! Mails and Folder Structure"
+#, kde-format
 msgid "Import Icedove Mails and Folder Structure"
-msgstr "Üzenetek és mappastruktúra importálása a Bat! levelezőprogramból"
+msgstr "Üzenetek és mappastruktúra importálása az Icedove levelezőprogramból"
 
 #: mailimporter/filters/filtericedove.cpp:17
-#, fuzzy, kde-format
-#| msgid ""
-#| "<p><b>Thunderbird/Mozilla import filter</b></p><p>Select your base "
-#| "Thunderbird/Mozilla mailfolder (usually ~/.thunderbird/*.default/Mail/"
-#| "Local Folders/).</p><p><b>Note:</b> Never choose a Folder which <u>does "
-#| "not</u> contain mbox-files (for example, a maildir): if you do, you will "
-#| "get many new folders.</p><p>Since it is possible to recreate the folder "
-#| "structure, the folders will be stored under: \"Thunderbird-Import\".</p>"
+#, kde-format
 msgid ""
 "<p><b>Icedove import filter</b></p><p>Select your base Icedove mailfolder "
 "(usually ~/.icedove/*.default/Mail/Local Folders/).</p><p><b>Note:</b> Never "
@@ -331,18 +319,18 @@ msgid ""
 "possible to recreate the folder structure, the folders will be stored under: "
 "\"Icedove-Import\".</p>"
 msgstr ""
-"<p><b>Thunderbird/Mozilla importszűrő</b></p><p>Válassza ki a Thunderbird/"
-"Mozilla alap üzenetkönyvtárát (általában ~/.thunderbird/*.default/Mail/Local "
-"Folders/).</p><p><b>Megjegyzés:</b> ne válasszon ki olyan könyvtárat, amely "
-"<u>nem tartalmaz</u> mbox-fájlokat (például egy maildir könyvtárat). Ebben "
-"az esetben sok új mappa jöhet létre.</p><p>A mappastruktúrát is le tudja "
-"kérdezni az importáló, a mappák ide kerülnek: \"Thunderbird-Import\".</p>"
+"<p><b>Icedove importszűrő</b></p><p>Válassza ki az Icedove  alap "
+"üzenetkönyvtárát (általában ~/.icedove/*.default/Mail/Local Folders/).</"
+"p><p><b>Megjegyzés:</b> ne válasszon ki olyan könyvtárat, amely <u>nem "
+"tartalmaz</u> mbox-fájlokat (például egy maildir könyvtárat). Ebben az "
+"esetben sok új mappa jöhet létre.</p><p>A mappastruktúrát is le tudja "
+"kérdezni az importáló, a mappák ide kerülnek: „Icedove-Import”.</p>"
 
 #: mailimporter/filters/filtericedove.cpp:34
 #, kde-format
 msgctxt "name of icedove application"
 msgid "Icedove"
-msgstr ""
+msgstr "Icedove"
 
 #: mailimporter/filters/filterkmail_maildir.cpp:26
 #, kde-format
@@ -350,15 +338,7 @@ msgid "Import KMail Maildirs and Folder Structure"
 msgstr "KMailes üzenetek és mappastruktúra importálása"
 
 #: mailimporter/filters/filterkmail_maildir.cpp:28
-#, fuzzy, kde-format
-#| msgid ""
-#| "<p><b>KMail import filter</b></p><p>Select the base directory of the "
-#| "KMail mailfolder you want to import.</p><p><b>Note:</b> Never select your "
-#| "current local KMail maildir (usually ~/Mail or ~/.kde/share/apps/kmail/"
-#| "mail ): in this case, KMailCVT may become stuck in a continuous loop. </"
-#| "p><p>This filter does not import KMail mailfolders with mbox files.</"
-#| "p><p>Since it is possible to recreate the folder structure, the folders "
-#| "will be stored under: \"KMail-Import\" in your local folder.</p>"
+#, kde-format
 msgid ""
 "<p><b>KMail import filter</b></p><p>Select the base directory of the KMail "
 "mailfolder you want to import.</p><p><b>Note:</b> Never select your current "
@@ -371,10 +351,10 @@ msgstr ""
 "<p><b>KMail importszűrő</b></p><p>Válassza ki az importálandó KMail-"
 "alapkönyvtárt.</p><p><b>Megjegyzés:</b> soha ne válassza ki az aktuális "
 "KMail-alapkönyvtárat (általában: ~/Mail vagy ~/.kde/share/apps/kmail/mail)! "
-"Ha ezt teszi, a KMailCVT végtelen ciklusba eshet. </p><p>Ez a szűrő nem tud "
-"mbox-fájlokat tartalmazó postaládát importálni.</p><p>A program a "
-"mappastruktúrát is át tudja venni, a mappák ide kerülnek: \"KMail-Import"
-"\" (a helyi mappában).</p>"
+"Ha ezt teszi, az Importvarázsló végtelen ciklusba eshet. </p><p>Ez a szűrő "
+"nem tud mbox-fájlokat tartalmazó postaládát importálni.</p><p>A program a "
+"mappastruktúrát is át tudja venni, a mappák ide kerülnek: „KMail-Import” (a "
+"helyi mappában).</p>"
 
 #: mailimporter/filters/filterkmail_maildir.cpp:176
 #, kde-format
@@ -424,10 +404,9 @@ msgid "Select KMail Archive File to Import"
 msgstr "Válassza ki a KMail archívum fájlokat az importáláshoz"
 
 #: mailimporter/filters/filterkmailarchive.cpp:158
-#, fuzzy, kde-format
-#| msgid "Import KMail Archive File"
+#, kde-format
 msgid "KMail Archive Files "
-msgstr "KMail archívumfájl importálása"
+msgstr "KMail archívumfájlok "
 
 #: mailimporter/filters/filterkmailarchive.cpp:160
 #, kde-format
@@ -435,10 +414,9 @@ msgid "Please select an archive file that should be imported."
 msgstr "Válassza ki az importálandó archívumfájlokat."
 
 #: mailimporter/filters/filterkmailarchive.cpp:169
-#, fuzzy, kde-format
-#| msgid "No files selected."
+#, kde-format
 msgid "No archive selected."
-msgstr "Nincs kiválasztott fájl."
+msgstr "Nincs kiválasztott archívum."
 
 #: mailimporter/filters/filterkmailarchive.cpp:183
 #, kde-format
@@ -532,10 +510,9 @@ msgid "Import From OS X Mail"
 msgstr "Importálás az OS X Mail programból"
 
 #: mailimporter/filters/filtermailapp.cpp:29
-#, fuzzy, kde-format
-#| msgid "Laurence Anderson <p>( Filter accelerated by Danny Kukawka )</p>"
+#, kde-format
 msgid "Chris Howells<br /><br />Filter accelerated by Danny Kukawka )"
-msgstr "Laurence Anderson <p>( Szűrő gyorsítása Danny Kukawka által )</p>"
+msgstr "Chris Howells<br /><br />( Szűrő gyorsítása Danny Kukawka által )"
 
 #: mailimporter/filters/filtermailapp.cpp:30
 #, kde-format
@@ -573,10 +550,9 @@ msgstr ""
 "megegyező nevű mappába kerülnek, kiegészítve az MAILMAN- előtaggal.</p>"
 
 #: mailimporter/filters/filtermailmangzip.cpp:35
-#, fuzzy, kde-format
-#| msgid "gzip Files (*.txt.gz)"
+#, kde-format
 msgid "gzip Files"
-msgstr "gzip fájlok (*.txt.gz)"
+msgstr "gzip-fájlok"
 
 #: mailimporter/filters/filtermailmangzip.cpp:55
 #, kde-format
@@ -610,10 +586,9 @@ msgstr ""
 "kerülnek, kiegészítve az MBOX előtaggal.</p>"
 
 #: mailimporter/filters/filtermbox.cpp:38
-#, fuzzy, kde-format
-#| msgid "mbox Files (*)"
+#, kde-format
 msgid "mbox Files"
-msgstr "Mbox-fájlok (*)"
+msgstr "Mbox-fájlok"
 
 #: mailimporter/filters/filteroe.cpp:32
 #, kde-format
@@ -706,7 +681,7 @@ msgstr ""
 #, kde-format
 msgctxt "name of opera application"
 msgid "Opera"
-msgstr ""
+msgstr "Opera"
 
 #: mailimporter/filters/filteropera.cpp:72
 #: mailimporter/filters/filterplain.cpp:55
@@ -805,20 +780,12 @@ msgid "Parsing the folder structure..."
 msgstr "A mappastruktúra feldolgozása..."
 
 #: mailimporter/filters/filterseamonkey.cpp:14
-#, fuzzy, kde-format
-#| msgid "Import The Bat! Mails and Folder Structure"
+#, kde-format
 msgid "Import SeaMonkey Mails and Folder Structure"
-msgstr "Üzenetek és mappastruktúra importálása a Bat! levelezőprogramból"
+msgstr "Üzenetek és mappastruktúra importálása az Opera levelezőprogramból"
 
 #: mailimporter/filters/filterseamonkey.cpp:17
-#, fuzzy, kde-format
-#| msgid ""
-#| "<p><b>Thunderbird/Mozilla import filter</b></p><p>Select your base "
-#| "Thunderbird/Mozilla mailfolder (usually ~/.thunderbird/*.default/Mail/"
-#| "Local Folders/).</p><p><b>Note:</b> Never choose a Folder which <u>does "
-#| "not</u> contain mbox-files (for example, a maildir): if you do, you will "
-#| "get many new folders.</p><p>Since it is possible to recreate the folder "
-#| "structure, the folders will be stored under: \"Thunderbird-Import\".</p>"
+#, kde-format
 msgid ""
 "<p><b>SeaMonkey import filter</b></p><p>Select your base SeaMonkey "
 "mailfolder (usually ~/.icedove/*.default/Mail/Local Folders/).</p><p><b>Note:"
@@ -827,12 +794,12 @@ msgid ""
 "it is possible to recreate the folder structure, the folders will be stored "
 "under: \"SeaMonkey-Import\".</p>"
 msgstr ""
-"<p><b>Thunderbird/Mozilla importszűrő</b></p><p>Válassza ki a Thunderbird/"
-"Mozilla alap üzenetkönyvtárát (általában ~/.thunderbird/*.default/Mail/Local "
-"Folders/).</p><p><b>Megjegyzés:</b> ne válasszon ki olyan könyvtárat, amely "
-"<u>nem tartalmaz</u> mbox-fájlokat (például egy maildir könyvtárat). Ebben "
-"az esetben sok új mappa jöhet létre.</p><p>A mappastruktúrát is le tudja "
-"kérdezni az importáló, a mappák ide kerülnek: \"Thunderbird-Import\".</p>"
+"<p><b>SeaMonkey importszűrő</b></p><p>Válassza ki a SeaMonkey alap "
+"üzenetkönyvtárát (általában ~/.icedove/*.default/Mail/Local Folders/).</"
+"p><p><b>Megjegyzés:</b> ne válasszon ki olyan könyvtárat, amely <u>nem "
+"tartalmaz</u> mbox-fájlokat (például egy maildir könyvtárat). Ebben az "
+"esetben sok új mappa jöhet létre.</p><p>A mappastruktúrát is le tudja "
+"kérdezni az importáló, a mappák ide kerülnek: „SeaMonkey-Import”.</p>"
 
 #: mailimporter/filters/filtersylpheed.cpp:28
 #, kde-format
@@ -855,12 +822,10 @@ msgstr ""
 "továbbított).</p>"
 
 #: mailimporter/filters/filtersylpheed.cpp:47
-#, fuzzy, kde-format
-#| msgctxt "define folder name where we will import sylpheed mails"
-#| msgid "Sylpheed-Import"
+#, kde-format
 msgctxt "name of sylpheed application"
 msgid "Sylpheed"
-msgstr "Sylpheed importálás"
+msgstr "Sylpheed"
 
 #: mailimporter/filters/filtersylpheed.cpp:184
 #, kde-format
@@ -922,23 +887,22 @@ msgstr ""
 #, kde-format
 msgctxt "name of thunderbird application"
 msgid "Thunderbird"
-msgstr ""
+msgstr "Thunderbird"
 
 #: mailimporter/othermailerutil.cpp:18
 #, kde-format
 msgctxt "name of trojira application"
 msgid "Trojita"
-msgstr ""
+msgstr "Trojita"
 
 #: mailimporter/othermailerutil.cpp:22 mailimporter/othermailerutil.cpp:26
 #, kde-format
 msgctxt "name of geary application"
 msgid "Geary"
-msgstr ""
+msgstr "Geary"
 
 #: mailimporter/selectthunderbirdprofilewidget.cpp:21
-#, fuzzy, kde-format
-#| msgid "Select thunderbird profile"
+#, kde-format
 msgctxt "@title:window"
 msgid "Select thunderbird profile"
 msgstr "Thunderbird-profil kiválasztása"
