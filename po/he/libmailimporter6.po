@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: libmailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-24 01:41+0000\n"
-"PO-Revision-Date: 2024-01-26 14:52+0200\n"
+"PO-Revision-Date: 2024-01-27 22:00+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -39,6 +39,9 @@ msgid ""
 "Balsa mailfolder (usually ~/mail/).</p><p>Since it is possible to recreate "
 "the folder structure, the folders will be stored under: \"Balsa-Import\".</p>"
 msgstr ""
+"<p><b>מסנן ייבוא מ־Balsa</b></p><p>נא לבחור את תיקיית הבסיס לאחסון ההודעות "
+"של Balsa (בדרך כלל ‎~/mail/‎).</p><p>מאחר שאפשר ליצור אתמבנה התיקיות מחדש, יש "
+"לאחסן את התיקיות תחת: „ייבוא מ־Balsa”.</p>"
 
 #: mailimporter/filters/filterbalsa.cpp:39
 #, kde-format
@@ -127,7 +130,7 @@ msgstr[3] ""
 #: mailimporter/filters/filterthunderbird.cpp:216
 #, kde-format
 msgid "Finished import, canceled by user."
-msgstr ""
+msgstr "הייבוא הסתיים, בוטל על ידי המשתמש."
 
 #: mailimporter/filters/filterbalsa.cpp:163
 #: mailimporter/filters/filterevolution_v3.cpp:160
@@ -277,7 +280,7 @@ msgstr "התחלת ייבוא הקובץ %1…"
 #: mailimporter/filters/filterevolution_v3.cpp:22
 #, kde-format
 msgid "Import Evolution 3.x Local Mails and Folder Structure"
-msgstr ""
+msgstr "ייבוא הודעות דוא״ל ומבנה תיקיות מקומיים מ־Evolution 3.x"
 
 #: mailimporter/filters/filterevolution_v3.cpp:24
 #, kde-format
@@ -412,13 +415,13 @@ msgid "Importing the archive file '%1' into the folder '%2' succeeded."
 msgstr "ייבוא קובץ הארכיון ‚%1’ לתוך התיקייה ‚%2’ הצליח."
 
 #: mailimporter/filters/filterkmailarchive.cpp:200
-#, fuzzy, kde-format
+#, kde-format
 msgid "1 message was imported."
 msgid_plural "%1 messages were imported."
-msgstr[0] "שגיאה בהוספת הודעה לתיקיה %2 ב-KMail"
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "הודעה יובאה."
+msgstr[1] "שתי הודעות יובאו."
+msgstr[2] "%1 הודעות יובאו."
+msgstr[3] "%1 הודעות יובאו."
 
 #: mailimporter/filters/filterkmailarchive.cpp:202
 #, kde-format
@@ -735,7 +738,7 @@ msgstr ""
 #: mailimporter/filters/filtersylpheed.cpp:28
 #, kde-format
 msgid "Import Sylpheed Maildirs and Folder Structure"
-msgstr ""
+msgstr "ייבוא תיקיות דוא״ל ומבנה תיקיות של Sylpheed"
 
 #: mailimporter/filters/filtersylpheed.cpp:30
 #, kde-format
