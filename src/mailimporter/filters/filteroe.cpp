@@ -78,7 +78,7 @@ void FilterOE::importMails(const QString &maildir)
     /** search the folderfile to recreate folder struct */
 
     for (QStringList::Iterator mailFile = files.begin(); mailFile != files.end(); ++mailFile) {
-        if (*mailFile == QLatin1String("Folders.dbx")) {
+        if (*mailFile == QLatin1StringView("Folders.dbx")) {
             filterInfo()->addInfoLogEntry(i18n("Import folder structure..."));
             importMailBox(dir.filePath(*mailFile));
             if (!folderStructure.isEmpty()) {
@@ -134,7 +134,7 @@ void FilterOE::importMailBox(const QString &fileName)
     quint32 sig_block2;
     mailbox >> sig_block1 >> sig_block2;
     if (sig_block1 == OE4_SIG_1 && sig_block2 == OE4_SIG_2) {
-        folderName = QLatin1String("OE-Import/") + mailfileinfo.completeBaseName();
+        folderName = QLatin1StringView("OE-Import/") + mailfileinfo.completeBaseName();
         filterInfo()->addInfoLogEntry(i18n("Importing OE4 Mailbox %1", QStringLiteral("../") + _nameOfFile));
         filterInfo()->setTo(folderName);
         mbxImport(mailbox);
@@ -145,11 +145,11 @@ void FilterOE::importMailBox(const QString &fileName)
         mailbox >> sig_block3 >> sig_block4;
         if (sig_block1 == OE5_SIG_1 && sig_block3 == OE5_SIG_3 && sig_block4 == OE5_SIG_4) {
             if (sig_block2 == OE5_EMAIL_SIG_2) {
-                folderName = QLatin1String("OE-Import/") + mailfileinfo.completeBaseName();
+                folderName = QLatin1StringView("OE-Import/") + mailfileinfo.completeBaseName();
                 if (parsedFolder) {
                     const QString _tmpFolder = getFolderName(_nameOfFile);
                     if (!_tmpFolder.isEmpty()) {
-                        folderName = QLatin1String("OE-Import/") + _tmpFolder;
+                        folderName = QLatin1StringView("OE-Import/") + _tmpFolder;
                     }
                 }
                 filterInfo()->addInfoLogEntry(i18n("Importing OE5+ Mailbox %1", QStringLiteral("../") + _nameOfFile));
@@ -433,7 +433,7 @@ QString FilterOE::getFolderName(const QString &filename)
                 QString _tmpFileName = tmp[1];
                 _tmpFileName = _tmpFileName.toLower();
                 if (_tmpFileName == search) {
-                    folder.prepend(tmp[0] + QLatin1String("/"));
+                    folder.prepend(tmp[0] + QLatin1StringView("/"));
                     search = tmp[3];
                     foundFilename = true;
                 }
@@ -445,7 +445,7 @@ QString FilterOE::getFolderName(const QString &filename)
                         found = true;
                         break;
                     } else {
-                        folder.prepend(tmp[0] + QLatin1String("/"));
+                        folder.prepend(tmp[0] + QLatin1StringView("/"));
                         search = tmp[3];
                     }
                 }

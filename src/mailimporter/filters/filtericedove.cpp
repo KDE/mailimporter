@@ -43,7 +43,7 @@ QString FilterIcedove::settingsPath()
 
 QString FilterIcedove::defaultSettingsPath()
 {
-    return QDir::homePath() + QLatin1String("/.icedove/");
+    return QDir::homePath() + QLatin1StringView("/.icedove/");
 }
 
 QString FilterIcedove::defaultInstallFolder() const

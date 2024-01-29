@@ -34,7 +34,7 @@ QString FilterSeaMonkey::settingsPath()
 
 QString FilterSeaMonkey::defaultSettingsPath()
 {
-    return QDir::homePath() + QLatin1String("/.mozilla/seamonkey");
+    return QDir::homePath() + QLatin1StringView("/.mozilla/seamonkey");
 }
 
 QString FilterSeaMonkey::defaultInstallFolder() const

@@ -30,18 +30,18 @@ QStringList OtherMailerUtil::isMailerFound()
 
 QString OtherMailerUtil::trojitaDefaultPath()
 {
-    const QString path = QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + QLatin1String("/flaska.net/");
+    const QString path = QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + QLatin1StringView("/flaska.net/");
     return path;
 }
 
 QString OtherMailerUtil::gearyDefaultPath()
 {
-    const QString path = QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + QLatin1String("/geary/");
+    const QString path = QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + QLatin1StringView("/geary/");
     return path;
 }
 
 QString OtherMailerUtil::nylasMailDefaultPath()
 {
-    const QString path = QDir::homePath() + QLatin1String("/.nylas-mail/");
+    const QString path = QDir::homePath() + QLatin1StringView("/.nylas-mail/");
     return path;
 }

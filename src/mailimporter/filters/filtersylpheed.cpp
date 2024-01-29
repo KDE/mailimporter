@@ -51,12 +51,12 @@ QString FilterSylpheed::isMailerFound()
 
 QString FilterSylpheed::defaultSettingsPath()
 {
-    return QDir::homePath() + QLatin1String("/.sylpheed-2.0/");
+    return QDir::homePath() + QLatin1StringView("/.sylpheed-2.0/");
 }
 
 QString FilterSylpheed::localMailDirPath()
 {
-    QFile folderListFile(FilterSylpheed::defaultSettingsPath() + QLatin1String("/folderlist.xml"));
+    QFile folderListFile(FilterSylpheed::defaultSettingsPath() + QLatin1StringView("/folderlist.xml"));
     if (folderListFile.exists()) {
         QDomDocument doc;
         if (!folderListFile.open(QIODevice::ReadOnly)) {
@@ -75,9 +75,9 @@ QString FilterSylpheed::localMailDirPath()
         }
 
         for (QDomElement e = settings.firstChildElement(); !e.isNull(); e = e.nextSiblingElement()) {
-            if (e.tagName() == QLatin1String("folder")) {
+            if (e.tagName() == QLatin1StringView("folder")) {
                 if (e.hasAttribute(QStringLiteral("type"))) {
-                    if (e.attribute(QStringLiteral("type")) == QLatin1String("mh")) {
+                    if (e.attribute(QStringLiteral("type")) == QLatin1StringView("mh")) {
                         return e.attribute(QStringLiteral("path"));
                     }
                 }
@@ -173,7 +173,8 @@ void FilterSylpheed::importDirContents(const QString &dirName)
 
 bool FilterSylpheed::excludeFile(const QString &file)
 {
-    if (file.endsWith(QLatin1String(".sylpheed_cache")) || file.endsWith(QLatin1String(".sylpheed_mark")) || file.endsWith(QLatin1String(".mh_sequences"))) {
+    if (file.endsWith(QLatin1StringView(".sylpheed_cache")) || file.endsWith(QLatin1String(".sylpheed_mark"))
+        || file.endsWith(QLatin1String(".mh_sequences"))) {
         return true;
     }
     return false;

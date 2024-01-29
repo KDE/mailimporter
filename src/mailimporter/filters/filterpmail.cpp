@@ -251,7 +251,8 @@ void FilterPMail::importUnixMailFolder(const QString &file)
             // we lost the last line, which is the first line of the new message in
             // this lopp, but this is ok, because this is the separate line with
             // "From ???@???" and we can forget them
-            while (!f.atEnd() && (l = f.readLine(line.data(), MAX_LINE)) && ((separate = QString::fromLatin1(line.data())).left(5) != QLatin1String("From "))) {
+            while (!f.atEnd() && (l = f.readLine(line.data(), MAX_LINE))
+                   && ((separate = QString::fromLatin1(line.data())).left(5) != QLatin1StringView("From "))) {
                 tempfile.write(line.data(), l);
                 if (filterInfo()->shouldTerminate()) {
                     return;
@@ -276,9 +277,9 @@ bool FilterPMail::parseFolderMatrix(const QString &chosendir)
     qCDebug(MAILIMPORTER_LOG) << "Start parsing the foldermatrix.";
     filterInfo()->addInfoLogEntry(i18n("Parsing the folder structure..."));
 
-    QFile hierarch(chosendir + QLatin1String("/hierarch.pm"));
+    QFile hierarch(chosendir + QLatin1StringView("/hierarch.pm"));
     if (!hierarch.open(QIODevice::ReadOnly)) {
-        filterInfo()->alert(i18n("Unable to open %1, skipping", chosendir + QLatin1String("hierarch.pm")));
+        filterInfo()->alert(i18n("Unable to open %1, skipping", chosendir + QLatin1StringView("hierarch.pm")));
         return false;
     } else {
         QByteArray tmpRead;
@@ -323,7 +324,7 @@ QString FilterPMail::getFolderName(const QString &ID)
             QString _ID = tmp[2];
             if (_ID == search) {
                 QString _type = tmp[0] + tmp[1];
-                if ((_type == QLatin1String("21"))) {
+                if ((_type == QLatin1StringView("21"))) {
                     found = true;
                     break;
                 } else {

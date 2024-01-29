@@ -65,7 +65,7 @@ QString FilterThunderbird::isMailerFound()
 
 QString FilterThunderbird::defaultSettingsPath()
 {
-    return QDir::homePath() + QLatin1String("/.thunderbird/");
+    return QDir::homePath() + QLatin1StringView("/.thunderbird/");
 }
 
 QString FilterThunderbird::defaultProfile(const QString &defaultSettingPath, QWidget *parent)
@@ -91,7 +91,7 @@ QString FilterThunderbird::defaultProfile(const QString &defaultSettingPath, QWi
 
 QMap<QString, QString> FilterThunderbird::listProfile(QString &currentProfile, const QString &defaultSettingPath)
 {
-    const QString thunderbirdPath = defaultSettingPath + QLatin1String("/profiles.ini");
+    const QString thunderbirdPath = defaultSettingPath + QLatin1StringView("/profiles.ini");
     QMap<QString, QString> lstProfile;
     QFile profiles(thunderbirdPath);
     if (profiles.exists()) {
@@ -145,7 +145,7 @@ void FilterThunderbird::import()
     // Select directory from where I have to import files
     const QString maildir = QFileDialog::getExistingDirectory(nullptr, QString(), thunderDir);
     if (!maildir.isEmpty()) {
-        const QString mailDirThunderbird = maildir + QLatin1String("/Mail/Local Folders/");
+        const QString mailDirThunderbird = maildir + QLatin1StringView("/Mail/Local Folders/");
         if (QDir(mailDirThunderbird).exists()) {
             importMails(mailDirThunderbird);
         } else {
@@ -156,8 +156,8 @@ void FilterThunderbird::import()
 
 bool FilterThunderbird::excludeFiles(const QString &file)
 {
-    if ((file.endsWith(QLatin1String(".msf")) || file.endsWith(QLatin1String(".dat")) || file.endsWith(QLatin1String(".json"))
-         || file.endsWith(QLatin1String(".html")))) {
+    if ((file.endsWith(QLatin1StringView(".msf")) || file.endsWith(QLatin1String(".dat")) || file.endsWith(QLatin1String(".json"))
+         || file.endsWith(QLatin1StringView(".html")))) {
         return true;
     }
     return false;
@@ -284,14 +284,14 @@ void FilterThunderbird::importMBox(const QString &mboxName, const QString &rootD
         if (mboxName.length() > 20) {
             QString tmp_info = mboxName;
             tmp_info.replace(mailDir(), QStringLiteral("../"));
-            if (tmp_info.contains(QLatin1String(".sbd"))) {
+            if (tmp_info.contains(QLatin1StringView(".sbd"))) {
                 tmp_info.remove(QStringLiteral(".sbd"));
             }
             filterInfo()->setFrom(tmp_info);
         } else {
             filterInfo()->setFrom(mboxName);
         }
-        if (targetDir.contains(QLatin1String(".sbd"))) {
+        if (targetDir.contains(QLatin1StringView(".sbd"))) {
             QString tmp_info = targetDir;
             tmp_info.remove(QStringLiteral(".sbd"));
             filterInfo()->setTo(tmp_info);
@@ -330,13 +330,13 @@ void FilterThunderbird::importMBox(const QString &mboxName, const QString &rootD
             QString destFolder;
             QString _targetDir = targetDir;
             if (!targetDir.isNull()) {
-                if (_targetDir.contains(QLatin1String(".sbd"))) {
+                if (_targetDir.contains(QLatin1StringView(".sbd"))) {
                     _targetDir.remove(QStringLiteral(".sbd"));
                 }
                 destFolder += defaultInstallFolder() + _targetDir + QLatin1Char('/') + filenameInfo.completeBaseName(); // mboxName;
             } else {
                 destFolder = defaultInstallFolder() + rootDir;
-                if (destFolder.contains(QLatin1String(".sbd"))) {
+                if (destFolder.contains(QLatin1StringView(".sbd"))) {
                     destFolder.remove(QStringLiteral(".sbd"));
                 }
             }

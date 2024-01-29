@@ -43,7 +43,7 @@ QString FilterEvolution_v3::isMailerFound()
 
 QString FilterEvolution_v3::defaultSettingsPath()
 {
-    return QDir::homePath() + QLatin1String("/.local/share/evolution/mail/local/");
+    return QDir::homePath() + QLatin1StringView("/.local/share/evolution/mail/local/");
 }
 
 /** Recursive import of KMail maildir. */
@@ -71,7 +71,7 @@ void FilterEvolution_v3::processDirectory(const QString &path)
         if (filterInfo()->shouldTerminate()) {
             break;
         }
-        if (!(*filename == QLatin1Char('.') || *filename == QLatin1String(".."))) {
+        if (!(*filename == QLatin1Char('.') || *filename == QLatin1StringView(".."))) {
             filterInfo()->setCurrent(0);
             importDirContents(dir.filePath(*filename));
             filterInfo()->setOverall((d->mTotalDir > 0) ? (int)((float)d->mImportDirDone / d->mTotalDir * 100) : 0);
@@ -153,9 +153,9 @@ void FilterEvolution_v3::importFiles(const QString &dirName)
             return;
         }
         QString temp_mailfile = *mailFile;
-        if (!(temp_mailfile.endsWith(QLatin1String(".db")) || temp_mailfile.endsWith(QLatin1String(".cmeta"))
-              || temp_mailfile.endsWith(QLatin1String(".ev-summary")) || temp_mailfile.endsWith(QLatin1String(".ibex.index"))
-              || temp_mailfile.endsWith(QLatin1String(".ibex.index.data")))) {
+        if (!(temp_mailfile.endsWith(QLatin1StringView(".db")) || temp_mailfile.endsWith(QLatin1String(".cmeta"))
+              || temp_mailfile.endsWith(QLatin1StringView(".ev-summary")) || temp_mailfile.endsWith(QLatin1String(".ibex.index"))
+              || temp_mailfile.endsWith(QLatin1StringView(".ibex.index.data")))) {
             if (!generatedPath) {
                 _path = i18nc("define folder name where we import evolution mails", "Evolution-Import");
                 QString _tmp = dir.filePath(*mailFile);
@@ -177,7 +177,7 @@ void FilterEvolution_v3::importFiles(const QString &dirName)
                         _path.replace(QLatin1Char('.'), QLatin1Char('/'));
                     }
                 }
-                if (_path.endsWith(QLatin1String("cur"))) {
+                if (_path.endsWith(QLatin1StringView("cur"))) {
                     _path.remove(_path.length() - 4, 4);
                 }
                 QString _info = _path;
@@ -199,7 +199,7 @@ void FilterEvolution_v3::importFiles(const QString &dirName)
 MailImporter::MessageStatus FilterEvolution_v3::statusFromFile(const QString &filename)
 {
     MailImporter::MessageStatus status;
-    const int statusIndex = filename.indexOf(QLatin1String(":2,"));
+    const int statusIndex = filename.indexOf(QLatin1StringView(":2,"));
     if (statusIndex != -1) {
         const QString statusStr = filename.right(filename.length() - statusIndex - 3);
         if (statusStr.contains(QLatin1Char('S'))) {

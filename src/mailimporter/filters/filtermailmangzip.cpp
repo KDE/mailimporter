@@ -58,7 +58,7 @@ void FilterMailmanGzip::importMails(const QStringList &filenames)
 
         device->open(QIODevice::ReadOnly);
         QFileInfo filenameInfo(*filename);
-        QString folderName(QLatin1String("MAILMAN-") + filenameInfo.completeBaseName());
+        QString folderName(QLatin1StringView("MAILMAN-") + filenameInfo.completeBaseName());
 
         filterInfo()->setCurrent(0);
         filterInfo()->addInfoLogEntry(i18n("Importing emails from %1...", *filename));

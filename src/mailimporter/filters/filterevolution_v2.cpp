@@ -46,7 +46,7 @@ QString FilterEvolution_v2::isMailerFound()
 
 QString FilterEvolution_v2::defaultSettingsPath()
 {
-    return QDir::homePath() + QLatin1String("/.evolution/mail/local");
+    return QDir::homePath() + QLatin1StringView("/.evolution/mail/local");
 }
 
 /** Recursive import of Evolution's mboxes. */
@@ -72,8 +72,8 @@ void FilterEvolution_v2::import()
 
 bool FilterEvolution_v2::excludeFiles(const QString &file)
 {
-    if ((file.endsWith(QLatin1String(".db")) || file.endsWith(QLatin1String(".cmeta")) || file.endsWith(QLatin1String(".ev-summary"))
-         || file.endsWith(QLatin1String(".ibex.index")) || file.endsWith(QLatin1String(".ibex.index.data")))) {
+    if ((file.endsWith(QLatin1StringView(".db")) || file.endsWith(QLatin1String(".cmeta")) || file.endsWith(QLatin1String(".ev-summary"))
+         || file.endsWith(QLatin1StringView(".ibex.index")) || file.endsWith(QLatin1String(".ibex.index.data")))) {
         return true;
     }
     return false;
@@ -198,7 +198,7 @@ void FilterEvolution_v2::importMBox(const QString &mboxName, const QString &root
         if (mboxName.length() > 20) {
             QString tmp_info = mboxName;
             tmp_info.replace(mailDir(), QStringLiteral("../"));
-            if (tmp_info.contains(QLatin1String(".sbd"))) {
+            if (tmp_info.contains(QLatin1StringView(".sbd"))) {
                 tmp_info.remove(QStringLiteral(".sbd"));
             }
             filterInfo()->setFrom(tmp_info);
@@ -206,7 +206,7 @@ void FilterEvolution_v2::importMBox(const QString &mboxName, const QString &root
             filterInfo()->setFrom(mboxName);
         }
 
-        if (targetDir.contains(QLatin1String(".sbd"))) {
+        if (targetDir.contains(QLatin1StringView(".sbd"))) {
             QString tmp_info = targetDir;
             tmp_info.remove(QStringLiteral(".sbd"));
             filterInfo()->setTo(tmp_info);
@@ -245,13 +245,13 @@ void FilterEvolution_v2::importMBox(const QString &mboxName, const QString &root
             QString destFolder;
             QString _targetDir = targetDir;
             if (!targetDir.isNull()) {
-                if (_targetDir.contains(QLatin1String(".sbd"))) {
+                if (_targetDir.contains(QLatin1StringView(".sbd"))) {
                     _targetDir.remove(QStringLiteral(".sbd"));
                 }
                 destFolder += QStringLiteral("Evolution-Import/") + _targetDir + QLatin1Char('/') + filenameInfo.completeBaseName(); // mboxName;
             } else {
                 destFolder = QStringLiteral("Evolution-Import/") + rootDir;
-                if (destFolder.contains(QLatin1String(".sbd"))) {
+                if (destFolder.contains(QLatin1StringView(".sbd"))) {
                     destFolder.remove(QStringLiteral(".sbd"));
                 }
             }

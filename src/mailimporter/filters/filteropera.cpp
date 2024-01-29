@@ -42,7 +42,7 @@ QString FilterOpera::isMailerFound()
 
 QString FilterOpera::defaultSettingsPath()
 {
-    return QDir::homePath() + QLatin1String("/.opera/");
+    return QDir::homePath() + QLatin1StringView("/.opera/");
 }
 
 void FilterOpera::importRecursive(const QDir &mailDir, const QString &accountName)
@@ -81,9 +81,9 @@ void FilterOpera::importBox(const QDir &importDir, const QStringList &files, con
             QFileInfo filenameInfo(importDir.filePath(*mailFile));
             QString folderName;
             if (accountName.isEmpty()) {
-                folderName = QString(QLatin1String("OPERA-") + importDir.dirName());
+                folderName = QString(QLatin1StringView("OPERA-") + importDir.dirName());
             } else {
-                folderName = QString(QLatin1String("OPERA-") + accountName);
+                folderName = QString(QLatin1StringView("OPERA-") + accountName);
             }
 
             filterInfo()->setFrom(*mailFile);
@@ -155,7 +155,7 @@ void FilterOpera::importBox(const QDir &importDir, const QStringList &files, con
 void FilterOpera::import()
 {
     /** try to go to opera mailfolder in the home of the user */
-    QString startdir = defaultSettingsPath() + QLatin1String("mail/store/");
+    QString startdir = defaultSettingsPath() + QLatin1StringView("mail/store/");
     QDir d(startdir);
     if (!d.exists()) {
         startdir = QDir::homePath();

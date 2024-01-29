@@ -39,7 +39,7 @@ QString FilterEvolution::isMailerFound()
 
 QString FilterEvolution::defaultSettingsPath()
 {
-    return QDir::homePath() + QLatin1String("/evolution/local");
+    return QDir::homePath() + QLatin1StringView("/evolution/local");
 }
 
 /** Recursive import of Evolution's mboxes. */
@@ -97,11 +97,11 @@ void FilterEvolution::importDirContents(const QString &dirName, const QString &K
     // If there is a mbox, we import it
     QDir dir(dirName);
     if (dir.exists(QStringLiteral("mbox"))) {
-        importMBox(dirName + QLatin1String("/mbox"), KMailRootDir, KMailSubDir);
+        importMBox(dirName + QLatin1StringView("/mbox"), KMailRootDir, KMailSubDir);
     }
     // If there are subfolders, we import them one by one
     if (dir.exists(QStringLiteral("subfolders"))) {
-        QDir subfolders(dirName + QLatin1String("/subfolders"));
+        QDir subfolders(dirName + QLatin1StringView("/subfolders"));
         const QStringList subDirs = subfolders.entryList(QStringList(QStringLiteral("[^\\.]*")), QDir::Dirs, QDir::Name);
         QStringList::ConstIterator end(subDirs.constEnd());
 
@@ -138,7 +138,7 @@ void FilterEvolution::importMBox(const QString &mboxName, const QString &rootDir
         if (mboxName.length() > 20) {
             QString tmp_info = mboxName;
             tmp_info.replace(mailDir(), QStringLiteral(".."));
-            if (tmp_info.contains(QLatin1String("subfolders/"))) {
+            if (tmp_info.contains(QLatin1StringView("subfolders/"))) {
                 tmp_info.remove(QStringLiteral("subfolders/"));
             }
             filterInfo()->setFrom(tmp_info);
@@ -146,7 +146,7 @@ void FilterEvolution::importMBox(const QString &mboxName, const QString &rootDir
         } else {
             filterInfo()->setFrom(mboxName);
         }
-        if (targetDir.contains(QLatin1String("subfolders/"))) {
+        if (targetDir.contains(QLatin1StringView("subfolders/"))) {
             QString tmp_info = targetDir;
             tmp_info.remove(QStringLiteral("subfolders/"));
             filterInfo()->setTo(tmp_info);
@@ -185,9 +185,9 @@ void FilterEvolution::importMBox(const QString &mboxName, const QString &rootDir
 
             QString destFolder = rootDir;
             if (!targetDir.isNull()) {
-                destFolder = QLatin1String("Evolution-Import/") + destFolder + QLatin1Char('/') + targetDir;
+                destFolder = QLatin1StringView("Evolution-Import/") + destFolder + QLatin1Char('/') + targetDir;
             } else {
-                destFolder = QLatin1String("Evolution-Import/") + destFolder;
+                destFolder = QLatin1StringView("Evolution-Import/") + destFolder;
             }
 
             if (!importMessage(destFolder, tmp.fileName(), filterInfo()->removeDupMessage())) {

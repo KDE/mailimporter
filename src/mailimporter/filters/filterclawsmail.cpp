@@ -46,12 +46,12 @@ QString FilterClawsMail::isMailerFound()
 
 QString FilterClawsMail::defaultSettingsPath()
 {
-    return QDir::homePath() + QLatin1String("/.claws-mail/");
+    return QDir::homePath() + QLatin1StringView("/.claws-mail/");
 }
 
 QString FilterClawsMail::localMailDirPath()
 {
-    QFile folderListFile(FilterClawsMail::defaultSettingsPath() + QLatin1String("/folderlist.xml"));
+    QFile folderListFile(FilterClawsMail::defaultSettingsPath() + QLatin1StringView("/folderlist.xml"));
     if (folderListFile.exists()) {
         QDomDocument doc;
         if (!folderListFile.open(QIODevice::ReadOnly)) {
@@ -70,9 +70,9 @@ QString FilterClawsMail::localMailDirPath()
         }
 
         for (QDomElement e = settings.firstChildElement(); !e.isNull(); e = e.nextSiblingElement()) {
-            if (e.tagName() == QLatin1String("folder")) {
+            if (e.tagName() == QLatin1StringView("folder")) {
                 if (e.hasAttribute(QStringLiteral("type"))) {
-                    if (e.attribute(QStringLiteral("type")) == QLatin1String("mh")) {
+                    if (e.attribute(QStringLiteral("type")) == QLatin1StringView("mh")) {
                         return QDir::homePath() + QLatin1Char('/') + e.attribute(QStringLiteral("path"));
                     }
                 }
@@ -84,7 +84,7 @@ QString FilterClawsMail::localMailDirPath()
 
 bool FilterClawsMail::excludeFile(const QString &file)
 {
-    if (file.endsWith(QLatin1String(".claws_cache")) || file.endsWith(QLatin1String(".claws_mark")) || file.endsWith(QLatin1String(".mh_sequences"))) {
+    if (file.endsWith(QLatin1StringView(".claws_cache")) || file.endsWith(QLatin1String(".claws_mark")) || file.endsWith(QLatin1String(".mh_sequences"))) {
         return true;
     }
     return false;

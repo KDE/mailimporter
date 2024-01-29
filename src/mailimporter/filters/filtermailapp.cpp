@@ -145,13 +145,13 @@ void FilterMailApp::traverseDirectory(const QString &dirName)
     const QFileInfoList fileinfolist = dir.entryInfoList();
     for (const QFileInfo &fi : fileinfolist) {
         const QString filename(fi.fileName());
-        if (filename == QLatin1Char('.') || filename == QLatin1String("..")) {
+        if (filename == QLatin1Char('.') || filename == QLatin1StringView("..")) {
             continue;
         }
         if (fi.isDir() && fi.isReadable()) {
             traverseDirectory(fi.filePath());
         } else {
-            if (!fi.isDir() && (filename == QLatin1String("mbox"))) {
+            if (!fi.isDir() && (filename == QLatin1StringView("mbox"))) {
                 qCDebug(MAILIMPORTER_LOG) << "adding the file" << fi.filePath();
                 d->mMboxFiles.append(fi.filePath());
             }
