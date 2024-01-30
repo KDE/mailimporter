@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-24 01:41+0000\n"
+"POT-Creation-Date: 2024-01-30 00:38+0000\n"
 "PO-Revision-Date: 2023-12-09 19:17+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -137,7 +137,7 @@ msgstr "Evolution-Import"
 #: mailimporter/filters/filterbalsa.cpp:187
 #: mailimporter/filters/filterevolution_v3.cpp:184
 #: mailimporter/filters/filterkmail_maildir.cpp:169
-#: mailimporter/filters/filtersylpheed.cpp:227
+#: mailimporter/filters/filtersylpheed.cpp:228
 #: mailimporter/filters/filterthebat.cpp:209
 #, kde-format
 msgid "Import folder %1..."
@@ -157,8 +157,8 @@ msgstr "正在匯入信件夾 %1..."
 #: mailimporter/filters/filterplain.cpp:65
 #: mailimporter/filters/filterpmail.cpp:115
 #: mailimporter/filters/filterpmail.cpp:194
-#: mailimporter/filters/filterpmail.cpp:262
-#: mailimporter/filters/filtersylpheed.cpp:241
+#: mailimporter/filters/filterpmail.cpp:263
+#: mailimporter/filters/filtersylpheed.cpp:242
 #: mailimporter/filters/filterthebat.cpp:229
 #: mailimporter/filters/filterthunderbird.cpp:344
 #, kde-format
@@ -233,7 +233,7 @@ msgstr "Evolution"
 #: mailimporter/filters/filterpmail.cpp:155
 #: mailimporter/filters/filterpmail.cpp:224
 #: mailimporter/filters/filterpmail.cpp:243
-#: mailimporter/filters/filterpmail.cpp:281
+#: mailimporter/filters/filterpmail.cpp:282
 #: mailimporter/filters/filterthebat.cpp:161
 #: mailimporter/filters/filterthunderbird.cpp:278
 #, kde-format
@@ -491,7 +491,7 @@ msgid "LNotes-Import"
 msgstr "LNotes-Import"
 
 #: mailimporter/filters/filterlnotes.cpp:110
-#: mailimporter/filters/filterpmail.cpp:266
+#: mailimporter/filters/filterpmail.cpp:267
 #, kde-format
 msgid "Message %1"
 msgstr "信件 %1"
@@ -753,7 +753,7 @@ msgstr "PegasusMail-Import"
 msgid "Importing %1"
 msgstr "匯入 %1 中"
 
-#: mailimporter/filters/filterpmail.cpp:277
+#: mailimporter/filters/filterpmail.cpp:278
 #, kde-format
 msgid "Parsing the folder structure..."
 msgstr "剖析目錄結構中..."
@@ -804,7 +804,7 @@ msgctxt "name of sylpheed application"
 msgid "Sylpheed"
 msgstr "Sylpheed"
 
-#: mailimporter/filters/filtersylpheed.cpp:184
+#: mailimporter/filters/filtersylpheed.cpp:185
 #, kde-format
 msgctxt "define folder name where we will import sylpheed mails"
 msgid "Sylpheed-Import"

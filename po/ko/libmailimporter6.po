@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-24 01:41+0000\n"
+"POT-Creation-Date: 2024-01-30 00:38+0000\n"
 "PO-Revision-Date: 2022-05-07 02:16+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -131,7 +131,7 @@ msgstr "에볼루션 가져오기"
 #: mailimporter/filters/filterbalsa.cpp:187
 #: mailimporter/filters/filterevolution_v3.cpp:184
 #: mailimporter/filters/filterkmail_maildir.cpp:169
-#: mailimporter/filters/filtersylpheed.cpp:227
+#: mailimporter/filters/filtersylpheed.cpp:228
 #: mailimporter/filters/filterthebat.cpp:209
 #, kde-format
 msgid "Import folder %1..."
@@ -151,8 +151,8 @@ msgstr "폴더 %1 가져오는 중..."
 #: mailimporter/filters/filterplain.cpp:65
 #: mailimporter/filters/filterpmail.cpp:115
 #: mailimporter/filters/filterpmail.cpp:194
-#: mailimporter/filters/filterpmail.cpp:262
-#: mailimporter/filters/filtersylpheed.cpp:241
+#: mailimporter/filters/filterpmail.cpp:263
+#: mailimporter/filters/filtersylpheed.cpp:242
 #: mailimporter/filters/filterthebat.cpp:229
 #: mailimporter/filters/filterthunderbird.cpp:344
 #, kde-format
@@ -227,7 +227,7 @@ msgstr "에볼루션"
 #: mailimporter/filters/filterpmail.cpp:155
 #: mailimporter/filters/filterpmail.cpp:224
 #: mailimporter/filters/filterpmail.cpp:243
-#: mailimporter/filters/filterpmail.cpp:281
+#: mailimporter/filters/filterpmail.cpp:282
 #: mailimporter/filters/filterthebat.cpp:161
 #: mailimporter/filters/filterthunderbird.cpp:278
 #, kde-format
@@ -491,7 +491,7 @@ msgid "LNotes-Import"
 msgstr "LNotes 가져오기"
 
 #: mailimporter/filters/filterlnotes.cpp:110
-#: mailimporter/filters/filterpmail.cpp:266
+#: mailimporter/filters/filterpmail.cpp:267
 #, kde-format
 msgid "Message %1"
 msgstr "메시지 %1"
@@ -756,7 +756,7 @@ msgstr "PegasusMail 가져오기"
 msgid "Importing %1"
 msgstr "%1 가져오는 중"
 
-#: mailimporter/filters/filterpmail.cpp:277
+#: mailimporter/filters/filterpmail.cpp:278
 #, kde-format
 msgid "Parsing the folder structure..."
 msgstr "폴더 구조 처리 중..."
@@ -807,7 +807,7 @@ msgctxt "name of sylpheed application"
 msgid "Sylpheed"
 msgstr "실피드"
 
-#: mailimporter/filters/filtersylpheed.cpp:184
+#: mailimporter/filters/filtersylpheed.cpp:185
 #, kde-format
 msgctxt "define folder name where we will import sylpheed mails"
 msgid "Sylpheed-Import"

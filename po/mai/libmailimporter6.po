@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-24 01:41+0000\n"
+"POT-Creation-Date: 2024-01-30 00:38+0000\n"
 "PO-Revision-Date: 2010-09-24 16:27+0530\n"
 "Last-Translator: Rajesh Ranjan <rajesh672@gmail.com>\n"
 "Language-Team: Maithili <bhashaghar@googlegroups.com>\n"
@@ -129,7 +129,7 @@ msgstr ""
 #: mailimporter/filters/filterbalsa.cpp:187
 #: mailimporter/filters/filterevolution_v3.cpp:184
 #: mailimporter/filters/filterkmail_maildir.cpp:169
-#: mailimporter/filters/filtersylpheed.cpp:227
+#: mailimporter/filters/filtersylpheed.cpp:228
 #: mailimporter/filters/filterthebat.cpp:209
 #, kde-format
 msgid "Import folder %1..."
@@ -149,8 +149,8 @@ msgstr ""
 #: mailimporter/filters/filterplain.cpp:65
 #: mailimporter/filters/filterpmail.cpp:115
 #: mailimporter/filters/filterpmail.cpp:194
-#: mailimporter/filters/filterpmail.cpp:262
-#: mailimporter/filters/filtersylpheed.cpp:241
+#: mailimporter/filters/filterpmail.cpp:263
+#: mailimporter/filters/filtersylpheed.cpp:242
 #: mailimporter/filters/filterthebat.cpp:229
 #: mailimporter/filters/filterthunderbird.cpp:344
 #, kde-format
@@ -218,7 +218,7 @@ msgstr ""
 #: mailimporter/filters/filterpmail.cpp:155
 #: mailimporter/filters/filterpmail.cpp:224
 #: mailimporter/filters/filterpmail.cpp:243
-#: mailimporter/filters/filterpmail.cpp:281
+#: mailimporter/filters/filterpmail.cpp:282
 #: mailimporter/filters/filterthebat.cpp:161
 #: mailimporter/filters/filterthunderbird.cpp:278
 #, kde-format
@@ -455,7 +455,7 @@ msgid "LNotes-Import"
 msgstr ""
 
 #: mailimporter/filters/filterlnotes.cpp:110
-#: mailimporter/filters/filterpmail.cpp:266
+#: mailimporter/filters/filterpmail.cpp:267
 #, kde-format
 msgid "Message %1"
 msgstr ""
@@ -696,7 +696,7 @@ msgstr ""
 msgid "Importing %1"
 msgstr ""
 
-#: mailimporter/filters/filterpmail.cpp:277
+#: mailimporter/filters/filterpmail.cpp:278
 #, kde-format
 msgid "Parsing the folder structure..."
 msgstr ""
@@ -738,7 +738,7 @@ msgctxt "name of sylpheed application"
 msgid "Sylpheed"
 msgstr ""
 
-#: mailimporter/filters/filtersylpheed.cpp:184
+#: mailimporter/filters/filtersylpheed.cpp:185
 #, kde-format
 msgctxt "define folder name where we will import sylpheed mails"
 msgid "Sylpheed-Import"
