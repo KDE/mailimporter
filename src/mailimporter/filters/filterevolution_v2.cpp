@@ -72,8 +72,8 @@ void FilterEvolution_v2::import()
 
 bool FilterEvolution_v2::excludeFiles(const QString &file)
 {
-    if ((file.endsWith(QLatin1StringView(".db")) || file.endsWith(QLatin1String(".cmeta")) || file.endsWith(QLatin1String(".ev-summary"))
-         || file.endsWith(QLatin1StringView(".ibex.index")) || file.endsWith(QLatin1String(".ibex.index.data")))) {
+    if ((file.endsWith(QLatin1StringView(".db")) || file.endsWith(QLatin1StringView(".cmeta")) || file.endsWith(QLatin1StringView(".ev-summary"))
+         || file.endsWith(QLatin1StringView(".ibex.index")) || file.endsWith(QLatin1StringView(".ibex.index.data")))) {
         return true;
     }
     return false;

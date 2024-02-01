@@ -156,8 +156,8 @@ void FilterBalsa::importFiles(const QString &dirName)
             return;
         }
         QString temp_mailfile = *mailFile;
-        if (!(temp_mailfile.endsWith(QLatin1StringView(".db")) || temp_mailfile.endsWith(QLatin1String(".cmeta"))
-              || temp_mailfile.endsWith(QLatin1StringView(".ev-summary")) || temp_mailfile.endsWith(QLatin1String(".ibex.index"))
+        if (!(temp_mailfile.endsWith(QLatin1StringView(".db")) || temp_mailfile.endsWith(QLatin1StringView(".cmeta"))
+              || temp_mailfile.endsWith(QLatin1StringView(".ev-summary")) || temp_mailfile.endsWith(QLatin1StringView(".ibex.index"))
               || temp_mailfile.endsWith(QLatin1StringView(".ibex.index.data")))) {
             if (!generatedPath) {
                 _path = i18nc("define folder name where we import evolution mails", "Evolution-Import");

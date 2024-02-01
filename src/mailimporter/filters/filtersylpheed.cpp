@@ -173,8 +173,8 @@ void FilterSylpheed::importDirContents(const QString &dirName)
 
 bool FilterSylpheed::excludeFile(const QString &file)
 {
-    if (file.endsWith(QLatin1StringView(".sylpheed_cache")) || file.endsWith(QLatin1String(".sylpheed_mark"))
-        || file.endsWith(QLatin1String(".mh_sequences"))) {
+    if (file.endsWith(QLatin1StringView(".sylpheed_cache")) || file.endsWith(QLatin1StringView(".sylpheed_mark"))
+        || file.endsWith(QLatin1StringView(".mh_sequences"))) {
         return true;
     }
     return false;

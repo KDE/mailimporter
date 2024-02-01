@@ -156,7 +156,7 @@ void FilterThunderbird::import()
 
 bool FilterThunderbird::excludeFiles(const QString &file)
 {
-    if ((file.endsWith(QLatin1StringView(".msf")) || file.endsWith(QLatin1String(".dat")) || file.endsWith(QLatin1String(".json"))
+    if ((file.endsWith(QLatin1StringView(".msf")) || file.endsWith(QLatin1StringView(".dat")) || file.endsWith(QLatin1StringView(".json"))
          || file.endsWith(QLatin1StringView(".html")))) {
         return true;
     }

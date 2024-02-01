@@ -208,7 +208,7 @@ void FilterTheBat::importFiles(const QString &FileName)
             QString _info = _path;
             filterInfo()->addInfoLogEntry(i18n("Import folder %1...", _info.remove(0, 14)));
             filterInfo()->setTo(_path);
-            filterInfo()->setFrom(QLatin1StringView("../") + _info + QLatin1String("/messages.tbb"));
+            filterInfo()->setFrom(QLatin1StringView("../") + _info + QLatin1StringView("/messages.tbb"));
 
             QList<long>::Iterator end = offsets.end();
             for (QList<long>::Iterator it = offsets.begin(); it != end; ++it) {

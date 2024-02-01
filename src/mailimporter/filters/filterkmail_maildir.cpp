@@ -142,8 +142,8 @@ void FilterKMail_maildir::importFiles(const QString &dirName)
         }
 
         QString temp_mailfile = *mailFile;
-        if (!(temp_mailfile.endsWith(QLatin1StringView(".index")) || temp_mailfile.endsWith(QLatin1String(".index.ids"))
-              || temp_mailfile.endsWith(QLatin1StringView(".index.sorted")) || temp_mailfile.endsWith(QLatin1String(".uidcache")))) {
+        if (!(temp_mailfile.endsWith(QLatin1StringView(".index")) || temp_mailfile.endsWith(QLatin1StringView(".index.ids"))
+              || temp_mailfile.endsWith(QLatin1StringView(".index.sorted")) || temp_mailfile.endsWith(QLatin1StringView(".uidcache")))) {
             if (!generatedPath) {
                 _path = QStringLiteral("KMail-Import");
                 QString _tmp = dir.filePath(*mailFile);
