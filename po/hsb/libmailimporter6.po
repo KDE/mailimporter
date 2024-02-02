@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-30 00:38+0000\n"
+"POT-Creation-Date: 2024-02-02 00:38+0000\n"
 "PO-Revision-Date: 2005-01-28 14:56+0000\n"
 "Last-Translator: Eduard Werner <edi.werner@gmx.de>\n"
 "Language-Team: Hornjoserbsce <en@li.org>\n"
@@ -174,7 +174,7 @@ msgctxt "name of clawsMail application"
 msgid "ClawsMail"
 msgstr "Importowe filtry za KMail"
 
-#: mailimporter/filters/filterclawsmail.cpp:95
+#: mailimporter/filters/filterclawsmail.cpp:96
 #, fuzzy, kde-format
 #| msgid "KMail Import Filters"
 msgctxt "define folder name where we will import clawsmail mails"

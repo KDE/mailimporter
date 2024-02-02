@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-30 00:38+0000\n"
+"POT-Creation-Date: 2024-02-02 00:38+0000\n"
 "PO-Revision-Date: 2020-01-08 09:21+0100\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -189,7 +189,7 @@ msgctxt "name of clawsMail application"
 msgid "ClawsMail"
 msgstr "ClawsMail"
 
-#: mailimporter/filters/filterclawsmail.cpp:95
+#: mailimporter/filters/filterclawsmail.cpp:96
 #, kde-format
 msgctxt "define folder name where we will import clawsmail mails"
 msgid "ClawsMail-Import"

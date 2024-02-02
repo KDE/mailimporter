@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-30 00:38+0000\n"
+"POT-Creation-Date: 2024-02-02 00:38+0000\n"
 "PO-Revision-Date: 2009-02-27 22:23+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -181,7 +181,7 @@ msgctxt "name of clawsMail application"
 msgid "ClawsMail"
 msgstr "के-मेल-सीवीटी आयात औजार"
 
-#: mailimporter/filters/filterclawsmail.cpp:95
+#: mailimporter/filters/filterclawsmail.cpp:96
 #, fuzzy, kde-format
 #| msgid "KMailCVT Import Tool"
 msgctxt "define folder name where we will import clawsmail mails"
