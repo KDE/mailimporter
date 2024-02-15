@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: libmailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-02 00:38+0000\n"
-"PO-Revision-Date: 2024-02-12 14:08+0200\n"
+"PO-Revision-Date: 2024-02-13 08:40+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -215,6 +215,9 @@ msgid ""
 "recreate the folder structure, the folders will be stored under: \"Evolution-"
 "Import\".</p>"
 msgstr ""
+"<p><b>מסנן ייבוא מ־Evolution 1.x‎</b></p><p>נא לבחור את תיקיית הבסיס של "
+"ההודעות של Evolution (בדרך כלל ‎~/evolution/local).</p><p>כיוון שאפשר ליצור "
+"לבנות את מבנה התיקיות מחדש, התיקיות תאוחסנה תחת: „Evolution-Import”.</p>"
 
 #: mailimporter/filters/filterevolution.cpp:35
 #, kde-format
@@ -649,7 +652,7 @@ msgstr "הקבצים נספרים…"
 #: mailimporter/filters/filterplain.cpp:18
 #, kde-format
 msgid "Import Plain Text Emails"
-msgstr "ייבא הודעות דוא״ל טקסט רגיל"
+msgstr "ייבוא הודעות דוא״ל טקסט רגיל"
 
 #: mailimporter/filters/filterplain.cpp:20
 #, kde-format
