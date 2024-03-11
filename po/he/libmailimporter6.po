@@ -16,14 +16,14 @@ msgstr ""
 "Project-Id-Version: libmailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-02 00:38+0000\n"
-"PO-Revision-Date: 2024-02-16 11:37+0200\n"
+"PO-Revision-Date: 2024-03-10 16:42+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 23.08.5\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
 
@@ -184,6 +184,11 @@ msgid ""
 "under: \"ClawsMail-Import\" in your local folder.</p><p>This filter also "
 "recreates the status of message, e.g. new or forwarded.</p>"
 msgstr ""
+"<p><b>מסנן ייבוא מ־Claws-mail</b></p><p>נא לבחור את התיקייה הבסיסית של "
+"תיקיית הדוא״ל של Claws-mail שברצונך לייבא (בדרך כלל: ‎~/Mail).</p><p>כיוון "
+"שניתן לשחזר את מבנה התיקיות, התיקיות יאוחסנו תחת: „ClawsMail-Import” "
+"בתיקייתך המקומית.</p><p>המסנן הזה גם יוצר מחדש את מצב ההודעה, למשל: חדשה או "
+"מועברת.</p>"
 
 #: mailimporter/filters/filterclawsmail.cpp:42
 #, kde-format
@@ -265,6 +270,11 @@ msgid ""
 "p><p>Since it is possible to recreate the folder structure, the folders will "
 "be stored under: \"Evolution-Import\".</p>"
 msgstr ""
+"<p><b>מסנן ייבוא מ־Evolution 2.x</b></p><p>נא לבחור את התיקייה הבסיסית של "
+"תיקיית הדואר המקומית שלך של Evolution (בדרך כלל: ‎~/.evolution/mail/local/).</"
+"p><p><b>הערה:</b> אף פעם לא לבחור תיקייה ש<u>אינה</u> מכילה קובצי mbox (למשל "
+"maildir): שגיאה כזאת, תוביל להרבה תיקיות חדשות.</p><p>כיוון שניתן לשחזר את "
+"מבנה התיקיות, התיקיות יאוחסנו תחת: „Evolution-Import”.</p>"
 
 #: mailimporter/filters/filterevolution_v2.cpp:42
 #, kde-format
@@ -293,6 +303,10 @@ msgid ""
 "local/).</p><p>Since it is possible to recreate the folder structure, the "
 "folders will be stored under: \"Evolution-Import\".</p>"
 msgstr ""
+"<p><b>מסנן ייבוא מ־Evolution 3.x</b></p><p>נא לבחור את התיקייה הבסיסית של "
+"תיקיית הדואר המקומית שלך של Evolution (בדרך כלל: ‎‎~/.local/share/evolution/"
+"mail/local/).</p><p>כיוון שניתן לשחזר את מבנה התיקיות, התיקיות יאוחסנו תחת: "
+"„Evolution-Import”.</p>"
 
 #: mailimporter/filters/filterevolution_v3.cpp:39
 #, kde-format
@@ -315,6 +329,11 @@ msgid ""
 "possible to recreate the folder structure, the folders will be stored under: "
 "\"Icedove-Import\".</p>"
 msgstr ""
+"<p><b>מסנן ייבוא מ־Icedove</b></p><p>נא לבחור את התיקייה הבסיסית של תיקיית "
+"הדואר שלך של Icedove (בדרך כלל: ~/.icedove/*.default/Mail/Local Folders/).</"
+"p><p><b>הערה:</b> אף פעם לא לבחור תיקייה ש<u>אינה</u> מכילה קבצי mbox (למשל, "
+"maildir): שגיאה כזאת, תוביל ליצירת הרבה תיקיות חדשות.</p><p>כיוון שניתן "
+"לשחזר את מבנה התיקיות, התיקיות יאוחסנו תחת: „Icedove-Import”.</p>"
 
 #: mailimporter/filters/filtericedove.cpp:34
 #, kde-format
