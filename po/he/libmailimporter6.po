@@ -16,14 +16,14 @@ msgstr ""
 "Project-Id-Version: libmailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-02 00:38+0000\n"
-"PO-Revision-Date: 2024-03-10 16:42+0200\n"
+"PO-Revision-Date: 2024-03-12 06:40+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 23.08.4\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
 
@@ -185,10 +185,10 @@ msgid ""
 "recreates the status of message, e.g. new or forwarded.</p>"
 msgstr ""
 "<p><b>מסנן ייבוא מ־Claws-mail</b></p><p>נא לבחור את התיקייה הבסיסית של "
-"תיקיית הדוא״ל של Claws-mail שברצונך לייבא (בדרך כלל: ‎~/Mail).</p><p>כיוון "
-"שניתן לשחזר את מבנה התיקיות, התיקיות יאוחסנו תחת: „ClawsMail-Import” "
-"בתיקייתך המקומית.</p><p>המסנן הזה גם יוצר מחדש את מצב ההודעה, למשל: חדשה או "
-"מועברת.</p>"
+"תיקיית הדוא״ל של Claws-mail לייבוא (בדרך כלל: ‎~/Mail).</p><p>כיוון שניתן "
+"לשחזר את מבנה התיקיות, התיקיות תאוחסנה תחת: „ClawsMail-Import” בתיקייתך "
+"המקומית.</p><p>המסנן הזה גם יוצר מחדש את מצב ההודעה, למשל: חדשה או מועברת.</"
+"p>"
 
 #: mailimporter/filters/filterclawsmail.cpp:42
 #, kde-format
@@ -274,7 +274,7 @@ msgstr ""
 "תיקיית הדואר המקומית שלך של Evolution (בדרך כלל: ‎~/.evolution/mail/local/).</"
 "p><p><b>הערה:</b> אף פעם לא לבחור תיקייה ש<u>אינה</u> מכילה קובצי mbox (למשל "
 "maildir): שגיאה כזאת, תוביל להרבה תיקיות חדשות.</p><p>כיוון שניתן לשחזר את "
-"מבנה התיקיות, התיקיות יאוחסנו תחת: „Evolution-Import”.</p>"
+"מבנה התיקיות, התיקיות תאוחסנה תחת: „Evolution-Import”.</p>"
 
 #: mailimporter/filters/filterevolution_v2.cpp:42
 #, kde-format
@@ -305,7 +305,7 @@ msgid ""
 msgstr ""
 "<p><b>מסנן ייבוא מ־Evolution 3.x</b></p><p>נא לבחור את התיקייה הבסיסית של "
 "תיקיית הדואר המקומית שלך של Evolution (בדרך כלל: ‎‎~/.local/share/evolution/"
-"mail/local/).</p><p>כיוון שניתן לשחזר את מבנה התיקיות, התיקיות יאוחסנו תחת: "
+"mail/local/).</p><p>כיוון שניתן לשחזר את מבנה התיקיות, התיקיות תאוחסנה תחת: "
 "„Evolution-Import”.</p>"
 
 #: mailimporter/filters/filterevolution_v3.cpp:39
@@ -333,7 +333,7 @@ msgstr ""
 "הדואר שלך של Icedove (בדרך כלל: ~/.icedove/*.default/Mail/Local Folders/).</"
 "p><p><b>הערה:</b> אף פעם לא לבחור תיקייה ש<u>אינה</u> מכילה קבצי mbox (למשל, "
 "maildir): שגיאה כזאת, תוביל ליצירת הרבה תיקיות חדשות.</p><p>כיוון שניתן "
-"לשחזר את מבנה התיקיות, התיקיות יאוחסנו תחת: „Icedove-Import”.</p>"
+"לשחזר את מבנה התיקיות, התיקיות תאוחסנה תחת: „Icedove-Import”.</p>"
 
 #: mailimporter/filters/filtericedove.cpp:34
 #, kde-format
@@ -375,6 +375,9 @@ msgid ""
 "archives files previously exported by KMail.</p><p>Archive files contain a "
 "complete folder subtree compressed into a single file.</p>"
 msgstr ""
+"<p><b>מסנן ייבוא קובצי ארכיון של KMail</b></p><p>המסנן הזה ייבא קובצי ארכיון "
+"שיוצאו בעבר על ידי KMail.</p><p>קובצי ארכיון מעילים מבנה תת־עץ שלם של תיקיות "
+"שדחוס לתוך קובץ יחיד.</p>"
 
 #: mailimporter/filters/filterkmailarchive.cpp:71
 #, kde-format
@@ -539,6 +542,9 @@ msgid ""
 "gzipped files into KMail.</p><p><b>Note:</b> Emails will be imported into "
 "folders named after the file they came from, prefixed with MAILMAN-</p>"
 msgstr ""
+"<p><b>מסנן ייבוא mailman gzip</b></p><p>המסנן הזה ייבא קובצי mailman שדחוסים "
+"ב־gzip לתוך KMail.</p><p><b>לתשומת ליבך:</b> הודעות דוא״ל תיובאנה לתיקיות "
+"בשם הקובץ מהן הגיעו, בצירוף הקידומת MAILMAN-‎</p>"
 
 #: mailimporter/filters/filtermailmangzip.cpp:35
 #, kde-format
@@ -681,6 +687,9 @@ msgid ""
 "prefixed by PLAIN-</p><p>This filter will import all .msg, .eml and .txt "
 "emails.</p>"
 msgstr ""
+"<p>נא לבחור את התיקייה שמכילה את הודעות הדוא״ל במערכת שלך. ההודעות נמצאות "
+"בתיקייה באותו השם עמו התיקייה בה הן היו, עם הקידומת PLAIN-‎</p><p>המסנן הזה "
+"ייבא את כל קובצי הדוא״ל מהסוגים ‎.msg,‏ ‎.eml ו־‎.txt.</p>"
 
 #: mailimporter/filters/filterpmail.cpp:22
 #, kde-format
@@ -701,6 +710,10 @@ msgid ""
 "folder structure, the folders will be stored under: \"PegasusMail-Import\".</"
 "p>"
 msgstr ""
+"<p>יש לבחור את תיקיית Pegasus-Mail במערכת שלך (שמכילה קובצי ‎*.CNM,‏ ‎*.PMM ו־ ‎"
+"*.MBX). במערכות רבות זה מאוחסן תחת C:\\pmail\\mail או C:\\pmail\\mail"
+"\\admin</p><p><b>לתשומת ליבך:</b> מאחר שאפשר ליצור את מבנה התיקיות מחדש, "
+"התיקיות תאוחסנה תחת: „PegasusMail-Import”.</p>"
 
 #: mailimporter/filters/filterpmail.cpp:62
 #, kde-format
@@ -756,6 +769,12 @@ msgid ""
 "it is possible to recreate the folder structure, the folders will be stored "
 "under: \"SeaMonkey-Import\".</p>"
 msgstr ""
+"<p><b>מסנן ייבוא מ־SeaMonkey</b></p><p>נא לבחור את התיקייה הבסיסית של תיקיית "
+"הדואר שלך של SeaMonkey (בדרך כלל: ~/.seamonkey/*.default/Mail/Local "
+"Folders/).</p><p><b>הערה: </b> אף פעם לא לבחור תיקייה ש<u>אינה</u> מכילה "
+"קבצי mbox (למשל, maildir): שגיאה כזאת, תוביל ליצירת הרבה תיקיות חדשות.</"
+"p><p>כיוון שניתן לשחזר את מבנה התיקיות, התיקיות תאוחסנה תחת: „SeaMonkey-"
+"Import”.</p>"
 
 #: mailimporter/filters/filtersylpheed.cpp:28
 #, kde-format
@@ -771,6 +790,10 @@ msgid ""
 "\"Sylpheed-Import\" in your local folder.</p><p>This filter also recreates "
 "the status of message, e.g. new or forwarded.</p>"
 msgstr ""
+"<p><b>מסנן ייבוא מ־Slypheed</b></p><p>נא לבחור את התיקייה הבסיסית של תיקיית "
+"הדוא״ל של Slypheed לייבוא (בדרך כלל: ‎~/Mail).</p><p>כיוון שניתן לשחזר את "
+"מבנה התיקיות, התיקיות תאוחסנה תחת: „Slypheed-Import” בתיקייתך המקומית.</"
+"p><p>המסנן הזה גם יוצר מחדש את מצב ההודעה, למשל: חדשה או מועברת.</p>"
 
 #: mailimporter/filters/filtersylpheed.cpp:47
 #, kde-format
@@ -826,6 +849,12 @@ msgid ""
 "new folders.</p><p>Since it is possible to recreate the folder structure, "
 "the folders will be stored under: \"Thunderbird-Import\".</p>"
 msgstr ""
+"<p><b>מסנן ייבוא מ־Thunderbird/Mozilla</b></p><p>נא לבחור את התיקייה הבסיסית "
+"של תיקיית הדואר שלך של Thunderbird/Mozilla (בדרך כלל: ~/thunderbird/*."
+"default/Mail/Local Folders/).</p><p><b>הערה:</b> אף פעם לא לבחור תיקייה "
+"ש<u>אינה</u> מכילה קבצי mbox (למשל, maildir): שגיאה כזאת, תוביל ליצירת הרבה "
+"תיקיות חדשות.</p><p>כיוון שניתן לשחזר את מבנה התיקיות, התיקיות תאוחסנה תחת: "
+"Thunderbird-Import”.</p>"
 
 #: mailimporter/filters/filterthunderbird.cpp:58
 #, kde-format
