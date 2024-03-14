@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: libmailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-02 00:38+0000\n"
-"PO-Revision-Date: 2024-03-12 06:40+0200\n"
+"PO-Revision-Date: 2024-03-13 08:44+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -357,6 +357,12 @@ msgid ""
 "possible to recreate the folder structure, the folders will be stored under: "
 "\"KMail-Import\" in your local folder.</p>"
 msgstr ""
+"<p><b>מסנן ייבוא מ־KMail</b></p><p>נא לבחור את תיקיית בסיס תיקיית הדוא״ל של "
+"KMail לייבוא.</p><p><b>לתשומת ליבך:</b> לעולם לא לבחור את תיקיית דוא״ל KMail "
+"המקומית (בדרך כלל ‎~/Mail או ‎~/.kde/share/apps/kmail/mail): במקרה כזה, אשף "
+"הייבוא יכול להיתקע בלולאה אינסופית. </p><p>המסנן הזה לא מייסע תיקיות דוא״ל "
+"KMail עם קובצי mbox.</p><p>מאחר שניתן לשחזר את מבנה התיקיות, התיקיות תאוחסנה "
+"תחת: „KMail-Import” בתיקייה המקומית שלך.</p>"
 
 #: mailimporter/filters/filterkmail_maildir.cpp:176
 #, kde-format
@@ -576,6 +582,11 @@ msgid ""
 "Emails will be imported into folders named after the file they came from, "
 "prefixed with MBOX-</p>"
 msgstr ""
+"<p><b>מסנן ייבוא מ־mbox</b></p><p>המסנן הזה ייבא קובצי mbox לתוך KMail. יש "
+"להשתמש במסנן הזה כדי לייבא הודעות מ־Ximian Evolution או מתוכנות דוא״ל אחרות "
+"שמשתמשות בתסדיר המסורתי הזה בתאימות יוניקס.</p><p><b>לתשומת ליבך:</b> הודעות "
+"הדוא״ל תיובאנה לתוך תיקיות שקרויות על שם הקובץ מהן הגיעו, עם הקידומת MBOX-‎</"
+"p>"
 
 #: mailimporter/filters/filtermbox.cpp:38
 #, kde-format
