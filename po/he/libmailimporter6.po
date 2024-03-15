@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: libmailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-02 00:38+0000\n"
-"PO-Revision-Date: 2024-03-13 08:44+0200\n"
+"PO-Revision-Date: 2024-03-14 08:05+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -475,6 +475,12 @@ msgid ""
 "will be stored in subfolders named by the files they came from under: "
 "\"LNotes-Import\" in your local folder.</p>"
 msgstr ""
+"<p><b>מסנן ייבוא טקסט בתבנית מ־Lotus Notes</b></p><p>המסנן הזה ייבא קובצי "
+"טקסט בתבנית מקבצים שיוצאו מ־Lotus Notes ל־KMail. יש להשתמש במסנן הזה כדי "
+"לייבא הודעות מ־Lotus או מלקוחות דוא״ל אחרים שמשתמשים בתסדיר הטקסט בתבניות של "
+"Lotus Notes.</p><p><b>Note:</b> כיוון שניתן לשחזר את מבנה התיקיות, ההודעות "
+"המיובאות תאוחסנה בתת־תיקיות שקרויות על שם הקבצים מהם הגיעו תחת: „LNotes-"
+"Import” בתיקייה המקומית שלך.</p>"
 
 #: mailimporter/filters/filterlnotes.cpp:52
 #, kde-format
@@ -614,6 +620,12 @@ msgid ""
 "folders from Outlook Express 5 and 6 will be stored under: \"OE-Import\" in "
 "your local folder.</p>"
 msgstr ""
+"<p><b>מסנן ייבוא מ־Outlook Express 4/5/6</b></p><p>יש לאתר את התיקייה בה "
+"תיבת הדוא״ל אוחסנה על ידי חיפוש אחר קובצי ‎.dbx או ‎.mbx תחת <ul><li><i>C:"
+"\\Windows\\Application Data</i> ב־Windows 9x</li><li><i>Documents and "
+"Settings</i> ב־Windows 2000 ומעלה</li></ul></p><p><b>לתשומת ליבך:</b> כיוון "
+"שאפשר לשחזר את מבנה התיקיות, התיקיות מ־Outlook Express 5 ו־6 תאוחסנה תחת: "
+"„OE-Import” בתיקייה המקומית שלך.</p>"
 
 #: mailimporter/filters/filteroe.cpp:66
 #, kde-format
@@ -665,6 +677,11 @@ msgid ""
 "imported into a folder named after the account they came from, prefixed with "
 "OPERA-</p>"
 msgstr ""
+"<p><b>מסנן ייבוא דוא״ל מ־Opera</b></p><p>המסנן הזה ייבא הודעות מתיקיית דוא״ל "
+"של Opera. יש להשתמש במסנן הזה כדי לייבא את כל ההודעות מתוך חשבון בתיקיית "
+"הדוא״ל של Opera.</p><p>יש לבחור את תיקיית החשבון (בדרך כלל ‎~/.opera/mail/"
+"store/account*‎).</p><p><b>לתשומת ליבך:</b> ההודעות תיובאנה לתיקייה שקרויה על "
+"שם החשבון ממנו הגיעה, עם הקידומת OPERA-‎</p>"
 
 #: mailimporter/filters/filteropera.cpp:38
 #, kde-format
