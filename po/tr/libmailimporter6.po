@@ -12,13 +12,13 @@
 # Volkan Gezer <volkangezer@gmail.com>, 2013, 2021.
 # Yaşar ŞENTÜRK <yasar@kde.org.tr>, 2005.
 # Kaan Ozdincer <kaanozdincer@gmail.com>, 2014.
-# Emir SARI <emir_sari@icloud.com>, 2022, 2023.
+# SPDX-FileCopyrightText: 2022, 2023, 2024 Emir SARI <emir_sari@icloud.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kdepim-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-02 00:38+0000\n"
-"PO-Revision-Date: 2023-11-14 19:48+0300\n"
+"PO-Revision-Date: 2024-03-21 23:00+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -26,7 +26,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 23.11.70\n"
+"X-Generator: Lokalize 24.02.1\n"
 "(http: //www.transifex.com/projects/p/kdepim-k-tr/language/tr/)\n"
 
 #: mailimporter/filters/filterbalsa.cpp:22
@@ -186,10 +186,10 @@ msgid ""
 "recreates the status of message, e.g. new or forwarded.</p>"
 msgstr ""
 "<p><b>Claws-mail içe aktarma süzgeci</b></p><p>Claws-mail e-postalarının ana "
-"klasörünü seçin (genellikle:  ~/Mail konumundadır).</p><p>Dizin yapısı "
+"klasörünü seçin (genellikle: ~/Mail konumundadır).</p><p>Dizin yapısı "
 "yeniden oluşturulabileceğinden, yerel klasörünüzde burada tutulacaktır: "
 "\"ClawsMail-Aktarım\".</p><p>Bu süzgeç, iletilerin durumlarını da yeniden "
-"oluşturur. Örn. yeni veya yönlendirilmiş.</p>"
+"oluşturur. Örn. yeni veya iletilmiş.</p>"
 
 #: mailimporter/filters/filterclawsmail.cpp:42
 #, kde-format
@@ -833,10 +833,10 @@ msgid ""
 "the status of message, e.g. new or forwarded.</p>"
 msgstr ""
 "<p><b>Sylpheed içe aktarma süzgeci</b></p><p>Sylpheed e-postalarının ana "
-"dizinini seçin (genellikle:  ~/Mail konumundadır).</p><p>Dizin yapısı "
-"yeniden oluşturulana kadar eski dizinler yerel dizininiz de burada "
-"tutulacaktır: \"Sylpheed-Import\".</p><p>Bu süzgeç, iletilerin durumlarını "
-"da yeniden oluşturur, örneğin yeni ya da yönlendirilmiş gibi.</p>"
+"dizinini seçin (genellikle: ~/Mail konumundadır).</p><p>Dizin yapısı yeniden "
+"oluşturulana kadar eski dizinler yerel dizininiz de burada tutulacaktır: "
+"\"Sylpheed-Import\".</p><p>Bu süzgeç, iletilerin durumlarını da yeniden "
+"oluşturur, örneğin yeni veya iletilmiş.</p>"
 
 #: mailimporter/filters/filtersylpheed.cpp:47
 #, kde-format
