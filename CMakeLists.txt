@@ -36,10 +36,10 @@ option(BUILD_QCH "Build API documentation in QCH format (for e.g. Qt Assistant, 
 add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)")
 
 
-set(AKONADIMIME_LIB_VERSION "6.0.80")
-set(KMIME_LIB_VERSION "6.0.80")
-set(AKONADI_VERSION "6.0.80")
-set(PIMCOMMON_LIB_VERSION "6.0.80")
+set(AKONADIMIME_LIB_VERSION "6.0.90")
+set(KMIME_LIB_VERSION "6.0.90")
+set(AKONADI_VERSION "6.0.90")
+set(PIMCOMMON_LIB_VERSION "6.0.90")
 
 find_package(Qt6 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets Test Xml)
 
