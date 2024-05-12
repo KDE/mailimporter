@@ -140,7 +140,7 @@ msgstr "Evolution-Import"
 #: mailimporter/filters/filterthebat.cpp:209
 #, kde-format
 msgid "Import folder %1..."
-msgstr "S'està important la carpeta %1..."
+msgstr "S'està important la carpeta %1…"
 
 #: mailimporter/filters/filterbalsa.cpp:195
 #: mailimporter/filters/filterevolution.cpp:194
@@ -249,7 +249,7 @@ msgstr "No es pot obrir %1, s'omet"
 #: mailimporter/filters/filteropera.cpp:80
 #, kde-format
 msgid "Importing emails from %1..."
-msgstr "S'estan important correus des de %1..."
+msgstr "S'estan important correus des de %1…"
 
 #: mailimporter/filters/filterevolution_v2.cpp:22
 #, kde-format
@@ -285,7 +285,7 @@ msgstr "Evolution (v2)"
 #: mailimporter/filters/filterthunderbird.cpp:244
 #, kde-format
 msgid "Start import file %1..."
-msgstr "Comença la importació del fitxer %1..."
+msgstr "Comença la importació del fitxer %1…"
 
 #: mailimporter/filters/filterevolution_v3.cpp:22
 #, kde-format
@@ -389,7 +389,7 @@ msgstr ""
 #: mailimporter/filters/filterkmailarchive.cpp:71
 #, kde-format
 msgid "Importing folder '%1'..."
-msgstr "S'està important la carpeta «%1»..."
+msgstr "S'està important la carpeta «%1»…"
 
 #: mailimporter/filters/filterkmailarchive.cpp:97
 #, kde-format
@@ -439,7 +439,7 @@ msgstr "No s'ha pogut obrir el fitxer d'arxiu «%1»"
 #: mailimporter/filters/filterkmailarchive.cpp:193
 #, kde-format
 msgid "Counting files in archive..."
-msgstr "S'estan comptant els fitxers de l'arxiu..."
+msgstr "S'estan comptant els fitxers de l'arxiu…"
 
 #: mailimporter/filters/filterkmailarchive.cpp:199
 #, kde-format
@@ -638,7 +638,7 @@ msgstr "No s'han trobat bústies d'Outlook Express en el directori %1."
 #: mailimporter/filters/filteroe.cpp:82
 #, kde-format
 msgid "Import folder structure..."
-msgstr "Importa l'estructura de les carpetes..."
+msgstr "Importa l'estructura de les carpetes…"
 
 #: mailimporter/filters/filteroe.cpp:106
 #, kde-format
@@ -697,14 +697,14 @@ msgstr "Opera"
 #: mailimporter/filters/filterplain.cpp:55
 #, kde-format
 msgid "Importing new mail files..."
-msgstr "S'estan important els fitxers nous de correu..."
+msgstr "S'estan important els fitxers nous de correu…"
 
 #: mailimporter/filters/filteropera.cpp:190
 #: mailimporter/filters/filterplain.cpp:50
 #: mailimporter/filters/filterpmail.cpp:51
 #, kde-format
 msgid "Counting files..."
-msgstr "S'estan comptant els fitxers..."
+msgstr "S'estan comptant els fitxers…"
 
 #: mailimporter/filters/filterplain.cpp:18
 #, kde-format
@@ -761,17 +761,17 @@ msgstr ""
 #: mailimporter/filters/filterpmail.cpp:65
 #, kde-format
 msgid "Importing new mail files ('.cnm')..."
-msgstr "S'estan important els fitxers nous de correu ('.cnm')..."
+msgstr "S'estan important els fitxers nous de correu ('.cnm')…"
 
 #: mailimporter/filters/filterpmail.cpp:67
 #, kde-format
 msgid "Importing mail folders ('.pmm')..."
-msgstr "S'estan important les carpetes de correu («.pmm»)..."
+msgstr "S'estan important les carpetes de correu («.pmm»)…"
 
 #: mailimporter/filters/filterpmail.cpp:69
 #, kde-format
 msgid "Importing 'UNIX' mail folders ('.mbx')..."
-msgstr "S'estan important les carpetes de correu «UNIX» («.mbx»)..."
+msgstr "S'estan important les carpetes de correu «UNIX» («.mbx»)…"
 
 #: mailimporter/filters/filterpmail.cpp:159
 #, kde-format
@@ -788,7 +788,7 @@ msgstr "S'està important %1"
 #: mailimporter/filters/filterpmail.cpp:278
 #, kde-format
 msgid "Parsing the folder structure..."
-msgstr "S'està analitzant l'estructura de les carpetes..."
+msgstr "S'està analitzant l'estructura de les carpetes…"
 
 #: mailimporter/filters/filterseamonkey.cpp:14
 #, kde-format
@@ -950,7 +950,7 @@ msgstr "Actual:"
 #: mailimporter/ui/importmailswidget.ui:57
 #, kde-format
 msgid "Importing in progress..."
-msgstr "Importació en progrés..."
+msgstr "Importació en progrés…"
 
 #. i18n: ectx: property (text), widget (QLabel, current)
 #. i18n: ectx: property (text), widget (QLabel, to)
@@ -960,7 +960,7 @@ msgstr "Importació en progrés..."
 #: mailimporter/ui/importmailswidget.ui:118
 #, kde-format
 msgid "..."
-msgstr "..."
+msgstr "…"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel4)
 #: mailimporter/ui/importmailswidget.ui:102
