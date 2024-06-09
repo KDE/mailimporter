@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-02 00:38+0000\n"
 "PO-Revision-Date: 2011-05-01 13:49+0300\n"
-"Last-Translator: Sergiu Bivol <sergiu@ase.md>\n"
+"Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@lists.kde.org>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
@@ -915,61 +915,3 @@ msgstr "Eroare la adăugarea mesajului în directorui %1 al KMail"
 #, kde-format
 msgid "Unable to retrieve folder for folder path %1."
 msgstr ""
-
-#, fuzzy
-#~ msgid "Import Outlook Emails"
-#~ msgstr "Importare Outlook Express 4"
-
-#, fuzzy
-#~ msgid "Counting mail..."
-#~ msgstr "Înnumăr fișierele..."
-
-#, fuzzy
-#~ msgctxt "'directories' means directories on hard disc, not email-folders."
-#~ msgid "Counting directories..."
-#~ msgstr "Înnumăr fișierele..."
-
-#, fuzzy
-#~ msgctxt "'folders' means email-folders, not folders on disc."
-#~ msgid "Counting folders..."
-#~ msgstr "Înnumăr fișierele..."
-
-#~ msgid "<p><i>Written by %1.</i></p>"
-#~ msgstr "<p><i>Scris de %1.</i></p>"
-
-#~ msgid "Step 1: Select Filter"
-#~ msgstr "Pasul 1: Alegeți filtrul"
-
-#~ msgid "Step 2: Importing..."
-#~ msgstr "Pasul 2: Importare..."
-
-#~ msgid "Import in progress"
-#~ msgstr "Importare în curs"
-
-#~ msgid "Import finished"
-#~ msgstr "Importare încheiată"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Sergiu Bivol"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "sergiu@ase.md"
-
-#, fuzzy
-#~ msgid ""
-#~ "<b>Fatal:</b> Unable to start KMail for D-Bus communication: %1; %2<br /"
-#~ ">Make sure <i>kmail</i> is installed."
-#~ msgstr ""
-#~ "Eroare fatală: Nu am putut porni KMail\n"
-#~ "pentru comunicație DCOP. Asigurați-vă că\n"
-#~ "programul KMail este accesibil prin variabila\n"
-#~ "de mediu PATH."
-
-#~ msgid "Cannot make folder %1 in KMail"
-#~ msgstr "Nu se poate crea dosarul %1 în KMail"
-
-#, fuzzy
-#~ msgid "Cannot add message to folder %1 in KMail"
-#~ msgstr "Nu pot adăuga mesajul în directorul %1 din KMail"
