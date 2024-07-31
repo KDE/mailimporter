@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-02 00:38+0000\n"
+"POT-Creation-Date: 2024-07-31 00:41+0000\n"
 "PO-Revision-Date: 2013-09-08 07:05+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -824,24 +824,18 @@ msgstr "خەت تاپشۇرۇۋالغۇچى："
 msgid "Current:"
 msgstr "نۆۋەتتىكى:"
 
-#. i18n: ectx: property (text), widget (QLabel, textStatus)
-#: mailimporter/ui/importmailswidget.ui:57
-#, kde-format
-msgid "Importing in progress..."
-msgstr "ئىمپورت قىلىش داۋاملىشىۋاتىدۇ…"
-
 #. i18n: ectx: property (text), widget (QLabel, current)
 #. i18n: ectx: property (text), widget (QLabel, to)
 #. i18n: ectx: property (text), widget (QLabel, from)
-#: mailimporter/ui/importmailswidget.ui:76
-#: mailimporter/ui/importmailswidget.ui:92
-#: mailimporter/ui/importmailswidget.ui:118
+#: mailimporter/ui/importmailswidget.ui:73
+#: mailimporter/ui/importmailswidget.ui:89
+#: mailimporter/ui/importmailswidget.ui:115
 #, kde-format
 msgid "..."
 msgstr "…"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: mailimporter/ui/importmailswidget.ui:102
+#: mailimporter/ui/importmailswidget.ui:99
 #, kde-format
 msgid "Total:"
 msgstr "جەمئىي:"
@@ -894,6 +888,9 @@ msgstr ""
 #, kde-format
 msgid "Unable to retrieve folder for folder path %1."
 msgstr ""
+
+#~ msgid "Importing in progress..."
+#~ msgstr "ئىمپورت قىلىش داۋاملىشىۋاتىدۇ…"
 
 #~| msgid "Importing in progress..."
 #~ msgctxt "'directories' means directories on hard disc, not email-folders."

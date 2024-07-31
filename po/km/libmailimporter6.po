@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-02 00:38+0000\n"
+"POT-Creation-Date: 2024-07-31 00:41+0000\n"
 "PO-Revision-Date: 2012-06-19 09:11+0700\n"
 "Last-Translator: Sophea <sophea@khmeros.info>\n"
 "Language-Team: Khmer <>\n"
@@ -967,24 +967,18 @@ msgstr "ជូន​ចំពោះ ៖"
 msgid "Current:"
 msgstr "បច្ចុប្បន្ន​ ៖"
 
-#. i18n: ectx: property (text), widget (QLabel, textStatus)
-#: mailimporter/ui/importmailswidget.ui:57
-#, kde-format
-msgid "Importing in progress..."
-msgstr "ការ​នាំចូល​កំពុង​ដំណើរការ..."
-
 #. i18n: ectx: property (text), widget (QLabel, current)
 #. i18n: ectx: property (text), widget (QLabel, to)
 #. i18n: ectx: property (text), widget (QLabel, from)
-#: mailimporter/ui/importmailswidget.ui:76
-#: mailimporter/ui/importmailswidget.ui:92
-#: mailimporter/ui/importmailswidget.ui:118
+#: mailimporter/ui/importmailswidget.ui:73
+#: mailimporter/ui/importmailswidget.ui:89
+#: mailimporter/ui/importmailswidget.ui:115
 #, kde-format
 msgid "..."
 msgstr "..."
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: mailimporter/ui/importmailswidget.ui:102
+#: mailimporter/ui/importmailswidget.ui:99
 #, kde-format
 msgid "Total:"
 msgstr "សរុប ៖"
@@ -1039,6 +1033,9 @@ msgstr "<b>កំហុស ៖</b> មិនអាច​បន្ថែម​ស
 #, kde-format
 msgid "Unable to retrieve folder for folder path %1."
 msgstr "មិន​អាច​ទៅ​យក​ថត​សម្រាប់​ផ្លូវថត​ %1 បាន​ទេ ។"
+
+#~ msgid "Importing in progress..."
+#~ msgstr "ការ​នាំចូល​កំពុង​ដំណើរការ..."
 
 #, fuzzy
 #~| msgid "KMail Archive Files (*.tar, *.tar.gz, *.tar.bz2, *.zip)"

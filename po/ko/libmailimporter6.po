@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-02 00:38+0000\n"
+"POT-Creation-Date: 2024-07-31 00:41+0000\n"
 "PO-Revision-Date: 2022-05-07 02:16+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -909,24 +909,18 @@ msgstr "대상:"
 msgid "Current:"
 msgstr "현재:"
 
-#. i18n: ectx: property (text), widget (QLabel, textStatus)
-#: mailimporter/ui/importmailswidget.ui:57
-#, kde-format
-msgid "Importing in progress..."
-msgstr "가져오는 중..."
-
 #. i18n: ectx: property (text), widget (QLabel, current)
 #. i18n: ectx: property (text), widget (QLabel, to)
 #. i18n: ectx: property (text), widget (QLabel, from)
-#: mailimporter/ui/importmailswidget.ui:76
-#: mailimporter/ui/importmailswidget.ui:92
-#: mailimporter/ui/importmailswidget.ui:118
+#: mailimporter/ui/importmailswidget.ui:73
+#: mailimporter/ui/importmailswidget.ui:89
+#: mailimporter/ui/importmailswidget.ui:115
 #, kde-format
 msgid "..."
 msgstr "..."
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: mailimporter/ui/importmailswidget.ui:102
+#: mailimporter/ui/importmailswidget.ui:99
 #, kde-format
 msgid "Total:"
 msgstr "합계:"
@@ -982,6 +976,9 @@ msgstr "<b>오류:</b> 폴더 %1에 메시지를 추가할 수 없음. 이유: %
 #, kde-format
 msgid "Unable to retrieve folder for folder path %1."
 msgstr "폴더 경로 %1에 대한 폴더 내용을 가져올 수 없습니다."
+
+#~ msgid "Importing in progress..."
+#~ msgstr "가져오는 중..."
 
 #~ msgid "KMail Archive Files (*.tar *.tar.gz *.tar.bz2 *.zip)"
 #~ msgstr "KMail 보관 파일 (*.tar *.tar.gz *.tar.bz2 *.zip)"

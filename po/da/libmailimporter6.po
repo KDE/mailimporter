@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-02 00:38+0000\n"
+"POT-Creation-Date: 2024-07-31 00:41+0000\n"
 "PO-Revision-Date: 2020-08-02 16:32+0200\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -929,24 +929,18 @@ msgstr "Til:"
 msgid "Current:"
 msgstr "Denne:"
 
-#. i18n: ectx: property (text), widget (QLabel, textStatus)
-#: mailimporter/ui/importmailswidget.ui:57
-#, kde-format
-msgid "Importing in progress..."
-msgstr "Import i fremgang..."
-
 #. i18n: ectx: property (text), widget (QLabel, current)
 #. i18n: ectx: property (text), widget (QLabel, to)
 #. i18n: ectx: property (text), widget (QLabel, from)
-#: mailimporter/ui/importmailswidget.ui:76
-#: mailimporter/ui/importmailswidget.ui:92
-#: mailimporter/ui/importmailswidget.ui:118
+#: mailimporter/ui/importmailswidget.ui:73
+#: mailimporter/ui/importmailswidget.ui:89
+#: mailimporter/ui/importmailswidget.ui:115
 #, kde-format
 msgid "..."
 msgstr "..."
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: mailimporter/ui/importmailswidget.ui:102
+#: mailimporter/ui/importmailswidget.ui:99
 #, kde-format
 msgid "Total:"
 msgstr "I alt:"
@@ -1002,6 +996,9 @@ msgstr "<b>Fejl:</b> Kunne ikke føje brev til mappen %1. Årsag: %2"
 #, kde-format
 msgid "Unable to retrieve folder for folder path %1."
 msgstr "Kan ikke hente mappe til mappestien %1."
+
+#~ msgid "Importing in progress..."
+#~ msgstr "Import i fremgang..."
 
 #, fuzzy
 #~| msgid "KMail Archive Files (*.tar, *.tar.gz, *.tar.bz2, *.zip)"

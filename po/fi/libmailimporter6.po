@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-02 00:38+0000\n"
+"POT-Creation-Date: 2024-07-31 00:41+0000\n"
 "PO-Revision-Date: 2020-01-01 15:23+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -939,24 +939,18 @@ msgstr "Vastaanottaja:"
 msgid "Current:"
 msgstr "Nykyinen:"
 
-#. i18n: ectx: property (text), widget (QLabel, textStatus)
-#: mailimporter/ui/importmailswidget.ui:57
-#, kde-format
-msgid "Importing in progress..."
-msgstr "Tuonti käynnissä…"
-
 #. i18n: ectx: property (text), widget (QLabel, current)
 #. i18n: ectx: property (text), widget (QLabel, to)
 #. i18n: ectx: property (text), widget (QLabel, from)
-#: mailimporter/ui/importmailswidget.ui:76
-#: mailimporter/ui/importmailswidget.ui:92
-#: mailimporter/ui/importmailswidget.ui:118
+#: mailimporter/ui/importmailswidget.ui:73
+#: mailimporter/ui/importmailswidget.ui:89
+#: mailimporter/ui/importmailswidget.ui:115
 #, kde-format
 msgid "..."
 msgstr "…"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: mailimporter/ui/importmailswidget.ui:102
+#: mailimporter/ui/importmailswidget.ui:99
 #, kde-format
 msgid "Total:"
 msgstr "Yhteensä:"
@@ -1011,6 +1005,9 @@ msgstr "<b>Virhe:</b> Viestiä ei voitu lisätä kansioon %1. Syy: %2"
 #, kde-format
 msgid "Unable to retrieve folder for folder path %1."
 msgstr "Sijaintia %1 vastaavaa kansiota ei voida noutaa."
+
+#~ msgid "Importing in progress..."
+#~ msgstr "Tuonti käynnissä…"
 
 #~ msgid "KMail Archive Files (*.tar *.tar.gz *.tar.bz2 *.zip)"
 #~ msgstr "KMail-arkistotiedostot (*.tar *.tar.gz *.tar.bz2 *.zip)"

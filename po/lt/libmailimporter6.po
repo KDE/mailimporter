@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-02 00:38+0000\n"
+"POT-Creation-Date: 2024-07-31 00:41+0000\n"
 "PO-Revision-Date: 2011-10-11 11:28+0300\n"
 "Last-Translator: Liudas Ališauskas <liudas.alisauskas@gmail.com>\n"
 "Language-Team: Lithuanian <kde-i18n-doc@kde.org>\n"
@@ -999,24 +999,18 @@ msgstr "Kam:"
 msgid "Current:"
 msgstr "Dabartinis:"
 
-#. i18n: ectx: property (text), widget (QLabel, textStatus)
-#: mailimporter/ui/importmailswidget.ui:57
-#, kde-format
-msgid "Importing in progress..."
-msgstr "Vyksta importavimas..."
-
 #. i18n: ectx: property (text), widget (QLabel, current)
 #. i18n: ectx: property (text), widget (QLabel, to)
 #. i18n: ectx: property (text), widget (QLabel, from)
-#: mailimporter/ui/importmailswidget.ui:76
-#: mailimporter/ui/importmailswidget.ui:92
-#: mailimporter/ui/importmailswidget.ui:118
+#: mailimporter/ui/importmailswidget.ui:73
+#: mailimporter/ui/importmailswidget.ui:89
+#: mailimporter/ui/importmailswidget.ui:115
 #, kde-format
 msgid "..."
 msgstr "..."
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: mailimporter/ui/importmailswidget.ui:102
+#: mailimporter/ui/importmailswidget.ui:99
 #, kde-format
 msgid "Total:"
 msgstr "Viso:"
@@ -1074,6 +1068,9 @@ msgstr "<b>Klaida:</b> Nepavyko pridėti laiško į aplanką %1. Priežastis: %2
 #, kde-format
 msgid "Unable to retrieve folder for folder path %1."
 msgstr "Nepavyko gauti aplanko keliui %1."
+
+#~ msgid "Importing in progress..."
+#~ msgstr "Vyksta importavimas..."
 
 #, fuzzy
 #~| msgid "KMail Archive Files (*.tar, *.tar.gz, *.tar.bz2, *.zip)"

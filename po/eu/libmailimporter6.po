@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-02 00:38+0000\n"
+"POT-Creation-Date: 2024-07-31 00:41+0000\n"
 "PO-Revision-Date: 2022-09-08 08:04+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -938,24 +938,18 @@ msgstr "Nori:"
 msgid "Current:"
 msgstr "Unekoa:"
 
-#. i18n: ectx: property (text), widget (QLabel, textStatus)
-#: mailimporter/ui/importmailswidget.ui:57
-#, kde-format
-msgid "Importing in progress..."
-msgstr "Inportazioa martxan..."
-
 #. i18n: ectx: property (text), widget (QLabel, current)
 #. i18n: ectx: property (text), widget (QLabel, to)
 #. i18n: ectx: property (text), widget (QLabel, from)
-#: mailimporter/ui/importmailswidget.ui:76
-#: mailimporter/ui/importmailswidget.ui:92
-#: mailimporter/ui/importmailswidget.ui:118
+#: mailimporter/ui/importmailswidget.ui:73
+#: mailimporter/ui/importmailswidget.ui:89
+#: mailimporter/ui/importmailswidget.ui:115
 #, kde-format
 msgid "..."
 msgstr "..."
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: mailimporter/ui/importmailswidget.ui:102
+#: mailimporter/ui/importmailswidget.ui:99
 #, kde-format
 msgid "Total:"
 msgstr "Guztira:"
@@ -1012,6 +1006,9 @@ msgstr "<b>Errorea:</b> Ezin izan du mezua %1 karpetan gehitu. Arrazoia: %2"
 #, kde-format
 msgid "Unable to retrieve folder for folder path %1."
 msgstr "Ez da %1 karpeta-bide-izeneko karpeta eskuratzeko gai izan."
+
+#~ msgid "Importing in progress..."
+#~ msgstr "Inportazioa martxan..."
 
 #~ msgid "Import Outlook Emails"
 #~ msgstr "Inportatu Outlook postak"

@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-02 00:38+0000\n"
+"POT-Creation-Date: 2024-07-31 00:41+0000\n"
 "PO-Revision-Date: 2019-12-18 00:24+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
@@ -948,24 +948,18 @@ msgstr "Naar:"
 msgid "Current:"
 msgstr "Huidig:"
 
-#. i18n: ectx: property (text), widget (QLabel, textStatus)
-#: mailimporter/ui/importmailswidget.ui:57
-#, kde-format
-msgid "Importing in progress..."
-msgstr "Import wordt uitgevoerd..."
-
 #. i18n: ectx: property (text), widget (QLabel, current)
 #. i18n: ectx: property (text), widget (QLabel, to)
 #. i18n: ectx: property (text), widget (QLabel, from)
-#: mailimporter/ui/importmailswidget.ui:76
-#: mailimporter/ui/importmailswidget.ui:92
-#: mailimporter/ui/importmailswidget.ui:118
+#: mailimporter/ui/importmailswidget.ui:73
+#: mailimporter/ui/importmailswidget.ui:89
+#: mailimporter/ui/importmailswidget.ui:115
 #, kde-format
 msgid "..."
 msgstr "..."
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: mailimporter/ui/importmailswidget.ui:102
+#: mailimporter/ui/importmailswidget.ui:99
 #, kde-format
 msgid "Total:"
 msgstr "Totaal:"
@@ -1023,6 +1017,9 @@ msgstr "<b>Fout:</b> Kon bericht niet in map %1 toevoegen. Reden: %2"
 #, kde-format
 msgid "Unable to retrieve folder for folder path %1."
 msgstr "Kon map voor mappad %1 niet ophalen."
+
+#~ msgid "Importing in progress..."
+#~ msgstr "Import wordt uitgevoerd..."
 
 #~ msgid "KMail Archive Files (*.tar *.tar.gz *.tar.bz2 *.zip)"
 #~ msgstr "KMail archiefbestanden (*.tar *.tar.gz *.tar.bz2 *.zip)"

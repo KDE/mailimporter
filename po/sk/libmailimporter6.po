@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-02 00:38+0000\n"
+"POT-Creation-Date: 2024-07-31 00:41+0000\n"
 "PO-Revision-Date: 2022-04-09 19:27+0200\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -933,24 +933,18 @@ msgstr "Do:"
 msgid "Current:"
 msgstr "Aktuálne:"
 
-#. i18n: ectx: property (text), widget (QLabel, textStatus)
-#: mailimporter/ui/importmailswidget.ui:57
-#, kde-format
-msgid "Importing in progress..."
-msgstr "Importuje sa..."
-
 #. i18n: ectx: property (text), widget (QLabel, current)
 #. i18n: ectx: property (text), widget (QLabel, to)
 #. i18n: ectx: property (text), widget (QLabel, from)
-#: mailimporter/ui/importmailswidget.ui:76
-#: mailimporter/ui/importmailswidget.ui:92
-#: mailimporter/ui/importmailswidget.ui:118
+#: mailimporter/ui/importmailswidget.ui:73
+#: mailimporter/ui/importmailswidget.ui:89
+#: mailimporter/ui/importmailswidget.ui:115
 #, kde-format
 msgid "..."
 msgstr "..."
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: mailimporter/ui/importmailswidget.ui:102
+#: mailimporter/ui/importmailswidget.ui:99
 #, kde-format
 msgid "Total:"
 msgstr "Celkom:"
@@ -1007,6 +1001,9 @@ msgstr "<b>Chyba:</b> Nemôžem pridať správu do priečinka %1. Dôvod: %2"
 #, kde-format
 msgid "Unable to retrieve folder for folder path %1."
 msgstr "Nepodarilo sa získať priečinok pre cestu priečinka %1."
+
+#~ msgid "Importing in progress..."
+#~ msgstr "Importuje sa..."
 
 #~ msgid "KMail Archive Files (*.tar *.tar.gz *.tar.bz2 *.zip)"
 #~ msgstr "Súbory archívu KMail (*.tar, *.tar.gz, *.tar.bz2, *.zip)"

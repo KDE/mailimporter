@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-02 00:38+0000\n"
+"POT-Creation-Date: 2024-07-31 00:41+0000\n"
 "PO-Revision-Date: 2007-03-16 19:45+0100\n"
 "Last-Translator: Rinse de Vries <rinsedevries@home.nl>\n"
 "Language-Team:  <nl@li.org>\n"
@@ -1037,24 +1037,18 @@ msgstr "Oan:"
 msgid "Current:"
 msgstr "No:"
 
-#. i18n: ectx: property (text), widget (QLabel, textStatus)
-#: mailimporter/ui/importmailswidget.ui:57
-#, kde-format
-msgid "Importing in progress..."
-msgstr "Ymport wurdt útfierd..."
-
 #. i18n: ectx: property (text), widget (QLabel, current)
 #. i18n: ectx: property (text), widget (QLabel, to)
 #. i18n: ectx: property (text), widget (QLabel, from)
-#: mailimporter/ui/importmailswidget.ui:76
-#: mailimporter/ui/importmailswidget.ui:92
-#: mailimporter/ui/importmailswidget.ui:118
+#: mailimporter/ui/importmailswidget.ui:73
+#: mailimporter/ui/importmailswidget.ui:89
+#: mailimporter/ui/importmailswidget.ui:115
 #, kde-format
 msgid "..."
 msgstr "..."
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: mailimporter/ui/importmailswidget.ui:102
+#: mailimporter/ui/importmailswidget.ui:99
 #, kde-format
 msgid "Total:"
 msgstr "Totaal:"
@@ -1112,6 +1106,9 @@ msgstr "Fout by it tafoegjen fan berjocht oan de map %1 yn KMail"
 #, kde-format
 msgid "Unable to retrieve folder for folder path %1."
 msgstr ""
+
+#~ msgid "Importing in progress..."
+#~ msgstr "Ymport wurdt útfierd..."
 
 #~ msgid "Import Outlook Emails"
 #~ msgstr "Bejochten fan Outlook ymportearje"
