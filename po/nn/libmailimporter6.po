@@ -995,6 +995,3 @@ msgstr "<b>Feil:</b> Klarte ikkje leggja meldinga til i mappa «%1». Grunn: %2"
 #, kde-format
 msgid "Unable to retrieve folder for folder path %1."
 msgstr "Klarte ikkje henta mappe mappeadressa %1."
-
-#~ msgid "Importing in progress..."
-#~ msgstr "I gang med å importera …"
