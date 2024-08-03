@@ -964,6 +964,3 @@ msgstr "<b>错误：</b>无法将信件添加到文件夹 %1 中。原因：%2"
 #, kde-format
 msgid "Unable to retrieve folder for folder path %1."
 msgstr "无法在路径 %1 上定位到文件夹。"
-
-#~ msgid "Importing in progress..."
-#~ msgstr "导入进行中..."
