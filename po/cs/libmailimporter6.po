@@ -988,6 +988,3 @@ msgstr "<b>Chyba:</b> Nebylo možno přidat správu do složky %1. Důvod: %2"
 #, kde-format
 msgid "Unable to retrieve folder for folder path %1."
 msgstr ""
-
-#~ msgid "Importing in progress..."
-#~ msgstr "Probíhá import..."
