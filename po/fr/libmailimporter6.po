@@ -16,7 +16,7 @@
 # Sebastien Renard <Sebastien.Renard@digitalfox.org>, 2009.
 # Sébastien Renard <renard@kde.org>, 2010.
 # Joëlle Cornavin <jcorn@free.fr>, 2012, 2013.
-# Xavier Besnard <xavier.besnard@kde.org>, 2013.
+# SPDX-FileCopyrightText: 2013, 2024 Xavier Besnard <xavier.besnard@kde.org>
 # Maxime Corteel <mcorteel@gmail.com>, 2015.
 # Vincent Pinon <vpinon@kde.org>, 2017.
 # Simon Depiets <sdepiets@gmail.com>, 2019.
@@ -25,15 +25,15 @@ msgstr ""
 "Project-Id-Version: libmailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-02 00:38+0000\n"
-"PO-Revision-Date: 2019-11-11 07:40+0800\n"
-"Last-Translator: Simon Depiets <sdepiets@gmail.com>\n"
-"Language-Team: French <kde-francophone@kde.org>\n"
+"PO-Revision-Date: 2024-09-01 17:46+0200\n"
+"Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
+"Language-Team: French <French <kde-francophone@kde.org>>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 19.07.70\n"
+"X-Generator: Lokalize 23.08.5\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -654,7 +654,7 @@ msgid ""
 msgstr ""
 "<p><b>Filtre d'importation pour Outlook Express version 4 / 5 / 6</b></"
 "p><p>Vous devrez localiser le dossier dans lequel la boîte aux lettres a été "
-"stockée en cherchant des fichiers « .dbx » ou « .mbx » dans <ul><li><i>C:"
+"enregistrée en cherchant des fichiers « .dbx » ou « .mbx » dans <ul><li><i>C:"
 "\\Windows\\Application Data</i> sous Windows 9x</li><li><i>Documents and "
 "Settings</i> sous Windows 2000 et supérieur</li></ul></p><p><b>Remarque :</"
 "b>comme il est possible de recréer la structure des dossiers, les dossiers "
@@ -780,7 +780,7 @@ msgid ""
 "p>"
 msgstr ""
 "<p>Sélectionnez le dossier de courriers électroniques de Pegasus-Mail sur "
-"votre système (contenant des fichiers « *.CNM », « *.PMM » et « *.MBX »). "
+"votre système (contenant des fichiers « *.cnm », « *.pmm » et « *.mbx »). "
 "Sur de nombreux systèmes, ce dossier est situé dans « C:\\pmail\\mail » ou "
 "« C:\\pmail\\mail\\admin »</p><p><b>Remarque : </b>comme il est possible de "
 "re-créer la structure des dossiers, les dossiers seront mémorisés sous "
