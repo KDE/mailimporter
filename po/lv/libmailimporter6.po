@@ -3,50 +3,44 @@
 #
 # Viesturs Zarins <viesturs.zarins@mii.lu.lv>, 2008, 2010.
 # Viesturs Zariņš <viesturs.zarins@mii.lu.lv>, 2009.
+# SPDX-FileCopyrightText: 2024 Toms Trasuns <toms.trasuns@posteo.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-31 00:41+0000\n"
-"PO-Revision-Date: 2010-01-12 09:46+0200\n"
-"Last-Translator: Viesturs Zarins <viesturs.zarins@mii.lu.lv>\n"
-"Language-Team: Latvian <locale@laka.lv>\n"
+"PO-Revision-Date: 2024-08-30 16:43+0300\n"
+"Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
+"Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.0\n"
+"X-Generator: Lokalize 24.08.0\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
 
 #: mailimporter/filters/filterbalsa.cpp:22
-#, fuzzy, kde-format
-#| msgid "Import Evolution 1.x Local Mails and Folder Structure"
+#, kde-format
 msgid "Import Balsa Local Mails and Folder Structure"
-msgstr "Importēt Evolution 1.x lokālās vēstules un mapju struktūru"
+msgstr "Importēt „Balsa“ lokālās vēstules un mapju struktūru"
 
 #: mailimporter/filters/filterbalsa.cpp:24
-#, fuzzy, kde-format
-#| msgid ""
-#| "<p><b>Evolution 1.x import filter</b></p><p>Select the base directory of "
-#| "Evolution's mails (usually ~/evolution/local).</p><p>Since it is possible "
-#| "to recreate the folder structure, the folders will be stored under: "
-#| "\"Evolution-Import\".</p>"
+#, kde-format
 msgid ""
 "<p><b>Balsa import filter</b></p><p>Select the base directory of your local "
 "Balsa mailfolder (usually ~/mail/).</p><p>Since it is possible to recreate "
 "the folder structure, the folders will be stored under: \"Balsa-Import\".</p>"
 msgstr ""
-"<p><b>Evolution 1.x importēšanas filtrs</b></p><p>Norādiet Evolution pasta "
-"bāzes mapi (parasti ~/evolution/local).</p><p>Ir iespējams atjaunot mapju "
-"struktūru, tā tiks saglabāta jūsu lokālajā mapē zem: \"Evolution-Import\".</"
-"p>"
+"<p><b>„Balsa“ importēšanas filtrs</b></p><p>Norādiet „Balsa“ e-pasta pamata "
+"mapi (parasti ~/mail/).</p><p>Tā kā ir iespējams atjaunot mapju struktūru, "
+"mapes saglabās mapē: „Balsa-Import“.</p>"
 
 #: mailimporter/filters/filterbalsa.cpp:39
 #, kde-format
 msgctxt "name of balsa application"
 msgid "Balsa"
-msgstr ""
+msgstr "Balsa"
 
 #: mailimporter/filters/filterbalsa.cpp:89
 #: mailimporter/filters/filterevolution.cpp:60
@@ -62,7 +56,7 @@ msgstr ""
 #: mailimporter/filters/filterthunderbird.cpp:169
 #, kde-format
 msgid "No directory selected."
-msgstr "Nav izvēleta mape"
+msgstr "Nav atlasīta mape"
 
 #: mailimporter/filters/filterbalsa.cpp:98
 #: mailimporter/filters/filterevolution.cpp:69
@@ -76,7 +70,7 @@ msgstr "Nav izvēleta mape"
 #: mailimporter/filters/filterthunderbird.cpp:178
 #, kde-format
 msgid "No files found for import."
-msgstr "Nav atrasti faili, ko importēt"
+msgstr "nav atrastas importējamas datnes"
 
 #: mailimporter/filters/filterbalsa.cpp:109
 #: mailimporter/filters/filterevolution.cpp:83
@@ -94,7 +88,7 @@ msgstr "Nav atrasti faili, ko importēt"
 #: mailimporter/filters/filterthunderbird.cpp:210
 #, kde-format
 msgid "Finished importing emails from %1"
-msgstr "Beidza importēt vēstules no %1"
+msgstr "Beidza importēt vēstules no „%1“"
 
 #: mailimporter/filters/filterbalsa.cpp:112
 #: mailimporter/filters/filterevolution.cpp:205
@@ -109,9 +103,9 @@ msgstr "Beidza importēt vēstules no %1"
 #, kde-format
 msgid "1 duplicate message not imported"
 msgid_plural "%1 duplicate messages not imported"
-msgstr[0] "Netika importēta %1 atkārtojošās vēstule"
-msgstr[1] "Netika importētas %1 atkārtojošās vēstules"
-msgstr[2] "Netika importēts %1 atkārtojošos vēstuļu"
+msgstr[0] "Nav importēta %1 atkārtojošās vēstule"
+msgstr[1] "Nav importētas %1 atkārtojošās vēstules"
+msgstr[2] "Nav importēts %1 atkārtojošos vēstuļu"
 
 #: mailimporter/filters/filterbalsa.cpp:116
 #: mailimporter/filters/filterevolution_v2.cpp:132
@@ -128,14 +122,14 @@ msgstr[2] "Netika importēts %1 atkārtojošos vēstuļu"
 #: mailimporter/filters/filterthunderbird.cpp:216
 #, kde-format
 msgid "Finished import, canceled by user."
-msgstr "Importēšana pabeigta, lietotājs pārtrauca"
+msgstr "Importēšana beigta, pārtrauca lietotājs."
 
 #: mailimporter/filters/filterbalsa.cpp:163
 #: mailimporter/filters/filterevolution_v3.cpp:160
 #, kde-format
 msgctxt "define folder name where we import evolution mails"
 msgid "Evolution-Import"
-msgstr ""
+msgstr "Evolution-imports"
 
 #: mailimporter/filters/filterbalsa.cpp:187
 #: mailimporter/filters/filterevolution_v3.cpp:184
@@ -169,19 +163,12 @@ msgid "Could not import %1"
 msgstr "Neizdevās importēt %1"
 
 #: mailimporter/filters/filterclawsmail.cpp:22
-#, fuzzy, kde-format
-#| msgid "Import KMail Maildirs and Folder Structure"
+#, kde-format
 msgid "Import Claws-mail Maildirs and Folder Structure"
-msgstr "Importēt KMail maildirus un mapju struktūru"
+msgstr "Importēt „Claws Mail“ vēstuļu „Maildir“ un mapju struktūru"
 
 #: mailimporter/filters/filterclawsmail.cpp:25
-#, fuzzy, kde-format
-#| msgid ""
-#| "<p><b>Sylpheed import filter</b></p><p>Select the base directory of the "
-#| "Sylpheed mailfolder you want to import (usually: ~/Mail ).</p><p>Since it "
-#| "is possible to recreate the folder structure, the folders will be stored "
-#| "under: \"Sylpheed-Import\" in your local folder.</p><p>This filter also "
-#| "recreates the status of message, e.g. new or forwarded.</p>"
+#, kde-format
 msgid ""
 "<p><b>Claws-mail import filter</b></p><p>Select the base directory of the "
 "Claws-mail mailfolder you want to import (usually: ~/Mail ).</p><p>Since it "
@@ -189,35 +176,32 @@ msgid ""
 "under: \"ClawsMail-Import\" in your local folder.</p><p>This filter also "
 "recreates the status of message, e.g. new or forwarded.</p>"
 msgstr ""
-"<p><b>Sylpheed importēšanas filtrs</b></p><p>Norādiet importējamo Sylpheed "
-"pasta bāzes mapi (parasti: ~/Mail ).</p><p>Ir iespējams atjaunot mapju "
-"struktūru, tā tiks saglabāta jūsu lokālajā mapē zem: \"Sylpheed-Import\" in "
-"your local folder.</p><p>Šis filtrs arī atjauno vēstuļu statusu, t.i. jauna "
-"vai pārsūtīta.</p>"
+"<p><b>„Claws Mail“ importēšanas filtrs</b></p><p>Norādiet importējamo „Claws "
+"Mail“ e-pasta pamata mapi (parasti: ~/Mail ).</p><p>Tā kā ir iespējams "
+"atjaunot mapju struktūru, to saglabās lokālā mapē: „ClawsMail-imports“.</"
+"p><p>Šis filtrs arī atjauno vēstuļu statusu, proti, jauna vai pārsūtīta.</p>"
 
 #: mailimporter/filters/filterclawsmail.cpp:42
-#, fuzzy, kde-format
-#| msgid "KMailCVT Import Tool"
+#, kde-format
 msgctxt "name of clawsMail application"
 msgid "ClawsMail"
-msgstr "KMailCVT importēšanas rīks"
+msgstr "ClawsMail"
 
 #: mailimporter/filters/filterclawsmail.cpp:96
-#, fuzzy, kde-format
-#| msgid "KMailCVT Import Tool"
+#, kde-format
 msgctxt "define folder name where we will import clawsmail mails"
 msgid "ClawsMail-Import"
-msgstr "KMailCVT importēšanas rīks"
+msgstr "ClawsMail-imports"
 
 #: mailimporter/filters/filterevolution.cpp:17
 #, kde-format
 msgid "Import Evolution 1.x Local Mails and Folder Structure"
-msgstr "Importēt Evolution 1.x lokālās vēstules un mapju struktūru"
+msgstr "Importēt „Evolution 1.x“ lokālās vēstules un mapju struktūru"
 
 #: mailimporter/filters/filterevolution.cpp:18
 #, kde-format
 msgid "Simon MARTIN<br /><br />( Filter accelerated by Danny Kukawka )"
-msgstr ""
+msgstr "Simon MARTIN<br /><br />(filtru paātrināja Danny Kukawka)"
 
 #: mailimporter/filters/filterevolution.cpp:19
 #, kde-format
@@ -227,16 +211,15 @@ msgid ""
 "recreate the folder structure, the folders will be stored under: \"Evolution-"
 "Import\".</p>"
 msgstr ""
-"<p><b>Evolution 1.x importēšanas filtrs</b></p><p>Norādiet Evolution pasta "
-"bāzes mapi (parasti ~/evolution/local).</p><p>Ir iespējams atjaunot mapju "
-"struktūru, tā tiks saglabāta jūsu lokālajā mapē zem: \"Evolution-Import\".</"
-"p>"
+"<p><b>„Evolution 1.x“ importēšanas filtrs</b></p><p>Norādiet „Evolution“ e-"
+"pasta pamata mapi (parasti ~/evolution/local).</p><p>Tā kā ir iespējams "
+"atjaunot mapju struktūru, to saglabās mapē: „Evolution-imports.</p>"
 
 #: mailimporter/filters/filterevolution.cpp:35
 #, kde-format
 msgctxt "name of evolution application"
 msgid "Evolution"
-msgstr ""
+msgstr "Evolution"
 
 #: mailimporter/filters/filterevolution.cpp:132
 #: mailimporter/filters/filterevolution_v2.cpp:192
@@ -252,7 +235,7 @@ msgstr ""
 #: mailimporter/filters/filterthunderbird.cpp:278
 #, kde-format
 msgid "Unable to open %1, skipping"
-msgstr "Nevar atvērt failu '%1', izlaiž"
+msgstr "Nevar atvērt datni „%1“, izlaiž"
 
 #: mailimporter/filters/filterevolution.cpp:157
 #: mailimporter/filters/filtermailapp.cpp:75
@@ -261,12 +244,12 @@ msgstr "Nevar atvērt failu '%1', izlaiž"
 #: mailimporter/filters/filteropera.cpp:80
 #, kde-format
 msgid "Importing emails from %1..."
-msgstr "Importē vēstules no %1..."
+msgstr "Importē vēstules no „%1“..."
 
 #: mailimporter/filters/filterevolution_v2.cpp:22
 #, kde-format
 msgid "Import Evolution 2.x Local Mails and Folder Structure"
-msgstr "Importēt Evolution 2.x lokālo pastu un mapju struktūru"
+msgstr "Importēt „Evolution 2.x“ lokālo pastu un mapju struktūru"
 
 #: mailimporter/filters/filterevolution_v2.cpp:24
 #, kde-format
@@ -278,18 +261,18 @@ msgid ""
 "p><p>Since it is possible to recreate the folder structure, the folders will "
 "be stored under: \"Evolution-Import\".</p>"
 msgstr ""
-"<p><b>Evolution 2.x importēšanas filtrs</b></p><p>Norādiet jūsu Evolution "
-"lokālo pasta mapi (parasti ~/.evolution/mail/local/).</p><p><b>Piezīme:</b> "
-"Nekad nenorādiet mapi, kas <u>nesatur</u> mbox failus (piemēram, maildir "
-"mapi): ja darīsiet tā, jūs iegūsiet katru vēstuli atsevišķā mapē.</p><p>Ir "
-"iespējams atjaunot mapju struktūru, tā tiks saglabāta jūsu lokālajā mapē "
-"zem: \"Evolution-Import\".</p>"
+"<p><b>„Evolution 2.x“ importēšanas filtrs</b></p><p>Norādiet jūsu "
+"„Evolution“ lokālo pasta mapi (parasti ~/.evolution/mail/local/).</"
+"p><p><b>Piezīme:</b> nekad nenorādiet mapi, kas <u>nesatur</u> „mbox“ datnes "
+"(piemēram, „maildir“ mapi) — pretējā gadījumā iegūsiet daudz jaunu mapju.</"
+"p><p>Tā kā ir iespējams atjaunot mapju struktūru, tās saglabās mapē "
+"„Evolution-imports.</p>"
 
 #: mailimporter/filters/filterevolution_v2.cpp:42
 #, kde-format
 msgctxt "name of evolution application"
 msgid "Evolution (v2)"
-msgstr ""
+msgstr "Evolution (v2)"
 
 #: mailimporter/filters/filterevolution_v2.cpp:122
 #: mailimporter/filters/filterevolution_v2.cpp:161
@@ -297,53 +280,39 @@ msgstr ""
 #: mailimporter/filters/filterthunderbird.cpp:244
 #, kde-format
 msgid "Start import file %1..."
-msgstr "Sāk importēt failu %1..."
+msgstr "Sāk importēt datni „%1“..."
 
 #: mailimporter/filters/filterevolution_v3.cpp:22
-#, fuzzy, kde-format
-#| msgid "Import Evolution 2.x Local Mails and Folder Structure"
+#, kde-format
 msgid "Import Evolution 3.x Local Mails and Folder Structure"
-msgstr "Importēt Evolution 2.x lokālo pastu un mapju struktūru"
+msgstr "Importēt „Evolution 3.x“ lokālās vēstules un mapju struktūru"
 
 #: mailimporter/filters/filterevolution_v3.cpp:24
-#, fuzzy, kde-format
-#| msgid ""
-#| "<p><b>Evolution 1.x import filter</b></p><p>Select the base directory of "
-#| "Evolution's mails (usually ~/evolution/local).</p><p>Since it is possible "
-#| "to recreate the folder structure, the folders will be stored under: "
-#| "\"Evolution-Import\".</p>"
+#, kde-format
 msgid ""
 "<p><b>Evolution 3.x import filter</b></p><p>Select the base directory of "
 "your local Evolution mailfolder (usually ~/.local/share/evolution/mail/"
 "local/).</p><p>Since it is possible to recreate the folder structure, the "
 "folders will be stored under: \"Evolution-Import\".</p>"
 msgstr ""
-"<p><b>Evolution 1.x importēšanas filtrs</b></p><p>Norādiet Evolution pasta "
-"bāzes mapi (parasti ~/evolution/local).</p><p>Ir iespējams atjaunot mapju "
-"struktūru, tā tiks saglabāta jūsu lokālajā mapē zem: \"Evolution-Import\".</"
+"<p><b>„Evolution 3.x“ importēšanas filtrs</b></p><p>Norādiet „Evolution“ e-"
+"pasta pamata mapi (parasti ~/.local/share/evolution/mail/).</p><p>Tā kā ir "
+"iespējams atjaunot mapju struktūru, to saglabās mapē: „Evolution-imports“.</"
 "p>"
 
 #: mailimporter/filters/filterevolution_v3.cpp:39
 #, kde-format
 msgctxt "name of evolution application"
 msgid "Evolution (v3)"
-msgstr ""
+msgstr "Evolution (v3)"
 
 #: mailimporter/filters/filtericedove.cpp:14
-#, fuzzy, kde-format
-#| msgid "Import The Bat! Mails and Folder Structure"
+#, kde-format
 msgid "Import Icedove Mails and Folder Structure"
-msgstr "Importēt The Bat! vēstules un mapju struktūru"
+msgstr "Importēt „Icedove“ vēstules un mapju struktūru"
 
 #: mailimporter/filters/filtericedove.cpp:17
-#, fuzzy, kde-format
-#| msgid ""
-#| "<p><b>Thunderbird/Mozilla import filter</b></p><p>Select your base "
-#| "Thunderbird/Mozilla mailfolder (usually ~/.thunderbird/*.default/Mail/"
-#| "Local Folders/).</p><p><b>Note:</b> Never choose a Folder which <u>does "
-#| "not</u> contain mbox-files (for example, a maildir): if you do, you will "
-#| "get many new folders.</p><p>Since it is possible to recreate the folder "
-#| "structure, the folders will be stored under: \"Thunderbird-Import\".</p>"
+#, kde-format
 msgid ""
 "<p><b>Icedove import filter</b></p><p>Select your base Icedove mailfolder "
 "(usually ~/.icedove/*.default/Mail/Local Folders/).</p><p><b>Note:</b> Never "
@@ -352,35 +321,26 @@ msgid ""
 "possible to recreate the folder structure, the folders will be stored under: "
 "\"Icedove-Import\".</p>"
 msgstr ""
-"<p><b>Thunderbird/Mozilla importēšanas filtrs</b></p><p>Norādiet jūsu "
-"Thunderbird/Mozilla bāzes pasta mapi (parasti ~/.thunderbird/*.default/Mail/"
-"Local Folders/).</p><p><b>Piezīme:</b> Nekad nenorādiet mapi, kas "
-"<u>nesatur</u> mbox failus (piemēram, maildir mapi): ja tā darīsiet, jūs "
-"iegūsiet ļoti daudz jaunas mapes.</p><p>Ir iespējams atjaunot mapju "
-"struktūru, tā tiks saglabāta jūsu lokālajā mapē zem: \"Thunderbird-Import\"."
-"</p>"
+"<p><b>„Icedove“ importēšanas filtrs</b></p><p>Norādiet jūsu „Icedove“ e-"
+"pasta pamata mapi (parasti ~/.icedove/*.default/Mail/Local Folders/).</"
+"p><p><b>Piezīme:</b> nekad nenorādiet mapi, kas <u>nesatur</u> „mbox“ datnes "
+"(piemēram, „maildir“ mapi) — ja tā darīsiet, iegūsiet ļoti daudz jaunu mapju."
+"</p><p>Tā kā ir iespējams atjaunot mapju struktūru, tās saglabās mapē: "
+"„Icedove-Import“.</p>"
 
 #: mailimporter/filters/filtericedove.cpp:34
 #, kde-format
 msgctxt "name of icedove application"
 msgid "Icedove"
-msgstr ""
+msgstr "Icedove"
 
 #: mailimporter/filters/filterkmail_maildir.cpp:26
 #, kde-format
 msgid "Import KMail Maildirs and Folder Structure"
-msgstr "Importēt KMail maildirus un mapju struktūru"
+msgstr "Importēt „KMail“ vēstules un mapju struktūru"
 
 #: mailimporter/filters/filterkmail_maildir.cpp:28
-#, fuzzy, kde-format
-#| msgid ""
-#| "<p><b>KMail import filter</b></p><p>Select the base directory of the "
-#| "KMail mailfolder you want to import.</p><p><b>Note:</b> Never select your "
-#| "current local KMail maildir (usually ~/Mail or ~/.kde/share/apps/kmail/"
-#| "mail ): in this case, KMailCVT may become stuck in a continuous loop. </"
-#| "p><p>This filter does not import KMail mailfolders with mbox files.</"
-#| "p><p>Since it is possible to recreate the folder structure, the folders "
-#| "will be stored under: \"KMail-Import\" in your local folder.</p>"
+#, kde-format
 msgid ""
 "<p><b>KMail import filter</b></p><p>Select the base directory of the KMail "
 "mailfolder you want to import.</p><p><b>Note:</b> Never select your current "
@@ -390,23 +350,22 @@ msgid ""
 "possible to recreate the folder structure, the folders will be stored under: "
 "\"KMail-Import\" in your local folder.</p>"
 msgstr ""
-"<p><b>KMail importēšanas filtrs</b></p><p>Norādiet importējamo KMail pasta "
-"bāzes mapi.</p><p><b>Piezīme:</b> Nekad nenorādiet jūsu aktīvo lokālo KMail "
-"mapi (parasti  ~/Mail vai ~/.kde/share/apps/kmail/mail ): šajā gadījumā, "
-"KMailCVT iesprūdīs bezgalīgā ciklā. </p><p>Šis filtrs nemāk importēt KMail "
-"mapes ar mbox failiem.</p><p>Ir iespējams atjaunot mapju struktūru, tā tiks "
-"saglabāta jūsu lokālajā mapē zem:\"KMail-Import\".</p>"
+"<p><b>„KMail“ importēšanas filtrs</b></p><p>Norādiet importējamo „KMail“ "
+"vēstuļu pamata mapi.</p><p><b>Piezīme:</b> nekad nenorādiet jūsu aktīvo "
+"lokālo „KMail“ mapi (parasti „~/Mail“ vai „~/.kde/share/apps/kmail/mail“) — "
+"šādā gadījumā, „ImportWizard“ var iesprūst bezgalīgā ciklā. </p><p>Šis "
+"filtrs neimportē „KMail“ mapes ar „mbox“ datnēm.</p><p>Tā kā ir iespējams "
+"atjaunot mapju struktūru, tās saglabās lokālajā mapē: „KMail-Import“.</p>"
 
 #: mailimporter/filters/filterkmail_maildir.cpp:176
-#, fuzzy, kde-format
-#| msgid "Could not import %1"
+#, kde-format
 msgid "Could not import %1, duplicated message"
-msgstr "Neizdevās importēt %1"
+msgstr "Neizdevās importēt „%1“, vēstule dublējas"
 
 #: mailimporter/filters/filterkmailarchive.cpp:31
 #, kde-format
 msgid "Import KMail Archive File"
-msgstr "Importēt KMail arhīva failu"
+msgstr "Importēt „KMail“ arhīva datni"
 
 #: mailimporter/filters/filterkmailarchive.cpp:33
 #, kde-format
@@ -415,98 +374,87 @@ msgid ""
 "archives files previously exported by KMail.</p><p>Archive files contain a "
 "complete folder subtree compressed into a single file.</p>"
 msgstr ""
-"<p><b>KMail arhīva importēšanas filtrs</b></p><p>Šis filtrs importēs arhīva "
-"failus, kas  eksportēti no KMail.</p><p>Arhīva faili satur pilnu mapju "
-"apakškoku. saspiestu vienā failā.</p>"
+"<p><b>„KMail“ arhīva datnes importēšanas filtrs</b></p><p>Šis filtrs "
+"importēs arhīva datnes, kas ir iepriekš eksportētas no „KMail“.</p><p>Arhīva "
+"datnes satur pilnu mapju apakškoku — saspiestu vienā datnē.</p>"
 
 #: mailimporter/filters/filterkmailarchive.cpp:71
-#, fuzzy, kde-format
-#| msgid "Import folder %1..."
+#, kde-format
 msgid "Importing folder '%1'..."
-msgstr "Importēt mapi %1..."
+msgstr "Importēt mapi „%1“..."
 
 #: mailimporter/filters/filterkmailarchive.cpp:97
 #, kde-format
 msgid "Unexpected subfolder %1 in folder %2."
-msgstr ""
+msgstr "Mapē „%2“ atrasta neparedzēta apakšmape „%1“."
 
 #: mailimporter/filters/filterkmailarchive.cpp:101
 #, kde-format
 msgid "No subfolder named 'cur' in folder %1."
-msgstr ""
+msgstr "Mapē „%1“ nav apakšmapes ar nosaukumu „cur“."
 
 #: mailimporter/filters/filterkmailarchive.cpp:125
 #, kde-format
 msgid "Unexpected subdirectory named '%1'."
-msgstr ""
+msgstr "Neparedzēta apakšmape ar nosaukumu „%1“."
 
 #: mailimporter/filters/filterkmailarchive.cpp:156
-#, fuzzy, kde-format
-#| msgid "Import KMail Archive File"
+#, kde-format
 msgid "Select KMail Archive File to Import"
-msgstr "Importēt KMail arhīva failu"
+msgstr "Atlasīt importējamo „KMail“ arhīva datni"
 
 #: mailimporter/filters/filterkmailarchive.cpp:158
-#, fuzzy, kde-format
-#| msgid "Import KMail Archive File"
+#, kde-format
 msgid "KMail Archive Files "
-msgstr "Importēt KMail arhīva failu"
+msgstr "„KMail“ arhīva datnes "
 
 #: mailimporter/filters/filterkmailarchive.cpp:160
-#, fuzzy, kde-format
-#| msgid "Import KMail Archive File"
+#, kde-format
 msgid "Please select an archive file that should be imported."
-msgstr "Importēt KMail arhīva failu"
+msgstr "Atlasiet importējamo arhīva datni."
 
 #: mailimporter/filters/filterkmailarchive.cpp:169
-#, fuzzy, kde-format
-#| msgid "No directory selected."
+#, kde-format
 msgid "No archive selected."
-msgstr "Nav izvēleta mape"
+msgstr "Neviens arhīvs nav atlasīts."
 
 #: mailimporter/filters/filterkmailarchive.cpp:183
 #, kde-format
 msgid "The file '%1' does not appear to be a valid archive."
-msgstr ""
+msgstr "Datne „%1“ neizskatās pēc derīga arhīva."
 
 #: mailimporter/filters/filterkmailarchive.cpp:188
-#, fuzzy, kde-format
-#| msgid "Unable to open mailbox %1"
+#, kde-format
 msgid "Unable to open archive file '%1'"
-msgstr "Nevar atvērt pastkasti %1"
+msgstr "Neizdodas atvērt arhīva datni „%1“"
 
 #: mailimporter/filters/filterkmailarchive.cpp:193
-#, fuzzy, kde-format
-#| msgid "Counting files..."
+#, kde-format
 msgid "Counting files in archive..."
-msgstr "Skaita failus..."
+msgstr "Skaita datnes arhīvā..."
 
 #: mailimporter/filters/filterkmailarchive.cpp:199
-#, fuzzy, kde-format
-#| msgid "Importing new mail files..."
+#, kde-format
 msgid "Importing the archive file '%1' into the folder '%2' succeeded."
-msgstr "Importē jaunos pasta failus..."
+msgstr "Arhīva datnes „%1“ importēšana mapē „%2“ izdevās."
 
 #: mailimporter/filters/filterkmailarchive.cpp:200
-#, fuzzy, kde-format
-#| msgid "1 duplicate message not imported"
-#| msgid_plural "%1 duplicate messages not imported"
+#, kde-format
 msgid "1 message was imported."
 msgid_plural "%1 messages were imported."
-msgstr[0] "Netika importēta %1 atkārtojošās vēstule"
-msgstr[1] "Netika importētas %1 atkārtojošās vēstules"
-msgstr[2] "Netika importēts %1 atkārtojošos vēstuļu"
+msgstr[0] "Importēta %1 vēstule."
+msgstr[1] "Importētas %1 vēstules."
+msgstr[2] "Importēts %1 vēstuļu."
 
 #: mailimporter/filters/filterkmailarchive.cpp:202
-#, fuzzy, kde-format
-#| msgid "Importing new mail files..."
+#, kde-format
 msgid "Importing the archive failed."
-msgstr "Importē jaunos pasta failus..."
+msgstr "Arhīva importēšana neizdevās."
 
 #: mailimporter/filters/filterlnotes.cpp:30
 #, kde-format
 msgid "Import Lotus Notes Emails"
-msgstr "Importēt Lotus Notes pastu"
+msgstr "Importēt „Lotus Notes“ e-pasta vēstules"
 
 #: mailimporter/filters/filterlnotes.cpp:32
 #, kde-format
@@ -519,38 +467,37 @@ msgid ""
 "will be stored in subfolders named by the files they came from under: "
 "\"LNotes-Import\" in your local folder.</p>"
 msgstr ""
-"<p><b>Lotus Notes Structured Text pasta importēšanas filtrs</b></p><p>Šis "
-"filtrs importēs Structure Text failus no eksportēta Lotus Notes e-pasta "
-"iekšā KMail. Izmantojiet to, lai importētu vēstules no Lotus vai citām "
-"programmām, kas izmanto Lotus Notes' Structured Text formātu.</"
-"p><p><b>Piezīme:</b> Ir iespējams atjaunot mapju struktūru, tā tiks "
-"saglabāta jūsu lokālajā mapē zem:\"LNotes-Import\" apakšmapēs pēc failu "
-"nosaukumiem.</p>"
+"<p><b>„Lotus Notes Structured Text“ pasta importēšanas filtrs</b></p><p>Šis "
+"filtrs uz „KMail“ importēs „Structure Text“ datnes no eksportēta „Lotus "
+"Notes“ e-pasta klienta. Izmantojiet to, lai importētu vēstules no „Lotus“ "
+"vai citām programmām, kas izmanto „Lotus Notes Structured Text“ formātu.</"
+"p><p><b>Piezīme:</b> tā kā ir iespējams atjaunot mapju struktūru, importētās "
+"vēstules saglabās apakšmapēs pēc datņu nosaukumiem mapē: „LNotes-imports“.</"
+"p>"
 
 #: mailimporter/filters/filterlnotes.cpp:52
 #, kde-format
 msgid "All Files (*)"
-msgstr "Visi faili (*)"
+msgstr "Visas datnes (*)"
 
 #: mailimporter/filters/filterlnotes.cpp:54
 #: mailimporter/filters/filtermailapp.cpp:47
 #: mailimporter/filters/filtermailmangzip.cpp:42
 #: mailimporter/filters/filtermbox.cpp:45
-#, fuzzy, kde-format
-#| msgid "No directory selected."
+#, kde-format
 msgid "No files selected."
-msgstr "Nav izvēleta mape"
+msgstr "Nav izvēlētas datnes."
 
 #: mailimporter/filters/filterlnotes.cpp:66
 #, kde-format
 msgid "Importing emails from %1"
-msgstr "Importē vēstules no %1"
+msgstr "Importē vēstules no „%1“"
 
 #: mailimporter/filters/filterlnotes.cpp:100
 #, kde-format
 msgctxt "Define folder name where we import lotus note mails"
 msgid "LNotes-Import"
-msgstr ""
+msgstr "LNotes-imports"
 
 #: mailimporter/filters/filterlnotes.cpp:110
 #: mailimporter/filters/filterpmail.cpp:267
@@ -561,12 +508,12 @@ msgstr "Vēstule %1"
 #: mailimporter/filters/filtermailapp.cpp:28
 #, kde-format
 msgid "Import From OS X Mail"
-msgstr "Importēt no OS X pasta"
+msgstr "Importēt no „OS X Mail“"
 
 #: mailimporter/filters/filtermailapp.cpp:29
 #, kde-format
 msgid "Chris Howells<br /><br />Filter accelerated by Danny Kukawka )"
-msgstr ""
+msgstr "Chris Howells<br /><br />(filtru paātrināja Danny Kukawka )"
 
 #: mailimporter/filters/filtermailapp.cpp:30
 #, kde-format
@@ -574,8 +521,8 @@ msgid ""
 "<p><b>OS X Mail Import Filter</b></p><p>This filter imports e-mails from the "
 "Mail client in Apple Mac OS X.</p>"
 msgstr ""
-"<p><b>OS X pasta importēšanas filtrs</b></p><p>Šis fitrs importē vēstules no "
-"Apple Mac OS X pasta klienta.</p>"
+"<p><b>„OS X Mail“ importēšanas filtrs</b></p><p>Šis filtrs importē vēstules "
+"no „Apple Mac OS X“ pasta klienta.</p>"
 
 #: mailimporter/filters/filtermailapp.cpp:126
 #: mailimporter/filters/filtermailmangzip.cpp:136
@@ -583,56 +530,47 @@ msgstr ""
 #, kde-format
 msgid "1 duplicate message not imported to folder %2 in KMail"
 msgid_plural "%1 duplicate messages not imported to folder %2 in KMail"
-msgstr[0] "Netika importēta %1 atkārtojošās vēstule KMail mapē %2"
-msgstr[1] "Netika importētas %1 atkārtojošās vēstules KMail mapē %2"
-msgstr[2] "Netika importēts %1 atkārtojošos vēstuļu KMail mapē %2"
+msgstr[0] "„KMail“ mapē „%2“ neimportēja %1 atkārtojošos vēstuli"
+msgstr[1] "„KMail“ mapē „%2“ neimportēja %1 atkārtojošas vēstules"
+msgstr[2] "„KMail“ mapē „%2“ neimportēja %1 atkārtojošu vēstuļu"
 
 #: mailimporter/filters/filtermailmangzip.cpp:19
-#, fuzzy, kde-format
-#| msgid "Import KMail Archive File"
+#, kde-format
 msgid "Import mailman gzip Files"
-msgstr "Importēt KMail arhīva failu"
+msgstr "Importēt „mailman“ „gzip“ datnes"
 
 #: mailimporter/filters/filtermailmangzip.cpp:21
-#, fuzzy, kde-format
-#| msgid ""
-#| "<p><b>mbox import filter</b></p><p>This filter will import mbox files "
-#| "into KMail. Use this filter if you want to import mails from Ximian "
-#| "Evolution or other mailers that use this traditional UNIX format.</"
-#| "p><p><b>Note:</b> Emails will be imported into folders named after the "
-#| "file they came from, prefixed with MBOX-</p>"
+#, kde-format
 msgid ""
 "<p><b>mailman gzip import filter</b></p><p>This filter will import mailman "
 "gzipped files into KMail.</p><p><b>Note:</b> Emails will be imported into "
 "folders named after the file they came from, prefixed with MAILMAN-</p>"
 msgstr ""
-"<p><b>mbox importēšanas filtrs</b></p><p>Šis filtrs importēs mbox failus "
-"iekš KMail. Izmantojiet to, ja vēlaties importēt pastu no Ximian Evolution "
-"vai citām pasta programmām, kas izmanto tradicionālo UNIX formātu.</"
-"p><p><b>Piezīme:</b> vēstules tiks importēti mapēs, kas nosautas atbilstoši "
-"failiem, no kā tās ņemtas, priekšā pieliekot MBOX-</p>"
+"<p><b>„mailman“ „gzip“ importēšanas filtrs</b></p><p>Šis filtrs „KMail“ "
+"programmā importēs „mailman“ datnes „gzip“ formātā.</p><p><b>Piezīme:</b> "
+"vēstules importēs mapēs, kuras nosauks atbilstoši to datņu nosaukumiem, "
+"priekšā pieliekot „MAILMAN-“</p>"
 
 #: mailimporter/filters/filtermailmangzip.cpp:35
 #, kde-format
 msgid "gzip Files"
-msgstr ""
+msgstr "„gzip“ datnes"
 
 #: mailimporter/filters/filtermailmangzip.cpp:55
-#, fuzzy, kde-format
-#| msgid "Unable to open mailbox %1"
+#, kde-format
 msgid "Unable to open archive file '%1', skipping"
-msgstr "Nevar atvērt pastkasti %1"
+msgstr "Nevar atvērt arhīva datni „%1“, izlaiž"
 
 #: mailimporter/filters/filtermbox.cpp:20
 #, kde-format
 msgid "Import mbox Files (UNIX, Evolution)"
-msgstr "Importēt mbox failus (UNIX, Evolution)"
+msgstr "Importēt „mbox“ datnes (UNIX, „Evolution“)"
 
 #: mailimporter/filters/filtermbox.cpp:21
 #: mailimporter/filters/filterplain.cpp:19
 #, kde-format
 msgid "Laurence Anderson <p>( Filter accelerated by Danny Kukawka )</p>"
-msgstr ""
+msgstr "Laurence Anderson <p>(filtru paātrināja Danny Kukawka)</p>"
 
 #: mailimporter/filters/filtermbox.cpp:22
 #, kde-format
@@ -643,27 +581,26 @@ msgid ""
 "Emails will be imported into folders named after the file they came from, "
 "prefixed with MBOX-</p>"
 msgstr ""
-"<p><b>mbox importēšanas filtrs</b></p><p>Šis filtrs importēs mbox failus "
-"iekš KMail. Izmantojiet to, ja vēlaties importēt pastu no Ximian Evolution "
-"vai citām pasta programmām, kas izmanto tradicionālo UNIX formātu.</"
-"p><p><b>Piezīme:</b> vēstules tiks importēti mapēs, kas nosautas atbilstoši "
-"failiem, no kā tās ņemtas, priekšā pieliekot MBOX-</p>"
+"<p><b>„mbox“ importēšanas filtrs</b></p><p>Šis filtrs „KMail“ programmā "
+"importēs „mbox“ datnes. Izmantojiet to, ja vēlaties importēt pastu no "
+"„Ximian Evolution“ vai citām pasta programmām, kas izmanto tradicionālo UNIX "
+"formātu.</p><p><b>Piezīme:</b> vēstules importēs mapēs, ko nosauks "
+"atbilstoši to datņu nosaukumiem, priekšā pieliekot „MBOX-“</p>"
 
 #: mailimporter/filters/filtermbox.cpp:38
-#, fuzzy, kde-format
-#| msgid "mbox Files (*)"
+#, kde-format
 msgid "mbox Files"
-msgstr "mbox faili (*)"
+msgstr "„mbox“ datnes (*)"
 
 #: mailimporter/filters/filteroe.cpp:32
 #, kde-format
 msgid "Import Outlook Express Emails"
-msgstr "Importēt Outlook Express pastu"
+msgstr "Importēt „Outlook Express“ pastu"
 
 #: mailimporter/filters/filteroe.cpp:33
 #, kde-format
 msgid "Laurence Anderson <br>( Filter enhanced by Danny Kukawka )</p>"
-msgstr ""
+msgstr "Laurence Anderson <br>(filtru uzlaboja Danny Kukawka)</p>"
 
 #: mailimporter/filters/filteroe.cpp:34
 #, kde-format
@@ -676,17 +613,18 @@ msgid ""
 "folders from Outlook Express 5 and 6 will be stored under: \"OE-Import\" in "
 "your local folder.</p>"
 msgstr ""
-"<p><b>Outlook Express 4/5/6 importēšanas filtrs</b></p><p>Jums būs jatrod "
-"mape, kurā atrodas pasts, meklējot '.dbx' vai '.mbx' failus iekš "
-"<ul><li><i>C:\\Windows\\Application Data</i> iekš Windows 9x</"
-"li><li><i>Documents and Settings</i>  iekš Windows 2000 vai jaunāka</li></"
-"ul></p><p><b>Piezīme:</b>Ir iespējams atjaunot mapju struktūru, tā tiks "
-"saglabāta jūsu lokālajā mapē zem: \"OE-Import\".</p>"
+"<p><b>„Outlook Express 4/5/6“ importēšanas filtrs</b></p><p>Jums būs jāatrod "
+"mape, kurā atrodas pasts, meklējot „.dbx“ vai „.mbx“ datnes mapē "
+"<ul><li><i>C:\\Windows\\Application Data</i>, ja izmantojat „Windows 9x“</"
+"li><li><i>Documents and Settings</i>, ja izmantojat „Windows 2000“ vai "
+"jaunāku versiju</li></ul></p><p><b>Piezīme:</b>tā kā ir iespējams atjaunot "
+"mapju struktūru, to no „Outlook Express“ 5 un 6 saglabās mapē: „OE-Import“.</"
+"p>"
 
 #: mailimporter/filters/filteroe.cpp:66
 #, kde-format
 msgid "No Outlook Express mailboxes found in directory %1."
-msgstr "Mapē %1 nav atrasta neviena Outlook Express pastkaste."
+msgstr "Mapē „%1“ nav atrasta neviena „Outlook Express“ pastkaste."
 
 #: mailimporter/filters/filteroe.cpp:82
 #, kde-format
@@ -696,32 +634,32 @@ msgstr "Importēt mapju struktūru..."
 #: mailimporter/filters/filteroe.cpp:106
 #, kde-format
 msgid "Finished importing Outlook Express emails"
-msgstr "Pabeigta Outlook Express pasta importēšana"
+msgstr "Pabeigta „Outlook Express“ pasta importēšana"
 
 #: mailimporter/filters/filteroe.cpp:126
 #, kde-format
 msgid "Unable to open mailbox %1"
-msgstr "Nevar atvērt pastkasti %1"
+msgstr "Nevar atvērt pastkasti „%1“"
 
 #: mailimporter/filters/filteroe.cpp:138
 #, kde-format
 msgid "Importing OE4 Mailbox %1"
-msgstr "Importē OE4 pastasti %1"
+msgstr "Importē OE4 pastkasti „%1“"
 
 #: mailimporter/filters/filteroe.cpp:155
 #, kde-format
 msgid "Importing OE5+ Mailbox %1"
-msgstr "Importē OE5+ pastkasti %1"
+msgstr "Importē OE5+ pastkasti „%1“"
 
 #: mailimporter/filters/filteroe.cpp:161
 #, kde-format
 msgid "Importing OE5+ Folder file %1"
-msgstr "Importē OE5+ mapes failu %1"
+msgstr "Importē OE5+ mapes datni „%1“"
 
 #: mailimporter/filters/filteropera.cpp:19
 #, kde-format
 msgid "Import Opera Emails"
-msgstr "Importēt Opera pastu"
+msgstr "Importēt „Opera“ e-pasta vēstules"
 
 #: mailimporter/filters/filteropera.cpp:21
 #, kde-format
@@ -733,35 +671,36 @@ msgid ""
 "imported into a folder named after the account they came from, prefixed with "
 "OPERA-</p>"
 msgstr ""
-"<p><b>Opera e-pasta importēšanas filtrs</b></p><p>Šis filtrs importē pastu "
-"no Opera pasta mapes. Izmantojiet šo, lai importētu visas vēstules no Opera "
-"pasta mapes.</p><p>Norādiet konta mapi (parasti ~/.opera/mail/store/"
-"account*).</p><p><b>Piezīme:</b> Vēstules tiks importētas mapē, kas "
-"nosauktas atbilstoši kontam no kura tās ņemtas, priekšā pieliekot OPERA-</p>"
+"<p><b>„Opera“ e-pasta importēšanas filtrs</b></p><p>Šis filtrs importē pastu "
+"no „Opera“ pasta mapes. Izmantojiet šo filtru, lai importētu visas vēstules "
+"no „Opera“ konta pasta mapes.</p><p>Norādiet konta mapi (parasti ~/.opera/"
+"mail/store/account*).</p><p><b>Piezīme:</b> vēstules importēs mapē, kas "
+"nosaukta atbilstoši kontam, no kura tās ņemtas, priekšā pieliekot „OPERA-“</"
+"p>"
 
 #: mailimporter/filters/filteropera.cpp:38
 #, kde-format
 msgctxt "name of opera application"
 msgid "Opera"
-msgstr ""
+msgstr "Opera"
 
 #: mailimporter/filters/filteropera.cpp:72
 #: mailimporter/filters/filterplain.cpp:55
 #, kde-format
 msgid "Importing new mail files..."
-msgstr "Importē jaunos pasta failus..."
+msgstr "Importē jaunas pasta datnes..."
 
 #: mailimporter/filters/filteropera.cpp:190
 #: mailimporter/filters/filterplain.cpp:50
 #: mailimporter/filters/filterpmail.cpp:51
 #, kde-format
 msgid "Counting files..."
-msgstr "Skaita failus..."
+msgstr "Skaita datnes..."
 
 #: mailimporter/filters/filterplain.cpp:18
 #, kde-format
 msgid "Import Plain Text Emails"
-msgstr "Importēt vienkārša teksta e-pastus"
+msgstr "Importēt vienkārša teksta e-pasta vēstules"
 
 #: mailimporter/filters/filterplain.cpp:20
 #, kde-format
@@ -771,19 +710,20 @@ msgid ""
 "prefixed by PLAIN-</p><p>This filter will import all .msg, .eml and .txt "
 "emails.</p>"
 msgstr ""
-"<p>Norādiet mapi, kas satur jūsu sistēmas e-pastu. E-pasti parasti atrodas "
-"tāda paša nosaukuma mapē kādā tie ir programmā, priekšā var būt pielikts "
-"PLAIN-</p><p>Šis filtrs importēs visus .msg, .eml un .txt failus.</p>"
+"<p>Norādiet mapi, kas satur jūsu sistēmas e-pasta vēstules. E-pasta vēstules "
+"parasti atrodas tāda paša nosaukuma mapē, kādā tās ir programmā, bet priekšā "
+"var būt pielikts „PLAIN-“</p><p>Šis filtrs importēs visas „.msg“, „.eml“ un "
+"„.txt“ e-pasta vēstules.</p>"
 
 #: mailimporter/filters/filterpmail.cpp:22
 #, kde-format
 msgid "Import Folders From Pegasus-Mail"
-msgstr "Importēt mapes no Pegusus-Mail"
+msgstr "Importēt mapes no „Pegusus-Mail“"
 
 #: mailimporter/filters/filterpmail.cpp:23
 #, kde-format
 msgid "Holger Schurig <br>( rewritten by Danny Kukawka )"
-msgstr ""
+msgstr "Holger Schurig <br>(pārrakstīja Danny Kukawka)"
 
 #: mailimporter/filters/filterpmail.cpp:24
 #, kde-format
@@ -794,10 +734,10 @@ msgid ""
 "folder structure, the folders will be stored under: \"PegasusMail-Import\".</"
 "p>"
 msgstr ""
-"<p>Norādiet jūsu sistēmas Pegasus pasta mapi (kas satur *.CNM, *.PMM un *."
-"MBX failus). Daudzās sistēmās tā atrodas  C:\\pmail\\mail vai C:\\pmail\\mail"
-"\\admin</p><p><b>Piezīme:</b> Ir iespējams atjaunot mapju struktūru, tā tiks "
-"saglabāta jūsu lokālajā mapē zem: \"PegasusMail-Import\".</p>"
+"<p>Norādiet jūsu sistēmas „Pegasus“ e-pasta mapi (kas satur *.CNM, *.PMM un "
+"*.MBX datnes). Daudzās sistēmās tā atrodas „C:\\pmail\\mail“ vai „C:\\pmail"
+"\\mail\\admin“</p><p><b>Piezīme:</b> Tā kā ir iespējams atjaunot mapju "
+"struktūru, to saglabās mapē: „PegasusMail-imports“.</p>"
 
 #: mailimporter/filters/filterpmail.cpp:62
 #, kde-format
@@ -810,29 +750,29 @@ msgstr ""
 #: mailimporter/filters/filterpmail.cpp:65
 #, kde-format
 msgid "Importing new mail files ('.cnm')..."
-msgstr "Importē jaunos pasta failus ('.cnm') ..."
+msgstr "Importē jaunās e-pasta datnes („.cnm“)..."
 
 #: mailimporter/filters/filterpmail.cpp:67
 #, kde-format
 msgid "Importing mail folders ('.pmm')..."
-msgstr "Importē pasta mapes ('.pmm') ..."
+msgstr "Importē e-pasta mapes („.pmm“)..."
 
 #: mailimporter/filters/filterpmail.cpp:69
 #, kde-format
 msgid "Importing 'UNIX' mail folders ('.mbx')..."
-msgstr "Importē 'UNIX' pasta mapes ('.mbx') ..."
+msgstr "Importē UNIX e-pasta mapes („.mbx“)..."
 
 #: mailimporter/filters/filterpmail.cpp:159
 #, kde-format
 msgctxt "define folder name when we will import pegasus mail"
 msgid "PegasusMail-Import"
-msgstr ""
+msgstr "PegasusMail-imports"
 
 #: mailimporter/filters/filterpmail.cpp:166
 #: mailimporter/filters/filterpmail.cpp:245
 #, kde-format
 msgid "Importing %1"
-msgstr "Importē %1"
+msgstr "Importē „%1“"
 
 #: mailimporter/filters/filterpmail.cpp:278
 #, kde-format
@@ -840,20 +780,12 @@ msgid "Parsing the folder structure..."
 msgstr "Analizē mapju struktūru..."
 
 #: mailimporter/filters/filterseamonkey.cpp:14
-#, fuzzy, kde-format
-#| msgid "Import The Bat! Mails and Folder Structure"
+#, kde-format
 msgid "Import SeaMonkey Mails and Folder Structure"
-msgstr "Importēt The Bat! vēstules un mapju struktūru"
+msgstr "Importēt „SeaMonkey“ vēstules un mapju struktūru"
 
 #: mailimporter/filters/filterseamonkey.cpp:17
-#, fuzzy, kde-format
-#| msgid ""
-#| "<p><b>Thunderbird/Mozilla import filter</b></p><p>Select your base "
-#| "Thunderbird/Mozilla mailfolder (usually ~/.thunderbird/*.default/Mail/"
-#| "Local Folders/).</p><p><b>Note:</b> Never choose a Folder which <u>does "
-#| "not</u> contain mbox-files (for example, a maildir): if you do, you will "
-#| "get many new folders.</p><p>Since it is possible to recreate the folder "
-#| "structure, the folders will be stored under: \"Thunderbird-Import\".</p>"
+#, kde-format
 msgid ""
 "<p><b>SeaMonkey import filter</b></p><p>Select your base SeaMonkey "
 "mailfolder (usually ~/.icedove/*.default/Mail/Local Folders/).</p><p><b>Note:"
@@ -862,18 +794,17 @@ msgid ""
 "it is possible to recreate the folder structure, the folders will be stored "
 "under: \"SeaMonkey-Import\".</p>"
 msgstr ""
-"<p><b>Thunderbird/Mozilla importēšanas filtrs</b></p><p>Norādiet jūsu "
-"Thunderbird/Mozilla bāzes pasta mapi (parasti ~/.thunderbird/*.default/Mail/"
-"Local Folders/).</p><p><b>Piezīme:</b> Nekad nenorādiet mapi, kas "
-"<u>nesatur</u> mbox failus (piemēram, maildir mapi): ja tā darīsiet, jūs "
-"iegūsiet ļoti daudz jaunas mapes.</p><p>Ir iespējams atjaunot mapju "
-"struktūru, tā tiks saglabāta jūsu lokālajā mapē zem: \"Thunderbird-Import\"."
-"</p>"
+"<p><b>„SeaMonkey“ importēšanas filtrs</b></p><p>Norādiet jūsu „SeaMonkey“ "
+"pamata pasta mapi (parasti ~/.icedove/*.default/Mail/Local Folders/).</"
+"p><p><b>Piezīme:</b> nekad nenorādiet mapi, kas <u>nesatur</u> „mbox“ datnes "
+"(piemēram, „maildir“ mapi) — ja tā darīsiet, iegūsiet ļoti daudz jaunu mapju."
+"</p><p>Tā kā ir iespējams atjaunot mapju struktūru, tās saglabās mapē: "
+"„SeaMonkey-Import“.</p>"
 
 #: mailimporter/filters/filtersylpheed.cpp:28
 #, kde-format
 msgid "Import Sylpheed Maildirs and Folder Structure"
-msgstr "Importēt Sylpheed pastu un mapju struktūru"
+msgstr "Importēt „Sylpheed“ pastu un mapju struktūru"
 
 #: mailimporter/filters/filtersylpheed.cpp:30
 #, kde-format
@@ -884,28 +815,27 @@ msgid ""
 "\"Sylpheed-Import\" in your local folder.</p><p>This filter also recreates "
 "the status of message, e.g. new or forwarded.</p>"
 msgstr ""
-"<p><b>Sylpheed importēšanas filtrs</b></p><p>Norādiet importējamo Sylpheed "
-"pasta bāzes mapi (parasti: ~/Mail ).</p><p>Ir iespējams atjaunot mapju "
-"struktūru, tā tiks saglabāta jūsu lokālajā mapē zem: \"Sylpheed-Import\" in "
-"your local folder.</p><p>Šis filtrs arī atjauno vēstuļu statusu, t.i. jauna "
-"vai pārsūtīta.</p>"
+"<p><b>„Sylpheed“ importēšanas filtrs</b></p><p>Norādiet importējamo "
+"„Sylpheed“ e-pasta pamata mapi (parasti: „~/Mail“).</p><p>Tā kā ir iespējams "
+"atjaunot mapju struktūru, to saglabās lokālā mapē: „Sylpheed-imports“.</"
+"p><p>Šis filtrs arī atjauno vēstuļu statusu, proti, jauna vai pārsūtīta.</p>"
 
 #: mailimporter/filters/filtersylpheed.cpp:47
 #, kde-format
 msgctxt "name of sylpheed application"
 msgid "Sylpheed"
-msgstr ""
+msgstr "Sylpheed"
 
 #: mailimporter/filters/filtersylpheed.cpp:185
 #, kde-format
 msgctxt "define folder name where we will import sylpheed mails"
 msgid "Sylpheed-Import"
-msgstr ""
+msgstr "Sylpheed-imports"
 
 #: mailimporter/filters/filterthebat.cpp:28
 #, kde-format
 msgid "Import The Bat! Mails and Folder Structure"
-msgstr "Importēt The Bat! vēstules un mapju struktūru"
+msgstr "Importēt „The Bat!“ vēstules un mapju struktūru"
 
 #: mailimporter/filters/filterthebat.cpp:30
 #, kde-format
@@ -917,22 +847,22 @@ msgid ""
 "recreate the folder structure, the folders will be stored under: \"TheBat-"
 "Import\" in your local account.</p>"
 msgstr ""
-"<p><b>The Bat! importēšanas filtrs</b></p><p>Norādiet  'The Bat!' lokālās "
-"pasta mapi, ko vēlaties importēt.</p><p><b>Piezīme:</b> Šis filtrs importē  "
-"*.tbb failus no 'The Bat!' lokālās mapes - no POP kontiem, bet ne no IMAP/"
-"DIMAP kontiem.</p><p> Ir iespējams atjaunot mapju struktūru, tā tiks "
-"saglabāta jūsu lokālajā mapē zem: \"TheBat-Import\".</p>"
+"<p><b>„The Bat!“ importēšanas filtrs</b></p><p>Norādiet „The Bat!“ lokāloe-"
+"pasta vēstuļu mapi, ko vēlaties importēt.</p><p><b>Piezīme:</b> šis filtrs "
+"importē „*.tbb“ datnes no „The Bat!“ lokālās mapes, tas ir, no POP kontiem, "
+"bet ne no IMAP/DIMAP kontiem.</p><p>Tā kā ir iespējams atjaunot mapju "
+"struktūru, filtrs to saglabās lokālā konta mapē: „TheBat-imports“.</p>"
 
 #: mailimporter/filters/filterthebat.cpp:204
 #, kde-format
 msgctxt "Define folder where we will import thebat mails"
 msgid "TheBat-Import"
-msgstr ""
+msgstr "TheBat-imports"
 
 #: mailimporter/filters/filterthunderbird.cpp:24
 #, kde-format
 msgid "Import Thunderbird/Mozilla Local Mails and Folder Structure"
-msgstr "Importēt Thunderbird/Mozilla lokālo pastu un mapju struktūru"
+msgstr "Importēt „Thunderbird/Mozilla“ lokālo pastu un mapju struktūru"
 
 #: mailimporter/filters/filterthunderbird.cpp:26
 #, kde-format
@@ -944,42 +874,41 @@ msgid ""
 "new folders.</p><p>Since it is possible to recreate the folder structure, "
 "the folders will be stored under: \"Thunderbird-Import\".</p>"
 msgstr ""
-"<p><b>Thunderbird/Mozilla importēšanas filtrs</b></p><p>Norādiet jūsu "
-"Thunderbird/Mozilla bāzes pasta mapi (parasti ~/.thunderbird/*.default/Mail/"
-"Local Folders/).</p><p><b>Piezīme:</b> Nekad nenorādiet mapi, kas "
-"<u>nesatur</u> mbox failus (piemēram, maildir mapi): ja tā darīsiet, jūs "
-"iegūsiet ļoti daudz jaunas mapes.</p><p>Ir iespējams atjaunot mapju "
-"struktūru, tā tiks saglabāta jūsu lokālajā mapē zem: \"Thunderbird-Import\"."
-"</p>"
+"<p><b>„Thunderbird/Mozilla“ importēšanas filtrs</b></p><p>Norādiet jūsu "
+"„Thunderbird/Mozilla“ e-pasta pamata mapi (parasti ~/.thunderbird/*.default/"
+"Mail/Local Folders/).</p><p><b>Piezīme:</b> nekad nenorādiet mapi, kas "
+"<u>nesatur</u> „mbox“ datnes (piemēram, „maildir“ mapi) — ja tā darīsiet, "
+"iegūsiet daudz jaunu mapju.</p><p>Tā kā ir iespējams atjaunot mapju "
+"struktūru, filtrs tās saglabās mapē: „Thunderbird-imports“.</p>"
 
 #: mailimporter/filters/filterthunderbird.cpp:58
 #, kde-format
 msgctxt "name of thunderbird application"
 msgid "Thunderbird"
-msgstr ""
+msgstr "Thunderbird"
 
 #: mailimporter/othermailerutil.cpp:18
 #, kde-format
 msgctxt "name of trojira application"
 msgid "Trojita"
-msgstr ""
+msgstr "Trojita"
 
 #: mailimporter/othermailerutil.cpp:22 mailimporter/othermailerutil.cpp:26
 #, kde-format
 msgctxt "name of geary application"
 msgid "Geary"
-msgstr ""
+msgstr "Geary"
 
 #: mailimporter/selectthunderbirdprofilewidget.cpp:21
 #, kde-format
 msgctxt "@title:window"
 msgid "Select thunderbird profile"
-msgstr ""
+msgstr "Atlasiet „Thunderbird“ profilu"
 
 #: mailimporter/selectthunderbirdprofilewidget.cpp:70
 #, kde-format
 msgid " (default)"
-msgstr ""
+msgstr " (noklusējums)"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
 #: mailimporter/ui/importmailswidget.ui:27
@@ -1019,30 +948,28 @@ msgstr "Kopā:"
 #: mailimporter/ui/selectthunderbirdprofilewidget.ui:17
 #, kde-format
 msgid "Select Profile:"
-msgstr ""
+msgstr "Atlasiet profilu:"
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:94
 #, kde-format
 msgid "Error: failed to read temporary file at %1"
-msgstr ""
+msgstr "Kļūda: neizdevās nolasīt pagaidu datni „%1“"
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:123
 #, kde-format
 msgid "<b>Warning:</b> Got a bad message folder, adding to root folder."
-msgstr ""
+msgstr "<b>Uzmanību:</b> iegūta slikta vēstuļu mape, pievieno saknes mapei."
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:168
-#, fuzzy, kde-format
-#| msgid "Error while adding message to folder %1 in KMail"
+#, kde-format
 msgid ""
 "<b>Warning:</b> Could not check that the folder already exists. Reason: %1"
-msgstr "Kļūda pievienojot vēstuli KMail mapei %1"
+msgstr "<b>Uzmanību:</b> neizdevās pārbaudīt, vai mape jau pastāv. Iemesls: %1"
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:185
-#, fuzzy, kde-format
-#| msgid "Error while adding message to folder %1 in KMail"
+#, kde-format
 msgid "<b>Error:</b> Could not create folder. Reason: %1"
-msgstr "Kļūda pievienojot vēstuli KMail mapei %1"
+msgstr "<b>Kļūda:</b> neizdevās izveidot mapi. Iemesls: %1"
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:213
 #, kde-format
@@ -1050,23 +977,23 @@ msgid ""
 "<b>Warning:</b> Could not fetch mail in folder %1. Reason: %2 You may have "
 "duplicate messages."
 msgstr ""
+"<b>Uzmanību:</b> neizdevās iegūt pastu mapē „%1“. Iemesls: %2 Iespējams, ka "
+"pastāv vienādas vēstules."
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:221
-#, fuzzy, kde-format
-#| msgid "Error while adding message to folder %1 in KMail"
+#, kde-format
 msgid "<b>Warning:</b> Got an invalid message in folder %1."
-msgstr "Kļūda pievienojot vēstuli KMail mapei %1"
+msgstr "<b>Uzmanību:</b> mapē „%1“ ir nederīga vēstule."
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:275
-#, fuzzy, kde-format
-#| msgid "Error while adding message to folder %1 in KMail"
+#, kde-format
 msgid "<b>Error:</b> Could not add message to folder %1. Reason: %2"
-msgstr "Kļūda pievienojot vēstuli KMail mapei %1"
+msgstr "<b>Kļūda:</b> Nevarēja mapei „%1“ pievienot vēstuli. Iemesls: %2"
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:295
 #, kde-format
 msgid "Unable to retrieve folder for folder path %1."
-msgstr ""
+msgstr "Neizdevās izgūt mapi mapes ceļam „%1“"
 
 #~ msgid "Importing in progress..."
 #~ msgstr "Notiek importēšana..."
