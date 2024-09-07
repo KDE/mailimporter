@@ -4,19 +4,20 @@
 # Nasim Daniarzadeh <daniarzadeh@itland.ir>, 2006, 2007.
 # Tahereh Dadkhahfar <dadkhahfar@itland.ir>, 2006.
 # Mohammad Reza Mirdamadi <mohi@ubuntu.ir>, 2012.
+# SPDX-FileCopyrightText: 2024 Mohi Mirdamadi <mohi.pub@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-02 00:38+0000\n"
-"PO-Revision-Date: 2012-01-16 23:08+0330\n"
-"Last-Translator: Mohammad Reza Mirdamadi <mohi@ubuntu.ir>\n"
-"Language-Team: Farsi (Persian) <>\n"
+"PO-Revision-Date: 2024-09-06 22:32+0330\n"
+"Last-Translator: Mohi Mirdamadi <mohi.pub@gmail.com>\n"
+"Language-Team: fa\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.2\n"
+"X-Generator: Lokalize 23.08.5\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: mailimporter/filters/filterbalsa.cpp:22
@@ -553,7 +554,7 @@ msgstr "پیام %1"
 #: mailimporter/filters/filtermailapp.cpp:28
 #, kde-format
 msgid "Import From OS X Mail"
-msgstr "واردات از نامه سیستم عامل X"
+msgstr "واردات از نامه سامانه عامل X"
 
 #: mailimporter/filters/filtermailapp.cpp:29
 #, kde-format
@@ -566,8 +567,8 @@ msgid ""
 "<p><b>OS X Mail Import Filter</b></p><p>This filter imports e-mails from the "
 "Mail client in Apple Mac OS X.</p>"
 msgstr ""
-"<p><b>پالایه واردات نامه سیستم عامل X</b></p><p>این پالایه، رایانامه‌ها را از "
-"کارخواه‌نامه به برنامک سیستم عامل مکینتاش X  وارد می‌کند.</p>"
+"<p><b>پالایه واردات نامه سامانه عامل X</b></p><p>این پالایه، رایانامه‌ها را "
+"از کارخواه‌نامه به برنامک سامانه عامل مکینتاش X  وارد می‌کند.</p>"
 
 #: mailimporter/filters/filtermailapp.cpp:126
 #: mailimporter/filters/filtermailmangzip.cpp:136
@@ -763,7 +764,7 @@ msgid ""
 "prefixed by PLAIN-</p><p>This filter will import all .msg, .eml and .txt "
 "emails.</p>"
 msgstr ""
-"<p>فهرست راهنمایی را که حاوی رایانامه‌های روی سیستم شماست را برگزینید. "
+"<p>فهرست راهنمایی را که حاوی رایانامه‌های روی سامانه شماست را برگزینید. "
 "رایانامه‌ها در یک پوشه با نامی مشابه فهرست راهنمایی که در آن بوده‌اند و با "
 "پیشوند PLAIN- قرار می‌گیرند.</p><p>این پالایه همه رایانامه‌های .msg، .eml و ."
 "txt  را وارد می‌کند.</p>"
@@ -787,8 +788,8 @@ msgid ""
 "folder structure, the folders will be stored under: \"PegasusMail-Import\".</"
 "p>"
 msgstr ""
-"<p>فهرست راهنمای Pegasus-Mail  روی سیستم خود )که حاوی پرونده‌های *.CNM، *.PMM "
-"و *.MBX می‌باشد( را برگزینید. در بیشتر سیستمها، در C:\\pmail\\mail یا C:"
+"<p>فهرست راهنمای Pegasus-Mail  روی سامانه خود )که حاوی پرونده‌های *.CNM، *."
+"PMM و *.MBX می‌باشد( را برگزینید. در بیشتر سامانهها، در C:\\pmail\\mail یا C:"
 "\\pmail\\mail\\admin ذخیره می‌شود.</p><p><b>نکته:</b> از زمانی که ایجاد مجدد "
 "ساختار پوشه ممکن باشد، پوشه‌ها تحت: »PegasusMail-واردات« ذخیره می‌شوند.</p>"
 
