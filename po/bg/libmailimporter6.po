@@ -1003,6 +1003,3 @@ msgstr ""
 #, kde-format
 msgid "Unable to retrieve folder for folder path %1."
 msgstr "Не може да се извлече папка от пътя на папката %1."
-
-#~ msgid "Importing in progress..."
-#~ msgstr "Импортиране..."
