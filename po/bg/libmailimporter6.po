@@ -10,14 +10,14 @@ msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-02 00:38+0000\n"
-"PO-Revision-Date: 2024-05-30 20:40+0200\n"
+"PO-Revision-Date: 2024-11-06 23:59+0100\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 24.05.0\n"
+"X-Generator: Lokalize 24.11.70\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: mailimporter/filters/filterbalsa.cpp:22
@@ -424,12 +424,12 @@ msgstr "Не е избран архив."
 #: mailimporter/filters/filterkmailarchive.cpp:183
 #, kde-format
 msgid "The file '%1' does not appear to be a valid archive."
-msgstr "Файлът \"%1\" не е валиден архив."
+msgstr "Файлът „%1“ не е валиден архив."
 
 #: mailimporter/filters/filterkmailarchive.cpp:188
 #, kde-format
 msgid "Unable to open archive file '%1'"
-msgstr "Не може да се отвори архивен файл '%1'"
+msgstr "Не може да се отвори архивен файл „%1“"
 
 #: mailimporter/filters/filterkmailarchive.cpp:193
 #, kde-format
@@ -439,7 +439,7 @@ msgstr "Преброяване на файловете в архива..."
 #: mailimporter/filters/filterkmailarchive.cpp:199
 #, kde-format
 msgid "Importing the archive file '%1' into the folder '%2' succeeded."
-msgstr "Импортиране на архивен файл \"%1\" в папка \"%2\" е успешно."
+msgstr "Импортиране на архивен файл „%1“ в папка „%2“ е успешно."
 
 #: mailimporter/filters/filterkmailarchive.cpp:200
 #, kde-format
@@ -561,7 +561,7 @@ msgstr "Файлове gzip"
 #: mailimporter/filters/filtermailmangzip.cpp:55
 #, kde-format
 msgid "Unable to open archive file '%1', skipping"
-msgstr "Не може да се отвори архивен файл '%1', пропускане"
+msgstr "Не може да се отвори архивен файл „%1“, пропускане"
 
 #: mailimporter/filters/filtermbox.cpp:20
 #, kde-format
