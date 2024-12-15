@@ -37,7 +37,7 @@ msgstr ""
 #, kde-format
 msgctxt "name of balsa application"
 msgid "Balsa"
-msgstr ""
+msgstr "बालसा"
 
 #: mailimporter/filters/filterbalsa.cpp:89
 #: mailimporter/filters/filterevolution.cpp:60
@@ -100,8 +100,8 @@ msgstr "%1 तः ईमेल आयातं समाप्तम्"
 #, kde-format
 msgid "1 duplicate message not imported"
 msgid_plural "%1 duplicate messages not imported"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "१ द्वितीयकसन्देशः आयातितः नास्ति"
+msgstr[1] "%1 द्वितीयकसन्देशाः आयाताः न कृताः"
 
 #: mailimporter/filters/filterbalsa.cpp:116
 #: mailimporter/filters/filterevolution_v2.cpp:132
@@ -125,7 +125,7 @@ msgstr "आयातः समाप्तः, उपयोक्त्रा �
 #, kde-format
 msgctxt "define folder name where we import evolution mails"
 msgid "Evolution-Import"
-msgstr ""
+msgstr "विकास-आयात"
 
 #: mailimporter/filters/filterbalsa.cpp:187
 #: mailimporter/filters/filterevolution_v3.cpp:184
@@ -182,13 +182,13 @@ msgstr ""
 #, kde-format
 msgctxt "name of clawsMail application"
 msgid "ClawsMail"
-msgstr ""
+msgstr "ClawsMail इति"
 
 #: mailimporter/filters/filterclawsmail.cpp:96
 #, kde-format
 msgctxt "define folder name where we will import clawsmail mails"
 msgid "ClawsMail-Import"
-msgstr ""
+msgstr "ClawsMail-आयात"
 
 #: mailimporter/filters/filterevolution.cpp:17
 #, kde-format
@@ -216,7 +216,7 @@ msgstr ""
 #, kde-format
 msgctxt "name of evolution application"
 msgid "Evolution"
-msgstr ""
+msgstr "उन्नति"
 
 #: mailimporter/filters/filterevolution.cpp:132
 #: mailimporter/filters/filterevolution_v2.cpp:192
@@ -269,7 +269,7 @@ msgstr ""
 #, kde-format
 msgctxt "name of evolution application"
 msgid "Evolution (v2)"
-msgstr ""
+msgstr "विकासः (v2) ९."
 
 #: mailimporter/filters/filterevolution_v2.cpp:122
 #: mailimporter/filters/filterevolution_v2.cpp:161
@@ -301,7 +301,7 @@ msgstr ""
 #, kde-format
 msgctxt "name of evolution application"
 msgid "Evolution (v3)"
-msgstr ""
+msgstr "विकासः (v3) 1.1."
 
 #: mailimporter/filters/filtericedove.cpp:14
 #, kde-format
@@ -329,7 +329,7 @@ msgstr ""
 #, kde-format
 msgctxt "name of icedove application"
 msgid "Icedove"
-msgstr ""
+msgstr "हिमकपोतः"
 
 #: mailimporter/filters/filterkmail_maildir.cpp:26
 #, kde-format
@@ -439,8 +439,8 @@ msgstr "'%1' संग्रहसञ्चिकां '%2' पुटे आय
 #, kde-format
 msgid "1 message was imported."
 msgid_plural "%1 messages were imported."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "१ सन्देशः आयातितः ।"
+msgstr[1] "%1 सन्देशाः आयाताः ।"
 
 #: mailimporter/filters/filterkmailarchive.cpp:202
 #, kde-format
@@ -493,7 +493,7 @@ msgstr "%1 तः ईमेल आयातम्"
 #, kde-format
 msgctxt "Define folder name where we import lotus note mails"
 msgid "LNotes-Import"
-msgstr ""
+msgstr "LNotes-आयात"
 
 #: mailimporter/filters/filterlnotes.cpp:110
 #: mailimporter/filters/filterpmail.cpp:267
@@ -526,8 +526,8 @@ msgstr ""
 #, kde-format
 msgid "1 duplicate message not imported to folder %2 in KMail"
 msgid_plural "%1 duplicate messages not imported to folder %2 in KMail"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "1 द्वितीयकसन्देशः KMail मध्ये %2 पुटे आयातितः नास्ति"
+msgstr[1] "%1 द्वितीयकसन्देशाः KMail मध्ये %2 पुटे आयाताः न कृताः"
 
 #: mailimporter/filters/filtermailmangzip.cpp:19
 #, kde-format
@@ -674,7 +674,7 @@ msgstr ""
 #, kde-format
 msgctxt "name of opera application"
 msgid "Opera"
-msgstr ""
+msgstr "ओपेरा"
 
 #: mailimporter/filters/filteropera.cpp:72
 #: mailimporter/filters/filterplain.cpp:55
@@ -756,7 +756,7 @@ msgstr "'UNIX' मेलपुटं ('.mbx') आयातम्..."
 #, kde-format
 msgctxt "define folder name when we will import pegasus mail"
 msgid "PegasusMail-Import"
-msgstr ""
+msgstr "पेगाससमेल-आयात"
 
 #: mailimporter/filters/filterpmail.cpp:166
 #: mailimporter/filters/filterpmail.cpp:245
@@ -815,13 +815,13 @@ msgstr ""
 #, kde-format
 msgctxt "name of sylpheed application"
 msgid "Sylpheed"
-msgstr ""
+msgstr "सिल्फीड"
 
 #: mailimporter/filters/filtersylpheed.cpp:185
 #, kde-format
 msgctxt "define folder name where we will import sylpheed mails"
 msgid "Sylpheed-Import"
-msgstr ""
+msgstr "सिल्फीड-आयात"
 
 #: mailimporter/filters/filterthebat.cpp:28
 #, kde-format
@@ -848,7 +848,7 @@ msgstr ""
 #, kde-format
 msgctxt "Define folder where we will import thebat mails"
 msgid "TheBat-Import"
-msgstr ""
+msgstr "TheBat-आयात इति"
 
 #: mailimporter/filters/filterthunderbird.cpp:24
 #, kde-format
@@ -876,25 +876,25 @@ msgstr ""
 #, kde-format
 msgctxt "name of thunderbird application"
 msgid "Thunderbird"
-msgstr ""
+msgstr "वज्रपक्षी"
 
 #: mailimporter/othermailerutil.cpp:18
 #, kde-format
 msgctxt "name of trojira application"
 msgid "Trojita"
-msgstr ""
+msgstr "त्रिमूर्ति"
 
 #: mailimporter/othermailerutil.cpp:22 mailimporter/othermailerutil.cpp:26
 #, kde-format
 msgctxt "name of geary application"
 msgid "Geary"
-msgstr ""
+msgstr "गेयरी"
 
 #: mailimporter/selectthunderbirdprofilewidget.cpp:21
 #, kde-format
 msgctxt "@title:window"
 msgid "Select thunderbird profile"
-msgstr ""
+msgstr "वज्रपक्षिप्रोफाइलं चिनोतु"
 
 #: mailimporter/selectthunderbirdprofilewidget.cpp:70
 #, kde-format
