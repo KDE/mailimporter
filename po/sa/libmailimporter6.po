@@ -3,19 +3,21 @@
 # This file is distributed under the same license as the mailimporter package.
 # Kali <EMAIL@ADDRESS>, 2024.
 #
+# SPDX-FileCopyrightText: 2024 kali <skkalwar999@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: mailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-31 00:41+0000\n"
-"PO-Revision-Date: 2024-12-13 19:10+0530\n"
-"Last-Translator: Kali <EMAIL@ADDRESS>\n"
-"Language-Team: Sanskrit\n"
+"PO-Revision-Date: 2024-12-20 22:01+0530\n"
+"Last-Translator: kali <skkalwar999@gmail.com>\n"
+"Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
 "Language: sa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n>2);\n"
+"X-Generator: Lokalize 24.08.2\n"
 
 #: mailimporter/filters/filterbalsa.cpp:22
 #, kde-format
@@ -269,7 +271,7 @@ msgstr ""
 #, kde-format
 msgctxt "name of evolution application"
 msgid "Evolution (v2)"
-msgstr "विकासः (v2) ९."
+msgstr "विकासः (v2)"
 
 #: mailimporter/filters/filterevolution_v2.cpp:122
 #: mailimporter/filters/filterevolution_v2.cpp:161
