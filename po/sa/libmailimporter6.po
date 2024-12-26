@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: mailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-31 00:41+0000\n"
-"PO-Revision-Date: 2024-12-20 22:01+0530\n"
-"Last-Translator: kali <skkalwar999@gmail.com>\n"
+"PO-Revision-Date: 2024-12-25 19:45+0530\n"
+"Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
 "Language: sa\n"
 "MIME-Version: 1.0\n"
@@ -248,7 +248,7 @@ msgstr "%1 तः ईमेल आयातम्..."
 #: mailimporter/filters/filterevolution_v2.cpp:22
 #, kde-format
 msgid "Import Evolution 2.x Local Mails and Folder Structure"
-msgstr "आयातविकासः 2.x स्थानीयमेलः तथा फोल्डर् संरचना"
+msgstr "आयातविकासः 2.x स्थानीयमेलः तथा समुच्चय संरचना"
 
 #: mailimporter/filters/filterevolution_v2.cpp:24
 #, kde-format
@@ -284,7 +284,7 @@ msgstr "आयातसञ्चिका %1 आरभ्यताम्..."
 #: mailimporter/filters/filterevolution_v3.cpp:22
 #, kde-format
 msgid "Import Evolution 3.x Local Mails and Folder Structure"
-msgstr "आयातविकासः 3.x स्थानीयमेलः तथा फोल्डर् संरचना"
+msgstr "आयातविकासः 3.x स्थानीयमेलः तथा समुच्चय संरचना"
 
 #: mailimporter/filters/filterevolution_v3.cpp:24
 #, kde-format
@@ -308,7 +308,7 @@ msgstr "विकासः (v3) 1.1."
 #: mailimporter/filters/filtericedove.cpp:14
 #, kde-format
 msgid "Import Icedove Mails and Folder Structure"
-msgstr "Icedove मेल तथा फोल्डर् संरचना आयात करें"
+msgstr "Icedove मेल तथा समुच्चय संरचना आयात करें"
 
 #: mailimporter/filters/filtericedove.cpp:17
 #, kde-format
@@ -375,7 +375,7 @@ msgid ""
 msgstr ""
 "<p><b>KMail संग्रह सञ्चिका आयात फ़िल्टर</b></p><p> एतत् फ़िल्टर पूर्वं KMail द्वारा "
 "निर्यातितानि आर्काइव्स् सञ्चिकाः आयातयिष्यति ।</p><p> आर्काइव् सञ्चिकासु एकस्मिन् "
-"सञ्चिकायां संपीडितः सम्पूर्णः फोल्डर् उपवृक्षः भवति ।</p>"
+"सञ्चिकायां संपीडितः सम्पूर्णः समुच्चय उपवृक्षः भवति ।</p>"
 
 #: mailimporter/filters/filterkmailarchive.cpp:71
 #, kde-format
@@ -649,7 +649,7 @@ msgstr "OE5+ मेलबॉक्स %1 आयातम्"
 #: mailimporter/filters/filteroe.cpp:161
 #, kde-format
 msgid "Importing OE5+ Folder file %1"
-msgstr "OE5+ फोल्डर् सञ्चिका %1 आयातः"
+msgstr "OE5+ समुच्चय सञ्चिका %1 आयातः"
 
 #: mailimporter/filters/filteropera.cpp:19
 #, kde-format
@@ -666,7 +666,7 @@ msgid ""
 "imported into a folder named after the account they came from, prefixed with "
 "OPERA-</p>"
 msgstr ""
-"<p><b>Opera ईमेल आयात फ़िल्टर</b></p><p> एतत् फ़िल्टर Opera mail फोल्डर् तः मेल आयातं "
+"<p><b>Opera ईमेल आयात फ़िल्टर</b></p><p> एतत् फ़िल्टर Opera mail समुच्चय तः मेल आयातं "
 "करिष्यति । यदि भवान् Opera maildir इत्यस्मिन् खातेः अन्तः सर्वाणि मेलपत्राणि आयातुम् "
 "इच्छति तर्हि एतस्य फ़िल्टरस्य उपयोगं कुर्वन्तु ।</p><p> खातेः निर्देशिकां चिनोतु (प्रायः ~/."
 "opera/mail/store/account*) ।</p><p> <b>नोटः-</b> ईमेल-पत्राणि यस्मात् खातेः "
@@ -711,7 +711,7 @@ msgstr ""
 #: mailimporter/filters/filterpmail.cpp:22
 #, kde-format
 msgid "Import Folders From Pegasus-Mail"
-msgstr "Pegasus-Mail तः फोल्डर् आयातयन्तु"
+msgstr "Pegasus-Mail तः समुच्चय आयातयन्तु"
 
 #: mailimporter/filters/filterpmail.cpp:23
 #, kde-format
@@ -774,7 +774,7 @@ msgstr "पुटसंरचनायाः विश्लेषणं..."
 #: mailimporter/filters/filterseamonkey.cpp:14
 #, kde-format
 msgid "Import SeaMonkey Mails and Folder Structure"
-msgstr "SeaMonkey मेल तथा फोल्डर् संरचना आयात करें"
+msgstr "SeaMonkey मेल तथा समुच्चय संरचना आयात करें"
 
 #: mailimporter/filters/filterseamonkey.cpp:17
 #, kde-format
@@ -855,7 +855,7 @@ msgstr "TheBat-आयात इति"
 #: mailimporter/filters/filterthunderbird.cpp:24
 #, kde-format
 msgid "Import Thunderbird/Mozilla Local Mails and Folder Structure"
-msgstr "Thunderbird/Mozilla स्थानीयमेलं तथा फोल्डर् संरचना आयातयन्तु"
+msgstr "Thunderbird/Mozilla स्थानीयमेलं तथा समुच्चय संरचना आयातयन्तु"
 
 #: mailimporter/filters/filterthunderbird.cpp:26
 #, kde-format
