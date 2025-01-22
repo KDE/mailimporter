@@ -8,10 +8,10 @@ platforms:
     - name: FreeBSD
     - name: macOS
     - name: Windows
-public_lib: true 
+public_lib: true
 libraries:
- - cmake: "KPim6::MailImporter"
- - cmake: "KPim6::MailImporterAkonadi"
+    - cmake: "KPim6::MailImporter"
+    - cmake: "KPim6::MailImporterAkonadi"
 cmakename: KPim6MailImporter
 # FIXME kapidox does not support more than one cmake module per repo yet
 #cmakename: KPim6MailImporterAkonadi
