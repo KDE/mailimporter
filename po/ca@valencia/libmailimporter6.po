@@ -683,7 +683,7 @@ msgstr ""
 "<p><b>Filtre d'importació dels correus d'Opera</b></p><p>Este filtre "
 "importarà els correus de la carpeta de correu d'Opera. Utilitzeu este filtre "
 "si voleu importar tots els correus d'un compte del directori de correu "
-"d'Opera.</p> <p>Escolliu el directori del compte (normalment ~/.opera/mail/"
+"d'Opera.</p> <p>Trieu el directori del compte (normalment ~/.opera/mail/"
 "store/account*).</p><p><b>Nota:</b> Els correus seran importats cap a "
 "carpetes amb el nom del compte origen, prefixades amb OPERA-</p>"
 
@@ -1016,6 +1016,3 @@ msgstr ""
 #, kde-format
 msgid "Unable to retrieve folder for folder path %1."
 msgstr "No s'ha pogut recuperar la carpeta per al camí de carpetes %1."
-
-#~ msgid "Importing in progress..."
-#~ msgstr "Importació en progrés…"
