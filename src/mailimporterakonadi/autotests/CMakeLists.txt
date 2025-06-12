@@ -5,7 +5,7 @@ macro(add_mailimporterakonadi_unittest _source _additionalSource)
         NAME_PREFIX "mailimporterakonadi-"
         LINK_LIBRARIES KPim6::MailImporterAkonadi Qt::Test Qt::Core Qt::Gui Qt::Widgets
     )
-endmacro ()
+endmacro()
 
 add_mailimporterakonadi_unittest(filterimporterakonaditest.cpp "")
 add_mailimporterakonadi_unittest(filterthunderbirdtest.cpp "filterimportertest.cpp;filterimportertestutil.cpp")
@@ -19,4 +19,3 @@ add_mailimporterakonadi_unittest(filtermboxtest.cpp "filterimportertest.cpp;filt
 add_mailimporterakonadi_unittest(filterbalsamailtest.cpp "filterimportertest.cpp;filterimportertestutil.cpp")
 add_mailimporterakonadi_unittest(filterplaintest.cpp "filterimportertest.cpp;filterimportertestutil.cpp")
 add_mailimporterakonadi_unittest(filtermailmangziptest.cpp "filterimportertest.cpp;filterimportertestutil.cpp")
-

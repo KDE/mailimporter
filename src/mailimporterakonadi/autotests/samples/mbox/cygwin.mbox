@@ -110,8 +110,8 @@ thanks
 Teun Burgers
 
 erh066#1(~/.cpan/build/Storable-0.6.11)$ make
-LD_RUN_PATH="" ld2 -o blib/arch/auto/Storable/Storable.dll 
--L/usr/local/lib Storable.o  
+LD_RUN_PATH="" ld2 -o blib/arch/auto/Storable/Storable.dll
+-L/usr/local/lib Storable.o
 /usr/local/lib/perl5/5.6.0/cygwin/CORE/libperl5_6_0.a
 dllwrap --dllname Storable.dll --driver-name gcc --dlltool dlltool
 --export-all-
@@ -164,16 +164,16 @@ Subject: arpa/nameser.h
 Mime-Version: 1.0
 Content-Type: text/plain; charset="us-ascii"; format=flowed
 
-I'm trying to port a nice IRC client to cygwin, originally written on 
-FreeBSD, works fine on every unixes I've tried (FreeBSD, linux, IRIX and 
+I'm trying to port a nice IRC client to cygwin, originally written on
+FreeBSD, works fine on every unixes I've tried (FreeBSD, linux, IRIX and
 solaris).
 
-But on cygwin it doesn't find the arpa/nameser.h header. Is there a reason 
-why this one is missing? Is it replaced by another one? What should I do to 
+But on cygwin it doesn't find the arpa/nameser.h header. Is there a reason
+why this one is missing? Is it replaced by another one? What should I do to
 work around the problem?
 
-I found this thread in the archive: 
-http://sourceware.cygnus.com/ml/cygwin/2000-05/msg00676.html but it doesn't 
+I found this thread in the archive:
+http://sourceware.cygnus.com/ml/cygwin/2000-05/msg00676.html but it doesn't
 have any follow ups..
 
 regards
@@ -312,7 +312,7 @@ Received: from megami.veritas.com (megami.veritas.com [192.203.46.101])
 	for <cygwin@sourceware.cygnus.com>; Sat, 1 Jul 2000 14:26:55 -0700 (PDT)
 Received: from veritas.com([166.98.15.90]) (1148 bytes) by megami.veritas.com
 	via sendmail with P:esmtp/R:smart_host/T:smtp
-	(sender: <rmcgowan@veritas.com>) 
+	(sender: <rmcgowan@veritas.com>)
 	id <m138UiB-00006bC@megami.veritas.com>
 	for <cygwin@sourceware.cygnus.com>; Sat, 1 Jul 2000 14:22:03 -0700 (PDT)
 	(Smail-3.2.0.101 1997-Dec-17 #4 built 1999-Aug-24)
@@ -330,7 +330,7 @@ Content-Transfer-Encoding: 7bit
 Content-Transfer-Encoding: 7bit
 
 Windows 2000 has introduced the idea of a "mount point" to handle large
-numbers of disk partitions (beyond the number handled by the alphabet). 
+numbers of disk partitions (beyond the number handled by the alphabet).
 >From a command prompt, the DIR command shows these items as <JUNCTION>
 while Explorer shows a disk icon rather than a folder.
 
@@ -341,7 +341,7 @@ fixed in a recent snapshot?
 
 Thanks,
 
--- 
+--
 Bob McGowan
 Staff Software Quality Engineer
 VERITAS Software
@@ -371,7 +371,7 @@ Received: from megami.veritas.com (megami.veritas.com [192.203.46.101])
 	for <cygwin@sourceware.cygnus.com>; Sat, 1 Jul 2000 14:34:45 -0700 (PDT)
 Received: from veritas.com([166.98.15.90]) (1627 bytes) by megami.veritas.com
 	via sendmail with P:esmtp/R:smart_host/T:smtp
-	(sender: <rmcgowan@veritas.com>) 
+	(sender: <rmcgowan@veritas.com>)
 	id <m138Upl-00006dC@megami.veritas.com>
 	for <cygwin@sourceware.cygnus.com>; Sat, 1 Jul 2000 14:29:53 -0700 (PDT)
 	(Smail-3.2.0.101 1997-Dec-17 #4 built 1999-Aug-24)
@@ -396,30 +396,30 @@ expected.
 My apologies for the misleading post.
 
 Bob McGowan wrote:
-> 
+>
 > Windows 2000 has introduced the idea of a "mount point" to handle large
 > numbers of disk partitions (beyond the number handled by the alphabet).
 > >From a command prompt, the DIR command shows these items as <JUNCTION>
 > while Explorer shows a disk icon rather than a folder.
-> 
+>
 > Problem is that Cygwin (I'm using the CD v. 1.0, no updates) does not
 > recognize this new thing.  I have not seen any discussion of this
 > Windows feature in the list yet.  Is this a known issue, maybe even
 > fixed in a recent snapshot?
-> 
+>
 > Thanks,
-> 
+>
 > --
 > Bob McGowan
 > Staff Software Quality Engineer
 > VERITAS Software
 > rmcgowan@veritas.com
-> 
+>
 > --
 > Want to unsubscribe from this list?
 > Send a message to cygwin-unsubscribe@sourceware.cygnus.com
 
--- 
+--
 Bob McGowan
 Staff Software Quality Engineer
 VERITAS Software
@@ -465,9 +465,9 @@ At 05:16 PM 7/1/00 -0400, you wrote:
 >the answer is pretty simple.  It just isn't there because no one has
 >contributed it.
 
-I understand that .. I whish I had the skills and the time it takes to 
-write that kind of headers. But I don't want to step into the nightmare of 
-building cygwin from CVS .. I have enough trouble building my own apps 
+I understand that .. I whish I had the skills and the time it takes to
+write that kind of headers. But I don't want to step into the nightmare of
+building cygwin from CVS .. I have enough trouble building my own apps
 without messing with the core of the system.
 
 >The standard method for determining if another header has the needed
@@ -1049,38 +1049,38 @@ Doug Wyatt
 
 
 > hi Tim,
-> 
+>
 > I just realized that the od dump utility is dumping the hex values
 > from right to left and then dumping the ascii values from left to right.
-> 
+>
 > This makes it very hard to read.  Is there a flag or option to make the
 > output of ascii and hex columns to be in the same order?
-> 
+>
 > here's a sample output.
-> 
+>
 >       000000 00000009 34333231 bf003635 00000078
 >               ht nul nul nul   1   2   3   4   5   6 nul   ?   x nul nul nul
 >       000010 454c4f53 4f525443 5343494e 0000ea00
 >                S   O   L   E   C   T   R   O   N   I   C   S nul   j nul nul
-> 
-> 
+>
+>
 > I like the output to appear like so:
-> 
+>
 >       000010 534f4c45 4354524f 4e494353 00ea0000
 >                S   O   L   E   C   T   R   O   N   I   C   S nul   j nul nul
-> 
+>
 > or even better like this:(all on one line, only letters and number seen on
 > ascii view and a '.' for everything else)
 > (also all on one line is much more readable)
-> 
+>
 >       000010       000010 534f4c45 4354524f 4e494353 00ea0000
 > SOLECTRONICS.J..
-> 
+>
 > Any help or suggestions on this would be very welcomed.
-> 
+>
 > /dAVe
-> 
-> 
+>
+>
 > -----Original Message-----
 > From: Tim Prince <tprince@computer.org>
 > To: Dave Arnold <avr_fan@mailandnews.com>; cygwin@sourceware.cygnus.com
@@ -1088,8 +1088,8 @@ Doug Wyatt
 > Cc: mail and news <avr_fan@mailandnews.com>
 > Date: Saturday, July 01, 2000 6:35 PM
 > Subject: Re: looking for good hex dump utility...
-> 
-> 
+>
+>
 > >If od doesn't match your description, it might help if you would
 > >clarify.
 > >
@@ -1127,8 +1127,8 @@ Doug Wyatt
 > >Want to unsubscribe from this list?
 > >Send a message to cygwin-unsubscribe@sourceware.cygnus.com
 > >
-> 
-> 
+>
+>
 > --
 > Want to unsubscribe from this list?
 > Send a message to cygwin-unsubscribe@sourceware.cygnus.com

@@ -1,4 +1,4 @@
-add_definitions( -DMAILIMPORTER_DATA_DIR="${CMAKE_CURRENT_SOURCE_DIR}/samples/" )
+add_definitions(-DMAILIMPORTER_DATA_DIR="${CMAKE_CURRENT_SOURCE_DIR}/samples/")
 
 macro(add_mailimporter_unittest _source _additionalSource)
     get_filename_component(_name ${_source} NAME_WE)
@@ -7,7 +7,7 @@ macro(add_mailimporter_unittest _source _additionalSource)
         NAME_PREFIX "mailimporter-"
         LINK_LIBRARIES KPim6::MailImporter Qt::Test Qt::Core Qt::Gui Qt::Widgets
     )
-endmacro ()
+endmacro()
 
 add_mailimporter_unittest(filterthunderbirdtest.cpp "filterimportertest.cpp;filterimportertestutil.cpp")
 add_mailimporter_unittest(filtericedovetest.cpp "filterimportertest.cpp;filterimportertestutil.cpp")
@@ -23,4 +23,3 @@ add_mailimporter_unittest(filtermailmangziptest.cpp "filterimportertest.cpp;filt
 
 add_mailimporter_unittest(messagestatustest.cpp "")
 add_mailimporter_unittest(selectthunderbirdprofiledialogtest.cpp "")
-
