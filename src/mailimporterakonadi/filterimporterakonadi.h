@@ -40,7 +40,7 @@ private:
     /**
      * Creates a hierarchy of collections based on the given path string. The collection
      * hierarchy will be placed under the root collection.
-     * For example, if the folderParseString "foo/bar/test" is passsed to this method, it
+     * For example, if the folderParseString "foo/bar/test" is passed to this method, it
      * will make sure the root collection has a subcollection named "foo", which in turn
      * has a subcollection named "bar", which again has a subcollection named "test".
      * The "test" collection will be returned.
