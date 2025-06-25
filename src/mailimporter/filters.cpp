@@ -9,6 +9,8 @@
 
 // KDE Includes
 #include "filters.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "mailimporter_debug.h"
 //////////////////////////////////////////////////////////////////////////////////
 //
@@ -139,14 +141,14 @@ int Filter::countDirectory(const QDir &dir, bool searchHiddenDirectory)
     int countDir = 0;
     QStringList subDirs;
     if (searchHiddenDirectory) {
-        subDirs = dir.entryList(QStringList(QStringLiteral("*")), QDir::Dirs | QDir::Hidden, QDir::Name);
+        subDirs = dir.entryList(QStringList(u"*"_s), QDir::Dirs | QDir::Hidden, QDir::Name);
     } else {
-        subDirs = dir.entryList(QStringList(QStringLiteral("[^\\.]*")), QDir::Dirs, QDir::Name); // Removal of . and ..
+        subDirs = dir.entryList(QStringList(u"[^\\.]*"_s), QDir::Dirs, QDir::Name); // Removal of . and ..
     }
 
     QStringList::ConstIterator end = subDirs.constEnd();
     for (QStringList::ConstIterator filename = subDirs.constBegin(); filename != end; ++filename) {
-        if (!(*filename == QLatin1Char('.') || *filename == QLatin1StringView(".."))) {
+        if (!(*filename == u'.' || *filename == QLatin1StringView(".."))) {
             countDir += countDirectory(QDir(dir.filePath(*filename)), searchHiddenDirectory) + 1;
         }
     }

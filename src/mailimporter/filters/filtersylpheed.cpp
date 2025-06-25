@@ -8,6 +8,8 @@
 */
 
 #include "filtersylpheed.h"
+using namespace Qt::Literals::StringLiterals;
+
 
 #include "mailimporter_debug.h"
 #include <KLocalizedString>
@@ -26,7 +28,7 @@ public:
 /** Default constructor. */
 FilterSylpheed::FilterSylpheed()
     : Filter(i18n("Import Sylpheed Maildirs and Folder Structure"),
-             QStringLiteral("Danny Kukawka"),
+             u"Danny Kukawka"_s,
              i18n("<p><b>Sylpheed import filter</b></p>"
                   "<p>Select the base directory of the Sylpheed mailfolder you want to import "
                   "(usually: ~/Mail ).</p>"
@@ -76,9 +78,9 @@ QString FilterSylpheed::localMailDirPath()
 
         for (QDomElement e = settings.firstChildElement(); !e.isNull(); e = e.nextSiblingElement()) {
             if (e.tagName() == QLatin1StringView("folder")) {
-                if (e.hasAttribute(QStringLiteral("type"))) {
-                    if (e.attribute(QStringLiteral("type")) == QLatin1StringView("mh")) {
-                        return e.attribute(QStringLiteral("path"));
+                if (e.hasAttribute(u"type"_s)) {
+                    if (e.attribute(u"type"_s) == QLatin1StringView("mh")) {
+                        return e.attribute(u"path"_s);
                     }
                 }
             }
@@ -104,7 +106,7 @@ void FilterSylpheed::import()
 void FilterSylpheed::processDirectory(const QString &path)
 {
     QDir dir(path);
-    const QStringList rootSubDirs = dir.entryList(QStringList(QStringLiteral("[^\\.]*")), QDir::Dirs, QDir::Name);
+    const QStringList rootSubDirs = dir.entryList(QStringList(u"[^\\.]*"_s), QDir::Dirs, QDir::Name);
     QStringList::ConstIterator end = rootSubDirs.constEnd();
     for (QStringList::ConstIterator filename = rootSubDirs.constBegin(); filename != end; ++filename) {
         if (filterInfo()->shouldTerminate()) {
@@ -127,7 +129,7 @@ void FilterSylpheed::importMails(const QString &maildir)
      * If the user only select homedir no import needed because
      * there should be no files and we surely import wrong files.
      */
-    if (mailDir() == QDir::homePath() || mailDir() == (QDir::homePath() + QLatin1Char('/'))) {
+    if (mailDir() == QDir::homePath() || mailDir() == (QDir::homePath() + u'/')) {
         filterInfo()->addErrorLogEntry(i18n("No files found for import."));
     } else {
         filterInfo()->setOverall(0);
@@ -182,12 +184,12 @@ bool FilterSylpheed::excludeFile(const QString &file)
 
 QString FilterSylpheed::defaultInstallFolder() const
 {
-    return i18nc("define folder name where we will import sylpheed mails", "Sylpheed-Import") + QLatin1Char('/');
+    return i18nc("define folder name where we will import sylpheed mails", "Sylpheed-Import") + u'/';
 }
 
 QString FilterSylpheed::markFile() const
 {
-    return QStringLiteral(".sylpheed_mark");
+    return u".sylpheed_mark"_s;
 }
 
 /**
@@ -206,7 +208,7 @@ void FilterSylpheed::importFiles(const QString &dirName)
     QDir importDir(dirName);
     const QString defaultInstallPath = defaultInstallFolder();
 
-    const QStringList files = importDir.entryList(QStringList(QStringLiteral("[^\\.]*")), QDir::Files, QDir::Name);
+    const QStringList files = importDir.entryList(QStringList(u"[^\\.]*"_s), QDir::Files, QDir::Name);
     int currentFile = 1;
     int numFiles = files.size();
 

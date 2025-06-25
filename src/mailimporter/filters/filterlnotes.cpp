@@ -7,6 +7,8 @@
 */
 
 #include "filterlnotes.h"
+using namespace Qt::Literals::StringLiterals;
+
 
 #include <KLocalizedString>
 
@@ -28,7 +30,7 @@ public:
 /** Default constructor. */
 FilterLNotes::FilterLNotes()
     : Filter(i18n("Import Lotus Notes Emails"),
-             QStringLiteral("Robert Rockers"),
+             u"Robert Rockers"_s,
              i18n("<p><b>Lotus Notes Structured Text mail import filter</b></p>"
                   "<p>This filter will import Structure Text files from an exported Lotus Notes email "
                   "client into KMail. Use this filter if you want to import mails from Lotus or other "
@@ -97,7 +99,7 @@ void FilterLNotes::ImportLNotes(const QString &file)
 
         // Get folder name
         QFileInfo filenameInfo(file);
-        QString folder(i18nc("Define folder name where we import lotus note mails", "LNotes-Import") + QLatin1Char('/') + filenameInfo.completeBaseName());
+        QString folder(i18nc("Define folder name where we import lotus note mails", "LNotes-Import") + u'/' + filenameInfo.completeBaseName());
         filterInfo()->setTo(folder);
 
         // State machine to read the data in. The fgetc usage is probably terribly slow ...

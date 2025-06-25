@@ -5,6 +5,8 @@
 */
 
 #include "filtermboxtest.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "filterimportertest.h"
 #include <MailImporter/FilterMBox>
 #include <QTest>
@@ -41,7 +43,7 @@ void FilterMBoxTest::canNotImportDataUnknowPath()
     auto importerTest = new FilterImporterTest(&info);
     filter.setFilterImporter(importerTest);
     filter.setFilterInfo(&info);
-    filter.importMails(QStringList() << QStringLiteral("/foo/kde/bla/toto/"));
+    filter.importMails(QStringList() << u"/foo/kde/bla/toto/"_s);
     QVERIFY(importerTest->filterImporterDataList().isEmpty());
     delete importerTest;
 }

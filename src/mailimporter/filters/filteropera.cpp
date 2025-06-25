@@ -7,6 +7,8 @@
 */
 
 #include "filteropera.h"
+using namespace Qt::Literals::StringLiterals;
+
 
 #include <KLocalizedString>
 
@@ -17,7 +19,7 @@ using namespace MailImporter;
 
 FilterOpera::FilterOpera()
     : Filter(i18n("Import Opera Emails"),
-             QStringLiteral("Danny Kukawka"),
+             u"Danny Kukawka"_s,
              i18n("<p><b>Opera email import filter</b></p>"
                   "<p>This filter will import mails from Opera mail folder. Use this filter "
                   "if you want to import all mails within a account in the Opera maildir.</p>"
@@ -48,13 +50,13 @@ QString FilterOpera::defaultSettingsPath()
 void FilterOpera::importRecursive(const QDir &mailDir, const QString &accountName)
 {
     // Recursive import of the MBoxes.
-    const QStringList rootSubDirs = mailDir.entryList(QStringList(QStringLiteral("[^\\.]*")), QDir::Dirs, QDir::Name); // Removal of . and ..
+    const QStringList rootSubDirs = mailDir.entryList(QStringList(u"[^\\.]*"_s), QDir::Dirs, QDir::Name); // Removal of . and ..
     int numSubDirs = rootSubDirs.size();
     if (numSubDirs > 0) {
         QStringList::ConstIterator end(rootSubDirs.constEnd());
         for (QStringList::ConstIterator filename = rootSubDirs.constBegin(); filename != end; ++filename) {
-            QDir importDir(mailDir.path() + QLatin1Char('/') + *filename);
-            const QStringList files = importDir.entryList(QStringList(QStringLiteral("*.[mM][bB][sS]")), QDir::Files, QDir::Name);
+            QDir importDir(mailDir.path() + u'/' + *filename);
+            const QStringList files = importDir.entryList(QStringList(u"*.[mM][bB][sS]"_s), QDir::Files, QDir::Name);
             if (files.isEmpty()) {
                 importRecursive(importDir, accountName.isEmpty() ? *filename : accountName);
             } else {
@@ -178,13 +180,13 @@ void FilterOpera::importMails(const QString &maildir)
      * If the user only select homedir no import needed because
      * there should be no files and we surely import wrong files.
      */
-    else if (mailDir() == QDir::homePath() || mailDir() == (QDir::homePath() + QLatin1Char('/'))) {
+    else if (mailDir() == QDir::homePath() || mailDir() == (QDir::homePath() + u'/')) {
         filterInfo()->addErrorLogEntry(i18n("No files found for import."));
     } else {
         filterInfo()->setOverall(0);
 
         QDir importDir(mailDir());
-        const QStringList files = importDir.entryList(QStringList(QStringLiteral("*.[mM][bB][sS]")), QDir::Files, QDir::Name);
+        const QStringList files = importDir.entryList(QStringList(u"*.[mM][bB][sS]"_s), QDir::Files, QDir::Name);
 
         // Count total number of files to be processed
         filterInfo()->addInfoLogEntry(i18n("Counting files..."));

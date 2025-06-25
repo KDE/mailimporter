@@ -8,6 +8,8 @@
 */
 
 #include "filterkmail_maildir.h"
+using namespace Qt::Literals::StringLiterals;
+
 
 #include <KLocalizedString>
 #include <QFileDialog>
@@ -24,7 +26,7 @@ public:
 /** Default constructor. */
 FilterKMail_maildir::FilterKMail_maildir()
     : Filter(i18n("Import KMail Maildirs and Folder Structure"),
-             QStringLiteral("Danny Kukawka"),
+             u"Danny Kukawka"_s,
              i18n("<p><b>KMail import filter</b></p>"
                   "<p>Select the base directory of the KMail mailfolder you want to import.</p>"
                   "<p><b>Note:</b> Never select your current local KMail maildir (usually "
@@ -54,13 +56,13 @@ void FilterKMail_maildir::import()
 void FilterKMail_maildir::processDirectory(const QString &path)
 {
     QDir dir(path);
-    const QStringList rootSubDirs = dir.entryList(QStringList(QStringLiteral("*")), QDir::Dirs | QDir::Hidden, QDir::Name);
+    const QStringList rootSubDirs = dir.entryList(QStringList(u"*"_s), QDir::Dirs | QDir::Hidden, QDir::Name);
     QStringList::ConstIterator end = rootSubDirs.constEnd();
     for (QStringList::ConstIterator filename = rootSubDirs.constBegin(); filename != end; ++filename) {
         if (filterInfo()->shouldTerminate()) {
             break;
         }
-        if (!(*filename == QLatin1Char('.') || *filename == QLatin1StringView(".."))) {
+        if (!(*filename == u'.' || *filename == QLatin1StringView(".."))) {
             filterInfo()->setCurrent(0);
             importDirContents(dir.filePath(*filename));
             filterInfo()->setOverall((d->mTotalDir > 0) ? (int)((float)d->mImportDirDone / d->mTotalDir * 100) : 0);
@@ -81,7 +83,7 @@ void FilterKMail_maildir::importMails(const QString &maildir)
      * If the user only select homedir no import needed because
      * there should be no files and we surely import wrong files.
      */
-    if (mailDir() == QDir::homePath() || mailDir() == (QDir::homePath() + QLatin1Char('/'))) {
+    if (mailDir() == QDir::homePath() || mailDir() == (QDir::homePath() + u'/')) {
         filterInfo()->addErrorLogEntry(i18n("No files found for import."));
     } else {
         filterInfo()->setOverall(0);
@@ -131,7 +133,7 @@ void FilterKMail_maildir::importFiles(const QString &dirName)
     bool generatedPath = false;
 
     QDir importDir(dirName);
-    const QStringList files = importDir.entryList(QStringList(QStringLiteral("[^\\.]*")), QDir::Files, QDir::Name);
+    const QStringList files = importDir.entryList(QStringList(u"[^\\.]*"_s), QDir::Files, QDir::Name);
     int currentFile = 1;
     int numFiles = files.size();
     QStringList::ConstIterator filesEnd(files.constEnd());
@@ -145,21 +147,21 @@ void FilterKMail_maildir::importFiles(const QString &dirName)
         if (!(temp_mailfile.endsWith(QLatin1StringView(".index")) || temp_mailfile.endsWith(QLatin1StringView(".index.ids"))
               || temp_mailfile.endsWith(QLatin1StringView(".index.sorted")) || temp_mailfile.endsWith(QLatin1StringView(".uidcache")))) {
             if (!generatedPath) {
-                _path = QStringLiteral("KMail-Import");
+                _path = u"KMail-Import"_s;
                 QString _tmp = dir.filePath(*mailFile);
                 _tmp.remove(mailDir(), Qt::CaseSensitive);
-                const QStringList subFList = _tmp.split(QLatin1Char('/'), Qt::SkipEmptyParts);
+                const QStringList subFList = _tmp.split(u'/', Qt::SkipEmptyParts);
                 QStringList::ConstIterator end(subFList.end());
                 for (QStringList::ConstIterator it = subFList.constBegin(); it != end; ++it) {
                     QString _cat = *it;
                     if (!(_cat == *mailFile)) {
-                        if (_cat.startsWith(QLatin1Char('.')) && _cat.endsWith(QLatin1StringView(".directory"))) {
+                        if (_cat.startsWith(u'.') && _cat.endsWith(QLatin1StringView(".directory"))) {
                             _cat.remove(0, 1);
                             _cat.remove((_cat.length() - 10), 10);
-                        } else if (_cat.startsWith(QLatin1Char('.'))) {
+                        } else if (_cat.startsWith(u'.')) {
                             _cat.remove(0, 1);
                         }
-                        _path += QLatin1Char('/') + _cat;
+                        _path += u'/' + _cat;
                     }
                 }
                 if (_path.endsWith(QLatin1StringView("cur"))) {

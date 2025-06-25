@@ -5,6 +5,8 @@
 */
 
 #include "filtermailapptest.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "filterimportertest.h"
 #include <MailImporter/FilterMailApp>
 #include <QTest>
@@ -41,7 +43,7 @@ void FilterMailAppTest::canNotImportDataUnknowPath()
     auto importerTest = new FilterImporterTest(&info);
     filter.setFilterImporter(importerTest);
     filter.setFilterInfo(&info);
-    filter.importMails(QStringLiteral("/foo/kde/bla/toto/"));
+    filter.importMails(u"/foo/kde/bla/toto/"_s);
     QVERIFY(importerTest->filterImporterDataList().isEmpty());
     delete importerTest;
 }

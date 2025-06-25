@@ -5,6 +5,8 @@
 */
 
 #include "filterseamonkey.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include <KLocalizedString>
 using namespace MailImporter;
 
@@ -12,7 +14,7 @@ FilterSeaMonkey::FilterSeaMonkey()
     : FilterThunderbird()
 {
     setName(i18n("Import SeaMonkey Mails and Folder Structure"));
-    setAuthor(QStringLiteral("Laurent Montel"));
+    setAuthor(u"Laurent Montel"_s);
     setInfo(
         i18n("<p><b>SeaMonkey import filter</b></p>"
              "<p>Select your base SeaMonkey mailfolder"
@@ -39,5 +41,5 @@ QString FilterSeaMonkey::defaultSettingsPath()
 
 QString FilterSeaMonkey::defaultInstallFolder() const
 {
-    return QStringLiteral("SeaMonkey-Import/");
+    return u"SeaMonkey-Import/"_s;
 }

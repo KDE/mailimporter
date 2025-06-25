@@ -9,6 +9,8 @@
 */
 
 #include "filtermailapp.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "mailimporter_debug.h"
 
 #include <KLocalizedString>
@@ -68,7 +70,7 @@ void FilterMailApp::importMails(const QString &maildir)
         } else {
             QFileInfo filenameInfo(*filename);
             qCDebug(MAILIMPORTER_LOG) << "importing filename" << *filename;
-            QStringList name = (*filename).split(QLatin1Char('/'), Qt::SkipEmptyParts);
+            QStringList name = (*filename).split(u'/', Qt::SkipEmptyParts);
             QString folderName(name[name.count() - 2]);
 
             filterInfo()->setCurrent(0);
@@ -145,7 +147,7 @@ void FilterMailApp::traverseDirectory(const QString &dirName)
     const QFileInfoList fileinfolist = dir.entryInfoList();
     for (const QFileInfo &fi : fileinfolist) {
         const QString filename(fi.fileName());
-        if (filename == QLatin1Char('.') || filename == QLatin1StringView("..")) {
+        if (filename == u'.' || filename == QLatin1StringView("..")) {
             continue;
         }
         if (fi.isDir() && fi.isReadable()) {

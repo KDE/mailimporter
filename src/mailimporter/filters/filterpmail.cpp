@@ -8,6 +8,8 @@
 */
 
 #include "filterpmail.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "mailimporter_debug.h"
 
 #include <KLocalizedString>
@@ -51,7 +53,7 @@ void FilterPMail::importMails(const QString &chosenDir)
     filterInfo()->addInfoLogEntry(i18n("Counting files..."));
     dir.setPath(mailDir());
     const QStringList files =
-        dir.entryList(QStringList() << QStringLiteral("*.[cC][nN][mM]") << QStringLiteral("*.[pP][mM][mM]") << QStringLiteral("*.[mM][bB][xX]"),
+        dir.entryList(QStringList() << u"*.[cC][nN][mM]"_s << u"*.[pP][mM][mM]"_s << u"*.[mM][bB][xX]"_s,
                       QDir::Files,
                       QDir::Name);
     totalFiles = files.count();
@@ -63,11 +65,11 @@ void FilterPMail::importMails(const QString &chosenDir)
     }
 
     filterInfo()->addInfoLogEntry(i18n("Importing new mail files ('.cnm')..."));
-    processFiles(QStringLiteral("*.[cC][nN][mM]"), &FilterPMail::importNewMessage);
+    processFiles(u"*.[cC][nN][mM]"_s, &FilterPMail::importNewMessage);
     filterInfo()->addInfoLogEntry(i18n("Importing mail folders ('.pmm')..."));
-    processFiles(QStringLiteral("*.[pP][mM][mM]"), &FilterPMail::importMailFolder);
+    processFiles(u"*.[pP][mM][mM]"_s, &FilterPMail::importMailFolder);
     filterInfo()->addInfoLogEntry(i18n("Importing 'UNIX' mail folders ('.mbx')..."));
-    processFiles(QStringLiteral("*.[mM][bB][xX]"), &FilterPMail::importUnixMailFolder);
+    processFiles(u"*.[mM][bB][xX]"_s, &FilterPMail::importUnixMailFolder);
 
     filterInfo()->addInfoLogEntry(i18n("Finished importing emails from %1", mailDir()));
     filterInfo()->setCurrent(100);
@@ -108,7 +110,7 @@ void FilterPMail::processFiles(const QString &mask, void (FilterPMail::*workFunc
 /** this function imports one *.CNM message */
 void FilterPMail::importNewMessage(const QString &file)
 {
-    QString destFolder(QStringLiteral("PegasusMail-Import/New Messages"));
+    QString destFolder(u"PegasusMail-Import/New Messages"_s);
     filterInfo()->setTo(destFolder);
 
     if (!importMessage(destFolder, file, filterInfo()->removeDupMessage())) {
@@ -156,14 +158,14 @@ void FilterPMail::importMailFolder(const QString &file)
     } else {
         // Get folder name
         long l = f.read((char *)&pmm_head, sizeof(pmm_head));
-        QString folder(i18nc("define folder name when we will import pegasus mail", "PegasusMail-Import") + QLatin1Char('/'));
+        QString folder(i18nc("define folder name when we will import pegasus mail", "PegasusMail-Import") + u'/');
         if (folderParsed) {
             folder.append(getFolderName(QString::fromLatin1(pmm_head.id)));
         } else {
             folder.append(QString::fromLatin1(pmm_head.folder));
         }
         filterInfo()->setTo(folder);
-        filterInfo()->addInfoLogEntry(i18n("Importing %1", QStringLiteral("../") + QString::fromLatin1(pmm_head.folder)));
+        filterInfo()->addInfoLogEntry(i18n("Importing %1", u"../"_s + QString::fromLatin1(pmm_head.folder)));
 
         QByteArray input(MAX_LINE, '\0');
         bool first_msg = true;
@@ -209,7 +211,7 @@ void FilterPMail::importUnixMailFolder(const QString &file)
     } pmg_head;
 
     QFile f;
-    QString folder(QStringLiteral("PegasusMail-Import/"));
+    QString folder(u"PegasusMail-Import/"_s);
     QString s(file);
     QString separate;
     QByteArray line(MAX_LINE, '\0');
@@ -217,8 +219,8 @@ void FilterPMail::importUnixMailFolder(const QString &file)
     int l = 0;
 
     /** Get the folder name */
-    s.replace(QRegularExpression(QStringLiteral("mbx$")), QStringLiteral("pmg"));
-    s.replace(QRegularExpression(QStringLiteral("MBX$")), QStringLiteral("PMG"));
+    s.replace(QRegularExpression(u"mbx$"_s), u"pmg"_s);
+    s.replace(QRegularExpression(u"MBX$"_s), u"PMG"_s);
     f.setFileName(s);
     if (!f.open(QIODevice::ReadOnly)) {
         filterInfo()->alert(i18n("Unable to open %1, skipping", s));
@@ -242,7 +244,7 @@ void FilterPMail::importUnixMailFolder(const QString &file)
     if (!f.open(QIODevice::ReadOnly)) {
         filterInfo()->alert(i18n("Unable to open %1, skipping", s));
     } else {
-        filterInfo()->addInfoLogEntry(i18n("Importing %1", QStringLiteral("../") + QString::fromLatin1(pmg_head.folder)));
+        filterInfo()->addInfoLogEntry(i18n("Importing %1", u"../"_s + QString::fromLatin1(pmg_head.folder)));
         l = f.readLine(line.data(), MAX_LINE); // read the first line which is unneeded
         while (!f.atEnd()) {
             QTemporaryFile tempfile;
@@ -290,13 +292,13 @@ bool FilterPMail::parseFolderMatrix(const QString &chosendir)
             }
             QString tmpArray[5];
             tmpRead.remove(tmpRead.length() - 2, 2);
-            QStringList tmpList = QString::fromLatin1(tmpRead).split(QLatin1Char(','), Qt::SkipEmptyParts);
+            QStringList tmpList = QString::fromLatin1(tmpRead).split(u',', Qt::SkipEmptyParts);
             int i = 0;
             QStringList::ConstIterator end(tmpList.constEnd());
             for (QStringList::ConstIterator it = tmpList.constBegin(); it != end; ++it, ++i) {
                 QString _tmp = *it;
                 if (i < 5) {
-                    tmpArray[i] = _tmp.remove(QLatin1Char('\"'));
+                    tmpArray[i] = _tmp.remove(u'\"');
                 } else {
                     hierarch.close();
                     return false;
@@ -328,7 +330,7 @@ QString FilterPMail::getFolderName(const QString &ID)
                     found = true;
                     break;
                 } else {
-                    folder.prepend((tmp[4] + QLatin1Char('/')));
+                    folder.prepend((tmp[4] + u'/'));
                     search = tmp[3];
                 }
             }

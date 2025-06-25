@@ -5,6 +5,8 @@
 */
 
 #include "filtericedove.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include <KLocalizedString>
 using namespace MailImporter;
 
@@ -12,7 +14,7 @@ FilterIcedove::FilterIcedove()
     : FilterThunderbird()
 {
     setName(i18n("Import Icedove Mails and Folder Structure"));
-    setAuthor(QStringLiteral("Laurent Montel"));
+    setAuthor(u"Laurent Montel"_s);
     setInfo(
         i18n("<p><b>Icedove import filter</b></p>"
              "<p>Select your base Icedove mailfolder"
@@ -48,5 +50,5 @@ QString FilterIcedove::defaultSettingsPath()
 
 QString FilterIcedove::defaultInstallFolder() const
 {
-    return QStringLiteral("Icedove-Import/");
+    return u"Icedove-Import/"_s;
 }

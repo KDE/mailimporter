@@ -5,6 +5,8 @@
 */
 
 #include "selectthunderbirdprofilewidget.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "ui_selectthunderbirdprofilewidget.h"
 
 #include <KLocalizedString>

@@ -7,6 +7,8 @@
 */
 
 #include "filtermbox.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "mailimporter_debug.h"
 
 #include <KLocalizedString>
@@ -35,7 +37,7 @@ FilterMBox::~FilterMBox()
 void FilterMBox::import()
 {
     const QStringList filenames =
-        QFileDialog::getOpenFileNames(filterInfo()->parentWidget(), QString(), QDir::homePath(), QStringLiteral("%1 (*.mbox)").arg(i18n("mbox Files")));
+        QFileDialog::getOpenFileNames(filterInfo()->parentWidget(), QString(), QDir::homePath(), u"%1 (*.mbox)"_s.arg(i18n("mbox Files")));
     importMails(filenames);
 }
 
@@ -58,7 +60,7 @@ void FilterMBox::importMails(const QStringList &filenames)
             filterInfo()->alert(i18n("Unable to open %1, skipping", *filename));
         } else {
             QFileInfo filenameInfo(*filename);
-            QString folderName(QStringLiteral("MBOX-%1").arg(filenameInfo.completeBaseName()));
+            QString folderName(u"MBOX-%1"_s.arg(filenameInfo.completeBaseName()));
 
             filterInfo()->setCurrent(0);
             filterInfo()->addInfoLogEntry(i18n("Importing emails from %1...", *filename));

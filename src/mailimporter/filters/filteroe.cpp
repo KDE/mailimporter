@@ -10,6 +10,8 @@
 // This filter was created by looking at libdbx  &liboe
 
 #include "filteroe.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "mailimporter_debug.h"
 
 #include <KLocalizedString>
@@ -61,7 +63,7 @@ void FilterOE::importMails(const QString &maildir)
     setMailDir(maildir);
 
     QDir dir(mailDir());
-    QStringList files = dir.entryList(QStringList(QStringLiteral("*.[dDmM][bB][xX]")), QDir::Files, QDir::Name);
+    QStringList files = dir.entryList(QStringList(u"*.[dDmM][bB][xX]"_s), QDir::Files, QDir::Name);
     if (files.isEmpty()) {
         filterInfo()->alert(i18n("No Outlook Express mailboxes found in directory %1.", mailDir()));
         return;
@@ -119,7 +121,7 @@ void FilterOE::importMailBox(const QString &fileName)
     QFileInfo mailfileinfo(fileName);
     QString _nameOfFile = fileName;
     _nameOfFile.remove(mailDir());
-    _nameOfFile.remove(QLatin1Char('/'));
+    _nameOfFile.remove(u'/');
     filterInfo()->setFrom(mailfileinfo.fileName());
 
     if (!mailfile.open(QIODevice::ReadOnly)) {
@@ -135,7 +137,7 @@ void FilterOE::importMailBox(const QString &fileName)
     mailbox >> sig_block1 >> sig_block2;
     if (sig_block1 == OE4_SIG_1 && sig_block2 == OE4_SIG_2) {
         folderName = QLatin1StringView("OE-Import/") + mailfileinfo.completeBaseName();
-        filterInfo()->addInfoLogEntry(i18n("Importing OE4 Mailbox %1", QStringLiteral("../") + _nameOfFile));
+        filterInfo()->addInfoLogEntry(i18n("Importing OE4 Mailbox %1", u"../"_s + _nameOfFile));
         filterInfo()->setTo(folderName);
         mbxImport(mailbox);
         return;
@@ -152,13 +154,13 @@ void FilterOE::importMailBox(const QString &fileName)
                         folderName = QLatin1StringView("OE-Import/") + _tmpFolder;
                     }
                 }
-                filterInfo()->addInfoLogEntry(i18n("Importing OE5+ Mailbox %1", QStringLiteral("../") + _nameOfFile));
+                filterInfo()->addInfoLogEntry(i18n("Importing OE5+ Mailbox %1", u"../"_s + _nameOfFile));
                 filterInfo()->setTo(folderName);
                 dbxImport(mailbox);
                 return;
             } else if (sig_block2 == OE5_FOLDER_SIG_2) {
                 if (!parsedFolder) {
-                    filterInfo()->addInfoLogEntry(i18n("Importing OE5+ Folder file %1", QStringLiteral("../") + _nameOfFile));
+                    filterInfo()->addInfoLogEntry(i18n("Importing OE5+ Folder file %1", u"../"_s + _nameOfFile));
                     currentIsFolderFile = true;
                     dbxImport(mailbox);
                     currentIsFolderFile = false;

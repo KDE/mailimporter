@@ -5,6 +5,8 @@
 */
 
 #include "filtermailmangziptest.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "filterimportertest.h"
 #include <MailImporter/FilterMailmanGzip>
 #include <QTest>
@@ -43,7 +45,7 @@ void FilterMAilmangzipTest::canNotImportDataUnknowPath()
     FilterImporterTest *importerTest = new FilterImporterTest(info);
     filter.setFilterImporter(importerTest);
     filter.setFilterInfo(info);
-    filter.importMails(QStringList() << QStringLiteral("/foo/kde/bla/toto/bla.zip"));
+    filter.importMails(QStringList() << u"/foo/kde/bla/toto/bla.zip"_s);
     QVERIFY(importerTest->filterImporterDataList().isEmpty());
 #endif
 }

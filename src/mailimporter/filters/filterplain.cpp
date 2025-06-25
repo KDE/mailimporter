@@ -7,6 +7,8 @@
 */
 
 #include "filterplain.h"
+using namespace Qt::Literals::StringLiterals;
+
 
 #include <KLocalizedString>
 
@@ -43,7 +45,7 @@ void FilterPlain::importMails(const QString &mailDir)
     }
     QDir dir(mailDir);
     const QStringList files =
-        dir.entryList(QStringList() << QStringLiteral("*.[eE][mM][lL]") << QStringLiteral("*.[tT][xX][tT]") << QStringLiteral("*.[mM][sS][gG]"),
+        dir.entryList(QStringList() << u"*.[eE][mM][lL]"_s << u"*.[tT][xX][tT]"_s << u"*.[mM][sS][gG]"_s,
                       QDir::Files,
                       QDir::Name);
     // Count total number of files to be processed
@@ -54,7 +56,7 @@ void FilterPlain::importMails(const QString &mailDir)
     } else {
         filterInfo()->addInfoLogEntry(i18n("Importing new mail files..."));
         QStringList::ConstIterator end(files.constEnd());
-        const QString destName = QStringLiteral("PLAIN-%1").arg(dir.dirName());
+        const QString destName = u"PLAIN-%1"_s.arg(dir.dirName());
         int currentFile = 0;
         for (QStringList::ConstIterator mailFile = files.constBegin(); mailFile != end; ++mailFile) {
             const QString dirRealPath = dir.filePath(*mailFile);

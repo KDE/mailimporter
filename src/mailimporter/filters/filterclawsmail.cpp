@@ -7,6 +7,8 @@
 /* based on filter_sylpheed filter */
 
 #include "filterclawsmail.h"
+using namespace Qt::Literals::StringLiterals;
+
 
 #include "mailimporter_debug.h"
 #include <KLocalizedString>
@@ -20,7 +22,7 @@ FilterClawsMail::FilterClawsMail()
     : FilterSylpheed()
 {
     setName(i18n("Import Claws-mail Maildirs and Folder Structure"));
-    setAuthor(QStringLiteral("Laurent Montel"));
+    setAuthor(u"Laurent Montel"_s);
     setInfo(
         i18n("<p><b>Claws-mail import filter</b></p>"
              "<p>Select the base directory of the Claws-mail mailfolder you want to import "
@@ -71,9 +73,9 @@ QString FilterClawsMail::localMailDirPath()
 
         for (QDomElement e = settings.firstChildElement(); !e.isNull(); e = e.nextSiblingElement()) {
             if (e.tagName() == QLatin1StringView("folder")) {
-                if (e.hasAttribute(QStringLiteral("type"))) {
-                    if (e.attribute(QStringLiteral("type")) == QLatin1StringView("mh")) {
-                        return QDir::homePath() + QLatin1Char('/') + e.attribute(QStringLiteral("path"));
+                if (e.hasAttribute(u"type"_s)) {
+                    if (e.attribute(u"type"_s) == QLatin1StringView("mh")) {
+                        return QDir::homePath() + u'/' + e.attribute(u"path"_s);
                     }
                 }
             }
@@ -93,10 +95,10 @@ bool FilterClawsMail::excludeFile(const QString &file)
 
 QString FilterClawsMail::defaultInstallFolder() const
 {
-    return i18nc("define folder name where we will import clawsmail mails", "ClawsMail-Import") + QLatin1Char('/');
+    return i18nc("define folder name where we will import clawsmail mails", "ClawsMail-Import") + u'/';
 }
 
 QString FilterClawsMail::markFile() const
 {
-    return QStringLiteral(".claws_mark");
+    return u".claws_mark"_s;
 }

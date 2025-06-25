@@ -5,6 +5,8 @@
 */
 
 #include "filterkmailarchive.h"
+using namespace Qt::Literals::StringLiterals;
+
 
 #include <KLocalizedString>
 #include <KTar>
@@ -29,7 +31,7 @@ public:
 };
 FilterKMailArchive::FilterKMailArchive()
     : Filter(i18n("Import KMail Archive File"),
-             QStringLiteral("Klar\xE4lvdalens Datakonsult AB"),
+             u"Klar\xE4lvdalens Datakonsult AB"_s,
              i18n("<p><b>KMail Archive File Import Filter</b></p>"
                   "<p>This filter will import archives files previously exported by KMail.</p>"
                   "<p>Archive files contain a complete folder subtree compressed into a single file.</p>"))
@@ -44,8 +46,8 @@ FilterKMailArchive::~FilterKMailArchive() = default;
 // Can also return an empty string if this is no valid dir name
 static QString folderNameForDirectoryName(const QString &dirName)
 {
-    Q_ASSERT(dirName.startsWith(QLatin1Char('.')));
-    const QString end = QStringLiteral(".directory");
+    Q_ASSERT(dirName.startsWith(u'.'));
+    const QString end = u".directory"_s;
     const int expectedIndex = dirName.length() - end.length();
     if (dirName.toLower().indexOf(end) != expectedIndex) {
         return QString();
@@ -70,7 +72,7 @@ bool FilterKMailArchive::importFolder(const KArchiveDirectory *folder, const QSt
     qCDebug(MAILIMPORTER_LOG) << "Importing folder" << folder->name();
     filterInfo()->addInfoLogEntry(i18n("Importing folder '%1'...", folderPath));
     filterInfo()->setTo(filterImporter()->topLevelFolder() + folderPath);
-    const KArchiveDirectory *const messageDir = dynamic_cast<const KArchiveDirectory *>(folder->entry(QStringLiteral("cur")));
+    const KArchiveDirectory *const messageDir = dynamic_cast<const KArchiveDirectory *>(folder->entry(u"cur"_s));
     if (messageDir) {
         int total = messageDir->entries().count();
         int cur = 1;
@@ -113,8 +115,8 @@ bool FilterKMailArchive::importDirectory(const KArchiveDirectory *directory, con
         if (entry->isDirectory()) {
             const auto dir = static_cast<const KArchiveDirectory *>(entry);
 
-            if (!dir->name().startsWith(QLatin1Char('.'))) {
-                if (!importFolder(dir, folderPath + QLatin1Char('/') + dir->name())) {
+            if (!dir->name().startsWith(u'.')) {
+                if (!importFolder(dir, folderPath + u'/' + dir->name())) {
                     return false;
                 }
             }
@@ -124,7 +126,7 @@ bool FilterKMailArchive::importDirectory(const KArchiveDirectory *directory, con
                 if (folderName.isEmpty()) {
                     filterInfo()->addErrorLogEntry(i18n("Unexpected subdirectory named '%1'.", entry->name()));
                 } else {
-                    if (!importDirectory(dir, folderPath + QLatin1Char('/') + folderName)) {
+                    if (!importDirectory(dir, folderPath + u'/' + folderName)) {
                         return false;
                     }
                 }
@@ -155,7 +157,7 @@ void FilterKMailArchive::import()
     const QString archiveFile = QFileDialog::getOpenFileName(filterInfo()->parentWidget(),
                                                              i18n("Select KMail Archive File to Import"),
                                                              QString(),
-                                                             QStringLiteral("%1 (*.tar *.tar.gz *.tar.bz2 *.zip)").arg(i18n("KMail Archive Files ")));
+                                                             u"%1 (*.tar *.tar.gz *.tar.bz2 *.zip)"_s.arg(i18n("KMail Archive Files ")));
     if (archiveFile.isEmpty()) {
         filterInfo()->alert(i18n("Please select an archive file that should be imported."));
         return;
@@ -175,9 +177,9 @@ void FilterKMailArchive::importMails(const QString &archiveFile)
     QMimeType mimeType = db.mimeTypeForFile(archiveFile, QMimeDatabase::MatchExtension);
     using KArchivePtr = QSharedPointer<KArchive>;
     KArchivePtr archive;
-    if (!mimeType.globPatterns().filter(QStringLiteral("tar"), Qt::CaseInsensitive).isEmpty()) {
+    if (!mimeType.globPatterns().filter(u"tar"_s, Qt::CaseInsensitive).isEmpty()) {
         archive = KArchivePtr(new KTar(archiveFile));
-    } else if (!mimeType.globPatterns().filter(QStringLiteral("zip"), Qt::CaseInsensitive).isEmpty()) {
+    } else if (!mimeType.globPatterns().filter(u"zip"_s, Qt::CaseInsensitive).isEmpty()) {
         archive = KArchivePtr(new KZip(archiveFile));
     } else {
         filterInfo()->alert(i18n("The file '%1' does not appear to be a valid archive.", archiveFile));

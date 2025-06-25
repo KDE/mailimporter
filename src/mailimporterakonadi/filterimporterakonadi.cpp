@@ -5,6 +5,8 @@
 */
 
 #include "filterimporterakonadi.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "mailimporterakonadi_debug.h"
 #include <Akonadi/CollectionCreateJob>
 #include <Akonadi/CollectionFetchJob>
@@ -138,7 +140,7 @@ Akonadi::Collection FilterImporterAkonadi::parseFolderString(const QString &fold
     }
 
     // The folder hasn't yet been created, create it now.
-    const QStringList folderList = folderParseString.split(QLatin1Char('/'), Qt::SkipEmptyParts);
+    const QStringList folderList = folderParseString.split(u'/', Qt::SkipEmptyParts);
     bool isFirst = true;
     QString folderBuilder;
     Akonadi::Collection lastCollection;
@@ -151,7 +153,7 @@ Akonadi::Collection FilterImporterAkonadi::parseFolderString(const QString &fold
             lastCollection = mMessageFolderCollectionMap[folder];
             isFirst = false;
         } else {
-            folderBuilder += QLatin1Char('/') + folder;
+            folderBuilder += u'/' + folder;
             mMessageFolderCollectionMap[folderBuilder] = addSubCollection(lastCollection, folder);
             lastCollection = mMessageFolderCollectionMap[folderBuilder];
         }
@@ -253,7 +255,7 @@ bool FilterImporterAkonadi::addAkonadiMessage(const Akonadi::Collection &collect
 {
     Akonadi::Item item;
 
-    item.setMimeType(QStringLiteral("message/rfc822"));
+    item.setMimeType(u"message/rfc822"_s);
 
     if (status.isOfUnknownStatus()) {
         KMime::Headers::Base *statusHeaders = message->headerByType("X-Status");

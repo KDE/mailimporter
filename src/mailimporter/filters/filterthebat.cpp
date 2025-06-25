@@ -8,6 +8,8 @@
 */
 
 #include "filterthebat.h"
+using namespace Qt::Literals::StringLiterals;
+
 
 #include <KLocalizedString>
 #include <QFileDialog>
@@ -26,7 +28,7 @@ public:
 /** Default constructor. */
 FilterTheBat::FilterTheBat()
     : Filter(i18n("Import The Bat! Mails and Folder Structure"),
-             QStringLiteral("Danny Kukawka"),
+             u"Danny Kukawka"_s,
              i18n("<p><b>The Bat! import filter</b></p>"
                   "<p>Select the base directory of the \'The Bat!\' local mailfolder you "
                   "want to import.</p>"
@@ -55,7 +57,7 @@ void FilterTheBat::import()
 void FilterTheBat::processDirectory(const QString &path)
 {
     QDir dir(path);
-    const QStringList rootSubDirs = dir.entryList(QStringList(QStringLiteral("[^\\.]*")), QDir::Dirs, QDir::Name);
+    const QStringList rootSubDirs = dir.entryList(QStringList(u"[^\\.]*"_s), QDir::Dirs, QDir::Name);
     QStringList::ConstIterator end = rootSubDirs.constEnd();
     for (QStringList::ConstIterator filename = rootSubDirs.constBegin(); filename != end; ++filename) {
         if (filterInfo()->shouldTerminate()) {
@@ -78,7 +80,7 @@ void FilterTheBat::importMails(const QString &maildir)
      * If the user only select homedir no import needed because
      * there should be no files and we surely import wrong files.
      */
-    if (mailDir() == QDir::homePath() || mailDir() == (QDir::homePath() + QLatin1Char('/'))) {
+    if (mailDir() == QDir::homePath() || mailDir() == (QDir::homePath() + u'/')) {
         filterInfo()->addErrorLogEntry(i18n("No files found for import."));
     } else {
         filterInfo()->setOverall(0);
@@ -117,11 +119,11 @@ void FilterTheBat::importDirContents(const QString &dirName)
 
     /** Here Import all archives in the current dir */
     QDir importDir(dirName);
-    const QStringList files = importDir.entryList(QStringList(QStringLiteral("*.[tT][bB][bB]")), QDir::Files, QDir::Name);
+    const QStringList files = importDir.entryList(QStringList(u"*.[tT][bB][bB]"_s), QDir::Files, QDir::Name);
     QStringList::ConstIterator end = files.constEnd();
     for (QStringList::ConstIterator mailFile = files.constBegin(); mailFile != end; ++mailFile) {
         QString temp_mailfile = *mailFile;
-        importFiles((dirName + QLatin1Char('/') + temp_mailfile));
+        importFiles((dirName + u'/' + temp_mailfile));
         if (filterInfo()->shouldTerminate()) {
             return;
         }
@@ -150,7 +152,7 @@ void FilterTheBat::importFiles(const QString &FileName)
 
     long l = 0;
     QByteArray input(50, '\0');
-    const QRegularExpression regexp(QStringLiteral("!.p.0"));
+    const QRegularExpression regexp(u"!.p.0"_s);
     QFile tbb(FileName);
     int iFound = 0;
     int count = 0;
@@ -182,7 +184,7 @@ void FilterTheBat::importFiles(const QString &FileName)
 
             iFound = _tmp.count(regexp);
             if (!iFound) {
-                iFound = _tmp.lastIndexOf(QLatin1Char('!'));
+                iFound = _tmp.lastIndexOf(u'!');
                 if (iFound >= 0 && ((l - iFound) < 5)) {
                     int _i = tbb.pos();
                     tbb.seek((_i - iFound));
@@ -201,7 +203,7 @@ void FilterTheBat::importFiles(const QString &FileName)
             long lastPos = 3128;
             long endPos = 0;
 
-            QString _path = i18nc("Define folder where we will import thebat mails", "TheBat-Import") + QLatin1Char('/');
+            QString _path = i18nc("Define folder where we will import thebat mails", "TheBat-Import") + u'/';
             QString _tmp = FileName;
             _tmp.remove(_tmp.length() - 13, 13);
             _path += _tmp.remove(mailDir(), Qt::CaseSensitive);

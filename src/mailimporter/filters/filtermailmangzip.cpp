@@ -5,6 +5,8 @@
 */
 
 #include "filtermailmangzip.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "mailimporter_debug.h"
 
 #include <KCompressionDevice>
@@ -17,7 +19,7 @@ using namespace MailImporter;
 
 FilterMailmanGzip::FilterMailmanGzip()
     : Filter(i18n("Import mailman gzip Files"),
-             QStringLiteral("Laurent Montel"),
+             u"Laurent Montel"_s,
              i18n("<p><b>mailman gzip import filter</b></p>"
                   "<p>This filter will import mailman gzipped files into KMail.</p>"
                   "<p><b>Note:</b> Emails will be imported into folders named after the "
@@ -32,7 +34,7 @@ FilterMailmanGzip::~FilterMailmanGzip()
 void FilterMailmanGzip::import()
 {
     const QStringList filenames =
-        QFileDialog::getOpenFileNames(filterInfo()->parentWidget(), QString(), QDir::homePath(), QStringLiteral("%1 (*.txt.gz)").arg(i18n("gzip Files")));
+        QFileDialog::getOpenFileNames(filterInfo()->parentWidget(), QString(), QDir::homePath(), u"%1 (*.txt.gz)"_s.arg(i18n("gzip Files")));
     importMails(filenames);
 }
 

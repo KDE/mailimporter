@@ -5,6 +5,8 @@
 */
 
 #include "selectthunderbirdprofiledialogtest.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "../selectthunderbirdprofilewidget.h"
 
 #include <QDialogButtonBox>
@@ -18,9 +20,9 @@ SelectThunderbirdProfileDialogTest::SelectThunderbirdProfileDialogTest(QObject *
 void SelectThunderbirdProfileDialogTest::shouldHaveDefaultValue()
 {
     MailImporter::SelectThunderbirdProfileDialog dlg;
-    auto widget = dlg.findChild<MailImporter::SelectThunderbirdProfileWidget *>(QStringLiteral("selectprofile"));
+    auto widget = dlg.findChild<MailImporter::SelectThunderbirdProfileWidget *>(u"selectprofile"_s);
     QVERIFY(widget);
-    auto buttonBox = dlg.findChild<QDialogButtonBox *>(QStringLiteral("buttonBox"));
+    auto buttonBox = dlg.findChild<QDialogButtonBox *>(u"buttonBox"_s);
     QVERIFY(buttonBox);
 }
 

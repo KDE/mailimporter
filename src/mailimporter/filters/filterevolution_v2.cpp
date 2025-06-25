@@ -10,6 +10,8 @@
 */
 
 #include "filterevolution_v2.h"
+using namespace Qt::Literals::StringLiterals;
+
 
 #include <KLocalizedString>
 #include <QFileDialog>
@@ -20,7 +22,7 @@ using namespace MailImporter;
 /** Default constructor. */
 FilterEvolution_v2::FilterEvolution_v2()
     : Filter(i18n("Import Evolution 2.x Local Mails and Folder Structure"),
-             QStringLiteral("Danny Kukawka"),
+             u"Danny Kukawka"_s,
              i18n("<p><b>Evolution 2.x import filter</b></p>"
                   "<p>Select the base directory of your local Evolution mailfolder (usually ~/.evolution/mail/local/).</p>"
                   "<p><b>Note:</b> Never choose a Folder which <u>does not</u> contain mbox-files (for example "
@@ -90,14 +92,14 @@ void FilterEvolution_v2::importMails(const QString &maildir)
      * If the user only select homedir no import needed because
      * there should be no files and we surely import wrong files.
      */
-    if (mailDir() == QDir::homePath() || mailDir() == (QDir::homePath() + QLatin1Char('/'))) {
+    if (mailDir() == QDir::homePath() || mailDir() == (QDir::homePath() + u'/')) {
         filterInfo()->addErrorLogEntry(i18n("No files found for import."));
     } else {
         filterInfo()->setOverall(0);
 
         /** Recursive import of the MailArchives */
         QDir dir(mailDir());
-        const QStringList rootSubDirs = dir.entryList(QStringList(QStringLiteral("[^\\.]*")), QDir::Dirs, QDir::Name); // Removal of . and ..
+        const QStringList rootSubDirs = dir.entryList(QStringList(u"[^\\.]*"_s), QDir::Dirs, QDir::Name); // Removal of . and ..
         int currentDir = 1;
         int numSubDirs = rootSubDirs.size();
         QStringList::ConstIterator endFilename(rootSubDirs.constEnd());
@@ -111,7 +113,7 @@ void FilterEvolution_v2::importMails(const QString &maildir)
 
         /** import last but not least all archives from the root-dir */
         QDir importDir(mailDir());
-        const QStringList files = importDir.entryList(QStringList(QStringLiteral("[^\\.]*")), QDir::Files, QDir::Name);
+        const QStringList files = importDir.entryList(QStringList(u"[^\\.]*"_s), QDir::Files, QDir::Name);
         endFilename = files.constEnd();
         for (QStringList::ConstIterator mailFile = files.constBegin(); mailFile != endFilename; ++mailFile) {
             if (filterInfo()->shouldTerminate()) {
@@ -153,24 +155,24 @@ void FilterEvolution_v2::importDirContents(const QString &dirName, const QString
     QDir dir(dirName);
 
     QDir importDir(dirName);
-    const QStringList files = importDir.entryList(QStringList(QStringLiteral("[^\\.]*")), QDir::Files, QDir::Name);
+    const QStringList files = importDir.entryList(QStringList(u"[^\\.]*"_s), QDir::Files, QDir::Name);
     QStringList::ConstIterator mailFileEnd(files.constEnd());
     for (QStringList::ConstIterator mailFile = files.constBegin(); mailFile != mailFileEnd; ++mailFile) {
         QString temp_mailfile = *mailFile;
         if (!excludeFiles(temp_mailfile)) {
             filterInfo()->addInfoLogEntry(i18n("Start import file %1...", temp_mailfile));
-            importMBox((dirName + QLatin1Char('/') + temp_mailfile), KMailRootDir, KMailSubDir);
+            importMBox((dirName + u'/' + temp_mailfile), KMailRootDir, KMailSubDir);
         }
     }
 
     /** If there are subfolders, we import them one by one */
     QDir subfolders(dirName);
-    const QStringList subDirs = subfolders.entryList(QStringList(QStringLiteral("[^\\.]*")), QDir::Dirs, QDir::Name);
+    const QStringList subDirs = subfolders.entryList(QStringList(u"[^\\.]*"_s), QDir::Dirs, QDir::Name);
     QStringList::ConstIterator end(subDirs.constEnd());
     for (QStringList::ConstIterator filename = subDirs.constBegin(); filename != end; ++filename) {
         QString kSubDir;
         if (!KMailSubDir.isNull()) {
-            kSubDir = KMailSubDir + QLatin1Char('/') + *filename;
+            kSubDir = KMailSubDir + u'/' + *filename;
         } else {
             kSubDir = *filename;
         }
@@ -197,9 +199,9 @@ void FilterEvolution_v2::importMBox(const QString &mboxName, const QString &root
         filterInfo()->setCurrent(0);
         if (mboxName.length() > 20) {
             QString tmp_info = mboxName;
-            tmp_info.replace(mailDir(), QStringLiteral("../"));
+            tmp_info.replace(mailDir(), u"../"_s);
             if (tmp_info.contains(QLatin1StringView(".sbd"))) {
-                tmp_info.remove(QStringLiteral(".sbd"));
+                tmp_info.remove(u".sbd"_s);
             }
             filterInfo()->setFrom(tmp_info);
         } else {
@@ -208,7 +210,7 @@ void FilterEvolution_v2::importMBox(const QString &mboxName, const QString &root
 
         if (targetDir.contains(QLatin1StringView(".sbd"))) {
             QString tmp_info = targetDir;
-            tmp_info.remove(QStringLiteral(".sbd"));
+            tmp_info.remove(u".sbd"_s);
             filterInfo()->setTo(tmp_info);
         } else {
             filterInfo()->setTo(targetDir);
@@ -246,13 +248,13 @@ void FilterEvolution_v2::importMBox(const QString &mboxName, const QString &root
             QString _targetDir = targetDir;
             if (!targetDir.isNull()) {
                 if (_targetDir.contains(QLatin1StringView(".sbd"))) {
-                    _targetDir.remove(QStringLiteral(".sbd"));
+                    _targetDir.remove(u".sbd"_s);
                 }
-                destFolder += QStringLiteral("Evolution-Import/") + _targetDir + QLatin1Char('/') + filenameInfo.completeBaseName(); // mboxName;
+                destFolder += u"Evolution-Import/"_s + _targetDir + u'/' + filenameInfo.completeBaseName(); // mboxName;
             } else {
-                destFolder = QStringLiteral("Evolution-Import/") + rootDir;
+                destFolder = u"Evolution-Import/"_s + rootDir;
                 if (destFolder.contains(QLatin1StringView(".sbd"))) {
-                    destFolder.remove(QStringLiteral(".sbd"));
+                    destFolder.remove(u".sbd"_s);
                 }
             }
 
