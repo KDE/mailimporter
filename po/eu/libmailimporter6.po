@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-31 00:41+0000\n"
+"POT-Creation-Date: 2025-06-26 00:43+0000\n"
 "PO-Revision-Date: 2022-09-08 08:04+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -25,12 +25,12 @@ msgstr ""
 "X-Generator: Lokalize 22.08.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: mailimporter/filters/filterbalsa.cpp:22
+#: mailimporter/filters/filterbalsa.cpp:24
 #, kde-format
 msgid "Import Balsa Local Mails and Folder Structure"
 msgstr "Inportatu Basa-ren posta lokalak eta karpeta-egitura"
 
-#: mailimporter/filters/filterbalsa.cpp:24
+#: mailimporter/filters/filterbalsa.cpp:26
 #, kde-format
 msgid ""
 "<p><b>Balsa import filter</b></p><p>Select the base directory of your local "
@@ -42,137 +42,137 @@ msgstr ""
 "p><p>Karpeten egitura berriro sor daitekeenez, karpetak ondoko kokalekuan "
 "gordeko dira: \"Balse-Import\".</p>"
 
-#: mailimporter/filters/filterbalsa.cpp:39
+#: mailimporter/filters/filterbalsa.cpp:41
 #, kde-format
 msgctxt "name of balsa application"
 msgid "Balsa"
 msgstr "Balsa"
 
-#: mailimporter/filters/filterbalsa.cpp:89
-#: mailimporter/filters/filterevolution.cpp:60
-#: mailimporter/filters/filterevolution_v2.cpp:85
-#: mailimporter/filters/filterevolution_v3.cpp:86
-#: mailimporter/filters/filterkmail_maildir.cpp:76
-#: mailimporter/filters/filteroe.cpp:58
-#: mailimporter/filters/filteropera.cpp:174
-#: mailimporter/filters/filterplain.cpp:41
-#: mailimporter/filters/filterpmail.cpp:45
-#: mailimporter/filters/filtersylpheed.cpp:122
-#: mailimporter/filters/filterthebat.cpp:73
-#: mailimporter/filters/filterthunderbird.cpp:169
+#: mailimporter/filters/filterbalsa.cpp:91
+#: mailimporter/filters/filterevolution.cpp:62
+#: mailimporter/filters/filterevolution_v2.cpp:87
+#: mailimporter/filters/filterevolution_v3.cpp:88
+#: mailimporter/filters/filterkmail_maildir.cpp:78
+#: mailimporter/filters/filteroe.cpp:60
+#: mailimporter/filters/filteropera.cpp:176
+#: mailimporter/filters/filterplain.cpp:43
+#: mailimporter/filters/filterpmail.cpp:47
+#: mailimporter/filters/filtersylpheed.cpp:124
+#: mailimporter/filters/filterthebat.cpp:75
+#: mailimporter/filters/filterthunderbird.cpp:171
 #, kde-format
 msgid "No directory selected."
 msgstr "Ez da direktoriorik hautatu."
 
-#: mailimporter/filters/filterbalsa.cpp:98
-#: mailimporter/filters/filterevolution.cpp:69
-#: mailimporter/filters/filterevolution_v2.cpp:94
-#: mailimporter/filters/filterevolution_v3.cpp:95
-#: mailimporter/filters/filterkmail_maildir.cpp:85
-#: mailimporter/filters/filteropera.cpp:182
-#: mailimporter/filters/filterplain.cpp:53
-#: mailimporter/filters/filtersylpheed.cpp:131
-#: mailimporter/filters/filterthebat.cpp:82
-#: mailimporter/filters/filterthunderbird.cpp:178
+#: mailimporter/filters/filterbalsa.cpp:100
+#: mailimporter/filters/filterevolution.cpp:71
+#: mailimporter/filters/filterevolution_v2.cpp:96
+#: mailimporter/filters/filterevolution_v3.cpp:97
+#: mailimporter/filters/filterkmail_maildir.cpp:87
+#: mailimporter/filters/filteropera.cpp:184
+#: mailimporter/filters/filterplain.cpp:55
+#: mailimporter/filters/filtersylpheed.cpp:133
+#: mailimporter/filters/filterthebat.cpp:84
+#: mailimporter/filters/filterthunderbird.cpp:180
 #, kde-format
 msgid "No files found for import."
 msgstr "Ez da inportatzeko fitxategirik aurkitu."
 
-#: mailimporter/filters/filterbalsa.cpp:109
-#: mailimporter/filters/filterevolution.cpp:83
-#: mailimporter/filters/filterevolution_v2.cpp:127
-#: mailimporter/filters/filterevolution_v3.cpp:106
-#: mailimporter/filters/filterkmail_maildir.cpp:95
-#: mailimporter/filters/filtermailapp.cpp:124
-#: mailimporter/filters/filtermailmangzip.cpp:134
-#: mailimporter/filters/filtermbox.cpp:133
-#: mailimporter/filters/filteropera.cpp:141
-#: mailimporter/filters/filterplain.cpp:75
-#: mailimporter/filters/filterpmail.cpp:72
-#: mailimporter/filters/filtersylpheed.cpp:143
-#: mailimporter/filters/filterthebat.cpp:93
-#: mailimporter/filters/filterthunderbird.cpp:210
+#: mailimporter/filters/filterbalsa.cpp:111
+#: mailimporter/filters/filterevolution.cpp:85
+#: mailimporter/filters/filterevolution_v2.cpp:129
+#: mailimporter/filters/filterevolution_v3.cpp:108
+#: mailimporter/filters/filterkmail_maildir.cpp:97
+#: mailimporter/filters/filtermailapp.cpp:126
+#: mailimporter/filters/filtermailmangzip.cpp:136
+#: mailimporter/filters/filtermbox.cpp:135
+#: mailimporter/filters/filteropera.cpp:143
+#: mailimporter/filters/filterplain.cpp:77
+#: mailimporter/filters/filterpmail.cpp:74
+#: mailimporter/filters/filtersylpheed.cpp:145
+#: mailimporter/filters/filterthebat.cpp:95
+#: mailimporter/filters/filterthunderbird.cpp:212
 #, kde-format
 msgid "Finished importing emails from %1"
 msgstr "%1(e)tik posta inportatzea burututa"
 
-#: mailimporter/filters/filterbalsa.cpp:112
-#: mailimporter/filters/filterevolution.cpp:205
-#: mailimporter/filters/filterevolution_v2.cpp:129
-#: mailimporter/filters/filterevolution_v3.cpp:109
-#: mailimporter/filters/filterkmail_maildir.cpp:97
-#: mailimporter/filters/filteropera.cpp:143
-#: mailimporter/filters/filterplain.cpp:77
-#: mailimporter/filters/filtersylpheed.cpp:145
-#: mailimporter/filters/filterthebat.cpp:95
-#: mailimporter/filters/filterthunderbird.cpp:212
+#: mailimporter/filters/filterbalsa.cpp:114
+#: mailimporter/filters/filterevolution.cpp:207
+#: mailimporter/filters/filterevolution_v2.cpp:131
+#: mailimporter/filters/filterevolution_v3.cpp:111
+#: mailimporter/filters/filterkmail_maildir.cpp:99
+#: mailimporter/filters/filteropera.cpp:145
+#: mailimporter/filters/filterplain.cpp:79
+#: mailimporter/filters/filtersylpheed.cpp:147
+#: mailimporter/filters/filterthebat.cpp:97
+#: mailimporter/filters/filterthunderbird.cpp:214
 #, kde-format
 msgid "1 duplicate message not imported"
 msgid_plural "%1 duplicate messages not imported"
 msgstr[0] "Bikoiztutako mezu 1 ez da inportatu"
 msgstr[1] "Bikoiztutako %1 mezu ez dira inportatu"
 
-#: mailimporter/filters/filterbalsa.cpp:116
-#: mailimporter/filters/filterevolution_v2.cpp:132
-#: mailimporter/filters/filterevolution_v3.cpp:113
-#: mailimporter/filters/filterkmail_maildir.cpp:101
-#: mailimporter/filters/filtermailapp.cpp:136
-#: mailimporter/filters/filtermailmangzip.cpp:142
-#: mailimporter/filters/filtermbox.cpp:141
-#: mailimporter/filters/filteroe.cpp:108
-#: mailimporter/filters/filteropera.cpp:200
-#: mailimporter/filters/filterplain.cpp:80
-#: mailimporter/filters/filtersylpheed.cpp:149
-#: mailimporter/filters/filterthebat.cpp:99
-#: mailimporter/filters/filterthunderbird.cpp:216
+#: mailimporter/filters/filterbalsa.cpp:118
+#: mailimporter/filters/filterevolution_v2.cpp:134
+#: mailimporter/filters/filterevolution_v3.cpp:115
+#: mailimporter/filters/filterkmail_maildir.cpp:103
+#: mailimporter/filters/filtermailapp.cpp:138
+#: mailimporter/filters/filtermailmangzip.cpp:144
+#: mailimporter/filters/filtermbox.cpp:143
+#: mailimporter/filters/filteroe.cpp:110
+#: mailimporter/filters/filteropera.cpp:202
+#: mailimporter/filters/filterplain.cpp:82
+#: mailimporter/filters/filtersylpheed.cpp:151
+#: mailimporter/filters/filterthebat.cpp:101
+#: mailimporter/filters/filterthunderbird.cpp:218
 #, kde-format
 msgid "Finished import, canceled by user."
 msgstr "Inportatzea amaitu da, erabiltzaileak ezeztatu du."
 
-#: mailimporter/filters/filterbalsa.cpp:163
-#: mailimporter/filters/filterevolution_v3.cpp:160
+#: mailimporter/filters/filterbalsa.cpp:165
+#: mailimporter/filters/filterevolution_v3.cpp:162
 #, kde-format
 msgctxt "define folder name where we import evolution mails"
 msgid "Evolution-Import"
 msgstr "Evolution-Import"
 
-#: mailimporter/filters/filterbalsa.cpp:187
-#: mailimporter/filters/filterevolution_v3.cpp:184
-#: mailimporter/filters/filterkmail_maildir.cpp:169
-#: mailimporter/filters/filtersylpheed.cpp:228
-#: mailimporter/filters/filterthebat.cpp:209
+#: mailimporter/filters/filterbalsa.cpp:189
+#: mailimporter/filters/filterevolution_v3.cpp:186
+#: mailimporter/filters/filterkmail_maildir.cpp:171
+#: mailimporter/filters/filtersylpheed.cpp:230
+#: mailimporter/filters/filterthebat.cpp:211
 #, kde-format
 msgid "Import folder %1..."
 msgstr "Inportatu %1 karpeta..."
 
-#: mailimporter/filters/filterbalsa.cpp:195
-#: mailimporter/filters/filterevolution.cpp:194
-#: mailimporter/filters/filterevolution_v2.cpp:260
-#: mailimporter/filters/filterevolution_v3.cpp:192
-#: mailimporter/filters/filterlnotes.cpp:127
-#: mailimporter/filters/filterlnotes.cpp:158
-#: mailimporter/filters/filtermailapp.cpp:107
-#: mailimporter/filters/filtermailmangzip.cpp:114
-#: mailimporter/filters/filtermbox.cpp:113
-#: mailimporter/filters/filteroe.cpp:212 mailimporter/filters/filteroe.cpp:388
-#: mailimporter/filters/filteropera.cpp:124
-#: mailimporter/filters/filterplain.cpp:65
-#: mailimporter/filters/filterpmail.cpp:115
-#: mailimporter/filters/filterpmail.cpp:194
-#: mailimporter/filters/filterpmail.cpp:263
-#: mailimporter/filters/filtersylpheed.cpp:242
-#: mailimporter/filters/filterthebat.cpp:229
-#: mailimporter/filters/filterthunderbird.cpp:344
+#: mailimporter/filters/filterbalsa.cpp:197
+#: mailimporter/filters/filterevolution.cpp:196
+#: mailimporter/filters/filterevolution_v2.cpp:262
+#: mailimporter/filters/filterevolution_v3.cpp:194
+#: mailimporter/filters/filterlnotes.cpp:129
+#: mailimporter/filters/filterlnotes.cpp:160
+#: mailimporter/filters/filtermailapp.cpp:109
+#: mailimporter/filters/filtermailmangzip.cpp:116
+#: mailimporter/filters/filtermbox.cpp:115
+#: mailimporter/filters/filteroe.cpp:214 mailimporter/filters/filteroe.cpp:390
+#: mailimporter/filters/filteropera.cpp:126
+#: mailimporter/filters/filterplain.cpp:67
+#: mailimporter/filters/filterpmail.cpp:117
+#: mailimporter/filters/filterpmail.cpp:196
+#: mailimporter/filters/filterpmail.cpp:265
+#: mailimporter/filters/filtersylpheed.cpp:244
+#: mailimporter/filters/filterthebat.cpp:231
+#: mailimporter/filters/filterthunderbird.cpp:346
 #, kde-format
 msgid "Could not import %1"
 msgstr "Ezin izan da %1 inportatu"
 
-#: mailimporter/filters/filterclawsmail.cpp:22
+#: mailimporter/filters/filterclawsmail.cpp:24
 #, kde-format
 msgid "Import Claws-mail Maildirs and Folder Structure"
 msgstr "Inportatu Claws-mail-en posta-direktorioak eta karpeta-egitura"
 
-#: mailimporter/filters/filterclawsmail.cpp:25
+#: mailimporter/filters/filterclawsmail.cpp:27
 #, kde-format
 msgid ""
 "<p><b>Claws-mail import filter</b></p><p>Select the base directory of the "
@@ -187,29 +187,29 @@ msgstr ""
 "kokalekuan gordeko dira: \"ClawsMail-Import\".</p><p>Iragazki honek mezuen "
 "egoera berregiten du, adibidez, berria edo birbidalia.</p>"
 
-#: mailimporter/filters/filterclawsmail.cpp:42
+#: mailimporter/filters/filterclawsmail.cpp:44
 #, kde-format
 msgctxt "name of clawsMail application"
 msgid "ClawsMail"
 msgstr "ClawsMail"
 
-#: mailimporter/filters/filterclawsmail.cpp:96
+#: mailimporter/filters/filterclawsmail.cpp:98
 #, kde-format
 msgctxt "define folder name where we will import clawsmail mails"
 msgid "ClawsMail-Import"
 msgstr "ClawsMail-Import"
 
-#: mailimporter/filters/filterevolution.cpp:17
+#: mailimporter/filters/filterevolution.cpp:19
 #, kde-format
 msgid "Import Evolution 1.x Local Mails and Folder Structure"
 msgstr "Inportatu Evolution 1.x bertsioko posta eta karpeta-egitura"
 
-#: mailimporter/filters/filterevolution.cpp:18
+#: mailimporter/filters/filterevolution.cpp:20
 #, kde-format
 msgid "Simon MARTIN<br /><br />( Filter accelerated by Danny Kukawka )"
 msgstr "Simon MARTIN<br /><br />( Danny Kukawka-k iragazkia azeleratu du )"
 
-#: mailimporter/filters/filterevolution.cpp:19
+#: mailimporter/filters/filterevolution.cpp:21
 #, kde-format
 msgid ""
 "<p><b>Evolution 1.x import filter</b></p><p>Select the base directory of "
@@ -222,43 +222,43 @@ msgstr ""
 "local/).</p><p>Karpeten egitura berriro sor daitekeenez, karpetak "
 "\"Evolution-Import\"-en gordeko dira.</p>"
 
-#: mailimporter/filters/filterevolution.cpp:35
+#: mailimporter/filters/filterevolution.cpp:37
 #, kde-format
 msgctxt "name of evolution application"
 msgid "Evolution"
 msgstr "Evolution"
 
-#: mailimporter/filters/filterevolution.cpp:132
-#: mailimporter/filters/filterevolution_v2.cpp:192
-#: mailimporter/filters/filterlnotes.cpp:91
-#: mailimporter/filters/filtermailapp.cpp:67
-#: mailimporter/filters/filtermbox.cpp:58
-#: mailimporter/filters/filteropera.cpp:78
-#: mailimporter/filters/filterpmail.cpp:155
-#: mailimporter/filters/filterpmail.cpp:224
-#: mailimporter/filters/filterpmail.cpp:243
-#: mailimporter/filters/filterpmail.cpp:282
-#: mailimporter/filters/filterthebat.cpp:161
-#: mailimporter/filters/filterthunderbird.cpp:278
+#: mailimporter/filters/filterevolution.cpp:134
+#: mailimporter/filters/filterevolution_v2.cpp:194
+#: mailimporter/filters/filterlnotes.cpp:93
+#: mailimporter/filters/filtermailapp.cpp:69
+#: mailimporter/filters/filtermbox.cpp:60
+#: mailimporter/filters/filteropera.cpp:80
+#: mailimporter/filters/filterpmail.cpp:157
+#: mailimporter/filters/filterpmail.cpp:226
+#: mailimporter/filters/filterpmail.cpp:245
+#: mailimporter/filters/filterpmail.cpp:284
+#: mailimporter/filters/filterthebat.cpp:163
+#: mailimporter/filters/filterthunderbird.cpp:280
 #, kde-format
 msgid "Unable to open %1, skipping"
 msgstr "Ezin da %1 ireki, sahiesten"
 
-#: mailimporter/filters/filterevolution.cpp:157
-#: mailimporter/filters/filtermailapp.cpp:75
-#: mailimporter/filters/filtermailmangzip.cpp:64
-#: mailimporter/filters/filtermbox.cpp:64
-#: mailimporter/filters/filteropera.cpp:80
+#: mailimporter/filters/filterevolution.cpp:159
+#: mailimporter/filters/filtermailapp.cpp:77
+#: mailimporter/filters/filtermailmangzip.cpp:66
+#: mailimporter/filters/filtermbox.cpp:66
+#: mailimporter/filters/filteropera.cpp:82
 #, kde-format
 msgid "Importing emails from %1..."
 msgstr "%1(e)tik posta inportatzen..."
 
-#: mailimporter/filters/filterevolution_v2.cpp:22
+#: mailimporter/filters/filterevolution_v2.cpp:24
 #, kde-format
 msgid "Import Evolution 2.x Local Mails and Folder Structure"
 msgstr "Inportatu Evolution 2.x bertsiotik posta eta karpeta-egitura"
 
-#: mailimporter/filters/filterevolution_v2.cpp:24
+#: mailimporter/filters/filterevolution_v2.cpp:26
 #, kde-format
 msgid ""
 "<p><b>Evolution 2.x import filter</b></p><p>Select the base directory of "
@@ -275,26 +275,26 @@ msgstr ""
 "asko izango dituzu.</p><p>Karpeta-egitura berregin daitekeenez, karpetak "
 "\"Evolution-Import\"-en gordeko dira.</p>"
 
-#: mailimporter/filters/filterevolution_v2.cpp:42
+#: mailimporter/filters/filterevolution_v2.cpp:44
 #, kde-format
 msgctxt "name of evolution application"
 msgid "Evolution (v2)"
 msgstr "Evolution (v2)"
 
-#: mailimporter/filters/filterevolution_v2.cpp:122
-#: mailimporter/filters/filterevolution_v2.cpp:161
-#: mailimporter/filters/filterthunderbird.cpp:205
-#: mailimporter/filters/filterthunderbird.cpp:244
+#: mailimporter/filters/filterevolution_v2.cpp:124
+#: mailimporter/filters/filterevolution_v2.cpp:163
+#: mailimporter/filters/filterthunderbird.cpp:207
+#: mailimporter/filters/filterthunderbird.cpp:246
 #, kde-format
 msgid "Start import file %1..."
 msgstr "Hasi %1 fitxategia inportatzen..."
 
-#: mailimporter/filters/filterevolution_v3.cpp:22
+#: mailimporter/filters/filterevolution_v3.cpp:24
 #, kde-format
 msgid "Import Evolution 3.x Local Mails and Folder Structure"
 msgstr "Inportatu Evolution 3.x posta lokalak eta karpeta-egitura"
 
-#: mailimporter/filters/filterevolution_v3.cpp:24
+#: mailimporter/filters/filterevolution_v3.cpp:26
 #, kde-format
 msgid ""
 "<p><b>Evolution 3.x import filter</b></p><p>Select the base directory of "
@@ -307,18 +307,18 @@ msgstr ""
 "mail/local/   izan ohi da).</p><p>Karpeten egitura berriro sor daitekeenez, "
 "karpetak ondoko kokalekuan gordeko dira: \"Evolution-Import\".</p>"
 
-#: mailimporter/filters/filterevolution_v3.cpp:39
+#: mailimporter/filters/filterevolution_v3.cpp:41
 #, kde-format
 msgctxt "name of evolution application"
 msgid "Evolution (v3)"
 msgstr "Evolution (v3)"
 
-#: mailimporter/filters/filtericedove.cpp:14
+#: mailimporter/filters/filtericedove.cpp:16
 #, kde-format
 msgid "Import Icedove Mails and Folder Structure"
 msgstr "Inportatu Icedove-ko postak eta karpeta-egitura"
 
-#: mailimporter/filters/filtericedove.cpp:17
+#: mailimporter/filters/filtericedove.cpp:19
 #, kde-format
 msgid ""
 "<p><b>Icedove import filter</b></p><p>Select your base Icedove mailfolder "
@@ -335,18 +335,18 @@ msgstr ""
 "berri asko jasoko dituzu.</p><p>Karpeten egitura berriro sortu daitekeenez, "
 "karpetak ondoko kokalekuan gordeko dira: \"Icedove-Import\".</p>"
 
-#: mailimporter/filters/filtericedove.cpp:34
+#: mailimporter/filters/filtericedove.cpp:36
 #, kde-format
 msgctxt "name of icedove application"
 msgid "Icedove"
 msgstr "Icedove"
 
-#: mailimporter/filters/filterkmail_maildir.cpp:26
+#: mailimporter/filters/filterkmail_maildir.cpp:28
 #, kde-format
 msgid "Import KMail Maildirs and Folder Structure"
 msgstr "Inportatu KMail-en posta-direktorioak eta karpeta-egitura"
 
-#: mailimporter/filters/filterkmail_maildir.cpp:28
+#: mailimporter/filters/filterkmail_maildir.cpp:30
 #, kde-format
 msgid ""
 "<p><b>KMail import filter</b></p><p>Select the base directory of the KMail "
@@ -366,17 +366,17 @@ msgstr ""
 "berregin daitekeenez, karpetak zure karpeta lokaleko kokaleku honetan "
 "gordeko dira: \"KMail-Import\".</p>"
 
-#: mailimporter/filters/filterkmail_maildir.cpp:176
+#: mailimporter/filters/filterkmail_maildir.cpp:178
 #, kde-format
 msgid "Could not import %1, duplicated message"
 msgstr "Ezin izan du %1 inportatu, bikoiztutako mezua"
 
-#: mailimporter/filters/filterkmailarchive.cpp:31
+#: mailimporter/filters/filterkmailarchive.cpp:33
 #, kde-format
 msgid "Import KMail Archive File"
 msgstr "Inportatu KMail artxibo-fitxategia"
 
-#: mailimporter/filters/filterkmailarchive.cpp:33
+#: mailimporter/filters/filterkmailarchive.cpp:35
 #, kde-format
 msgid ""
 "<p><b>KMail Archive File Import Filter</b></p><p>This filter will import "
@@ -388,84 +388,84 @@ msgstr ""
 "p><p>Artxibo fitxategiek, fitxategi bakarrean konprimatuta, karpeta azpi-"
 "zuhaitz osoak dituzte.</p>"
 
-#: mailimporter/filters/filterkmailarchive.cpp:71
+#: mailimporter/filters/filterkmailarchive.cpp:73
 #, kde-format
 msgid "Importing folder '%1'..."
 msgstr "'%1' karpeta inportatzen..."
 
-#: mailimporter/filters/filterkmailarchive.cpp:97
+#: mailimporter/filters/filterkmailarchive.cpp:99
 #, kde-format
 msgid "Unexpected subfolder %1 in folder %2."
 msgstr "'%1' espero gabeko azpikarpeta %2 karpetan."
 
-#: mailimporter/filters/filterkmailarchive.cpp:101
+#: mailimporter/filters/filterkmailarchive.cpp:103
 #, kde-format
 msgid "No subfolder named 'cur' in folder %1."
 msgstr "%1 karpetan ez dago 'cur' izeneko azpikarpetarik."
 
-#: mailimporter/filters/filterkmailarchive.cpp:125
+#: mailimporter/filters/filterkmailarchive.cpp:127
 #, kde-format
 msgid "Unexpected subdirectory named '%1'."
 msgstr "'%1' izeneko espero gabeko azpidirektorioa."
 
-#: mailimporter/filters/filterkmailarchive.cpp:156
+#: mailimporter/filters/filterkmailarchive.cpp:158
 #, kde-format
 msgid "Select KMail Archive File to Import"
 msgstr "Hautatu inportatu beharreko KMail artxibo-fitxategia"
 
-#: mailimporter/filters/filterkmailarchive.cpp:158
+#: mailimporter/filters/filterkmailarchive.cpp:160
 #, kde-format
 msgid "KMail Archive Files "
 msgstr "KMail artxibo-fitxategiak"
 
-#: mailimporter/filters/filterkmailarchive.cpp:160
+#: mailimporter/filters/filterkmailarchive.cpp:162
 #, kde-format
 msgid "Please select an archive file that should be imported."
 msgstr "Mesedez, hautatu inportatu beharreko artxibo-fitxategi bat."
 
-#: mailimporter/filters/filterkmailarchive.cpp:169
+#: mailimporter/filters/filterkmailarchive.cpp:171
 #, kde-format
 msgid "No archive selected."
 msgstr "Ez da artxiborik hautatu."
 
-#: mailimporter/filters/filterkmailarchive.cpp:183
+#: mailimporter/filters/filterkmailarchive.cpp:185
 #, kde-format
 msgid "The file '%1' does not appear to be a valid archive."
 msgstr "Ematen du '%1' fitxategia ez diela artxibo balioduna."
 
-#: mailimporter/filters/filterkmailarchive.cpp:188
+#: mailimporter/filters/filterkmailarchive.cpp:190
 #, kde-format
 msgid "Unable to open archive file '%1'"
 msgstr "Ezin du '%1' artxibo-fitxategia ireki"
 
-#: mailimporter/filters/filterkmailarchive.cpp:193
+#: mailimporter/filters/filterkmailarchive.cpp:195
 #, kde-format
 msgid "Counting files in archive..."
 msgstr "Artxiboko fitxategiak zenbatzen..."
 
-#: mailimporter/filters/filterkmailarchive.cpp:199
+#: mailimporter/filters/filterkmailarchive.cpp:201
 #, kde-format
 msgid "Importing the archive file '%1' into the folder '%2' succeeded."
 msgstr "'%1' artxibo-fitxategia %2 karpetara inportatzea huts egin du."
 
-#: mailimporter/filters/filterkmailarchive.cpp:200
+#: mailimporter/filters/filterkmailarchive.cpp:202
 #, kde-format
 msgid "1 message was imported."
 msgid_plural "%1 messages were imported."
 msgstr[0] "Mezu 1 inportatu da."
 msgstr[1] "%1 mezu inportatu dira."
 
-#: mailimporter/filters/filterkmailarchive.cpp:202
+#: mailimporter/filters/filterkmailarchive.cpp:204
 #, kde-format
 msgid "Importing the archive failed."
 msgstr "Artxiboa inportatzea huts egin du."
 
-#: mailimporter/filters/filterlnotes.cpp:30
+#: mailimporter/filters/filterlnotes.cpp:32
 #, kde-format
 msgid "Import Lotus Notes Emails"
 msgstr "Inportatu Lotus Notes postak"
 
-#: mailimporter/filters/filterlnotes.cpp:32
+#: mailimporter/filters/filterlnotes.cpp:34
 #, kde-format
 msgid ""
 "<p><b>Lotus Notes Structured Text mail import filter</b></p><p>This filter "
@@ -484,47 +484,47 @@ msgstr ""
 "inportatutako mezuak datozen fitxategien izenak dituzte azpi-karpetatan "
 "gordeko dira, zure karpeta lokaleko kokaleku honetan: \"LNotes-Import\".</p>"
 
-#: mailimporter/filters/filterlnotes.cpp:52
+#: mailimporter/filters/filterlnotes.cpp:54
 #, kde-format
 msgid "All Files (*)"
 msgstr "Fitxategi guztiak (*)"
 
-#: mailimporter/filters/filterlnotes.cpp:54
-#: mailimporter/filters/filtermailapp.cpp:47
-#: mailimporter/filters/filtermailmangzip.cpp:42
-#: mailimporter/filters/filtermbox.cpp:45
+#: mailimporter/filters/filterlnotes.cpp:56
+#: mailimporter/filters/filtermailapp.cpp:49
+#: mailimporter/filters/filtermailmangzip.cpp:44
+#: mailimporter/filters/filtermbox.cpp:47
 #, kde-format
 msgid "No files selected."
 msgstr "Ez da fitxategirik hautatu."
 
-#: mailimporter/filters/filterlnotes.cpp:66
+#: mailimporter/filters/filterlnotes.cpp:68
 #, kde-format
 msgid "Importing emails from %1"
 msgstr "%1(e)tik postak inportatzen..."
 
-#: mailimporter/filters/filterlnotes.cpp:100
+#: mailimporter/filters/filterlnotes.cpp:102
 #, kde-format
 msgctxt "Define folder name where we import lotus note mails"
 msgid "LNotes-Import"
 msgstr "LNotes-Import"
 
-#: mailimporter/filters/filterlnotes.cpp:110
-#: mailimporter/filters/filterpmail.cpp:267
+#: mailimporter/filters/filterlnotes.cpp:112
+#: mailimporter/filters/filterpmail.cpp:269
 #, kde-format
 msgid "Message %1"
 msgstr "%1 mezua"
 
-#: mailimporter/filters/filtermailapp.cpp:28
+#: mailimporter/filters/filtermailapp.cpp:30
 #, kde-format
 msgid "Import From OS X Mail"
 msgstr "Inportatu OS X Mail-etik"
 
-#: mailimporter/filters/filtermailapp.cpp:29
+#: mailimporter/filters/filtermailapp.cpp:31
 #, kde-format
 msgid "Chris Howells<br /><br />Filter accelerated by Danny Kukawka )"
 msgstr "Chris Howells<br /><br />( Danny Kukawka-k azeleratutako iragazkia )"
 
-#: mailimporter/filters/filtermailapp.cpp:30
+#: mailimporter/filters/filtermailapp.cpp:32
 #, kde-format
 msgid ""
 "<p><b>OS X Mail Import Filter</b></p><p>This filter imports e-mails from the "
@@ -533,21 +533,21 @@ msgstr ""
 "<p><b>OS X Mail-etik inportatzeko iragazkia</b></p><p>Iragazki honek Apple "
 "Mac OS X-en posta bezereko e-postak inportatzen ditu.</p>"
 
-#: mailimporter/filters/filtermailapp.cpp:126
-#: mailimporter/filters/filtermailmangzip.cpp:136
-#: mailimporter/filters/filtermbox.cpp:135
+#: mailimporter/filters/filtermailapp.cpp:128
+#: mailimporter/filters/filtermailmangzip.cpp:138
+#: mailimporter/filters/filtermbox.cpp:137
 #, kde-format
 msgid "1 duplicate message not imported to folder %2 in KMail"
 msgid_plural "%1 duplicate messages not imported to folder %2 in KMail"
 msgstr[0] "Bikoiztutako mezu 1 ez da KMail-en %2 karpetara inportatu"
 msgstr[1] "Bikoiztutako %1 mezu ez da KMail-en %2 karpetara inportatu"
 
-#: mailimporter/filters/filtermailmangzip.cpp:19
+#: mailimporter/filters/filtermailmangzip.cpp:21
 #, kde-format
 msgid "Import mailman gzip Files"
 msgstr "Inportatu mailman gzip fitxategiak"
 
-#: mailimporter/filters/filtermailmangzip.cpp:21
+#: mailimporter/filters/filtermailmangzip.cpp:23
 #, kde-format
 msgid ""
 "<p><b>mailman gzip import filter</b></p><p>This filter will import mailman "
@@ -559,28 +559,28 @@ msgstr ""
 "b>E-postak, datozen fitxategiaren izena duten karpetetan, MAILMAN- "
 "aurrizkiarekin, inportatuko dira.</p>"
 
-#: mailimporter/filters/filtermailmangzip.cpp:35
+#: mailimporter/filters/filtermailmangzip.cpp:37
 #, kde-format
 msgid "gzip Files"
 msgstr "«gzip» fitxategiak"
 
-#: mailimporter/filters/filtermailmangzip.cpp:55
+#: mailimporter/filters/filtermailmangzip.cpp:57
 #, kde-format
 msgid "Unable to open archive file '%1', skipping"
 msgstr "Ezin du '%1' artxibo-fitxategia ireki, ezikusi egingo zaio"
 
-#: mailimporter/filters/filtermbox.cpp:20
+#: mailimporter/filters/filtermbox.cpp:22
 #, kde-format
 msgid "Import mbox Files (UNIX, Evolution)"
 msgstr "Inportatu mbox fitxategiak (UNIX, Evolution)"
 
-#: mailimporter/filters/filtermbox.cpp:21
-#: mailimporter/filters/filterplain.cpp:19
+#: mailimporter/filters/filtermbox.cpp:23
+#: mailimporter/filters/filterplain.cpp:21
 #, kde-format
 msgid "Laurence Anderson <p>( Filter accelerated by Danny Kukawka )</p>"
 msgstr "Laurence Anderson <p>( Danny Kukawka-k iragazkia azeleratu du )</p>"
 
-#: mailimporter/filters/filtermbox.cpp:22
+#: mailimporter/filters/filtermbox.cpp:24
 #, kde-format
 msgid ""
 "<p><b>mbox import filter</b></p><p>This filter will import mbox files into "
@@ -595,22 +595,22 @@ msgstr ""
 "p><p><b>Oharra:</b> postak dagokien fitxategiaren izen bera duten, \"MBOX-\" "
 "aurrizkidun karpetetara inportatuko dira.</p>"
 
-#: mailimporter/filters/filtermbox.cpp:38
+#: mailimporter/filters/filtermbox.cpp:40
 #, kde-format
 msgid "mbox Files"
 msgstr "«mbox» fitxategiak"
 
-#: mailimporter/filters/filteroe.cpp:32
+#: mailimporter/filters/filteroe.cpp:34
 #, kde-format
 msgid "Import Outlook Express Emails"
 msgstr "Inportatu Outlook Express postak"
 
-#: mailimporter/filters/filteroe.cpp:33
+#: mailimporter/filters/filteroe.cpp:35
 #, kde-format
 msgid "Laurence Anderson <br>( Filter enhanced by Danny Kukawka )</p>"
 msgstr "Laurence Anderson <br>( Danny Kukawka-k hobetutako iragazkia )</p>"
 
-#: mailimporter/filters/filteroe.cpp:34
+#: mailimporter/filters/filteroe.cpp:36
 #, kde-format
 msgid ""
 "<p><b>Outlook Express 4/5/6 import filter</b></p><p>You will need to locate "
@@ -629,47 +629,47 @@ msgstr ""
 "Outlook Express 5 eta 6-ko karpetak zure karpeta lokaleko \"OE-Import\"-en "
 "sortuko dira.</p>"
 
-#: mailimporter/filters/filteroe.cpp:66
+#: mailimporter/filters/filteroe.cpp:68
 #, kde-format
 msgid "No Outlook Express mailboxes found in directory %1."
 msgstr "Ez da Outlook Express postontzirik aurkitu %1 direktorioan"
 
-#: mailimporter/filters/filteroe.cpp:82
+#: mailimporter/filters/filteroe.cpp:84
 #, kde-format
 msgid "Import folder structure..."
 msgstr "Inportatu karpeta-egitura..."
 
-#: mailimporter/filters/filteroe.cpp:106
+#: mailimporter/filters/filteroe.cpp:108
 #, kde-format
 msgid "Finished importing Outlook Express emails"
 msgstr "Outlook Express posta inportatzea burututa"
 
-#: mailimporter/filters/filteroe.cpp:126
+#: mailimporter/filters/filteroe.cpp:128
 #, kde-format
 msgid "Unable to open mailbox %1"
 msgstr "Ezin da %1 postontzia ireki"
 
-#: mailimporter/filters/filteroe.cpp:138
+#: mailimporter/filters/filteroe.cpp:140
 #, kde-format
 msgid "Importing OE4 Mailbox %1"
 msgstr "OE4 %1 postontzia inportatzen"
 
-#: mailimporter/filters/filteroe.cpp:155
+#: mailimporter/filters/filteroe.cpp:157
 #, kde-format
 msgid "Importing OE5+ Mailbox %1"
 msgstr "OE5+ %1 postontzia inportatzen"
 
-#: mailimporter/filters/filteroe.cpp:161
+#: mailimporter/filters/filteroe.cpp:163
 #, kde-format
 msgid "Importing OE5+ Folder file %1"
 msgstr "OE5+ %1 karpeta fitxategia inportatzen"
 
-#: mailimporter/filters/filteropera.cpp:19
+#: mailimporter/filters/filteropera.cpp:21
 #, kde-format
 msgid "Import Opera Emails"
 msgstr "Inportatu Opera-ko postak"
 
-#: mailimporter/filters/filteropera.cpp:21
+#: mailimporter/filters/filteropera.cpp:23
 #, kde-format
 msgid ""
 "<p><b>Opera email import filter</b></p><p>This filter will import mails from "
@@ -685,31 +685,31 @@ msgstr ""
 "opera/mail/store/account*).</p><p><b>Oharra:</b> postak kontuaren izen bera "
 "duen \"OPERA-\" aurrizkidun karpeta batera inportatuko dira</p>"
 
-#: mailimporter/filters/filteropera.cpp:38
+#: mailimporter/filters/filteropera.cpp:40
 #, kde-format
 msgctxt "name of opera application"
 msgid "Opera"
 msgstr "Opera"
 
-#: mailimporter/filters/filteropera.cpp:72
-#: mailimporter/filters/filterplain.cpp:55
+#: mailimporter/filters/filteropera.cpp:74
+#: mailimporter/filters/filterplain.cpp:57
 #, kde-format
 msgid "Importing new mail files..."
 msgstr "Posta berriaren fitxategiak inportatzen..."
 
-#: mailimporter/filters/filteropera.cpp:190
-#: mailimporter/filters/filterplain.cpp:50
-#: mailimporter/filters/filterpmail.cpp:51
+#: mailimporter/filters/filteropera.cpp:192
+#: mailimporter/filters/filterplain.cpp:52
+#: mailimporter/filters/filterpmail.cpp:53
 #, kde-format
 msgid "Counting files..."
 msgstr "Fitxategiak zenbatzen..."
 
-#: mailimporter/filters/filterplain.cpp:18
+#: mailimporter/filters/filterplain.cpp:20
 #, kde-format
 msgid "Import Plain Text Emails"
 msgstr "Inportatu testu arrunteko postak"
 
-#: mailimporter/filters/filterplain.cpp:20
+#: mailimporter/filters/filterplain.cpp:22
 #, kde-format
 msgid ""
 "<p>Select the directory containing the emails on your system. The emails are "
@@ -721,17 +721,17 @@ msgstr ""
 "berbera duen, \"PLAIN-\" aurrizkidun karpeta batean jarriko dira.</"
 "p><p>Iragazki honek .msg, .eml and .txt mezuak inportatuko ditu.</p>"
 
-#: mailimporter/filters/filterpmail.cpp:22
+#: mailimporter/filters/filterpmail.cpp:24
 #, kde-format
 msgid "Import Folders From Pegasus-Mail"
 msgstr "Inportatu karpetak 'Pegasus-Mail'etik"
 
-#: mailimporter/filters/filterpmail.cpp:23
+#: mailimporter/filters/filterpmail.cpp:25
 #, kde-format
 msgid "Holger Schurig <br>( rewritten by Danny Kukawka )"
 msgstr "Holger Schurig <br>( Danny Kukawka-k berriz idatzia )"
 
-#: mailimporter/filters/filterpmail.cpp:24
+#: mailimporter/filters/filterpmail.cpp:26
 #, kde-format
 msgid ""
 "<p>Select the Pegasus-Mail directory on your system (containing *.CNM, *.PMM "
@@ -745,7 +745,7 @@ msgstr ""
 "direktorioetan egon ohi dira</p><p><b>Oharra:</b> karpeta-egitura berregin "
 "daitekenez karpetak \"PegasusMail-Import\"-en gordeko dira.</p>"
 
-#: mailimporter/filters/filterpmail.cpp:62
+#: mailimporter/filters/filterpmail.cpp:64
 #, kde-format
 msgid ""
 "Cannot parse the folder structure; continuing import without subfolder "
@@ -754,44 +754,44 @@ msgstr ""
 "Ezin da karpeta-egitura prozesatu, inportazioak azpi-karpeten euskarririk "
 "gabe jarraituko du."
 
-#: mailimporter/filters/filterpmail.cpp:65
+#: mailimporter/filters/filterpmail.cpp:67
 #, kde-format
 msgid "Importing new mail files ('.cnm')..."
 msgstr "Posta-fitxategi berriak ('.cnm') inportatzen..."
 
-#: mailimporter/filters/filterpmail.cpp:67
+#: mailimporter/filters/filterpmail.cpp:69
 #, kde-format
 msgid "Importing mail folders ('.pmm')..."
 msgstr "Posta-karpetak ('.pnm') inportatzen..."
 
-#: mailimporter/filters/filterpmail.cpp:69
+#: mailimporter/filters/filterpmail.cpp:71
 #, kde-format
 msgid "Importing 'UNIX' mail folders ('.mbx')..."
 msgstr "'UNIX' posta-karpetak ('.mbx') inportatzen..."
 
-#: mailimporter/filters/filterpmail.cpp:159
+#: mailimporter/filters/filterpmail.cpp:161
 #, kde-format
 msgctxt "define folder name when we will import pegasus mail"
 msgid "PegasusMail-Import"
 msgstr "PegasusMail-Import"
 
-#: mailimporter/filters/filterpmail.cpp:166
-#: mailimporter/filters/filterpmail.cpp:245
+#: mailimporter/filters/filterpmail.cpp:168
+#: mailimporter/filters/filterpmail.cpp:247
 #, kde-format
 msgid "Importing %1"
 msgstr "%1 inportatzen"
 
-#: mailimporter/filters/filterpmail.cpp:278
+#: mailimporter/filters/filterpmail.cpp:280
 #, kde-format
 msgid "Parsing the folder structure..."
 msgstr "Karpeta-egitura prozesatzen..."
 
-#: mailimporter/filters/filterseamonkey.cpp:14
+#: mailimporter/filters/filterseamonkey.cpp:16
 #, kde-format
 msgid "Import SeaMonkey Mails and Folder Structure"
 msgstr "Inportatu SeaMonkey postak eta karpeta-egitura"
 
-#: mailimporter/filters/filterseamonkey.cpp:17
+#: mailimporter/filters/filterseamonkey.cpp:19
 #, kde-format
 msgid ""
 "<p><b>SeaMonkey import filter</b></p><p>Select your base SeaMonkey "
@@ -808,12 +808,12 @@ msgstr ""
 "karpeta berri asko jasoko dituzu.</p><p>Karpeten egitura berriro sor "
 "daitekeenez, karpetak honen barruan gordeko dira: \"SeaMonkey-Import\".</p>"
 
-#: mailimporter/filters/filtersylpheed.cpp:28
+#: mailimporter/filters/filtersylpheed.cpp:30
 #, kde-format
 msgid "Import Sylpheed Maildirs and Folder Structure"
 msgstr "Inportatu Sylpheed-en posta-direktorioak eta karpeta-egitura"
 
-#: mailimporter/filters/filtersylpheed.cpp:30
+#: mailimporter/filters/filtersylpheed.cpp:32
 #, kde-format
 msgid ""
 "<p><b>Sylpheed import filter</b></p><p>Select the base directory of the "
@@ -828,24 +828,24 @@ msgstr ""
 "kokaleku honetan gordeko dira: \"Sylpheed-Import\".</p> <p>Iragazki honek "
 "mezuaren egoera ere berregiten du, adibidez, berria edo birbidalia.</p>"
 
-#: mailimporter/filters/filtersylpheed.cpp:47
+#: mailimporter/filters/filtersylpheed.cpp:49
 #, kde-format
 msgctxt "name of sylpheed application"
 msgid "Sylpheed"
 msgstr "Sylpheed"
 
-#: mailimporter/filters/filtersylpheed.cpp:185
+#: mailimporter/filters/filtersylpheed.cpp:187
 #, kde-format
 msgctxt "define folder name where we will import sylpheed mails"
 msgid "Sylpheed-Import"
 msgstr "Sylpheed-Import"
 
-#: mailimporter/filters/filterthebat.cpp:28
+#: mailimporter/filters/filterthebat.cpp:30
 #, kde-format
 msgid "Import The Bat! Mails and Folder Structure"
 msgstr "Inportatu The Bat! postak eta karpeta-egitura"
 
-#: mailimporter/filters/filterthebat.cpp:30
+#: mailimporter/filters/filterthebat.cpp:32
 #, kde-format
 msgid ""
 "<p><b>The Bat! import filter</b></p><p>Select the base directory of the 'The "
@@ -862,18 +862,18 @@ msgstr ""
 "p><p>Karpeta-egitura berregin daitekeenez, karpetak zure kontu lokaleko "
 "\"TheBat-Import\" gordeko dira.</p>"
 
-#: mailimporter/filters/filterthebat.cpp:204
+#: mailimporter/filters/filterthebat.cpp:206
 #, kde-format
 msgctxt "Define folder where we will import thebat mails"
 msgid "TheBat-Import"
 msgstr "TheBat-Import"
 
-#: mailimporter/filters/filterthunderbird.cpp:24
+#: mailimporter/filters/filterthunderbird.cpp:26
 #, kde-format
 msgid "Import Thunderbird/Mozilla Local Mails and Folder Structure"
 msgstr "Inportatu Thunderbird/Mozilla-ren posta lokala eta karpeta egitura"
 
-#: mailimporter/filters/filterthunderbird.cpp:26
+#: mailimporter/filters/filterthunderbird.cpp:28
 #, kde-format
 msgid ""
 "<p><b>Thunderbird/Mozilla import filter</b></p><p>Select your base "
@@ -891,7 +891,7 @@ msgstr ""
 "berriro sortu daitekeenez karpetak \"Thunderbird-Import\"-en barruan gordeko "
 "dira.</p>"
 
-#: mailimporter/filters/filterthunderbird.cpp:58
+#: mailimporter/filters/filterthunderbird.cpp:60
 #, kde-format
 msgctxt "name of thunderbird application"
 msgid "Thunderbird"
@@ -909,13 +909,13 @@ msgctxt "name of geary application"
 msgid "Geary"
 msgstr "Geary"
 
-#: mailimporter/selectthunderbirdprofilewidget.cpp:21
+#: mailimporter/selectthunderbirdprofilewidget.cpp:23
 #, kde-format
 msgctxt "@title:window"
 msgid "Select thunderbird profile"
 msgstr "Hautatu thunderbird-en profila"
 
-#: mailimporter/selectthunderbirdprofilewidget.cpp:70
+#: mailimporter/selectthunderbirdprofilewidget.cpp:72
 #, kde-format
 msgid " (default)"
 msgstr " (lehenetsia)"
@@ -960,17 +960,17 @@ msgstr "Guztira:"
 msgid "Select Profile:"
 msgstr "Hautatu profila:"
 
-#: mailimporterakonadi/filterimporterakonadi.cpp:94
+#: mailimporterakonadi/filterimporterakonadi.cpp:96
 #, kde-format
 msgid "Error: failed to read temporary file at %1"
 msgstr "Errorea: %1(e)ko aldi baterako fitxategia irakurtzea huts egin du"
 
-#: mailimporterakonadi/filterimporterakonadi.cpp:123
+#: mailimporterakonadi/filterimporterakonadi.cpp:125
 #, kde-format
 msgid "<b>Warning:</b> Got a bad message folder, adding to root folder."
 msgstr "<b>Abisua:</b> Mezu-karpeta txar bat jaso du, erro karpetara gehitzen."
 
-#: mailimporterakonadi/filterimporterakonadi.cpp:168
+#: mailimporterakonadi/filterimporterakonadi.cpp:170
 #, kde-format
 msgid ""
 "<b>Warning:</b> Could not check that the folder already exists. Reason: %1"
@@ -978,12 +978,12 @@ msgstr ""
 "<b>Abisua:</b> Ezin izan da karpeta dagoeneko existitzen dela egiaztatu. "
 "Arrazoia: %1"
 
-#: mailimporterakonadi/filterimporterakonadi.cpp:185
+#: mailimporterakonadi/filterimporterakonadi.cpp:187
 #, kde-format
 msgid "<b>Error:</b> Could not create folder. Reason: %1"
 msgstr "<b>Errorea:</b> Ezin izan du karpeta sortu. Arrazoia: %1"
 
-#: mailimporterakonadi/filterimporterakonadi.cpp:213
+#: mailimporterakonadi/filterimporterakonadi.cpp:215
 #, kde-format
 msgid ""
 "<b>Warning:</b> Could not fetch mail in folder %1. Reason: %2 You may have "
@@ -992,17 +992,17 @@ msgstr ""
 "<b>Abisua:</b> Ezin izan du %1 karpetako posta eskuratu. Arrazoia: %2 "
 "Baliteke bikoiztutako mezuak izatea."
 
-#: mailimporterakonadi/filterimporterakonadi.cpp:221
+#: mailimporterakonadi/filterimporterakonadi.cpp:223
 #, kde-format
 msgid "<b>Warning:</b> Got an invalid message in folder %1."
 msgstr "<b>Abisua:</b> %1 karpetan mezu baliogabe bat jaso da."
 
-#: mailimporterakonadi/filterimporterakonadi.cpp:275
+#: mailimporterakonadi/filterimporterakonadi.cpp:277
 #, kde-format
 msgid "<b>Error:</b> Could not add message to folder %1. Reason: %2"
 msgstr "<b>Errorea:</b> Ezin izan du mezua %1 karpetan gehitu. Arrazoia: %2"
 
-#: mailimporterakonadi/filterimporterakonadi.cpp:295
+#: mailimporterakonadi/filterimporterakonadi.cpp:297
 #, kde-format
 msgid "Unable to retrieve folder for folder path %1."
 msgstr "Ez da %1 karpeta-bide-izeneko karpeta eskuratzeko gai izan."

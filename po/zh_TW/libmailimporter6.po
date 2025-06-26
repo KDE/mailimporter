@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-31 00:41+0000\n"
+"POT-Creation-Date: 2025-06-26 00:43+0000\n"
 "PO-Revision-Date: 2023-12-09 19:17+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -25,12 +25,12 @@ msgstr ""
 "X-Generator: Lokalize 24.01.80\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: mailimporter/filters/filterbalsa.cpp:22
+#: mailimporter/filters/filterbalsa.cpp:24
 #, kde-format
 msgid "Import Balsa Local Mails and Folder Structure"
 msgstr "匯入 Balsa 本地郵件與資料夾結構"
 
-#: mailimporter/filters/filterbalsa.cpp:24
+#: mailimporter/filters/filterbalsa.cpp:26
 #, kde-format
 msgid ""
 "<p><b>Balsa import filter</b></p><p>Select the base directory of your local "
@@ -41,136 +41,136 @@ msgstr ""
 "mail/）。</p><p>因為可以重建資料夾結構，此資料夾會儲存在您的本地端資料夾中的 "
 "Balsa-Import 中。</p>"
 
-#: mailimporter/filters/filterbalsa.cpp:39
+#: mailimporter/filters/filterbalsa.cpp:41
 #, kde-format
 msgctxt "name of balsa application"
 msgid "Balsa"
 msgstr "Balsa"
 
-#: mailimporter/filters/filterbalsa.cpp:89
-#: mailimporter/filters/filterevolution.cpp:60
-#: mailimporter/filters/filterevolution_v2.cpp:85
-#: mailimporter/filters/filterevolution_v3.cpp:86
-#: mailimporter/filters/filterkmail_maildir.cpp:76
-#: mailimporter/filters/filteroe.cpp:58
-#: mailimporter/filters/filteropera.cpp:174
-#: mailimporter/filters/filterplain.cpp:41
-#: mailimporter/filters/filterpmail.cpp:45
-#: mailimporter/filters/filtersylpheed.cpp:122
-#: mailimporter/filters/filterthebat.cpp:73
-#: mailimporter/filters/filterthunderbird.cpp:169
+#: mailimporter/filters/filterbalsa.cpp:91
+#: mailimporter/filters/filterevolution.cpp:62
+#: mailimporter/filters/filterevolution_v2.cpp:87
+#: mailimporter/filters/filterevolution_v3.cpp:88
+#: mailimporter/filters/filterkmail_maildir.cpp:78
+#: mailimporter/filters/filteroe.cpp:60
+#: mailimporter/filters/filteropera.cpp:176
+#: mailimporter/filters/filterplain.cpp:43
+#: mailimporter/filters/filterpmail.cpp:47
+#: mailimporter/filters/filtersylpheed.cpp:124
+#: mailimporter/filters/filterthebat.cpp:75
+#: mailimporter/filters/filterthunderbird.cpp:171
 #, kde-format
 msgid "No directory selected."
 msgstr "沒有選擇任何目錄"
 
-#: mailimporter/filters/filterbalsa.cpp:98
-#: mailimporter/filters/filterevolution.cpp:69
-#: mailimporter/filters/filterevolution_v2.cpp:94
-#: mailimporter/filters/filterevolution_v3.cpp:95
-#: mailimporter/filters/filterkmail_maildir.cpp:85
-#: mailimporter/filters/filteropera.cpp:182
-#: mailimporter/filters/filterplain.cpp:53
-#: mailimporter/filters/filtersylpheed.cpp:131
-#: mailimporter/filters/filterthebat.cpp:82
-#: mailimporter/filters/filterthunderbird.cpp:178
+#: mailimporter/filters/filterbalsa.cpp:100
+#: mailimporter/filters/filterevolution.cpp:71
+#: mailimporter/filters/filterevolution_v2.cpp:96
+#: mailimporter/filters/filterevolution_v3.cpp:97
+#: mailimporter/filters/filterkmail_maildir.cpp:87
+#: mailimporter/filters/filteropera.cpp:184
+#: mailimporter/filters/filterplain.cpp:55
+#: mailimporter/filters/filtersylpheed.cpp:133
+#: mailimporter/filters/filterthebat.cpp:84
+#: mailimporter/filters/filterthunderbird.cpp:180
 #, kde-format
 msgid "No files found for import."
 msgstr "沒有選擇任何檔案"
 
-#: mailimporter/filters/filterbalsa.cpp:109
-#: mailimporter/filters/filterevolution.cpp:83
-#: mailimporter/filters/filterevolution_v2.cpp:127
-#: mailimporter/filters/filterevolution_v3.cpp:106
-#: mailimporter/filters/filterkmail_maildir.cpp:95
-#: mailimporter/filters/filtermailapp.cpp:124
-#: mailimporter/filters/filtermailmangzip.cpp:134
-#: mailimporter/filters/filtermbox.cpp:133
-#: mailimporter/filters/filteropera.cpp:141
-#: mailimporter/filters/filterplain.cpp:75
-#: mailimporter/filters/filterpmail.cpp:72
-#: mailimporter/filters/filtersylpheed.cpp:143
-#: mailimporter/filters/filterthebat.cpp:93
-#: mailimporter/filters/filterthunderbird.cpp:210
+#: mailimporter/filters/filterbalsa.cpp:111
+#: mailimporter/filters/filterevolution.cpp:85
+#: mailimporter/filters/filterevolution_v2.cpp:129
+#: mailimporter/filters/filterevolution_v3.cpp:108
+#: mailimporter/filters/filterkmail_maildir.cpp:97
+#: mailimporter/filters/filtermailapp.cpp:126
+#: mailimporter/filters/filtermailmangzip.cpp:136
+#: mailimporter/filters/filtermbox.cpp:135
+#: mailimporter/filters/filteropera.cpp:143
+#: mailimporter/filters/filterplain.cpp:77
+#: mailimporter/filters/filterpmail.cpp:74
+#: mailimporter/filters/filtersylpheed.cpp:145
+#: mailimporter/filters/filterthebat.cpp:95
+#: mailimporter/filters/filterthunderbird.cpp:212
 #, kde-format
 msgid "Finished importing emails from %1"
 msgstr "匯入信件夾 %1 完成。"
 
-#: mailimporter/filters/filterbalsa.cpp:112
-#: mailimporter/filters/filterevolution.cpp:205
-#: mailimporter/filters/filterevolution_v2.cpp:129
-#: mailimporter/filters/filterevolution_v3.cpp:109
-#: mailimporter/filters/filterkmail_maildir.cpp:97
-#: mailimporter/filters/filteropera.cpp:143
-#: mailimporter/filters/filterplain.cpp:77
-#: mailimporter/filters/filtersylpheed.cpp:145
-#: mailimporter/filters/filterthebat.cpp:95
-#: mailimporter/filters/filterthunderbird.cpp:212
+#: mailimporter/filters/filterbalsa.cpp:114
+#: mailimporter/filters/filterevolution.cpp:207
+#: mailimporter/filters/filterevolution_v2.cpp:131
+#: mailimporter/filters/filterevolution_v3.cpp:111
+#: mailimporter/filters/filterkmail_maildir.cpp:99
+#: mailimporter/filters/filteropera.cpp:145
+#: mailimporter/filters/filterplain.cpp:79
+#: mailimporter/filters/filtersylpheed.cpp:147
+#: mailimporter/filters/filterthebat.cpp:97
+#: mailimporter/filters/filterthunderbird.cpp:214
 #, kde-format
 msgid "1 duplicate message not imported"
 msgid_plural "%1 duplicate messages not imported"
 msgstr[0] "%1 封重複的信件未匯入"
 
-#: mailimporter/filters/filterbalsa.cpp:116
-#: mailimporter/filters/filterevolution_v2.cpp:132
-#: mailimporter/filters/filterevolution_v3.cpp:113
-#: mailimporter/filters/filterkmail_maildir.cpp:101
-#: mailimporter/filters/filtermailapp.cpp:136
-#: mailimporter/filters/filtermailmangzip.cpp:142
-#: mailimporter/filters/filtermbox.cpp:141
-#: mailimporter/filters/filteroe.cpp:108
-#: mailimporter/filters/filteropera.cpp:200
-#: mailimporter/filters/filterplain.cpp:80
-#: mailimporter/filters/filtersylpheed.cpp:149
-#: mailimporter/filters/filterthebat.cpp:99
-#: mailimporter/filters/filterthunderbird.cpp:216
+#: mailimporter/filters/filterbalsa.cpp:118
+#: mailimporter/filters/filterevolution_v2.cpp:134
+#: mailimporter/filters/filterevolution_v3.cpp:115
+#: mailimporter/filters/filterkmail_maildir.cpp:103
+#: mailimporter/filters/filtermailapp.cpp:138
+#: mailimporter/filters/filtermailmangzip.cpp:144
+#: mailimporter/filters/filtermbox.cpp:143
+#: mailimporter/filters/filteroe.cpp:110
+#: mailimporter/filters/filteropera.cpp:202
+#: mailimporter/filters/filterplain.cpp:82
+#: mailimporter/filters/filtersylpheed.cpp:151
+#: mailimporter/filters/filterthebat.cpp:101
+#: mailimporter/filters/filterthunderbird.cpp:218
 #, kde-format
 msgid "Finished import, canceled by user."
 msgstr "已取消匯入。"
 
-#: mailimporter/filters/filterbalsa.cpp:163
-#: mailimporter/filters/filterevolution_v3.cpp:160
+#: mailimporter/filters/filterbalsa.cpp:165
+#: mailimporter/filters/filterevolution_v3.cpp:162
 #, kde-format
 msgctxt "define folder name where we import evolution mails"
 msgid "Evolution-Import"
 msgstr "Evolution-Import"
 
-#: mailimporter/filters/filterbalsa.cpp:187
-#: mailimporter/filters/filterevolution_v3.cpp:184
-#: mailimporter/filters/filterkmail_maildir.cpp:169
-#: mailimporter/filters/filtersylpheed.cpp:228
-#: mailimporter/filters/filterthebat.cpp:209
+#: mailimporter/filters/filterbalsa.cpp:189
+#: mailimporter/filters/filterevolution_v3.cpp:186
+#: mailimporter/filters/filterkmail_maildir.cpp:171
+#: mailimporter/filters/filtersylpheed.cpp:230
+#: mailimporter/filters/filterthebat.cpp:211
 #, kde-format
 msgid "Import folder %1..."
 msgstr "正在匯入信件夾 %1..."
 
-#: mailimporter/filters/filterbalsa.cpp:195
-#: mailimporter/filters/filterevolution.cpp:194
-#: mailimporter/filters/filterevolution_v2.cpp:260
-#: mailimporter/filters/filterevolution_v3.cpp:192
-#: mailimporter/filters/filterlnotes.cpp:127
-#: mailimporter/filters/filterlnotes.cpp:158
-#: mailimporter/filters/filtermailapp.cpp:107
-#: mailimporter/filters/filtermailmangzip.cpp:114
-#: mailimporter/filters/filtermbox.cpp:113
-#: mailimporter/filters/filteroe.cpp:212 mailimporter/filters/filteroe.cpp:388
-#: mailimporter/filters/filteropera.cpp:124
-#: mailimporter/filters/filterplain.cpp:65
-#: mailimporter/filters/filterpmail.cpp:115
-#: mailimporter/filters/filterpmail.cpp:194
-#: mailimporter/filters/filterpmail.cpp:263
-#: mailimporter/filters/filtersylpheed.cpp:242
-#: mailimporter/filters/filterthebat.cpp:229
-#: mailimporter/filters/filterthunderbird.cpp:344
+#: mailimporter/filters/filterbalsa.cpp:197
+#: mailimporter/filters/filterevolution.cpp:196
+#: mailimporter/filters/filterevolution_v2.cpp:262
+#: mailimporter/filters/filterevolution_v3.cpp:194
+#: mailimporter/filters/filterlnotes.cpp:129
+#: mailimporter/filters/filterlnotes.cpp:160
+#: mailimporter/filters/filtermailapp.cpp:109
+#: mailimporter/filters/filtermailmangzip.cpp:116
+#: mailimporter/filters/filtermbox.cpp:115
+#: mailimporter/filters/filteroe.cpp:214 mailimporter/filters/filteroe.cpp:390
+#: mailimporter/filters/filteropera.cpp:126
+#: mailimporter/filters/filterplain.cpp:67
+#: mailimporter/filters/filterpmail.cpp:117
+#: mailimporter/filters/filterpmail.cpp:196
+#: mailimporter/filters/filterpmail.cpp:265
+#: mailimporter/filters/filtersylpheed.cpp:244
+#: mailimporter/filters/filterthebat.cpp:231
+#: mailimporter/filters/filterthunderbird.cpp:346
 #, kde-format
 msgid "Could not import %1"
 msgstr "無法匯入 %1"
 
-#: mailimporter/filters/filterclawsmail.cpp:22
+#: mailimporter/filters/filterclawsmail.cpp:24
 #, kde-format
 msgid "Import Claws-mail Maildirs and Folder Structure"
 msgstr "匯入 Claws-mail 的 Maildirs 與資料夾結構"
 
-#: mailimporter/filters/filterclawsmail.cpp:25
+#: mailimporter/filters/filterclawsmail.cpp:27
 #, kde-format
 msgid ""
 "<p><b>Claws-mail import filter</b></p><p>Select the base directory of the "
@@ -184,29 +184,29 @@ msgstr ""
 "本地端資料夾中的 ClawsMail-Import 中。</p><p>它並且會重新產生每一封信件的狀"
 "態，例如是未讀的或是已轉寄之類。</p>"
 
-#: mailimporter/filters/filterclawsmail.cpp:42
+#: mailimporter/filters/filterclawsmail.cpp:44
 #, kde-format
 msgctxt "name of clawsMail application"
 msgid "ClawsMail"
 msgstr "ClawsMail"
 
-#: mailimporter/filters/filterclawsmail.cpp:96
+#: mailimporter/filters/filterclawsmail.cpp:98
 #, kde-format
 msgctxt "define folder name where we will import clawsmail mails"
 msgid "ClawsMail-Import"
 msgstr "ClawsMail-Import"
 
-#: mailimporter/filters/filterevolution.cpp:17
+#: mailimporter/filters/filterevolution.cpp:19
 #, kde-format
 msgid "Import Evolution 1.x Local Mails and Folder Structure"
 msgstr "匯入 Evolution 1.x 的信件"
 
-#: mailimporter/filters/filterevolution.cpp:18
+#: mailimporter/filters/filterevolution.cpp:20
 #, kde-format
 msgid "Simon MARTIN<br /><br />( Filter accelerated by Danny Kukawka )"
 msgstr "Simon MARTIN<br /><br />（過濾器由 Danny Kukawka 加速）"
 
-#: mailimporter/filters/filterevolution.cpp:19
+#: mailimporter/filters/filterevolution.cpp:21
 #, kde-format
 msgid ""
 "<p><b>Evolution 1.x import filter</b></p><p>Select the base directory of "
@@ -218,43 +218,43 @@ msgstr ""
 "常是 ~/evolution/local）。</p><p>這個過濾器會產生一個叫 Evolution-Import 的信"
 "件夾，並幫您保存原先的目錄結構。</p>"
 
-#: mailimporter/filters/filterevolution.cpp:35
+#: mailimporter/filters/filterevolution.cpp:37
 #, kde-format
 msgctxt "name of evolution application"
 msgid "Evolution"
 msgstr "Evolution"
 
-#: mailimporter/filters/filterevolution.cpp:132
-#: mailimporter/filters/filterevolution_v2.cpp:192
-#: mailimporter/filters/filterlnotes.cpp:91
-#: mailimporter/filters/filtermailapp.cpp:67
-#: mailimporter/filters/filtermbox.cpp:58
-#: mailimporter/filters/filteropera.cpp:78
-#: mailimporter/filters/filterpmail.cpp:155
-#: mailimporter/filters/filterpmail.cpp:224
-#: mailimporter/filters/filterpmail.cpp:243
-#: mailimporter/filters/filterpmail.cpp:282
-#: mailimporter/filters/filterthebat.cpp:161
-#: mailimporter/filters/filterthunderbird.cpp:278
+#: mailimporter/filters/filterevolution.cpp:134
+#: mailimporter/filters/filterevolution_v2.cpp:194
+#: mailimporter/filters/filterlnotes.cpp:93
+#: mailimporter/filters/filtermailapp.cpp:69
+#: mailimporter/filters/filtermbox.cpp:60
+#: mailimporter/filters/filteropera.cpp:80
+#: mailimporter/filters/filterpmail.cpp:157
+#: mailimporter/filters/filterpmail.cpp:226
+#: mailimporter/filters/filterpmail.cpp:245
+#: mailimporter/filters/filterpmail.cpp:284
+#: mailimporter/filters/filterthebat.cpp:163
+#: mailimporter/filters/filterthunderbird.cpp:280
 #, kde-format
 msgid "Unable to open %1, skipping"
 msgstr "無法開啟檔案 '%1'"
 
-#: mailimporter/filters/filterevolution.cpp:157
-#: mailimporter/filters/filtermailapp.cpp:75
-#: mailimporter/filters/filtermailmangzip.cpp:64
-#: mailimporter/filters/filtermbox.cpp:64
-#: mailimporter/filters/filteropera.cpp:80
+#: mailimporter/filters/filterevolution.cpp:159
+#: mailimporter/filters/filtermailapp.cpp:77
+#: mailimporter/filters/filtermailmangzip.cpp:66
+#: mailimporter/filters/filtermbox.cpp:66
+#: mailimporter/filters/filteropera.cpp:82
 #, kde-format
 msgid "Importing emails from %1..."
 msgstr "正在匯入信件夾 %1..."
 
-#: mailimporter/filters/filterevolution_v2.cpp:22
+#: mailimporter/filters/filterevolution_v2.cpp:24
 #, kde-format
 msgid "Import Evolution 2.x Local Mails and Folder Structure"
 msgstr "匯入 Evolution 2.x 的信件"
 
-#: mailimporter/filters/filterevolution_v2.cpp:24
+#: mailimporter/filters/filterevolution_v2.cpp:26
 #, kde-format
 msgid ""
 "<p><b>Evolution 2.x import filter</b></p><p>Select the base directory of "
@@ -270,26 +270,26 @@ msgstr ""
 "新的信件夾。</p><p>這個過濾器會產生一個叫 Evolution-Import 的信件夾，並幫您保"
 "存原先的目錄結構。</p>"
 
-#: mailimporter/filters/filterevolution_v2.cpp:42
+#: mailimporter/filters/filterevolution_v2.cpp:44
 #, kde-format
 msgctxt "name of evolution application"
 msgid "Evolution (v2)"
 msgstr "Evolution (v2)"
 
-#: mailimporter/filters/filterevolution_v2.cpp:122
-#: mailimporter/filters/filterevolution_v2.cpp:161
-#: mailimporter/filters/filterthunderbird.cpp:205
-#: mailimporter/filters/filterthunderbird.cpp:244
+#: mailimporter/filters/filterevolution_v2.cpp:124
+#: mailimporter/filters/filterevolution_v2.cpp:163
+#: mailimporter/filters/filterthunderbird.cpp:207
+#: mailimporter/filters/filterthunderbird.cpp:246
 #, kde-format
 msgid "Start import file %1..."
 msgstr "開始匯入檔案 %1..."
 
-#: mailimporter/filters/filterevolution_v3.cpp:22
+#: mailimporter/filters/filterevolution_v3.cpp:24
 #, kde-format
 msgid "Import Evolution 3.x Local Mails and Folder Structure"
 msgstr "匯入 Evolution 3.x 的本地信件與資料夾結構"
 
-#: mailimporter/filters/filterevolution_v3.cpp:24
+#: mailimporter/filters/filterevolution_v3.cpp:26
 #, kde-format
 msgid ""
 "<p><b>Evolution 3.x import filter</b></p><p>Select the base directory of "
@@ -301,18 +301,18 @@ msgstr ""
 "常是 ~/.local/share/evolution/mail/local/）。</p><p>這個過濾器可能會產生一個"
 "叫 Evolution-Import 的信件夾，並幫您保存原先的目錄結構。</p>"
 
-#: mailimporter/filters/filterevolution_v3.cpp:39
+#: mailimporter/filters/filterevolution_v3.cpp:41
 #, kde-format
 msgctxt "name of evolution application"
 msgid "Evolution (v3)"
 msgstr "Evolution (v3)"
 
-#: mailimporter/filters/filtericedove.cpp:14
+#: mailimporter/filters/filtericedove.cpp:16
 #, kde-format
 msgid "Import Icedove Mails and Folder Structure"
 msgstr "匯入 Icedove 的信件"
 
-#: mailimporter/filters/filtericedove.cpp:17
+#: mailimporter/filters/filtericedove.cpp:19
 #, kde-format
 msgid ""
 "<p><b>Icedove import filter</b></p><p>Select your base Icedove mailfolder "
@@ -328,18 +328,18 @@ msgstr ""
 "的信件夾。</p><p>這個過濾器會產生一個叫 Icedove-Import 的信件夾，並幫您保存原"
 "先的目錄結構。</p>"
 
-#: mailimporter/filters/filtericedove.cpp:34
+#: mailimporter/filters/filtericedove.cpp:36
 #, kde-format
 msgctxt "name of icedove application"
 msgid "Icedove"
 msgstr "Icedove"
 
-#: mailimporter/filters/filterkmail_maildir.cpp:26
+#: mailimporter/filters/filterkmail_maildir.cpp:28
 #, kde-format
 msgid "Import KMail Maildirs and Folder Structure"
 msgstr "匯入 KMail 的信件"
 
-#: mailimporter/filters/filterkmail_maildir.cpp:28
+#: mailimporter/filters/filterkmail_maildir.cpp:30
 #, kde-format
 msgid ""
 "<p><b>KMail import filter</b></p><p>Select the base directory of the KMail "
@@ -355,17 +355,17 @@ msgstr ""
 "kde/share/apps/kmail/mail），否則匯入精靈有可能會陷入無窮迴圈中。</p><p>這個"
 "過濾器會產生一個叫 KMail-Import 的資料夾，並幫您保存原先的目錄結構。</p>"
 
-#: mailimporter/filters/filterkmail_maildir.cpp:176
+#: mailimporter/filters/filterkmail_maildir.cpp:178
 #, kde-format
 msgid "Could not import %1, duplicated message"
 msgstr "無法匯入 %1，因為信件重複"
 
-#: mailimporter/filters/filterkmailarchive.cpp:31
+#: mailimporter/filters/filterkmailarchive.cpp:33
 #, kde-format
 msgid "Import KMail Archive File"
 msgstr "匯入 KMail 封存"
 
-#: mailimporter/filters/filterkmailarchive.cpp:33
+#: mailimporter/filters/filterkmailarchive.cpp:35
 #, kde-format
 msgid ""
 "<p><b>KMail Archive File Import Filter</b></p><p>This filter will import "
@@ -375,83 +375,83 @@ msgstr ""
 "<p><b>KMail 封存匯入過濾器</b></p> <p>此過濾器會匯入先前 KMail 匯出的封存。</"
 "p> <p>封存包含一個完整的資料夾子樹，壓縮在一個檔案內。</p>"
 
-#: mailimporter/filters/filterkmailarchive.cpp:71
+#: mailimporter/filters/filterkmailarchive.cpp:73
 #, kde-format
 msgid "Importing folder '%1'..."
 msgstr "匯入資料夾 %1 中..."
 
-#: mailimporter/filters/filterkmailarchive.cpp:97
+#: mailimporter/filters/filterkmailarchive.cpp:99
 #, kde-format
 msgid "Unexpected subfolder %1 in folder %2."
 msgstr "資料夾 %2 中非預期的子資料夾 %1。"
 
-#: mailimporter/filters/filterkmailarchive.cpp:101
+#: mailimporter/filters/filterkmailarchive.cpp:103
 #, kde-format
 msgid "No subfolder named 'cur' in folder %1."
 msgstr "在資料夾 %1 中找不到名為 cur 的子資料夾。"
 
-#: mailimporter/filters/filterkmailarchive.cpp:125
+#: mailimporter/filters/filterkmailarchive.cpp:127
 #, kde-format
 msgid "Unexpected subdirectory named '%1'."
 msgstr "未預期的名為 %1 的子目錄。"
 
-#: mailimporter/filters/filterkmailarchive.cpp:156
+#: mailimporter/filters/filterkmailarchive.cpp:158
 #, kde-format
 msgid "Select KMail Archive File to Import"
 msgstr "選擇要匯入的 KMail 封存"
 
-#: mailimporter/filters/filterkmailarchive.cpp:158
+#: mailimporter/filters/filterkmailarchive.cpp:160
 #, kde-format
 msgid "KMail Archive Files "
 msgstr "KMail 封存檔"
 
-#: mailimporter/filters/filterkmailarchive.cpp:160
+#: mailimporter/filters/filterkmailarchive.cpp:162
 #, kde-format
 msgid "Please select an archive file that should be imported."
 msgstr "請選擇要匯入的封存檔名。"
 
-#: mailimporter/filters/filterkmailarchive.cpp:169
+#: mailimporter/filters/filterkmailarchive.cpp:171
 #, kde-format
 msgid "No archive selected."
 msgstr "未選取封存。"
 
-#: mailimporter/filters/filterkmailarchive.cpp:183
+#: mailimporter/filters/filterkmailarchive.cpp:185
 #, kde-format
 msgid "The file '%1' does not appear to be a valid archive."
 msgstr "檔案 %1 似乎不是合法的封存。"
 
-#: mailimporter/filters/filterkmailarchive.cpp:188
+#: mailimporter/filters/filterkmailarchive.cpp:190
 #, kde-format
 msgid "Unable to open archive file '%1'"
 msgstr "無法開啟封存 %1。"
 
-#: mailimporter/filters/filterkmailarchive.cpp:193
+#: mailimporter/filters/filterkmailarchive.cpp:195
 #, kde-format
 msgid "Counting files in archive..."
 msgstr "計算檔案數中..."
 
-#: mailimporter/filters/filterkmailarchive.cpp:199
+#: mailimporter/filters/filterkmailarchive.cpp:201
 #, kde-format
 msgid "Importing the archive file '%1' into the folder '%2' succeeded."
 msgstr "匯入封存 %1 到資料夾 %2 中成功。"
 
-#: mailimporter/filters/filterkmailarchive.cpp:200
+#: mailimporter/filters/filterkmailarchive.cpp:202
 #, kde-format
 msgid "1 message was imported."
 msgid_plural "%1 messages were imported."
 msgstr[0] "已匯入 %1 封信件。"
 
-#: mailimporter/filters/filterkmailarchive.cpp:202
+#: mailimporter/filters/filterkmailarchive.cpp:204
 #, kde-format
 msgid "Importing the archive failed."
 msgstr "匯入封存失敗。"
 
-#: mailimporter/filters/filterlnotes.cpp:30
+#: mailimporter/filters/filterlnotes.cpp:32
 #, kde-format
 msgid "Import Lotus Notes Emails"
 msgstr "匯入 Lotus Notes 信件"
 
-#: mailimporter/filters/filterlnotes.cpp:32
+#: mailimporter/filters/filterlnotes.cpp:34
 #, kde-format
 msgid ""
 "<p><b>Lotus Notes Structured Text mail import filter</b></p><p>This filter "
@@ -466,47 +466,47 @@ msgstr ""
 "Lotus Notes 信件格式檔，並將其中信件匯入 KMail 中。</p><p><b>注意：</b>這個過"
 "濾器會產生一個叫 LNotes-Import 的信件夾，並幫您保存原先的目錄格式。</p>"
 
-#: mailimporter/filters/filterlnotes.cpp:52
+#: mailimporter/filters/filterlnotes.cpp:54
 #, kde-format
 msgid "All Files (*)"
 msgstr "所有檔案 (*)"
 
-#: mailimporter/filters/filterlnotes.cpp:54
-#: mailimporter/filters/filtermailapp.cpp:47
-#: mailimporter/filters/filtermailmangzip.cpp:42
-#: mailimporter/filters/filtermbox.cpp:45
+#: mailimporter/filters/filterlnotes.cpp:56
+#: mailimporter/filters/filtermailapp.cpp:49
+#: mailimporter/filters/filtermailmangzip.cpp:44
+#: mailimporter/filters/filtermbox.cpp:47
 #, kde-format
 msgid "No files selected."
 msgstr "沒有選取任何檔案。"
 
-#: mailimporter/filters/filterlnotes.cpp:66
+#: mailimporter/filters/filterlnotes.cpp:68
 #, kde-format
 msgid "Importing emails from %1"
 msgstr "正在匯入從 %1 中匯入信件..."
 
-#: mailimporter/filters/filterlnotes.cpp:100
+#: mailimporter/filters/filterlnotes.cpp:102
 #, kde-format
 msgctxt "Define folder name where we import lotus note mails"
 msgid "LNotes-Import"
 msgstr "LNotes-Import"
 
-#: mailimporter/filters/filterlnotes.cpp:110
-#: mailimporter/filters/filterpmail.cpp:267
+#: mailimporter/filters/filterlnotes.cpp:112
+#: mailimporter/filters/filterpmail.cpp:269
 #, kde-format
 msgid "Message %1"
 msgstr "信件 %1"
 
-#: mailimporter/filters/filtermailapp.cpp:28
+#: mailimporter/filters/filtermailapp.cpp:30
 #, kde-format
 msgid "Import From OS X Mail"
 msgstr "匯入 OS X 的信件"
 
-#: mailimporter/filters/filtermailapp.cpp:29
+#: mailimporter/filters/filtermailapp.cpp:31
 #, kde-format
 msgid "Chris Howells<br /><br />Filter accelerated by Danny Kukawka )"
 msgstr "Chris Howells<br /><br />（過濾器由 Danny Kukawka 加速）"
 
-#: mailimporter/filters/filtermailapp.cpp:30
+#: mailimporter/filters/filtermailapp.cpp:32
 #, kde-format
 msgid ""
 "<p><b>OS X Mail Import Filter</b></p><p>This filter imports e-mails from the "
@@ -515,20 +515,20 @@ msgstr ""
 "<p><b>OS X 信件匯入過濾器</b></p><p>這個過濾器會幫忙您將 Apple Mac OS X 的收"
 "發信軟體中的郵件匯入 Kmail 中。</p>"
 
-#: mailimporter/filters/filtermailapp.cpp:126
-#: mailimporter/filters/filtermailmangzip.cpp:136
-#: mailimporter/filters/filtermbox.cpp:135
+#: mailimporter/filters/filtermailapp.cpp:128
+#: mailimporter/filters/filtermailmangzip.cpp:138
+#: mailimporter/filters/filtermbox.cpp:137
 #, kde-format
 msgid "1 duplicate message not imported to folder %2 in KMail"
 msgid_plural "%1 duplicate messages not imported to folder %2 in KMail"
 msgstr[0] "有 %1 封重複信件未匯入信件夾 %2。"
 
-#: mailimporter/filters/filtermailmangzip.cpp:19
+#: mailimporter/filters/filtermailmangzip.cpp:21
 #, kde-format
 msgid "Import mailman gzip Files"
 msgstr "匯入 mailman gzip 檔"
 
-#: mailimporter/filters/filtermailmangzip.cpp:21
+#: mailimporter/filters/filtermailmangzip.cpp:23
 #, kde-format
 msgid ""
 "<p><b>mailman gzip import filter</b></p><p>This filter will import mailman "
@@ -539,28 +539,28 @@ msgstr ""
 "匯入 KMail 中。</p><p><b>注意：</b>信件會匯入到新的信件夾，信件夾名稱為原來的"
 "檔名前面加上 MAILMAN-。</p>"
 
-#: mailimporter/filters/filtermailmangzip.cpp:35
+#: mailimporter/filters/filtermailmangzip.cpp:37
 #, kde-format
 msgid "gzip Files"
 msgstr "gzip 檔案"
 
-#: mailimporter/filters/filtermailmangzip.cpp:55
+#: mailimporter/filters/filtermailmangzip.cpp:57
 #, kde-format
 msgid "Unable to open archive file '%1', skipping"
 msgstr "無法開啟封存 %1，將跳過。"
 
-#: mailimporter/filters/filtermbox.cpp:20
+#: mailimporter/filters/filtermbox.cpp:22
 #, kde-format
 msgid "Import mbox Files (UNIX, Evolution)"
 msgstr "匯入 mbox 檔（UNIX 或 Evolution 使用的信件檔）"
 
-#: mailimporter/filters/filtermbox.cpp:21
-#: mailimporter/filters/filterplain.cpp:19
+#: mailimporter/filters/filtermbox.cpp:23
+#: mailimporter/filters/filterplain.cpp:21
 #, kde-format
 msgid "Laurence Anderson <p>( Filter accelerated by Danny Kukawka )</p>"
 msgstr "Laurence Anderson <p>（過濾器由 Danny Kukawka 加速）</p>"
 
-#: mailimporter/filters/filtermbox.cpp:22
+#: mailimporter/filters/filtermbox.cpp:24
 #, kde-format
 msgid ""
 "<p><b>mbox import filter</b></p><p>This filter will import mbox files into "
@@ -574,22 +574,22 @@ msgstr ""
 "軟體，您可以用這個過濾器來將信件匯入。</p><p><b>注意：</b>信件會匯入到新的信"
 "件夾，信件夾名稱為原來的檔名前面加上 MBOX-。</p>"
 
-#: mailimporter/filters/filtermbox.cpp:38
+#: mailimporter/filters/filtermbox.cpp:40
 #, kde-format
 msgid "mbox Files"
 msgstr "mbox 檔案"
 
-#: mailimporter/filters/filteroe.cpp:32
+#: mailimporter/filters/filteroe.cpp:34
 #, kde-format
 msgid "Import Outlook Express Emails"
 msgstr "匯入 Outelook Express 的信件"
 
-#: mailimporter/filters/filteroe.cpp:33
+#: mailimporter/filters/filteroe.cpp:35
 #, kde-format
 msgid "Laurence Anderson <br>( Filter enhanced by Danny Kukawka )</p>"
 msgstr "Laurence Anderson <br/>（過濾器由 Danny Kukawka 強化）</p>"
 
-#: mailimporter/filters/filteroe.cpp:34
+#: mailimporter/filters/filteroe.cpp:36
 #, kde-format
 msgid ""
 "<p><b>Outlook Express 4/5/6 import filter</b></p><p>You will need to locate "
@@ -605,47 +605,47 @@ msgstr ""
 "找尋有 .dbx 或 .mbx 檔案的信件目錄。</li></ul></p><p><b>注意：</b>這個過濾器"
 "會產生一個叫 OE-Import 的信件夾，並幫您保存原先的目錄結構。</p>"
 
-#: mailimporter/filters/filteroe.cpp:66
+#: mailimporter/filters/filteroe.cpp:68
 #, kde-format
 msgid "No Outlook Express mailboxes found in directory %1."
 msgstr "在 %1 資料夾中找不到 Outlook Express 的信件夾。"
 
-#: mailimporter/filters/filteroe.cpp:82
+#: mailimporter/filters/filteroe.cpp:84
 #, kde-format
 msgid "Import folder structure..."
 msgstr "正在匯入郵件目錄結構..."
 
-#: mailimporter/filters/filteroe.cpp:106
+#: mailimporter/filters/filteroe.cpp:108
 #, kde-format
 msgid "Finished importing Outlook Express emails"
 msgstr "Outlook Express 信件已匯入完成。"
 
-#: mailimporter/filters/filteroe.cpp:126
+#: mailimporter/filters/filteroe.cpp:128
 #, kde-format
 msgid "Unable to open mailbox %1"
 msgstr "無法開啟檔案 '%1'"
 
-#: mailimporter/filters/filteroe.cpp:138
+#: mailimporter/filters/filteroe.cpp:140
 #, kde-format
 msgid "Importing OE4 Mailbox %1"
 msgstr "匯入 OE4 信件夾 %1 中..."
 
-#: mailimporter/filters/filteroe.cpp:155
+#: mailimporter/filters/filteroe.cpp:157
 #, kde-format
 msgid "Importing OE5+ Mailbox %1"
 msgstr "匯入 OE5+ 信件夾 %1 中..."
 
-#: mailimporter/filters/filteroe.cpp:161
+#: mailimporter/filters/filteroe.cpp:163
 #, kde-format
 msgid "Importing OE5+ Folder file %1"
 msgstr "正在匯入 OE5+ 信件檔 %1 中..."
 
-#: mailimporter/filters/filteropera.cpp:19
+#: mailimporter/filters/filteropera.cpp:21
 #, kde-format
 msgid "Import Opera Emails"
 msgstr "匯入 Opera 的信件"
 
-#: mailimporter/filters/filteropera.cpp:21
+#: mailimporter/filters/filteropera.cpp:23
 #, kde-format
 msgid ""
 "<p><b>Opera email import filter</b></p><p>This filter will import mails from "
@@ -659,31 +659,31 @@ msgstr ""
 "mail/store/account*）。</p><p>這個過濾器將 Opera 中某個帳號的所有郵件匯入，並"
 "存在信件夾內，信件夾的名稱會用 OPERA-您的帳號名稱。</p>"
 
-#: mailimporter/filters/filteropera.cpp:38
+#: mailimporter/filters/filteropera.cpp:40
 #, kde-format
 msgctxt "name of opera application"
 msgid "Opera"
 msgstr "Opera"
 
-#: mailimporter/filters/filteropera.cpp:72
-#: mailimporter/filters/filterplain.cpp:55
+#: mailimporter/filters/filteropera.cpp:74
+#: mailimporter/filters/filterplain.cpp:57
 #, kde-format
 msgid "Importing new mail files..."
 msgstr "正在匯入新的信件檔..."
 
-#: mailimporter/filters/filteropera.cpp:190
-#: mailimporter/filters/filterplain.cpp:50
-#: mailimporter/filters/filterpmail.cpp:51
+#: mailimporter/filters/filteropera.cpp:192
+#: mailimporter/filters/filterplain.cpp:52
+#: mailimporter/filters/filterpmail.cpp:53
 #, kde-format
 msgid "Counting files..."
 msgstr "計算檔案中..."
 
-#: mailimporter/filters/filterplain.cpp:18
+#: mailimporter/filters/filterplain.cpp:20
 #, kde-format
 msgid "Import Plain Text Emails"
 msgstr "匯入純文字信件"
 
-#: mailimporter/filters/filterplain.cpp:20
+#: mailimporter/filters/filterplain.cpp:22
 #, kde-format
 msgid ""
 "<p>Select the directory containing the emails on your system. The emails are "
@@ -695,17 +695,17 @@ msgstr ""
 "的目錄。這些信件將會匯入到新的信件夾中，名稱為原來目錄的名稱，前面加上 "
 "PLAIN-。</p>"
 
-#: mailimporter/filters/filterpmail.cpp:22
+#: mailimporter/filters/filterpmail.cpp:24
 #, kde-format
 msgid "Import Folders From Pegasus-Mail"
 msgstr "匯入 Pegasus-Mail 的信件"
 
-#: mailimporter/filters/filterpmail.cpp:23
+#: mailimporter/filters/filterpmail.cpp:25
 #, kde-format
 msgid "Holger Schurig <br>( rewritten by Danny Kukawka )"
 msgstr "Holger Schurig <br/>（由 Danny Kukawka  重寫）"
 
-#: mailimporter/filters/filterpmail.cpp:24
+#: mailimporter/filters/filterpmail.cpp:26
 #, kde-format
 msgid ""
 "<p>Select the Pegasus-Mail directory on your system (containing *.CNM, *.PMM "
@@ -719,51 +719,51 @@ msgstr ""
 "</b>這個過濾器會產生一個叫 PegasusMail-Import 的信件夾，並幫您保存原先的目錄"
 "結構。</p>"
 
-#: mailimporter/filters/filterpmail.cpp:62
+#: mailimporter/filters/filterpmail.cpp:64
 #, kde-format
 msgid ""
 "Cannot parse the folder structure; continuing import without subfolder "
 "support."
 msgstr "無法剖析目錄結構：改成不匯入子目錄。"
 
-#: mailimporter/filters/filterpmail.cpp:65
+#: mailimporter/filters/filterpmail.cpp:67
 #, kde-format
 msgid "Importing new mail files ('.cnm')..."
 msgstr "正在匯入新的信件檔('.cnm')..."
 
-#: mailimporter/filters/filterpmail.cpp:67
+#: mailimporter/filters/filterpmail.cpp:69
 #, kde-format
 msgid "Importing mail folders ('.pmm')..."
 msgstr "正在匯入信件夾('.pmm')..."
 
-#: mailimporter/filters/filterpmail.cpp:69
+#: mailimporter/filters/filterpmail.cpp:71
 #, kde-format
 msgid "Importing 'UNIX' mail folders ('.mbx')..."
 msgstr "正在匯入'UNIX'信件夾('.mbx')..."
 
-#: mailimporter/filters/filterpmail.cpp:159
+#: mailimporter/filters/filterpmail.cpp:161
 #, kde-format
 msgctxt "define folder name when we will import pegasus mail"
 msgid "PegasusMail-Import"
 msgstr "PegasusMail-Import"
 
-#: mailimporter/filters/filterpmail.cpp:166
-#: mailimporter/filters/filterpmail.cpp:245
+#: mailimporter/filters/filterpmail.cpp:168
+#: mailimporter/filters/filterpmail.cpp:247
 #, kde-format
 msgid "Importing %1"
 msgstr "匯入 %1 中"
 
-#: mailimporter/filters/filterpmail.cpp:278
+#: mailimporter/filters/filterpmail.cpp:280
 #, kde-format
 msgid "Parsing the folder structure..."
 msgstr "剖析目錄結構中..."
 
-#: mailimporter/filters/filterseamonkey.cpp:14
+#: mailimporter/filters/filterseamonkey.cpp:16
 #, kde-format
 msgid "Import SeaMonkey Mails and Folder Structure"
 msgstr "匯入 SeaMonkey 信件及資料夾結構"
 
-#: mailimporter/filters/filterseamonkey.cpp:17
+#: mailimporter/filters/filterseamonkey.cpp:19
 #, kde-format
 msgid ""
 "<p><b>SeaMonkey import filter</b></p><p>Select your base SeaMonkey "
@@ -779,12 +779,12 @@ msgstr ""
 "很多新的信件夾。</p><p>這個過濾器會產生一個叫 SeaMonkey-Import 的信件夾，並幫"
 "您保存原先的目錄結構。</p>"
 
-#: mailimporter/filters/filtersylpheed.cpp:28
+#: mailimporter/filters/filtersylpheed.cpp:30
 #, kde-format
 msgid "Import Sylpheed Maildirs and Folder Structure"
 msgstr "匯入 Sylpheed 的信件"
 
-#: mailimporter/filters/filtersylpheed.cpp:30
+#: mailimporter/filters/filtersylpheed.cpp:32
 #, kde-format
 msgid ""
 "<p><b>Sylpheed import filter</b></p><p>Select the base directory of the "
@@ -798,24 +798,24 @@ msgstr ""
 "並幫您保存原先的目錄結構。</p><p>它並且會重新產生每一封信件的狀態，例如是未讀"
 "的或是已轉寄之類。</p>"
 
-#: mailimporter/filters/filtersylpheed.cpp:47
+#: mailimporter/filters/filtersylpheed.cpp:49
 #, kde-format
 msgctxt "name of sylpheed application"
 msgid "Sylpheed"
 msgstr "Sylpheed"
 
-#: mailimporter/filters/filtersylpheed.cpp:185
+#: mailimporter/filters/filtersylpheed.cpp:187
 #, kde-format
 msgctxt "define folder name where we will import sylpheed mails"
 msgid "Sylpheed-Import"
 msgstr "Sylpheed-Import"
 
-#: mailimporter/filters/filterthebat.cpp:28
+#: mailimporter/filters/filterthebat.cpp:30
 #, kde-format
 msgid "Import The Bat! Mails and Folder Structure"
 msgstr "匯入 The Bat! 的信件"
 
-#: mailimporter/filters/filterthebat.cpp:30
+#: mailimporter/filters/filterthebat.cpp:32
 #, kde-format
 msgid ""
 "<p><b>The Bat! import filter</b></p><p>Select the base directory of the 'The "
@@ -830,18 +830,18 @@ msgstr ""
 "入，也就是只匯入 POP 帳號的信件，而不會匯入 IMAP/DIMAP 帳號中的信件。</p><p>"
 "這個過濾器會產生一個叫 TheBat-Import 的信件夾，並幫您保存原來的目錄結構。</p>"
 
-#: mailimporter/filters/filterthebat.cpp:204
+#: mailimporter/filters/filterthebat.cpp:206
 #, kde-format
 msgctxt "Define folder where we will import thebat mails"
 msgid "TheBat-Import"
 msgstr "TheBat-Import"
 
-#: mailimporter/filters/filterthunderbird.cpp:24
+#: mailimporter/filters/filterthunderbird.cpp:26
 #, kde-format
 msgid "Import Thunderbird/Mozilla Local Mails and Folder Structure"
 msgstr "匯入 Thunderbird/Mozilla 郵件"
 
-#: mailimporter/filters/filterthunderbird.cpp:26
+#: mailimporter/filters/filterthunderbird.cpp:28
 #, kde-format
 msgid ""
 "<p><b>Thunderbird/Mozilla import filter</b></p><p>Select your base "
@@ -857,7 +857,7 @@ msgstr ""
 "使用 maildir 的目錄），不然會產生很多新的信件夾。</p><p>這個過濾器會產生一個"
 "叫 Thunderbird-Import 的信件夾，並幫您保存原先的目錄結構。</p>"
 
-#: mailimporter/filters/filterthunderbird.cpp:58
+#: mailimporter/filters/filterthunderbird.cpp:60
 #, kde-format
 msgctxt "name of thunderbird application"
 msgid "Thunderbird"
@@ -875,13 +875,13 @@ msgctxt "name of geary application"
 msgid "Geary"
 msgstr "Geary"
 
-#: mailimporter/selectthunderbirdprofilewidget.cpp:21
+#: mailimporter/selectthunderbirdprofilewidget.cpp:23
 #, kde-format
 msgctxt "@title:window"
 msgid "Select thunderbird profile"
 msgstr "選取 thunderbird 設定檔"
 
-#: mailimporter/selectthunderbirdprofilewidget.cpp:70
+#: mailimporter/selectthunderbirdprofilewidget.cpp:72
 #, kde-format
 msgid " (default)"
 msgstr " (預設)"
@@ -926,28 +926,28 @@ msgstr "總計:"
 msgid "Select Profile:"
 msgstr "選擇設定檔："
 
-#: mailimporterakonadi/filterimporterakonadi.cpp:94
+#: mailimporterakonadi/filterimporterakonadi.cpp:96
 #, kde-format
 msgid "Error: failed to read temporary file at %1"
 msgstr "錯誤：讀取於 %1 的暫存檔失敗"
 
-#: mailimporterakonadi/filterimporterakonadi.cpp:123
+#: mailimporterakonadi/filterimporterakonadi.cpp:125
 #, kde-format
 msgid "<b>Warning:</b> Got a bad message folder, adding to root folder."
 msgstr "<b>警告：</b>取得一個錯誤的信件資料夾，附加到根資料夾。"
 
-#: mailimporterakonadi/filterimporterakonadi.cpp:168
+#: mailimporterakonadi/filterimporterakonadi.cpp:170
 #, kde-format
 msgid ""
 "<b>Warning:</b> Could not check that the folder already exists. Reason: %1"
 msgstr "<b>警告：</b>無法檢查資料夾是否存在。理由：%1"
 
-#: mailimporterakonadi/filterimporterakonadi.cpp:185
+#: mailimporterakonadi/filterimporterakonadi.cpp:187
 #, kde-format
 msgid "<b>Error:</b> Could not create folder. Reason: %1"
 msgstr "<b>錯誤：</b>無法建立資料夾。理由：%1"
 
-#: mailimporterakonadi/filterimporterakonadi.cpp:213
+#: mailimporterakonadi/filterimporterakonadi.cpp:215
 #, kde-format
 msgid ""
 "<b>Warning:</b> Could not fetch mail in folder %1. Reason: %2 You may have "
@@ -955,17 +955,17 @@ msgid ""
 msgstr ""
 "<b>警告：</b>無法抓取資料夾 %1 中的信件。理由：%2。您可能有重覆的信件。"
 
-#: mailimporterakonadi/filterimporterakonadi.cpp:221
+#: mailimporterakonadi/filterimporterakonadi.cpp:223
 #, kde-format
 msgid "<b>Warning:</b> Got an invalid message in folder %1."
 msgstr "<b>警告：</b>在資料夾 %1 中有不合法的信件。"
 
-#: mailimporterakonadi/filterimporterakonadi.cpp:275
+#: mailimporterakonadi/filterimporterakonadi.cpp:277
 #, kde-format
 msgid "<b>Error:</b> Could not add message to folder %1. Reason: %2"
 msgstr "<b>錯誤：</b>無法將信件新增到資料夾 %1。理由：%2"
 
-#: mailimporterakonadi/filterimporterakonadi.cpp:295
+#: mailimporterakonadi/filterimporterakonadi.cpp:297
 #, kde-format
 msgid "Unable to retrieve folder for folder path %1."
 msgstr "無法從資料夾路徑 %1 中取得資料夾。"
