@@ -9,7 +9,6 @@
 #include "filteropera.h"
 using namespace Qt::Literals::StringLiterals;
 
-
 #include <KLocalizedString>
 
 #include <QFileDialog>

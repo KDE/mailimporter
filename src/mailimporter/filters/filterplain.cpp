@@ -9,7 +9,6 @@
 #include "filterplain.h"
 using namespace Qt::Literals::StringLiterals;
 
-
 #include <KLocalizedString>
 
 #include <QFileDialog>
@@ -44,10 +43,7 @@ void FilterPlain::importMails(const QString &mailDir)
         return;
     }
     QDir dir(mailDir);
-    const QStringList files =
-        dir.entryList(QStringList() << u"*.[eE][mM][lL]"_s << u"*.[tT][xX][tT]"_s << u"*.[mM][sS][gG]"_s,
-                      QDir::Files,
-                      QDir::Name);
+    const QStringList files = dir.entryList(QStringList() << u"*.[eE][mM][lL]"_s << u"*.[tT][xX][tT]"_s << u"*.[mM][sS][gG]"_s, QDir::Files, QDir::Name);
     // Count total number of files to be processed
     filterInfo()->addInfoLogEntry(i18n("Counting files..."));
     int totalFiles = files.count();

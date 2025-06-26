@@ -9,7 +9,6 @@
 #include "filterclawsmail.h"
 using namespace Qt::Literals::StringLiterals;
 
-
 #include "mailimporter_debug.h"
 #include <KLocalizedString>
 #include <QDomDocument>

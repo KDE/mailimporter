@@ -7,7 +7,6 @@
 #include "filterevolution_v3.h"
 using namespace Qt::Literals::StringLiterals;
 
-
 #include <KLocalizedString>
 #include <QFileDialog>
 

@@ -10,7 +10,6 @@
 #include "filterthebat.h"
 using namespace Qt::Literals::StringLiterals;
 
-
 #include <KLocalizedString>
 #include <QFileDialog>
 #include <QRegularExpression>

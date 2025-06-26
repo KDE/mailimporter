@@ -7,7 +7,6 @@
 #include "filterbalsa.h"
 using namespace Qt::Literals::StringLiterals;
 
-
 #include <KLocalizedString>
 #include <QFileDialog>
 

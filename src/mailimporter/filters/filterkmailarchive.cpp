@@ -7,7 +7,6 @@
 #include "filterkmailarchive.h"
 using namespace Qt::Literals::StringLiterals;
 
-
 #include <KLocalizedString>
 #include <KTar>
 #include <KZip>

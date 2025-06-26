@@ -9,7 +9,6 @@
 #include "filterlnotes.h"
 using namespace Qt::Literals::StringLiterals;
 
-
 #include <KLocalizedString>
 
 #include <QFileDialog>

@@ -52,10 +52,7 @@ void FilterPMail::importMails(const QString &chosenDir)
     // Count total number of files to be processed
     filterInfo()->addInfoLogEntry(i18n("Counting files..."));
     dir.setPath(mailDir());
-    const QStringList files =
-        dir.entryList(QStringList() << u"*.[cC][nN][mM]"_s << u"*.[pP][mM][mM]"_s << u"*.[mM][bB][xX]"_s,
-                      QDir::Files,
-                      QDir::Name);
+    const QStringList files = dir.entryList(QStringList() << u"*.[cC][nN][mM]"_s << u"*.[pP][mM][mM]"_s << u"*.[mM][bB][xX]"_s, QDir::Files, QDir::Name);
     totalFiles = files.count();
     currentFile = 0;
     qCDebug(MAILIMPORTER_LOG) << "Count is" << totalFiles;

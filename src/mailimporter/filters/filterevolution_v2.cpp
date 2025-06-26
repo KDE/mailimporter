@@ -12,7 +12,6 @@
 #include "filterevolution_v2.h"
 using namespace Qt::Literals::StringLiterals;
 
-
 #include <KLocalizedString>
 #include <QFileDialog>
 #include <QTemporaryFile>
