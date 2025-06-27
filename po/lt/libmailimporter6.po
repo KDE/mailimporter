@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-26 00:43+0000\n"
+"POT-Creation-Date: 2025-06-27 00:43+0000\n"
 "PO-Revision-Date: 2011-10-11 11:28+0300\n"
 "Last-Translator: Liudas Ališauskas <liudas.alisauskas@gmail.com>\n"
 "Language-Team: Lithuanian <kde-i18n-doc@kde.org>\n"
@@ -21,13 +21,13 @@ msgstr ""
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
 "X-Generator: Lokalize 1.2\n"
 
-#: mailimporter/filters/filterbalsa.cpp:24
+#: mailimporter/filters/filterbalsa.cpp:23
 #, fuzzy, kde-format
 #| msgid "Import Evolution 1.x Local Mails and Folder Structure"
 msgid "Import Balsa Local Mails and Folder Structure"
 msgstr "Importuoti Evolution 1.x vietinį paštą ir aplankų struktūrą"
 
-#: mailimporter/filters/filterbalsa.cpp:26
+#: mailimporter/filters/filterbalsa.cpp:25
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p><b>Evolution 1.x import filter</b></p><p>Select the base directory of "
@@ -44,69 +44,69 @@ msgstr ""
 "įmanoma atkurti aplanko struktūrą, aplankai bus sudėti į: \"Evolution-Import"
 "\".</p>"
 
-#: mailimporter/filters/filterbalsa.cpp:41
+#: mailimporter/filters/filterbalsa.cpp:40
 #, kde-format
 msgctxt "name of balsa application"
 msgid "Balsa"
 msgstr ""
 
-#: mailimporter/filters/filterbalsa.cpp:91
-#: mailimporter/filters/filterevolution.cpp:62
-#: mailimporter/filters/filterevolution_v2.cpp:87
-#: mailimporter/filters/filterevolution_v3.cpp:88
-#: mailimporter/filters/filterkmail_maildir.cpp:78
+#: mailimporter/filters/filterbalsa.cpp:90
+#: mailimporter/filters/filterevolution.cpp:61
+#: mailimporter/filters/filterevolution_v2.cpp:86
+#: mailimporter/filters/filterevolution_v3.cpp:87
+#: mailimporter/filters/filterkmail_maildir.cpp:77
 #: mailimporter/filters/filteroe.cpp:60
-#: mailimporter/filters/filteropera.cpp:176
-#: mailimporter/filters/filterplain.cpp:43
+#: mailimporter/filters/filteropera.cpp:175
+#: mailimporter/filters/filterplain.cpp:42
 #: mailimporter/filters/filterpmail.cpp:47
-#: mailimporter/filters/filtersylpheed.cpp:124
-#: mailimporter/filters/filterthebat.cpp:75
+#: mailimporter/filters/filtersylpheed.cpp:123
+#: mailimporter/filters/filterthebat.cpp:74
 #: mailimporter/filters/filterthunderbird.cpp:171
 #, kde-format
 msgid "No directory selected."
 msgstr "Nepasirinktas aplankas."
 
-#: mailimporter/filters/filterbalsa.cpp:100
-#: mailimporter/filters/filterevolution.cpp:71
-#: mailimporter/filters/filterevolution_v2.cpp:96
-#: mailimporter/filters/filterevolution_v3.cpp:97
-#: mailimporter/filters/filterkmail_maildir.cpp:87
-#: mailimporter/filters/filteropera.cpp:184
-#: mailimporter/filters/filterplain.cpp:55
-#: mailimporter/filters/filtersylpheed.cpp:133
-#: mailimporter/filters/filterthebat.cpp:84
+#: mailimporter/filters/filterbalsa.cpp:99
+#: mailimporter/filters/filterevolution.cpp:70
+#: mailimporter/filters/filterevolution_v2.cpp:95
+#: mailimporter/filters/filterevolution_v3.cpp:96
+#: mailimporter/filters/filterkmail_maildir.cpp:86
+#: mailimporter/filters/filteropera.cpp:183
+#: mailimporter/filters/filterplain.cpp:51
+#: mailimporter/filters/filtersylpheed.cpp:132
+#: mailimporter/filters/filterthebat.cpp:83
 #: mailimporter/filters/filterthunderbird.cpp:180
 #, kde-format
 msgid "No files found for import."
 msgstr "Nerasta failų importavimui."
 
-#: mailimporter/filters/filterbalsa.cpp:111
-#: mailimporter/filters/filterevolution.cpp:85
-#: mailimporter/filters/filterevolution_v2.cpp:129
-#: mailimporter/filters/filterevolution_v3.cpp:108
-#: mailimporter/filters/filterkmail_maildir.cpp:97
+#: mailimporter/filters/filterbalsa.cpp:110
+#: mailimporter/filters/filterevolution.cpp:84
+#: mailimporter/filters/filterevolution_v2.cpp:128
+#: mailimporter/filters/filterevolution_v3.cpp:107
+#: mailimporter/filters/filterkmail_maildir.cpp:96
 #: mailimporter/filters/filtermailapp.cpp:126
 #: mailimporter/filters/filtermailmangzip.cpp:136
 #: mailimporter/filters/filtermbox.cpp:135
-#: mailimporter/filters/filteropera.cpp:143
-#: mailimporter/filters/filterplain.cpp:77
-#: mailimporter/filters/filterpmail.cpp:74
-#: mailimporter/filters/filtersylpheed.cpp:145
-#: mailimporter/filters/filterthebat.cpp:95
+#: mailimporter/filters/filteropera.cpp:142
+#: mailimporter/filters/filterplain.cpp:73
+#: mailimporter/filters/filterpmail.cpp:71
+#: mailimporter/filters/filtersylpheed.cpp:144
+#: mailimporter/filters/filterthebat.cpp:94
 #: mailimporter/filters/filterthunderbird.cpp:212
 #, kde-format
 msgid "Finished importing emails from %1"
 msgstr "Baigiamas laiškų importavimas iš %1"
 
-#: mailimporter/filters/filterbalsa.cpp:114
-#: mailimporter/filters/filterevolution.cpp:207
-#: mailimporter/filters/filterevolution_v2.cpp:131
-#: mailimporter/filters/filterevolution_v3.cpp:111
-#: mailimporter/filters/filterkmail_maildir.cpp:99
-#: mailimporter/filters/filteropera.cpp:145
-#: mailimporter/filters/filterplain.cpp:79
-#: mailimporter/filters/filtersylpheed.cpp:147
-#: mailimporter/filters/filterthebat.cpp:97
+#: mailimporter/filters/filterbalsa.cpp:113
+#: mailimporter/filters/filterevolution.cpp:206
+#: mailimporter/filters/filterevolution_v2.cpp:130
+#: mailimporter/filters/filterevolution_v3.cpp:110
+#: mailimporter/filters/filterkmail_maildir.cpp:98
+#: mailimporter/filters/filteropera.cpp:144
+#: mailimporter/filters/filterplain.cpp:75
+#: mailimporter/filters/filtersylpheed.cpp:146
+#: mailimporter/filters/filterthebat.cpp:96
 #: mailimporter/filters/filterthunderbird.cpp:214
 #, kde-format
 msgid "1 duplicate message not imported"
@@ -116,68 +116,68 @@ msgstr[1] "Neimportuoti %1 besidubliuojantys laiškai"
 msgstr[2] "Neimportuota %1 besidubliuojančių laiškų"
 msgstr[3] "Neimportuotas %1 besidubliuojantis laiškas"
 
-#: mailimporter/filters/filterbalsa.cpp:118
-#: mailimporter/filters/filterevolution_v2.cpp:134
-#: mailimporter/filters/filterevolution_v3.cpp:115
-#: mailimporter/filters/filterkmail_maildir.cpp:103
+#: mailimporter/filters/filterbalsa.cpp:117
+#: mailimporter/filters/filterevolution_v2.cpp:133
+#: mailimporter/filters/filterevolution_v3.cpp:114
+#: mailimporter/filters/filterkmail_maildir.cpp:102
 #: mailimporter/filters/filtermailapp.cpp:138
 #: mailimporter/filters/filtermailmangzip.cpp:144
 #: mailimporter/filters/filtermbox.cpp:143
 #: mailimporter/filters/filteroe.cpp:110
-#: mailimporter/filters/filteropera.cpp:202
-#: mailimporter/filters/filterplain.cpp:82
-#: mailimporter/filters/filtersylpheed.cpp:151
-#: mailimporter/filters/filterthebat.cpp:101
+#: mailimporter/filters/filteropera.cpp:201
+#: mailimporter/filters/filterplain.cpp:78
+#: mailimporter/filters/filtersylpheed.cpp:150
+#: mailimporter/filters/filterthebat.cpp:100
 #: mailimporter/filters/filterthunderbird.cpp:218
 #, kde-format
 msgid "Finished import, canceled by user."
 msgstr "Importavimas baigtas, užduoties atsisakė naudotojas."
 
-#: mailimporter/filters/filterbalsa.cpp:165
-#: mailimporter/filters/filterevolution_v3.cpp:162
+#: mailimporter/filters/filterbalsa.cpp:164
+#: mailimporter/filters/filterevolution_v3.cpp:161
 #, kde-format
 msgctxt "define folder name where we import evolution mails"
 msgid "Evolution-Import"
 msgstr ""
 
-#: mailimporter/filters/filterbalsa.cpp:189
-#: mailimporter/filters/filterevolution_v3.cpp:186
-#: mailimporter/filters/filterkmail_maildir.cpp:171
-#: mailimporter/filters/filtersylpheed.cpp:230
-#: mailimporter/filters/filterthebat.cpp:211
+#: mailimporter/filters/filterbalsa.cpp:188
+#: mailimporter/filters/filterevolution_v3.cpp:185
+#: mailimporter/filters/filterkmail_maildir.cpp:170
+#: mailimporter/filters/filtersylpheed.cpp:229
+#: mailimporter/filters/filterthebat.cpp:210
 #, kde-format
 msgid "Import folder %1..."
 msgstr "Importuoti aplanką %1..."
 
-#: mailimporter/filters/filterbalsa.cpp:197
-#: mailimporter/filters/filterevolution.cpp:196
-#: mailimporter/filters/filterevolution_v2.cpp:262
-#: mailimporter/filters/filterevolution_v3.cpp:194
-#: mailimporter/filters/filterlnotes.cpp:129
-#: mailimporter/filters/filterlnotes.cpp:160
+#: mailimporter/filters/filterbalsa.cpp:196
+#: mailimporter/filters/filterevolution.cpp:195
+#: mailimporter/filters/filterevolution_v2.cpp:261
+#: mailimporter/filters/filterevolution_v3.cpp:193
+#: mailimporter/filters/filterlnotes.cpp:128
+#: mailimporter/filters/filterlnotes.cpp:159
 #: mailimporter/filters/filtermailapp.cpp:109
 #: mailimporter/filters/filtermailmangzip.cpp:116
 #: mailimporter/filters/filtermbox.cpp:115
 #: mailimporter/filters/filteroe.cpp:214 mailimporter/filters/filteroe.cpp:390
-#: mailimporter/filters/filteropera.cpp:126
-#: mailimporter/filters/filterplain.cpp:67
-#: mailimporter/filters/filterpmail.cpp:117
-#: mailimporter/filters/filterpmail.cpp:196
-#: mailimporter/filters/filterpmail.cpp:265
-#: mailimporter/filters/filtersylpheed.cpp:244
-#: mailimporter/filters/filterthebat.cpp:231
+#: mailimporter/filters/filteropera.cpp:125
+#: mailimporter/filters/filterplain.cpp:63
+#: mailimporter/filters/filterpmail.cpp:114
+#: mailimporter/filters/filterpmail.cpp:193
+#: mailimporter/filters/filterpmail.cpp:262
+#: mailimporter/filters/filtersylpheed.cpp:243
+#: mailimporter/filters/filterthebat.cpp:230
 #: mailimporter/filters/filterthunderbird.cpp:346
 #, kde-format
 msgid "Could not import %1"
 msgstr "Nepavyko importuoti %1"
 
-#: mailimporter/filters/filterclawsmail.cpp:24
+#: mailimporter/filters/filterclawsmail.cpp:23
 #, fuzzy, kde-format
 #| msgid "Import KMail Maildirs and Folder Structure"
 msgid "Import Claws-mail Maildirs and Folder Structure"
 msgstr "Importuoti KMai Maildirs ir aplankų struktūrą"
 
-#: mailimporter/filters/filterclawsmail.cpp:27
+#: mailimporter/filters/filterclawsmail.cpp:26
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p><b>Sylpheed import filter</b></p><p>Select the base directory of the "
@@ -198,31 +198,31 @@ msgstr ""
 "Import\" Jūsų vietiniame aplanke.</p><p>Šis filtras taip pat atkurs "
 "pranešimų būsenas, t.y. \"naujas\" ar \"persiųstas\".</p>"
 
-#: mailimporter/filters/filterclawsmail.cpp:44
+#: mailimporter/filters/filterclawsmail.cpp:43
 #, fuzzy, kde-format
 #| msgid "Mail Import Tool"
 msgctxt "name of clawsMail application"
 msgid "ClawsMail"
 msgstr "Pašto importo įrankis"
 
-#: mailimporter/filters/filterclawsmail.cpp:98
+#: mailimporter/filters/filterclawsmail.cpp:97
 #, fuzzy, kde-format
 #| msgid "Mail Import Tool"
 msgctxt "define folder name where we will import clawsmail mails"
 msgid "ClawsMail-Import"
 msgstr "Pašto importo įrankis"
 
-#: mailimporter/filters/filterevolution.cpp:19
+#: mailimporter/filters/filterevolution.cpp:18
 #, kde-format
 msgid "Import Evolution 1.x Local Mails and Folder Structure"
 msgstr "Importuoti Evolution 1.x vietinį paštą ir aplankų struktūrą"
 
-#: mailimporter/filters/filterevolution.cpp:20
+#: mailimporter/filters/filterevolution.cpp:19
 #, kde-format
 msgid "Simon MARTIN<br /><br />( Filter accelerated by Danny Kukawka )"
 msgstr ""
 
-#: mailimporter/filters/filterevolution.cpp:21
+#: mailimporter/filters/filterevolution.cpp:20
 #, kde-format
 msgid ""
 "<p><b>Evolution 1.x import filter</b></p><p>Select the base directory of "
@@ -235,43 +235,43 @@ msgstr ""
 "įmanoma atkurti aplanko struktūrą, aplankai bus sudėti į: \"Evolution-Import"
 "\".</p>"
 
-#: mailimporter/filters/filterevolution.cpp:37
+#: mailimporter/filters/filterevolution.cpp:36
 #, kde-format
 msgctxt "name of evolution application"
 msgid "Evolution"
 msgstr ""
 
-#: mailimporter/filters/filterevolution.cpp:134
-#: mailimporter/filters/filterevolution_v2.cpp:194
-#: mailimporter/filters/filterlnotes.cpp:93
+#: mailimporter/filters/filterevolution.cpp:133
+#: mailimporter/filters/filterevolution_v2.cpp:193
+#: mailimporter/filters/filterlnotes.cpp:92
 #: mailimporter/filters/filtermailapp.cpp:69
 #: mailimporter/filters/filtermbox.cpp:60
-#: mailimporter/filters/filteropera.cpp:80
-#: mailimporter/filters/filterpmail.cpp:157
-#: mailimporter/filters/filterpmail.cpp:226
-#: mailimporter/filters/filterpmail.cpp:245
-#: mailimporter/filters/filterpmail.cpp:284
-#: mailimporter/filters/filterthebat.cpp:163
+#: mailimporter/filters/filteropera.cpp:79
+#: mailimporter/filters/filterpmail.cpp:154
+#: mailimporter/filters/filterpmail.cpp:223
+#: mailimporter/filters/filterpmail.cpp:242
+#: mailimporter/filters/filterpmail.cpp:281
+#: mailimporter/filters/filterthebat.cpp:162
 #: mailimporter/filters/filterthunderbird.cpp:280
 #, kde-format
 msgid "Unable to open %1, skipping"
 msgstr "Negalima atverti „%1“, ji praleidžiama"
 
-#: mailimporter/filters/filterevolution.cpp:159
+#: mailimporter/filters/filterevolution.cpp:158
 #: mailimporter/filters/filtermailapp.cpp:77
 #: mailimporter/filters/filtermailmangzip.cpp:66
 #: mailimporter/filters/filtermbox.cpp:66
-#: mailimporter/filters/filteropera.cpp:82
+#: mailimporter/filters/filteropera.cpp:81
 #, kde-format
 msgid "Importing emails from %1..."
 msgstr "Importuojami laiškai iš %1..."
 
-#: mailimporter/filters/filterevolution_v2.cpp:24
+#: mailimporter/filters/filterevolution_v2.cpp:23
 #, kde-format
 msgid "Import Evolution 2.x Local Mails and Folder Structure"
 msgstr "Importuoti Evolution 2.x vietinį paštą ir aplankų struktūrą"
 
-#: mailimporter/filters/filterevolution_v2.cpp:26
+#: mailimporter/filters/filterevolution_v2.cpp:25
 #, kde-format
 msgid ""
 "<p><b>Evolution 2.x import filter</b></p><p>Select the base directory of "
@@ -288,27 +288,27 @@ msgstr ""
 "yra įmanoma atkurti aplanko struktūrą, aplankai bus sudėti į: \"Evolution-"
 "Import\".</p>"
 
-#: mailimporter/filters/filterevolution_v2.cpp:44
+#: mailimporter/filters/filterevolution_v2.cpp:43
 #, kde-format
 msgctxt "name of evolution application"
 msgid "Evolution (v2)"
 msgstr ""
 
-#: mailimporter/filters/filterevolution_v2.cpp:124
-#: mailimporter/filters/filterevolution_v2.cpp:163
+#: mailimporter/filters/filterevolution_v2.cpp:123
+#: mailimporter/filters/filterevolution_v2.cpp:162
 #: mailimporter/filters/filterthunderbird.cpp:207
 #: mailimporter/filters/filterthunderbird.cpp:246
 #, kde-format
 msgid "Start import file %1..."
 msgstr "Pradėti failo %1 importavimą..."
 
-#: mailimporter/filters/filterevolution_v3.cpp:24
+#: mailimporter/filters/filterevolution_v3.cpp:23
 #, fuzzy, kde-format
 #| msgid "Import Evolution 2.x Local Mails and Folder Structure"
 msgid "Import Evolution 3.x Local Mails and Folder Structure"
 msgstr "Importuoti Evolution 2.x vietinį paštą ir aplankų struktūrą"
 
-#: mailimporter/filters/filterevolution_v3.cpp:26
+#: mailimporter/filters/filterevolution_v3.cpp:25
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p><b>Evolution 1.x import filter</b></p><p>Select the base directory of "
@@ -326,7 +326,7 @@ msgstr ""
 "įmanoma atkurti aplanko struktūrą, aplankai bus sudėti į: \"Evolution-Import"
 "\".</p>"
 
-#: mailimporter/filters/filterevolution_v3.cpp:41
+#: mailimporter/filters/filterevolution_v3.cpp:40
 #, kde-format
 msgctxt "name of evolution application"
 msgid "Evolution (v3)"
@@ -368,12 +368,12 @@ msgctxt "name of icedove application"
 msgid "Icedove"
 msgstr ""
 
-#: mailimporter/filters/filterkmail_maildir.cpp:28
+#: mailimporter/filters/filterkmail_maildir.cpp:27
 #, kde-format
 msgid "Import KMail Maildirs and Folder Structure"
 msgstr "Importuoti KMai Maildirs ir aplankų struktūrą"
 
-#: mailimporter/filters/filterkmail_maildir.cpp:30
+#: mailimporter/filters/filterkmail_maildir.cpp:29
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p><b>Evolution 2.x import filter</b></p><p>Select the base directory of "
@@ -398,18 +398,18 @@ msgstr ""
 "yra įmanoma atkurti aplanko struktūrą, aplankai bus sudėti į: \"Evolution-"
 "Import\".</p>"
 
-#: mailimporter/filters/filterkmail_maildir.cpp:178
+#: mailimporter/filters/filterkmail_maildir.cpp:177
 #, fuzzy, kde-format
 #| msgid "Could not import %1"
 msgid "Could not import %1, duplicated message"
 msgstr "Nepavyko importuoti %1"
 
-#: mailimporter/filters/filterkmailarchive.cpp:33
+#: mailimporter/filters/filterkmailarchive.cpp:32
 #, kde-format
 msgid "Import KMail Archive File"
 msgstr "Importuoti KMail archyvo failą"
 
-#: mailimporter/filters/filterkmailarchive.cpp:35
+#: mailimporter/filters/filterkmailarchive.cpp:34
 #, kde-format
 msgid ""
 "<p><b>KMail Archive File Import Filter</b></p><p>This filter will import "
@@ -417,69 +417,69 @@ msgid ""
 "complete folder subtree compressed into a single file.</p>"
 msgstr ""
 
-#: mailimporter/filters/filterkmailarchive.cpp:73
+#: mailimporter/filters/filterkmailarchive.cpp:72
 #, kde-format
 msgid "Importing folder '%1'..."
 msgstr "Importuoti aplanką „%1“..."
 
-#: mailimporter/filters/filterkmailarchive.cpp:99
+#: mailimporter/filters/filterkmailarchive.cpp:98
 #, kde-format
 msgid "Unexpected subfolder %1 in folder %2."
 msgstr "Netikėtas poaplankis %1 aplanke %2."
 
-#: mailimporter/filters/filterkmailarchive.cpp:103
+#: mailimporter/filters/filterkmailarchive.cpp:102
 #, kde-format
 msgid "No subfolder named 'cur' in folder %1."
 msgstr "Nęra poaplankio pavadinto „cur“ aplanke %1."
 
-#: mailimporter/filters/filterkmailarchive.cpp:127
+#: mailimporter/filters/filterkmailarchive.cpp:126
 #, kde-format
 msgid "Unexpected subdirectory named '%1'."
 msgstr "Netikėtas poaplankio pavadintas „%1“."
 
-#: mailimporter/filters/filterkmailarchive.cpp:158
+#: mailimporter/filters/filterkmailarchive.cpp:157
 #, kde-format
 msgid "Select KMail Archive File to Import"
 msgstr "Pasirinkite KMail archyvinį failą importavimui"
 
-#: mailimporter/filters/filterkmailarchive.cpp:160
+#: mailimporter/filters/filterkmailarchive.cpp:159
 #, fuzzy, kde-format
 #| msgid "Import KMail Archive File"
 msgid "KMail Archive Files "
 msgstr "Importuoti KMail archyvo failą"
 
-#: mailimporter/filters/filterkmailarchive.cpp:162
+#: mailimporter/filters/filterkmailarchive.cpp:161
 #, kde-format
 msgid "Please select an archive file that should be imported."
 msgstr "Prašome parinkti archyvo failą, kuris turėtų būti importuotas."
 
-#: mailimporter/filters/filterkmailarchive.cpp:171
+#: mailimporter/filters/filterkmailarchive.cpp:170
 #, fuzzy, kde-format
 #| msgid "No directory selected."
 msgid "No archive selected."
 msgstr "Nepasirinktas aplankas."
 
-#: mailimporter/filters/filterkmailarchive.cpp:185
+#: mailimporter/filters/filterkmailarchive.cpp:184
 #, kde-format
 msgid "The file '%1' does not appear to be a valid archive."
 msgstr "Failas „%1“ atrodo nėra tinkamas archyvas."
 
-#: mailimporter/filters/filterkmailarchive.cpp:190
+#: mailimporter/filters/filterkmailarchive.cpp:189
 #, kde-format
 msgid "Unable to open archive file '%1'"
 msgstr "Nepavyksta atidaryti archyvo failo „%1“"
 
-#: mailimporter/filters/filterkmailarchive.cpp:195
+#: mailimporter/filters/filterkmailarchive.cpp:194
 #, kde-format
 msgid "Counting files in archive..."
 msgstr "Skaičiuojami failai archyve..."
 
-#: mailimporter/filters/filterkmailarchive.cpp:201
+#: mailimporter/filters/filterkmailarchive.cpp:200
 #, kde-format
 msgid "Importing the archive file '%1' into the folder '%2' succeeded."
 msgstr "Archyvinio failo „%1“ importavimas į aplanką „%2“ pavyko."
 
-#: mailimporter/filters/filterkmailarchive.cpp:202
+#: mailimporter/filters/filterkmailarchive.cpp:201
 #, kde-format
 msgid "1 message was imported."
 msgid_plural "%1 messages were imported."
@@ -488,17 +488,17 @@ msgstr[1] "%1 laiškai buvo importuoti."
 msgstr[2] "%1 laiškų buvo importuota."
 msgstr[3] "%1 laiškas buvo importuotas."
 
-#: mailimporter/filters/filterkmailarchive.cpp:204
+#: mailimporter/filters/filterkmailarchive.cpp:203
 #, kde-format
 msgid "Importing the archive failed."
 msgstr "Archyvo importavimas nepavyko."
 
-#: mailimporter/filters/filterlnotes.cpp:32
+#: mailimporter/filters/filterlnotes.cpp:31
 #, kde-format
 msgid "Import Lotus Notes Emails"
 msgstr "Importuoti Lotus Notes paštą"
 
-#: mailimporter/filters/filterlnotes.cpp:34
+#: mailimporter/filters/filterlnotes.cpp:33
 #, kde-format
 msgid ""
 "<p><b>Lotus Notes Structured Text mail import filter</b></p><p>This filter "
@@ -517,12 +517,12 @@ msgstr ""
 "struktūrą, importuoti pranešimai bus sudėti aplanko \"LNotes-Import\" (Jūsų "
 "vietiniame aplanke) poaplankius, pavadintus pagal importuojamus failus.</p>"
 
-#: mailimporter/filters/filterlnotes.cpp:54
+#: mailimporter/filters/filterlnotes.cpp:53
 #, kde-format
 msgid "All Files (*)"
 msgstr "Visi Failai (*)"
 
-#: mailimporter/filters/filterlnotes.cpp:56
+#: mailimporter/filters/filterlnotes.cpp:55
 #: mailimporter/filters/filtermailapp.cpp:49
 #: mailimporter/filters/filtermailmangzip.cpp:44
 #: mailimporter/filters/filtermbox.cpp:47
@@ -531,19 +531,19 @@ msgstr "Visi Failai (*)"
 msgid "No files selected."
 msgstr "Nepasirinktas aplankas."
 
-#: mailimporter/filters/filterlnotes.cpp:68
+#: mailimporter/filters/filterlnotes.cpp:67
 #, kde-format
 msgid "Importing emails from %1"
 msgstr "Importuojami laiškus iš %1"
 
-#: mailimporter/filters/filterlnotes.cpp:102
+#: mailimporter/filters/filterlnotes.cpp:101
 #, kde-format
 msgctxt "Define folder name where we import lotus note mails"
 msgid "LNotes-Import"
 msgstr ""
 
-#: mailimporter/filters/filterlnotes.cpp:112
-#: mailimporter/filters/filterpmail.cpp:269
+#: mailimporter/filters/filterlnotes.cpp:111
+#: mailimporter/filters/filterpmail.cpp:266
 #, kde-format
 msgid "Message %1"
 msgstr "Laiškas %1"
@@ -620,7 +620,7 @@ msgid "Import mbox Files (UNIX, Evolution)"
 msgstr "Importuoti mbox failus (UNIX, Evolution)"
 
 #: mailimporter/filters/filtermbox.cpp:23
-#: mailimporter/filters/filterplain.cpp:21
+#: mailimporter/filters/filterplain.cpp:20
 #, kde-format
 msgid "Laurence Anderson <p>( Filter accelerated by Danny Kukawka )</p>"
 msgstr ""
@@ -710,12 +710,12 @@ msgstr "Importuojama OE5+ pašto dėžutė %1"
 msgid "Importing OE5+ Folder file %1"
 msgstr "Importuojamas OE5+ aplanko failas %1"
 
-#: mailimporter/filters/filteropera.cpp:21
+#: mailimporter/filters/filteropera.cpp:20
 #, kde-format
 msgid "Import Opera Emails"
 msgstr "Importuoti Opera paštą"
 
-#: mailimporter/filters/filteropera.cpp:23
+#: mailimporter/filters/filteropera.cpp:22
 #, kde-format
 msgid ""
 "<p><b>Opera email import filter</b></p><p>This filter will import mails from "
@@ -731,31 +731,31 @@ msgstr ""
 "opera/mail/store/account*).</p><p><b>Pastaba:</b> Laiškai bus importuoti į "
 "aplanką pavadintą pagal paskyrą, su priešdėliu OPERA-</p>"
 
-#: mailimporter/filters/filteropera.cpp:40
+#: mailimporter/filters/filteropera.cpp:39
 #, kde-format
 msgctxt "name of opera application"
 msgid "Opera"
 msgstr ""
 
-#: mailimporter/filters/filteropera.cpp:74
-#: mailimporter/filters/filterplain.cpp:57
+#: mailimporter/filters/filteropera.cpp:73
+#: mailimporter/filters/filterplain.cpp:53
 #, kde-format
 msgid "Importing new mail files..."
 msgstr "Importuojami nauji laiškų failai..."
 
-#: mailimporter/filters/filteropera.cpp:192
-#: mailimporter/filters/filterplain.cpp:52
+#: mailimporter/filters/filteropera.cpp:191
+#: mailimporter/filters/filterplain.cpp:48
 #: mailimporter/filters/filterpmail.cpp:53
 #, kde-format
 msgid "Counting files..."
 msgstr "Skaičiuojami failai..."
 
-#: mailimporter/filters/filterplain.cpp:20
+#: mailimporter/filters/filterplain.cpp:19
 #, kde-format
 msgid "Import Plain Text Emails"
 msgstr "Importuoti paprasto teksto el. pašto laiškus"
 
-#: mailimporter/filters/filterplain.cpp:22
+#: mailimporter/filters/filterplain.cpp:21
 #, kde-format
 msgid ""
 "<p>Select the directory containing the emails on your system. The emails are "
@@ -792,7 +792,7 @@ msgstr ""
 "\\mail\\admin</p><p><b>Pastaba:</b> Kadangi šiuo metu yra įmanoma atkurti "
 "aplanko struktūrą, aplankai bus sudėti į: \"PegasusMail-Import\".</p>"
 
-#: mailimporter/filters/filterpmail.cpp:64
+#: mailimporter/filters/filterpmail.cpp:61
 #, kde-format
 msgid ""
 "Cannot parse the folder structure; continuing import without subfolder "
@@ -801,34 +801,34 @@ msgstr ""
 "Nepavyko apdoroti aplankų struktūros; tęsiamas importavimas be poaplankių "
 "palaikymo."
 
-#: mailimporter/filters/filterpmail.cpp:67
+#: mailimporter/filters/filterpmail.cpp:64
 #, kde-format
 msgid "Importing new mail files ('.cnm')..."
 msgstr "Importuojami nauji laiškų failai („.cnm“)..."
 
-#: mailimporter/filters/filterpmail.cpp:69
+#: mailimporter/filters/filterpmail.cpp:66
 #, kde-format
 msgid "Importing mail folders ('.pmm')..."
 msgstr "Importuojami laiškų aplankai ('.pmm') ..."
 
-#: mailimporter/filters/filterpmail.cpp:71
+#: mailimporter/filters/filterpmail.cpp:68
 #, kde-format
 msgid "Importing 'UNIX' mail folders ('.mbx')..."
 msgstr "Importuojami 'unix' pašto aplankai ('.mbx') ..."
 
-#: mailimporter/filters/filterpmail.cpp:161
+#: mailimporter/filters/filterpmail.cpp:158
 #, kde-format
 msgctxt "define folder name when we will import pegasus mail"
 msgid "PegasusMail-Import"
 msgstr ""
 
-#: mailimporter/filters/filterpmail.cpp:168
-#: mailimporter/filters/filterpmail.cpp:247
+#: mailimporter/filters/filterpmail.cpp:165
+#: mailimporter/filters/filterpmail.cpp:244
 #, kde-format
 msgid "Importing %1"
 msgstr "Importuojama %1"
 
-#: mailimporter/filters/filterpmail.cpp:280
+#: mailimporter/filters/filterpmail.cpp:277
 #, kde-format
 msgid "Parsing the folder structure..."
 msgstr "Nagrinėjama aplankų struktūra..."
@@ -863,12 +863,12 @@ msgstr ""
 "bus sukurta daug naujų aplankų.</p><p>Kadangi šiuo metu yra įmanoma atkurti "
 "aplanko struktūrą, aplankai bus sudėti į: \"Thunderbird-Import\".</p>"
 
-#: mailimporter/filters/filtersylpheed.cpp:30
+#: mailimporter/filters/filtersylpheed.cpp:29
 #, kde-format
 msgid "Import Sylpheed Maildirs and Folder Structure"
 msgstr "Importuoti Sylpheed Maildirs ir aplankų struktūrą"
 
-#: mailimporter/filters/filtersylpheed.cpp:32
+#: mailimporter/filters/filtersylpheed.cpp:31
 #, kde-format
 msgid ""
 "<p><b>Sylpheed import filter</b></p><p>Select the base directory of the "
@@ -883,24 +883,24 @@ msgstr ""
 "Import\" Jūsų vietiniame aplanke.</p><p>Šis filtras taip pat atkurs "
 "pranešimų būsenas, t.y. \"naujas\" ar \"persiųstas\".</p>"
 
-#: mailimporter/filters/filtersylpheed.cpp:49
+#: mailimporter/filters/filtersylpheed.cpp:48
 #, kde-format
 msgctxt "name of sylpheed application"
 msgid "Sylpheed"
 msgstr ""
 
-#: mailimporter/filters/filtersylpheed.cpp:187
+#: mailimporter/filters/filtersylpheed.cpp:186
 #, kde-format
 msgctxt "define folder name where we will import sylpheed mails"
 msgid "Sylpheed-Import"
 msgstr ""
 
-#: mailimporter/filters/filterthebat.cpp:30
+#: mailimporter/filters/filterthebat.cpp:29
 #, kde-format
 msgid "Import The Bat! Mails and Folder Structure"
 msgstr "Importuoti The Bat! paštą ir aplankų struktūrą"
 
-#: mailimporter/filters/filterthebat.cpp:32
+#: mailimporter/filters/filterthebat.cpp:31
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p><b>Evolution 2.x import filter</b></p><p>Select the base directory of "
@@ -924,7 +924,7 @@ msgstr ""
 "yra įmanoma atkurti aplanko struktūrą, aplankai bus sudėti į: \"Evolution-"
 "Import\".</p>"
 
-#: mailimporter/filters/filterthebat.cpp:206
+#: mailimporter/filters/filterthebat.cpp:205
 #, kde-format
 msgctxt "Define folder where we will import thebat mails"
 msgid "TheBat-Import"
