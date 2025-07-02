@@ -1,7 +1,5 @@
 ########### CMake Config Files ###########
-set(CMAKECONFIG_INSTALL_DIR
-    "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim6MailImporterAkonadi"
-)
+set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim6MailImporterAkonadi")
 
 ecm_setup_version(PROJECT VARIABLE_PREFIX MAILIMPORTERAKONADI
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/mailimporterakonadi_version.h"
@@ -14,7 +12,9 @@ add_library(KPim6::MailImporterAkonadi ALIAS KPim6MailImporterAkonadi)
 
 target_sources(
     KPim6MailImporterAkonadi
-    PRIVATE filterimporterakonadi.cpp filterimporterakonadi.h
+    PRIVATE
+        filterimporterakonadi.cpp
+        filterimporterakonadi.h
 )
 
 ecm_qt_declare_logging_category(KPim6MailImporterAkonadi HEADER mailimporterakonadi_debug.h IDENTIFIER MAILIMPORTERAKONADI_LOG CATEGORY_NAME org.kde.pim.mailimporterakonadi
@@ -23,7 +23,12 @@ ecm_qt_declare_logging_category(KPim6MailImporterAkonadi HEADER mailimporterakon
 )
 
 if(COMPILE_WITH_UNITY_CMAKE_SUPPORT)
-    set_target_properties(KPim6MailImporterAkonadi PROPERTIES UNITY_BUILD ON)
+    set_target_properties(
+        KPim6MailImporterAkonadi
+        PROPERTIES
+            UNITY_BUILD
+                ON
+    )
 endif()
 
 ecm_generate_export_header(KPim6MailImporterAkonadi
@@ -46,23 +51,27 @@ target_include_directories(
 
 target_link_libraries(
     KPim6MailImporterAkonadi
-    PUBLIC KPim6::MailImporter KPim6::AkonadiCore
-    PRIVATE KPim6::Mime KPim6::AkonadiMime KF6::I18n
+    PUBLIC
+        KPim6::MailImporter
+        KPim6::AkonadiCore
+    PRIVATE
+        KPim6::Mime
+        KPim6::AkonadiMime
+        KF6::I18n
 )
 
 set_target_properties(
     KPim6MailImporterAkonadi
     PROPERTIES
-        VERSION ${MAILIMPORTERAKONADI_VERSION}
-        SOVERSION ${MAILIMPORTERAKONADI_SOVERSION}
-        EXPORT_NAME MailImporterAkonadi
+        VERSION
+            ${MAILIMPORTERAKONADI_VERSION}
+        SOVERSION
+            ${MAILIMPORTERAKONADI_SOVERSION}
+        EXPORT_NAME
+            MailImporterAkonadi
 )
 
-install(
-    TARGETS KPim6MailImporterAkonadi
-    EXPORT KPim6MailImporterAkonadiTargets
-    ${KDE_INSTALL_TARGETS_DEFAULT_ARGS}
-)
+install(TARGETS KPim6MailImporterAkonadi EXPORT KPim6MailImporterAkonadiTargets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
 ecm_generate_headers(MailImporter_AkonadiCamelCase_HEADERS
     HEADER_NAMES
@@ -72,9 +81,9 @@ ecm_generate_headers(MailImporter_AkonadiCamelCase_HEADERS
 )
 
 install(
-    FILES ${MailImporter_AkonadiCamelCase_HEADERS}
-    DESTINATION
-        ${KDE_INSTALL_INCLUDEDIR}/KPim6/MailImporterAkonadi/MailImporterAkonadi
+    FILES
+        ${MailImporter_AkonadiCamelCase_HEADERS}
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/MailImporterAkonadi/MailImporterAkonadi
     COMPONENT Devel
 )
 
@@ -82,8 +91,7 @@ install(
     FILES
         ${CMAKE_CURRENT_BINARY_DIR}/mailimporterakonadi_export.h
         ${MailImporter_Akonadi_HEADERS}
-    DESTINATION
-        ${KDE_INSTALL_INCLUDEDIR}/KPim6/MailImporterAkonadi/mailimporterakonadi
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/MailImporterAkonadi/mailimporterakonadi
     COMPONENT Devel
 )
 
@@ -123,9 +131,7 @@ if(BUILD_QCH)
         DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
         COMPONENT Devel
     )
-    set(PACKAGE_INCLUDE_QCHTARGETS
-        "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim6MailImporterAkonadiQchTargets.cmake\")"
-    )
+    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim6MailImporterAkonadiQchTargets.cmake\")")
 endif()
 configure_package_config_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/KPimMailImporterAkonadiConfig.cmake.in"
@@ -149,7 +155,8 @@ install(
 )
 
 install(
-    FILES ${CMAKE_CURRENT_BINARY_DIR}/mailimporterakonadi_version.h
+    FILES
+        ${CMAKE_CURRENT_BINARY_DIR}/mailimporterakonadi_version.h
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/MailImporterAkonadi
     COMPONENT Devel
 )

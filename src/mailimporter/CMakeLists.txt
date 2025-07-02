@@ -86,7 +86,12 @@ ecm_qt_declare_logging_category(KPim6MailImporter HEADER mailimporter_debug.h ID
 )
 
 if(COMPILE_WITH_UNITY_CMAKE_SUPPORT)
-    set_target_properties(KPim6MailImporter PROPERTIES UNITY_BUILD ON)
+    set_target_properties(
+        KPim6MailImporter
+        PROPERTIES
+            UNITY_BUILD
+                ON
+    )
 endif()
 ecm_generate_export_header(KPim6MailImporter
     BASE_NAME mailimporter
@@ -107,23 +112,28 @@ target_include_directories(
 
 target_link_libraries(
     KPim6MailImporter
-    PUBLIC KF6::Archive
-    PRIVATE KPim6::PimCommon KF6::I18n KF6::ConfigCore Qt::Xml Qt::Widgets
+    PUBLIC
+        KF6::Archive
+    PRIVATE
+        KPim6::PimCommon
+        KF6::I18n
+        KF6::ConfigCore
+        Qt::Xml
+        Qt::Widgets
 )
 
 set_target_properties(
     KPim6MailImporter
     PROPERTIES
-        VERSION ${MAILIMPORTER_VERSION}
-        SOVERSION ${MAILIMPORTER_SOVERSION}
-        EXPORT_NAME MailImporter
+        VERSION
+            ${MAILIMPORTER_VERSION}
+        SOVERSION
+            ${MAILIMPORTER_SOVERSION}
+        EXPORT_NAME
+            MailImporter
 )
 
-install(
-    TARGETS KPim6MailImporter
-    EXPORT KPim6MailImporterTargets
-    ${KDE_INSTALL_TARGETS_DEFAULT_ARGS}
-)
+install(TARGETS KPim6MailImporter EXPORT KPim6MailImporterTargets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
 ecm_generate_headers(MailImporter_CamelCase_HEADERS
     HEADER_NAMES
@@ -221,9 +231,7 @@ if(BUILD_QCH)
         DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
         COMPONENT Devel
     )
-    set(PACKAGE_INCLUDE_QCHTARGETS
-        "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim6MailImporterQchTargets.cmake\")"
-    )
+    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim6MailImporterQchTargets.cmake\")")
 endif()
 
 configure_package_config_file(
@@ -248,7 +256,8 @@ install(
 )
 
 install(
-    FILES ${CMAKE_CURRENT_BINARY_DIR}/mailimporter_version.h
+    FILES
+        ${CMAKE_CURRENT_BINARY_DIR}/mailimporter_version.h
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/MailImporter
     COMPONENT Devel
 )
