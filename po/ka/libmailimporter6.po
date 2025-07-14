@@ -924,7 +924,7 @@ msgstr "აირჩიეთ thunderbird -ის პროფილი"
 #: mailimporter/selectthunderbirdprofilewidget.cpp:72
 #, kde-format
 msgid " (default)"
-msgstr " (ნაგულისხმები)"
+msgstr " (ნაგულისხმევი)"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
 #: mailimporter/ui/importmailswidget.ui:27
