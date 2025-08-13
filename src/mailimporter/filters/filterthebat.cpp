@@ -155,7 +155,6 @@ void FilterTheBat::importFiles(const QString &FileName)
     QFile tbb(FileName);
     int iFound = 0;
     int count = 0;
-    long endOfEmail = 0;
     QList<long> offsets;
 
     if (!tbb.open(QIODevice::ReadOnly)) {
@@ -190,7 +189,7 @@ void FilterTheBat::importFiles(const QString &FileName)
                 }
             } else {
                 ++count;
-                endOfEmail = (tbb.pos() - l + _tmp.indexOf(regexp));
+                const long endOfEmail = (tbb.pos() - l + _tmp.indexOf(regexp));
                 offsets.append(endOfEmail);
             }
         }

@@ -330,8 +330,8 @@ void FilterThunderbird::importMBox(const QString &mboxName, const QString &rootD
             first_msg = false;
 
             QString destFolder;
-            QString _targetDir = targetDir;
             if (!targetDir.isNull()) {
+                QString _targetDir = targetDir;
                 if (_targetDir.contains(QLatin1StringView(".sbd"))) {
                     _targetDir.remove(u".sbd"_s);
                 }

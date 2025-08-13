@@ -79,7 +79,6 @@ bool FilterImporterAkonadi::importMessage(const QString &folderName,
                                           const MailImporter::MessageStatus &mailImporterstatus)
 {
     const Akonadi::MessageStatus status = convertToAkonadiMessageStatus(mailImporterstatus);
-    QString messageID;
     // Create the mail folder (if not already created).
     Akonadi::Collection mailFolder = parseFolderString(folderName);
     QUrl msgUrl = QUrl::fromLocalFile(msgPath);
@@ -105,6 +104,7 @@ bool FilterImporterAkonadi::importMessage(const QString &folderName,
         if (duplicateCheck) {
             // Get the messageID.
             const KMime::Headers::Base *messageIDHeader = newMessage->messageID(false);
+            QString messageID;
             if (messageIDHeader) {
                 messageID = messageIDHeader->asUnicodeString();
             }

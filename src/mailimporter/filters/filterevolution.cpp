@@ -128,7 +128,6 @@ void FilterEvolution::importDirContents(const QString &dirName, const QString &K
 void FilterEvolution::importMBox(const QString &mboxName, const QString &rootDir, const QString &targetDir)
 {
     QFile mbox(mboxName);
-    QString tmp_from = mboxName;
     if (!mbox.open(QIODevice::ReadOnly)) {
         filterInfo()->alert(i18n("Unable to open %1, skipping", mboxName));
     } else {
@@ -136,6 +135,7 @@ void FilterEvolution::importMBox(const QString &mboxName, const QString &rootDir
         QFileInfo filenameInfo(mboxName);
 
         filterInfo()->setCurrent(0);
+        QString tmp_from = mboxName;
         if (mboxName.length() > 20) {
             QString tmp_info = mboxName;
             tmp_info.replace(mailDir(), u".."_s);
