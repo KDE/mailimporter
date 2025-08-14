@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-27 00:43+0000\n"
+"POT-Creation-Date: 2025-08-14 00:43+0000\n"
 "PO-Revision-Date: 2022-05-07 02:16+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -132,7 +132,7 @@ msgstr "에볼루션 가져오기"
 #: mailimporter/filters/filterevolution_v3.cpp:185
 #: mailimporter/filters/filterkmail_maildir.cpp:170
 #: mailimporter/filters/filtersylpheed.cpp:229
-#: mailimporter/filters/filterthebat.cpp:210
+#: mailimporter/filters/filterthebat.cpp:209
 #, kde-format
 msgid "Import folder %1..."
 msgstr "폴더 %1 가져오는 중..."
@@ -153,7 +153,7 @@ msgstr "폴더 %1 가져오는 중..."
 #: mailimporter/filters/filterpmail.cpp:193
 #: mailimporter/filters/filterpmail.cpp:262
 #: mailimporter/filters/filtersylpheed.cpp:243
-#: mailimporter/filters/filterthebat.cpp:230
+#: mailimporter/filters/filterthebat.cpp:229
 #: mailimporter/filters/filterthunderbird.cpp:346
 #, kde-format
 msgid "Could not import %1"
@@ -218,7 +218,7 @@ msgctxt "name of evolution application"
 msgid "Evolution"
 msgstr "에볼루션"
 
-#: mailimporter/filters/filterevolution.cpp:133
+#: mailimporter/filters/filterevolution.cpp:132
 #: mailimporter/filters/filterevolution_v2.cpp:193
 #: mailimporter/filters/filterlnotes.cpp:92
 #: mailimporter/filters/filtermailapp.cpp:69
@@ -228,7 +228,7 @@ msgstr "에볼루션"
 #: mailimporter/filters/filterpmail.cpp:223
 #: mailimporter/filters/filterpmail.cpp:242
 #: mailimporter/filters/filterpmail.cpp:281
-#: mailimporter/filters/filterthebat.cpp:162
+#: mailimporter/filters/filterthebat.cpp:161
 #: mailimporter/filters/filterthunderbird.cpp:280
 #, kde-format
 msgid "Unable to open %1, skipping"
@@ -834,7 +834,7 @@ msgstr ""
 "니다.</p><p>폴더 구조를 다시 생성할 수 있기 때문에 \"TheBat 가져오기\" 폴더 "
 "아래에 저장됩니다.</p>"
 
-#: mailimporter/filters/filterthebat.cpp:205
+#: mailimporter/filters/filterthebat.cpp:204
 #, kde-format
 msgctxt "Define folder where we will import thebat mails"
 msgid "TheBat-Import"
@@ -931,7 +931,7 @@ msgstr "합계:"
 msgid "Select Profile:"
 msgstr "프로필 선택:"
 
-#: mailimporterakonadi/filterimporterakonadi.cpp:96
+#: mailimporterakonadi/filterimporterakonadi.cpp:95
 #, kde-format
 msgid "Error: failed to read temporary file at %1"
 msgstr "오류: %1의 임시 파일을 읽을 수 없음"

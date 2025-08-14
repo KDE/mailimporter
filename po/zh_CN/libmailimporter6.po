@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-27 00:43+0000\n"
+"POT-Creation-Date: 2025-08-14 00:43+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -130,7 +130,7 @@ msgstr "Evolution-导入"
 #: mailimporter/filters/filterevolution_v3.cpp:185
 #: mailimporter/filters/filterkmail_maildir.cpp:170
 #: mailimporter/filters/filtersylpheed.cpp:229
-#: mailimporter/filters/filterthebat.cpp:210
+#: mailimporter/filters/filterthebat.cpp:209
 #, kde-format
 msgid "Import folder %1..."
 msgstr "导入文件夹 %1..."
@@ -151,7 +151,7 @@ msgstr "导入文件夹 %1..."
 #: mailimporter/filters/filterpmail.cpp:193
 #: mailimporter/filters/filterpmail.cpp:262
 #: mailimporter/filters/filtersylpheed.cpp:243
-#: mailimporter/filters/filterthebat.cpp:230
+#: mailimporter/filters/filterthebat.cpp:229
 #: mailimporter/filters/filterthunderbird.cpp:346
 #, kde-format
 msgid "Could not import %1"
@@ -216,7 +216,7 @@ msgctxt "name of evolution application"
 msgid "Evolution"
 msgstr "Evolution"
 
-#: mailimporter/filters/filterevolution.cpp:133
+#: mailimporter/filters/filterevolution.cpp:132
 #: mailimporter/filters/filterevolution_v2.cpp:193
 #: mailimporter/filters/filterlnotes.cpp:92
 #: mailimporter/filters/filtermailapp.cpp:69
@@ -226,7 +226,7 @@ msgstr "Evolution"
 #: mailimporter/filters/filterpmail.cpp:223
 #: mailimporter/filters/filterpmail.cpp:242
 #: mailimporter/filters/filterpmail.cpp:281
-#: mailimporter/filters/filterthebat.cpp:162
+#: mailimporter/filters/filterthebat.cpp:161
 #: mailimporter/filters/filterthunderbird.cpp:280
 #, kde-format
 msgid "Unable to open %1, skipping"
@@ -826,7 +826,7 @@ msgstr ""
 "件，这适用于 POP 账户，但不适用于 IMAP/DIMAP 账户。</p><p>由于可以重建文件夹"
 "结构，文件夹将储于您本地账户的“TheBat-Import”下。</p>"
 
-#: mailimporter/filters/filterthebat.cpp:205
+#: mailimporter/filters/filterthebat.cpp:204
 #, kde-format
 msgctxt "Define folder where we will import thebat mails"
 msgid "TheBat-Import"
@@ -922,7 +922,7 @@ msgstr "总计："
 msgid "Select Profile:"
 msgstr "选择配置："
 
-#: mailimporterakonadi/filterimporterakonadi.cpp:96
+#: mailimporterakonadi/filterimporterakonadi.cpp:95
 #, kde-format
 msgid "Error: failed to read temporary file at %1"
 msgstr "错误：读取 %1 的临时文件失败"

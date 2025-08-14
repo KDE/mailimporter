@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-27 00:43+0000\n"
+"POT-Creation-Date: 2025-08-14 00:43+0000\n"
 "PO-Revision-Date: 2024-12-25 19:45+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -133,7 +133,7 @@ msgstr "विकास-आयात"
 #: mailimporter/filters/filterevolution_v3.cpp:185
 #: mailimporter/filters/filterkmail_maildir.cpp:170
 #: mailimporter/filters/filtersylpheed.cpp:229
-#: mailimporter/filters/filterthebat.cpp:210
+#: mailimporter/filters/filterthebat.cpp:209
 #, kde-format
 msgid "Import folder %1..."
 msgstr "%1 पुटं आयातयन्तु..."
@@ -154,7 +154,7 @@ msgstr "%1 पुटं आयातयन्तु..."
 #: mailimporter/filters/filterpmail.cpp:193
 #: mailimporter/filters/filterpmail.cpp:262
 #: mailimporter/filters/filtersylpheed.cpp:243
-#: mailimporter/filters/filterthebat.cpp:230
+#: mailimporter/filters/filterthebat.cpp:229
 #: mailimporter/filters/filterthunderbird.cpp:346
 #, kde-format
 msgid "Could not import %1"
@@ -220,7 +220,7 @@ msgctxt "name of evolution application"
 msgid "Evolution"
 msgstr "उन्नति"
 
-#: mailimporter/filters/filterevolution.cpp:133
+#: mailimporter/filters/filterevolution.cpp:132
 #: mailimporter/filters/filterevolution_v2.cpp:193
 #: mailimporter/filters/filterlnotes.cpp:92
 #: mailimporter/filters/filtermailapp.cpp:69
@@ -230,7 +230,7 @@ msgstr "उन्नति"
 #: mailimporter/filters/filterpmail.cpp:223
 #: mailimporter/filters/filterpmail.cpp:242
 #: mailimporter/filters/filterpmail.cpp:281
-#: mailimporter/filters/filterthebat.cpp:162
+#: mailimporter/filters/filterthebat.cpp:161
 #: mailimporter/filters/filterthunderbird.cpp:280
 #, kde-format
 msgid "Unable to open %1, skipping"
@@ -846,7 +846,7 @@ msgstr ""
 "तस्मात् पुटं भवतः स्थानीयखाते: &quot;TheBat-Import&quot; इत्यस्य अधः संगृहीतं भविष्यति ।"
 "</p>"
 
-#: mailimporter/filters/filterthebat.cpp:205
+#: mailimporter/filters/filterthebat.cpp:204
 #, kde-format
 msgctxt "Define folder where we will import thebat mails"
 msgid "TheBat-Import"
@@ -943,7 +943,7 @@ msgstr "कुल:"
 msgid "Select Profile:"
 msgstr "प्रोफाइल चयनं कुर्वन्तु:"
 
-#: mailimporterakonadi/filterimporterakonadi.cpp:96
+#: mailimporterakonadi/filterimporterakonadi.cpp:95
 #, kde-format
 msgid "Error: failed to read temporary file at %1"
 msgstr "त्रुटिः: %1 इत्यत्र अस्थायीसञ्चिकां पठितुं असफलम्"

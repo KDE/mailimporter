@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-27 00:43+0000\n"
+"POT-Creation-Date: 2025-08-14 00:43+0000\n"
 "PO-Revision-Date: 2014-04-06 21:56+0200\n"
 "Last-Translator: Sönke Dibbern <s_dibbern@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
@@ -131,7 +131,7 @@ msgstr "Evolution-Import"
 #: mailimporter/filters/filterevolution_v3.cpp:185
 #: mailimporter/filters/filterkmail_maildir.cpp:170
 #: mailimporter/filters/filtersylpheed.cpp:229
-#: mailimporter/filters/filterthebat.cpp:210
+#: mailimporter/filters/filterthebat.cpp:209
 #, kde-format
 msgid "Import folder %1..."
 msgstr "Orner \"%1\" importeren..."
@@ -152,7 +152,7 @@ msgstr "Orner \"%1\" importeren..."
 #: mailimporter/filters/filterpmail.cpp:193
 #: mailimporter/filters/filterpmail.cpp:262
 #: mailimporter/filters/filtersylpheed.cpp:243
-#: mailimporter/filters/filterthebat.cpp:230
+#: mailimporter/filters/filterthebat.cpp:229
 #: mailimporter/filters/filterthunderbird.cpp:346
 #, kde-format
 msgid "Could not import %1"
@@ -224,7 +224,7 @@ msgctxt "name of evolution application"
 msgid "Evolution"
 msgstr "Evolution-Import"
 
-#: mailimporter/filters/filterevolution.cpp:133
+#: mailimporter/filters/filterevolution.cpp:132
 #: mailimporter/filters/filterevolution_v2.cpp:193
 #: mailimporter/filters/filterlnotes.cpp:92
 #: mailimporter/filters/filtermailapp.cpp:69
@@ -234,7 +234,7 @@ msgstr "Evolution-Import"
 #: mailimporter/filters/filterpmail.cpp:223
 #: mailimporter/filters/filterpmail.cpp:242
 #: mailimporter/filters/filterpmail.cpp:281
-#: mailimporter/filters/filterthebat.cpp:162
+#: mailimporter/filters/filterthebat.cpp:161
 #: mailimporter/filters/filterthunderbird.cpp:280
 #, kde-format
 msgid "Unable to open %1, skipping"
@@ -888,7 +888,7 @@ msgstr ""
 "vun POP-Kontos, man nich vun IMAP/DIMAP-Kontos.</p><p>Ok de Struktuur vun de "
 "Ornern warrt övernahmen, se dukt ünner »TheBat-Import« op.</p>"
 
-#: mailimporter/filters/filterthebat.cpp:205
+#: mailimporter/filters/filterthebat.cpp:204
 #, kde-format
 msgctxt "Define folder where we will import thebat mails"
 msgid "TheBat-Import"
@@ -987,7 +987,7 @@ msgstr "Tosamen:"
 msgid "Select Profile:"
 msgstr "Profil utsöken:"
 
-#: mailimporterakonadi/filterimporterakonadi.cpp:96
+#: mailimporterakonadi/filterimporterakonadi.cpp:95
 #, kde-format
 msgid "Error: failed to read temporary file at %1"
 msgstr "Fehler: Temporeerdatei bi %1 lett sik nich lesen."
