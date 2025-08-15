@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-06-27 00:43+0000\n"
-"PO-Revision-Date: 2025-08-06 14:24+0400\n"
+"PO-Revision-Date: 2025-08-14 09:47+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -376,9 +376,9 @@ msgid ""
 "archives files previously exported by KMail.</p><p>Archive files contain a "
 "complete folder subtree compressed into a single file.</p>"
 msgstr ""
-"<p><b>مرشح استيراد ملفات أرشيف \"بريدك\"</b></p><p>سيقوم هذا المرشح باستيراد "
-"ملفات الأرشيف المصدرة مسبقًا بواسطة \"بريدك\".</p><p>تحتوي ملفات الأرشيف على "
-"شجرة فرعية كاملة للمجلد مضغوطة في ملف واحد.</p>"
+"<p><b>مرشح استيراد ملفات أرشيف \"بريدك\"</b></p><p>سيستورد هذا المرشح ملفات "
+"الأرشيف المصدرة مسبقًا بواسطة \"بريدك\".</p><p>تحتوي ملفات الأرشيف على شجرة "
+"فرعية كاملة للمجلد مضغوطة في ملف واحد.</p>"
 
 #: mailimporter/filters/filterkmailarchive.cpp:72
 #, kde-format
@@ -472,8 +472,8 @@ msgid ""
 "will be stored in subfolders named by the files they came from under: "
 "\"LNotes-Import\" in your local folder.</p>"
 msgstr ""
-"<p><b>مرشح استيراد البريد بتنسيق Structured Text في وتس نوتس</b></p><p>سيقوم "
-"هذا المرشح باستيراد ملفات Structure Text من عميل بريد وتس نوتس مُصدَّر إلى "
+"<p><b>مرشح استيراد البريد بتنسيق Structured Text في وتس نوتس</b></"
+"p><p>سيستورد هذا المرشح ملفات Structure Text من عميل بريد وتس نوتس مُصدَّر إلى "
 "\"بريدك\". استخدم هذا المرشح إذا كنت تريد استيراد رسائل البريد من لوتس أو "
 "برامج البريد الأخرى التي تستخدم تنسيق Structured Text في وتس نوتس.</"
 "p><p><b>ملاحظة:</b>نظرًا لأنه من الممكن إعادة إنشاء بنية المجلد، فستُخزن "
@@ -554,10 +554,10 @@ msgid ""
 "gzipped files into KMail.</p><p><b>Note:</b> Emails will be imported into "
 "folders named after the file they came from, prefixed with MAILMAN-</p>"
 msgstr ""
-"<p><b>مرشح استيراد ملفات gzip من mailman</b></p><p>سيقوم هذا المرشح باستيراد "
-"ملفات gzip من mailman إلى \"بريدك\".</p><p><b>ملاحظة:</b> ستستورد رسائل "
-"البريد الإلكتروني إلى مجلدات تحمل اسم الملف الذي جاءت منه، مع إضافة بادئة "
-"MAILMAN-</p>"
+"<p><b>مرشح استيراد ملفات gzip من mailman</b></p><p>سيستورد هذا المرشح ملفات "
+"gzip من mailman إلى \"بريدك\".</p><p><b>ملاحظة:</b> ستستورد رسائل البريد "
+"الإلكتروني إلى مجلدات تحمل اسم الملف الذي جاءت منه، مع إضافة بادئة MAILMAN-</"
+"p>"
 
 #: mailimporter/filters/filtermailmangzip.cpp:37
 #, kde-format
@@ -589,11 +589,11 @@ msgid ""
 "Emails will be imported into folders named after the file they came from, "
 "prefixed with MBOX-</p>"
 msgstr ""
-"<p><b>مرشح استيراد mbox</b></p><p>سيقوم هذا المرشح باستيراد ملفات mbox إلى "
-"\"بريدك\". استخدم هذا المرشح إذا كنت تريد استيراد رسائل البريد الإلكتروني من "
-"Ximian Evolution أو برامج البريد الأخرى التي تستخدم تنسيق UNIX التقليدي هذا."
-"</p><p><b>ملاحظة:</b>ستستورد رسائل البريد الإلكتروني إلى مجلدات تحمل اسم "
-"الملف الذي جاءت منه، مع إضافة بادئة MBOX-</p>"
+"<p><b>مرشح استيراد mbox</b></p><p>سيستورد هذا المرشح ملفات mbox إلى \"بريدك"
+"\". استخدم هذا المرشح إذا كنت تريد استيراد رسائل البريد الإلكتروني من Ximian "
+"Evolution أو برامج البريد الأخرى التي تستخدم تنسيق UNIX التقليدي هذا.</"
+"p><p><b>ملاحظة:</b>ستستورد رسائل البريد الإلكتروني إلى مجلدات تحمل اسم الملف "
+"الذي جاءت منه، مع إضافة بادئة MBOX-</p>"
 
 #: mailimporter/filters/filtermbox.cpp:40
 #, kde-format
@@ -679,12 +679,12 @@ msgid ""
 "imported into a folder named after the account they came from, prefixed with "
 "OPERA-</p>"
 msgstr ""
-"<p><b>مرشح استيراد البريد الإلكتروني في Opera</b></p><p>سيقوم هذا المرشح "
-"باستيراد رسائل البريد الإلكتروني من مجلد بريد Opera. استخدم هذا المرشح إذا "
-"كنت تريد استيراد جميع رسائل البريد الإلكتروني ضمن حساب في دليل بريد Opera.</"
-"p><p>حدد دليل الحساب(عادةً ~/.opera/mail/store/account*).</p><p><b>ملاحظة:</"
-"b> ستستورد رسائل البريد الإلكتروني إلى مجلد يحمل اسم الحساب الذي جاءت منه، "
-"مع إضافة بادئة OPERA-</p>"
+"<p><b>مرشح استيراد البريد الإلكتروني في Opera</b></p><p>سيستورد هذا المرشح "
+"رسائل البريد الإلكتروني من مجلد بريد Opera. استخدم هذا المرشح إذا كنت تريد "
+"استيراد جميع رسائل البريد الإلكتروني ضمن حساب في دليل بريد Opera.</p><p>حدد "
+"دليل الحساب(عادةً ~/.opera/mail/store/account*).</p><p><b>ملاحظة:</b> ستستورد "
+"رسائل البريد الإلكتروني إلى مجلد يحمل اسم الحساب الذي جاءت منه، مع إضافة "
+"بادئة OPERA-</p>"
 
 #: mailimporter/filters/filteropera.cpp:39
 #, kde-format
@@ -720,8 +720,8 @@ msgid ""
 msgstr ""
 "<p>حدد الدليل الذي يحتوي على رسائل البريد الإلكتروني على نظامك. ستوضع رسائل "
 "البريد الإلكتروني في مجلد يحمل نفس اسم الدليل الذي كانت فيه، مع إضافة بادئة "
-"PLAIN-</p><p>سيقوم هذا المرشح باستيراد جميع رسائل البريد الإلكتروني "
-"بامتدادات .msg و.eml و.txt.</p>"
+"PLAIN-</p><p>سيستورد هذا المرشح جميع رسائل البريد الإلكتروني بامتدادات .msg "
+"و.eml و.txt.</p>"
 
 #: mailimporter/filters/filterpmail.cpp:24
 #, kde-format
@@ -972,7 +972,7 @@ msgstr "<b>تحذير:</b> حصلت على مجلد رسائل سيئ، سيضا
 #, kde-format
 msgid ""
 "<b>Warning:</b> Could not check that the folder already exists. Reason: %1"
-msgstr "<b>تحذير:</b> تعذر التحقق من وجود المجلد بالفعل. السبب: %1"
+msgstr "<b>تحذير:</b> تعذر التحقق من وجود المجلد فعلًا. السبب: %1"
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:187
 #, kde-format
