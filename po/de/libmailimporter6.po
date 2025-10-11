@@ -1,11 +1,11 @@
-# Frank Schütte <F.Schuette@t-online.de>, 2002, 2003, 2005.
-# Stephan Johach <hunsum@gmx.de>, 2004, 2005.
-# Stefan Winter <swinter@kde.org>, 2004, 2005.
-# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005, 2006, 2007, 2009, 2010.
-# Stephan Johach <lucardus@onlinehome.de>, 2006.
-# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2012, 2013, 2015, 2017, 2020.
-# Panagiotis Papadopoulos <pano_90@gmx.net>, 2010.
-# Frederik Schwarzer <schwarzer@kde.org>, 2010, 2012, 2013.
+# SPDX-FileCopyrightText: 2002, 2003, 2005 Frank Schütte <F.Schuette@t-online.de>
+# SPDX-FileCopyrightText: 2004, 2005 Stephan Johach <hunsum@gmx.de>
+# SPDX-FileCopyrightText: 2004, 2005 Stefan Winter <swinter@kde.org>
+# SPDX-FileCopyrightText: 2005, 2006, 2007, 2009, 2010 Thomas Reitelbach <tr@erdfunkstelle.de>
+# SPDX-FileCopyrightText: 2006 Stephan Johach <lucardus@onlinehome.de>
+# SPDX-FileCopyrightText: 2009, 2012, 2013, 2015, 2017, 2020 Burkhard Lück <lueck@hube-lueck.de>
+# SPDX-FileCopyrightText: 2010 Panagiotis Papadopoulos <pano_90@gmx.net>
+# SPDX-FileCopyrightText: 2010, 2012, 2013 Frederik Schwarzer <schwarzer@kde.org>
 msgid ""
 msgstr ""
 "Project-Id-Version: libmailimporter6\n"
