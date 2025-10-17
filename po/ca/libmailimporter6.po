@@ -1,11 +1,11 @@
 # Translation of libmailimporter6.po to Catalan
 # Copyright (C) 2002-2021 This_file_is_part_of_KDE
 #
-# Antoni Bella Pérez <antonibella5@yahoo.com>, 2002, 2003, 2013, 2014, 2015, 2016, 2017, 2019, 2020.
-# Albert Astals Cid <aacid@kde.org>, 2004, 2005.
-# David Gil <al016950@yahoo.es>, 2005.
-# Josep M. Ferrer <txemaq@gmail.com>, 2006, 2007, 2010, 2011, 2012, 2014, 2015, 2017, 2021.
-# Manuel Tortosa Moreno <manutortosa@gmail.com>, 2009.
+# SPDX-FileCopyrightText: 2002, 2003, 2013, 2014, 2015, 2016, 2017, 2019, 2020 Antoni Bella Pérez <antonibella5@yahoo.com>
+# SPDX-FileCopyrightText: 2004, 2005 Albert Astals Cid <aacid@kde.org>
+# SPDX-FileCopyrightText: 2005 David Gil <al016950@yahoo.es>
+# SPDX-FileCopyrightText: 2006, 2007, 2010, 2011, 2012, 2014, 2015, 2017, 2021 Josep M. Ferrer <txemaq@gmail.com>
+# SPDX-FileCopyrightText: 2009 Manuel Tortosa Moreno <manutortosa@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: mailimporter\n"
