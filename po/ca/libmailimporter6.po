@@ -1023,6 +1023,3 @@ msgstr ""
 #, kde-format
 msgid "Unable to retrieve folder for folder path %1."
 msgstr "No s'ha pogut recuperar la carpeta per al camí de carpetes %1."
-
-#~ msgid "Importing in progress..."
-#~ msgstr "Importació en progrés..."
