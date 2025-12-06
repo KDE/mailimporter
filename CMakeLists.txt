@@ -87,7 +87,7 @@ find_package(KPim6PimCommon ${PIMCOMMON_LIB_VERSION} CONFIG REQUIRED)
 ########### Targets ###########
 
 add_definitions(-DQT_NO_CONTEXTLESS_CONNECT)
-ecm_set_disabled_deprecation_versions(QT 6.10.0 KF 6.20.0)
+ecm_set_disabled_deprecation_versions(QT 6.10.0 KF 6.21.0)
 
 ########### CMake Config Files ###########
 
