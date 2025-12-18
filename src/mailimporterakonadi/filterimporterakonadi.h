@@ -60,7 +60,7 @@ private:
      */
     MAILIMPORTERAKONADI_NO_EXPORT Akonadi::Collection addSubCollection(const Akonadi::Collection &baseCollection, const QString &newCollectionPathName);
     MAILIMPORTERAKONADI_NO_EXPORT bool
-    addAkonadiMessage(const Akonadi::Collection &collection, const KMime::Message::Ptr &message, Akonadi::MessageStatus status);
+    addAkonadiMessage(const Akonadi::Collection &collection, const std::shared_ptr<KMime::Message> &message, Akonadi::MessageStatus status);
 
     QMultiMap<QString, QString> mMessageFolderMessageIDMap;
     QMap<QString, Akonadi::Collection> mMessageFolderCollectionMap;

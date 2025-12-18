@@ -97,7 +97,7 @@ bool FilterImporterAkonadi::importMessage(const QString &folderName,
         }
 
         // Construct a message.
-        KMime::Message::Ptr newMessage(new KMime::Message());
+        std::shared_ptr<KMime::Message> newMessage(new KMime::Message());
         newMessage->setContent(msgText);
         newMessage->parse();
 
@@ -222,10 +222,10 @@ bool FilterImporterAkonadi::checkForDuplicates(const QString &msgID, const Akona
                     if (!messageItem.isValid()) {
                         mInfo->addInfoLogEntry(i18n("<b>Warning:</b> Got an invalid message in folder %1.", messageFolder));
                     } else {
-                        if (!messageItem.hasPayload<KMime::Message::Ptr>()) {
+                        if (!messageItem.hasPayload<std::shared_ptr<KMime::Message>>()) {
                             continue;
                         }
-                        const auto message = messageItem.payload<KMime::Message::Ptr>();
+                        const auto message = messageItem.payload<std::shared_ptr<KMime::Message>>();
                         const KMime::Headers::Base *messageID = message->messageID(KMime::CreatePolicy::DontCreate);
                         if (messageID) {
                             if (!messageID->isEmpty()) {
@@ -251,7 +251,9 @@ bool FilterImporterAkonadi::checkForDuplicates(const QString &msgID, const Akona
     return false;
 }
 
-bool FilterImporterAkonadi::addAkonadiMessage(const Akonadi::Collection &collection, const KMime::Message::Ptr &message, Akonadi::MessageStatus status)
+bool FilterImporterAkonadi::addAkonadiMessage(const Akonadi::Collection &collection,
+                                              const std::shared_ptr<KMime::Message> &message,
+                                              Akonadi::MessageStatus status)
 {
     Akonadi::Item item;
 
@@ -270,7 +272,7 @@ bool FilterImporterAkonadi::addAkonadiMessage(const Akonadi::Collection &collect
     }
 
     Akonadi::MessageFlags::copyMessageFlags(*message, item);
-    item.setPayload<KMime::Message::Ptr>(message);
+    item.setPayload<std::shared_ptr<KMime::Message>>(message);
     QScopedPointer<Akonadi::ItemCreateJob> job(new Akonadi::ItemCreateJob(item, collection));
     job->setAutoDelete(false);
     if (!job->exec()) {
@@ -298,7 +300,7 @@ bool FilterImporterAkonadi::importMessage(const KArchiveFile *file, const QStrin
         return false;
     }
 
-    KMime::Message::Ptr newMessage(new KMime::Message());
+    std::shared_ptr<KMime::Message> newMessage(new KMime::Message());
     newMessage->setContent(file->data());
     newMessage->parse();
 
