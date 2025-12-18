@@ -103,7 +103,7 @@ bool FilterImporterAkonadi::importMessage(const QString &folderName,
 
         if (duplicateCheck) {
             // Get the messageID.
-            const KMime::Headers::Base *messageIDHeader = newMessage->messageID(false);
+            const KMime::Headers::Base *messageIDHeader = newMessage->messageID(KMime::CreatePolicy::DontCreate);
             QString messageID;
             if (messageIDHeader) {
                 messageID = messageIDHeader->asUnicodeString();
@@ -226,7 +226,7 @@ bool FilterImporterAkonadi::checkForDuplicates(const QString &msgID, const Akona
                             continue;
                         }
                         const auto message = messageItem.payload<KMime::Message::Ptr>();
-                        const KMime::Headers::Base *messageID = message->messageID(false);
+                        const KMime::Headers::Base *messageID = message->messageID(KMime::CreatePolicy::DontCreate);
                         if (messageID) {
                             if (!messageID->isEmpty()) {
                                 mMessageFolderMessageIDMap.insert(messageFolder, messageID->asUnicodeString());
@@ -303,7 +303,7 @@ bool FilterImporterAkonadi::importMessage(const KArchiveFile *file, const QStrin
     newMessage->parse();
 
     if (mInfo->removeDupMessage()) {
-        KMime::Headers::MessageID *messageId = newMessage->messageID(false);
+        KMime::Headers::MessageID *messageId = newMessage->messageID(KMime::CreatePolicy::DontCreate);
         if (messageId) {
             const QString messageIdStr = messageId->asUnicodeString();
             if (!messageIdStr.isEmpty()) {
