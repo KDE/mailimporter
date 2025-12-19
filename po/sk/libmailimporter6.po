@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2025-12-19 00:44+0000\n"
 "PO-Revision-Date: 2022-04-09 19:27+0200\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -992,12 +992,12 @@ msgstr ""
 msgid "<b>Warning:</b> Got an invalid message in folder %1."
 msgstr "<b>Upozornenie:</b> Získaná neplatná správa v priečinku %1."
 
-#: mailimporterakonadi/filterimporterakonadi.cpp:277
+#: mailimporterakonadi/filterimporterakonadi.cpp:279
 #, kde-format
 msgid "<b>Error:</b> Could not add message to folder %1. Reason: %2"
 msgstr "<b>Chyba:</b> Nemôžem pridať správu do priečinka %1. Dôvod: %2"
 
-#: mailimporterakonadi/filterimporterakonadi.cpp:297
+#: mailimporterakonadi/filterimporterakonadi.cpp:299
 #, kde-format
 msgid "Unable to retrieve folder for folder path %1."
 msgstr "Nepodarilo sa získať priečinok pre cestu priečinka %1."

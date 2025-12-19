@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2025-12-19 00:44+0000\n"
 "PO-Revision-Date: 2007-03-16 19:45+0100\n"
 "Last-Translator: Rinse de Vries <rinsedevries@home.nl>\n"
 "Language-Team:  <nl@li.org>\n"
@@ -1096,13 +1096,13 @@ msgstr ""
 msgid "<b>Warning:</b> Got an invalid message in folder %1."
 msgstr "Fout by it tafoegjen fan berjocht oan de map %1 yn KMail"
 
-#: mailimporterakonadi/filterimporterakonadi.cpp:277
+#: mailimporterakonadi/filterimporterakonadi.cpp:279
 #, fuzzy, kde-format
 #| msgid "Error while adding message to folder %1 in KMail"
 msgid "<b>Error:</b> Could not add message to folder %1. Reason: %2"
 msgstr "Fout by it tafoegjen fan berjocht oan de map %1 yn KMail"
 
-#: mailimporterakonadi/filterimporterakonadi.cpp:297
+#: mailimporterakonadi/filterimporterakonadi.cpp:299
 #, kde-format
 msgid "Unable to retrieve folder for folder path %1."
 msgstr ""

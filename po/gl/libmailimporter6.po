@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2025-12-19 00:44+0000\n"
 "PO-Revision-Date: 2023-04-23 07:10+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
@@ -1005,12 +1005,12 @@ msgstr ""
 msgid "<b>Warning:</b> Got an invalid message in folder %1."
 msgstr "<b>Advertencia:</b> Obtívose unha mensaxe incorrecta no cartafol %1."
 
-#: mailimporterakonadi/filterimporterakonadi.cpp:277
+#: mailimporterakonadi/filterimporterakonadi.cpp:279
 #, kde-format
 msgid "<b>Error:</b> Could not add message to folder %1. Reason: %2"
 msgstr "<b>Erro:</b> Non se puido engadir a mensaxe ao cartafol %1. Razón: %2"
 
-#: mailimporterakonadi/filterimporterakonadi.cpp:297
+#: mailimporterakonadi/filterimporterakonadi.cpp:299
 #, kde-format
 msgid "Unable to retrieve folder for folder path %1."
 msgstr "Non é posíbel obter o cartafol da ruta de cartafol %1."

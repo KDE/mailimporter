@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2025-12-19 00:44+0000\n"
 "PO-Revision-Date: 2023-12-09 19:17+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -960,12 +960,12 @@ msgstr ""
 msgid "<b>Warning:</b> Got an invalid message in folder %1."
 msgstr "<b>警告：</b>在資料夾 %1 中有不合法的信件。"
 
-#: mailimporterakonadi/filterimporterakonadi.cpp:277
+#: mailimporterakonadi/filterimporterakonadi.cpp:279
 #, kde-format
 msgid "<b>Error:</b> Could not add message to folder %1. Reason: %2"
 msgstr "<b>錯誤：</b>無法將信件新增到資料夾 %1。理由：%2"
 
-#: mailimporterakonadi/filterimporterakonadi.cpp:297
+#: mailimporterakonadi/filterimporterakonadi.cpp:299
 #, kde-format
 msgid "Unable to retrieve folder for folder path %1."
 msgstr "無法從資料夾路徑 %1 中取得資料夾。"

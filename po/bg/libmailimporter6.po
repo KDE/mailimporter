@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2025-12-19 00:44+0000\n"
 "PO-Revision-Date: 2024-11-10 20:12+0100\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
@@ -993,13 +993,13 @@ msgstr ""
 msgid "<b>Warning:</b> Got an invalid message in folder %1."
 msgstr "<b>Предупреждение:</b>  Получено е невалидно съобщение в папка %1."
 
-#: mailimporterakonadi/filterimporterakonadi.cpp:277
+#: mailimporterakonadi/filterimporterakonadi.cpp:279
 #, kde-format
 msgid "<b>Error:</b> Could not add message to folder %1. Reason: %2"
 msgstr ""
 "<b>Грешка:</b>Не можа да се създаде добави съобщение в папка %1. Причина: %2"
 
-#: mailimporterakonadi/filterimporterakonadi.cpp:297
+#: mailimporterakonadi/filterimporterakonadi.cpp:299
 #, kde-format
 msgid "Unable to retrieve folder for folder path %1."
 msgstr "Не може да се извлече папка от пътя на папката %1."
