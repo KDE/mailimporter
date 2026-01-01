@@ -2,7 +2,7 @@
   filterthebat.h  -  TheBat! mail import
 
   SPDX-FileCopyrightText: 2005 Danny Kukawka <danny.kukawka@web.de>
-  SPDX-FileCopyrightText: 2012-2025 Laurent Montel <montel@kde.org>
+  SPDX-FileCopyrightText: 2012-2026 Laurent Montel <montel@kde.org>
 
   SPDX-License-Identifier: GPL-2.0-or-later
 */
