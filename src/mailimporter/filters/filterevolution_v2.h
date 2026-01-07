@@ -15,9 +15,9 @@
 
 namespace MailImporter
 {
-/**
+/*!
  * Imports Evolution v2.x mail folder recursively, keeping the folder structure.
- * @author Danny Kukawka
+ * \author Danny Kukawka
  */
 class MAILIMPORTER_EXPORT FilterEvolution_v2 : public Filter
 {

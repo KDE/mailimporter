@@ -11,9 +11,9 @@
 namespace MailImporter
 {
 class FilterBalsaPrivate;
-/**
- * @brief The FilterBalsa class
- * @author Laurent Montel <montel@kde.org>
+/*!
+ * \brief The FilterBalsa class
+ * \author Laurent Montel <montel@kde.org>
  */
 class MAILIMPORTER_EXPORT FilterBalsa : public Filter
 {

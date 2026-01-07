@@ -14,8 +14,8 @@ class KArchiveDirectory;
 namespace MailImporter
 {
 class FilterKMailArchivePrivate;
-/**
- * @brief The FilterKMailArchive class
+/*!
+ * \brief The FilterKMailArchive class
  */
 class MAILIMPORTER_EXPORT FilterKMailArchive : public Filter
 {

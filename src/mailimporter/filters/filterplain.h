@@ -13,7 +13,7 @@ namespace MailImporter
 {
 /**
  *imports Plain text messages into KMail
- *@author laurence
+ *\author laurence
  */
 class MAILIMPORTER_EXPORT FilterPlain : public Filter
 {

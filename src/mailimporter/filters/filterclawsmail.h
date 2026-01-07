@@ -11,7 +11,7 @@ namespace MailImporter
 {
 /**
  * Imports Sylpheed mail folder with maildir format recursively, recreating the folder structure.
- * @author Danny Kukawka
+ * \author Danny Kukawka
  */
 class MAILIMPORTER_EXPORT FilterClawsMail : public FilterSylpheed
 {

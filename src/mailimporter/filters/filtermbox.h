@@ -14,7 +14,7 @@ namespace MailImporter
 {
 /**
  * imports mbox archives messages into KMail
- * @author Laurence Anderson
+ * \author Laurence Anderson
  */
 class MAILIMPORTER_EXPORT FilterMBox : public Filter
 {

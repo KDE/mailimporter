@@ -9,9 +9,9 @@
 #include "filters.h"
 namespace MailImporter
 {
-/**
+/*!
  * Imports Evolution mboxes recursively, keeping the folder structure.
- * @author Simon MARTIN
+ * \author Simon MARTIN
  */
 class MAILIMPORTER_EXPORT FilterEvolution : public Filter
 {

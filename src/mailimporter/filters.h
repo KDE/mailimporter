@@ -23,7 +23,7 @@ namespace MailImporter
 {
 /**
  * @brief The Filter class
- * @author Laurent Montel <montel@kde.org>
+ * \author Laurent Montel <montel@kde.org>
  */
 class MAILIMPORTER_EXPORT Filter
 {

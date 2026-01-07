@@ -14,9 +14,9 @@
 #include <QString>
 namespace MailImporter
 {
-/**
- * @brief The FilterImporterAkonadi class
- * @author Laurent Montel <montel@kde.org>
+/*!
+ * \brief The FilterImporterAkonadi class
+ * \author Laurent Montel <montel@kde.org>
  */
 class MAILIMPORTERAKONADI_EXPORT FilterImporterAkonadi : public MailImporter::FilterImporterBase
 {
@@ -37,7 +37,7 @@ public:
     bool importMessage(const KArchiveFile *file, const QString &folderPath, int &nbTotal, int &fileDone) override;
 
 private:
-    /**
+    /*!
      * Creates a hierarchy of collections based on the given path string. The collection
      * hierarchy will be placed under the root collection.
      * For example, if the folderParseString "foo/bar/test" is passed to this method, it
@@ -47,14 +47,14 @@ private:
      * An invalid collection will be returned in case of an error.
      */
     MAILIMPORTERAKONADI_NO_EXPORT Akonadi::Collection parseFolderString(const QString &folderParseString);
-    /**
+    /*!
      * Checks for duplicate messages in the collection by message ID.
      * returns true if a duplicate was detected.
-     * NOTE: Only call this method if a message ID exists, otherwise
+     * \note Only call this method if a message ID exists, otherwise
      * you could get false positives.
      */
     MAILIMPORTERAKONADI_NO_EXPORT bool checkForDuplicates(const QString &msgID, const Akonadi::Collection &msgCollection, const QString &messageFolder);
-    /**
+    /*!
      * Adds a single subcollection to the given base collection and returns it.
      * Use parseFolderString() instead if you want to create hierarchies of collections.
      */

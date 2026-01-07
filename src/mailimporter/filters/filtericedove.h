@@ -11,7 +11,7 @@ namespace MailImporter
 {
 /**
  * @brief The FilterIcedove class
- * @author Laurent Montel <montel@kde.org>
+ * \author Laurent Montel <montel@kde.org>
  */
 class MAILIMPORTER_EXPORT FilterIcedove : public FilterThunderbird
 {

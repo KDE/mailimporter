@@ -13,9 +13,9 @@
 namespace MailImporter
 {
 class FilterKMail_maildirPrivate;
-/**
+/*!
  * Imports KMail mail folder with maildir format recursively, recreating the folder structure.
- * @author Danny Kukawka
+ * \author Danny Kukawka
  */
 class MAILIMPORTER_EXPORT FilterKMail_maildir : public Filter
 {

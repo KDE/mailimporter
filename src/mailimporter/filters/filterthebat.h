@@ -14,9 +14,9 @@
 namespace MailImporter
 {
 class FilterTheBatPrivate;
-/**
+/*!
  * Imports The Bat! mail folder recursively, recreating the folder structure.
- * @author Danny Kukawka
+ * \author Danny Kukawka
  */
 class MAILIMPORTER_EXPORT FilterTheBat : public Filter
 {
