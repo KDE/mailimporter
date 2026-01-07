@@ -15,6 +15,10 @@ namespace MailImporter
 {
 class FilterKMailArchivePrivate;
 /*!
+ * \class MailImporter::FilterKMailArchive
+ * \inmodule MailImporter
+ * \inheaderfile MailImporter/FilterKMailArchive
+ *
  * \brief The FilterKMailArchive class
  */
 class MAILIMPORTER_EXPORT FilterKMailArchive : public Filter

@@ -10,6 +10,10 @@
 namespace MailImporter
 {
 /*!
+ * \class MailImporter::FilterSeaMonkey
+ * \inmodule MailImporter
+ * \inheaderfile MailImporter/FilterSeaMonkey
+ *
  * \brief The FilterSeaMonkey class
  * \author Laurent Montel <montel@kde.org>
  */

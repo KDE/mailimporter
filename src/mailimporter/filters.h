@@ -22,6 +22,10 @@
 namespace MailImporter
 {
 /*!
+ * \class MailImporter::Filter
+ * \inmodule MailImporter
+ * \inheaderfile MailImporter/Filter
+ *
  * \brief The Filter class
  * \author Laurent Montel <montel@kde.org>
  */

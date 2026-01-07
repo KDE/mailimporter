@@ -11,6 +11,10 @@
 namespace MailImporter
 {
 /*!
+ * \class MailImporter::FilterMailmanGzip
+ * \inmodule MailImporter
+ * \inheaderfile MailImporter/FilterMailmanGzip
+ *
  * \brief The FilterMailmanGzip class
  * \author Laurent Montel <montel@kde.org>
  */

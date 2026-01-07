@@ -15,6 +15,10 @@ namespace MailImporter
 {
 class FilterInfo;
 /*!
+ * \class MailImporter::FilterImporterBase
+ * \inmodule MailImporter
+ * \inheaderfile MailImporter/FilterImporterBase
+ *
  * \brief The FilterImporterBase class
  * \author Laurent Montel <montel@kde.org>
  */

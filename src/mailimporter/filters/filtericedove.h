@@ -10,6 +10,10 @@
 namespace MailImporter
 {
 /*!
+ * \class MailImporter::FilterIcedove
+ * \inmodule MailImporter
+ * \inheaderfile MailImporter/FilterIcedove
+ *
  * \brief The FilterIcedove class
  * \author Laurent Montel <montel@kde.org>
  */

@@ -13,6 +13,10 @@ namespace MailImporter
 {
 class FilterLNotesPrivate;
 /*!
+ * \class MailImporter::FilterLNotes
+ * \inmodule MailImporter
+ * \inheaderfile MailImporter/FilterLNotes
+ *
  * imports Lotus Notes Structured Text Archives and archives messages into KMail
  * \author Robert Rockers
  */

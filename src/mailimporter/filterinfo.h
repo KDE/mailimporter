@@ -15,6 +15,10 @@ namespace MailImporter
 {
 class FilterInfoGui;
 /*!
+ * \class MailImporter::FilterInfo
+ * \inmodule MailImporter
+ * \inheaderfile MailImporter/FilterInfo
+ *
  * \brief The FilterInfo class
  */
 class MAILIMPORTER_EXPORT FilterInfo

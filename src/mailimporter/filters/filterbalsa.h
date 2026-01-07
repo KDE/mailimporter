@@ -11,7 +11,12 @@
 namespace MailImporter
 {
 class FilterBalsaPrivate;
+
 /*!
+ * \class MailImporter::FilterBalsa
+ * \inmodule MailImporter
+ * \inheaderfile MailImporter/FilterBalsa
+ *
  * \brief The FilterBalsa class
  * \author Laurent Montel <montel@kde.org>
  */

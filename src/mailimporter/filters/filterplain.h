@@ -12,8 +12,12 @@
 namespace MailImporter
 {
 /*!
- *imports Plain text messages into KMail
- *\author laurence
+ * \class MailImporter::FilterPlain
+ * \inmodule MailImporter
+ * \inheaderfile MailImporter/FilterPlain
+ *
+ * \brief imports Plain text messages into KMail
+ * \author laurence
  */
 class MAILIMPORTER_EXPORT FilterPlain : public Filter
 {

@@ -16,8 +16,12 @@
 namespace MailImporter
 {
 /*!
- *imports outlook text messages into KMail
- *\author Laurence Anderson
+ * \class MailImporter::FilterOE
+ * \inmodule MailImporter
+ * \inheaderfile MailImporter/FilterOE
+ *
+ * \brief imports outlook text messages into KMail
+ * \author Laurence Anderson
  */
 class MAILIMPORTER_EXPORT FilterOE : public Filter
 {

@@ -11,6 +11,10 @@
 namespace MailImporter
 {
 /*!
+ * \class MailImporter::FilterInfoGui
+ * \inmodule MailImporter
+ * \inheaderfile MailImporter/FilterInfoGui
+ *
  * \brief The FilterInfoGui class
  * \author Laurent Montel <montel@kde.org>
  */

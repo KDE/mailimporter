@@ -12,6 +12,10 @@ namespace MailImporter
 {
 class ImportMailsWidgetPrivate;
 /*!
+ * \class MailImporter::ImportMailsWidget
+ * \inmodule MailImporter
+ * \inheaderfile MailImporter/ImportMailsWidget
+ *
  * \brief The ImportMailsWidget class
  * \author Laurent Montel <montel@kde.org>
  */

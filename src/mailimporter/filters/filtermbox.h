@@ -13,7 +13,11 @@
 namespace MailImporter
 {
 /*!
- * imports mbox archives messages into KMail
+ * \class MailImporter::FilterMBox
+ * \inmodule MailImporter
+ * \inheaderfile MailImporter/FilterMBox
+ *
+ * \brief imports mbox archives messages into KMail
  * \author Laurence Anderson
  */
 class MAILIMPORTER_EXPORT FilterMBox : public Filter

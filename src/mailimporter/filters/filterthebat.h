@@ -15,7 +15,11 @@ namespace MailImporter
 {
 class FilterTheBatPrivate;
 /*!
- * Imports The Bat! mail folder recursively, recreating the folder structure.
+ * \class MailImporter::FilterTheBat
+ * \inmodule MailImporter
+ * \inheaderfile MailImporter/FilterTheBat
+ *
+ * \brief Imports The Bat! mail folder recursively, recreating the folder structure.
  * \author Danny Kukawka
  */
 class MAILIMPORTER_EXPORT FilterTheBat : public Filter
@@ -24,6 +28,7 @@ public:
     /*!
      */
     FilterTheBat();
+
     /*!
      */
     ~FilterTheBat() override;
@@ -31,6 +36,7 @@ public:
     /*!
      */
     void import() override;
+
     /*!
      */
     void importMails(const QString &maildir);

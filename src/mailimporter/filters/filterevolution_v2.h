@@ -16,7 +16,11 @@
 namespace MailImporter
 {
 /*!
- * Imports Evolution v2.x mail folder recursively, keeping the folder structure.
+ * \class MailImporter::FilterEvolution_v2
+ * \inmodule MailImporter
+ * \inheaderfile MailImporter/FilterEvolution_v2
+ *
+ * \brief Imports Evolution v2.x mail folder recursively, keeping the folder structure.
  * \author Danny Kukawka
  */
 class MAILIMPORTER_EXPORT FilterEvolution_v2 : public Filter

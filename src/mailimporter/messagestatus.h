@@ -11,6 +11,10 @@
 namespace MailImporter
 {
 /*!
+ * \class MailImporter::MessageStatus
+ * \inmodule MailImporter
+ * \inheaderfile MailImporter/MessageStatus
+ *
  * \brief The MessageStatus class
  * \author Laurent Montel <montel@kde.org>
  */

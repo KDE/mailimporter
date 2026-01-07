@@ -15,8 +15,12 @@ namespace MailImporter
 {
 class FilterMailAppPrivate;
 /*!
- *imports mbox archives messages into KMail
- *\author Chris Howells
+ * \class MailImporter::FilterMailApp
+ * \inmodule MailImporter
+ * \inheaderfile MailImporter/FilterMailApp
+ *
+ * \brief imports mbox archives messages into KMail
+ * \author Chris Howells
  */
 class MAILIMPORTER_EXPORT FilterMailApp : public Filter
 {

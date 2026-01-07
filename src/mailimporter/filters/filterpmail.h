@@ -15,6 +15,10 @@
 namespace MailImporter
 {
 /*!
+ * \class MailImporter::FilterPMail
+ * \inmodule MailImporter
+ * \inheaderfile MailImporter/FilterPMail
+ *
  * \brief The FilterPMail class
  */
 class MAILIMPORTER_EXPORT FilterPMail : public Filter

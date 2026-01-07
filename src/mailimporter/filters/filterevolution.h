@@ -10,7 +10,11 @@
 namespace MailImporter
 {
 /*!
- * Imports Evolution mboxes recursively, keeping the folder structure.
+ * \class MailImporter::FilterEvolution
+ * \inmodule MailImporter
+ * \inheaderfile MailImporter/FilterEvolution
+ *
+ * \brief Imports Evolution mboxes recursively, keeping the folder structure.
  * \author Simon MARTIN
  */
 class MAILIMPORTER_EXPORT FilterEvolution : public Filter

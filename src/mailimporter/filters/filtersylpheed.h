@@ -16,7 +16,11 @@ namespace MailImporter
 {
 class FilterSylpheedPrivate;
 /*!
- * Imports Sylpheed mail folder with maildir format recursively, recreating the folder structure.
+ * \class MailImporter::FilterSylpheed
+ * \inmodule MailImporter
+ * \inheaderfile MailImporter/FilterSylpheed
+ *
+ * \brief Imports Sylpheed mail folder with maildir format recursively, recreating the folder structure.
  * \author Danny Kukawka
  */
 class MAILIMPORTER_EXPORT FilterSylpheed : public Filter
