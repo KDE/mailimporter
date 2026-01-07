@@ -29,6 +29,6 @@ public:
 
 private:
     std::unique_ptr<FilterMailAppPrivate> const d;
-    void traverseDirectory(const QString &);
+    MAILIMPORTER_NO_EXPORT void traverseDirectory(const QString &);
 };
 }

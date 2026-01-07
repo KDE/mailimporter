@@ -27,10 +27,10 @@ public:
     void importMails(const QString &maildir);
 
 private:
-    void processDirectory(const QString &path);
+    MAILIMPORTER_NO_EXPORT void processDirectory(const QString &path);
 
-    void importDirContents(const QString &);
-    void importFiles(const QString &);
+    MAILIMPORTER_NO_EXPORT void importDirContents(const QString &);
+    MAILIMPORTER_NO_EXPORT void importFiles(const QString &);
     std::unique_ptr<FilterKMail_maildirPrivate> const d;
 };
 }

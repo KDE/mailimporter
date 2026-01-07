@@ -31,8 +31,8 @@ public:
     [[nodiscard]] static QString isMailerFound();
 
 private:
-    void importDirContents(const QString &, const QString &, const QString &);
-    void importMBox(const QString &, const QString &, const QString &);
-    [[nodiscard]] bool excludeFiles(const QString &file);
+    MAILIMPORTER_NO_EXPORT void importDirContents(const QString &, const QString &, const QString &);
+    MAILIMPORTER_NO_EXPORT void importMBox(const QString &, const QString &, const QString &);
+    [[nodiscard]] MAILIMPORTER_NO_EXPORT bool excludeFiles(const QString &file);
 };
 }

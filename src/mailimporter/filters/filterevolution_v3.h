@@ -26,9 +26,9 @@ public:
     [[nodiscard]] static QString isMailerFound();
 
 private:
-    void importDirContents(const QString &);
-    void importFiles(const QString &);
-    void processDirectory(const QString &path);
+    MAILIMPORTER_NO_EXPORT void importDirContents(const QString &);
+    MAILIMPORTER_NO_EXPORT void importFiles(const QString &);
+    MAILIMPORTER_NO_EXPORT void processDirectory(const QString &path);
 
     MailImporter::MessageStatus statusFromFile(const QString &filename);
     std::unique_ptr<FilterEvolution_v3Private> const d;
