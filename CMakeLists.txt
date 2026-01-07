@@ -67,14 +67,8 @@ include(ECMFeatureSummary)
 include(ECMAddTests)
 
 set(MAILIMPORTER_LIB ${PIM_VERSION})
-include(ECMAddQch)
+include(ECMGenerateQDoc)
 
-option(BUILD_QCH "Build API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)" OFF)
-add_feature_info(
-    QCH
-    ${BUILD_QCH}
-    "API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)"
-)
 include(ECMCheckOutboundLicense)
 file(
     GLOB_RECURSE ALL_SOURCE_FILES

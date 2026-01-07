@@ -99,40 +99,6 @@ if(BUILD_TESTING)
     add_subdirectory(autotests)
 endif()
 
-if(BUILD_QCH)
-    ecm_add_qch(
-        KPim6MailImporterAkonadi_QCH
-        NAME KPim6MailImporterAkonadi
-        BASE_NAME KPim6MailImporterAkonadi
-        VERSION ${PIM_VERSION}
-        ORG_DOMAIN org.kde
-        SOURCES # using only public headers, to cover only public API
-            ${MailImporter_Akonadi_HEADERS}
-        #MD_MAINPAGE "${CMAKE_SOURCE_DIR}/README.md"
-        #IMAGE_DIRS "${CMAKE_SOURCE_DIR}/docs/pics"
-        LINK_QCHS
-            Qt6Core_QCH
-            Qt6Gui_QCH
-            Qt6Widgets_QCH
-        INCLUDE_DIRS
-            ${CMAKE_CURRENT_BINARY_DIR}
-        BLANK_MACROS
-            MAILIMPORTERAKONADI_EXPORT
-        TAGFILE_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
-        QCH_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
-        COMPONENT Devel
-    )
-endif()
-
-if(BUILD_QCH)
-    ecm_install_qch_export(
-        TARGETS KPim6MailImporterAkonadi_QCH
-        FILE KPim6MailImporterAkonadiQchTargets.cmake
-        DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
-        COMPONENT Devel
-    )
-    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim6MailImporterAkonadiQchTargets.cmake\")")
-endif()
 configure_package_config_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/KPimMailImporterAkonadiConfig.cmake.in"
     "${CMAKE_CURRENT_BINARY_DIR}/KPim6MailImporterAkonadiConfig.cmake"
