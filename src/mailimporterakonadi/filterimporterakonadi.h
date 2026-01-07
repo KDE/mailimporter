@@ -21,19 +21,41 @@ namespace MailImporter
 class MAILIMPORTERAKONADI_EXPORT FilterImporterAkonadi : public MailImporter::FilterImporterBase
 {
 public:
+    /*!
+     */
     FilterImporterAkonadi(MailImporter::FilterInfo *info);
+    /*!
+     */
     ~FilterImporterAkonadi() override;
 
+    /*!
+     */
     bool importMessage(const QString &folderName, const QString &msgPath, bool duplicateCheck, const MailImporter::MessageStatus &status) override;
+    /*!
+     */
     void clear() override;
+    /*!
+     */
     void clearCountDuplicate() override;
-    int countDuplicates() const override;
+    /*!
+     */
+    [[nodiscard]] int countDuplicates() const override;
+    /*!
+     */
     static Akonadi::MessageStatus convertToAkonadiMessageStatus(const MailImporter::MessageStatus &status);
 
-    Akonadi::Collection rootCollection() const;
+    /*!
+     */
+    [[nodiscard]] Akonadi::Collection rootCollection() const;
+    /*!
+     */
     void setRootCollection(const Akonadi::Collection &collection);
 
-    QString topLevelFolder() const override;
+    /*!
+     */
+    [[nodiscard]] QString topLevelFolder() const override;
+    /*!
+     */
     bool importMessage(const KArchiveFile *file, const QString &folderPath, int &nbTotal, int &fileDone) override;
 
 private:
