@@ -22,10 +22,18 @@ namespace MailImporter
 class MAILIMPORTER_EXPORT FilterOE : public Filter
 {
 public:
+    /*!
+     */
     FilterOE();
+    /*!
+     */
     ~FilterOE() override;
 
+    /*!
+     */
     void import() override;
+    /*!
+     */
     void importMails(const QString &maildir);
 
 private:

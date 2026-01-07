@@ -21,10 +21,18 @@ class FilterTheBatPrivate;
 class MAILIMPORTER_EXPORT FilterTheBat : public Filter
 {
 public:
+    /*!
+     */
     FilterTheBat();
+    /*!
+     */
     ~FilterTheBat() override;
 
+    /*!
+     */
     void import() override;
+    /*!
+     */
     void importMails(const QString &maildir);
 
 private:

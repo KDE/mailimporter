@@ -10,26 +10,46 @@
 
 namespace MailImporter
 {
-/**
- * @brief The MessageStatus class
+/*!
+ * \brief The MessageStatus class
  * \author Laurent Montel <montel@kde.org>
  */
 class MAILIMPORTER_EXPORT MessageStatus
 {
 public:
+    /*!
+     */
     MessageStatus();
+    /*!
+     */
     ~MessageStatus();
 
+    /*!
+     */
     void setRead(bool state);
+    /*!
+     */
     [[nodiscard]] bool isRead() const;
 
+    /*!
+     */
     void setDeleted(bool state);
+    /*!
+     */
     [[nodiscard]] bool isDeleted() const;
 
+    /*!
+     */
     void setReplied(bool state);
+    /*!
+     */
     [[nodiscard]] bool isReplied() const;
 
+    /*!
+     */
     void setForwarded(bool state);
+    /*!
+     */
     [[nodiscard]] bool isForwarded() const;
 
 private:

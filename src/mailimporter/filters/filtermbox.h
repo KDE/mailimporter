@@ -12,17 +12,25 @@
 
 namespace MailImporter
 {
-/**
+/*!
  * imports mbox archives messages into KMail
  * \author Laurence Anderson
  */
 class MAILIMPORTER_EXPORT FilterMBox : public Filter
 {
 public:
+    /*!
+     */
     FilterMBox();
+    /*!
+     */
     ~FilterMBox() override;
 
+    /*!
+     */
     void importMails(const QStringList &filenames);
+    /*!
+     */
     void import() override;
 };
 }

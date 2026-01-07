@@ -9,21 +9,33 @@
 #include "filterthunderbird.h"
 namespace MailImporter
 {
-/**
- * @brief The FilterIcedove class
+/*!
+ * \brief The FilterIcedove class
  * \author Laurent Montel <montel@kde.org>
  */
 class MAILIMPORTER_EXPORT FilterIcedove : public FilterThunderbird
 {
 public:
+    /*!
+     */
     FilterIcedove();
+    /*!
+     */
     ~FilterIcedove() override;
 
+    /*!
+     */
     [[nodiscard]] static QString defaultSettingsPath();
+    /*!
+     */
     [[nodiscard]] static QString isMailerFound();
 
 protected:
+    /*!
+     */
     [[nodiscard]] QString defaultInstallFolder() const override;
+    /*!
+     */
     [[nodiscard]] QString settingsPath() override;
 };
 }

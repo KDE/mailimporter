@@ -19,12 +19,24 @@ namespace MailImporter
 class MAILIMPORTER_EXPORT FilterOpera : public Filter
 {
 public:
+    /*!
+     */
     FilterOpera();
+    /*!
+     */
     ~FilterOpera() override;
 
+    /*!
+     */
     void import() override;
+    /*!
+     */
     void importMails(const QString &maildir);
+    /*!
+     */
     [[nodiscard]] static QString defaultSettingsPath();
+    /*!
+     */
     [[nodiscard]] static QString isMailerFound();
 
 private:

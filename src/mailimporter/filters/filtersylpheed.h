@@ -22,19 +22,39 @@ class FilterSylpheedPrivate;
 class MAILIMPORTER_EXPORT FilterSylpheed : public Filter
 {
 public:
+    /*!
+     */
     FilterSylpheed();
+    /*!
+     */
     ~FilterSylpheed() override;
 
+    /*!
+     */
     [[nodiscard]] static QString defaultSettingsPath();
+    /*!
+     */
     [[nodiscard]] static QString isMailerFound();
 
+    /*!
+     */
     void import() override;
+    /*!
+     */
     virtual void importMails(const QString &maildir);
 
     /* return local mail dir from folderlist.xml*/
+    /*!
+     */
     virtual QString localMailDirPath();
+    /*!
+     */
     [[nodiscard]] virtual bool excludeFile(const QString &file);
+    /*!
+     */
     virtual QString defaultInstallFolder() const;
+    /*!
+     */
     virtual QString markFile() const;
 
 private:

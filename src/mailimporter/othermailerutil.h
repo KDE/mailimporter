@@ -13,9 +13,17 @@ namespace MailImporter
 {
 namespace OtherMailerUtil
 {
+/*!
+ */
 [[nodiscard]] MAILIMPORTER_EXPORT QString trojitaDefaultPath();
+/*!
+ */
 [[nodiscard]] MAILIMPORTER_EXPORT QString gearyDefaultPath();
+/*!
+ */
 [[nodiscard]] MAILIMPORTER_EXPORT QStringList isMailerFound();
+/*!
+ */
 [[nodiscard]] MAILIMPORTER_EXPORT QString nylasMailDefaultPath();
 }
 }

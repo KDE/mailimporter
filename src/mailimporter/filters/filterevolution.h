@@ -16,12 +16,24 @@ namespace MailImporter
 class MAILIMPORTER_EXPORT FilterEvolution : public Filter
 {
 public:
+    /*!
+     */
     FilterEvolution();
+    /*!
+     */
     ~FilterEvolution() override;
 
+    /*!
+     */
     void import() override;
+    /*!
+     */
     void importMails(const QString &maildir);
+    /*!
+     */
     [[nodiscard]] static QString defaultSettingsPath();
+    /*!
+     */
     [[nodiscard]] static QString isMailerFound();
 
 private:

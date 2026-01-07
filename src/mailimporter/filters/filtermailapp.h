@@ -21,10 +21,18 @@ class FilterMailAppPrivate;
 class MAILIMPORTER_EXPORT FilterMailApp : public Filter
 {
 public:
+    /*!
+     */
     FilterMailApp();
+    /*!
+     */
     ~FilterMailApp() override;
 
+    /*!
+     */
     void import() override;
+    /*!
+     */
     void importMails(const QString &maildir);
 
 private:

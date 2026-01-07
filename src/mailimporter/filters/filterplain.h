@@ -11,17 +11,25 @@
 #include "filters.h"
 namespace MailImporter
 {
-/**
+/*!
  *imports Plain text messages into KMail
  *\author laurence
  */
 class MAILIMPORTER_EXPORT FilterPlain : public Filter
 {
 public:
+    /*!
+     */
     FilterPlain();
+    /*!
+     */
     ~FilterPlain() override;
 
+    /*!
+     */
     void import() override;
+    /*!
+     */
     void importMails(const QString &mailDir);
 };
 }

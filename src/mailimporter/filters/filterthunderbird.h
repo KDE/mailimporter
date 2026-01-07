@@ -20,20 +20,40 @@ namespace MailImporter
 class MAILIMPORTER_EXPORT FilterThunderbird : public Filter
 {
 public:
+    /*!
+     */
     FilterThunderbird();
+    /*!
+     */
     ~FilterThunderbird() override;
 
+    /*!
+     */
     void import() override;
+    /*!
+     */
     void importMails(const QString &maildir);
 
+    /*!
+     */
     [[nodiscard]] static QString defaultSettingsPath();
+    /*!
+     */
     [[nodiscard]] static QString defaultProfile(const QString &defaultSettingPath, QWidget *parent = nullptr);
+    /*!
+     */
     [[nodiscard]] static QMap<QString, QString> listProfile(QString &currentProfile, const QString &defaultSettingPath);
 
+    /*!
+     */
     [[nodiscard]] static QString isMailerFound();
 
 protected:
+    /*!
+     */
     [[nodiscard]] virtual QString defaultInstallFolder() const;
+    /*!
+     */
     [[nodiscard]] virtual QString settingsPath();
 
 private:

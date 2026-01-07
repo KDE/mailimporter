@@ -11,8 +11,8 @@ class QListWidgetItem;
 namespace MailImporter
 {
 class ImportMailsWidgetPrivate;
-/**
- * @brief The ImportMailsWidget class
+/*!
+ * \brief The ImportMailsWidget class
  * \author Laurent Montel <montel@kde.org>
  */
 class MAILIMPORTER_EXPORT ImportMailsWidget : public QWidget
@@ -20,19 +20,45 @@ class MAILIMPORTER_EXPORT ImportMailsWidget : public QWidget
     Q_OBJECT
 
 public:
+    /*!
+     */
     explicit ImportMailsWidget(QWidget *parent = nullptr);
-    ~ImportMailsWidget();
+    /*!
+     */
+    ~ImportMailsWidget() override;
 
+    /*!
+     */
     void setStatusMessage(const QString &status);
+    /*!
+     */
     void setFrom(const QString &from);
+    /*!
+     */
     void setTo(const QString &to);
+    /*!
+     */
     void setCurrent(const QString &current);
+    /*!
+     */
     void setCurrent(int percent);
+    /*!
+     */
     void setOverall(int percent);
+    /*!
+     */
     void addItem(QListWidgetItem *item);
+    /*!
+     */
     void setLastCurrentItem();
+    /*!
+     */
     void clear();
+    /*!
+     */
     void addInfoLogEntry(const QString &log);
+    /*!
+     */
     void addErrorLogEntry(const QString &log);
 
 private:

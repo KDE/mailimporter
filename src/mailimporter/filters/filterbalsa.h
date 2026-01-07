@@ -18,14 +18,28 @@ class FilterBalsaPrivate;
 class MAILIMPORTER_EXPORT FilterBalsa : public Filter
 {
 public:
+    /*!
+     */
     FilterBalsa();
+    /*!
+     */
     ~FilterBalsa() override;
 
+    /*!
+     */
     void import() override;
+    /*!
+     */
     void importMails(const QString &maildir);
+    /*!
+     */
     [[nodiscard]] static QString defaultSettingsPath();
+    /*!
+     */
     [[nodiscard]] static QString isMailerFound();
-    QString localMailDirPath();
+    /*!
+     */
+    [[nodiscard]] QString localMailDirPath();
 
 private:
     MAILIMPORTER_NO_EXPORT void importDirContents(const QString &);

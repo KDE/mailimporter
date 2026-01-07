@@ -20,10 +20,18 @@ class FilterKMailArchivePrivate;
 class MAILIMPORTER_EXPORT FilterKMailArchive : public Filter
 {
 public:
+    /*!
+     */
     FilterKMailArchive();
+    /*!
+     */
     ~FilterKMailArchive() override;
 
+    /*!
+     */
     void import() override;
+    /*!
+     */
     void importMails(const QString &archiveFile);
 
 private:

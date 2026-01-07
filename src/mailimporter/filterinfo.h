@@ -14,33 +14,69 @@ class QWidget;
 namespace MailImporter
 {
 class FilterInfoGui;
-/**
- * @brief The FilterInfo class
+/*!
+ * \brief The FilterInfo class
  */
 class MAILIMPORTER_EXPORT FilterInfo
 {
 public:
+    /*!
+     */
     FilterInfo();
+    /*!
+     */
     ~FilterInfo();
 
+    /*!
+     */
     void setFilterInfoGui(FilterInfoGui *filterinfogui);
 
+    /*!
+     */
     void setStatusMessage(const QString &status);
+    /*!
+     */
     void setFrom(const QString &from);
+    /*!
+     */
     void setTo(const QString &to);
+    /*!
+     */
     void setCurrent(const QString &current);
+    /*!
+     */
     void setCurrent(int percent = 0);
+    /*!
+     */
     void setOverall(int percent = 0);
+    /*!
+     */
     void addInfoLogEntry(const QString &log);
+    /*!
+     */
     void addErrorLogEntry(const QString &log);
+    /*!
+     */
     void clear();
+    /*!
+     */
     void alert(const QString &message);
 
+    /*!
+     */
     static void terminateASAP();
+    /*!
+     */
     [[nodiscard]] bool shouldTerminate() const;
 
+    /*!
+     */
     QWidget *parentWidget() const;
+    /*!
+     */
     void setRemoveDupMessage(bool removeDupMessage);
+    /*!
+     */
     [[nodiscard]] bool removeDupMessage() const;
 
 private:
