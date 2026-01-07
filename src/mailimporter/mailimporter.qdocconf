@@ -1,0 +1,33 @@
+include($KDE_DOCS/global/qt-module-defaults.qdocconf)
+
+project = MailImporter
+description = MailImporter Library implements importing of emails from various other email clients
+
+
+documentationinheaders = true
+
+headerdirs += .
+sourcedirs += .
+
+outputformats = HTML
+
+depends += \
+    qtcore
+
+navigation.landingpage = "MailImporter"
+
+qhp.projects            = mailimporter
+
+qhp.mailimporter.file                = mailimporter.qhp
+qhp.mailimporter.namespace           = org.kde.mailimporter.$QT_VERSION_TAG
+qhp.mailimporter.virtualFolder       = mailimporter
+qhp.mailimporter.indexTitle          = mailimporter
+qhp.mailimporter.indexRoot           =
+
+qhp.mailimporter.subprojects         = classes
+qhp.mailimporter.subprojects.classes.title = C++ Classes
+qhp.mailimporter.subprojects.classes.indexTitle = MailImporter C++ Classes
+qhp.mailimporter.subprojects.classes.selectors = class fake:headerfile
+qhp.mailimporter.subprojects.classes.sortPages = true
+
+tagfile = mailimporter.tags
