@@ -19,7 +19,7 @@ class FilterInfoGui;
  * \inmodule MailImporter
  * \inheaderfile MailImporter/FilterInfo
  *
- * \brief The FilterInfo class
+ * \brief The FilterInfo class.
  */
 class MAILIMPORTER_EXPORT FilterInfo
 {

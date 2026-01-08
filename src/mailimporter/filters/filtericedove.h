@@ -14,7 +14,7 @@ namespace MailImporter
  * \inmodule MailImporter
  * \inheaderfile MailImporter/FilterIcedove
  *
- * \brief The FilterIcedove class
+ * \brief The FilterIcedove class.
  * \author Laurent Montel <montel@kde.org>
  */
 class MAILIMPORTER_EXPORT FilterIcedove : public FilterThunderbird

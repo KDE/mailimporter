@@ -17,7 +17,7 @@ namespace MailImporter
  * \inmodule MailImporter
  * \inheaderfile MailImporter/FilterOpera
  *
- * \brief imports opera account-archives into KMail
+ * \brief imports opera account-archives into KMail.
  * \author Danny Kukawka
  */
 class MAILIMPORTER_EXPORT FilterOpera : public Filter

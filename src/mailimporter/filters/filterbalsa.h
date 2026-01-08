@@ -17,13 +17,14 @@ class FilterBalsaPrivate;
  * \inmodule MailImporter
  * \inheaderfile MailImporter/FilterBalsa
  *
- * \brief The FilterBalsa class
+ * \brief The FilterBalsa class.
  * \author Laurent Montel <montel@kde.org>
  */
 class MAILIMPORTER_EXPORT FilterBalsa : public Filter
 {
 public:
     /*!
+     * \brief FilterBalsa
      */
     FilterBalsa();
     /*!

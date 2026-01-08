@@ -15,7 +15,7 @@ class FilterEvolution_v3Private;
  * \inmodule MailImporter
  * \inheaderfile MailImporter/FilterEvolution_v3
  *
- * \brief The FilterEvolution_v3 class
+ * \brief The FilterEvolution_v3 class.
  * \author Laurent Montel <montel@kde.org>
  */
 class MAILIMPORTER_EXPORT FilterEvolution_v3 : public Filter

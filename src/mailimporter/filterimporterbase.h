@@ -19,7 +19,7 @@ class FilterInfo;
  * \inmodule MailImporter
  * \inheaderfile MailImporter/FilterImporterBase
  *
- * \brief The FilterImporterBase class
+ * \brief The FilterImporterBase class.
  * \author Laurent Montel <montel@kde.org>
  */
 class MAILIMPORTER_EXPORT FilterImporterBase

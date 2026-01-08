@@ -15,7 +15,7 @@ namespace MailImporter
  * \inmodule MailImporter
  * \inheaderfile MailImporter/MessageStatus
  *
- * \brief The MessageStatus class
+ * \brief The MessageStatus class.
  * \author Laurent Montel <montel@kde.org>
  */
 class MAILIMPORTER_EXPORT MessageStatus

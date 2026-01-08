@@ -14,7 +14,7 @@ namespace MailImporter
  * \inmodule MailImporter
  * \inheaderfile MailImporter/FilterSeaMonkey
  *
- * \brief The FilterSeaMonkey class
+ * \brief The FilterSeaMonkey class.
  * \author Laurent Montel <montel@kde.org>
  */
 class MAILIMPORTER_EXPORT FilterSeaMonkey : public FilterThunderbird

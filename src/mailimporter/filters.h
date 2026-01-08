@@ -19,6 +19,10 @@
 #include <QDir>
 #include <memory>
 
+/*!
+ * \namespace MailImporter
+ * \inmodule MailImporter
+ */
 namespace MailImporter
 {
 /*!
@@ -26,7 +30,7 @@ namespace MailImporter
  * \inmodule MailImporter
  * \inheaderfile MailImporter/Filter
  *
- * \brief The Filter class
+ * \brief The Filter class.
  * \author Laurent Montel <montel@kde.org>
  */
 class MAILIMPORTER_EXPORT Filter

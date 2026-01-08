@@ -19,7 +19,7 @@ class FilterMailAppPrivate;
  * \inmodule MailImporter
  * \inheaderfile MailImporter/FilterMailApp
  *
- * \brief imports mbox archives messages into KMail
+ * \brief FilterMailApp imports mbox archives messages into KMail.
  * \author Chris Howells
  */
 class MAILIMPORTER_EXPORT FilterMailApp : public Filter

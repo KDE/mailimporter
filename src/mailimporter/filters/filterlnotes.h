@@ -17,7 +17,7 @@ class FilterLNotesPrivate;
  * \inmodule MailImporter
  * \inheaderfile MailImporter/FilterLNotes
  *
- * imports Lotus Notes Structured Text Archives and archives messages into KMail
+ * \brief imports Lotus Notes Structured Text Archives and archives messages into KMail.
  * \author Robert Rockers
  */
 class MAILIMPORTER_EXPORT FilterLNotes : public Filter

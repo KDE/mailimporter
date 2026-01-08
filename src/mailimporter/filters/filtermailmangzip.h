@@ -15,7 +15,7 @@ namespace MailImporter
  * \inmodule MailImporter
  * \inheaderfile MailImporter/FilterMailmanGzip
  *
- * \brief The FilterMailmanGzip class
+ * \brief The FilterMailmanGzip class.
  * \author Laurent Montel <montel@kde.org>
  */
 class MAILIMPORTER_EXPORT FilterMailmanGzip : public Filter

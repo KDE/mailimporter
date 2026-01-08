@@ -20,7 +20,7 @@ namespace MailImporter
  * \inmodule MailImporter
  * \inheaderfile MailImporter/FilterOE
  *
- * \brief imports outlook text messages into KMail
+ * \brief imports outlook text messages into KMail.
  * \author Laurence Anderson
  */
 class MAILIMPORTER_EXPORT FilterOE : public Filter

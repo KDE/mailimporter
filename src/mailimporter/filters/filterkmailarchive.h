@@ -19,7 +19,7 @@ class FilterKMailArchivePrivate;
  * \inmodule MailImporter
  * \inheaderfile MailImporter/FilterKMailArchive
  *
- * \brief The FilterKMailArchive class
+ * \brief The FilterKMailArchive class.
  */
 class MAILIMPORTER_EXPORT FilterKMailArchive : public Filter
 {
