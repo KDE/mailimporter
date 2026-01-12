@@ -969,7 +969,8 @@ msgstr "Trieu un perfil:"
 #: mailimporterakonadi/filterimporterakonadi.cpp:95
 #, kde-format
 msgid "Error: failed to read temporary file at %1"
-msgstr "S'ha produït un error: ha fallat en llegir un fitxer temporal a %1"
+msgstr ""
+"S'ha produït un error: ha fallat mentre es llegia un fitxer temporal a %1"
 
 #: mailimporterakonadi/filterimporterakonadi.cpp:125
 #, kde-format
