@@ -15,6 +15,10 @@
 namespace MailImporter
 {
 /*!
+ * \class MailImporter::FilterImporterAkonadi
+ * \inmodule MailImporterAkonadi
+ * \inheaderfile MailImporter/FilterImporterAkonadi
+ *
  * \brief The FilterImporterAkonadi class
  * \author Laurent Montel <montel@kde.org>
  */
