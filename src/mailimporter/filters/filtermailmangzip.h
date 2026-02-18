@@ -22,16 +22,21 @@ class MAILIMPORTER_EXPORT FilterMailmanGzip : public Filter
 {
 public:
     /*!
+     * \brief Constructor for FilterMailmanGzip.
      */
     FilterMailmanGzip();
     /*!
+     * \brief Destructor for FilterMailmanGzip.
      */
     ~FilterMailmanGzip() override;
 
     /*!
+     * \brief Imports mails from the specified gzip archive files.
+     * \param filenames List of gzip archive files to import
      */
     void importMails(const QStringList &filenames);
     /*!
+     * \brief Imports mailman gzip archives.
      */
     void import() override;
 };

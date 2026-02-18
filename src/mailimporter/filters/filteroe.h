@@ -27,16 +27,21 @@ class MAILIMPORTER_EXPORT FilterOE : public Filter
 {
 public:
     /*!
+     * \brief Constructor for FilterOE.
      */
     FilterOE();
     /*!
+     * \brief Destructor for FilterOE.
      */
     ~FilterOE() override;
 
     /*!
+     * \brief Imports Outlook Express mail files.
      */
     void import() override;
     /*!
+     * \brief Imports mails from the specified directory.
+     * \param maildir The mail directory to import from
      */
     void importMails(const QString &maildir);
 

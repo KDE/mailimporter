@@ -23,16 +23,21 @@ class MAILIMPORTER_EXPORT FilterPlain : public Filter
 {
 public:
     /*!
+     * \brief Constructor for FilterPlain.
      */
     FilterPlain();
     /*!
+     * \brief Destructor for FilterPlain.
      */
     ~FilterPlain() override;
 
     /*!
+     * \brief Imports plain text mail messages.
      */
     void import() override;
     /*!
+     * \brief Imports mails from the specified directory.
+     * \param mailDir The mail directory to import from
      */
     void importMails(const QString &mailDir);
 };

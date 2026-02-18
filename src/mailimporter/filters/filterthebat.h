@@ -26,18 +26,23 @@ class MAILIMPORTER_EXPORT FilterTheBat : public Filter
 {
 public:
     /*!
+     * \brief Constructor for FilterTheBat.
      */
     FilterTheBat();
 
     /*!
+     * \brief Destructor for FilterTheBat.
      */
     ~FilterTheBat() override;
 
     /*!
+     * \brief Imports The Bat! mail folders.
      */
     void import() override;
 
     /*!
+     * \brief Imports mails from the specified directory.
+     * \param maildir The mail directory to import from
      */
     void importMails(const QString &maildir);
 

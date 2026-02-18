@@ -27,37 +27,55 @@ class MAILIMPORTER_EXPORT FilterSylpheed : public Filter
 {
 public:
     /*!
+     * \brief Constructor for FilterSylpheed.
      */
     FilterSylpheed();
     /*!
+     * \brief Destructor for FilterSylpheed.
      */
     ~FilterSylpheed() override;
 
     /*!
+     * \brief Returns the default settings path for Sylpheed.
+     * \return The default settings path
      */
     [[nodiscard]] static QString defaultSettingsPath();
     /*!
+     * \brief Checks if Sylpheed mail client is found on the system.
+     * \return A status message indicating if Sylpheed was found
      */
     [[nodiscard]] static QString isMailerFound();
 
     /*!
+     * \brief Imports Sylpheed mail folders.
      */
     void import() override;
     /*!
+     * \brief Imports mails from the specified directory.
+     * \param maildir The maildir directory to import from
      */
     virtual void importMails(const QString &maildir);
 
     /* return local mail dir from folderlist.xml*/
     /*!
+     * \brief Returns the local mail directory path.
+     * \return The local mail directory path
      */
     virtual QString localMailDirPath();
     /*!
+     * \brief Checks if a file should be excluded from import.
+     * \param file The file path to check
+     * \return True if the file should be excluded
      */
     [[nodiscard]] virtual bool excludeFile(const QString &file);
     /*!
+     * \brief Returns the default installation folder for Sylpheed.
+     * \return The default installation folder
      */
     virtual QString defaultInstallFolder() const;
     /*!
+     * \brief Returns the mark file path.
+     * \return The mark file path
      */
     virtual QString markFile() const;
 

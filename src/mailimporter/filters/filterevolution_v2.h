@@ -27,22 +27,31 @@ class MAILIMPORTER_EXPORT FilterEvolution_v2 : public Filter
 {
 public:
     /*!
+     * \brief Constructor for FilterEvolution_v2.
      */
     FilterEvolution_v2();
     /*!
+     * \brief Destructor for FilterEvolution_v2.
      */
     ~FilterEvolution_v2() override;
 
     /*!
+     * \brief Imports Evolution v2.x mail folders.
      */
     void import() override;
     /*!
+     * \brief Imports mails from the specified directory.
+     * \param maildir The mail directory to import from
      */
     void importMails(const QString &maildir);
     /*!
+     * \brief Returns the default settings path for Evolution v2.x.
+     * \return The default settings path
      */
     [[nodiscard]] static QString defaultSettingsPath();
     /*!
+     * \brief Checks if Evolution v2.x mail client is found on the system.
+     * \return A status message indicating if Evolution v2.x was found
      */
     [[nodiscard]] static QString isMailerFound();
 

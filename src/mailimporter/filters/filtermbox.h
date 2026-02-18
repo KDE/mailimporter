@@ -24,16 +24,21 @@ class MAILIMPORTER_EXPORT FilterMBox : public Filter
 {
 public:
     /*!
+     * \brief Constructor for FilterMBox.
      */
     FilterMBox();
     /*!
+     * \brief Destructor for FilterMBox.
      */
     ~FilterMBox() override;
 
     /*!
+     * \brief Imports mails from the specified mbox files.
+     * \param filenames List of mbox files to import
      */
     void importMails(const QStringList &filenames);
     /*!
+     * \brief Imports mbox mail archives.
      */
     void import() override;
 };

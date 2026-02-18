@@ -25,16 +25,21 @@ class MAILIMPORTER_EXPORT FilterKMailArchive : public Filter
 {
 public:
     /*!
+     * \brief Constructor for FilterKMailArchive.
      */
     FilterKMailArchive();
     /*!
+     * \brief Destructor for FilterKMailArchive.
      */
     ~FilterKMailArchive() override;
 
     /*!
+     * \brief Imports KMail archive files.
      */
     void import() override;
     /*!
+     * \brief Imports mails from the specified archive file.
+     * \param archiveFile The path to the archive file
      */
     void importMails(const QString &archiveFile);
 

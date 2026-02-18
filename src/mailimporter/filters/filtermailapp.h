@@ -26,16 +26,21 @@ class MAILIMPORTER_EXPORT FilterMailApp : public Filter
 {
 public:
     /*!
+     * \brief Constructor for FilterMailApp.
      */
     FilterMailApp();
     /*!
+     * \brief Destructor for FilterMailApp.
      */
     ~FilterMailApp() override;
 
     /*!
+     * \brief Imports Mail.app mail folders.
      */
     void import() override;
     /*!
+     * \brief Imports mails from the specified directory.
+     * \param maildir The mail directory to import from
      */
     void importMails(const QString &maildir);
 

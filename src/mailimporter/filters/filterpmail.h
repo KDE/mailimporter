@@ -25,31 +25,57 @@ class MAILIMPORTER_EXPORT FilterPMail : public Filter
 {
 public:
     /*!
+     * \brief Constructor for FilterPMail.
      */
     FilterPMail();
     /*!
+     * \brief Destructor for FilterPMail.
      */
     ~FilterPMail() override;
 
     /*!
+     * \brief Imports Pegasus Mail folders.
      */
     void import() override;
     /*!
+     * \brief Imports mails from the specified directory.
+     * \param chosenDir The directory to import from
      */
     void importMails(const QString &chosenDir);
 
 protected:
-    /*! this looks for all files with the filemask 'mask' and calls the 'workFunc' on each of them */
+    /*!
+     * \brief Processes all files matching the given pattern.
+     * \param mask The file pattern to match
+     * \param workFunc The member function to call for each file
+     */
     void processFiles(const QString &mask, void (FilterPMail::*workFunc)(const QString &));
-    /*! this function imports one *.CNM message */
+    /*!
+     * \brief Imports a single mail message.
+     * \param file The message file to import
+     */
     void importNewMessage(const QString &file);
-    /*! this function imports one mail folder file (*.PMM) */
+    /*!
+     * \brief Imports a mail folder file.
+     * \param file The folder file to import
+     */
     void importMailFolder(const QString &file);
-    /*! imports a 'unix' format mail folder (*.MBX) */
+    /*!
+     * \brief Imports a Unix format mail folder.
+     * \param file The Unix format folder file to import
+     */
     void importUnixMailFolder(const QString &file);
-    /*! this function recreate the folder structure */
+    /*!
+     * \brief Parses the folder matrix from the directory.
+     * \param chosenDir The directory containing the folder matrix
+     * \return True if the matrix was successfully parsed
+     */
     bool parseFolderMatrix(const QString &chosenDir);
-    /*! this function parse the folder structure */
+    /*!
+     * \brief Returns the folder name for the given folder ID.
+     * \param ID The folder ID
+     * \return The folder name
+     */
     QString getFolderName(const QString &ID);
 
 private:

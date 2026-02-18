@@ -25,16 +25,21 @@ class MAILIMPORTER_EXPORT FilterKMail_maildir : public Filter
 {
 public:
     /*!
+     * \brief Constructor for FilterKMail_maildir.
      */
     FilterKMail_maildir();
     /*!
+     * \brief Destructor for FilterKMail_maildir.
      */
     ~FilterKMail_maildir() override;
 
     /*!
+     * \brief Imports KMail maildir folders.
      */
     void import() override;
     /*!
+     * \brief Imports mails from the specified directory.
+     * \param maildir The maildir directory to import from
      */
     void importMails(const QString &maildir);
 

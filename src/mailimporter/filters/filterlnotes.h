@@ -24,12 +24,16 @@ class MAILIMPORTER_EXPORT FilterLNotes : public Filter
 {
 public:
     /*!
+     * \brief Constructor for FilterLNotes.
      */
     FilterLNotes();
     /*!
+     * \brief Destructor for FilterLNotes.
      */
     ~FilterLNotes() override;
-    /*! Standard import filter... starting line for our import */
+    /*!
+     * \brief Standard import filter, starting line for import.
+     */
     void import() override;
 
 private:

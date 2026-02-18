@@ -14,8 +14,7 @@
 #include <QString>
 namespace MailImporter
 {
-/*!
- * \class MailImporter::FilterImporterAkonadi
+/*! * \class MailImporter::FilterImporterAkonadi
  * \inmodule MailImporterAkonadi
  * \inheaderfile MailImporter/FilterImporterAkonadi
  *

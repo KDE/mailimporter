@@ -24,22 +24,31 @@ class MAILIMPORTER_EXPORT FilterOpera : public Filter
 {
 public:
     /*!
+     * \brief Constructor for FilterOpera.
      */
     FilterOpera();
     /*!
+     * \brief Destructor for FilterOpera.
      */
     ~FilterOpera() override;
 
     /*!
+     * \brief Imports Opera mail account folders.
      */
     void import() override;
     /*!
+     * \brief Imports mails from the specified directory.
+     * \param maildir The mail directory to import from
      */
     void importMails(const QString &maildir);
     /*!
+     * \brief Returns the default settings path for Opera.
+     * \return The default settings path
      */
     [[nodiscard]] static QString defaultSettingsPath();
     /*!
+     * \brief Checks if Opera mail client is found on the system.
+     * \return A status message indicating if Opera was found
      */
     [[nodiscard]] static QString isMailerFound();
 
