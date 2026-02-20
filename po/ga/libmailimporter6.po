@@ -175,12 +175,10 @@ msgid ""
 msgstr ""
 
 #: mailimporter/filters/filterclawsmail.cpp:43
-#, fuzzy, kde-format
-#| msgctxt "define folder name where we will import clawsmail mails"
-#| msgid "ClawsMail-Import"
+#, kde-format
 msgctxt "name of clawsMail application"
 msgid "ClawsMail"
-msgstr "Iompórtáil-ClawsMail"
+msgstr ""
 
 #: mailimporter/filters/filterclawsmail.cpp:97
 #, kde-format
@@ -292,10 +290,9 @@ msgid "Evolution (v3)"
 msgstr ""
 
 #: mailimporter/filters/filtericedove.cpp:16
-#, fuzzy, kde-format
-#| msgid "Import The Bat! Mails and Folder Structure"
+#, kde-format
 msgid "Import Icedove Mails and Folder Structure"
-msgstr "Iompórtáil Ríomhphost agus Struchtúr na bhFillteán ó The Bat!"
+msgstr ""
 
 #: mailimporter/filters/filtericedove.cpp:19
 #, kde-format
@@ -332,10 +329,9 @@ msgid ""
 msgstr ""
 
 #: mailimporter/filters/filterkmail_maildir.cpp:177
-#, fuzzy, kde-format
-#| msgid "Could not import %1"
+#, kde-format
 msgid "Could not import %1, duplicated message"
-msgstr "Ní féidir %1 a iompórtáil"
+msgstr ""
 
 #: mailimporter/filters/filterkmailarchive.cpp:32
 #, kde-format
@@ -376,10 +372,9 @@ msgid "Select KMail Archive File to Import"
 msgstr ""
 
 #: mailimporter/filters/filterkmailarchive.cpp:159
-#, fuzzy, kde-format
-#| msgid "Import KMail Archive File"
+#, kde-format
 msgid "KMail Archive Files "
-msgstr "Iompórtáil Cartlann KMail"
+msgstr ""
 
 #: mailimporter/filters/filterkmailarchive.cpp:161
 #, kde-format
@@ -498,15 +493,11 @@ msgid "1 duplicate message not imported to folder %2 in KMail"
 msgid_plural "%1 duplicate messages not imported to folder %2 in KMail"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
 
 #: mailimporter/filters/filtermailmangzip.cpp:21
-#, fuzzy, kde-format
-#| msgid "Import KMail Archive File"
+#, kde-format
 msgid "Import mailman gzip Files"
-msgstr "Iompórtáil Cartlann KMail"
+msgstr ""
 
 #: mailimporter/filters/filtermailmangzip.cpp:23
 #, kde-format
@@ -522,10 +513,9 @@ msgid "gzip Files"
 msgstr ""
 
 #: mailimporter/filters/filtermailmangzip.cpp:57
-#, fuzzy, kde-format
-#| msgid "Unable to open archive file '%1'"
+#, kde-format
 msgid "Unable to open archive file '%1', skipping"
-msgstr "Ní féidir comhad cartlainne '%1' a oscailt"
+msgstr ""
 
 #: mailimporter/filters/filtermbox.cpp:22
 #, kde-format
@@ -549,10 +539,9 @@ msgid ""
 msgstr ""
 
 #: mailimporter/filters/filtermbox.cpp:40
-#, fuzzy, kde-format
-#| msgid "mbox Files (*)"
+#, kde-format
 msgid "mbox Files"
-msgstr "Comhaid mbox (*)"
+msgstr ""
 
 #: mailimporter/filters/filteroe.cpp:34
 #, kde-format
@@ -720,10 +709,9 @@ msgid "Parsing the folder structure..."
 msgstr "Struchtúr an fhillteáin á pharsáil..."
 
 #: mailimporter/filters/filterseamonkey.cpp:16
-#, fuzzy, kde-format
-#| msgid "Import The Bat! Mails and Folder Structure"
+#, kde-format
 msgid "Import SeaMonkey Mails and Folder Structure"
-msgstr "Iompórtáil Ríomhphost agus Struchtúr na bhFillteán ó The Bat!"
+msgstr ""
 
 #: mailimporter/filters/filterseamonkey.cpp:19
 #, kde-format
@@ -752,12 +740,10 @@ msgid ""
 msgstr ""
 
 #: mailimporter/filters/filtersylpheed.cpp:48
-#, fuzzy, kde-format
-#| msgctxt "define folder name where we will import sylpheed mails"
-#| msgid "Sylpheed-Import"
+#, kde-format
 msgctxt "name of sylpheed application"
 msgid "Sylpheed"
-msgstr "Sylpheed-Import"
+msgstr ""
 
 #: mailimporter/filters/filtersylpheed.cpp:186
 #, kde-format
@@ -917,79 +903,3 @@ msgstr ""
 #, kde-format
 msgid "Unable to retrieve folder for folder path %1."
 msgstr ""
-
-#~ msgid "Importing in progress..."
-#~ msgstr "Iompórtáil ar siúl..."
-
-#~ msgid "Import Outlook Emails"
-#~ msgstr "Iompórtáil Ríomhphost ó Outlook"
-
-#~ msgid "Counting mail..."
-#~ msgstr "Teachtaireachtaí ríomhphoist á n-áireamh..."
-
-#~ msgctxt "'directories' means directories on hard disc, not email-folders."
-#~ msgid "Counting directories..."
-#~ msgstr "Comhadlanna á n-áireamh..."
-
-#~ msgctxt "'folders' means email-folders, not folders on disc."
-#~ msgid "Counting folders..."
-#~ msgstr "Fillteáin ríomhphoist á n-áireamh..."
-
-#~ msgid "<p><i>Written by %1.</i></p>"
-#~ msgstr "<p><i>Scríofa ag %1.</i></p>"
-
-#~ msgid "KMailCVT Import Tool"
-#~ msgstr "Uirlis Iompórtála KMailCVT"
-
-#~ msgid "Step 1: Select Filter"
-#~ msgstr "Céim a haon: Roghnaigh Scagaire"
-
-#~ msgid "Step 2: Importing..."
-#~ msgstr "Céim a dó: Á nIompórtáil"
-
-#~ msgid "Import in progress"
-#~ msgstr "Iompórtáil ar siúl"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Séamus Ó Ciardhuáin,Kevin Scannell"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "seoc@iolfree.ie,kscanne@gmail.com"
-
-#~ msgid "KMailCVT"
-#~ msgstr "KMailCVT"
-
-#~ msgid "Hans Dijkema"
-#~ msgstr "Hans Dijkema"
-
-#~ msgid "Original author"
-#~ msgstr "An chéad údar"
-
-#~ msgid "Danny Kukawka"
-#~ msgstr "Danny Kukawka"
-
-#~ msgid "Maintainer & New filters"
-#~ msgstr "Cothaitheoir agus Scagairí nua"
-
-#~ msgid "Laurence Anderson"
-#~ msgstr "Laurence Anderson"
-
-#~ msgid "New GUI & cleanups"
-#~ msgstr "Comhéadan nua agus glanadh"
-
-#~ msgid "Daniel Molkentin"
-#~ msgstr "Daniel Molkentin"
-
-#~ msgid "Matthew James Leach"
-#~ msgstr "Matthew James Leach"
-
-#~ msgid "Port to Akonadi"
-#~ msgstr "Leagan Akonadi"
-
-#~ msgid "Cannot make folder %1 in KMail"
-#~ msgstr "Ní féidir fillteán %1 a chruthú i KMail"
-
-#~ msgid "KMail Import Filters"
-#~ msgstr "Scagairí Iompórtála KMail"
