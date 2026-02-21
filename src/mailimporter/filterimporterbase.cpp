@@ -18,21 +18,19 @@ FilterImporterBase::~FilterImporterBase()
 {
 }
 
-bool FilterImporterBase::importMessage(const QString &folderName, const QString &msgPath, bool duplicateCheck, const MessageStatus &status)
+bool FilterImporterBase::importMessage([[maybe_unused]] const QString &folderName,
+                                       [[maybe_unused]] const QString &msgPath,
+                                       [[maybe_unused]] bool duplicateCheck,
+                                       [[maybe_unused]] const MessageStatus &status)
 {
-    Q_UNUSED(folderName)
-    Q_UNUSED(msgPath)
-    Q_UNUSED(duplicateCheck)
-    Q_UNUSED(status)
     return false;
 }
 
-bool FilterImporterBase::importMessage(const KArchiveFile *file, const QString &folderPath, int &nbTotal, int &fileDone)
+bool FilterImporterBase::importMessage([[maybe_unused]] const KArchiveFile *file,
+                                       [[maybe_unused]] const QString &folderPath,
+                                       [[maybe_unused]] int &nbTotal,
+                                       [[maybe_unused]] int &fileDone)
 {
-    Q_UNUSED(file)
-    Q_UNUSED(folderPath)
-    Q_UNUSED(nbTotal)
-    Q_UNUSED(fileDone)
     return false;
 }
 

@@ -16,53 +16,44 @@ FilterInfoGui::~FilterInfoGui()
 {
 }
 
-void FilterInfoGui::setStatusMessage(const QString &status)
+void FilterInfoGui::setStatusMessage([[maybe_unused]] const QString &status)
 {
-    Q_UNUSED(status)
 }
 
-void FilterInfoGui::setFrom(const QString &from)
+void FilterInfoGui::setFrom([[maybe_unused]] const QString &from)
 {
-    Q_UNUSED(from)
 }
 
-void FilterInfoGui::setTo(const QString &to)
+void FilterInfoGui::setTo([[maybe_unused]] const QString &to)
 {
-    Q_UNUSED(to)
 }
 
-void FilterInfoGui::setCurrent(const QString &current)
+void FilterInfoGui::setCurrent([[maybe_unused]] const QString &current)
 {
-    Q_UNUSED(current)
 }
 
-void FilterInfoGui::setCurrent(int percent)
+void FilterInfoGui::setCurrent([[maybe_unused]] int percent)
 {
-    Q_UNUSED(percent)
 }
 
-void FilterInfoGui::setOverall(int percent)
+void FilterInfoGui::setOverall([[maybe_unused]] int percent)
 {
-    Q_UNUSED(percent)
 }
 
-void FilterInfoGui::addErrorLogEntry(const QString &log)
+void FilterInfoGui::addErrorLogEntry([[maybe_unused]] const QString &log)
 {
-    Q_UNUSED(log)
 }
 
-void FilterInfoGui::addInfoLogEntry(const QString &log)
+void FilterInfoGui::addInfoLogEntry([[maybe_unused]] const QString &log)
 {
-    Q_UNUSED(log)
 }
 
 void FilterInfoGui::clear()
 {
 }
 
-void FilterInfoGui::alert(const QString &message)
+void FilterInfoGui::alert([[maybe_unused]] const QString &message)
 {
-    Q_UNUSED(message)
 }
 
 QWidget *FilterInfoGui::parent() const
