@@ -76,7 +76,6 @@ include(ECMDeprecationSettings)
 include(ECMFeatureSummary)
 include(ECMAddTests)
 
-set(MAILIMPORTER_LIB ${PIM_VERSION})
 include(ECMGenerateQDoc)
 
 include(ECMCheckOutboundLicense)
