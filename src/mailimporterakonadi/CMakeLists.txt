@@ -55,7 +55,7 @@ target_link_libraries(
         KPim6::MailImporter
         KPim6::AkonadiCore
     PRIVATE
-        KPim6::Mime
+        KF6::Mime
         KPim6::AkonadiMime
         KF6::I18n
 )
