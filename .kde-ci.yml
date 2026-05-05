@@ -7,7 +7,7 @@ Dependencies:
     'frameworks/extra-cmake-modules': '@latest-kf6'
     'pim/akonadi': '@same'
     'pim/akonadi-mime': '@same'
-    'pim/kmime': '@same'
+    'frameworks/kmime': '@same'
     'pim/pimcommon': '@same'
 
 Options:
