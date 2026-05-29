@@ -114,12 +114,12 @@ target_link_libraries(
     KPim6MailImporter
     PUBLIC
         KF6::Archive
+        Qt::Widgets
     PRIVATE
         KPim6::PimCommon
         KF6::I18n
         KF6::ConfigCore
         Qt::Xml
-        Qt::Widgets
 )
 
 set_target_properties(
