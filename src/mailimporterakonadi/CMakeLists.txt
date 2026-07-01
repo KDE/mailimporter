@@ -126,3 +126,21 @@ install(
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/MailImporterAkonadi
     COMPONENT Devel
 )
+
+ecm_add_installed_library_check(KPim6MailImporterAkonadi
+    PACKAGE_NAME "KPim6MailImporterAkonadi"
+    PACKAGE_VERSION ${MAILIMPORTERAKONADI_VERSION}
+    PACKAGE_TARGET_NAMESPACE "KPim6::"
+)
+
+ecm_installed_library_check_include_strings(KPim6MailImporterAkonadi
+    HEADERS
+    ${MailImporter_Akonadi_HEADERS}
+    PREFIX mailimporterakonadi
+)
+
+ecm_installed_library_check_include_strings(KPim6MailImporterAkonadi
+   HEADERS
+   ${MailImporter_AkonadiCamelCase_HEADERS}
+    PREFIX MailImporterAkonadi
+)

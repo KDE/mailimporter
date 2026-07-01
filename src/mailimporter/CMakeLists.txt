@@ -227,3 +227,22 @@ install(
     COMPONENT Devel
 )
 ecm_generate_qdoc(KPim6MailImporter mailimporter.qdocconf)
+
+ecm_add_installed_library_check(KPim6MailImporter
+    PACKAGE_NAME "KPim6MailImporter"
+    PACKAGE_VERSION ${MAILIMPORTER_VERSION}
+    PACKAGE_TARGET_NAMESPACE "KPim6::"
+)
+
+ecm_installed_library_check_include_strings(KPim6MailImporter
+    HEADERS                ${MailImporter_HEADERS}
+    ${MailImporter_Filters_HEADERS}
+    PREFIX mailimporter
+)
+
+ecm_installed_library_check_include_strings(KPim6MailImporter
+   HEADERS
+   ${MailImporter_CamelCase_HEADERS}
+   ${MailImporter_FiltersCamelCase_HEADERS}
+    PREFIX MailImporter
+)
