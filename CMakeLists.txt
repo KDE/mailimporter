@@ -15,6 +15,12 @@ include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 
+file(
+    GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES
+    src/*.cpp
+    src/*.h
+)
+
 if(EXISTS "${PROJECT_SOURCE_DIR}/.git/")
     set(GIT_SOURCE_TARBALL TRUE)
 endif()
@@ -73,13 +79,6 @@ endif()
 include(ECMGenerateExportHeader)
 include(ECMSetupVersion)
 include(ECMGenerateHeaders)
-
-file(
-    GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES
-    src/*.cpp
-    src/*.h
-)
-
 include(ECMQtDeclareLoggingCategory)
 include(ECMDeprecationSettings)
 include(ECMFeatureSummary)
