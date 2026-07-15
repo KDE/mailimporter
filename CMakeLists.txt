@@ -95,7 +95,6 @@ file(
 ecm_check_outbound_license(LICENSES GPL-2.0-only  FILES ${ALL_SOURCE_FILES})
 
 set(AKONADIMIME_LIB_VERSION "6.7.40")
-set(KMIME_LIB_VERSION "6.7.40")
 set(AKONADI_VERSION "6.7.40")
 set(PIMCOMMON_LIB_VERSION "6.7.40")
 
@@ -117,10 +116,6 @@ find_package(KF6I18n ${KF_MIN_VERSION} CONFIG REQUIRED)
 
 find_package(KPim6Akonadi ${AKONADI_VERSION} CONFIG REQUIRED)
 find_package(KF6Mime ${KF_MIN_VERSION} CONFIG)
-if(NOT TARGET KF6::Mime)
-    find_package(KPim6Mime ${KMIME_LIB_VERSION} CONFIG REQUIRED)
-    add_library(KF6::Mime ALIAS KPim6::Mime)
-endif()
 find_package(KPim6AkonadiMime ${AKONADIMIME_LIB_VERSION} CONFIG REQUIRED)
 find_package(KPim6PimCommon ${PIMCOMMON_LIB_VERSION} CONFIG REQUIRED)
 ########### Targets ###########
