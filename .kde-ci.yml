@@ -13,3 +13,4 @@ Dependencies:
 Options:
  require-passing-tests-on: ['Linux', 'FreeBSD', 'Windows']
  enable-lsan: True
+ run-installed-library-check: true
