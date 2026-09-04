@@ -23,7 +23,7 @@ QStringList OtherMailerUtil::isMailerFound()
     }
     directory = OtherMailerUtil::nylasMailDefaultPath();
     if (directory.exists()) {
-        lst << i18nc("name of geary application", "Geary");
+        lst << i18nc("name of nylas application", "Nylas");
     }
     return lst;
 }
