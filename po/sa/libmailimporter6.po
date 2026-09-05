@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-19 00:44+0000\n"
+"POT-Creation-Date: 2026-09-05 00:47+0000\n"
 "PO-Revision-Date: 2024-12-25 19:45+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -886,11 +886,17 @@ msgctxt "name of trojira application"
 msgid "Trojita"
 msgstr "त्रिमूर्ति"
 
-#: mailimporter/othermailerutil.cpp:22 mailimporter/othermailerutil.cpp:26
+#: mailimporter/othermailerutil.cpp:22
 #, kde-format
 msgctxt "name of geary application"
 msgid "Geary"
 msgstr "गेयरी"
+
+#: mailimporter/othermailerutil.cpp:26
+#, kde-format
+msgctxt "name of nylas application"
+msgid "Nylas"
+msgstr ""
 
 #: mailimporter/selectthunderbirdprofilewidget.cpp:23
 #, kde-format
