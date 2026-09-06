@@ -1,26 +1,26 @@
 # Translation of libmailimporter6.po to Catalan (Valencian)
-# Copyright (C) 2002-2021 This_file_is_part_of_KDE
+# Copyright (C) 2002-2026 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# SPDX-FileCopyrightText: 2002, 2003, 2013, 2014, 2015, 2016, 2017, 2019, 2020 Antoni Bella Pérez <antonibella5@yahoo.com>
-# SPDX-FileCopyrightText: 2004, 2005 Albert Astals Cid <aacid@kde.org>
+# SPDX-FileCopyrightText: 2002-2003, 2013-2017, 2019-2020 Antoni Bella Pérez <antonibella5@yahoo.com>
+# SPDX-FileCopyrightText: 2004-2005 Albert Astals Cid <aacid@kde.org>
 # SPDX-FileCopyrightText: 2005 David Gil <al016950@yahoo.es>
-# SPDX-FileCopyrightText: 2006, 2007, 2010, 2011, 2012, 2014, 2015, 2017, 2021 Josep M. Ferrer <txemaq@gmail.com>
+# SPDX-FileCopyrightText: 2006-2007, 2010-2012, 2014-2015, 2017, 2021, 2026 Josep M. Ferrer <txemaq@gmail.com>
 # SPDX-FileCopyrightText: 2009 Manuel Tortosa Moreno <manutortosa@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: mailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-05 00:47+0000\n"
-"PO-Revision-Date: 2021-09-05 12:35+0200\n"
+"PO-Revision-Date: 2026-09-05 11:46+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 20.12.0\n"
+"X-Generator: Lokalize 25.04.0\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
 
@@ -921,7 +921,7 @@ msgstr "Geary"
 #, kde-format
 msgctxt "name of nylas application"
 msgid "Nylas"
-msgstr ""
+msgstr "Nylas"
 
 #: mailimporter/selectthunderbirdprofilewidget.cpp:23
 #, kde-format
