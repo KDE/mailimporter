@@ -2,7 +2,7 @@
 # Copyright (C) 2002,2003, 2004, 2005, 2006, 2007, 2009, 2010 Free Software Foundation, Inc.
 # Alessandro Astarita <aleast@capri.it>, 2002,2003, 2004, 2005, 2007.
 # Alessandro Pasotti <a.pasotti@itopen.it>, 2006.
-# Luigi Toscano <luigi.toscano@tiscali.it>, 2012, 2013, 2015, 2017, 2019.
+# SPDX-FileCopyrightText: 2012-2013, 2015, 2017, 2019, 2026 Luigi Toscano <luigi.toscano@tiscali.it>
 #
 msgid ""
 msgstr ""
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 19.08.1\n"
+"X-Generator: Lokalize 26.04.0\n"
 
 #: mailimporter/filters/filterbalsa.cpp:23
 #, kde-format
