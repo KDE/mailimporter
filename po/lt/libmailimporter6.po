@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-05 00:47+0000\n"
-"PO-Revision-Date: 2026-07-24 21:19+0300\n"
+"PO-Revision-Date: 2026-09-07 12:55+0300\n"
 "Last-Translator: Liudas Ališauskas <liudas.alisauskas@gmail.com>\n"
 "Language-Team: Lithuanian <kde-i18n-doc@kde.org>\n"
 "Language: lt\n"
@@ -916,7 +916,7 @@ msgstr "Geary"
 #, kde-format
 msgctxt "name of nylas application"
 msgid "Nylas"
-msgstr ""
+msgstr "Nylas"
 
 #: mailimporter/selectthunderbirdprofilewidget.cpp:23
 #, kde-format
