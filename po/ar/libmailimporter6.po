@@ -1,14 +1,14 @@
 # translation of kmailcvt.po to
 # Language AR translations for PACKAGE package.
 # Automatically generated, 2007.
-# SPDX-FileCopyrightText: 2022, 2024, 2025 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
+# SPDX-FileCopyrightText: 2022, 2024, 2025, 2026 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
 # Youssef Chahibi <chahibi@gmail.com>, 2007.
 msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-05 00:47+0000\n"
-"PO-Revision-Date: 2025-08-14 09:47+0400\n"
+"PO-Revision-Date: 2026-09-09 18:14+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #: mailimporter/filters/filterbalsa.cpp:23
 #, kde-format
@@ -911,7 +911,7 @@ msgstr "غيري"
 #, kde-format
 msgctxt "name of nylas application"
 msgid "Nylas"
-msgstr ""
+msgstr "Nylas"
 
 #: mailimporter/selectthunderbirdprofilewidget.cpp:23
 #, kde-format
