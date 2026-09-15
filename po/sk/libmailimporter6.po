@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: libmailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-05 00:47+0000\n"
-"PO-Revision-Date: 2022-04-09 19:27+0200\n"
-"Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
+"PO-Revision-Date: 2026-09-14 20:10+0200\n"
+"Last-Translator: Roman Paholík <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
@@ -909,7 +909,7 @@ msgstr "Geary"
 #, kde-format
 msgctxt "name of nylas application"
 msgid "Nylas"
-msgstr ""
+msgstr "Nylas"
 
 #: mailimporter/selectthunderbirdprofilewidget.cpp:23
 #, kde-format
