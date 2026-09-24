@@ -12,9 +12,9 @@ FilterImporterTest::FilterImporterTest(MailImporter::FilterInfo *info)
 {
 }
 
-bool FilterImporterTest::importMessage([[maybe_unused]] const QString &folderName,
-                                       [[maybe_unused]] const QString &msgPath,
-                                       [[maybe_unused]] bool duplicateCheck,
+bool FilterImporterTest::importMessage(const QString &folderName,
+                                       const QString &msgPath,
+                                       bool duplicateCheck,
                                        [[maybe_unused]] const MailImporter::MessageStatus &status)
 {
     qDebug() << "FilterImporterTest::importMessage folderName " << folderName << " msgPath " << msgPath << " duplicateCheck " << duplicateCheck;
