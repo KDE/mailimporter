@@ -1,6 +1,6 @@
 # translation for libmailimport.po to Euskara/Basque (eu).
 # Copyright (C) 2003, 2005, 2007 Free Software Foundation, Inc.
-# Copyright (C) 2008-2022 This file is copyright:
+# Copyright (C) 2008-2026 This file is copyright:
 # This file is distributed under the same license as the mailimporter package.
 # KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>.
 #
@@ -9,7 +9,7 @@
 # Ion Gaztañaga <ion_g_m@hotmail.com>, 2005.
 # Ion Gaztañaga <igaztanaga@gmail.com>, 2005.
 # Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2007.
-# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2010, 2022.
+# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2010, 2022, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: mailimporter\n"
