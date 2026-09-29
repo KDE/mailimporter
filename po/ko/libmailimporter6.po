@@ -2,7 +2,7 @@
 # Korean messages for kmailcvt.
 # Copyright (C) 2001,2002,2003,2004, 2007 Free Software Foundation, Inc.
 # Louis JANG <louis@mizi.com>, 2001.
-# Shinjo Park <kde@peremen.name>, 2007, 2011, 2013, 2014, 2015, 2017, 2020, 2022.
+# SPDX-FileCopyrightText: 2007, 2011, 2013, 2014, 2015, 2017, 2020, 2022, 2026 Shinjo Park <kde@peremen.name>
 #
 msgid ""
 msgstr ""
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #: mailimporter/filters/filterbalsa.cpp:23
 #, kde-format
