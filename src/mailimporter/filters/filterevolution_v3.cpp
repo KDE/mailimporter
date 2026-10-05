@@ -5,11 +5,11 @@
 */
 
 #include "filterevolution_v3.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include <KLocalizedString>
 #include <QFileDialog>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace MailImporter;
 
 class MailImporter::FilterEvolution_v3Private

@@ -5,11 +5,12 @@
 */
 
 #include "filterthebattest.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "filterimportertest.h"
 #include <MailImporter/FilterTheBat>
 #include <QTest>
+
+using namespace Qt::Literals::StringLiterals;
 
 FilterTheBatTest::FilterTheBatTest(QObject *parent)
     : QObject(parent)

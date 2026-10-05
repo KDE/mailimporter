@@ -5,11 +5,12 @@
 */
 
 #include "filtermailmangziptest.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "filterimportertest.h"
 #include <MailImporter/FilterMailmanGzip>
 #include <QTest>
+
+using namespace Qt::Literals::StringLiterals;
 
 FilterMAilmangzipTest::FilterMAilmangzipTest(QObject *parent)
     : QObject(parent)

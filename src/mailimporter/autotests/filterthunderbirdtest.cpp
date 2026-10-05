@@ -5,11 +5,12 @@
 */
 
 #include "filterthunderbirdtest.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "filterimportertest.h"
 #include "filters/filterthunderbird.h"
 #include <QTest>
+
+using namespace Qt::Literals::StringLiterals;
 
 class FilterThunderBirdAbstract : public MailImporter::FilterThunderbird
 {

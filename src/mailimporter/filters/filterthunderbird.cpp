@@ -7,7 +7,6 @@
 */
 
 #include "filterthunderbird.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "selectthunderbirdprofilewidget.h"
 #include <KConfig>
@@ -19,6 +18,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <QRegularExpression>
 #include <QTemporaryFile>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace MailImporter;
 
 /** Default constructor. */

@@ -5,7 +5,6 @@
 */
 
 #include "filterkmailarchive.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include <KLocalizedString>
 #include <KTar>
@@ -20,6 +19,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <QMimeDatabase>
 #include <QMimeType>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace MailImporter;
 
 class MailImporter::FilterKMailArchivePrivate

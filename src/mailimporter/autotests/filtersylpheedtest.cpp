@@ -5,12 +5,13 @@
 */
 
 #include "filtersylpheedtest.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "filterimportertest.h"
 #include "filterimportertestutil.h"
 #include <MailImporter/FilterSylpheed>
 #include <QTest>
+
+using namespace Qt::Literals::StringLiterals;
 
 FilterSylpheedTest::FilterSylpheedTest(QObject *parent)
     : QObject(parent)

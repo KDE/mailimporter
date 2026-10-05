@@ -5,11 +5,12 @@
 */
 
 #include "filtermboxtest.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "filterimportertest.h"
 #include <MailImporter/FilterMBox>
 #include <QTest>
+
+using namespace Qt::Literals::StringLiterals;
 
 FilterMBoxTest::FilterMBoxTest(QObject *parent)
     : QObject(parent)

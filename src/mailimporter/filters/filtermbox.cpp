@@ -7,7 +7,6 @@
 */
 
 #include "filtermbox.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "mailimporter_debug.h"
 
@@ -16,6 +15,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <QFileDialog>
 #include <QTemporaryFile>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace MailImporter;
 
 FilterMBox::FilterMBox()

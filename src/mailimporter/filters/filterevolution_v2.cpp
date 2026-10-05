@@ -10,12 +10,12 @@
 */
 
 #include "filterevolution_v2.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include <KLocalizedString>
 #include <QFileDialog>
 #include <QTemporaryFile>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace MailImporter;
 
 /** Default constructor. */

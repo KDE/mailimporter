@@ -10,7 +10,6 @@
 // This filter was created by looking at libdbx  &liboe
 
 #include "filteroe.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "mailimporter_debug.h"
 
@@ -18,6 +17,8 @@ using namespace Qt::Literals::StringLiterals;
 #include <QFileDialog>
 
 #include <QTemporaryFile>
+
+using namespace Qt::Literals::StringLiterals;
 
 #define OE4_SIG_1 0x36464d4a
 #define OE4_SIG_2 0x00010003

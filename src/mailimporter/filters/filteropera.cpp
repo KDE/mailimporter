@@ -7,13 +7,13 @@
 */
 
 #include "filteropera.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include <KLocalizedString>
 
 #include <QFileDialog>
 #include <QTemporaryFile>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace MailImporter;
 
 FilterOpera::FilterOpera()

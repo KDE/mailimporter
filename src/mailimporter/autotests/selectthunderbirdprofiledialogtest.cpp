@@ -5,12 +5,13 @@
 */
 
 #include "selectthunderbirdprofiledialogtest.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "../selectthunderbirdprofilewidget.h"
 
 #include <QDialogButtonBox>
 #include <QTest>
+
+using namespace Qt::Literals::StringLiterals;
 
 SelectThunderbirdProfileDialogTest::SelectThunderbirdProfileDialogTest(QObject *parent)
     : QObject(parent)

@@ -5,11 +5,12 @@
 */
 
 #include "filterlnotestest.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "filterimportertest.h"
 #include "filters/filterlnotes.h"
 #include <QTest>
+
+using namespace Qt::Literals::StringLiterals;
 
 FilterLnotesTest::FilterLnotesTest(QObject *parent)
     : QObject(parent)

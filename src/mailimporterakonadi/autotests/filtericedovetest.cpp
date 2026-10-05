@@ -5,11 +5,12 @@
 */
 
 #include "filtericedovetest.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "filterimportertest.h"
 #include "filters/filtericedove.h"
 #include <QTest>
+
+using namespace Qt::Literals::StringLiterals;
 
 class FilterIcecoveAbstract : public MailImporter::FilterIcedove
 {

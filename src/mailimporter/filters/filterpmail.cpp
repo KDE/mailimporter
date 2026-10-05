@@ -8,7 +8,6 @@
 */
 
 #include "filterpmail.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "mailimporter_debug.h"
 
@@ -18,6 +17,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <QRegularExpression>
 #include <QTemporaryFile>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace MailImporter;
 
 FilterPMail::FilterPMail()

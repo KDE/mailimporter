@@ -5,9 +5,9 @@
 */
 
 #include "filtericedove.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include <KLocalizedString>
+using namespace Qt::Literals::StringLiterals;
 using namespace MailImporter;
 
 FilterIcedove::FilterIcedove()

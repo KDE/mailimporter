@@ -8,7 +8,6 @@
 */
 
 #include "filtersylpheed.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "mailimporter_debug.h"
 #include <KLocalizedString>
@@ -16,6 +15,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <QDomElement>
 #include <QFileDialog>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace MailImporter;
 
 class MailImporter::FilterSylpheedPrivate

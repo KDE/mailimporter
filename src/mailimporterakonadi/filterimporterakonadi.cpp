@@ -5,7 +5,6 @@
 */
 
 #include "filterimporterakonadi.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "mailimporterakonadi_debug.h"
 #include <Akonadi/CollectionCreateJob>
@@ -22,6 +21,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <QScopedPointer>
 #include <QUrl>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace MailImporter;
 
 FilterImporterAkonadi::FilterImporterAkonadi(MailImporter::FilterInfo *info)

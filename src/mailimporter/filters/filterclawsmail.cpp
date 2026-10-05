@@ -7,13 +7,13 @@
 /* based on filter_sylpheed filter */
 
 #include "filterclawsmail.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "mailimporter_debug.h"
 #include <KLocalizedString>
 #include <QDomDocument>
 #include <QDomElement>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace MailImporter;
 
 /** Default constructor. */

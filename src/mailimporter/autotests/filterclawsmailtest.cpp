@@ -5,11 +5,12 @@
 */
 
 #include "filterclawsmailtest.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "filterimportertest.h"
 #include <MailImporter/FilterClawsMail>
 #include <QTest>
+
+using namespace Qt::Literals::StringLiterals;
 
 FilterClawsMailTest::FilterClawsMailTest(QObject *parent)
     : QObject(parent)

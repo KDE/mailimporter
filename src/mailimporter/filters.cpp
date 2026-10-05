@@ -9,9 +9,11 @@
 
 // KDE Includes
 #include "filters.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "mailimporter_debug.h"
+
+using namespace Qt::Literals::StringLiterals;
+
 //////////////////////////////////////////////////////////////////////////////////
 //
 // The generic filter class

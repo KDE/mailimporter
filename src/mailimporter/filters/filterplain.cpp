@@ -7,12 +7,12 @@
 */
 
 #include "filterplain.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include <KLocalizedString>
 
 #include <QFileDialog>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace MailImporter;
 
 FilterPlain::FilterPlain()
