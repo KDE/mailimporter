@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-09-05 00:47+0000\n"
+"POT-Creation-Date: 2026-10-06 00:48+0000\n"
 "PO-Revision-Date: 2013-09-18 05:27+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -47,7 +47,7 @@ msgstr ""
 #: mailimporter/filters/filterevolution_v2.cpp:86
 #: mailimporter/filters/filterevolution_v3.cpp:87
 #: mailimporter/filters/filterkmail_maildir.cpp:77
-#: mailimporter/filters/filteroe.cpp:60
+#: mailimporter/filters/filteroe.cpp:61
 #: mailimporter/filters/filteropera.cpp:175
 #: mailimporter/filters/filterplain.cpp:42
 #: mailimporter/filters/filterpmail.cpp:47
@@ -112,7 +112,7 @@ msgstr[0] "%1 қайталанатын хат импортталған жоқ"
 #: mailimporter/filters/filtermailapp.cpp:138
 #: mailimporter/filters/filtermailmangzip.cpp:144
 #: mailimporter/filters/filtermbox.cpp:143
-#: mailimporter/filters/filteroe.cpp:110
+#: mailimporter/filters/filteroe.cpp:111
 #: mailimporter/filters/filteropera.cpp:201
 #: mailimporter/filters/filterplain.cpp:78
 #: mailimporter/filters/filtersylpheed.cpp:150
@@ -147,7 +147,7 @@ msgstr "%1 қапшығын импорттау..."
 #: mailimporter/filters/filtermailapp.cpp:109
 #: mailimporter/filters/filtermailmangzip.cpp:116
 #: mailimporter/filters/filtermbox.cpp:115
-#: mailimporter/filters/filteroe.cpp:214 mailimporter/filters/filteroe.cpp:390
+#: mailimporter/filters/filteroe.cpp:215 mailimporter/filters/filteroe.cpp:391
 #: mailimporter/filters/filteropera.cpp:125
 #: mailimporter/filters/filterplain.cpp:63
 #: mailimporter/filters/filterpmail.cpp:114
@@ -616,17 +616,17 @@ msgstr ""
 msgid "mbox Files"
 msgstr "mbox файлдары (*)"
 
-#: mailimporter/filters/filteroe.cpp:34
+#: mailimporter/filters/filteroe.cpp:35
 #, kde-format
 msgid "Import Outlook Express Emails"
 msgstr "Outlook Express эл.поштасын импорттау"
 
-#: mailimporter/filters/filteroe.cpp:35
+#: mailimporter/filters/filteroe.cpp:36
 #, kde-format
 msgid "Laurence Anderson <br>( Filter enhanced by Danny Kukawka )</p>"
 msgstr "Laurence Anderson <br>( Сүзгіні жетелеген - Danny Kukawka )</p>"
 
-#: mailimporter/filters/filteroe.cpp:36
+#: mailimporter/filters/filteroe.cpp:37
 #, kde-format
 msgid ""
 "<p><b>Outlook Express 4/5/6 import filter</b></p><p>You will need to locate "
@@ -645,37 +645,37 @@ msgstr ""
 "құрылымы қайталауға келсе, Outlook Express 5 пен 6-ның қапшықтары \"OE-Import"
 "\" деген қапшықта сақталады.</p>"
 
-#: mailimporter/filters/filteroe.cpp:68
+#: mailimporter/filters/filteroe.cpp:69
 #, kde-format
 msgid "No Outlook Express mailboxes found in directory %1."
 msgstr "%1 каталогы Outlook Express пошта жәшіктері табылмады."
 
-#: mailimporter/filters/filteroe.cpp:84
+#: mailimporter/filters/filteroe.cpp:85
 #, kde-format
 msgid "Import folder structure..."
 msgstr "Қапшықтар құрылымын импорттау..."
 
-#: mailimporter/filters/filteroe.cpp:108
+#: mailimporter/filters/filteroe.cpp:109
 #, kde-format
 msgid "Finished importing Outlook Express emails"
 msgstr "Outlook Express эл.поштасы имортталды"
 
-#: mailimporter/filters/filteroe.cpp:128
+#: mailimporter/filters/filteroe.cpp:129
 #, kde-format
 msgid "Unable to open mailbox %1"
 msgstr "%1 пошта жәшігінің файлы ашылмады"
 
-#: mailimporter/filters/filteroe.cpp:140
+#: mailimporter/filters/filteroe.cpp:141
 #, kde-format
 msgid "Importing OE4 Mailbox %1"
 msgstr "OE4 %1 пошта жәшігін импорттау"
 
-#: mailimporter/filters/filteroe.cpp:157
+#: mailimporter/filters/filteroe.cpp:158
 #, kde-format
 msgid "Importing OE5+ Mailbox %1"
 msgstr "OE5+ %1 пошта жәшігін импорттау"
 
-#: mailimporter/filters/filteroe.cpp:163
+#: mailimporter/filters/filteroe.cpp:164
 #, kde-format
 msgid "Importing OE5+ Folder file %1"
 msgstr "OE5+ %1 қапшық файлын импорттау"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-09-05 00:47+0000\n"
+"POT-Creation-Date: 2026-10-06 00:48+0000\n"
 "PO-Revision-Date: 2024-03-27 21:53+0100\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: Asturian <alministradores@softastur.org>\n"
@@ -41,7 +41,7 @@ msgstr ""
 #: mailimporter/filters/filterevolution_v2.cpp:86
 #: mailimporter/filters/filterevolution_v3.cpp:87
 #: mailimporter/filters/filterkmail_maildir.cpp:77
-#: mailimporter/filters/filteroe.cpp:60
+#: mailimporter/filters/filteroe.cpp:61
 #: mailimporter/filters/filteropera.cpp:175
 #: mailimporter/filters/filterplain.cpp:42
 #: mailimporter/filters/filterpmail.cpp:47
@@ -107,7 +107,7 @@ msgstr[1] ""
 #: mailimporter/filters/filtermailapp.cpp:138
 #: mailimporter/filters/filtermailmangzip.cpp:144
 #: mailimporter/filters/filtermbox.cpp:143
-#: mailimporter/filters/filteroe.cpp:110
+#: mailimporter/filters/filteroe.cpp:111
 #: mailimporter/filters/filteropera.cpp:201
 #: mailimporter/filters/filterplain.cpp:78
 #: mailimporter/filters/filtersylpheed.cpp:150
@@ -142,7 +142,7 @@ msgstr ""
 #: mailimporter/filters/filtermailapp.cpp:109
 #: mailimporter/filters/filtermailmangzip.cpp:116
 #: mailimporter/filters/filtermbox.cpp:115
-#: mailimporter/filters/filteroe.cpp:214 mailimporter/filters/filteroe.cpp:390
+#: mailimporter/filters/filteroe.cpp:215 mailimporter/filters/filteroe.cpp:391
 #: mailimporter/filters/filteropera.cpp:125
 #: mailimporter/filters/filterplain.cpp:63
 #: mailimporter/filters/filterpmail.cpp:114
@@ -533,17 +533,17 @@ msgstr ""
 msgid "mbox Files"
 msgstr ""
 
-#: mailimporter/filters/filteroe.cpp:34
+#: mailimporter/filters/filteroe.cpp:35
 #, kde-format
 msgid "Import Outlook Express Emails"
 msgstr ""
 
-#: mailimporter/filters/filteroe.cpp:35
+#: mailimporter/filters/filteroe.cpp:36
 #, kde-format
 msgid "Laurence Anderson <br>( Filter enhanced by Danny Kukawka )</p>"
 msgstr ""
 
-#: mailimporter/filters/filteroe.cpp:36
+#: mailimporter/filters/filteroe.cpp:37
 #, kde-format
 msgid ""
 "<p><b>Outlook Express 4/5/6 import filter</b></p><p>You will need to locate "
@@ -555,37 +555,37 @@ msgid ""
 "your local folder.</p>"
 msgstr ""
 
-#: mailimporter/filters/filteroe.cpp:68
+#: mailimporter/filters/filteroe.cpp:69
 #, kde-format
 msgid "No Outlook Express mailboxes found in directory %1."
 msgstr ""
 
-#: mailimporter/filters/filteroe.cpp:84
+#: mailimporter/filters/filteroe.cpp:85
 #, kde-format
 msgid "Import folder structure..."
 msgstr ""
 
-#: mailimporter/filters/filteroe.cpp:108
+#: mailimporter/filters/filteroe.cpp:109
 #, kde-format
 msgid "Finished importing Outlook Express emails"
 msgstr ""
 
-#: mailimporter/filters/filteroe.cpp:128
+#: mailimporter/filters/filteroe.cpp:129
 #, kde-format
 msgid "Unable to open mailbox %1"
 msgstr ""
 
-#: mailimporter/filters/filteroe.cpp:140
+#: mailimporter/filters/filteroe.cpp:141
 #, kde-format
 msgid "Importing OE4 Mailbox %1"
 msgstr ""
 
-#: mailimporter/filters/filteroe.cpp:157
+#: mailimporter/filters/filteroe.cpp:158
 #, kde-format
 msgid "Importing OE5+ Mailbox %1"
 msgstr ""
 
-#: mailimporter/filters/filteroe.cpp:163
+#: mailimporter/filters/filteroe.cpp:164
 #, kde-format
 msgid "Importing OE5+ Folder file %1"
 msgstr ""
