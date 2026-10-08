@@ -17,7 +17,6 @@
 #include <QFileDialog>
 #include <QTemporaryFile>
 
-using namespace Qt::Literals::StringLiterals;
 using namespace MailImporter;
 
 class MailImporter::FilterMailAppPrivate
