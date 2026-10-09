@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailimporter6\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-06 00:48+0000\n"
+"POT-Creation-Date: 2026-10-09 00:48+0000\n"
 "PO-Revision-Date: 2020-01-08 09:21+0100\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -78,7 +78,7 @@ msgstr "Keine Dateien zum Importieren gefunden."
 #: mailimporter/filters/filterevolution_v2.cpp:128
 #: mailimporter/filters/filterevolution_v3.cpp:107
 #: mailimporter/filters/filterkmail_maildir.cpp:96
-#: mailimporter/filters/filtermailapp.cpp:126
+#: mailimporter/filters/filtermailapp.cpp:125
 #: mailimporter/filters/filtermailmangzip.cpp:136
 #: mailimporter/filters/filtermbox.cpp:135
 #: mailimporter/filters/filteropera.cpp:142
@@ -111,7 +111,7 @@ msgstr[1] "%1 doppelte Nachrichten wurden nicht importiert."
 #: mailimporter/filters/filterevolution_v2.cpp:133
 #: mailimporter/filters/filterevolution_v3.cpp:114
 #: mailimporter/filters/filterkmail_maildir.cpp:102
-#: mailimporter/filters/filtermailapp.cpp:138
+#: mailimporter/filters/filtermailapp.cpp:137
 #: mailimporter/filters/filtermailmangzip.cpp:144
 #: mailimporter/filters/filtermbox.cpp:143
 #: mailimporter/filters/filteroe.cpp:111
@@ -146,7 +146,7 @@ msgstr "Import von Ordner %1 ..."
 #: mailimporter/filters/filterevolution_v3.cpp:193
 #: mailimporter/filters/filterlnotes.cpp:128
 #: mailimporter/filters/filterlnotes.cpp:159
-#: mailimporter/filters/filtermailapp.cpp:109
+#: mailimporter/filters/filtermailapp.cpp:108
 #: mailimporter/filters/filtermailmangzip.cpp:116
 #: mailimporter/filters/filtermbox.cpp:115
 #: mailimporter/filters/filteroe.cpp:215 mailimporter/filters/filteroe.cpp:391
@@ -227,7 +227,7 @@ msgstr "Evolution"
 #: mailimporter/filters/filterevolution.cpp:132
 #: mailimporter/filters/filterevolution_v2.cpp:193
 #: mailimporter/filters/filterlnotes.cpp:92
-#: mailimporter/filters/filtermailapp.cpp:69
+#: mailimporter/filters/filtermailapp.cpp:68
 #: mailimporter/filters/filtermbox.cpp:60
 #: mailimporter/filters/filteropera.cpp:79
 #: mailimporter/filters/filterpmail.cpp:154
@@ -241,7 +241,7 @@ msgid "Unable to open %1, skipping"
 msgstr "%1 lässt sich nicht öffnen, Datei wird übergangen"
 
 #: mailimporter/filters/filterevolution.cpp:158
-#: mailimporter/filters/filtermailapp.cpp:77
+#: mailimporter/filters/filtermailapp.cpp:76
 #: mailimporter/filters/filtermailmangzip.cpp:66
 #: mailimporter/filters/filtermbox.cpp:66
 #: mailimporter/filters/filteropera.cpp:81
@@ -491,7 +491,7 @@ msgid "All Files (*)"
 msgstr "Alle Dateien (*)"
 
 #: mailimporter/filters/filterlnotes.cpp:55
-#: mailimporter/filters/filtermailapp.cpp:49
+#: mailimporter/filters/filtermailapp.cpp:48
 #: mailimporter/filters/filtermailmangzip.cpp:44
 #: mailimporter/filters/filtermbox.cpp:47
 #, kde-format
@@ -515,17 +515,17 @@ msgstr "LNotes-Import"
 msgid "Message %1"
 msgstr "Nachricht %1"
 
-#: mailimporter/filters/filtermailapp.cpp:30
+#: mailimporter/filters/filtermailapp.cpp:29
 #, kde-format
 msgid "Import From OS X Mail"
 msgstr "Von OS X Mail importieren"
 
-#: mailimporter/filters/filtermailapp.cpp:31
+#: mailimporter/filters/filtermailapp.cpp:30
 #, kde-format
 msgid "Chris Howells<br /><br />Filter accelerated by Danny Kukawka )"
 msgstr "Chris Howells<br /><br />( Filter beschleunigt durch Danny Kukawka )"
 
-#: mailimporter/filters/filtermailapp.cpp:32
+#: mailimporter/filters/filtermailapp.cpp:31
 #, kde-format
 msgid ""
 "<p><b>OS X Mail Import Filter</b></p><p>This filter imports e-mails from the "
@@ -534,7 +534,7 @@ msgstr ""
 "<p><b>Importfilter für OS X Mail</b></p> <p>Dieser Filter importiert E-Mails "
 "des in Apple Mac OS X mitgelieferten E-Mail-Programms.</p>"
 
-#: mailimporter/filters/filtermailapp.cpp:128
+#: mailimporter/filters/filtermailapp.cpp:127
 #: mailimporter/filters/filtermailmangzip.cpp:138
 #: mailimporter/filters/filtermbox.cpp:137
 #, kde-format
@@ -926,13 +926,13 @@ msgctxt "name of nylas application"
 msgid "Nylas"
 msgstr ""
 
-#: mailimporter/selectthunderbirdprofilewidget.cpp:23
+#: mailimporter/selectthunderbirdprofilewidget.cpp:22
 #, kde-format
 msgctxt "@title:window"
 msgid "Select thunderbird profile"
 msgstr "Thunderbird-Profil auswählen"
 
-#: mailimporter/selectthunderbirdprofilewidget.cpp:72
+#: mailimporter/selectthunderbirdprofilewidget.cpp:71
 #, kde-format
 msgid " (default)"
 msgstr " (Standard)"

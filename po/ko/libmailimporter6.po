@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-06 00:48+0000\n"
+"POT-Creation-Date: 2026-10-09 00:48+0000\n"
 "PO-Revision-Date: 2026-09-29 00:53+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -76,7 +76,7 @@ msgstr "가져올 파일이 없습니다."
 #: mailimporter/filters/filterevolution_v2.cpp:128
 #: mailimporter/filters/filterevolution_v3.cpp:107
 #: mailimporter/filters/filterkmail_maildir.cpp:96
-#: mailimporter/filters/filtermailapp.cpp:126
+#: mailimporter/filters/filtermailapp.cpp:125
 #: mailimporter/filters/filtermailmangzip.cpp:136
 #: mailimporter/filters/filtermbox.cpp:135
 #: mailimporter/filters/filteropera.cpp:142
@@ -108,7 +108,7 @@ msgstr[0] "중복된 메시지 %1개를 가져오지 않았습니다"
 #: mailimporter/filters/filterevolution_v2.cpp:133
 #: mailimporter/filters/filterevolution_v3.cpp:114
 #: mailimporter/filters/filterkmail_maildir.cpp:102
-#: mailimporter/filters/filtermailapp.cpp:138
+#: mailimporter/filters/filtermailapp.cpp:137
 #: mailimporter/filters/filtermailmangzip.cpp:144
 #: mailimporter/filters/filtermbox.cpp:143
 #: mailimporter/filters/filteroe.cpp:111
@@ -143,7 +143,7 @@ msgstr "폴더 %1 가져오는 중..."
 #: mailimporter/filters/filterevolution_v3.cpp:193
 #: mailimporter/filters/filterlnotes.cpp:128
 #: mailimporter/filters/filterlnotes.cpp:159
-#: mailimporter/filters/filtermailapp.cpp:109
+#: mailimporter/filters/filtermailapp.cpp:108
 #: mailimporter/filters/filtermailmangzip.cpp:116
 #: mailimporter/filters/filtermbox.cpp:115
 #: mailimporter/filters/filteroe.cpp:215 mailimporter/filters/filteroe.cpp:391
@@ -221,7 +221,7 @@ msgstr "에볼루션"
 #: mailimporter/filters/filterevolution.cpp:132
 #: mailimporter/filters/filterevolution_v2.cpp:193
 #: mailimporter/filters/filterlnotes.cpp:92
-#: mailimporter/filters/filtermailapp.cpp:69
+#: mailimporter/filters/filtermailapp.cpp:68
 #: mailimporter/filters/filtermbox.cpp:60
 #: mailimporter/filters/filteropera.cpp:79
 #: mailimporter/filters/filterpmail.cpp:154
@@ -235,7 +235,7 @@ msgid "Unable to open %1, skipping"
 msgstr "%1을(를) 열 수 없음, 건너뜀"
 
 #: mailimporter/filters/filterevolution.cpp:158
-#: mailimporter/filters/filtermailapp.cpp:77
+#: mailimporter/filters/filtermailapp.cpp:76
 #: mailimporter/filters/filtermailmangzip.cpp:66
 #: mailimporter/filters/filtermbox.cpp:66
 #: mailimporter/filters/filteropera.cpp:81
@@ -472,7 +472,7 @@ msgid "All Files (*)"
 msgstr "모든 파일 (*)"
 
 #: mailimporter/filters/filterlnotes.cpp:55
-#: mailimporter/filters/filtermailapp.cpp:49
+#: mailimporter/filters/filtermailapp.cpp:48
 #: mailimporter/filters/filtermailmangzip.cpp:44
 #: mailimporter/filters/filtermbox.cpp:47
 #, kde-format
@@ -496,17 +496,17 @@ msgstr "LNotes 가져오기"
 msgid "Message %1"
 msgstr "메시지 %1"
 
-#: mailimporter/filters/filtermailapp.cpp:30
+#: mailimporter/filters/filtermailapp.cpp:29
 #, kde-format
 msgid "Import From OS X Mail"
 msgstr "OS X 메일에서 가져오기"
 
-#: mailimporter/filters/filtermailapp.cpp:31
+#: mailimporter/filters/filtermailapp.cpp:30
 #, kde-format
 msgid "Chris Howells<br /><br />Filter accelerated by Danny Kukawka )"
 msgstr "Chris Howells<br /><br />( Danny Kukawka가 필터 가속화 )"
 
-#: mailimporter/filters/filtermailapp.cpp:32
+#: mailimporter/filters/filtermailapp.cpp:31
 #, kde-format
 msgid ""
 "<p><b>OS X Mail Import Filter</b></p><p>This filter imports e-mails from the "
@@ -515,7 +515,7 @@ msgstr ""
 "<p><b>OS X 메일 가져오기 필터</b></p><p>이 필터는 애플 Mac OS X의 메일 클라이"
 "언트에서 이메일을 가져옵니다.</p>"
 
-#: mailimporter/filters/filtermailapp.cpp:128
+#: mailimporter/filters/filtermailapp.cpp:127
 #: mailimporter/filters/filtermailmangzip.cpp:138
 #: mailimporter/filters/filtermbox.cpp:137
 #, kde-format
@@ -886,13 +886,13 @@ msgctxt "name of nylas application"
 msgid "Nylas"
 msgstr "Nylas"
 
-#: mailimporter/selectthunderbirdprofilewidget.cpp:23
+#: mailimporter/selectthunderbirdprofilewidget.cpp:22
 #, kde-format
 msgctxt "@title:window"
 msgid "Select thunderbird profile"
 msgstr "Thunderbird 프로필 선택"
 
-#: mailimporter/selectthunderbirdprofilewidget.cpp:72
+#: mailimporter/selectthunderbirdprofilewidget.cpp:71
 #, kde-format
 msgid " (default)"
 msgstr " (기본값)"

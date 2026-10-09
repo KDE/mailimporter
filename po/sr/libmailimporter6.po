@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-06 00:48+0000\n"
+"POT-Creation-Date: 2026-10-09 00:48+0000\n"
 "PO-Revision-Date: 2017-09-28 18:00+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -80,7 +80,7 @@ msgstr "Нису нађени фајлови за увоз."
 #: mailimporter/filters/filterevolution_v2.cpp:128
 #: mailimporter/filters/filterevolution_v3.cpp:107
 #: mailimporter/filters/filterkmail_maildir.cpp:96
-#: mailimporter/filters/filtermailapp.cpp:126
+#: mailimporter/filters/filtermailapp.cpp:125
 #: mailimporter/filters/filtermailmangzip.cpp:136
 #: mailimporter/filters/filtermbox.cpp:135
 #: mailimporter/filters/filteropera.cpp:142
@@ -115,7 +115,7 @@ msgstr[3] "1 дуплирана порука није увезена"
 #: mailimporter/filters/filterevolution_v2.cpp:133
 #: mailimporter/filters/filterevolution_v3.cpp:114
 #: mailimporter/filters/filterkmail_maildir.cpp:102
-#: mailimporter/filters/filtermailapp.cpp:138
+#: mailimporter/filters/filtermailapp.cpp:137
 #: mailimporter/filters/filtermailmangzip.cpp:144
 #: mailimporter/filters/filtermbox.cpp:143
 #: mailimporter/filters/filteroe.cpp:111
@@ -150,7 +150,7 @@ msgstr "Увозим фасциклу %1..."
 #: mailimporter/filters/filterevolution_v3.cpp:193
 #: mailimporter/filters/filterlnotes.cpp:128
 #: mailimporter/filters/filterlnotes.cpp:159
-#: mailimporter/filters/filtermailapp.cpp:109
+#: mailimporter/filters/filtermailapp.cpp:108
 #: mailimporter/filters/filtermailmangzip.cpp:116
 #: mailimporter/filters/filtermbox.cpp:115
 #: mailimporter/filters/filteroe.cpp:215 mailimporter/filters/filteroe.cpp:391
@@ -229,7 +229,7 @@ msgstr "Еволуција"
 #: mailimporter/filters/filterevolution.cpp:132
 #: mailimporter/filters/filterevolution_v2.cpp:193
 #: mailimporter/filters/filterlnotes.cpp:92
-#: mailimporter/filters/filtermailapp.cpp:69
+#: mailimporter/filters/filtermailapp.cpp:68
 #: mailimporter/filters/filtermbox.cpp:60
 #: mailimporter/filters/filteropera.cpp:79
 #: mailimporter/filters/filterpmail.cpp:154
@@ -243,7 +243,7 @@ msgid "Unable to open %1, skipping"
 msgstr "Не могу да отворим %1, прескачем."
 
 #: mailimporter/filters/filterevolution.cpp:158
-#: mailimporter/filters/filtermailapp.cpp:77
+#: mailimporter/filters/filtermailapp.cpp:76
 #: mailimporter/filters/filtermailmangzip.cpp:66
 #: mailimporter/filters/filtermbox.cpp:66
 #: mailimporter/filters/filteropera.cpp:81
@@ -493,7 +493,7 @@ msgid "All Files (*)"
 msgstr "сви фајлови (*)"
 
 #: mailimporter/filters/filterlnotes.cpp:55
-#: mailimporter/filters/filtermailapp.cpp:49
+#: mailimporter/filters/filtermailapp.cpp:48
 #: mailimporter/filters/filtermailmangzip.cpp:44
 #: mailimporter/filters/filtermbox.cpp:47
 #, kde-format
@@ -517,17 +517,17 @@ msgstr "увезено-Лотусове белешке"
 msgid "Message %1"
 msgstr "Порука %1"
 
-#: mailimporter/filters/filtermailapp.cpp:30
+#: mailimporter/filters/filtermailapp.cpp:29
 #, kde-format
 msgid "Import From OS X Mail"
 msgstr "Увези из Поште МекОС‑а X"
 
-#: mailimporter/filters/filtermailapp.cpp:31
+#: mailimporter/filters/filtermailapp.cpp:30
 #, kde-format
 msgid "Chris Howells<br /><br />Filter accelerated by Danny Kukawka )"
 msgstr "<html>Крис Хауелс<br /><br />(филтер убрзао Дани Кукавка)</html>"
 
-#: mailimporter/filters/filtermailapp.cpp:32
+#: mailimporter/filters/filtermailapp.cpp:31
 #, kde-format
 msgid ""
 "<p><b>OS X Mail Import Filter</b></p><p>This filter imports e-mails from the "
@@ -536,7 +536,7 @@ msgstr ""
 "<p><b>Филтер за увоз из Поште МекОС‑а X</b></p><p>Овај филтер увози е‑пошту "
 "из поштанског клијента у Епловом МекОС‑у X.</p>"
 
-#: mailimporter/filters/filtermailapp.cpp:128
+#: mailimporter/filters/filtermailapp.cpp:127
 #: mailimporter/filters/filtermailmangzip.cpp:138
 #: mailimporter/filters/filtermbox.cpp:137
 #, kde-format
@@ -925,14 +925,14 @@ msgid "Nylas"
 msgstr ""
 
 # >> @title:window
-#: mailimporter/selectthunderbirdprofilewidget.cpp:23
+#: mailimporter/selectthunderbirdprofilewidget.cpp:22
 #, fuzzy, kde-format
 #| msgid "Select thunderbird profile"
 msgctxt "@title:window"
 msgid "Select thunderbird profile"
 msgstr "Избор Тандербердовог профила"
 
-#: mailimporter/selectthunderbirdprofilewidget.cpp:72
+#: mailimporter/selectthunderbirdprofilewidget.cpp:71
 #, kde-format
 msgid " (default)"
 msgstr " (подразумевани)"

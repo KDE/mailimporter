@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-06 00:48+0000\n"
+"POT-Creation-Date: 2026-10-09 00:48+0000\n"
 "PO-Revision-Date: 2026-09-15 14:13+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -82,7 +82,7 @@ msgstr "沒有選擇任何檔案"
 #: mailimporter/filters/filterevolution_v2.cpp:128
 #: mailimporter/filters/filterevolution_v3.cpp:107
 #: mailimporter/filters/filterkmail_maildir.cpp:96
-#: mailimporter/filters/filtermailapp.cpp:126
+#: mailimporter/filters/filtermailapp.cpp:125
 #: mailimporter/filters/filtermailmangzip.cpp:136
 #: mailimporter/filters/filtermbox.cpp:135
 #: mailimporter/filters/filteropera.cpp:142
@@ -114,7 +114,7 @@ msgstr[0] "%1 封重複的信件未匯入"
 #: mailimporter/filters/filterevolution_v2.cpp:133
 #: mailimporter/filters/filterevolution_v3.cpp:114
 #: mailimporter/filters/filterkmail_maildir.cpp:102
-#: mailimporter/filters/filtermailapp.cpp:138
+#: mailimporter/filters/filtermailapp.cpp:137
 #: mailimporter/filters/filtermailmangzip.cpp:144
 #: mailimporter/filters/filtermbox.cpp:143
 #: mailimporter/filters/filteroe.cpp:111
@@ -149,7 +149,7 @@ msgstr "正在匯入信件夾 %1..."
 #: mailimporter/filters/filterevolution_v3.cpp:193
 #: mailimporter/filters/filterlnotes.cpp:128
 #: mailimporter/filters/filterlnotes.cpp:159
-#: mailimporter/filters/filtermailapp.cpp:109
+#: mailimporter/filters/filtermailapp.cpp:108
 #: mailimporter/filters/filtermailmangzip.cpp:116
 #: mailimporter/filters/filtermbox.cpp:115
 #: mailimporter/filters/filteroe.cpp:215 mailimporter/filters/filteroe.cpp:391
@@ -227,7 +227,7 @@ msgstr "Evolution"
 #: mailimporter/filters/filterevolution.cpp:132
 #: mailimporter/filters/filterevolution_v2.cpp:193
 #: mailimporter/filters/filterlnotes.cpp:92
-#: mailimporter/filters/filtermailapp.cpp:69
+#: mailimporter/filters/filtermailapp.cpp:68
 #: mailimporter/filters/filtermbox.cpp:60
 #: mailimporter/filters/filteropera.cpp:79
 #: mailimporter/filters/filterpmail.cpp:154
@@ -241,7 +241,7 @@ msgid "Unable to open %1, skipping"
 msgstr "無法開啟檔案 '%1'"
 
 #: mailimporter/filters/filterevolution.cpp:158
-#: mailimporter/filters/filtermailapp.cpp:77
+#: mailimporter/filters/filtermailapp.cpp:76
 #: mailimporter/filters/filtermailmangzip.cpp:66
 #: mailimporter/filters/filtermbox.cpp:66
 #: mailimporter/filters/filteropera.cpp:81
@@ -472,7 +472,7 @@ msgid "All Files (*)"
 msgstr "所有檔案 (*)"
 
 #: mailimporter/filters/filterlnotes.cpp:55
-#: mailimporter/filters/filtermailapp.cpp:49
+#: mailimporter/filters/filtermailapp.cpp:48
 #: mailimporter/filters/filtermailmangzip.cpp:44
 #: mailimporter/filters/filtermbox.cpp:47
 #, kde-format
@@ -496,17 +496,17 @@ msgstr "LNotes-Import"
 msgid "Message %1"
 msgstr "信件 %1"
 
-#: mailimporter/filters/filtermailapp.cpp:30
+#: mailimporter/filters/filtermailapp.cpp:29
 #, kde-format
 msgid "Import From OS X Mail"
 msgstr "匯入 OS X 的信件"
 
-#: mailimporter/filters/filtermailapp.cpp:31
+#: mailimporter/filters/filtermailapp.cpp:30
 #, kde-format
 msgid "Chris Howells<br /><br />Filter accelerated by Danny Kukawka )"
 msgstr "Chris Howells<br /><br />（過濾器由 Danny Kukawka 加速）"
 
-#: mailimporter/filters/filtermailapp.cpp:32
+#: mailimporter/filters/filtermailapp.cpp:31
 #, kde-format
 msgid ""
 "<p><b>OS X Mail Import Filter</b></p><p>This filter imports e-mails from the "
@@ -515,7 +515,7 @@ msgstr ""
 "<p><b>OS X 信件匯入過濾器</b></p><p>這個過濾器會幫忙您將 Apple Mac OS X 的收"
 "發信軟體中的郵件匯入 Kmail 中。</p>"
 
-#: mailimporter/filters/filtermailapp.cpp:128
+#: mailimporter/filters/filtermailapp.cpp:127
 #: mailimporter/filters/filtermailmangzip.cpp:138
 #: mailimporter/filters/filtermbox.cpp:137
 #, kde-format
@@ -881,13 +881,13 @@ msgctxt "name of nylas application"
 msgid "Nylas"
 msgstr "Nylas"
 
-#: mailimporter/selectthunderbirdprofilewidget.cpp:23
+#: mailimporter/selectthunderbirdprofilewidget.cpp:22
 #, kde-format
 msgctxt "@title:window"
 msgid "Select thunderbird profile"
 msgstr "選取 thunderbird 設定檔"
 
-#: mailimporter/selectthunderbirdprofilewidget.cpp:72
+#: mailimporter/selectthunderbirdprofilewidget.cpp:71
 #, kde-format
 msgid " (default)"
 msgstr " (預設)"
