@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: kdepim-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-09 00:48+0000\n"
-"PO-Revision-Date: 2026-09-05 19:52+0300\n"
+"PO-Revision-Date: 2026-10-12 10:41+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -348,7 +348,7 @@ msgstr "Icedove"
 #: mailimporter/filters/filterkmail_maildir.cpp:27
 #, kde-format
 msgid "Import KMail Maildirs and Folder Structure"
-msgstr "K Posta E-postalarını ve Klasör Yapısını İçe Aktar"
+msgstr "KMail E-postalarını ve Klasör Yapısını İçe Aktar"
 
 #: mailimporter/filters/filterkmail_maildir.cpp:29
 #, kde-format
@@ -361,12 +361,12 @@ msgid ""
 "possible to recreate the folder structure, the folders will be stored under: "
 "\"KMail-Import\" in your local folder.</p>"
 msgstr ""
-"<p><b>K Posta içe aktarma süzgeci</b></p><p>İçe aktarmak istediğiniz K Posta "
-"ana posta klasörünü seçin.</p><p><b>Not:</b> Asla yerel K Posta posta "
-"klasörünüzü seçmeyin (genelde ~/Mail veya ~/.kde/share/apps/kmail/mail ): bu "
-"durumda, ImportWizard sürekli bir döngüye saplanabilir. </p><p>Bu süzgeç, "
-"mbox dosyalarının olduğu K Posta posta klasörlerini içe aktarmaz.</"
-"p><p>Dizin yapısını yeniden oluşturmak olanaklı olduğundan, klasörler, yerel "
+"<p><b>KMail içe aktarma süzgeci</b></p><p>İçe aktarmak istediğiniz KMail ana "
+"posta klasörünü seçin.</p><p><b>Not:</b> Asla yerel KMail posta klasörünüzü "
+"seçmeyin (genelde ~/Mail veya ~/.kde/share/apps/kmail/mail ): bu durumda, "
+"ImportWizard sürekli bir döngüye saplanabilir. </p><p>Bu süzgeç, mbox "
+"dosyalarının olduğu KMail posta klasörlerini içe aktarmaz.</p><p>Dizin "
+"yapısını yeniden oluşturmak olanaklı olduğundan, klasörler, yerel "
 "klasörünüzdeki “KMail-Import” içinde depolanacaktır:</p>"
 
 #: mailimporter/filters/filterkmail_maildir.cpp:177
@@ -377,7 +377,7 @@ msgstr "%1 içe aktarılamadı, yinelenmiş ileti"
 #: mailimporter/filters/filterkmailarchive.cpp:32
 #, kde-format
 msgid "Import KMail Archive File"
-msgstr "K Posta Arşiv Dosyasını İçe Aktar"
+msgstr "KMail Arşiv Dosyasını İçe Aktar"
 
 #: mailimporter/filters/filterkmailarchive.cpp:34
 #, kde-format
@@ -386,8 +386,8 @@ msgid ""
 "archives files previously exported by KMail.</p><p>Archive files contain a "
 "complete folder subtree compressed into a single file.</p>"
 msgstr ""
-"<p><b>K Posta Arşiv Dosyası İçe Aktarma Süzgeci</b></p><p>Bu süzgeç önceden "
-"K Posta tarafından oluşturulan arşivleri içe aktaracaktır.</p><p>Arşiv "
+"<p><b>KMail Arşiv Dosyası İçe Aktarma Süzgeci</b></p><p>Bu süzgeç önceden "
+"KMail tarafından oluşturulan arşivleri içe aktaracaktır.</p><p>Arşiv "
 "dosyaları, sıkıştırılmış halde tam bir klasör ağacı içerir.</p>"
 
 #: mailimporter/filters/filterkmailarchive.cpp:72
@@ -413,12 +413,12 @@ msgstr "“%1” adında beklenmedik alt dizin."
 #: mailimporter/filters/filterkmailarchive.cpp:157
 #, kde-format
 msgid "Select KMail Archive File to Import"
-msgstr "İçe Aktarılacak K Posta Arşiv Dosyasını Seç"
+msgstr "İçe Aktarılacak KMail Arşiv Dosyasını Seç"
 
 #: mailimporter/filters/filterkmailarchive.cpp:159
 #, kde-format
 msgid "KMail Archive Files "
-msgstr "K Posta Arşiv Dosyaları "
+msgstr "KMail Arşiv Dosyaları "
 
 #: mailimporter/filters/filterkmailarchive.cpp:161
 #, kde-format
@@ -543,8 +543,8 @@ msgstr ""
 #, kde-format
 msgid "1 duplicate message not imported to folder %2 in KMail"
 msgid_plural "%1 duplicate messages not imported to folder %2 in KMail"
-msgstr[0] "1 yinelenmiş ileti K Posta’daki %2 klasörüne aktarılmadı"
-msgstr[1] "%1 yinelenmiş ileti K Posta’daki %2 klasörüne aktarılmadı"
+msgstr[0] "1 yinelenmiş ileti KMail’deki %2 klasörüne aktarılmadı"
+msgstr[1] "%1 yinelenmiş ileti KMail’deki %2 klasörüne aktarılmadı"
 
 #: mailimporter/filters/filtermailmangzip.cpp:21
 #, kde-format
@@ -559,7 +559,7 @@ msgid ""
 "folders named after the file they came from, prefixed with MAILMAN-</p>"
 msgstr ""
 "<p><b>mailman gzip içe aktarma süzgeci</b></p> <p>Bu süzgeç, mailman gzip’li "
-"dosyalarınızı K Posta’ya içe aktarır.</p> <p><b>Not:</b>E-postalar, MAILMAN- "
+"dosyalarınızı KMail’e içe aktarır.</p> <p><b>Not:</b>E-postalar, MAILMAN- "
 "önekinden sonra gelen dosya adlarıyla adlandırılan klasörlere içe aktarılır."
 "</p>"
 
