@@ -21,7 +21,7 @@ qhp.projects            = mailimporter
 qhp.mailimporter.file                = mailimporter.qhp
 qhp.mailimporter.namespace           = org.kde.mailimporter.$QT_VERSION_TAG
 qhp.mailimporter.virtualFolder       = mailimporter
-qhp.mailimporter.indexTitle          = mailimporter
+qhp.mailimporter.indexTitle          = MailImporter
 qhp.mailimporter.indexRoot           =
 
 qhp.mailimporter.subprojects         = classes
