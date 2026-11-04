@@ -4,7 +4,7 @@ set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim6MailImporterAko
 ecm_setup_version(PROJECT VARIABLE_PREFIX MAILIMPORTERAKONADI
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/mailimporterakonadi_version.h"
     PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KPim6MailImporterAkonadiConfigVersion.cmake"
-    SOVERSION 6
+    SOVERSION  ${PROJECT_SOVERSION}
 )
 
 add_library(KPim6MailImporterAkonadi)
