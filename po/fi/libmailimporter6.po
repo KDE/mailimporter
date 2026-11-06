@@ -6,7 +6,7 @@
 # Mikko Ikola <ikola@iki.fi>, 2006.
 # Ilpo Kantonen <ilpo@iki.fi>, 2006.
 # Mikko Piippo <piippo@cc.helsinki.fi>, 2007.
-# Tommi Nieminen <translator@legisign.org>, 2010, 2011, 2012, 2013, 2017, 2020.
+# SPDX-FileCopyrightText: 2010, 2011, 2012, 2013, 2017, 2020, 2026 Tommi Nieminen <translator@legisign.org>
 # Lasse Liehu <lasse.liehu@gmail.com>, 2012, 2013, 2014, 2015.
 #
 # KDE 4.9 Finnish translation sprint 2012-06/07
@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: libmailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-09 00:48+0000\n"
-"PO-Revision-Date: 2020-01-01 15:23+0200\n"
+"PO-Revision-Date: 2026-10-05 13:08+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -29,6 +29,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #: mailimporter/filters/filterbalsa.cpp:23
 #, kde-format
@@ -912,7 +913,7 @@ msgstr "Geary"
 #, kde-format
 msgctxt "name of nylas application"
 msgid "Nylas"
-msgstr ""
+msgstr "Nylas"
 
 #: mailimporter/selectthunderbirdprofilewidget.cpp:22
 #, kde-format
