@@ -107,9 +107,9 @@ file(
 )
 ecm_check_outbound_license(LICENSES GPL-2.0-only  FILES ${ALL_SOURCE_FILES})
 
-set(AKONADIMIME_LIB_VERSION "6.8.40")
-set(AKONADI_VERSION "6.8.40")
-set(PIMCOMMON_LIB_VERSION "6.8.40")
+set(AKONADIMIME_LIB_VERSION "6.9.40")
+set(AKONADI_VERSION "6.9.40")
+set(PIMCOMMON_LIB_VERSION "6.9.40")
 
 find_package(
     Qt6
