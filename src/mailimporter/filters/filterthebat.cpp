@@ -221,7 +221,10 @@ void FilterTheBat::importFiles(const QString &FileName)
                 tbb.read(input.data(), endPos - lastPos);
 
                 QTemporaryFile tmp;
-                tmp.open();
+                if (!tmp.open()) {
+                    filterInfo()->alert(i18n("Unable to create temporary file."));
+                    break;
+                }
                 tmp.write(input.constData(), endPos - lastPos);
                 tmp.flush();
 

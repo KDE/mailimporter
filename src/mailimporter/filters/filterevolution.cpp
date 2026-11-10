@@ -162,7 +162,10 @@ void FilterEvolution::importMBox(const QString &mboxName, const QString &rootDir
 
         while (!mbox.atEnd()) {
             QTemporaryFile tmp;
-            tmp.open();
+            if (!tmp.open()) {
+                filterInfo()->alert(i18n("Unable to create temporary file."));
+                break;
+            }
             /* comment by Danny:
              * Don't use QTextStream to read from mbox, better use QDataStream. QTextStream only
              * support Unicode/Latin1/Locale. So you lost information from emails with

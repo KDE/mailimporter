@@ -220,7 +220,10 @@ void FilterEvolution_v2::importMBox(const QString &mboxName, const QString &root
 
         while (!mbox.atEnd()) {
             QTemporaryFile tmp;
-            tmp.open();
+            if (!tmp.open()) {
+                filterInfo()->alert(i18n("Unable to create temporary file."));
+                break;
+            }
             /** @todo check if the file is really a mbox, maybe search for 'from' string at start */
             /* comment by Danny:
              * Don't use QTextStream to read from mbox, better use QDataStream. QTextStream only

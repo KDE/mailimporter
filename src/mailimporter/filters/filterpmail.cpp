@@ -169,7 +169,10 @@ void FilterPMail::importMailFolder(const QString &file)
 
         while (!f.atEnd()) {
             QTemporaryFile tempfile;
-            tempfile.open();
+            if (!tempfile.open()) {
+                filterInfo()->alert(i18n("Unable to create temporary file."));
+                break;
+            }
             filterInfo()->setCurrent((int)(((float)f.pos() / f.size()) * 100));
 
             if (!first_msg) {
@@ -245,7 +248,10 @@ void FilterPMail::importUnixMailFolder(const QString &file)
         l = f.readLine(line.data(), MAX_LINE); // read the first line which is unneeded
         while (!f.atEnd()) {
             QTemporaryFile tempfile;
-            tempfile.open();
+            if (!tempfile.open()) {
+                filterInfo()->alert(i18n("Unable to create temporary file."));
+                break;
+            }
 
             // we lost the last line, which is the first line of the new message in
             // this lopp, but this is ok, because this is the separate line with

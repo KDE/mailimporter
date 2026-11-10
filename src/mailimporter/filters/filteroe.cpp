@@ -196,7 +196,10 @@ void FilterOE::mbxImport(QDataStream &ds)
         quint32 msgSize;
         quint32 msgTextSize;
         QTemporaryFile tmp;
-        tmp.open();
+        if (!tmp.open()) {
+            filterInfo()->alert(i18n("Unable to create temporary file."));
+            break;
+        }
         QDataStream dataStream(&tmp);
         dataStream.setByteOrder(QDataStream::LittleEndian);
 
@@ -366,7 +369,10 @@ void FilterOE::dbxReadEmail(QDataStream &ds, int filePos)
     quint8 intCount;
     quint8 unknown;
     QTemporaryFile tmp;
-    tmp.open();
+    if (!tmp.open()) {
+        filterInfo()->alert(i18n("Unable to create temporary file."));
+        return;
+    }
     bool _break = false;
     int wasAt = ds.device()->pos();
     ds.device()->seek(filePos);

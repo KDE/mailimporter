@@ -58,7 +58,11 @@ void FilterMailmanGzip::importMails(const QStringList &filenames)
             continue;
         }
 
-        device->open(QIODevice::ReadOnly);
+        if (!device->open(QIODevice::ReadOnly)) {
+            filterInfo()->alert(i18n("Unable to open archive file '%1', skipping", *filename));
+            delete device;
+            continue;
+        }
         QFileInfo filenameInfo(*filename);
         QString folderName(QLatin1StringView("MAILMAN-") + filenameInfo.completeBaseName());
 
@@ -73,7 +77,10 @@ void FilterMailmanGzip::importMails(const QStringList &filenames)
 
         while (!device->atEnd()) {
             QTemporaryFile tmp;
-            tmp.open();
+            if (!tmp.open()) {
+                filterInfo()->alert(i18n("Unable to create temporary file."));
+                break;
+            }
             qint64 filepos = 0;
             /* comment by Danny:
              * Don't use QTextStream to read from mbox, better use QDataStream. QTextStream only

@@ -115,7 +115,10 @@ void FilterLNotes::ImportLNotes(const QString &file)
 
                 tempfile.reset(new QTemporaryFile);
                 tempfile->setAutoRemove(false);
-                tempfile->open();
+                if (!tempfile->open()) {
+                    filterInfo()->alert(i18n("Unable to create temporary file."));
+                    return;
+                }
                 // fall through
                 [[fallthrough]];
             // inside a message state
