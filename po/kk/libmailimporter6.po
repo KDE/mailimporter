@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-09 00:48+0000\n"
+"POT-Creation-Date: 2026-11-11 01:03+0000\n"
 "PO-Revision-Date: 2013-09-18 05:27+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -48,7 +48,7 @@ msgstr ""
 #: mailimporter/filters/filterevolution_v3.cpp:87
 #: mailimporter/filters/filterkmail_maildir.cpp:77
 #: mailimporter/filters/filteroe.cpp:61
-#: mailimporter/filters/filteropera.cpp:175
+#: mailimporter/filters/filteropera.cpp:178
 #: mailimporter/filters/filterplain.cpp:42
 #: mailimporter/filters/filterpmail.cpp:47
 #: mailimporter/filters/filtersylpheed.cpp:123
@@ -63,7 +63,7 @@ msgstr "Каталогы таңдалмаған."
 #: mailimporter/filters/filterevolution_v2.cpp:95
 #: mailimporter/filters/filterevolution_v3.cpp:96
 #: mailimporter/filters/filterkmail_maildir.cpp:86
-#: mailimporter/filters/filteropera.cpp:183
+#: mailimporter/filters/filteropera.cpp:186
 #: mailimporter/filters/filterplain.cpp:51
 #: mailimporter/filters/filtersylpheed.cpp:132
 #: mailimporter/filters/filterthebat.cpp:83
@@ -77,10 +77,10 @@ msgstr "Импорттайтын файлдар табылмады."
 #: mailimporter/filters/filterevolution_v2.cpp:128
 #: mailimporter/filters/filterevolution_v3.cpp:107
 #: mailimporter/filters/filterkmail_maildir.cpp:96
-#: mailimporter/filters/filtermailapp.cpp:125
-#: mailimporter/filters/filtermailmangzip.cpp:136
-#: mailimporter/filters/filtermbox.cpp:135
-#: mailimporter/filters/filteropera.cpp:142
+#: mailimporter/filters/filtermailapp.cpp:128
+#: mailimporter/filters/filtermailmangzip.cpp:143
+#: mailimporter/filters/filtermbox.cpp:138
+#: mailimporter/filters/filteropera.cpp:145
 #: mailimporter/filters/filterplain.cpp:73
 #: mailimporter/filters/filterpmail.cpp:71
 #: mailimporter/filters/filtersylpheed.cpp:144
@@ -91,11 +91,11 @@ msgid "Finished importing emails from %1"
 msgstr "%1 эл.поштасын импорттау аяқталды"
 
 #: mailimporter/filters/filterbalsa.cpp:113
-#: mailimporter/filters/filterevolution.cpp:206
+#: mailimporter/filters/filterevolution.cpp:209
 #: mailimporter/filters/filterevolution_v2.cpp:130
 #: mailimporter/filters/filterevolution_v3.cpp:110
 #: mailimporter/filters/filterkmail_maildir.cpp:98
-#: mailimporter/filters/filteropera.cpp:144
+#: mailimporter/filters/filteropera.cpp:147
 #: mailimporter/filters/filterplain.cpp:75
 #: mailimporter/filters/filtersylpheed.cpp:146
 #: mailimporter/filters/filterthebat.cpp:96
@@ -109,11 +109,11 @@ msgstr[0] "%1 қайталанатын хат импортталған жоқ"
 #: mailimporter/filters/filterevolution_v2.cpp:133
 #: mailimporter/filters/filterevolution_v3.cpp:114
 #: mailimporter/filters/filterkmail_maildir.cpp:102
-#: mailimporter/filters/filtermailapp.cpp:137
-#: mailimporter/filters/filtermailmangzip.cpp:144
-#: mailimporter/filters/filtermbox.cpp:143
+#: mailimporter/filters/filtermailapp.cpp:140
+#: mailimporter/filters/filtermailmangzip.cpp:151
+#: mailimporter/filters/filtermbox.cpp:146
 #: mailimporter/filters/filteroe.cpp:111
-#: mailimporter/filters/filteropera.cpp:201
+#: mailimporter/filters/filteropera.cpp:204
 #: mailimporter/filters/filterplain.cpp:78
 #: mailimporter/filters/filtersylpheed.cpp:150
 #: mailimporter/filters/filterthebat.cpp:100
@@ -139,23 +139,23 @@ msgid "Import folder %1..."
 msgstr "%1 қапшығын импорттау..."
 
 #: mailimporter/filters/filterbalsa.cpp:196
-#: mailimporter/filters/filterevolution.cpp:195
-#: mailimporter/filters/filterevolution_v2.cpp:261
+#: mailimporter/filters/filterevolution.cpp:198
+#: mailimporter/filters/filterevolution_v2.cpp:264
 #: mailimporter/filters/filterevolution_v3.cpp:193
-#: mailimporter/filters/filterlnotes.cpp:128
-#: mailimporter/filters/filterlnotes.cpp:159
-#: mailimporter/filters/filtermailapp.cpp:108
-#: mailimporter/filters/filtermailmangzip.cpp:116
-#: mailimporter/filters/filtermbox.cpp:115
-#: mailimporter/filters/filteroe.cpp:215 mailimporter/filters/filteroe.cpp:391
-#: mailimporter/filters/filteropera.cpp:125
+#: mailimporter/filters/filterlnotes.cpp:131
+#: mailimporter/filters/filterlnotes.cpp:162
+#: mailimporter/filters/filtermailapp.cpp:111
+#: mailimporter/filters/filtermailmangzip.cpp:123
+#: mailimporter/filters/filtermbox.cpp:118
+#: mailimporter/filters/filteroe.cpp:218 mailimporter/filters/filteroe.cpp:397
+#: mailimporter/filters/filteropera.cpp:128
 #: mailimporter/filters/filterplain.cpp:63
 #: mailimporter/filters/filterpmail.cpp:114
-#: mailimporter/filters/filterpmail.cpp:193
-#: mailimporter/filters/filterpmail.cpp:262
+#: mailimporter/filters/filterpmail.cpp:196
+#: mailimporter/filters/filterpmail.cpp:268
 #: mailimporter/filters/filtersylpheed.cpp:243
-#: mailimporter/filters/filterthebat.cpp:229
-#: mailimporter/filters/filterthunderbird.cpp:346
+#: mailimporter/filters/filterthebat.cpp:232
+#: mailimporter/filters/filterthunderbird.cpp:349
 #, kde-format
 msgid "Could not import %1"
 msgstr "%1 деген импортталмады"
@@ -233,9 +233,9 @@ msgstr "Evolution-Import"
 #: mailimporter/filters/filtermbox.cpp:60
 #: mailimporter/filters/filteropera.cpp:79
 #: mailimporter/filters/filterpmail.cpp:154
-#: mailimporter/filters/filterpmail.cpp:223
-#: mailimporter/filters/filterpmail.cpp:242
-#: mailimporter/filters/filterpmail.cpp:281
+#: mailimporter/filters/filterpmail.cpp:226
+#: mailimporter/filters/filterpmail.cpp:245
+#: mailimporter/filters/filterpmail.cpp:287
 #: mailimporter/filters/filterthebat.cpp:161
 #: mailimporter/filters/filterthunderbird.cpp:280
 #, kde-format
@@ -244,12 +244,29 @@ msgstr "%1 ашылмай өткізіп жіберілді"
 
 #: mailimporter/filters/filterevolution.cpp:158
 #: mailimporter/filters/filtermailapp.cpp:76
-#: mailimporter/filters/filtermailmangzip.cpp:66
+#: mailimporter/filters/filtermailmangzip.cpp:70
 #: mailimporter/filters/filtermbox.cpp:66
 #: mailimporter/filters/filteropera.cpp:81
 #, kde-format
 msgid "Importing emails from %1..."
 msgstr "%1 эл.поштасын импорттау..."
+
+#: mailimporter/filters/filterevolution.cpp:166
+#: mailimporter/filters/filterevolution_v2.cpp:224
+#: mailimporter/filters/filterlnotes.cpp:119
+#: mailimporter/filters/filtermailapp.cpp:86
+#: mailimporter/filters/filtermailmangzip.cpp:81
+#: mailimporter/filters/filtermbox.cpp:77 mailimporter/filters/filteroe.cpp:200
+#: mailimporter/filters/filteroe.cpp:373
+#: mailimporter/filters/filteropera.cpp:100
+#: mailimporter/filters/filterpmail.cpp:173
+#: mailimporter/filters/filterpmail.cpp:252
+#: mailimporter/filters/filterthebat.cpp:225
+#: mailimporter/filters/filterthunderbird.cpp:310
+#, fuzzy, kde-format
+#| msgid "Error: failed to read temporary file at %1"
+msgid "Unable to create temporary file."
+msgstr "Қате: %1 дегендегі уақытша файлды оқу жаңылысы."
 
 #: mailimporter/filters/filterevolution_v2.cpp:23
 #, kde-format
@@ -523,7 +540,7 @@ msgid "LNotes-Import"
 msgstr "LNotes-Import"
 
 #: mailimporter/filters/filterlnotes.cpp:111
-#: mailimporter/filters/filterpmail.cpp:266
+#: mailimporter/filters/filterpmail.cpp:272
 #, kde-format
 msgid "Message %1"
 msgstr "%1 хаты"
@@ -548,9 +565,9 @@ msgstr ""
 "<p><b>OS X Mail клиентінен импорттау сүзгісі</b></p><p>Бұл Apple Mac OS X "
 "Mail клиентінен импорттау сүзгісі.</p>"
 
-#: mailimporter/filters/filtermailapp.cpp:127
-#: mailimporter/filters/filtermailmangzip.cpp:138
-#: mailimporter/filters/filtermbox.cpp:137
+#: mailimporter/filters/filtermailapp.cpp:130
+#: mailimporter/filters/filtermailmangzip.cpp:145
+#: mailimporter/filters/filtermbox.cpp:140
 #, kde-format
 msgid "1 duplicate message not imported to folder %2 in KMail"
 msgid_plural "%1 duplicate messages not imported to folder %2 in KMail"
@@ -580,6 +597,7 @@ msgid "gzip Files"
 msgstr "gzip файлдары (*.txt.gz)"
 
 #: mailimporter/filters/filtermailmangzip.cpp:57
+#: mailimporter/filters/filtermailmangzip.cpp:62
 #, kde-format
 msgid "Unable to open archive file '%1', skipping"
 msgstr "'%1' архив файлы ашылмады, тастап кетеді"
@@ -713,7 +731,7 @@ msgstr ""
 msgid "Importing new mail files..."
 msgstr "Жаңа пошта файлдарын импорттау..."
 
-#: mailimporter/filters/filteropera.cpp:191
+#: mailimporter/filters/filteropera.cpp:194
 #: mailimporter/filters/filterplain.cpp:48
 #: mailimporter/filters/filterpmail.cpp:53
 #, kde-format
@@ -794,12 +812,12 @@ msgid "PegasusMail-Import"
 msgstr "PegasusMail-Import"
 
 #: mailimporter/filters/filterpmail.cpp:165
-#: mailimporter/filters/filterpmail.cpp:244
+#: mailimporter/filters/filterpmail.cpp:247
 #, kde-format
 msgid "Importing %1"
 msgstr "%1 импорт ету"
 
-#: mailimporter/filters/filterpmail.cpp:277
+#: mailimporter/filters/filterpmail.cpp:283
 #, kde-format
 msgid "Parsing the folder structure..."
 msgstr "Қапшық құрылымын талдау..."

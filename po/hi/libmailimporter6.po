@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-09 00:48+0000\n"
+"POT-Creation-Date: 2026-11-11 01:03+0000\n"
 "PO-Revision-Date: 2008-01-19 14:09+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@yahoo.com>\n"
 "Language-Team: Hindi <indlinux-hindi@lists.sourceforge.net>\n"
@@ -44,7 +44,7 @@ msgstr ""
 #: mailimporter/filters/filterevolution_v3.cpp:87
 #: mailimporter/filters/filterkmail_maildir.cpp:77
 #: mailimporter/filters/filteroe.cpp:61
-#: mailimporter/filters/filteropera.cpp:175
+#: mailimporter/filters/filteropera.cpp:178
 #: mailimporter/filters/filterplain.cpp:42
 #: mailimporter/filters/filterpmail.cpp:47
 #: mailimporter/filters/filtersylpheed.cpp:123
@@ -59,7 +59,7 @@ msgstr "कोई डिरेक्ट्री चुना नहीं ग�
 #: mailimporter/filters/filterevolution_v2.cpp:95
 #: mailimporter/filters/filterevolution_v3.cpp:96
 #: mailimporter/filters/filterkmail_maildir.cpp:86
-#: mailimporter/filters/filteropera.cpp:183
+#: mailimporter/filters/filteropera.cpp:186
 #: mailimporter/filters/filterplain.cpp:51
 #: mailimporter/filters/filtersylpheed.cpp:132
 #: mailimporter/filters/filterthebat.cpp:83
@@ -73,10 +73,10 @@ msgstr "आयात के लिए कोई फ़ाइल नहीं म
 #: mailimporter/filters/filterevolution_v2.cpp:128
 #: mailimporter/filters/filterevolution_v3.cpp:107
 #: mailimporter/filters/filterkmail_maildir.cpp:96
-#: mailimporter/filters/filtermailapp.cpp:125
-#: mailimporter/filters/filtermailmangzip.cpp:136
-#: mailimporter/filters/filtermbox.cpp:135
-#: mailimporter/filters/filteropera.cpp:142
+#: mailimporter/filters/filtermailapp.cpp:128
+#: mailimporter/filters/filtermailmangzip.cpp:143
+#: mailimporter/filters/filtermbox.cpp:138
+#: mailimporter/filters/filteropera.cpp:145
 #: mailimporter/filters/filterplain.cpp:73
 #: mailimporter/filters/filterpmail.cpp:71
 #: mailimporter/filters/filtersylpheed.cpp:144
@@ -87,11 +87,11 @@ msgid "Finished importing emails from %1"
 msgstr "%1 से ई-मेल आयात करना सम्पन्न"
 
 #: mailimporter/filters/filterbalsa.cpp:113
-#: mailimporter/filters/filterevolution.cpp:206
+#: mailimporter/filters/filterevolution.cpp:209
 #: mailimporter/filters/filterevolution_v2.cpp:130
 #: mailimporter/filters/filterevolution_v3.cpp:110
 #: mailimporter/filters/filterkmail_maildir.cpp:98
-#: mailimporter/filters/filteropera.cpp:144
+#: mailimporter/filters/filteropera.cpp:147
 #: mailimporter/filters/filterplain.cpp:75
 #: mailimporter/filters/filtersylpheed.cpp:146
 #: mailimporter/filters/filterthebat.cpp:96
@@ -106,11 +106,11 @@ msgstr[1] "%1 दोहरे संदेश आयात नहीं कि�
 #: mailimporter/filters/filterevolution_v2.cpp:133
 #: mailimporter/filters/filterevolution_v3.cpp:114
 #: mailimporter/filters/filterkmail_maildir.cpp:102
-#: mailimporter/filters/filtermailapp.cpp:137
-#: mailimporter/filters/filtermailmangzip.cpp:144
-#: mailimporter/filters/filtermbox.cpp:143
+#: mailimporter/filters/filtermailapp.cpp:140
+#: mailimporter/filters/filtermailmangzip.cpp:151
+#: mailimporter/filters/filtermbox.cpp:146
 #: mailimporter/filters/filteroe.cpp:111
-#: mailimporter/filters/filteropera.cpp:201
+#: mailimporter/filters/filteropera.cpp:204
 #: mailimporter/filters/filterplain.cpp:78
 #: mailimporter/filters/filtersylpheed.cpp:150
 #: mailimporter/filters/filterthebat.cpp:100
@@ -136,23 +136,23 @@ msgid "Import folder %1..."
 msgstr "फ़ोल्डर %1 आयात करें..."
 
 #: mailimporter/filters/filterbalsa.cpp:196
-#: mailimporter/filters/filterevolution.cpp:195
-#: mailimporter/filters/filterevolution_v2.cpp:261
+#: mailimporter/filters/filterevolution.cpp:198
+#: mailimporter/filters/filterevolution_v2.cpp:264
 #: mailimporter/filters/filterevolution_v3.cpp:193
-#: mailimporter/filters/filterlnotes.cpp:128
-#: mailimporter/filters/filterlnotes.cpp:159
-#: mailimporter/filters/filtermailapp.cpp:108
-#: mailimporter/filters/filtermailmangzip.cpp:116
-#: mailimporter/filters/filtermbox.cpp:115
-#: mailimporter/filters/filteroe.cpp:215 mailimporter/filters/filteroe.cpp:391
-#: mailimporter/filters/filteropera.cpp:125
+#: mailimporter/filters/filterlnotes.cpp:131
+#: mailimporter/filters/filterlnotes.cpp:162
+#: mailimporter/filters/filtermailapp.cpp:111
+#: mailimporter/filters/filtermailmangzip.cpp:123
+#: mailimporter/filters/filtermbox.cpp:118
+#: mailimporter/filters/filteroe.cpp:218 mailimporter/filters/filteroe.cpp:397
+#: mailimporter/filters/filteropera.cpp:128
 #: mailimporter/filters/filterplain.cpp:63
 #: mailimporter/filters/filterpmail.cpp:114
-#: mailimporter/filters/filterpmail.cpp:193
-#: mailimporter/filters/filterpmail.cpp:262
+#: mailimporter/filters/filterpmail.cpp:196
+#: mailimporter/filters/filterpmail.cpp:268
 #: mailimporter/filters/filtersylpheed.cpp:243
-#: mailimporter/filters/filterthebat.cpp:229
-#: mailimporter/filters/filterthunderbird.cpp:346
+#: mailimporter/filters/filterthebat.cpp:232
+#: mailimporter/filters/filterthunderbird.cpp:349
 #, kde-format
 msgid "Could not import %1"
 msgstr "%1 आयात नहीं कर सका"
@@ -219,9 +219,9 @@ msgstr ""
 #: mailimporter/filters/filtermbox.cpp:60
 #: mailimporter/filters/filteropera.cpp:79
 #: mailimporter/filters/filterpmail.cpp:154
-#: mailimporter/filters/filterpmail.cpp:223
-#: mailimporter/filters/filterpmail.cpp:242
-#: mailimporter/filters/filterpmail.cpp:281
+#: mailimporter/filters/filterpmail.cpp:226
+#: mailimporter/filters/filterpmail.cpp:245
+#: mailimporter/filters/filterpmail.cpp:287
 #: mailimporter/filters/filterthebat.cpp:161
 #: mailimporter/filters/filterthunderbird.cpp:280
 #, kde-format
@@ -230,12 +230,28 @@ msgstr "%1 खोलने में अक्षम, छोड़ रहे"
 
 #: mailimporter/filters/filterevolution.cpp:158
 #: mailimporter/filters/filtermailapp.cpp:76
-#: mailimporter/filters/filtermailmangzip.cpp:66
+#: mailimporter/filters/filtermailmangzip.cpp:70
 #: mailimporter/filters/filtermbox.cpp:66
 #: mailimporter/filters/filteropera.cpp:81
 #, kde-format
 msgid "Importing emails from %1..."
 msgstr "%1 से ई-मेल आयात किया जा रहा है..."
+
+#: mailimporter/filters/filterevolution.cpp:166
+#: mailimporter/filters/filterevolution_v2.cpp:224
+#: mailimporter/filters/filterlnotes.cpp:119
+#: mailimporter/filters/filtermailapp.cpp:86
+#: mailimporter/filters/filtermailmangzip.cpp:81
+#: mailimporter/filters/filtermbox.cpp:77 mailimporter/filters/filteroe.cpp:200
+#: mailimporter/filters/filteroe.cpp:373
+#: mailimporter/filters/filteropera.cpp:100
+#: mailimporter/filters/filterpmail.cpp:173
+#: mailimporter/filters/filterpmail.cpp:252
+#: mailimporter/filters/filterthebat.cpp:225
+#: mailimporter/filters/filterthunderbird.cpp:310
+#, kde-format
+msgid "Unable to create temporary file."
+msgstr ""
 
 #: mailimporter/filters/filterevolution_v2.cpp:23
 #, kde-format
@@ -472,7 +488,7 @@ msgid "LNotes-Import"
 msgstr ""
 
 #: mailimporter/filters/filterlnotes.cpp:111
-#: mailimporter/filters/filterpmail.cpp:266
+#: mailimporter/filters/filterpmail.cpp:272
 #, kde-format
 msgid "Message %1"
 msgstr "संदेश %1"
@@ -496,9 +512,9 @@ msgstr ""
 "<p><b>ओएस X मेल आयात फ़िल्टर</b></p><p>यह फ़िल्टर एपल मैक ओएस X में मेल क्लाएण्ट से ईमेल "
 "आयात करता है.</p>"
 
-#: mailimporter/filters/filtermailapp.cpp:127
-#: mailimporter/filters/filtermailmangzip.cpp:138
-#: mailimporter/filters/filtermbox.cpp:137
+#: mailimporter/filters/filtermailapp.cpp:130
+#: mailimporter/filters/filtermailmangzip.cpp:145
+#: mailimporter/filters/filtermbox.cpp:140
 #, kde-format
 msgid "1 duplicate message not imported to folder %2 in KMail"
 msgid_plural "%1 duplicate messages not imported to folder %2 in KMail"
@@ -525,6 +541,7 @@ msgid "gzip Files"
 msgstr ""
 
 #: mailimporter/filters/filtermailmangzip.cpp:57
+#: mailimporter/filters/filtermailmangzip.cpp:62
 #, fuzzy, kde-format
 #| msgid "Unable to open mailbox %1"
 msgid "Unable to open archive file '%1', skipping"
@@ -642,7 +659,7 @@ msgstr ""
 msgid "Importing new mail files..."
 msgstr "नई डाक फ़ाइलों का आयात किया जा रहा है..."
 
-#: mailimporter/filters/filteropera.cpp:191
+#: mailimporter/filters/filteropera.cpp:194
 #: mailimporter/filters/filterplain.cpp:48
 #: mailimporter/filters/filterpmail.cpp:53
 #, kde-format
@@ -712,12 +729,12 @@ msgid "PegasusMail-Import"
 msgstr ""
 
 #: mailimporter/filters/filterpmail.cpp:165
-#: mailimporter/filters/filterpmail.cpp:244
+#: mailimporter/filters/filterpmail.cpp:247
 #, kde-format
 msgid "Importing %1"
 msgstr "%1 आयात किया जा रहा है"
 
-#: mailimporter/filters/filterpmail.cpp:277
+#: mailimporter/filters/filterpmail.cpp:283
 #, kde-format
 msgid "Parsing the folder structure..."
 msgstr "फ़ोल्डर स्ट्रक्चर पारसिंग किया जा रहा है..."
