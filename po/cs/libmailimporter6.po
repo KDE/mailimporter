@@ -260,10 +260,9 @@ msgstr "Importování souborů z %1..."
 #: mailimporter/filters/filterpmail.cpp:252
 #: mailimporter/filters/filterthebat.cpp:225
 #: mailimporter/filters/filterthunderbird.cpp:310
-#, fuzzy, kde-format
-#| msgid "Error: failed to read temporary file at %1"
+#, kde-format
 msgid "Unable to create temporary file."
-msgstr "Chyba: selhalo čtení dočasného souboru v %1"
+msgstr "Nelze vytvořit dočasný soubor."
 
 #: mailimporter/filters/filterevolution_v2.cpp:23
 #, kde-format

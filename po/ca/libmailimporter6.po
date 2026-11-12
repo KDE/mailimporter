@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: mailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-11 01:03+0000\n"
-"PO-Revision-Date: 2026-09-05 11:46+0200\n"
+"PO-Revision-Date: 2026-11-11 09:44+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -267,10 +267,9 @@ msgstr "S'estan important correus des de %1..."
 #: mailimporter/filters/filterpmail.cpp:252
 #: mailimporter/filters/filterthebat.cpp:225
 #: mailimporter/filters/filterthunderbird.cpp:310
-#, fuzzy, kde-format
-#| msgid "Error: failed to read temporary file at %1"
+#, kde-format
 msgid "Unable to create temporary file."
-msgstr "Error: ha fallat en llegir un fitxer temporal a %1"
+msgstr "No s'ha pogut crear el fitxer temporal."
 
 #: mailimporter/filters/filterevolution_v2.cpp:23
 #, kde-format
