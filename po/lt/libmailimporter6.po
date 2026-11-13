@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-11 01:03+0000\n"
-"PO-Revision-Date: 2026-09-07 12:55+0300\n"
+"PO-Revision-Date: 2026-11-12 15:19+0200\n"
 "Last-Translator: Liudas Ališauskas <liudas.alisauskas@gmail.com>\n"
 "Language-Team: Lithuanian <kde-i18n-doc@kde.org>\n"
 "Language: lt\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
-"X-Generator: Poedit 3.9\n"
+"X-Generator: Poedit 3.10\n"
 
 #: mailimporter/filters/filterbalsa.cpp:23
 #, kde-format
@@ -262,10 +262,9 @@ msgstr "Importuojami el. laiškai iš %1..."
 #: mailimporter/filters/filterpmail.cpp:252
 #: mailimporter/filters/filterthebat.cpp:225
 #: mailimporter/filters/filterthunderbird.cpp:310
-#, fuzzy, kde-format
-#| msgid "Error: failed to read temporary file at %1"
+#, kde-format
 msgid "Unable to create temporary file."
-msgstr "Klaida: nepavyko perskaityti laikinojo failo, esančio %1"
+msgstr "Nepavyksta sukurti laikinojo failo."
 
 #: mailimporter/filters/filterevolution_v2.cpp:23
 #, kde-format
