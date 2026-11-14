@@ -1,6 +1,7 @@
 include($KDE_DOCS/global/qt-module-defaults.qdocconf)
 
 project = MailImporter
+moduleheader = mailimporter_qdocmoduleheader.h
 description = MailImporter Library implements importing of emails from various other email clients
 
 
