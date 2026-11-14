@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: mailimporter\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-11 01:03+0000\n"
-"PO-Revision-Date: 2026-09-05 08:20+0200\n"
+"PO-Revision-Date: 2026-11-13 02:49+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.9\n"
+"X-Generator: Poedit 3.10\n"
 
 #: mailimporter/filters/filterbalsa.cpp:23
 #, kde-format
@@ -260,10 +260,9 @@ msgstr "%1-დან ელფოსტების შემოტანა..."
 #: mailimporter/filters/filterpmail.cpp:252
 #: mailimporter/filters/filterthebat.cpp:225
 #: mailimporter/filters/filterthunderbird.cpp:310
-#, fuzzy, kde-format
-#| msgid "Error: failed to read temporary file at %1"
+#, kde-format
 msgid "Unable to create temporary file."
-msgstr "შეცდომა: დროებით ფაილის წაკითხვა შეუძლებელია მისამართზე %1"
+msgstr "დროებითი ფაილის შექმნის შეცდომა."
 
 #: mailimporter/filters/filterevolution_v2.cpp:23
 #, kde-format

@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: libmailimporter6\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-11 01:03+0000\n"
-"PO-Revision-Date: 2026-09-05 16:41+0100\n"
+"PO-Revision-Date: 2026-11-11 11:43+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -25,7 +25,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "First-Translator: Jaime Robles <jaime@kde.org>\n"
-"X-Generator: Lokalize 26.08.0\n"
+"X-Generator: Lokalize 26.08.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: mailimporter/filters/filterbalsa.cpp:23
@@ -270,10 +270,9 @@ msgstr "Importando correos de %1…"
 #: mailimporter/filters/filterpmail.cpp:252
 #: mailimporter/filters/filterthebat.cpp:225
 #: mailimporter/filters/filterthunderbird.cpp:310
-#, fuzzy, kde-format
-#| msgid "Error: failed to read temporary file at %1"
+#, kde-format
 msgid "Unable to create temporary file."
-msgstr "Error: fallo al leer archivo temporal en %1"
+msgstr "No se ha podido crear el archivo temporal."
 
 #: mailimporter/filters/filterevolution_v2.cpp:23
 #, kde-format
