@@ -2,8 +2,8 @@
     \module MailImporter
     \title MailImporter C++ Classes
     \ingroup modules
-    \cmakepackage KPim6
-    \cmakecomponent MailImporter
+    \cmakepackage KPim6MailImporter
+    \cmaketargetitem KPim6::MailImporter
 
     \brief MailImporter Library implements importing of emails from various other email clients
 */

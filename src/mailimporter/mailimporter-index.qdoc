@@ -10,7 +10,7 @@
 
     \section2 Building with CMake
 
-    \include {module-use.qdocinc} {building with cmake} {KPim6} {MailImporter} {KPim6::MailImporter}
+    \include {module-use.qdocinc} {building with cmake nomodule} {KPim6MailImporter} {KPim6::MailImporter}
 
     \section1 API Reference
 
