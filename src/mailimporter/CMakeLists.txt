@@ -184,11 +184,15 @@ install(
     COMPONENT Devel
 )
 
+set(MAILIMPORTER_FILES
+    ${MailImporter_HEADERS}
+    ${MailImporter_Filters_HEADERS}
+)
+
 install(
     FILES
         ${CMAKE_CURRENT_BINARY_DIR}/mailimporter_export.h
-        ${MailImporter_HEADERS}
-        ${MailImporter_Filters_HEADERS}
+        ${MAILIMPORTER_FILES}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/MailImporter/mailimporter
     COMPONENT Devel
 )
@@ -235,8 +239,8 @@ ecm_add_installed_library_check(KPim6MailImporter
 )
 
 ecm_installed_library_check_include_strings(KPim6MailImporter
-    HEADERS                ${MailImporter_HEADERS}
-    ${MailImporter_Filters_HEADERS}
+    HEADERS
+    ${MAILIMPORTER_FILES}
     PREFIX mailimporter
 )
 
