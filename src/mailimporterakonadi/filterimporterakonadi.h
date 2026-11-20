@@ -11,6 +11,7 @@
 #include <Akonadi/MessageStatus>
 #include <KMime/Message>
 #include <MailImporter/FilterImporterBase>
+#include <QMultiMap>
 #include <QString>
 namespace MailImporter
 {
