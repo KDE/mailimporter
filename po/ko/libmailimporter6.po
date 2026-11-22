@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kmailcvt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-11 01:03+0000\n"
-"PO-Revision-Date: 2026-09-29 00:53+0200\n"
+"PO-Revision-Date: 2026-11-22 00:32+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -255,10 +255,9 @@ msgstr "%1에서 메시지 가져오는 중..."
 #: mailimporter/filters/filterpmail.cpp:252
 #: mailimporter/filters/filterthebat.cpp:225
 #: mailimporter/filters/filterthunderbird.cpp:310
-#, fuzzy, kde-format
-#| msgid "Error: failed to read temporary file at %1"
+#, kde-format
 msgid "Unable to create temporary file."
-msgstr "오류: %1의 임시 파일을 읽을 수 없음"
+msgstr "임시 파일을 만들 수 없습니다."
 
 #: mailimporter/filters/filterevolution_v2.cpp:23
 #, kde-format
