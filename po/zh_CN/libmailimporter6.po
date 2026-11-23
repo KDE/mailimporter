@@ -253,10 +253,9 @@ msgstr "正在从 %1 导入新邮件..."
 #: mailimporter/filters/filterpmail.cpp:252
 #: mailimporter/filters/filterthebat.cpp:225
 #: mailimporter/filters/filterthunderbird.cpp:310
-#, fuzzy, kde-format
-#| msgid "Error: failed to read temporary file at %1"
+#, kde-format
 msgid "Unable to create temporary file."
-msgstr "错误：读取 %1 的临时文件失败"
+msgstr ""
 
 #: mailimporter/filters/filterevolution_v2.cpp:23
 #, kde-format
